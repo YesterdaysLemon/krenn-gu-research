@@ -1,0 +1,445 @@
+# Fixed-Q common projective joint-response selector and shifted GLD3 detector
+
+## Status
+
+**Exact characteristic-zero common-line reduction and conditional mixed
+detector.**  The joint `M/Z` quotient of `GLD15` need not have rank two at all
+seven four-root targets.  It is enough that the seven exact operator-supply
+spaces share one nonzero projective coefficient vector.
+
+On the physical `h=0` branch, a common vector `(alpha,beta)` supplies the six
+pair tensors
+
+```text
+D_e=alpha M_e+beta Z_e=alpha B_e+beta K_e
+```
+
+and the four-port tensor
+
+```text
+T'=alpha M_U+beta Z_U.
+```
+
+They satisfy the homogeneous shifted interference identity
+
+```text
+alpha T'=C(D)-C(beta K).
+```
+
+The corrected compound on the right has one-port flattening rank at most two.
+Consequently the `GLD3` nine-word determinant applies with effective scalar
+`alpha`, including the pure-`Z` line `alpha=0`.  Three-colour pair-depth
+activity therefore contradicts the pure GHZ target.
+
+This is strictly weaker than seven joint rank-two quotients.  Rank-two target
+spaces impose no constraint on the common line; every rank-one target space
+must merely have the same projective slope.  A single zero space or two
+distinct rank-one slopes destroy the common package.  Exact two-active
+camouflage on the common line `[1:1]` proves that the activity hypothesis is
+load-bearing.
+
+The theorem does not prove that a common line exists on every hypothetical
+witness, exclude the zero-intersection branch, integrate a formal response
+fibre into a graph fibre, or imply a permanent restriction.  The global
+Krenn--Gu conjecture remains **UNRESOLVED**.
+
+Dependencies:
+
+- [`GLD15`](FIXED_Q_JOINT_MZ_MODULE_QUOTIENT_PAIRED_ATTACHMENT_AND_RANK_ONE_FIBRE_BOUNDARY_THEOREM.md)
+- [`GLD3`](TWO_RESIDUAL_PAIR_FOUR_PORT_DIAGONAL_INTERFERENCE_AND_CAMOUFLAGE_BOUNDARY_THEOREM.md)
+
+## 1. One fixed module and seven exact coefficient spaces
+
+Work over a characteristic-zero field `K`.  Fix one four-root surplus-two
+graph, one residual pair `Q={q0,q1}`, one fully specified residual contraction,
+and one four-port set
+
+```text
+U={1,2,3,4}.                                           (1)
+```
+
+Assume the contracted residual-edge scalar is
+
+```text
+h=0.                                                   (2)
+```
+
+Retain the complete nonempty even deck module and every nuisance coefficient
+slice exactly as in `GLD15`.  For each
+
+```text
+S in F_7:=binom(U,2) union {U},                        (3)
+```
+
+let
+
+```text
+C_S subset K^2                                        (4)
+```
+
+be the exact constant-open-port operator-coefficient space.  Thus
+`(alpha,beta) in C_S` exactly when some constant functional on the full
+fixed-`Q` companion equation has operator output
+
+```text
+alpha P_S^M+beta P_S^Z.                               (5)
+```
+
+The coefficient axes and normalization in (4)--(5) are the globally fixed
+`M,Z` conventions of `GLD15`.  They may not be changed target by target.
+Every `C_S` is one of `0`, a line, or `K^2`.
+
+Define the common coefficient space
+
+```text
+C_*:=intersection_(S in F_7) C_S subset K^2.          (6)
+```
+
+### Theorem 1 (common projective selector criterion)
+
+The following are equivalent:
+
+1. `C_*!=0`;
+2. every `C_S` is nonzero and all rank-one `C_S` are the same projective
+   line;
+3. there is one nonzero `(alpha,beta) in K^2` and seven constant functionals
+   `lambda_S`, on the same graph, `Q`, contraction, and `M/Z` normalization,
+   such that
+
+   ```text
+   (lambda_S tensor id)Gamma_Q
+      =alpha P_S^M+beta P_S^Z                         (7)
+   ```
+
+   for every `S in F_7`.
+
+If every `C_S=K^2`, then `C_*=K^2`.  Otherwise the common space in the good
+branch is the unique rank-one member shared by all rank-one targets.
+
+### Proof
+
+The subspaces of a two-dimensional vector space are exactly zero, lines, and
+the whole space.  Intersecting with `K^2` changes nothing, intersecting with a
+line restricts to that line, two distinct lines intersect in zero, and a zero
+member kills the intersection.  This proves the equivalence of 1 and 2.
+
+By `GLD15`, `C_S` is exactly the image of the constant-functional evaluation
+map on the two desired labelled blocks.  Hence a fixed vector belongs to all
+seven spaces exactly when seven target-specific functionals realize (7) with
+the same coefficients.  This proves the equivalence with 3.  `square`
+
+The functionals in (7) may vary with `S`; the graph, `Q`, contraction, open
+GHZ bases, coefficient axes, and `(alpha,beta)` may not.  Separate nonzero
+rank-one rows with different slopes do not satisfy Theorem 1.
+
+## 2. Homogeneous shifted response identity
+
+Let `B_e` be the direct pair block and let
+
+```text
+K_e=x_u tensor y_v+y_u tensor x_v                  (8)
+```
+
+be the residual-incidence pair block, with the fixed residual contractions
+already inserted.  On the `h=0` branch,
+
+```text
+M_e=B_e,                 Z_e=K_e.                     (9)
+```
+
+For six pair arrays `X`, put
+
+```text
+C(X)=X_12 X_34+X_13 X_24+X_14 X_23.                 (10)
+```
+
+Define the polarized cross term
+
+```text
+X(B,K)=
+ (B_12 K_34+K_12 B_34)
+ +(B_13 K_24+K_13 B_24)
+ +(B_14 K_23+K_14 B_23).                             (11)
+```
+
+The residual-absent and residual-present four-port layers are
+
+```text
+M_U=C(B),                 Z_U=X(B,K).                 (12)
+```
+
+Fix a nonzero common vector `(alpha,beta) in C_*`.  Apply the functionals from
+Theorem 1 to one physical deck and define
+
+```text
+D_e=alpha M_e+beta Z_e=alpha B_e+beta K_e,
+T'=alpha M_U+beta Z_U
+  =alpha C(B)+beta X(B,K).                            (13)
+```
+
+### Theorem 2 (homogeneous shifted GLD3 identity)
+
+The common selected package satisfies
+
+```text
+alpha T'=C(D)-C(beta K).                              (14)
+```
+
+Moreover every one-port flattening of `C(beta K)` has rank at most two.
+
+### Proof
+
+For each complementary pair partition `{e,f}`, expand
+
+```text
+(alpha B_e+beta K_e)(alpha B_f+beta K_f)
+ =alpha^2 B_eB_f
+  +alpha beta(B_eK_f+K_eB_f)
+  +beta^2 K_eK_f.                                    (15)
+```
+
+Summing (15) over the three partitions and subtracting
+`C(beta K)=beta^2 C(K)` gives exactly `alpha T'` by (11)--(13).
+
+The pair array `beta K` has the same two-shore form as (8): scale every
+`x_u` by `beta` and leave every `y_u` fixed.  The common-row expansion of
+`GLD3` therefore places every one-port row of `C(beta K)` in
+`span{x_u,y_u}`, proving rank at most two.  This includes `beta=0`.
+`square`
+
+Equation (14) is derived from one fixed physical graph and one fixed response
+window.  It is not obtained by separately factorizing the six selected pair
+tensors.  Conversely, (14) does not claim that the selected combination is a
+new labelled deck summand or that varying `(alpha,beta)` gives a same-graph
+fibre.
+
+## 3. Three-active-colour contradiction
+
+Suppose now that the fixed graph/deck is a hypothetical Krenn--Gu witness, so
+the seven operator identities (7) may be applied to the full mixed GHZ
+equation.  Every selected `D_e` and `T'` is then target-diagonal in the same
+fixed port bases.
+
+Fix a port `u`.  For each colour `c`, choose an incident edge
+
+```text
+e_c={u,v_c},       f_c=U-e_c,       delta_c!=c,       (16)
+```
+
+and assume
+
+```text
+g_c=D_(e_c)(c,c)D_(f_c)(delta_c,delta_c)!=0
+       for c=0,1,2.                                  (17)
+```
+
+This is exactly the `GLD3` three-colour pair-depth activity condition, now
+for the common selected pair package `D`.
+
+As in `GLD3`, let `beta_c` be the word on `U-{u}` with colour `c` at `v_c`
+and colour `delta_c` at the other two ports, and form the nine actual selected
+four-port coefficients
+
+```text
+G_(r,c)=T'(r at u,beta_c on U-{u}).                   (18)
+```
+
+All nine words in (18) are mixed.
+
+### Theorem 3 (common-line nine-word detector)
+
+Under (16)--(17), the selected submatrix of (14) is
+
+```text
+A=diag(g_0,g_1,g_2)-alpha G,
+rank A<=2.                                            (19)
+```
+
+Hence:
+
+1. if `alpha=0`, the three-active stratum is impossible;
+2. if `alpha!=0`, at least one of the nine mixed coefficients in (18) is
+   nonzero.
+
+In either case a legally selected pure GHZ package satisfying (17) is
+impossible.
+
+### Proof
+
+Target diagonality of every `D_e` makes the selected `3 x 3` submatrix of
+`C(D)` equal to `diag(g_0,g_1,g_2)`, exactly as in the proof of `GLD3`
+Theorem 3.  Restrict (14) to the same rows and columns.  Theorem 2 bounds the
+rank of the selected submatrix of `C(beta K)` by two, giving (19).
+
+If `alpha=0`, then (19) says that the invertible diagonal matrix
+`diag(g_0,g_1,g_2)` has rank at most two.  If `alpha!=0` and every entry of
+`G` vanished, the same contradiction would follow.  Finally, applying (7)
+to the GHZ target makes `T'` diagonal, so every mixed entry in (18) must be
+zero.  Thus both alternatives contradict a hypothetical witness.  `square`
+
+### Corollary 3.1 (all-pure pair nonvanishing)
+
+If one common vector in `C_*` produces diagonal pair tensors `D_e` whose
+three pure diagonal entries are nonzero on all six edges, then (17) holds at
+every port.  The common-line branch is therefore excluded.
+
+## 4. Sharpness controls
+
+### 4.1 Distinct slopes do not synchronize
+
+Let six formal target spaces equal `span(1,1)` and let the seventh equal
+`span(1,2)`.  Every target separately has a nonzero rank-one joint selector,
+but
+
+```text
+span(1,1) intersection span(1,2)=0.                   (20)
+```
+
+There is no common package and no identity (14) with one coefficient vector.
+This is an exact module-level control, not a graph or witness.
+
+More generally, target-dependent slopes produce unmatched coefficients in
+the three complementary products.  The homogeneous quadratic completion in
+(15) is unavailable unless one vector lies in all seven `C_S`.
+
+### 4.2 Unequal slopes survive even with three-colour activity
+
+There is an exact physical `h=0` response-algebra control over `Q`.  At every
+port take
+
+```text
+x_u=y_u=e0,              K_e=2E_00 for every edge e.  (21)
+```
+
+Define six diagonal pair tensors `A_e` by
+
+```text
+A_e(0,0)=2                         for every e,
+A_e(1,1)=1                         for e in {12,23,34},
+A_e(2,2)=1                         for e in {13,24},
+all other entries zero,                                  (22)
+```
+
+and put `B_e=A_e-2K_e`.  Thus the six common pair rows have slope `[1:2]`:
+
+```text
+M_e+2Z_e=B_e+2K_e=A_e.                                (23)
+```
+
+Choose instead the four-port slope `[1:1]`.  Direct matching expansion gives
+
+```text
+M_U+Z_U=C(B)+X(B,K)
+ =-12 e0^tensor4+e1^tensor4+e2^tensor4.               (24)
+```
+
+Every selected pair and four-port mixed coefficient vanishes.  Nevertheless,
+at port `1` the three activity products may be chosen as
+
+```text
+A_14(0,0)A_23(1,1)=2,
+A_12(1,1)A_34(0,0)=2,
+A_13(2,2)A_24(0,0)=2.                                 (25)
+```
+
+For completeness, put `A=B+2K`.  Since `X(K,K)=2C(K)`, the four-port row is
+
+```text
+C(A-2K)+X(A-2K,K)=C(A)-X(A,K).
+```
+
+Here `K` has only colour zero and `A_e(0,0)=K_e(0,0)`.  Every mixed
+zero/`c` word with even multiplicities is `2+2` and has exactly one diagonal
+matching, whose `C(A)` term is cancelled by the corresponding `X(A,K)` term;
+words with odd multiplicities have no diagonal matching.  The colour-one
+edge family `{12,23,34}` and colour-two family `{13,24}` are
+cross-intersecting, so no mixed one/two word occurs.  The pure coefficients
+are respectively `3*4-3*8=-12`, `A_12(1,1)A_34(1,1)=1`, and
+`A_13(2,2)A_24(2,2)=1`, proving (24) directly.
+
+Thus separate rank-one pair and four-port rows, complete target shape, and
+full three-colour activity do not suffice when their projective slopes differ.
+This is a physical `q=2` response window, but it is not a legal module-selector
+or hypothetical-witness realization; its residual frames have rank one.
+
+### 4.3 Three-colour activity is load-bearing
+
+Take the exact rational two-active camouflage response of `GLD3` Section 4,
+but view its direct blocks `B` and residual channel `K` on the base `h=0`
+graph.  Then
+
+```text
+M_e=B_e,          Z_e=K_e,
+M_U=C(B),         Z_U=X(B,K).                         (26)
+```
+
+The common response-level vector `[alpha:beta]=[1:1]` gives exactly the
+camouflage tensors
+
+```text
+D_e=B_e+K_e,
+T'=C(B)+X(B,K)
+  =3 e0^tensor4+(4/3)e1^tensor4+e2^tensor4.           (27)
+```
+
+Every selected pair and four-port mixed coefficient vanishes and all three
+pure four-port coefficients are nonzero, but only colours zero and one have
+complementary pair-depth activity.  Thus the conclusion of Theorem 3 is false
+without (17).
+
+This is a physical response-algebra sharpness control.  It does not prove
+that the `[1:1]` row is a legal module selector on that graph, does not satisfy
+the full witness equations, and is not a counterexample.
+
+### 4.4 Zero spaces and pure-axis lines
+
+A single `C_S=0` kills `C_*`.  The pure-`M` and pure-`Z` axes are nevertheless
+valid common lines when they occur at every target.  Theorem 3 includes both:
+`beta=0` gives a pure residual-absent selected package, while `alpha=0` is the
+rank contradiction in item 1.  No division by either coefficient occurs.
+
+## 5. Exact frontier and scope ledger
+
+```text
+common coefficient space C_* and projective criterion:       PROVED;
+same-slope seven-target constant operator package:            PROVED;
+homogeneous shifted interference identity (14):              PROVED;
+pure-Z alpha=0 active branch excluded:                        PROVED;
+alpha!=0 nine-word mixed detector:                            PROVED;
+all-pure pair nonvanishing common-line branch excluded:       PROVED;
+different rank-one slopes imply common supply:                FALSE;
+unequal slopes plus target shape and three-activity contradict: FALSE;
+two-active common-line target shape implies contradiction:    FALSE;
+common nonzero line forced on every hypothetical witness:      UNKNOWN;
+three-colour activity forced for a common selected package:    UNKNOWN;
+zero-intersection witness branch excluded:                     UNKNOWN;
+physical graph-fibre interpretation of selected combinations: UNKNOWN;
+weighted permanent implication:                               UNKNOWN;
+global Krenn--Gu conjecture:                                   UNRESOLVED.
+```
+
+The breadth is one four-port set, all six pair targets, one graph, one `Q`,
+and one contraction.  The module depth is the complete nonempty even
+surplus-two deck; the response depth is pair and four-port only.  The
+reconstructed object is the common shifted package `(D_e,T')`, not separate
+`M,Z` tensors.  The ambiguity object is the common coefficient subspace
+`C_*`; it is zero, a projective line, or `K^2`.  There is no overlap
+transition group.  The target implication is the nine-word contradiction
+under (17).  The permanent implication is none.
+
+## Verification boundary
+
+Run from repository root:
+
+```powershell
+python claims/arbitrary-order/verify_fixed_q_common_projective_joint_response_selector.py
+python -I claims/arbitrary-order/audit_fixed_q_common_projective_joint_response_selector.py
+```
+
+The primary exact symbolic replay checks the homogeneous identity,
+common-subspace trichotomy, pure-axis cases, unequal-slope three-active
+control, and rational `[1:1]` camouflage response.  The independent
+standard-library audit uses a separate polynomial dictionary, direct
+complementary-matching enumeration, and exact `Fraction` tensor coefficients.
+These scripts audit the bounded identities and controls.  The full-module
+operator criterion and the determinant proof are load-bearing.
