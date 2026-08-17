@@ -1976,6 +1976,25 @@ corrected channels.  Thus the theorem proves a uniform certificate on the
 three-active stratum and sharply leaves the zero/one/two-active supply branch
 open; it does not extract a permanent restriction.
 
+The
+[`two-chart target-incidence and cloned-atlas theorem`](TWO_CHART_TARGET_INCIDENCE_AND_CLONED_CAMOUFLAGE_ATLAS_BOUNDARY_THEOREM.md)
+adds breadth without assuming a permanent restriction.  Two constant
+uncontracted chart equations have an exact trichotomy: target nonincidence,
+unique common-sector supply, or affine ambiguity.  Every nonincidence class
+is an exact target-coupled left syzygy, but it names one displayed mixed
+coefficient only when its aggregate is coefficient-pure modulo synchronized
+pure words.  An arbitrary-support affine family proves that bare cokernel
+nonincidence gives no uniform sparse certificate.  More sharply, an arbitrary
+sunflower of overlapping physical same-`Q` pair/four packages can repeat the
+three-pure two-active camouflage with literal identity overlaps.  A second
+physical realization flips the corrected channel while preserving every
+selected `D`-pair and `T`-four tensor.  The complete residual-absent/present
+GLQ2 charts would distinguish those two realizations, and neither is supplied
+by constant selectors from a full GHZ witness equation.  Thus overlapping
+pair/four target-shape data alone force neither a third active colour nor a
+coefficient-pure defect; full target attachment, deeper response depth, or a
+witness-locus structural condition remains necessary.
+
 The companion
 [`uniform bounded-window noncharacterization theorem`](UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md)
 shows that its depth qualification is necessary.  Above every fixed support
