@@ -2094,8 +2094,36 @@ branch.  Their residual-absent `M` towers change, so these are not paired
 need not survive tensor polarization, but a genuine full-tensor `z4` kernel
 cannot be repaired by deeper same-`Q` `Z` rows.
 
-The four successor results and their exact scope are covered by the
+The
+[`fixed-Q contraction escape or function-field pure-absorption dichotomy`](FIXED_Q_CONTRACTION_ESCAPE_OR_FUNCTION_FIELD_PURE_ABSORPTION_DICHOTOMY_THEOREM.md)
+then makes the contraction dependence of the seven four-root target modules
+exhaustive at generic rank.  For a full uncontracted hypothetical witness with
+all seven response polynomials nonzero, generic desired-column survival for
+every target gives one common fully supported contraction with all seven
+quotient ranks one.  Otherwise one target generically absorbs its desired
+column and, by the quotient witness equation, all three pure columns; four
+function-field identities clear to polynomial nuisance identities on a dense
+open.  This is not pointwise absorption: exceptional nuisance-rank-drop escape
+may coexist, and the generic absorbed branch is not excluded.
+
+The
+[`paired M2 affine-incidence and all-depth mixed-shape theorem`](PAIRED_M2_AFFINE_INCIDENCE_ONE_COLOUR_KERNEL_AND_ALL_DEPTH_MIXED_SHAPE_THEOREM.md)
+adds the exact paired-response boundary downstream of legal row attachment.
+Fixed residual-absent pair rows cut a full residual-present `Z` fibre by an
+empty/affine/unique trichotomy, with exactly `dim ker mu_K` scalar linear rows
+sufficient and optimal.  After pair diagonality, the `270` two-colour
+four-port `M` rows are equivalent to mixed purity at every depth; together
+with the `90` off-diagonal pair rows they form an exact, individually
+necessary `360`-row coordinate certificate.  One-pure-colour channels have an
+exhaustive tensor-kernel decomposition.  The complete-bipartite `K_(3,3)`
+control has a `16`-dimensional tensor kernel whose mixed projection has rank
+`12` and whose remaining `4` dimensions are pure, so mixed paired-response
+shape alone cannot remove every fibre.
+
+The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
+The GLD13--GLD14 successor pair is covered by the
+[`contraction escape and paired-response hostile review`](../../docs/audits/CONTRACTION_ESCAPE_AND_PAIRED_RESPONSE_CLOSURE_REVIEW_2026-08-17.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
