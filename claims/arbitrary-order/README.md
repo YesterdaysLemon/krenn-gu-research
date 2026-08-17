@@ -2135,12 +2135,26 @@ four-port mixed coefficient can be isolated from one four-port and two pair
 rank-two targets under complementary-colour activity.  None of those ranks or
 the activity is proved universal, and no permanent restriction follows.
 
+The
+[`fixed-Q common projective joint-response selector theorem`](FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_AND_SHIFTED_GLD3_DETECTOR_THEOREM.md)
+then weakens the seven-target rank-two input.  The exact operator-coefficient
+spaces need only share one nonzero projective vector `(alpha,beta)`.  On the
+physical `h=0` branch the resulting shifted package obeys
+`alpha T'=C(alpha B+beta K)-C(beta K)`, so the `GLD3` nine-word determinant
+excludes the common-line branch under three-colour pair-depth activity,
+including the pure-`Z` axis `alpha=0`.  Unequal-slope and two-active controls
+show that slope synchronization and activity are both load-bearing.  The
+theorem does not force a common line or activity on every witness and gives no
+permanent restriction.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
 [`contraction escape and paired-response hostile review`](../../docs/audits/CONTRACTION_ESCAPE_AND_PAIRED_RESPONSE_CLOSURE_REVIEW_2026-08-17.md).
 The GLD15 joint quotient is covered by the
 [`fixed-Q joint M/Z quotient hostile review`](../../docs/audits/FIXED_Q_JOINT_MZ_QUOTIENT_AND_PAIRED_ATTACHMENT_REVIEW_2026-08-17.md).
+The GLD16 common-line detector is covered by the
+[`fixed-Q common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_REVIEW_2026-08-17.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
