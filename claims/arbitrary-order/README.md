@@ -2147,6 +2147,18 @@ show that slope synchronization and activity are both load-bearing.  The
 theorem does not force a common line or activity on every witness and gives no
 permanent restriction.
 
+The
+[`fixed-Q unequal-slope quadratic-cancellation theorem`](FIXED_Q_UNEQUAL_SLOPE_QUADRATIC_CANCELLATION_THREE_FULL_PAIR_EXCLUSION_THEOREM.md)
+then treats two different-slope residual branches.  If all six pair rows have
+slope `[1:p]`, the four-port row has slope `[1:t]`, and
+`p(p-2t)=0` with `p!=t`, the `C(K)` correction cancels.  One complementary
+pair with all six selected pure entries nonzero then forces one of eighteen
+displayed mixed four-port coefficients to be nonzero.  On a hypothetical
+witness this excludes the branch after legal row attachment.  Exact physical
+controls show that neither the local six-value hypothesis nor the special
+slope relation can be dropped.  The theorem forces neither input and has no
+permanent consequence.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2155,6 +2167,8 @@ The GLD15 joint quotient is covered by the
 [`fixed-Q joint M/Z quotient hostile review`](../../docs/audits/FIXED_Q_JOINT_MZ_QUOTIENT_AND_PAIRED_ATTACHMENT_REVIEW_2026-08-17.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_REVIEW_2026-08-17.md).
+The GLD17 unequal-slope detector is covered by the
+[`fixed-Q unequal-slope quadratic-cancellation hostile review`](../../docs/audits/FIXED_Q_UNEQUAL_SLOPE_QUADRATIC_CANCELLATION_REVIEW_2026-08-17.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
