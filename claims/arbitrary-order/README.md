@@ -1995,6 +1995,32 @@ pair/four target-shape data alone force neither a third active colour nor a
 coefficient-pure defect; full target attachment, deeper response depth, or a
 witness-locus structural condition remains necessary.
 
+The
+[`four-root constant target-module quotient theorem`](FOUR_ROOT_CONSTANT_TARGET_MODULE_SELECTOR_QUOTIENT_AND_MAXIMUM_ROOT_SHARPNESS_THEOREM.md)
+makes the missing same-`Q` attachment condition finite and exact.  With all
+`2079` nonempty even deck coordinates retained, a desired pair or four-port
+projection has a legal constant module selector exactly when its companion
+coefficient survives the coefficient-slice span of every nuisance label.
+All seven selectors occur simultaneously on one maximum-root triple-blocker
+chart, while another chart on the same graph-side incidence stratum has a
+nonzero four-port desired coefficient swallowed by an `81`-dimensional
+nuisance image.  Thus maximum roots and blocker saturation alone neither
+force nor forbid attachment; the full mixed witness equations must decide the
+quotient branch.  Module nonmembership is not an unrestricted sensor kernel
+or a physical graph fibre.
+
+The
+[`six-port physical Wick selector theorem`](SIX_PORT_PHYSICAL_WICK_SELECTOR_TWO_ACTIVE_ALL_SUBWINDOW_AND_DEEPER_RESPONSE_THEOREM.md)
+then supplies the first bounded all-subwindow/deeper-response closure.  It
+computes the physical rank-two `15 x 15` discriminant and gives ten-row
+selectors even on the singular `5+1` shore.  On the fully two-active,
+nonvanishing, diagonal `h=0` locus, coefficientwise polarization across all
+fifteen `K4` subwindows recovers every direct pair-block coefficient.  Mixed
+four-port zeros force `B^0=cK^0` and `B^1=-cK^1`; any nonzero pure four-port
+row then forces a displayed nonzero mixed `2+4` depth-six response.  This is
+conditional on legal same-`Q` attachment of every used `z_2,z_4,z_6` row and
+does not exclude the general singular witness locus or imply a permanent.
+
 The companion
 [`uniform bounded-window noncharacterization theorem`](UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md)
 shows that its depth qualification is necessary.  Above every fixed support

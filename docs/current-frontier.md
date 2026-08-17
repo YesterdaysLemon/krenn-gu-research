@@ -193,6 +193,8 @@ flowchart TD
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
   GLD3["Pair/four-port diagonal interference<br/>PROVED nine-word detector / sharp camouflage"]
   GLD4["Two-chart target incidence / cloned atlas<br/>PROVED trichotomy / breadth boundary"]
+  GLD5["Four-root constant module quotient<br/>PROVED criterion / maximum-root sharpness"]
+  GLD6["Six-port physical Wick selectors<br/>PROVED two-active supply / depth-six detector"]
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
@@ -423,8 +425,14 @@ flowchart TD
   GLD2 -->|constant multi-selector supply remains open| GL
   GLD1 -->|two-depth target-coupling refinement| GLD3
   GLD3 -->|two-chart target-incidence refinement| GLD4
+  GLS2 -->|full fixed-Q module| GLD5
+  GLD5 -->|good quotient gives exact D/T attachment| GLD3
+  GLD3 -->|h=0 pair/four response identity| GLD6
+  GLD4 -->|all-subwindow and deeper-response refinement| GLD6
   GLD3 -->|constant synchronized window and three-activity supply open| GL
   GLD4 -->|target attachment / sparse syzygy / deeper depth open| GL
+  GLD5 -->|witness-locus quotient forcing open| GL
+  GLD6 -->|row attachment / general singular locus / pure nonvanishing open| GL
   BO1 -->|bounded witness-locus certificate still open| GL
   G0 -. route boundary .-> C2
 ```
@@ -591,6 +599,8 @@ flowchart TD
 | `GLD2` | At four roots, the zero-root-edge and one-root-edge grades have an exact common-shore decomposition.  For `h!=0`, one zero-grade equation removes the direct nuisance exactly when `l-kappa p` lies in the kernel of the six direct response tensors; nonzero augmented `Omega=l^T Jp` does not imply this alignment and is itself unforced by `GLS3`.  Function-field inversion is not target purity.  One sufficient detector package uses a legal constant `l` with `l^T Jp!=0`, constant synchronized response/direct selectors, and a separate target-pure residual-absent anchor or exact nuisance identity.  This package is not proved minimal.  One coefficientwise-clean shore has trivial corrected response, and a maximum-root triple-blocker control has augmented `Omega!=0`, nonzero corrected response, and both adjacent matching grades zero by nested cancellation.  This is a **proved conditional detector interface and sharp single-shore no-go**, not a witness or forced detector. | [Four-root constant-selector boundary](../claims/arbitrary-order/FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md), [hostile review](audits/SURPLUS_TWO_RANK_DROP_AND_FOUR_ROOT_SELECTOR_REVIEW_2026-08-16.md) |
 | `GLD3` | For one physical same-`Q` four-port response, the six residual-present pair tensors and the residual-present four-port tensor obey `hT=C(D)-C(K)`, while every one-port flattening of the corrected compound `C(K)` has rank at most two.  If nuisance-free constant synchronized target selectors supply the exact diagonal `D` and `T` tensors and three colours have nonzero complementary pair-depth products at one port, a displayed `3 x 3` minor forces at least one of nine actual mixed target coefficients to be nonzero (and excludes the active chart outright at `h=0`).  An exact rational same-graph response has diagonal pair data, three nonzero pure four-port coefficients, zero complete mixed four-port target, rank-two residual frames, and two inequivalent mixed corrected channels while only two colours are active.  This is a **proved conditional nine-word detector and sharp two-active camouflage boundary**, not universal target attachment, paired-window supply, or permanent extraction. | [Pair/four-port diagonal interference](../claims/arbitrary-order/TWO_RESIDUAL_PAIR_FOUR_PORT_DIAGONAL_INTERFERENCE_AND_CAMOUFLAGE_BOUNDARY_THEOREM.md), [hostile review](audits/PAIR_FOUR_PORT_DIAGONAL_INTERFERENCE_REVIEW_2026-08-16.md) |
 | `GLD4` | Two constant uncontracted chart equations have an exact target-incidence trichotomy: nonincidence, unique common-sector supply, or affine ambiguity.  A left syzygy always converts nonincidence into a target-defect aggregate; after every pure word is synchronized, it becomes a mixed aggregate and displays one coefficient exactly under a coefficient-pure-modulo-pure-anchors condition.  Bare affine cokernel data have arbitrarily dense defects.  At the physical response-package level, an arbitrary sunflower of overlapping same-`Q` `K_4` windows has literal identity overlaps, diagonal pair data, the same three nonzero pure four-port coefficients, zero mixed four-port coefficients, and only two active colours.  Two physical sign realizations preserve all selected `D`/`T` packages but differ on the corrected channel; complete paired `M,Z` charts would distinguish them.  This is a **proved affine supply/detect theorem and sharp multi-window observed-package boundary**, not constant target attachment, a full response-atlas ambiguity, a witness, or permanent extraction. | [Two-chart target incidence and cloned atlas](../claims/arbitrary-order/TWO_CHART_TARGET_INCIDENCE_AND_CLONED_CAMOUFLAGE_ATLAS_BOUNDARY_THEOREM.md), [hostile review](audits/TWO_CHART_TARGET_INCIDENCE_AND_CLONED_ATLAS_REVIEW_2026-08-16.md) |
+| `GLD5` | For one full fixed-`Q`, four-root/four-port companion module retaining all `2079` nonempty even deck coordinates, a desired pair or four-port projection has a constant module selector exactly when its companion coefficient `g_S` survives modulo every nuisance coefficient slice `N_S`.  This is the exact noncircular criterion `P_S in im A_S`; failure is module nonmembership, not an unrestricted sensor kernel or physical graph ambiguity.  A maximum-root triple-blocker chart has all seven selectors for `t!=0`, while another point on the same graph-side incidence stratum has `g_U!=0` and `N_U=L_U^*`, so even `T` attachment fails.  This is a **proved constant-selector quotient theorem and sharp maximum-root incidence boundary**, not proof that the good quotient meets every witness. | [Four-root constant target-module quotient](../claims/arbitrary-order/FOUR_ROOT_CONSTANT_TARGET_MODULE_SELECTOR_QUOTIENT_AND_MAXIMUM_ROOT_SHARPNESS_THEOREM.md), [hostile review](audits/CONSTANT_TARGET_MODULE_AND_SIX_PORT_WICK_REVIEW_2026-08-17.md) |
+| `GLD6` | On one physical same-`Q` `h=0` response, every scalar six-port coefficient word has a `15 x 15` Wick map from direct pairs to the fifteen four-port rows.  Its physical rank-two determinant is explicit; `5+1` singular words still have ten-row cross-pair selectors, and overlapping two-shore unions of at least seven ports are coordinatewise injective.  On the fully two-active nonvanishing diagonal line locus, polarization over all fifteen `K_4` subwindows reconstructs every coefficient of every direct pair block, including inactive coefficients.  Target-diagonal four-port rows then force `B^0=cK^0`, `B^1=-cK^1`; one nonzero pure four-port row forces an explicit nonzero mixed `2+4` depth-six row.  This is a **proved conditional all-subwindow supply and deeper-response detector**, with legal attachment of every used `z_2,z_4,z_6` row, the general singular witness locus, and permanent extraction still open. | [Six-port physical Wick selector](../claims/arbitrary-order/SIX_PORT_PHYSICAL_WICK_SELECTOR_TWO_ACTIVE_ALL_SUBWINDOW_AND_DEEPER_RESPONSE_THEOREM.md), [hostile review](audits/CONSTANT_TARGET_MODULE_AND_SIX_PORT_WICK_REVIEW_2026-08-17.md) |
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
@@ -818,6 +828,11 @@ flowchart TD
 | `GLD3` | bounded three-active detector / two-active boundary | `GL` | Once one nuisance-free constant same-`Q` target window is supplied, three complementary active colours give a nine-word mixed coefficient certificate.  Full pair-plus-four mixed zeros do not close the zero/one/two-active branch or identify the corrected channel, as shown by the exact camouflage response. |
 | `GLD3` | two-chart affine and overlap refinement | `GLD4` | Stacking constant uncontracted chart equations gives an exact quotient-incidence trichotomy.  Disagreement is target-coupled, but a displayed coefficient additionally requires a coefficient-pure left syzygy.  Repeating the two-active observed package on arbitrarily many common-core windows leaves literal overlap agreement and no GLD3 activity. |
 | `GLD4` | remaining target-attachment and physical-integrability obligation | `GL` | Produce the constant chart maps from the full witness equation, prove coefficient-pure or uniformly sparse left syzygies, add a deeper target-attached response layer, or exclude the cloned two-active package on the witness locus.  Abstract affine kernels and observed `D`/`T` agreement do not supply complete paired `M,Z` charts or a permanent restriction. |
+| `GLS2` | fixed-`Q` full-module attachment refinement | `GLD5` | The full companion equation gives a finite constant-module question with every nuisance retained.  Exact attachment is the nonvanishing quotient class `[g_S] in L_S^*/N_S`; maximum-root and triple-blocker incidence alone meet both its good and bad branches. |
+| `GLD5` | conditional exact same-`Q` attachment | `GLD3` | If all seven quotient classes survive on one hypothetical-witness chart, their constant selectors supply the exact six `D_uv` tensors and `T` required by GLD3.  The theorem does not force those classes or GLD3's three-colour activity. |
+| `GLD3`, `GLD4` | all-subwindow and deeper-response refinement | `GLD6` | At `h=0`, all fifteen four-port restrictions on six ports form a coefficientwise Wick system.  The two-active line locus has bounded selectors even on its singular words, and its remaining diagonal direct layer leaks into a displayed mixed depth-six coefficient once one pure four-port response is nonzero. |
+| `GLD5` | remaining quotient-locus obligation | `GL` | Prove all seven classes nonzero on every relevant witness, or use the full mixed equations to exclude or detect the exact bad quotient strata.  A maximum-root/triple-blocker chart on either side does not decide the witness intersection. |
+| `GLD6` | remaining attachment and exceptional-locus obligation | `GL` | Attach the required same-`Q` `z_2,z_4,z_6` rows by legal constant graph-equation selectors, force the nonvanishing two-active line hypotheses or classify the general all-minors-singular witness locus, and separately supply any weighted-diagonal permanent bridge. |
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
@@ -856,13 +871,27 @@ branch. They are not an instruction to begin all of them at once.
    zero/one/two-active residue.  GLD4 now shows that simply repeating the same
    observed package on arbitrarily many common-core windows also does not
    help: all overlaps can agree literally while every chart stays two-active.
-   The narrowest new Universal Supply obligation is therefore to produce one
-   nuisance-free constant target attachment of the six pair tensors and
-   four-port tensor from every relevant witness, then force three activity
-   products, produce a coefficient-pure cross-window syzygy, or close the
-   residue with a genuinely new subwindow/deeper response layer.  Rational
-   deck recovery and selected `D`/`T` package agreement do not satisfy this
-   obligation.
+   GLD5 now makes the first attachment step exact: for each of the six pair
+   labels and the four-port label, prove that `g_S` survives modulo the full
+   nuisance slice space `N_S`.  Maximum-root and triple-blocker incidence do
+   not decide this, because the same graph-side stratum contains both a
+   seven-selector chart and a `g_U!=0` nonselector chart.  Thus the narrowest
+   new Universal Supply obligation is to force all seven quotient classes on
+   every relevant witness or use the full mixed equations to detect the bad
+   quotient locus.  On the attached branch, one may then force three activity
+   products or produce a coefficient-pure cross-window syzygy.
+
+   GLD6 closes a separate, sharply typed part of the two-active residue.  If
+   all fifteen `K4` responses on six ports are legally attached on the fully
+   two-active nonvanishing `h=0` line locus, coefficientwise Wick selectors
+   reconstruct every direct pair block.  Target-diagonal four-port rows and
+   one nonzero pure row then force a displayed mixed depth-six coefficient,
+   provided that six-port row is also attached.  The remaining obligation is
+   therefore attachment of the full `z_2,z_4,z_6` package, proof that the
+   witness lies in the named nonvanishing line branch (and has a nonzero pure
+   row), or an exact treatment of the general simultaneous singular locus.
+   Rational deck recovery and selected `D`/`T` package agreement do not
+   satisfy these obligations.
    At surplus at least four, the residual edge and pair moments remain absent
    from every linear root word, so a continuation must use nonlinear target
    coupling, a cross-window theorem, or the independent balanced complete-deck
