@@ -2120,10 +2120,27 @@ control has a `16`-dimensional tensor kernel whose mixed projection has rank
 `12` and whose remaining `4` dimensions are pure, so mixed paired-response
 shape alone cannot remove every fibre.
 
+The
+[`fixed-Q joint M/Z module quotient and paired-attachment theorem`](FIXED_Q_JOINT_MZ_MODULE_QUOTIENT_PAIRED_ATTACHMENT_AND_RANK_ONE_FIBRE_BOUNDARY_THEOREM.md)
+then supplies the missing exact attachment interface.  Removing both labelled
+responses and quotienting by every other companion slice makes the surviving
+two-column rank equal to the space of constant operator combinations
+`aM_S+bZ_S`.  Rank two gives separate normalized selectors; rank one gives
+one projective combination; rank zero gives none.  On a hypothetical witness,
+pure quotient rank two forces both separate attachment and response
+independence, while lower ranks retain exact cancellation and swallowing
+branches.  On a fixed full-`Z` fibre, pair-block covers have exact full-tensor
+sizes four for complete-bipartite `K_(3,3)` and six for `K_(5,2)`.  A localized
+four-port mixed coefficient can be isolated from one four-port and two pair
+rank-two targets under complementary-colour activity.  None of those ranks or
+the activity is proved universal, and no permanent restriction follows.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
 [`contraction escape and paired-response hostile review`](../../docs/audits/CONTRACTION_ESCAPE_AND_PAIRED_RESPONSE_CLOSURE_REVIEW_2026-08-17.md).
+The GLD15 joint quotient is covered by the
+[`fixed-Q joint M/Z quotient hostile review`](../../docs/audits/FIXED_Q_JOINT_MZ_QUOTIENT_AND_PAIRED_ATTACHMENT_REVIEW_2026-08-17.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
