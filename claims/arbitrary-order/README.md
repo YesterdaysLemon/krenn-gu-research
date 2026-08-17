@@ -1958,6 +1958,24 @@ coefficientwise-clean one-word route and leaves a precisely typed sufficient
 multi-selector witness-locus obligation; two-selector, multi-shore, and
 aggregate alternatives remain open.
 
+The
+[`two-residual pair/four-port diagonal-interference theorem`](TWO_RESIDUAL_PAIR_FOUR_PORT_DIAGONAL_INTERFERENCE_AND_CAMOUFLAGE_BOUNDARY_THEOREM.md)
+gives the first bounded detector directly coupling the complete pair layer to
+the four-port target layer.  For one physical same-`Q` window, the hidden
+corrected compound has every one-port flattening of rank at most two.  If
+constant nuisance-free target selectors supply the six diagonal pair tensors
+and the four-port tensor exactly, three complementary active colours at one
+port create a displayed diagonal `3 x 3` minor.  Therefore at least one of a
+fixed grid of nine actual mixed four-port GHZ coefficients is nonzero (or the
+active chart is impossible when `h=0`).  This target attachment is an input,
+not a consequence of physicality or function-field deck recovery.  An exact
+rational same-graph response with rank-two residual frames, diagonal pair
+data, three nonzero pure four-port coefficients, and every four-port mixed
+coefficient zero has only two active colours and retains two inequivalent
+corrected channels.  Thus the theorem proves a uniform certificate on the
+three-active stratum and sharply leaves the zero/one/two-active supply branch
+open; it does not extract a permanent restriction.
+
 The companion
 [`uniform bounded-window noncharacterization theorem`](UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md)
 shows that its depth qualification is necessary.  Above every fixed support
