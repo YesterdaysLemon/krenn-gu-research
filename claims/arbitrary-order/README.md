@@ -1877,6 +1877,44 @@ is the load-bearing unit-forcing problem: force useful lattice overlap and
 kill every sheet, control free rank at least two, handle an aggregate cycle
 fibre, or leave through the pure/deeper topology.
 
+The
+[`two-residual response-atlas theorem`](TWO_RESIDUAL_RESPONSE_ATLAS_IDENTIFYING_OVERLAP_AND_HOLONOMY_BOUNDARY_THEOREM.md)
+provides a first exact conditional descent statement inside the open GL
+node.  For fixed named residual contractions, three mutually cross-observed
+rank-two port groups identify the hidden two-row incidence frame up to
+one unique `O(J)` transition.  A connected finite atlas glues exactly when
+all cycle holonomies are trivial.  Two groups retain a sharp
+`GL_2`/contragredient ambiguity, while three individually physical complete
+response charts can form a nontrivial-holonomy counteratlas.  The theorem
+does not prove that one witness supplies the paired charts, attach the glued
+frame to a weighted diagonal permanent restriction, or convert a holonomy
+defect into a mixed target coefficient.  It therefore refines GL without
+closing it.
+
+The companion
+[`uniform bounded-window noncharacterization theorem`](UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md)
+shows that its depth qualification is necessary.  Above every fixed support
+bound there is a symmetric, restriction-natural deck whose complete bounded
+windows are zero-edge physical decks with trivial overlaps, but whose first
+Euler--Wick defect occurs at the next chosen even support.  The same hidden
+higher response survives a finite `q=2` atlas with three-block identifying
+overlaps, common frames, and trivial holonomy.  This decisively refutes an
+ambient bounded-window criterion, but not a finite certificate obtained
+after using the full ternary target locus or a separately proved uniform
+generation theorem.
+
+In the simultaneous co-two lane, the
+[`P_6` spanning-tree radical and factor-compatibility theorem](ARBITRARY_PERMANENT_P6_COTWO_SPANNING_TREE_RADICAL_AND_SIMULTANEOUS_FACTOR_COMPATIBILITY_BOUNDARY.md)
+shows that, after one common six-mode pullback with six labelled three-planes
+is already present, five mixed-radical constraints on any spanning tree are
+equivalent to all mixed target equations.  Triple and quartet zeon-product identities give
+necessary overlap tests for the fifteen pair records.  They do not replace
+the radicals: one exact common equality-six model has rank-six sensors at all
+fifteen pairs, every product identity, and three nonzero pure coefficients,
+but mixed coefficient `001122=41456`.  Thus the target test compresses from
+fifteen pairs to five only after factor synchronization; constructing those
+factors and excluding the five radical conditions remain open.
+
 At the Stage 27 boundary, the owner-gated H22/H31, Component20/21/23,
 high-coordinate, and mixed-lifecycle conflict surfaces were excluded from
 that batch and remained at root, unmoved and unadjudicated at that stage.
