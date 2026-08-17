@@ -2045,7 +2045,58 @@ every pair has a selector on at most twenty-one four-port rows in one
 seven-set; for the two zero ports all five relevant six-window determinants
 vanish, so this is a genuine overlapping common-row closure.  Legal row
 attachment and a coefficient-word cover of the full tensor remain open.
-Both successor theorems and their exact scope are covered by the
+
+The
+[`maximal-nuisance-rank common-contraction theorem`](FIXED_Q_MAXIMAL_NUISANCE_RANK_COMMON_CONTRACTION_SYNCHRONIZATION_THEOREM.md)
+closes the coordination part of the first obligation.  For one graph and one
+`Q`, any finite family of selector-survival conditions which individually
+meet their maximal nuisance-rank strata share a nonempty open set of fully
+supported contractions.  On a hypothetical witness, separate maximal-rank
+pure-rank-one points similarly synchronize all seven or all thirty-one rows.
+The maximal-rank hypothesis is sharp: two exact one-parameter modules have
+disjoint selector loci supported only on different nuisance-rank-drop points.
+The theorem does not force any individual survival point.
+
+The
+[`seven-port five-helper tensor Wick theorem`](SEVEN_PORT_FIVE_NONISOTROPIC_HELPER_TENSOR_WICK_SELECTOR_THEOREM.md)
+closes the tensor-word cover on a structural seven-port branch.  Five
+bi-supported helper coefficient vectors select an arbitrary requested direct
+pair coefficient using at most twenty-one, six, or one four-port coefficient
+rows according to the endpoint-zero pattern.  One nonisotropic coefficient
+per port therefore recovers all `21*9=189` direct pair coefficients from the
+thirty-five attached `K4` tensors.  Pair diagonality, one rank-two pair
+response, and no isolated response port give an observable sufficient entry
+criterion.  Legal same-`Q` attachment of those thirty-five tensors remains an
+input.
+
+The
+[`simultaneous swallowed-pure physical control`](FOUR_ROOT_SIMULTANEOUS_SWALLOWED_PURE_NONZERO_RESPONSE_PHYSICAL_CONTROL_THEOREM.md)
+shows why individual survival still requires the full mixed equations.  One
+exact maximum-root, triple-blocker, locally concise four-root graph has pure
+coefficients one, zero Hamming-one shell, and all seven physical responses
+nonzero, yet all twenty-one active pure classes lie in their complete
+nuisance spaces.  A displayed mixed ten-mode coefficient equals one, so the
+control is not a witness.  Thus all of those incidence, concision, and
+nonvanishing hypotheses still do not exclude simultaneous `q_S=0`.
+
+Finally, the
+[`full tensor h-zero Z-fibre and two-vertex-cover theorem`](TWO_VERTEX_COVER_ALL_DEPTH_H_ZERO_RESPONSE_FIBRE_THEOREM.md)
+classifies the complete deeper-response fibre.  For fixed `K`, the affine
+fibre of the entire residual-present `h=0` tensor `Z` tower is exactly
+`B+ker(mu_K:A_2->A_4)`: equality at the full tensor four-port layer already
+forces equality at every deeper `Z` layer and every principal subwindow.  A
+single-edge direction lies in that kernel exactly when its endpoints meet
+every nonzero residual-channel block; a displayed multi-edge kernel shows
+that the full fibre is larger than the union of those lines.  Exact
+nonisolated `K_(5,2)` and star controls live on the diagonal-rank-at-most-one
+branch.  Their residual-absent `M` towers change, so these are not paired
+`(M,Z)` fibres, same-graph ambiguities, or witnesses.  Scalar-word kernels
+need not survive tensor polarization, but a genuine full-tensor `z4` kernel
+cannot be repaired by deeper same-`Q` `Z` rows.
+
+The four successor results and their exact scope are covered by the
+[`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
+The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
 The companion
