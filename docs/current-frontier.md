@@ -197,6 +197,10 @@ flowchart TD
   GLD6["Six-port physical Wick selectors<br/>PROVED two-active supply / depth-six detector"]
   GLD7["Fixed-Q target quotient<br/>PROVED rank-one trichotomy / conditional attachment"]
   GLD8["Global square-free Wick map<br/>PROVED support-union classification / common rows"]
+  GLD9["Common contraction synchronization<br/>PROVED maximal-rank open intersection"]
+  GLD10["Seven-port tensor Wick cover<br/>PROVED five-helper 189-coordinate supply"]
+  GLD11["Simultaneous swallowed-pure control<br/>PROVED physical sharpness / mixed exclusion"]
+  GLD12["Full tensor h=0 Z fibre<br/>PROVED z4 closure / two-vertex-cover boundary"]
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
@@ -432,13 +436,24 @@ flowchart TD
   GLD5 -->|full witness target quotient| GLD7
   GLD7 -->|seven rank-one classes attach D/T| GLD3
   GLD7 -->|31 rank-one classes attach z2/z4/z6| GLD6
+  GLD7 -->|maximal-rank common contraction| GLD9
+  GLD9 -->|common seven selectors| GLD3
+  GLD9 -->|common 31 selectors| GLD6
   GLD3 -->|h=0 pair/four response identity| GLD6
   GLD4 -->|all-subwindow and deeper-response refinement| GLD6
   GLD6 -->|global square-free common-row refinement| GLD8
+  GLD8 -->|five-helper tensor word cover| GLD10
+  GLD7 -->|simultaneous swallowed-pure sharpness| GLD11
+  GLD6 -->|full tensor four-port closure| GLD12
+  GLD8 -->|all-depth scalar classification| GLD12
   GLD3 -->|constant synchronized window and three-activity supply open| GL
   GLD4 -->|target attachment / sparse syzygy / deeper depth open| GL
   GLD7 -->|pure survival / response nonvanishing / activity open| GL
   GLD8 -->|row attachment / word cover / depth-six and permanent open| GL
+  GLD9 -->|individual maximal-rank survival / activity open| GL
+  GLD10 -->|35-row attachment / helper forcing / permanent open| GL
+  GLD11 -->|full mixed target exclusion still required| GL
+  GLD12 -->|witness integration / paired M,Z / permanent open| GL
   BO1 -->|bounded witness-locus certificate still open| GL
   G0 -. route boundary .-> C2
 ```
@@ -609,6 +624,10 @@ flowchart TD
 | `GLD6` | On one physical same-`Q` `h=0` response, every scalar six-port coefficient word has a `15 x 15` Wick map from direct pairs to the fifteen four-port rows.  Its physical rank-two determinant is explicit; `5+1` singular words still have ten-row cross-pair selectors, and overlapping two-shore unions of at least seven ports are coordinatewise injective.  On the fully two-active nonvanishing diagonal line locus, polarization over all fifteen `K_4` subwindows reconstructs every coefficient of every direct pair block, including inactive coefficients.  Target-diagonal four-port rows then force `B^0=cK^0`, `B^1=-cK^1`; one nonzero pure four-port row forces an explicit nonzero mixed `2+4` depth-six row.  This is a **proved conditional all-subwindow supply and deeper-response detector**, with legal attachment of every used `z_2,z_4,z_6` row, the tensor-valued witness singular locus, and permanent extraction still open. | [Six-port physical Wick selector](../claims/arbitrary-order/SIX_PORT_PHYSICAL_WICK_SELECTOR_TWO_ACTIVE_ALL_SUBWINDOW_AND_DEEPER_RESPONSE_THEOREM.md), [hostile review](audits/CONSTANT_TARGET_MODULE_AND_SIX_PORT_WICK_REVIEW_2026-08-17.md) |
 | `GLD7` | Quotienting the full fixed-`Q` hypothetical-witness equation by all `GLD5` nuisance slices leaves one decomposable tensor.  Hence the active pure GHZ classes have quotient rank at most one.  Rank at least two is an exact target-incidence obstruction; rank one forces both the desired quotient class and a nonzero physical response, so the legal constant selector exists; rank zero is the swallowed-pure branch, and under a nonzero response it is exactly selector failure.  The identical module argument applies conditionally to the fifteen pair, fifteen four-port, and one six-port rows of a six-root/six-port chart.  This is a **proved witness-target rank-one trichotomy and conditional attachment theorem**, not proof that all seven or all thirty-one pure ranks equal one, and not a coefficient-pure syzygy. | [Fixed-Q target quotient rank-one trichotomy](../claims/arbitrary-order/FIXED_Q_FULL_MODULE_TARGET_QUOTIENT_RANK_ONE_PURE_SURVIVAL_AND_SIX_PORT_ATTACHMENT_TRICHOTOMY_THEOREM.md), [hostile review](audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md) |
 | `GLD8` | For one scalar physical rank-two channel on `n>=7` ports, the aggregate pair-to-four-row Wick map is multiplication by two linear forms in the square-free algebra.  It is injective exactly when both factor supports have size at least five and their union has size at least seven, or the union has size six and the `GLD6` discriminant is nonzero.  A five-port union has exact kernel dimension five.  Full scalar edge support forces injectivity.  With one full factor and one five-support factor, every pair has a selector on at most twenty-one rows of one seven-set even though all five principal six-window determinants through the two zero ports vanish.  This is a **proved exhaustive scalar support-union classification and bounded common-row selector**, downstream of legal row attachment and not a tensor-word cover or permanent restriction. | [Global square-free Wick classification](../claims/arbitrary-order/GLOBAL_SQUARE_FREE_PHYSICAL_WICK_SUPPORT_UNION_CLASSIFICATION_AND_COMMON_ROW_SELECTOR_THEOREM.md), [hostile review](audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md) |
+| `GLD9` | For one fixed graph and residual pair `Q`, let the fully supported residual contraction vary on one irreducible torus.  If every member of a finite selector family survives at a point where its complete nuisance matrix has maximal rank, exact nuisance and augmented minors define nonempty principal opens whose finite intersection supplies one common contraction with all selector identities.  On a hypothetical witness, adding one nonzero response coordinate at each such point similarly synchronizes all seven or all thirty-one rank-one attachments.  Two exact one-parameter modules have disjoint survival loci confined to different rank-drop points, so the maximal-rank hypothesis is sharp.  This is a **proved common-contraction synchronization theorem**, not proof that any individual maximal-rank survival point exists on every witness. | [Maximal-nuisance-rank common contraction](../claims/arbitrary-order/FIXED_Q_MAXIMAL_NUISANCE_RANK_COMMON_CONTRACTION_SYNCHRONIZATION_THEOREM.md), [hostile review](audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md) |
+| `GLD10` | On one fixed physical same-`Q`, `h=0` seven-port response, five bi-supported helper coefficient vectors select any requested direct-pair tensor coefficient from at most twenty-one, six, or one attached four-port coefficient rows according to whether zero, one, or two endpoint vectors vanish.  One helper coefficient at every port therefore reconstructs all `21*9=189` direct-pair coefficients from the thirty-five `K_4` tensors.  Pair diagonality, one rank-two diagonal pair response, and no isolated response port are an exact observable sufficient entry condition.  Six-port `3+3` and seven-port five-support controls show that four helpers and target diagonality alone do not suffice.  This is a **proved full tensor word cover on the five-helper stratum**, with legal attachment of all thirty-five same-`Q` `z_4` tensors still an input. | [Seven-port five-helper tensor Wick selector](../claims/arbitrary-order/SEVEN_PORT_FIVE_NONISOTROPIC_HELPER_TENSOR_WICK_SELECTOR_THEOREM.md), [hostile review](audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md) |
+| `GLD11` | One exact four-root maximum-root graph has triple blockers at all six outside modes, pure coefficients one, zero Hamming-one shell, local concision, and all seven physical responses nonzero, yet every one of the twenty-one active pure target classes lies in its complete nuisance space, so all seven quotient ranks are zero.  A displayed mixed ten-mode coefficient equals one, hence the control is not a GHZ witness.  This is a **proved simultaneous swallowed-pure physical graph-side sharpness theorem**: the full mixed target equations are load-bearing, and the control is neither a witness-locus point nor a counterexample. | [Simultaneous swallowed-pure physical control](../claims/arbitrary-order/FOUR_ROOT_SIMULTANEOUS_SWALLOWED_PURE_NONZERO_RESPONSE_PHYSICAL_CONTROL_THEOREM.md), [hostile review](audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md) |
+| `GLD12` | For fixed `K` in the complete labelled square-free tensor algebra at `h=0`, the entire residual-present `Z` fibre through `B` is exactly `B+ker(mu_K:A_2->A_4)`.  Hence equality of the full tensor four-port layer is equivalent to equality at every deeper `Z` layer and every principal subwindow.  A one-edge tensor direction lies in the kernel exactly when its endpoints cover the whole-block support graph; a genuine multi-edge cancellation shows the full kernel is larger.  Exact nonisolated `K_(5,2)` and star controls remain invisible at every `Z` depth.  This is a **proved full-tensor four-port closure and all-depth `Z`-fibre boundary**, not paired `(M,Z)` agreement, same-graph ambiguity, witness integration, or permanent extraction. | [Full tensor h-zero Z fibre](../claims/arbitrary-order/TWO_VERTEX_COVER_ALL_DEPTH_H_ZERO_RESPONSE_FIBRE_THEOREM.md), [hostile review](audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md) |
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
@@ -845,6 +864,16 @@ flowchart TD
 | `GLD6` | global common-row refinement | `GLD8` | Square-free factorization classifies the complete scalar pair-to-four-row map by the two residual support sets.  A seven-port common-row selector can exist even when every principal six-window through the named pair is singular. |
 | `GLD7` | remaining quotient-locus obligation | `GL` | Force active pure rank one and the required response nonvanishing for every relevant row, or exclude the swallowed-pure branch.  A rank-one pure quotient supplies attachment but not a coefficient-pure mixed syzygy. |
 | `GLD8` | remaining attachment and tensor-cover obligation | `GL` | Attach the required same-`Q` `z_2,z_4,z_6` rows, prove a coefficient-word support cover of every needed tensor entry, force the nonzero pure/activity hypotheses for the depth-six detector, and separately supply any weighted-diagonal permanent bridge. |
+| `GLD7` | maximal-rank common-contraction refinement | `GLD9` | For a finite selector family on one graph and one `Q`, maximal nuisance-rank survival defines nonempty principal opens whose intersection supplies one fully supported common contraction.  On a witness, response nonvanishing must be included separately to synchronize quotient rank one. |
+| `GLD9` | conditional common seven-row attachment | `GLD3` | Seven individually witnessed maximal-rank rank-one points synchronize to one contraction and then supply the exact six `D_uv` tensors and `T`.  The theorem does not force those individual points or three-colour activity. |
+| `GLD9` | conditional common thirty-one-row attachment | `GLD6` | Thirty-one individually witnessed maximal-rank rank-one points synchronize the six-port `z_2,z_4,z_6` selector package.  This does not extend attachment automatically to seven ports. |
+| `GLD8` | five-helper tensor-word refinement | `GLD10` | On seven ports, five bi-supported helper coefficient vectors reduce every requested direct-pair tensor coefficient to an injective `21`-, `6`-, or `1`-row scalar block.  Varying the coefficient word reconstructs all 189 entries from the same thirty-five attached `z_4` tensors. |
+| `GLD7` | simultaneous swallowed-pure sharpness | `GLD11` | Maximum-root incidence, triple blockers, local concision, pure normalization, the Hamming-one shell, and all seven nonzero responses coexist with quotient rank zero for every target.  A mixed target coefficient excludes the control, so full witness equations remain essential. |
+| `GLD6`, `GLD8` | full tensor four-port closure | `GLD12` | At fixed `K` and `h=0`, equality of the complete tensor `z_4` layer is equivalent to equality of the entire residual-present `Z` tower.  The fibre is `B+ker mu_K`; GLD8 therefore becomes an exhaustive all-depth scalar criterion, while scalar-word kernels need not survive tensor polarization. |
+| `GLD9` | remaining individual-survival obligation | `GL` | Prove that every needed selector survives on its maximal nuisance-rank stratum with nonzero response, or exclude the determinantal exceptional locus.  Common-contraction synchronization alone supplies no individual selector. |
+| `GLD10` | remaining seven-port attachment/helper obligation | `GL` | Legally attach all thirty-five same-`Q` four-port tensors and force the five-helper condition or another exhaustive coefficientwise cover on the witness locus.  Tensor supply alone gives no depth-six detector or permanent restriction. |
+| `GLD11` | remaining swallowed-pure witness-locus obligation | `GL` | Use the full mixed GHZ equations to exclude simultaneous quotient rank zero, or derive a bounded coefficient-pure detector.  The physical graph-side control is explicitly not a witness. |
+| `GLD12` | remaining target and paired-response obligation | `GL` | Full tensor `z_4` kernels cannot be repaired by deeper same-`Q` residual-present `Z` rows.  A positive theorem must attach paired `M,Z` information, exploit target-shape rather than equality, or use the full mixed witness equations; no permanent bridge follows. |
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
@@ -916,6 +945,36 @@ branch. They are not an instruction to begin all of them at once.
    coefficient-word support cover of the full tensor on the witness locus.
    Rational deck recovery and selected `D`/`T` package agreement do not
    satisfy these obligations.
+
+   GLD9 removes one coordination ambiguity from the attachment edge.  If each
+   required selector survives with nonzero response at a maximal
+   nuisance-rank point, all seven or all thirty-one identities can be placed
+   at one fully supported contraction.  The exact disjoint rank-drop control
+   shows why arbitrary individual survival points cannot simply be
+   intersected.  The remaining obligation is therefore individual
+   maximal-rank survival, not common-contraction topology.  GLD11 makes that
+   obligation genuinely witness-theoretic: maximum-root incidence, triple
+   blockers, local concision, pure normalization, the Hamming-one shell, and
+   all seven nonzero responses coexist with simultaneous swallowed-pure rank
+   zero in one physical graph.  Its displayed mixed coefficient excludes it
+   from the target, so only the full mixed equation or another exact target
+   detector can close the residue.
+
+   GLD10 supplies the first complete seven-port tensor word cover on an exact
+   structural branch.  Five bi-supported helpers recover every one of the
+   `189` direct-pair coefficients from the same thirty-five `K4` tensors, and
+   one rank-two diagonal pair plus no isolated response port is an observable
+   sufficient entry condition.  Legal constant same-`Q` attachment of those
+   thirty-five tensors and witness forcing of the helper branch remain open.
+   GLD12 closes the deeper-response question for genuine full-tensor kernels:
+   at fixed `K` and `h=0`, the full residual-present `Z` tower has exactly the
+   affine fibre `B+ker(mu_K:A_2->A_4)`.  Thus a complete tensor `z_4` kernel
+   cannot be repaired by any deeper same-`Q` `Z` row.  This does not contradict
+   GLD6's depth-six mixed target-shape detector, and scalar-word kernels may
+   disappear under tensor polarization.  The surviving routes are legal row
+   attachment plus tensor cover, paired `M,Z` information, or direct use of
+   the full mixed GHZ equations.
+
    At surplus at least four, the residual edge and pair moments remain absent
    from every linear root word, so a continuation must use nonlinear target
    coupling, a cross-window theorem, or the independent balanced complete-deck
