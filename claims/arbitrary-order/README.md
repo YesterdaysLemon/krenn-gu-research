@@ -1923,6 +1923,41 @@ every maximal-root base word with more than two roots have zero pair-selector
 weight, leaving the clean polarized P6 selector as the first conditional
 case rather than a universal mechanism.
 
+The
+[`surplus-two nonzero-pair-companion and physical-rank-drop theorem`](MAXIMAL_ROOT_SURPLUS_TWO_NONZERO_PAIR_COMPANION_AND_PHYSICAL_RANK_DROP_SHARPNESS_THEOREM.md)
+pushes both sides of that boundary onto the maximal-root stratum.  Blocker
+saturation and the corank-six bound force some nonzero raw
+`p_(A,Q)=per H_(A,Q)` in every hypothetical complex surplus-two witness cell.
+The exact supply criterion is independence of the order-two companion
+columns modulo all higher-order columns.  It is not forced by the graph-side
+data: an exact maximum-root, quota-saturated, locally concise `r=3` family has
+all three pure coefficients normalized, the whole Hamming-one target shell
+zero, and a genuine three-torus physical same-state pair fibre.  One higher
+mixed word has coefficient one, so this family is not a witness.  The result
+therefore proves that actual higher mixed GHZ equations are indispensable on
+the rank-drop branch; it does not yet show that those equations eliminate
+every physical fibre.
+
+The
+[`four-root paired-grade constant-selector theorem`](FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md)
+then resolves the first polarized detector shape.  It decomposes the adjacent
+zero-root-edge and one-root-edge grades exactly and proves that direct-nuisance
+cancellation requires the same-index condition
+`l-kappa p in ker mathcal U` when `h!=0`; nonzero complementary pairing
+`Omega=l^T Jp` does not imply it.  Function-field inversion is not target
+purity.  One sufficient legal detector package needs constant synchronized
+selectors for the response, its zero-grade direct companion, and a separate `H_U` anchor or an
+equivalent target-diagonal nuisance identity, together with a legal constant
+root-edge selector satisfying the augmented condition `Omega=l^T Jp!=0`.
+The nonzero raw `p_A` theorem does not supply that augmented condition.  A
+single coefficientwise-clean shore has zero corrected response, while an exact maximum-root/triple-blocker
+control has `Omega!=0`, nonzero corrected response, and both adjacent matching
+grades zero by nested cancellation.  The control has zero pure coefficients
+and is not a witness.  This closes the four-root single-shore,
+coefficientwise-clean one-word route and leaves a precisely typed sufficient
+multi-selector witness-locus obligation; two-selector, multi-shore, and
+aggregate alternatives remain open.
+
 The companion
 [`uniform bounded-window noncharacterization theorem`](UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md)
 shows that its depth qualification is necessary.  Above every fixed support

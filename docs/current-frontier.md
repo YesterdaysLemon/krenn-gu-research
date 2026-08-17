@@ -187,8 +187,10 @@ flowchart TD
   P5["Local P5 component programme<br/>PARTIAL / boundary-limited"]
   P7["Committed local P7 incidence<br/>criterion proved, outcome OPEN"]
   GLS2["Maximal-root surplus-two deck sensor<br/>PROVED conditional supply / rank-drop boundary"]
+  GLS3["Surplus-two raw pair companion / physical fibre<br/>PROVED positive edge and sharp rank-drop"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
+  GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
@@ -326,6 +328,7 @@ flowchart TD
   M1 -->|case r >= 2| M2
   M1 -->|case r = 1| U1
   M2 -->|surplus-two uncontracted sensor| GLS2
+  GLS2 -->|blocker-corank and physical-secant refinement| GLS3
   S1 -->|premise| O1
   M2 -->|premise| O1
   O1 -->|residual refinement| O2
@@ -410,8 +413,12 @@ flowchart TD
   P7 -->|open gluing obligation| GL
   GLS2 -->|Q-observable paired charts| GLQ2
   GLS2 -->|rank drop / higher surplus / target attachment open| GL
+  GLS3 -. r=4 raw p_A nonzero; augmented l^T Jp unforced .-> GLD2
+  GLS3 -->|higher mixed witness-locus equations required| GL
   GLQ2 -->|permanent attachment remains open| GL
-  GLD1 -->|clean target selector not forced| GL
+  GLD1 -->|four-root target-coupling refinement| GLD2
+  GLD1 -->|general / other-root selector and nuisance open| GL
+  GLD2 -->|constant multi-selector supply remains open| GL
   BO1 -->|bounded witness-locus certificate still open| GL
   G0 -. route boundary .-> C2
 ```
@@ -572,8 +579,10 @@ flowchart TD
 | `P5` | Local `P5 -> Delta_3` component programme: **partial, generic and boundary-limited** | [P5 package index](../claims/p5/README.md) and [obligation ledger](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) |
 | `P7` | One committed legal sensor/incidence pullback: criterion **proved**, algebra outcome **open** | [Committed P7 criterion](../claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md) |
 | `GLS2` | In a maximal-root surplus-two cell, the full uncontracted root tensor contains every nonempty even principal hafnian of the same outside graph.  Injectivity of its `2^(r+1)-1`-column companion sensor reconstructs the complete deck from the GHZ target; kernel projection gives the exact weaker necessary-and-sufficient criterion for linear identification of one fixed residual pair, and sufficient criteria for physical paired-deck or all-pair-block supply.  Failure of the criterion is only linear-sensor nonidentifiability, not a second physical deck.  An explicit maximum-root triple-blocker chart has full rank, so rank drop is a proper ambient determinantal boundary, but observability is not forced on the witness locus.  At surplus at least four, the residual edge and pair moments are absent from every linear root-word selector.  This is **proved conditional Universal Supply and a sharp higher-surplus depth boundary**, not permanent extraction or witness exclusion. | [Surplus-two complete-deck sensor](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_COMPLETE_DECK_SENSOR_AND_HIGHER_SURPLUS_DEPTH_BOUNDARY_THEOREM.md), [hostile review](audits/UNIVERSAL_SUPPLY_AND_TARGET_COUPLED_DETECTION_REVIEW_2026-08-16.md) |
+| `GLS3` | In every blocker-saturated maximum-root surplus-two hypothetical complex-witness cell, the corank-six incidence bound forces some nonzero raw pair companion `p_(A,Q)=per H_(A,Q)`.  This does not force the augmented four-root detector weight `l^T Jp`.  Pair-coordinate supply is exactly independence of the order-two companion columns modulo every higher-order column.  A maximum-root, quota-saturated, locally concise `r=3` family with normalized pure coefficients and zero Hamming-one shell nevertheless has a three-torus physical same-state pair fibre and fails every fixed-`Q` criterion; one displayed higher mixed coefficient excludes the whole family.  This is a **proved positive raw-companion edge and physical rank-drop sharpness theorem**, not universal paired-window supply or a witness. | [Nonzero pair companion and physical rank-drop sharpness](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_NONZERO_PAIR_COMPANION_AND_PHYSICAL_RANK_DROP_SHARPNESS_THEOREM.md), [hostile review](audits/SURPLUS_TWO_RANK_DROP_AND_FOUR_ROOT_SELECTOR_REVIEW_2026-08-16.md) |
 | `GLQ2` | For fixed named residual contractions, paired block-polarized `q=2` response charts with three mutually cross-observed rank-two port groups have one unique `O(J)` overlap transition.  A connected finite chart graph glues one residual frame exactly when its cycle holonomies are trivial.  Two groups retain a full `GL_2`/contragredient ambiguity, and an exact three-chart physical-response counteratlas has nontrivial rational holonomy.  This is **proved conditional descent and sharp route boundary**: `GLS2` now supplies the paired data on its observable surplus-two branch, while identifying rank, the rank-drop and higher-surplus branches, and weighted-diagonal permanent attachment remain open. | [Two-residual response-atlas theorem](../claims/arbitrary-order/TWO_RESIDUAL_RESPONSE_ATLAS_IDENTIFYING_OVERLAP_AND_HOLONOMY_BOUNDARY_THEOREM.md), [surplus-two supply](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_COMPLETE_DECK_SENSOR_AND_HIGHER_SURPLUS_DEPTH_BOUNDARY_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GLD1` | Every insertion defect of a literal same-graph `q=2` response vanishes by matching edge-pointing, and one graph's global residual frame makes every identifying-atlas holonomy trivial.  A rational physical control has diagonal uncorrected top block but a nonzero mixed corrected entry cancelled by `hB`.  The exact target attachment is `Omega T=Omega Lambda_Q-hY+hN`; a mixed corrected component becomes an explicit GHZ coefficient only for `h=0` or a nonzero coefficient-pure selector with proved nuisance control.  Odd-root selectors and maximal-root base selectors with `r>2` vanish.  This is a **proved detector boundary and conditional target bridge**, not a forced selector. | [Same-graph defect and target-selector boundary](../claims/arbitrary-order/SAME_GRAPH_RESPONSE_DEFECT_VANISHING_AND_TARGET_COUPLED_SELECTOR_BOUNDARY_THEOREM.md), [hostile review](audits/UNIVERSAL_SUPPLY_AND_TARGET_COUPLED_DETECTION_REVIEW_2026-08-16.md) |
+| `GLD2` | At four roots, the zero-root-edge and one-root-edge grades have an exact common-shore decomposition.  For `h!=0`, one zero-grade equation removes the direct nuisance exactly when `l-kappa p` lies in the kernel of the six direct response tensors; nonzero augmented `Omega=l^T Jp` does not imply this alignment and is itself unforced by `GLS3`.  Function-field inversion is not target purity.  One sufficient detector package uses a legal constant `l` with `l^T Jp!=0`, constant synchronized response/direct selectors, and a separate target-pure residual-absent anchor or exact nuisance identity.  This package is not proved minimal.  One coefficientwise-clean shore has trivial corrected response, and a maximum-root triple-blocker control has augmented `Omega!=0`, nonzero corrected response, and both adjacent matching grades zero by nested cancellation.  This is a **proved conditional detector interface and sharp single-shore no-go**, not a witness or forced detector. | [Four-root constant-selector boundary](../claims/arbitrary-order/FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md), [hostile review](audits/SURPLUS_TWO_RANK_DROP_AND_FOUR_ROOT_SELECTOR_REVIEW_2026-08-16.md) |
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
@@ -791,9 +800,12 @@ flowchart TD
 | `P5`, `P7` | open gluing obligation | `GL` | Even complete local exclusions require a theorem connecting every global witness to them. |
 | `M2` | uncontracted surplus-two refinement | `GLS2` | Opening all root slots grades the same outside principal deck by root--root matching number.  At surplus two the target sees every nonempty even label; full companion rank, pair-label observability, or fixed-`Q` observability legally reconstructs the corresponding same-graph data.  At surplus at least four the low `q=2` anchors are absent from all linear root words. |
 | `GLS2` | conditional paired-window supply | `GLQ2` | A `Q`-observable surplus-two sensor reconstructs the full block-polarized residual-absent/present response from one graph.  GLQ2 applies only if the chosen overlaps additionally contain three cross-observed rank-two port groups. |
+| `GLS2` | maximal-root incidence and physical-secant refinement | `GLS3` | The blocker corank bound forces some raw two-residual pair companion to be nonzero, but pair supply is the quotient-column condition.  A rational sensor kernel need not integrate physically; the exact matching-secant equations decide that issue. |
 | `GLS2` | remaining supply and attachment obligation | `GL` | Companion-sensor rank drop on the target locus, every higher-surplus nonlinear/cross-window supply, the three-group overlap condition, and weighted-diagonal attachment remain open.  Ambient full rank does not discard the witness rank-drop branch. |
+| `GLS3` | sharp mixed-equation rank-drop boundary | `GL` | Maximum-root data, exact blocker quotas, local concision, pure normalization, the Hamming-one target shell, and nonzero raw `p_A` do not force pair observability.  The exact physical fibre is excluded by one higher mixed coefficient, so a positive theorem must use the full mixed witness equations or a proved physical quotient. |
 | `GLQ2` | exact conditional descent / boundary | `GL` | Three rank-two cross-observed groups identify one `O(J)` transition and cycle holonomy exactly decides finite-atlas frame descent.  The observable `GLS2` branch now supplies its paired windows, but a glued corrected frame is not yet a weighted diagonal permanent restriction. |
-| `GLD1` | exact detector boundary / conditional bridge | `GL` | Literal same-graph response defects and holonomy vanish identically.  A corrected mixed component reaches the target ideal only through `Omega T=Omega Lambda_Q-hY+hN`; forcing a nonzero coefficient-pure selector and killing or subtracting its nuisance remain open. |
+| `GLD1`, `GLS3` | four-root adjacent-grade refinement | `GLD2` | The raw theorem supplies some `p_A!=0`, not a legal complementary root-edge selector.  Conditional on augmented `l^T Jp!=0`, the polarized selector decomposes into residual-absent, direct, corrected, and one-residual cross sectors.  Augmented nonvanishing supplies neither same-index alignment nor target purity. |
+| `GLD2` | exact sufficient-selector detector boundary | `GL` | For `h!=0`, cross-depth direct cancellation requires `l-kappa p in ker mathcal U`.  One sufficient detector package additionally needs a legal constant `l` with `l^T Jp!=0`, constant synchronized selectors for the response and zero-grade companion, and the residual-absent anchor or an exact target-diagonal nuisance identity.  This package is not proved minimal.  A single coefficientwise-clean shore is trivial, and nested cancellation survives maximum-root triple-blocker controls. |
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
@@ -802,21 +814,32 @@ flowchart TD
 These are positive theorems or exact decisions that would advance a surviving
 branch. They are not an instruction to begin all of them at once.
 
-1. **Maximal-root supply rank drop and target attachment.**  In every
-   surplus-two maximal-root witness, prove that the full root companion sensor
+1. **Maximum-root supply rank drop and target attachment.**  In every
+   surplus-two maximum-root complex witness, prove that the full root
+   companion sensor
    is pair-observable or `Q`-observable for one useful residual pair, or
    intersect its explicit determinantal rank-drop locus with the full mixed
-   GHZ target equations and derive a smaller exhaustive branch.  Once the
-   paired deck is supplied, force three identifying rank-two port groups and
-   a coefficient-pure target selector
-   `Y=Omega U+N` with `Omega!=0` and controlled nuisance.  The exact identity
-   `Omega T=Omega Lambda_Q-hY+hN` then turns a nonzero corrected mixed
-   component into an actual target coefficient.  At surplus at least four,
-   the residual edge and pair moments are absent from every linear root word,
-   so a continuation must use nonlinear target coupling, a cross-window
-   theorem, or the independent balanced complete-deck sensor.  Do not treat a
-   same-graph dual-Wick or holonomy defect as the detector: both vanish
-   identically.
+   GHZ target equations and derive a smaller exhaustive branch.  Some raw
+   `p_(A,Q)!=0` is now forced by blocker saturation, but the exact `r=3`
+   physical fibre shows that maximum-root data, quotas, local concision, pure
+   normalization, and the Hamming-one shell do not force pair observability;
+   actual higher mixed equations are indispensable.  At four roots, the
+   adjacent grades are now decomposed exactly.  For `h!=0`, the direct terms
+   align only if `l-kappa p in ker mathcal U`.  The raw theorem does not force
+   the augmented weight: a legal constant root-edge selector `l` with
+   `l^T Jp!=0` must also be supplied.  One sufficient detector package then
+   needs constant synchronized selectors for the response and zero-grade direct
+   companion plus a separate target-pure `H_U` anchor or exact nuisance
+   identity.  A single coefficientwise-clean shore is trivial, while nested
+   cancellation survives a maximum-root triple-blocker control.  Thus the
+   next positive theorem must force this sufficient augmented multi-selector
+   package from the full mixed witness locus, find a smaller multi-shore or
+   aggregate package, use the separate `h=0` route, or replace it by a proved
+   physical-secant quotient.
+   At surplus at least four, the residual edge and pair moments remain absent
+   from every linear root word, so a continuation must use nonlinear target
+   coupling, a cross-window theorem, or the independent balanced complete-deck
+   sensor.  Same-graph dual-Wick and holonomy defects still vanish identically.
 
 2. **Balanced full-sensor gate failure.** Starting from the exact Cramer
    target residuals, prove that every target-consistent full sensor violates
