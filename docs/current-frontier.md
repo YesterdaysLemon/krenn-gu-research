@@ -201,6 +201,8 @@ flowchart TD
   GLD10["Seven-port tensor Wick cover<br/>PROVED five-helper 189-coordinate supply"]
   GLD11["Simultaneous swallowed-pure control<br/>PROVED physical sharpness / mixed exclusion"]
   GLD12["Full tensor h=0 Z fibre<br/>PROVED z4 closure / two-vertex-cover boundary"]
+  GLD13["Contraction escape / generic absorption<br/>PROVED function-field dichotomy"]
+  GLD14["Paired M2/M4 response closure<br/>PROVED affine incidence / all-depth shape"]
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
@@ -446,6 +448,10 @@ flowchart TD
   GLD7 -->|simultaneous swallowed-pure sharpness| GLD11
   GLD6 -->|full tensor four-port closure| GLD12
   GLD8 -->|all-depth scalar classification| GLD12
+  GLD7 -->|function-field pure-absorption split| GLD13
+  GLD9 -->|generic-rank escape refinement| GLD13
+  GLD13 -->|common seven attachment on escape branch| GLD3
+  GLD12 -->|paired M2/M4 target-shape refinement| GLD14
   GLD3 -->|constant synchronized window and three-activity supply open| GL
   GLD4 -->|target attachment / sparse syzygy / deeper depth open| GL
   GLD7 -->|pure survival / response nonvanishing / activity open| GL
@@ -454,6 +460,8 @@ flowchart TD
   GLD10 -->|35-row attachment / helper forcing / permanent open| GL
   GLD11 -->|full mixed target exclusion still required| GL
   GLD12 -->|witness integration / paired M,Z / permanent open| GL
+  GLD13 -->|generic absorption exclusion / activity / permanent open| GL
+  GLD14 -->|legal M-row attachment / witness integration / permanent open| GL
   BO1 -->|bounded witness-locus certificate still open| GL
   G0 -. route boundary .-> C2
 ```
@@ -628,6 +636,8 @@ flowchart TD
 | `GLD10` | On one fixed physical same-`Q`, `h=0` seven-port response, five bi-supported helper coefficient vectors select any requested direct-pair tensor coefficient from at most twenty-one, six, or one attached four-port coefficient rows according to whether zero, one, or two endpoint vectors vanish.  One helper coefficient at every port therefore reconstructs all `21*9=189` direct-pair coefficients from the thirty-five `K_4` tensors.  Pair diagonality, one rank-two diagonal pair response, and no isolated response port are an exact observable sufficient entry condition.  Six-port `3+3` and seven-port five-support controls show that four helpers and target diagonality alone do not suffice.  This is a **proved full tensor word cover on the five-helper stratum**, with legal attachment of all thirty-five same-`Q` `z_4` tensors still an input. | [Seven-port five-helper tensor Wick selector](../claims/arbitrary-order/SEVEN_PORT_FIVE_NONISOTROPIC_HELPER_TENSOR_WICK_SELECTOR_THEOREM.md), [hostile review](audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md) |
 | `GLD11` | One exact four-root maximum-root graph has triple blockers at all six outside modes, pure coefficients one, zero Hamming-one shell, local concision, and all seven physical responses nonzero, yet every one of the twenty-one active pure target classes lies in its complete nuisance space, so all seven quotient ranks are zero.  A displayed mixed ten-mode coefficient equals one, hence the control is not a GHZ witness.  This is a **proved simultaneous swallowed-pure physical graph-side sharpness theorem**: the full mixed target equations are load-bearing, and the control is neither a witness-locus point nor a counterexample. | [Simultaneous swallowed-pure physical control](../claims/arbitrary-order/FOUR_ROOT_SIMULTANEOUS_SWALLOWED_PURE_NONZERO_RESPONSE_PHYSICAL_CONTROL_THEOREM.md), [hostile review](audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md) |
 | `GLD12` | For fixed `K` in the complete labelled square-free tensor algebra at `h=0`, the entire residual-present `Z` fibre through `B` is exactly `B+ker(mu_K:A_2->A_4)`.  Hence equality of the full tensor four-port layer is equivalent to equality at every deeper `Z` layer and every principal subwindow.  A one-edge tensor direction lies in the kernel exactly when its endpoints cover the whole-block support graph; a genuine multi-edge cancellation shows the full kernel is larger.  Exact nonisolated `K_(5,2)` and star controls remain invisible at every `Z` depth.  This is a **proved full-tensor four-port closure and all-depth `Z`-fibre boundary**, not paired `(M,Z)` agreement, same-graph ambiguity, witness integration, or permanent extraction. | [Full tensor h-zero Z fibre](../claims/arbitrary-order/TWO_VERTEX_COVER_ALL_DEPTH_H_ZERO_RESPONSE_FIBRE_THEOREM.md), [hostile review](audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md) |
+| `GLD13` | For one full uncontracted hypothetical witness, one graph, and one residual pair `Q`, extend the seven complete nuisance modules to the function field of the six-dimensional fully supported contraction torus.  If every generic augmented rank rises, exact nuisance/augmented minors and one nonzero response coordinate per target have a common principal open, yielding one contraction with all seven quotient ranks one and hence the exact `D_uv,T` package.  Otherwise some desired column is generically nuisance-absorbed, and the witness quotient identity forces all three pure columns into the same function-field nuisance image; clearing one denominator supplies four polynomial identities.  Exceptional rank-drop escape may still occur.  This is a **proved common-escape or generic pure-absorption dichotomy**, not exclusion of the bad branch, proof that either geometric behaviour is pointwise exclusive, activity, or permanent extraction. | [Contraction escape / function-field pure absorption](../claims/arbitrary-order/FIXED_Q_CONTRACTION_ESCAPE_OR_FUNCTION_FIELD_PURE_ABSORPTION_DICHOTOMY_THEOREM.md), [hostile review](audits/CONTRACTION_ESCAPE_AND_PAIRED_RESPONSE_CLOSURE_REVIEW_2026-08-17.md) |
+| `GLD14` | On a fixed full residual-present `Z` fibre `B_0+L`, any fixed legally attached linear package of residual-absent pair rows cuts the fibre by the exact empty/affine/unique trichotomy with ambiguity `L intersect ker P`; `dim L` scalar `M_2` rows are sufficient and optimal.  After pair diagonality, all mixed coefficients of `M=exp(B)` vanish at every depth exactly when differently coloured active edge families are cross-intersecting, already certified by the `270` two-colour `M_4` rows (`360` rows including pair diagonality).  A one-pure-colour support decomposition is exhaustive; for the complete-bipartite `K_(3,3)` channel the full ternary kernel has dimensions `16` total, `12` mixed, and `4` pure with an explicit unimodular coordinate package.  This is a **proved paired-response incidence and all-depth mixed-shape boundary**, downstream of legal same-graph same-`Q` `M` attachment and not witness integration or permanent extraction. | [Paired M2/M4 response closure](../claims/arbitrary-order/PAIRED_M2_AFFINE_INCIDENCE_ONE_COLOUR_KERNEL_AND_ALL_DEPTH_MIXED_SHAPE_THEOREM.md), [hostile review](audits/CONTRACTION_ESCAPE_AND_PAIRED_RESPONSE_CLOSURE_REVIEW_2026-08-17.md) |
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
@@ -874,6 +884,11 @@ flowchart TD
 | `GLD10` | remaining seven-port attachment/helper obligation | `GL` | Legally attach all thirty-five same-`Q` four-port tensors and force the five-helper condition or another exhaustive coefficientwise cover on the witness locus.  Tensor supply alone gives no depth-six detector or permanent restriction. |
 | `GLD11` | remaining swallowed-pure witness-locus obligation | `GL` | Use the full mixed GHZ equations to exclude simultaneous quotient rank zero, or derive a bounded coefficient-pure detector.  The physical graph-side control is explicitly not a witness. |
 | `GLD12` | remaining target and paired-response obligation | `GL` | Full tensor `z_4` kernels cannot be repaired by deeper same-`Q` residual-present `Z` rows.  A positive theorem must attach paired `M,Z` information, exploit target-shape rather than equality, or use the full mixed witness equations; no permanent bridge follows. |
+| `GLD7`, `GLD9` | function-field contraction dichotomy | `GLD13` | For a full uncontracted witness with all seven response polynomials nonzero, generic desired survival for every target has one common contraction; failure localizes to a named target whose desired and three pure columns are all absorbed over the contraction function field.  Generic absorption permits exceptional rank-drop escape. |
+| `GLD13` | conditional common seven-row attachment | `GLD3` | The generic-survival branch supplies one common fully supported contraction with all seven rank-one quotient classes and hence the exact six `D_uv` tensors and `T`.  It does not force GLD3 activity. |
+| `GLD12` | paired M2/M4 target-shape refinement | `GLD14` | Fixed legally attached `M_2` rows cut the complete `Z` fibre affinely and optimally.  Pair diagonality plus the finite two-colour `M_4` equations is equivalent to all-depth mixed `M` purity; legal attachment of those rows remains an input. |
+| `GLD13` | remaining generic-absorption obligation | `GL` | Exclude the function-field absorbed branch by the full mixed equations or turn one of its denominator-cleared nuisance identities into a bounded coefficient-pure target contradiction.  Exceptional rank-drop behaviour, response-zero blocks, activity, and permanent attachment remain separate. |
+| `GLD14` | remaining paired-attachment/witness obligation | `GL` | Legally attach a sufficient same-graph same-`Q` package of the selected `M_2,M_4` rows and intersect its radical cross-intersection locus with the full witness equations.  Pure one-colour kernel families show that mixed response shape alone does not remove every `Z` fibre. |
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
@@ -974,6 +989,25 @@ branch. They are not an instruction to begin all of them at once.
    disappear under tensor polarization.  The surviving routes are legal row
    attachment plus tensor cover, paired `M,Z` information, or direct use of
    the full mixed GHZ equations.
+
+   GLD13 now makes the contraction part of the swallowed-pure residue
+   exhaustive at generic rank.  If every desired column survives over the
+   contraction function field, one common principal open supplies all seven
+   rank-one quotient classes.  Otherwise one named target absorbs the desired
+   and all three pure columns over that function field, with four
+   denominator-cleared polynomial nuisance identities.  This does not exclude
+   the absorbed branch, and exceptional rank-drop escape may coexist with it.
+   The next witness-theoretic step is to contradict that exact absorbed branch
+   using the full mixed equations or a bounded coefficient-pure detector.
+
+   GLD14 closes the response-shape part once paired rows are legally attached.
+   Fixed `M_2` rows cut the full `Z` fibre by an optimal affine incidence
+   theorem, while pair diagonality and the two-colour `M_4` rows already decide
+   mixed `M` purity at every depth.  The complete-bipartite one-colour control
+   leaves a four-dimensional pure residue after all mixed rows, so a universal
+   mixed-only detector is impossible on the ambient paired-response locus.
+   Legal same-graph attachment, witness integration, activity, and the
+   weighted-permanent bridge remain open.
 
    At surplus at least four, the residual edge and pair moments remain absent
    from every linear root word, so a continuation must use nonlinear target
