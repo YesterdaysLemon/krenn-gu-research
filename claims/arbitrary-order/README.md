@@ -2021,6 +2021,33 @@ row then forces a displayed nonzero mixed `2+4` depth-six response.  This is
 conditional on legal same-`Q` attachment of every used `z_2,z_4,z_6` row and
 does not exclude the general singular witness locus or imply a permanent.
 
+The
+[`fixed-Q target-quotient rank-one theorem`](FIXED_Q_FULL_MODULE_TARGET_QUOTIENT_RANK_ONE_PURE_SURVIVAL_AND_SIX_PORT_ATTACHMENT_TRICHOTOMY_THEOREM.md)
+now imposes the actual GHZ equation on that module boundary.  After every
+nuisance coefficient slice is quotiented out, the active pure target words
+span at most one dimension.  Rank at least two is an exact target-incidence
+obstruction; rank one forces the desired quotient class and therefore a legal
+constant selector; rank zero is precisely the swallowed-pure residue when the
+physical response is nonzero.  The same trichotomy applies conditionally to
+all fifteen pair, fifteen four-port, and one six-port rows in the six-root
+module.  It does not force any of those thirty-one ranks to be one, and its
+rank-one line does not supply a coefficient-pure mixed syzygy.
+
+The
+[`global square-free physical Wick classification`](GLOBAL_SQUARE_FREE_PHYSICAL_WICK_SUPPORT_UNION_CLASSIFICATION_AND_COMMON_ROW_SELECTOR_THEOREM.md)
+then resolves the scalar common-row singularity for arbitrary port number.
+Writing the physical Wick map as multiplication by two square-free linear
+forms, it is injective exactly when both supports have size at least five and
+their union has size at least seven, or when their union is six and the
+published six-port discriminant is nonzero.  A five-port union has exact
+kernel dimension five.  If one factor is full and the other uses five ports,
+every pair has a selector on at most twenty-one four-port rows in one
+seven-set; for the two zero ports all five relevant six-window determinants
+vanish, so this is a genuine overlapping common-row closure.  Legal row
+attachment and a coefficient-word cover of the full tensor remain open.
+Both successor theorems and their exact scope are covered by the
+[`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
+
 The companion
 [`uniform bounded-window noncharacterization theorem`](UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md)
 shows that its depth qualification is necessary.  Above every fixed support
