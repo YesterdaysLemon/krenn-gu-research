@@ -2159,6 +2159,23 @@ controls show that neither the local six-value hypothesis nor the special
 slope relation can be dropped.  The theorem forces neither input and has no
 permanent consequence.
 
+The
+[`fixed-Q response-visible slope and edge-dependent cancellation theorem`](FIXED_Q_RESPONSE_VISIBLE_OPERATOR_SLOPE_AND_EDGE_DEPENDENT_CANCELLATION_DIVISOR_THEOREM.md)
+then removes the common-pair-slope restriction.  On a hypothetical witness,
+every exact `GLD15` operator line lies in the kernel of the corresponding
+mixed-response map.  A rank-one line is therefore either determined by its
+mixed response coefficients or is genuinely response-invisible and remains
+a full-module datum.  Six independently normalized pair slopes `p_e` and one
+four-port slope `t` satisfy an exact matching-by-matching identity with
+quadratic corrections `gamma_(ef)=p_e p_f-t(p_e+p_f)`.  When all three
+corrections vanish, one three-full complementary pair with both slopes away
+from `t` forces one of eighteen displayed mixed four-port rows.  The theorem
+also gives the exact nonzero-`t` support-divisor / pure-`M`-axis split and
+excludes every common slope on a globally vertex-factorable rank-one channel
+under the same local support condition.  Zero, pure-`Z`, response-invisible,
+noncancellation, and sparse-support branches remain open; no witness
+integration or permanent restriction follows.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2169,6 +2186,8 @@ The GLD16 common-line detector is covered by the
 [`fixed-Q common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_REVIEW_2026-08-17.md).
 The GLD17 unequal-slope detector is covered by the
 [`fixed-Q unequal-slope quadratic-cancellation hostile review`](../../docs/audits/FIXED_Q_UNEQUAL_SLOPE_QUADRATIC_CANCELLATION_REVIEW_2026-08-17.md).
+The GLD18 response-visible and edge-dependent refinement is covered by the
+[`fixed-Q response-visible slope hostile review`](../../docs/audits/FIXED_Q_RESPONSE_VISIBLE_OPERATOR_SLOPE_AND_EDGE_DEPENDENT_CANCELLATION_REVIEW_2026-08-17.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
