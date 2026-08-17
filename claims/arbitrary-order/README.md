@@ -2176,6 +2176,22 @@ under the same local support condition.  Zero, pure-`Z`, response-invisible,
 noncancellation, and sparse-support branches remain open; no witness
 integration or permanent restriction follows.
 
+The
+[`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
+then closes the strongest response-map-zero residue at the level of support.
+If the complete realized mixed-response map is zero for all six pair targets
+and the four-port target, then the raw `B_e,K_e` blocks are diagonal and the
+mixed parts of both `C(B)` and `X(B,K)` vanish.  On each complementary pair,
+twelve ordered `2+2` rows have an exhaustive support classification, while a
+fixed five-row subset detects any pair of three-full selected blocks.  The
+conclusion is slope-free and includes pure coordinate axes: every projective
+pair package lies on all three complementary support divisors.  Using the
+common physical shore factorization, one three-full selected edge moreover
+forces the opposite raw pair response to vanish.  This localizes the complete
+response-map-zero stratum but does not force that stratum, supply a selector,
+exclude its sparse-support locus, integrate a witness, or imply a permanent
+restriction.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2188,6 +2204,8 @@ The GLD17 unequal-slope detector is covered by the
 [`fixed-Q unequal-slope quadratic-cancellation hostile review`](../../docs/audits/FIXED_Q_UNEQUAL_SLOPE_QUADRATIC_CANCELLATION_REVIEW_2026-08-17.md).
 The GLD18 response-visible and edge-dependent refinement is covered by the
 [`fixed-Q response-visible slope hostile review`](../../docs/audits/FIXED_Q_RESPONSE_VISIBLE_OPERATOR_SLOPE_AND_EDGE_DEPENDENT_CANCELLATION_REVIEW_2026-08-17.md).
+The GLD19 response-map-zero support refinement is covered by the
+[`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
