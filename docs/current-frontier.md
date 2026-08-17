@@ -186,7 +186,9 @@ flowchart TD
 
   P5["Local P5 component programme<br/>PARTIAL / boundary-limited"]
   P7["Committed local P7 incidence<br/>criterion proved, outcome OPEN"]
+  GLS2["Maximal-root surplus-two deck sensor<br/>PROVED conditional supply / rank-drop boundary"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
+  GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
@@ -323,6 +325,7 @@ flowchart TD
   G0 -->|universal reduction| M1
   M1 -->|case r >= 2| M2
   M1 -->|case r = 1| U1
+  M2 -->|surplus-two uncontracted sensor| GLS2
   S1 -->|premise| O1
   M2 -->|premise| O1
   O1 -->|residual refinement| O2
@@ -405,7 +408,10 @@ flowchart TD
   PR -->|local specialization only| P7
   P5 -->|open gluing obligation| GL
   P7 -->|open gluing obligation| GL
-  GLQ2 -->|universal supply / permanent attachment / target detector open| GL
+  GLS2 -->|Q-observable paired charts| GLQ2
+  GLS2 -->|rank drop / higher surplus / target attachment open| GL
+  GLQ2 -->|permanent attachment remains open| GL
+  GLD1 -->|clean target selector not forced| GL
   BO1 -->|bounded witness-locus certificate still open| GL
   G0 -. route boundary .-> C2
 ```
@@ -565,7 +571,9 @@ flowchart TD
 | `A3R` | For every allowed edge `f` of a globally least all-bridge pure core and either other colour `d`, the completed complementary shore satisfies `h_d((V-S) union f)=0`.  If supported, it obeys `2|S|<=n+2` and contains a conformally minimal pure relation attached termwise in one mixed target fibre; if `2|S|>n+2`, every response shore is support-unmatchable.  Opposite-colour active neighbour sets across each core edge are nonempty and disjoint, but need not leave `S`; for a co-two exterior with `|S|>=6`, the exterior-neighbour vertices form only an independent set.  In the original colour, either the complement matches or a minimum-crossing portal has every nonempty induced image unmatchable: **proved response/portal reduction, not an exclusion**. | [Least-core complementary-shore response and portal dichotomy](../claims/arbitrary-order/MATRIX_UNIT_LEAST_CORE_COMPLEMENTARY_SHORE_RESPONSE_AND_PORTAL_DICHOTOMY_THEOREM.md) |
 | `P5` | Local `P5 -> Delta_3` component programme: **partial, generic and boundary-limited** | [P5 package index](../claims/p5/README.md) and [obligation ledger](../claims/p5/frontier/P5_DELTA3_OBLIGATION_LEDGER.md) |
 | `P7` | One committed legal sensor/incidence pullback: criterion **proved**, algebra outcome **open** | [Committed P7 criterion](../claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md) |
-| `GLQ2` | For fixed named residual contractions, paired block-polarized `q=2` response charts with three mutually cross-observed rank-two port groups have one unique `O(J)` overlap transition.  A connected finite chart graph glues one residual frame exactly when its cycle holonomies are trivial.  Two groups retain a full `GL_2`/contragredient ambiguity, and an exact three-chart physical-response counteratlas has nontrivial rational holonomy.  This is **proved conditional descent and sharp route boundary**: universal window supply, weighted-diagonal permanent attachment, and conversion of a defect into a mixed target coefficient are all open. | [Two-residual response-atlas theorem](../claims/arbitrary-order/TWO_RESIDUAL_RESPONSE_ATLAS_IDENTIFYING_OVERLAP_AND_HOLONOMY_BOUNDARY_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
+| `GLS2` | In a maximal-root surplus-two cell, the full uncontracted root tensor contains every nonempty even principal hafnian of the same outside graph.  Injectivity of its `2^(r+1)-1`-column companion sensor reconstructs the complete deck from the GHZ target; kernel projection gives the exact weaker necessary-and-sufficient criterion for linear identification of one fixed residual pair, and sufficient criteria for physical paired-deck or all-pair-block supply.  Failure of the criterion is only linear-sensor nonidentifiability, not a second physical deck.  An explicit maximum-root triple-blocker chart has full rank, so rank drop is a proper ambient determinantal boundary, but observability is not forced on the witness locus.  At surplus at least four, the residual edge and pair moments are absent from every linear root-word selector.  This is **proved conditional Universal Supply and a sharp higher-surplus depth boundary**, not permanent extraction or witness exclusion. | [Surplus-two complete-deck sensor](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_COMPLETE_DECK_SENSOR_AND_HIGHER_SURPLUS_DEPTH_BOUNDARY_THEOREM.md), [hostile review](audits/UNIVERSAL_SUPPLY_AND_TARGET_COUPLED_DETECTION_REVIEW_2026-08-16.md) |
+| `GLQ2` | For fixed named residual contractions, paired block-polarized `q=2` response charts with three mutually cross-observed rank-two port groups have one unique `O(J)` overlap transition.  A connected finite chart graph glues one residual frame exactly when its cycle holonomies are trivial.  Two groups retain a full `GL_2`/contragredient ambiguity, and an exact three-chart physical-response counteratlas has nontrivial rational holonomy.  This is **proved conditional descent and sharp route boundary**: `GLS2` now supplies the paired data on its observable surplus-two branch, while identifying rank, the rank-drop and higher-surplus branches, and weighted-diagonal permanent attachment remain open. | [Two-residual response-atlas theorem](../claims/arbitrary-order/TWO_RESIDUAL_RESPONSE_ATLAS_IDENTIFYING_OVERLAP_AND_HOLONOMY_BOUNDARY_THEOREM.md), [surplus-two supply](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_COMPLETE_DECK_SENSOR_AND_HIGHER_SURPLUS_DEPTH_BOUNDARY_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
+| `GLD1` | Every insertion defect of a literal same-graph `q=2` response vanishes by matching edge-pointing, and one graph's global residual frame makes every identifying-atlas holonomy trivial.  A rational physical control has diagonal uncorrected top block but a nonzero mixed corrected entry cancelled by `hB`.  The exact target attachment is `Omega T=Omega Lambda_Q-hY+hN`; a mixed corrected component becomes an explicit GHZ coefficient only for `h=0` or a nonzero coefficient-pure selector with proved nuisance control.  Odd-root selectors and maximal-root base selectors with `r>2` vanish.  This is a **proved detector boundary and conditional target bridge**, not a forced selector. | [Same-graph defect and target-selector boundary](../claims/arbitrary-order/SAME_GRAPH_RESPONSE_DEFECT_VANISHING_AND_TARGET_COUPLED_SELECTOR_BOUNDARY_THEOREM.md), [hostile review](audits/UNIVERSAL_SUPPLY_AND_TARGET_COUPLED_DETECTION_REVIEW_2026-08-16.md) |
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
@@ -781,7 +789,11 @@ flowchart TD
 | `A3R` | boundary obligation | `U7` | The response family does not force any response shore to be supported, any opposite-colour active neighbour to be exterior, or any two-portal pair to be allowed.  Its cancelling mixed-fibre subrelations and finite portal obstructions still require non-direct target-lattice coupling, a unit, or a genuine deeper exit. |
 | `PR` | specialization | `P5`, `P7` | These are two separately developed local lanes. The still-open `r=6` / P6 restriction remains in `PR`, and arbitrary `r>=8` is not reduced to any of these ranks. |
 | `P5`, `P7` | open gluing obligation | `GL` | Even complete local exclusions require a theorem connecting every global witness to them. |
-| `GLQ2` | exact conditional descent / boundary | `GL` | Three rank-two cross-observed groups identify one `O(J)` transition and cycle holonomy exactly decides finite-atlas frame descent.  The maximal-root route supplies only one fixed-surplus layer, not the paired windows assumed here; a glued frame is not yet a weighted diagonal permanent restriction; and a nontrivial holonomy matrix is not a GHZ coefficient. |
+| `M2` | uncontracted surplus-two refinement | `GLS2` | Opening all root slots grades the same outside principal deck by root--root matching number.  At surplus two the target sees every nonempty even label; full companion rank, pair-label observability, or fixed-`Q` observability legally reconstructs the corresponding same-graph data.  At surplus at least four the low `q=2` anchors are absent from all linear root words. |
+| `GLS2` | conditional paired-window supply | `GLQ2` | A `Q`-observable surplus-two sensor reconstructs the full block-polarized residual-absent/present response from one graph.  GLQ2 applies only if the chosen overlaps additionally contain three cross-observed rank-two port groups. |
+| `GLS2` | remaining supply and attachment obligation | `GL` | Companion-sensor rank drop on the target locus, every higher-surplus nonlinear/cross-window supply, the three-group overlap condition, and weighted-diagonal attachment remain open.  Ambient full rank does not discard the witness rank-drop branch. |
+| `GLQ2` | exact conditional descent / boundary | `GL` | Three rank-two cross-observed groups identify one `O(J)` transition and cycle holonomy exactly decides finite-atlas frame descent.  The observable `GLS2` branch now supplies its paired windows, but a glued corrected frame is not yet a weighted diagonal permanent restriction. |
+| `GLD1` | exact detector boundary / conditional bridge | `GL` | Literal same-graph response defects and holonomy vanish identically.  A corrected mixed component reaches the target ideal only through `Omega T=Omega Lambda_Q-hY+hN`; forcing a nonzero coefficient-pure selector and killing or subtracting its nuisance remain open. |
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
@@ -790,7 +802,23 @@ flowchart TD
 These are positive theorems or exact decisions that would advance a surviving
 branch. They are not an instruction to begin all of them at once.
 
-1. **Balanced full-sensor gate failure.** Starting from the exact Cramer
+1. **Maximal-root supply rank drop and target attachment.**  In every
+   surplus-two maximal-root witness, prove that the full root companion sensor
+   is pair-observable or `Q`-observable for one useful residual pair, or
+   intersect its explicit determinantal rank-drop locus with the full mixed
+   GHZ target equations and derive a smaller exhaustive branch.  Once the
+   paired deck is supplied, force three identifying rank-two port groups and
+   a coefficient-pure target selector
+   `Y=Omega U+N` with `Omega!=0` and controlled nuisance.  The exact identity
+   `Omega T=Omega Lambda_Q-hY+hN` then turns a nonzero corrected mixed
+   component into an actual target coefficient.  At surplus at least four,
+   the residual edge and pair moments are absent from every linear root word,
+   so a continuation must use nonlinear target coupling, a cross-window
+   theorem, or the independent balanced complete-deck sensor.  Do not treat a
+   same-graph dual-Wick or holonomy defect as the detector: both vanish
+   identically.
+
+2. **Balanced full-sensor gate failure.** Starting from the exact Cramer
    target residuals, prove that every target-consistent full sensor violates
    empty normalization, one retained affine-projective target-column-span
    condition, or one higher Euler--hafnian recurrence.  Euler syzygies reduce
@@ -910,7 +938,7 @@ branch. They are not an instruction to begin all of them at once.
    all-balanced rank-drop
    branch.
 
-2. **All-balanced mixed-word exclusion.** Intersect the balanced maximal-minor
+3. **All-balanced mixed-word exclusion.** Intersect the balanced maximal-minor
    ideals with the full mixed GHZ zero equations and prove emptiness, or derive
    a smaller exact branch.  Complete support, invertible blocks, local
    concision, and the normalized pure coefficients are insufficient by the
@@ -940,7 +968,7 @@ branch. They are not an instruction to begin all of them at once.
    and the transverse/nontransverse boundary strata, without assuming their
    codimensions add.
 
-3. **Zero-surplus permanent restrictions.** Every hypothetical restriction
+4. **Zero-surplus permanent restrictions.** Every hypothetical restriction
    lies in the simultaneous co-two product-sensor corank-two locus.  The
    `P_6` equality-five branch is now excluded by the complete based-frame
    orbit synthesis and adversarial consolidation audit.  Every hypothetical
@@ -956,7 +984,7 @@ branch. They are not an instruction to begin all of them at once.
    are insufficient. The committed P7 sensor and exactly-three-excess support
    normal forms are not exhaustive arbitrary-r theorems.
 
-4. **Active word holonomy and pure-shore cancellation.** Every active
+5. **Active word holonomy and pure-shore cancellation.** Every active
    coordinate has a cofactor-active cross core. Absent the deeper branch,
    bridge normalization either transports activity to a new mixed word with
    the same multiplicities or exposes a pure-shore hafnian that cancels
@@ -1035,7 +1063,7 @@ branch. They are not an instruction to begin all of them at once.
    must therefore control an aggregate port or couple a sparse fan character
    to mixed response or genuine deeper-blocker data.
 
-5. **Remaining larger/unfactorized detector.** The complete aligned
+6. **Remaining larger/unfactorized detector.** The complete aligned
    projectively constant `q=0,r=5` cell is now conditionally detected; the
    lifted physical-row quota removes the apparent four-/five-`B` zero before
    the remaining `R/B` words are closed.  Treat `q=0,r>=6` or `q>=1`, or prove
@@ -1043,7 +1071,7 @@ branch. They are not an instruction to begin all of them at once.
    produce an exact nonzero selector or otherwise exclude the unfactorized
    high-surplus cell.  The existing cell detectors do not exclude a witness.
 
-6. **All-bridge localized cancellations and bipartite least cores.** Every
+7. **All-bridge localized cancellations and bipartite least cores.** Every
    saturated degree now has an active-deck-localized supported pure
    cancellation.  Exclude the inactive-edge-complement form using its two
    inactive common-cofactor-zero repairs, or prove simultaneous control of
@@ -1091,7 +1119,7 @@ branch. They are not an instruction to begin all of them at once.
    rank-two structure are all-degree.  The deeper-blocker branch remains
    separate.
 
-7. **Component 22 remaining finite-`D23` residual.** The whole generic
+8. **Component 22 remaining finite-`D23` residual.** The whole generic
    `H=f2=f8=0` cell over `Q(A,R,D)` is now empty: one maximal minor forces
    `h0`, and two further minors have incompatible linear `h3` factors.  This
    includes both `2h3+s=0` and its isolated complement, but it does not close
@@ -1103,14 +1131,14 @@ branch. They are not an instruction to begin all of them at once.
    the [finite-`D01` owner](../claims/p5/h22/unequal-complement-common-kernel-component-d01-pair-orbit/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D01_PAIR_ORBIT_OBSTRUCTION.md),
    and the [two-minor partial owner](../claims/p5/h22/unequal-complement-common-kernel-component-d23-h1-nonzero-two-minor-factor-cover-partial/P5_H22_UNEQUAL_COMPLEMENT_COMMON_KERNEL_COMPONENT_D23_H1_NONZERO_TWO_MINOR_FACTOR_COVER_PARTIAL_OBSTRUCTION.md).
 
-8. **P4-B3 semantic/composition audit.** Audit the nonzero-pure-factor, symmetry,
+9. **P4-B3 semantic/composition audit.** Audit the nonzero-pure-factor, symmetry,
    inclusion, and lower-pair quantifiers in the
    [P4 all-pair-rank reduction](../claims/p4/classifications/P4_ALL_PAIR_RANK_EXCEPTIONAL_GRAPH_REDUCTION.md).
    The owner asserts a 25-component exhaustiveness theorem; the independent
    acceptance of those load-bearing quantifiers remains open. Script replay is
    not a substitute for that review.
 
-9. **Committed P7 calculation.** Materialize the residual equations, pull back
+10. **Committed P7 calculation.** Materialize the residual equations, pull back
    the factor equations, justify properness/finiteness where used, and decide
    `A_good`; proceed to `A_gen^star` only if the criterion requires it. A result
    on this fixed sensor would still need `GL`.

@@ -1878,6 +1878,23 @@ kill every sheet, control free rank at least two, handle an aggregate cycle
 fibre, or leave through the pure/deeper topology.
 
 The
+[`maximal-root surplus-two complete-deck sensor theorem`](MAXIMAL_ROOT_SURPLUS_TWO_COMPLETE_DECK_SENSOR_AND_HIGHER_SURPLUS_DEPTH_BOUNDARY_THEOREM.md)
+opens the first target-derived Universal Supply branch tied directly to the
+maximal-root reduction.  Leaving every root slot open grades the outside
+principal hafnian deck by root--root matching number.  At surplus two all
+nonempty even deck members occur, and an explicit maximum-root triple-blocker
+chart has the full `2^(r+1)-1` companion rank.  On the corresponding
+determinantal open, the uncontracted GHZ target uniquely reconstructs the
+complete same-graph deck; a kernel-projection criterion is necessary and
+sufficient for linear identifiability of one fixed residual pair, and hence
+sufficient for physical paired-deck supply.  Its failure is not a second
+physical deck.  At surplus at least four, the
+residual edge and every pair moment lie below the root-word depth floor and
+cannot be supplied by a linear root selector.  Full rank is not forced on the
+witness locus, and complete-deck recovery alone neither makes the corrected
+channel diagonal nor extracts a permanent restriction.
+
+The
 [`two-residual response-atlas theorem`](TWO_RESIDUAL_RESPONSE_ATLAS_IDENTIFYING_OVERLAP_AND_HOLONOMY_BOUNDARY_THEOREM.md)
 provides a first exact conditional descent statement inside the open GL
 node.  For fixed named residual contractions, three mutually cross-observed
@@ -1890,6 +1907,21 @@ does not prove that one witness supplies the paired charts, attach the glued
 frame to a weighted diagonal permanent restriction, or convert a holonomy
 defect into a mixed target coefficient.  It therefore refines GL without
 closing it.
+
+The
+[`same-graph response-defect and target-selector boundary`](SAME_GRAPH_RESPONSE_DEFECT_VANISHING_AND_TARGET_COUPLED_SELECTOR_BOUNDARY_THEOREM.md)
+shows why the remaining detector edge cannot be phrased as failure of a
+physical response atlas.  Every same-graph insertion defect vanishes by an
+edge-pointing identity, and one graph's global residual frame makes every
+identifying holonomy trivial.  A diagonal top block can nevertheless hide a
+mixed corrected channel by exact cancellation with the direct `hB` term.
+The surviving target attachment is the explicit identity
+`Omega T=Omega Lambda_Q-hY+hN`: a mixed corrected component becomes an
+actual mixed GHZ coefficient only with `h=0`, or with a nonzero
+coefficient-pure selector and proved nuisance control.  Odd root counts and
+every maximal-root base word with more than two roots have zero pair-selector
+weight, leaving the clean polarized P6 selector as the first conditional
+case rather than a universal mechanism.
 
 The companion
 [`uniform bounded-window noncharacterization theorem`](UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md)
