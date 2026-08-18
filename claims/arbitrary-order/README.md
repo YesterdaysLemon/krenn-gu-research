@@ -2208,6 +2208,23 @@ to three simultaneous complementary pure-absorption targets.  The
 legal operator supply, witness integration, and every permanent consequence
 remain open.
 
+The
+[`fixed-Q response-map-zero dead-colour h-gate theorem`](FIXED_Q_RESPONSE_MAP_ZERO_DEAD_COLOUR_H_GATE_AND_DENSE_COMPANION_ABSORPTION_THEOREM.md)
+then uses the complete mixed GHZ equation on an exhaustive part of that
+`F=empty` cell.  If exactly two corrected colours are active and one support
+clique is `K_4`, the missing colour has zero contracted shores and every raw
+direct block is confined to the complete colour.  These are exactly `63`
+corrected-support types and `1347` labelled raw support masks.  The all-missing
+four-port coefficient has only the residual-pair deck term, so a hypothetical
+witness forces `h!=0` and a prescribed nonzero pure `G_U(a^4)` root slice;
+the entire `h=0` divisor is excluded.  In the dense `K_4/K_4` cell, twelve
+paired mixed packages further force one desired companion column into each
+explicit nine-column nuisance image.  For `h!=0`, the abstract assignment
+`G_U=J_Q/h` shows that same-graph principal-permanent companion integrability,
+not the fixed-`Q` linear equation alone, remains the exact obstruction.  The
+theorem does not exclude the surviving branch, force a legal operator row, or
+imply a permanent restriction.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2224,6 +2241,8 @@ The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the
 [`fixed-Q response-map-zero global physical-support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_GLOBAL_PHYSICAL_CHANNEL_SUPPORT_REVIEW_2026-08-18.md).
+The GLD21 dead-colour scalar gate is covered by the
+[`fixed-Q response-map-zero dead-colour hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_DEAD_COLOUR_H_GATE_AND_DENSE_COMPANION_ABSORPTION_REVIEW_2026-08-18.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
