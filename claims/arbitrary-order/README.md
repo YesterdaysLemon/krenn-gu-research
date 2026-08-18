@@ -2192,6 +2192,22 @@ response-map-zero stratum but does not force that stratum, supply a selector,
 exclude its sparse-support locus, integrate a witness, or imply a permanent
 restriction.
 
+The
+[`fixed-Q response-map-zero global physical-channel support theorem`](FIXED_Q_RESPONSE_MAP_ZERO_GLOBAL_PHYSICAL_CHANNEL_SUPPORT_AND_COMPLEMENTARY_PURE_ABSORPTION_THEOREM.md)
+then imposes the common two-dimensional physical shores simultaneously across
+all six diagonal corrected blocks.  At most two corrected colours occur.  A
+one-colour support is any nonempty four-vertex graph except `P_4`, while a
+two-colour support consists of two clique graphs.  This gives exactly `517`
+corrected support types and `467715` compatible labelled raw support patterns.  Edges
+whose raw `B/K` support union is all three colours form one of the five
+intersecting `K_4` families and force their opposite raw pair responses to
+zero.  On a full hypothetical witness, every such opposite target has
+`GLD15` pure quotient rank zero; maximal stars and triangles therefore reduce
+to three simultaneous complementary pure-absorption targets.  The
+`254995`-pattern cell with no full-capable edge, the pure-absorption cells,
+legal operator supply, witness integration, and every permanent consequence
+remain open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2206,6 +2222,8 @@ The GLD18 response-visible and edge-dependent refinement is covered by the
 [`fixed-Q response-visible slope hostile review`](../../docs/audits/FIXED_Q_RESPONSE_VISIBLE_OPERATOR_SLOPE_AND_EDGE_DEPENDENT_CANCELLATION_REVIEW_2026-08-17.md).
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
+The GLD20 global common-shore refinement is covered by the
+[`fixed-Q response-map-zero global physical-support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_GLOBAL_PHYSICAL_CHANNEL_SUPPORT_REVIEW_2026-08-18.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
