@@ -1,8 +1,8 @@
 # Maximum-root surplus-two supply/target node: internal proof-DAG plan
 
 Date: 2026-08-20
-Programme branch: `codex/kg-supply-target-node-20260820`
-Base: `origin/main` at `a16315f145324b503c3ec0ccd017ee7562f9626d`
+Programme branch: `codex/kg-target-attachment-failure-module-20260820`
+Base: `origin/main` at `defd3c2badb36c784429d9bc5512e357defcd743`
 Global Krenn--Gu status: **UNRESOLVED**
 
 This is an internal research plan, not a theorem, reduction, or claim of case
@@ -66,7 +66,10 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 |---|---|---|
 | GLS2 | Reconstructs the complete order-two sensor once the relevant quotient projection is injective. | Does not force pair-observability or any fixed-\(Q\) observability. |
 | GLS3 | Forces some raw \(p(A,Q)\neq0\).  Gives physical sharpness families for the coarse source constraints. | By itself it neither aligns that raw incidence with a surviving pair column nor supplies a target selector. |
-| Current same-pair tranche | The complete contracted mixed target forces one same \(Q\) with a nonzero physical pair block, individual order-two quotient survival, and nonzero raw \(p(A,Q)\). | It proves neither collective pair-observability nor full fixed-\(Q\) observability, and it supplies no legal GLD response/target selector. |
+| GLS4 | The complete contracted mixed target forces one same \(Q\) with a nonzero physical pair block, individual order-two quotient survival, and nonzero raw \(p(A,Q)\). | It proves neither collective pair-observability nor full fixed-\(Q\) observability, and it supplies no legal GLD response/target selector. |
+| Reviewed failure-module tranche | Universal pointwise target failure is exactly equality of every geometric radical Fitting profile; response-gated failure and common attachment have exact containment/incidence formulations. Function-field sensor failure has a separate finite rank-stratum formula, and a decomposable-retraction class measures constant-selector legality. | An exact maximal-rank abstract module shows that unrestricted observability, pure diagonality, and nonzero response do not force a legal selector. A physical companion/mixed identity is still required. |
+| Reviewed common-contraction/alignment tranche | The GLS4 pair has one fully supported contraction with \(h\ne0\) and raw \(p\ne0\) simultaneously. Ambient GLD2 alignment failure is exactly \(p^{\mathsf T}Jp=0\) and \(Jp\in\operatorname{im}U^*\); the legal-subspace version is an exact annihilator incidence. | It does not create the legal-weight subspace, response, synchronization, nuisance, or anchor hypotheses. |
+| Reviewed four-root source trichotomy | For \(r=4\), every source point lies in \(\{O,C\}\times\{R,E,A\}\): observable pair block or quotient circuit, crossed with response zero, common seven-target escape, or function-field pure absorption. Both E leaves reach the required individual-supply plus GLD5/7 interface; O adds stronger pair observability. | The four R/A leaves are not excluded; absorption divisors may escape; root order three and at least five are not source-integrated. |
 | GLD7 | On a fixed target quotient, rank \(q\ge2\) contradicts GHZ and rank \(q=1\) forces attachment. | Rank zero is swallowed pure; response-zero leaves the target class undecided. |
 | GLD9 | Synchronizes a common contraction on the maximal-rank survival stratum. | Does not create survival, and does not cover lower-rank/exceptional contractions. |
 | GLD11 | Gives exact physical simultaneous swallowed-pure/nonzero-response controls; particular higher mixed coefficients exclude those controls. | It is not a classification of all selector failures or all supports. |
@@ -91,7 +94,7 @@ support divisors; and coexistence of all required selectors on the same graph.
 ## 3. Branches already closed (conditional scopes only)
 
 - M1 supplies the maximum-root surplus-two physical source restrictions.  The
-  current same-pair theorem strengthens GLS3: every source point has one pair
+  GLS4 same-pair theorem strengthens GLS3: every source point has one pair
   \(Q\) whose physical pair block and complementary permanent are nonzero,
   whose order-two column survives individually modulo every higher column,
   and whose raw \(p(A,Q)\) is nonzero on a fully supported contraction.
@@ -106,30 +109,48 @@ support divisors; and coexistence of all required selectors on the same graph.
   and three-full subbranches.
 - GLD19--GLD21 and GLD22--GLD62 close only their explicitly declared
   response-zero/support/dense subcells.
+- The reviewed failure-module theorem compresses all pointwise nuisance-rank
+  fibres into exact radical--Fitting profiles, and the common-attachment
+  question into one shared-residual incidence ideal.  This is an exhaustive
+  algebraic encoding, not a physical exclusion.
+- The reviewed common-contraction theorem synchronizes the GLS4 \(h\) and raw
+  \(p\) gates and exactly classifies ambient and legal-subspace augmented
+  alignment.  It does not force the missing legal subspace.
+- The reviewed four-root source theorem proves the exhaustive
+  \(\{O,C\}\times\{R,E,A\}\) cover.  Both E leaves are good for the declared
+  GLD5/GLD7 interface; none of the four R/A leaves is claimed closed.  C is
+  only an obstruction for a stronger downstream observability requirement.
 
 None of these bullets is an exhaustive path from the source witness to the
 target interface.
 
 ## 4. Minimal remaining branches
 
-The all-pairs individual-supply failure branch is now closed: the contracted
+The all-pairs individual-supply failure branch is closed: the contracted
 complete mixed target always produces at least one same pair with individual
 order-two quotient survival and raw incidence.  The first missing edge is to
 attach a complete legal response/target package to at least one such supplied
 pair, or to exclude every attachment failure on the same graph.  If the
 chosen downstream entry needs collective pair-observability or the full
 fixed-\(Q\) coordinate family, those stronger ranks remain part of that edge.
-A support-free proof must cover:
+A support-free proof must now cover:
 
-1. the principal-rank locus, including the GLD13 generic-absorption side;
-2. all nuisance-rank-drop and observability-minor divisors;
-3. response-identically-zero branches;
+1. for root order four, the response-identically-zero leaf R and the
+   pure-absorption leaf A together with every exceptional
+   denominator/rank-drop fibre; both E leaves are already good, while C is
+   separate only if a different downstream entry requires stronger
+   pair-block observability;
+2. all nuisance-rank-drop and observability-minor divisors, now expressible
+   without rank-stratum enumeration by the radical--Fitting/incidence
+   criteria;
+3. response-identically-zero branches outside the already named conditional
+   GLD subcells;
 4. joint selector ranks \(k=0,1,2\), common and unequal slopes, and all response
    visibility alternatives;
 5. the detector's augmented-weight/alignment/anchor failures when that detector
    is the downstream entry;
-6. arbitrary root size \(r\ge3\), without inferring it from an \(r=3\) or
-   \(r=4\) calculation.
+6. root order three and every root order at least five, without inferring
+   them from the four-root cover or from bounded experiments.
 
 The desired structural form is a companion-exchange/hafnian/Pluecker syzygy or
 module identity which, after only legitimate saturation, places a nonzero pure
@@ -139,25 +160,32 @@ be hidden by adding support masks.
 
 ## 5. Dependency order for theorem packages
 
-1. **Same-pair source package (current tranche).**  Use the complete
+1. **Same-pair source package (merged as PR #235).**  Use the complete
    contracted mixed target to align individual order-two quotient survival
    and a raw two-root companion on one physical pair; record why scalar
    complementary permanents alone have no universal elimination identity.
-2. **Failure-module package.**  Give coordinate-free definitions of
+2. **Failure-module/alignment package (reviewed current tranche).**  Give coordinate-free definitions of
    simultaneous observability failure and selector failure; prove equivalence
    to exact kernel-witness/determinantal conditions on the physical deck,
    including a divisor ledger.
-3. **Target exchange-syzygy package.**  Derive a support-free
+   This tranche now supplies the radical--Fitting, projected-kernel,
+   decomposable-retraction, common-contraction, and alignment criteria, plus
+   exact abstract sharpness models.
+3. **Four-root source-integration package (reviewed current tranche).**  Prove
+   an exhaustive source split before any coefficient elimination.  This is now
+   \(\{O,C\}\times\{R,E,A\}\), with both E leaves good and the four R/A
+   leaves open.
+4. **Target exchange-syzygy package.**  Derive a support-free
    companion-exchange or
    target-module identity from those failure conditions, or exhibit and fully
    validate an exact countermodel that disproves the proposed implication.
-4. **Exceptional-fibre package.**  Prove the principal-open identity extends by
+5. **Exceptional-fibre package.**  Prove the principal-open identity extends by
    a denominator-free argument, or exhaust every rank-drop/response-zero
    divisor by a finite **proved** cover and complete mixed contradictions.
-5. **Source-integration package.**  Map every actual maximum-root surplus-two
+6. **Arbitrary-root source-integration package.**  Map every actual maximum-root surplus-two
    witness point to a useful-pair interface leaf or one of the contradicted
    leaves, uniformly in \(r\ge3\).
-6. **Closure audit package.**  Independent no-import replay, hostile
+7. **Closure audit package.**  Independent no-import replay, hostile
    proof-topology and case-cover audit, provenance/dependency records,
    `docs/current-frontier.md` update, full candidate-tree QA, exact-head hosted
    CI, and merged-main replay.
