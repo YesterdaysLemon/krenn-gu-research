@@ -2038,12 +2038,32 @@ coordinate residual factors and, in the two-port case, a forced opposite-sign
 normal form; the four-port response is automatically zero.  Projecting the
 complete six-slot target excludes equal residual colours and forces the
 survivor onto an opposite-colour, pure-third-colour `Pi_Q` locus.  This is an
-exact localization, not an exclusion or attachment theorem.  The
-`det H_Q=0` divisor, the surviving pure-`Pi_Q` locus, every broader
-response-zero branch, and every nonzero-response absorption branch remain
-open.  An exact maximum-root control realizes the localized graph-side data
+exact localization, not an exclusion or attachment theorem; the follow-up
+below excludes its pure-`Pi_Q` survivor.  The `det H_Q=0` divisor, every
+broader response-zero branch, and every nonzero-response absorption branch
+remain open.  An exact maximum-root control realizes the localized graph-side data
 but does not verify GLS4 higher-column quotient survival and is excluded by
 one mixed target coefficient equal to one.
+
+The follow-up
+[four-root pure complementary-permanent survivor exclusion](FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_PURE_COMPLEMENTARY_PERMANENT_SURVIVOR_EXCLUSION_THEOREM.md)
+([hostile review](../../docs/audits/FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_PURE_SURVIVOR_EXCLUSION_REVIEW_2026-08-20.md))
+closes that surviving full-rank literal-zero chart.  It uses the complete
+contracted target at the two residual fibres q0=q1=i and q0=q1=j.
+After the preceding localization, the singleton branch dies in the first
+fibre because one insertion line cannot carry the two pure colours i,k.  In
+the two-port branch the same two alpha-lines occur on both residual shores:
+the first fibre forces them to cover i,k and the second forces them to cover
+j,k.  Two fixed lines cannot meet both requirements because i,j,k are
+distinct.  This is an
+exact characteristic-zero witness-locus exclusion, not a support atlas or
+target-attachment theorem.  The det H_Q=0 divisor, every weaker response-zero
+pattern, every nonzero-response absorption or exceptional fibre, and the
+named downstream package remain open.  The
+[exact 729-coefficient discovery probe](../../docs/history/handoffs/R4_PURE_PI_SURVIVOR_EXACT_PROBE_2026-08-20.md)
+records the bounded relaxed-module experiment that exposed the two-fibre
+certificate; the written quotient argument, rather than the finite probe,
+proves the arbitrary-point statement.
 
 The
 [`four-root paired-grade constant-selector theorem`](FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md)

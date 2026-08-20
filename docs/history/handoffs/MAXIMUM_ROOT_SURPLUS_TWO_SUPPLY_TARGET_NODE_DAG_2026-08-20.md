@@ -1,8 +1,8 @@
 # Maximum-root surplus-two supply/target node: internal proof-DAG plan
 
 Date: 2026-08-20
-Programme branch: `codex/kg-r4-fullrank-response-zero-localization-20260820`
-Base: `origin/main` at `a5ec085a0ce29f4acdd33562de626b76b34ef2f6`
+Programme branch: `codex/kg-r4-pure-pi-survivor-20260820`
+Base: `origin/main` at `df394d387d246d4331359a9ce0f16d7700f724bb`
 Global Krenn--Gu status: **UNRESOLVED**
 
 This is an internal research plan, not a theorem, reduction, or claim of case
@@ -71,7 +71,8 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | Reviewed common-contraction/alignment tranche | The GLS4 pair has one fully supported contraction with \(h\ne0\) and raw \(p\ne0\) simultaneously. Ambient GLD2 alignment failure is exactly \(p^{\mathsf T}Jp=0\) and \(Jp\in\operatorname{im}U^*\); the legal-subspace version is an exact annihilator incidence. | It does not create the legal-weight subspace, response, synchronization, nuisance, or anchor hypotheses. |
 | Reviewed four-root source trichotomy | For \(r=4\), every source point lies in \(\{O,C\}\times\{R,E,A\}\): observable pair block or quotient circuit, crossed with response zero, common seven-target escape, or function-field pure absorption. Both E leaves reach the required individual-supply plus GLD5/7 interface; O adds stronger pair observability. | The four R/A leaves are the open branches for the stronger all-seven GLD3 package, not the exact obstruction to an isolated one-row escape. |
 | Reviewed promoted two-probe one-row reduction | For every \(r\ge3\), re-rooting at the GLS4 probe pair leaves only deck orders \(2r-2,2r\).  One top-minus-two desired coefficient survives the unique top column.  Complete nuisance slicing gives a legal constant-selector criterion, while pure radical--Fitting profiles exactly encode one-row failure at every residual fibre.  For standard \(r=4\), failure must hold for every target and every eligible \(Q\). | It does not force a nonzero response or full-nuisance survival.  One-row escape is not the simultaneous GLD3 package, and the promoted top layers do not match a committed downstream detector for \(r\ge4\). |
-| Reviewed full-rank literal-response-zero localization | At root order four, `det H_Q!=0` plus all six pair responses zero forces every direct port block to zero and a common one- or two-port shore.  Its residual factors are coordinate; the singleton shore is fully monomial, while in the two-port shore at least one local factor is coordinate.  The four-port response then vanishes automatically and the complete contracted target forces opposite residual colours with pure third-colour \(\Pi_Q\). | The determinant divisor and opposite-colour pure-\(\Pi_Q\) locus survive.  This is narrower than GLS7's branch where merely one response is zero, and it does not treat nonzero-response absorption. |
+| Reviewed full-rank literal-response-zero localization | At root order four, `det H_Q!=0` plus all six pair responses zero forces every direct port block to zero and a common one- or two-port shore.  Its residual factors are coordinate; the singleton shore is fully monomial, while in the two-port shore at least one local factor is coordinate.  The four-port response then vanishes automatically and the complete contracted target forces opposite residual colours with pure third-colour \(\Pi_Q\). | Its pure-\(\Pi_Q\) chart is passed to the next exact complete-fibre exclusion.  The determinant divisor survives.  This remains narrower than GLS7's branch where merely one response is zero. |
+| Reviewed full-rank literal-response-zero survivor exclusion | On the localized opposite-colour pure-\(\Pi_Q\) chart, the complete `(i,i)` fibre excludes the singleton shore because one insertion line cannot carry both pure colours.  In the two-port normal form the same two alpha-lines occur on both residual shores, but the `(i,i)` and `(j,j)` fibres require incompatible \(\{i,k\}\) and \(\{j,k\}\) covers. | This excludes the whole `det H_Q!=0` literal all-seven-zero branch.  Focused replay, independent no-import audit, and hostile review pass.  The determinant divisor, weaker response-zero patterns, nonzero-response absorption, and the named downstream package remain open. |
 | GLD7 | On a fixed target quotient, rank \(q\ge2\) contradicts GHZ and rank \(q=1\) forces attachment. | Rank zero is swallowed pure; response-zero leaves the target class undecided. |
 | GLD9 | Synchronizes a common contraction on the maximal-rank survival stratum. | Does not create survival, and does not cover lower-rank/exceptional contractions. |
 | GLD11 | Gives exact physical simultaneous swallowed-pure/nonzero-response controls; particular higher mixed coefficients exclude those controls. | It is not a classification of all selector failures or all supports. |
@@ -131,9 +132,12 @@ support divisors; and coexistence of all required selectors on the same graph.
   downstream detector is claimed.
 - On the root-order-four literal all-seven response-zero branch, the full-rank
   residual edge chart is localized to an opposite-colour pure-\(\Pi_Q\) locus;
-  equal blocker colours are excluded by the complete contracted target.  The
-  surviving pure locus and `det H_Q=0` are not excluded, and one-zero-response
-  patterns are broader than this theorem.
+  equal blocker colours are excluded by the first complete-target projection.
+  The reviewed two-fibre quotient theorem excludes the remaining pure locus
+  because the first fibre kills the singleton and the two-port normal form has
+  the same two alpha-lines in incompatible `(i,i)` and `(j,j)` covers.  The
+  divisor `det H_Q=0` is not excluded, and one-zero-response
+  patterns are broader than this pair of theorems.
 
 None of these bullets is an exhaustive path from the source witness to the
 target interface.
@@ -158,9 +162,9 @@ A support-free proof must now cover:
    without rank-stratum enumeration by the radical--Fitting/incidence
    criteria;
 3. response-identically-zero branches outside the already named conditional
-   GLD subcells; at root order four the literal all-seven/full-rank chart is
-   reduced to the opposite-colour pure-\(\Pi_Q\) locus, while `det H_Q=0` and
-   every weaker response-zero pattern remain;
+   GLD subcells; at root order four the reviewed complete-fibre theorem
+   excludes the literal all-seven/full-rank chart, while `det H_Q=0` and every
+   weaker response-zero pattern remain;
 4. joint selector ranks \(k=0,1,2\), common and unequal slopes, and all response
    visibility alternatives;
 5. the detector's augmented-weight/alignment/anchor failures when that detector
@@ -198,18 +202,21 @@ be hidden by adding support masks.
    at the GLS4 probe pair, prove the two-grade top-depth module and exact
    pointwise failure criterion, and correct the all-seven versus one-row
    four-root topology.
-5. **Full-rank literal-response-zero localization (reviewed current tranche).**  Use
+5. **Full-rank literal-response-zero localization (merged as PR #238).**  Use
    the uncontracted rank-three residual block and complete contracted target to
-   localize the all-seven zero branch, retaining the determinant and pure
-   survivor ledgers exactly.
-6. **Target exchange-syzygy package.**  Derive a support-free
-   companion-exchange or
-   target-module identity from those failure conditions, or exhibit and fully
-   validate an exact countermodel that disproves the proposed implication.
-7. **Exceptional-fibre package.**  Prove the principal-open identity extends by
+   localize the all-seven zero branch, retaining the determinant ledger exactly.
+6. **Full-rank pure-survivor exchange package (reviewed current tranche).**
+   Compare two complete diagonal target fibres in the active-line quotient and
+   exclude both the singleton and two-port GLS9 survivor.  The bounded exact
+   729-coefficient probe is discovery provenance, not the arbitrary-point proof.
+7. **Target exchange-syzygy package.**  Derive a support-free companion-exchange
+   or target-module identity from the remaining failure conditions, or exhibit
+   and fully validate an exact countermodel that disproves the proposed
+   implication.
+8. **Exceptional-fibre package.**  Prove the principal-open identity extends by
    a denominator-free argument, or exhaust every rank-drop/response-zero
    divisor by a finite **proved** cover and complete mixed contradictions.
-8. **Closure audit package.**  Independent no-import replay, hostile
+9. **Closure audit package.**  Independent no-import replay, hostile
    proof-topology and case-cover audit, provenance/dependency records,
    `docs/current-frontier.md` update, full candidate-tree QA, exact-head hosted
    CI, and merged-main replay.
@@ -241,6 +248,15 @@ and its desired-column augmentation.  A physical mixed-coefficient consequence
 of that invariant remains open.  In accordance with the stop rule, no rank or
 support atlas was launched.
 
+The later
+[four-root pure-survivor exact probe](R4_PURE_PI_SURVIVOR_EXACT_PROBE_2026-08-20.md)
+materializes all 729 coefficients of the relaxed GLS9 contracted target.  It
+excludes 216 singleton charts by one exact saturated minor and 648 covering
+two-port charts by the final pure coefficient.  It found no target point or
+counterexample.  This finite computation exposed the compact two-fibre
+quotient identity used in the reviewed theorem; it neither proves physical
+integrability nor replaces the arbitrary-point written proof.
+
 An apparent exact global counterexample, contradiction with a live theorem, or
 nonexhaustive claimed cover triggers immediate dedicated adversarial escalation.
 
@@ -256,9 +272,10 @@ The node is closed **iff** every box below is discharged:
       survival modulo every relevant higher column, and raw \(p(A,Q)\neq0\).
 - [x] Every root order has a promoted fixed-\(Q\) legal-target module and an
       exact pointwise failure profile; this is a reduction, not target supply.
-- [x] The root-order-four literal all-seven response-zero branch on
-      `det H_Q!=0` is localized exactly; its opposite-colour pure-\(\Pi_Q\)
-      survivor and determinant divisor remain open.
+- [x] The reviewed two-complete-fibre theorem excludes the root-order-four
+      literal all-seven response-zero branch on `det H_Q!=0`.  Focused replay,
+      the independent no-import audit, and hostile review pass.  The determinant
+      divisor remains open.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,
