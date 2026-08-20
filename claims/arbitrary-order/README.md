@@ -2502,6 +2502,13 @@ the two residual surfaces `w=-1` and `v+w+1=0`; both denominator loci are
 disjoint from their legal active domains.  Thus all `4` three-out-star masks
 are empty, leaving eleven GLD50 orbitwise exceptional unions open.
 
+The
+[`three-pair fork-path exceptional-divisor exclusion`](FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_FORK_PATH_EXCEPTIONAL_DIVISOR_EXCLUSION_THEOREM.md)
+closes `O4`.  Two fourteen-row certificates exclude both residual surfaces
+away from their intersection, and a thirteen-row curve certificate closes
+that overlap with no legal denominator root.  Hence all `24` fork-path masks
+are empty, leaving ten GLD50 orbitwise exceptional unions open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2583,6 +2590,8 @@ The GLD51 directed-path divisor closure is covered by the
 [`three-pair directed-path divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_DIRECTED_PATH_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD52 out-star divisor closure is covered by the
 [`three-pair out-star divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_OUT_STAR_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD53 fork-path divisor closure is covered by the
+[`three-pair fork-path divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_FORK_PATH_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
