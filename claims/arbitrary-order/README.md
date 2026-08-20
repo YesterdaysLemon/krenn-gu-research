@@ -2296,6 +2296,14 @@ two exact point cores; the quadratic family is closed modulo
 `u^2+2u-1` by a certificate leaving `4w`.  Thus `uv=-1` is empty for every
 allowed `w`, leaving three `GLD26` divisors open.
 
+The
+[`fixed-Q dense directed-spur uv=1 divisor exclusion`](FIXED_Q_DENSE_DIRECTED_SPUR_UV_ONE_DIVISOR_EXCLUSION_THEOREM.md)
+closes a second divisor pointwise.  A sixteen-row relation leaves
+`-4u(u+w)(w+2)(u+w+1)(uw+2u+w)`.  Four exact curve relations reduce its
+vanishing locus to four rational points and the shared family `u^2+1=0`;
+point cores and a twelve-row quotient certificate close all of them.  Thus
+`uv=1` is empty for every allowed `w`, leaving two `GLD26` divisors open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2326,6 +2334,8 @@ The GLD26 directed-spur generic exclusion is covered by the
 [`fixed-Q dense directed-spur hostile review`](../../docs/audits/FIXED_Q_DENSE_DIRECTED_SPUR_GENERIC_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD27 `uv=-1` divisor exclusion is covered by the
 [`fixed-Q dense directed-spur uv=-1 hostile review`](../../docs/audits/FIXED_Q_DENSE_DIRECTED_SPUR_UV_MINUS_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD28 `uv=1` divisor exclusion is covered by the
+[`fixed-Q dense directed-spur uv=1 hostile review`](../../docs/audits/FIXED_Q_DENSE_DIRECTED_SPUR_UV_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
