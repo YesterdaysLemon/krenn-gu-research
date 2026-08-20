@@ -1939,6 +1939,32 @@ the rank-drop branch; it does not yet show that those equations eliminate
 every physical fibre.
 
 The
+[`same-pair quotient-survival and complementary-permanent dominance theorem`](MAXIMAL_ROOT_SURPLUS_TWO_SAME_PAIR_QUOTIENT_SURVIVAL_AND_COMPLEMENTARY_PERMANENT_DOMINANCE_THEOREM.md)
+uses the complete contracted mixed outside target to align the two previously
+separate positive edges.  Every actual maximum-root surplus-two hypothetical
+complex witness has one same residual pair `Q` with a nonzero physical edge
+block, nonzero complementary permanent tensor, an order-two companion class
+surviving individually modulo every order-four-and-higher column over the
+outside function field, and a nonzero fully-supported raw `p_(A,Q)`.  The only
+putative all-failure case is a three-mode rank-one triangle; the three pure
+target tensors and one common permanental cofactor map contradict it.  This is
+individual pair-column survival, not collective pair-observability, full
+fixed-`Q` coordinate-family observability, or legal GLD target attachment.
+The scalar complementary-permanent map is dominant in characteristic not two,
+so its coordinates alone obey no universal Pluecker-type polynomial identity.
+
+The accompanying
+[`r=3/r=4 exact formulation audit`](../../docs/history/handoffs/SUPPLY_TARGET_FAILURE_IDEAL_R3_R4_EXPERIMENT_2026-08-20.md)
+records why no honest universal selector-failure ideal has yet been solved.
+GLS2 failure lives over the outside function field, selector failure has a
+fibrewise-for-all-torus-contractions quantifier, and maximum-root maximality is
+a family of Laurent unit-ideal tests.  Equality of all radical Fitting-rank
+ideals gives a compact exact criterion for pointwise raw selector failure, but
+its physical mixed-coefficient consequence and the response/alignment/anchor
+gates remain open.  The experiment therefore stops before elimination and
+does not classify a failure locus or produce a physical point.
+
+The
 [`four-root paired-grade constant-selector theorem`](FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md)
 then resolves the first polarized detector shape.  It decomposes the adjacent
 zero-root-edge and one-root-edge grades exactly and proves that direct-nuisance
@@ -1949,7 +1975,7 @@ purity.  One sufficient legal detector package needs constant synchronized
 selectors for the response, its zero-grade direct companion, and a separate `H_U` anchor or an
 equivalent target-diagonal nuisance identity, together with a legal constant
 root-edge selector satisfying the augmented condition `Omega=l^T Jp!=0`.
-The nonzero raw `p_A` theorem does not supply that augmented condition.  A
+The same-pair source theorem still does not supply that augmented condition.  A
 single coefficientwise-clean shore has zero corrected response, while an exact maximum-root/triple-blocker
 control has `Omega!=0`, nonzero corrected response, and both adjacent matching
 grades zero by nested cancellation.  The control has zero pure coefficients
