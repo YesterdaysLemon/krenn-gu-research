@@ -2278,6 +2278,16 @@ locus.  Thus the full two-amplitude switch chart is empty.  Larger-support
 nonprivate arrays, colour-changing cross blocks, the other `GLD21` cells,
 and every permanent consequence remain open.
 
+The
+[`fixed-Q dense directed-spur generic exclusion`](FIXED_Q_DENSE_DIRECTED_SPUR_GENERIC_CROSS_ARRAY_EXCLUSION_THEOREM.md)
+then crosses the first larger-support boundary.  Add a nonzero directed
+`E_(0,2)` edge to the two-amplitude switch.  Sixteen complete coefficient
+rows cancel all `81` free variables and leave
+`uvw(uv-1)(uv+1)^2(uv-u-v-1)(uv+vw+w+1)^2`.  Hence the complement of four
+explicit divisors is empty.  This is an exact generic/open-subset theorem;
+the four divisors remain open and are not asserted solution loci.  The
+`w=0` boundary is already empty by the pointwise `GLD25` theorem.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2304,6 +2314,8 @@ The GLD24 balanced single-switch exclusion is covered by the
 [`fixed-Q dense balanced single-switch hostile review`](../../docs/audits/FIXED_Q_DENSE_BALANCED_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD25 two-amplitude single-switch exclusion is covered by the
 [`fixed-Q dense two-amplitude single-switch hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_AMPLITUDE_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD26 directed-spur generic exclusion is covered by the
+[`fixed-Q dense directed-spur hostile review`](../../docs/audits/FIXED_Q_DENSE_DIRECTED_SPUR_GENERIC_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
