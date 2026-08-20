@@ -1996,12 +1996,36 @@ then gives the first source-level cover for an actual root-order-four witness:
 escape E, generic pure absorption A}`.  Both `O x E` and `C x E` reach the
 required individual-supply plus legal same-`Q` GLD5/7 interface; O additionally
 has stronger pair-block observability.  The four R/A leaves and every
-absorption divisor remain open.  A reconstructed physical graph has a full rank-15 order-two
+absorption divisor remain open for that stronger all-seven GLD3 package; they
+are not the exact obstruction to an isolated one-row escape.  A reconstructed physical graph has a full rank-15 order-two
 sensor and seven nonzero responses while every target selector fails; one
 complete mixed coefficient excludes it from the witness locus.  Thus neither
 collective observability nor coarse graph-side hypotheses replace the missing
 complete-mixed physical identity.  Root order three and every order at least
 five are not covered by this theorem.
+
+The
+[`promoted two-probe one-target reduction`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_TWO_PROBE_ONE_TARGET_ATTACHMENT_AND_POINTWISE_FAILURE_REDUCTION_THEOREM.md)
+([hostile review](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_TWO_PROBE_ONE_TARGET_REVIEW_2026-08-20.md))
+then gives a uniform support-free module for every root order `r>=3`.  Re-root
+the same graph at the two GLS4 probe roots and promote every other old root to
+an open port.  Only deck orders `2r-2` and `2r` remain; Laplace expansion of
+the GLS4 complementary permanent forces one top-minus-two desired coefficient
+to survive the unique top column.  Full nuisance slicing gives an exact
+normalized constant-selector criterion, and the complete GHZ quotient makes
+one legal nonzero response equivalent to pure quotient rank one.  Geometric
+radical--Fitting containments decide pointwise failure at every residual-torus
+fibre, including response-zero and all rank drops.  In the standard four-root
+module this refines the isolated one-row topology: one response-zero or absorbed
+target can coexist with another useful target, so exact failure requires all
+targets and every GLS4-eligible `Q` to satisfy the containments.  The theorem
+does not prove that those profiles are impossible.  At `r=3` the promoted
+target shapes match the six-pair/four-port GLD3 family, but one useful row is
+not the simultaneous GLD3 package; at higher orders the promoted top layers
+do not alone match a committed downstream detector.  Accordingly this is a
+reduction inside the supply-and-target node, not a replacement for its named
+downstream common-package, alignment, synchronization, activity, or anchor
+requirements.
 
 The
 [`four-root paired-grade constant-selector theorem`](FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md)
