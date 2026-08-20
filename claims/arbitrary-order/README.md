@@ -2225,6 +2225,20 @@ not the fixed-`Q` linear equation alone, remains the exact obstruction.  The
 theorem does not exclude the surviving branch, force a legal operator row, or
 imply a permanent restriction.
 
+The
+[`fixed-Q dense private-cross-matching exclusion`](FIXED_Q_DENSE_PRIVATE_CROSS_MATCHING_ROOT_COMPANION_EXCLUSION_THEOREM.md)
+then makes the first same-graph integrability cut inside that surviving dense
+cell.  If all three root-to-port colour slices use one common private
+bijection and each private edge is colour diagonal with nonzero entries, the
+opposite repeated-colour `2+1+1` package forces every active diagonal
+root--root entry to vanish.  The Hamming-one equations make each of the three
+active singleton positions contribute `-h` times the matching private word,
+so the matching mixed coefficient is `h-3h=-2h`, contradicting `h!=0`.
+Thus the standard common private full-rank companion chart is excluded on
+the witness locus.  Colour-dependent private permutations, nonprivate
+root-to-port arrays, the proper-secondary-clique cells, and every weighted-
+permanent consequence remain open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2243,6 +2257,8 @@ The GLD20 global common-shore refinement is covered by the
 [`fixed-Q response-map-zero global physical-support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_GLOBAL_PHYSICAL_CHANNEL_SUPPORT_REVIEW_2026-08-18.md).
 The GLD21 dead-colour scalar gate is covered by the
 [`fixed-Q response-map-zero dead-colour hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_DEAD_COLOUR_H_GATE_AND_DENSE_COMPANION_ABSORPTION_REVIEW_2026-08-18.md).
+The GLD22 common-private integrability exclusion is covered by the
+[`fixed-Q dense private-cross-matching hostile review`](../../docs/audits/FIXED_Q_DENSE_PRIVATE_CROSS_MATCHING_ROOT_COMPANION_EXCLUSION_REVIEW_2026-08-19.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
