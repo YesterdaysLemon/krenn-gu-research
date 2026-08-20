@@ -2534,6 +2534,13 @@ that support to the O12 representative.  The signed transfer holds on all
 `6561` equations, so GLD53's pointwise exclusion makes all `24` reverse-fork
 masks empty, leaving seven GLD50 orbitwise exceptional unions open.
 
+The
+[`three-pair in-fork exceptional-divisor exclusion`](FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_IN_FORK_EXCEPTIONAL_DIVISOR_EXCLUSION_THEOREM.md)
+closes `O11`.  Four exact surface certificates reduce its exceptional union
+to three one-parameter intersections; three exact curve certificates have
+denominator roots only at active-forbidden values.  Hence all `12` in-fork
+masks are empty, leaving six GLD50 orbitwise exceptional unions open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2623,6 +2630,8 @@ The GLD55 in-star colour-exchange closure is covered by the
 [`three-pair in-star colour-exchange hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_IN_STAR_COLOUR_EXCHANGE_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD56 reverse-fork colour-exchange closure is covered by the
 [`three-pair reverse-fork colour-exchange hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_REVERSE_FORK_COLOUR_EXCHANGE_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD57 in-fork divisor closure is covered by the
+[`three-pair in-fork divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_IN_FORK_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
