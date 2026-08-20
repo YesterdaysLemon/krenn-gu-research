@@ -229,6 +229,7 @@ flowchart TD
   GLD38["Bidirected-spur uv+wz+1 divisor<br/>PROVED pointwise exclusion"]
   GLD39["Dense bidirected-spur nonzero chart<br/>PROVED chart completion"]
   GLD40["Dense bidirected-spur affine chart<br/>PROVED all-support completion"]
+  GLD41["Single-active-slice affine cell<br/>PROVED full 12-parameter completion"]
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
@@ -511,6 +512,8 @@ flowchart TD
   GLD31 -->|uniform two-row chart completion| GLD39
   GLD39 -->|support-drop completion / affine closure| GLD40
   GLD23 -->|all-zero private boundary| GLD40
+  GLD40 -->|complete 12-parameter active slice| GLD41
+  GLD23 -->|all-zero private boundary| GLD41
   GLD3 -->|constant synchronized window and three-activity supply open| GL
   GLD4 -->|target attachment / sparse syzygy / deeper depth open| GL
   GLD7 -->|pure survival / response nonvanishing / activity open| GL
@@ -528,7 +531,7 @@ flowchart TD
   GLD19 -->|map-zero forcing / sparse support / permanent open| GL
   GLD20 -->|F-empty / pure-absorption / legal-row exclusion open| GL
   GLD21 -->|proper-secondary / other h!=0 cells open| GL
-  GLD40 -->|larger supports / integration open| GL
+  GLD41 -->|multiple nonprivate slices / integration open| GL
   GLD36 -->|larger supports / integration open| GL
   BO1 -->|bounded witness-locus certificate still open| GL
   G0 -. route boundary .-> C2
@@ -732,6 +735,7 @@ flowchart TD
 | `GLD38` | On the `GLD31` divisor `uv+wz+1=0`, the legal parametrization `v=-(1+wz)/u` and two complete rows give `0=v`.  A disjoint two-row relation gives `0=wv`.  Since `u,v,w,z!=0`, the **entire divisor is proved empty**.  Exactly two GLD31 divisors remain open. | [Bidirected-spur uv+wz+1 divisor exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_PLUS_WZ_PLUS_ONE_DIVISOR_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_PLUS_WZ_PLUS_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md) |
 | `GLD39` | Re-expand over `Z[u,v,w,z]` the complete rows `(1202;0212)` and `(2212;2212)`, first used after specialization in GLD34.  They are exactly `-wP_0+wP_1=0` and `-P_0+P_1=-1`, so their difference gives `0=w` without any divisor equation or denominator.  Since `w!=0` on the original GLD31 chart, the **entire nonzero bidirected-spur chart is proved empty**.  This closes all five exceptional divisors and subsumes GLD31--GLD38 on this chart; broader arrays, support-drop boundaries, and every permanent bridge remain open. | [Dense bidirected-spur nonzero-chart completion](../claims/arbitrary-order/FIXED_Q_DENSE_BIDIRECTED_SPUR_NONZERO_CHART_COMPLETION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_NONZERO_CHART_COMPLETION_REVIEW_2026-08-20.md) |
 | `GLD40` | Allow arbitrary `u,v,w,z`, including every support drop, in the four-edge bidirected-spur coordinate family.  Global two-row relations give `0=u` and `0=w`; on `u=w=0`, two more give `0=v` and `0=z`.  The all-zero endpoint is the proved GLD23 identity private-permutation chart.  Thus all `16` support masks are covered and the **entire affine four-parameter family is proved empty**, subsuming GLD24--GLD39 on their coordinate subcharts.  Broader cross arrays, further support entries, root-colour-changing blocks, proper-secondary cells, and every permanent bridge remain open. | [Dense bidirected-spur affine-chart completion](../claims/arbitrary-order/FIXED_Q_DENSE_BIDIRECTED_SPUR_AFFINE_CHART_COMPLETION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_AFFINE_CHART_COMPLETION_REVIEW_2026-08-20.md) |
+| `GLD41` | Keep two colour slices equal to `I_4` and allow the third to be an arbitrary unit-diagonal `4`-by-`4` matrix, with all twelve off-diagonal amplitudes present simultaneously.  For each ordered entry `a_(ij)`, a permuted pair of complete rows is exactly `-a_(ij)P_0+a_(ij)P_1=0` and `-P_0+P_1=-1`, hence leaves `a_(ij)` without division or specialization.  Any nonzero entry is therefore impossible; GLD23 excludes the all-zero origin.  Thus all `4096` support masks are covered and the **complete 12-parameter single-active-slice affine cell is proved empty**, subsuming GLD24--GLD40.  Multiple simultaneously nonprivate slices, root-colour-changing blocks, proper-secondary cells, and every permanent bridge remain open. | [Single-active-slice affine cross-array completion](../claims/arbitrary-order/FIXED_Q_DENSE_SINGLE_ACTIVE_SLICE_AFFINE_CROSS_ARRAY_COMPLETION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_SINGLE_ACTIVE_SLICE_AFFINE_CROSS_ARRAY_COMPLETION_REVIEW_2026-08-20.md) |
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
@@ -1011,6 +1015,8 @@ flowchart TD
 | `GLD31` | pointwise nonzero-chart completion | `GLD39` | Two complete rows over the full polynomial ring leave `w`, eliminating the whole GLD31 chart under its original `w!=0` hypothesis and subsuming the generic and divisor-specific refinements there. |
 | `GLD39` | all-support affine-chart completion | `GLD40` | Relabelled and boundary-specialized two-row relations successively leave `u`, `w`, `v`, and `z`; GLD23 closes the all-zero identity endpoint, exhaustively covering all `16` support masks. |
 | `GLD23` | all-zero private boundary | `GLD40` | The origin of the affine parameter space has all three cross slices equal to `I_4`, hence is an exact instance of the proved private-permutation exclusion. |
+| `GLD40` | complete single-active-slice affine extension | `GLD41` | The two-row entry detector is valid over the polynomial ring in all twelve off-diagonal amplitudes, so each of the twelve ordered entries is excluded without specializing any other entry. |
+| `GLD23` | all-zero private boundary | `GLD41` | The unique support mask with no active off-diagonal entry has all three cross slices equal to `I_4`, hence is the proved private-permutation origin. |
 | `GLD13` | remaining generic-absorption obligation | `GL` | Exclude the function-field absorbed branch by the full mixed equations or turn one of its denominator-cleared nuisance identities into a bounded coefficient-pure target contradiction.  Exceptional rank-drop behaviour, response-zero blocks, activity, and permanent attachment remain separate. |
 | `GLD14` | remaining paired-attachment/witness obligation | `GL` | Legally attach a sufficient same-graph same-`Q` package of the selected `M_2,M_4` rows and intersect its radical cross-intersection locus with the full witness equations.  Pure one-colour kernel families show that mixed response shape alone does not remove every `Z` fibre. |
 | `GLD15` | remaining joint-rank and integration obligation | `GL` | Force joint quotient rank two on a pair-block cover and the needed four-port rows, or exclude the rank-one/zero branches with the full mixed witness equations.  `GLD11` shows that maximum-root incidence, blockers, concision, pure/Hamming shell data, and nonzero paired responses do not suffice; no permanent bridge follows. |
@@ -1019,7 +1025,7 @@ flowchart TD
 | `GLD18` | remaining operator-incidence and response-locus obligation | `GL` | Force nonzero complete-nuisance operator spaces, resolve response-invisible and pure-`Z` axes, force the three edge-dependent cancellation equations and a three-full complement, or exclude the noncancellation and sparse-support strata with the full witness equations.  The response-visible minors and cancellation divisors do not by themselves supply legal rows or a permanent bridge. |
 | `GLD19` | remaining response-map-zero witness-locus obligation | `GL` | Force or exclude the literal all-seven `R_S=0` stratum, force a nonzero legal pair package there, or use the full mixed witness equations to exclude its intersecting/sparse-support locus.  A pure selected line is weaker than map zero, and the support classification supplies neither selector attachment nor a permanent bridge. |
 | `GLD20` | remaining global map-zero support obligation | `GL` | Exclude the `F=empty` cell or the one-to-three complementary pure-target-absorption cells with genuinely uncontracted mixed coefficients, or force a nonzero legal complete-nuisance operator row.  The finite support atlas is exhaustive for response windows but is neither a witness enumeration nor a permanent bridge. |
-| `GLD21` | remaining complete-clique map-zero obligation | `GL` | On the proved `h!=0` residue, integrate the forced pure `G_U(a^4)` slice and dense nuisance absorptions into one same-graph principal-permanent root-companion family and derive a contradiction, or produce a further coefficient detector.  `GLD23` excludes every private colour-diagonal permutation chart, and `GLD40` now excludes the full affine four-edge bidirected-spur coordinate family, subsuming GLD24--GLD39 on their coordinate subcharts.  Broader nonprivate arrays and the proper-secondary-clique cells remain.  The formal solution `G_U=J_Q/h` still shows that fixed-`Q` linear algebra alone cannot close them.  Other `F=empty` and pure-absorption cells remain separate. |
+| `GLD21` | remaining complete-clique map-zero obligation | `GL` | On the proved `h!=0` residue, integrate the forced pure `G_U(a^4)` slice and dense nuisance absorptions into one same-graph principal-permanent root-companion family and derive a contradiction, or produce a further coefficient detector.  `GLD23` excludes every private colour-diagonal permutation chart, and `GLD41` now excludes the complete 12-parameter single-active-slice affine cell, subsuming GLD24--GLD40.  Multiple simultaneously nonprivate slices and the proper-secondary-clique cells remain.  The formal solution `G_U=J_Q/h` still shows that fixed-`Q` linear algebra alone cannot close them.  Other `F=empty` and pure-absorption cells remain separate. |
 | `GLD22` | completed private-permutation successor | `GLD23` | The common-matching `-2hP` detector is now subsumed in scope by an exact exhaustion of every colour-dependent private permutation.  The elementary proof remains a separately replayable explanation of the identity orbit. |
 | `GLD23` | completed first nonprivate successor | `GLD24` | The private-permutation boundary has an exact genuinely nonprivate continuation on the balanced one-switch chart.  `GLD25` subsequently closes its two-independent-amplitude boundary. |
 | `GLD24` | completed two-amplitude successor | `GLD25` | The balanced slice is now subsumed by an exact exclusion with both off-diagonal switch amplitudes independent and nonzero.  The separately replayable `GLD24` certificate remains a simpler one-parameter explanation. |
@@ -1038,7 +1044,8 @@ flowchart TD
 | `GLD31` | completed third divisor exclusion | `GLD38` | The `uv+wz+1=0` divisor is pointwise empty by two-row contradictions.  Exactly two GLD31 divisors remain. |
 | `GLD31` | completed uniform nonzero-chart exclusion | `GLD39` | The unspecialized two-row relation leaves `w`, closing the full chart and both formerly remaining divisors.  GLD31--GLD38 remain valid but are subsumed on this chart. |
 | `GLD39` | completed all-support successor | `GLD40` | Three additional exact two-row detectors and the GLD23 origin close every support-drop face, proving the whole affine coordinate family empty. |
-| `GLD40` | remaining dense nonprivate integrability obligation | `GL` | Add further support entries or derive a coordinate-free permanental/cofactor substitute that reaches general nonprivate arrays.  Root-colour-changing blocks, proper-secondary cells, and every weighted-permanent bridge remain separate. |
+| `GLD40` | completed full-slice successor | `GLD41` | The four-edge family is subsumed by twelve simultaneous entry detectors, one for every off-diagonal coordinate of a full active colour slice. |
+| `GLD41` | remaining dense nonprivate integrability obligation | `GL` | Permit two or more colour slices to be simultaneously nonprivate, or derive a coordinate-free permanental/cofactor substitute that reaches general cross arrays.  Root-colour-changing blocks, proper-secondary cells, and every weighted-permanent bridge remain separate. |
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
@@ -1266,9 +1273,12 @@ branch. They are not an instruction to begin all of them at once.
    every divisor restriction from a two-row certificate first seen in GLD34
    and proves the entire nonzero GLD31 chart empty.  GLD40 adds three exact
    detectors plus the GLD23 origin to close every support-drop face and the
-   full affine four-parameter coordinate family.  Adding further support
-   entries or finding a coordinate-free nonprivate argument is now the
-   smallest continuation.
+   full affine four-parameter coordinate family.  GLD41 then places all
+   twelve off-diagonal amplitudes in one active colour slice simultaneously;
+   twelve uniform two-row detectors plus the GLD23 origin exhaust all `4096`
+   support masks.  Allowing a second simultaneously nonprivate slice or
+   finding a coordinate-free nonprivate argument is now the smallest
+   continuation.
    Other `F=empty` and pure-absorption cells and every permanent consequence
    remain open.
 

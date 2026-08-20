@@ -2390,6 +2390,19 @@ masks and proves the full four-parameter affine family empty, subsuming
 GLD24--GLD39 on their coordinate subcharts.  Broader nonprivate arrays and
 all permanent implications remain open.
 
+The
+[`dense single-active-slice affine cross-array completion`](FIXED_Q_DENSE_SINGLE_ACTIVE_SLICE_AFFINE_CROSS_ARRAY_COMPLETION_THEOREM.md)
+then removes every support restriction inside one active colour slice.  Keep
+the other two slices equal to `I_4` and allow all twelve off-diagonal entries
+of the active slice simultaneously.  For each ordered entry `a_(ij)`, two
+complete equations over the full twelve-variable ring have rows
+`(-a_(ij),a_(ij))` and `(-1,1)` and leave the exact detector `a_(ij)`.
+Consequently any nonzero entry is impossible, while the all-zero endpoint is
+GLD23.  This exhausts all `4096` support masks and proves the complete
+12-parameter affine single-active-slice cell empty, subsuming GLD24--GLD40.
+Multiple simultaneously nonprivate slices, root-colour-changing blocks,
+proper-secondary cells, and all permanent implications remain open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2447,6 +2460,8 @@ The GLD39 nonzero-chart completion is covered by the
 [`dense bidirected-spur chart-completion hostile review`](../../docs/audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_NONZERO_CHART_COMPLETION_REVIEW_2026-08-20.md).
 The GLD40 affine-chart completion is covered by the
 [`dense bidirected-spur affine-chart hostile review`](../../docs/audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_AFFINE_CHART_COMPLETION_REVIEW_2026-08-20.md).
+The GLD41 single-active-slice affine completion is covered by the
+[`dense single-active-slice affine cross-array hostile review`](../../docs/audits/FIXED_Q_DENSE_SINGLE_ACTIVE_SLICE_AFFINE_CROSS_ARRAY_COMPLETION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
