@@ -1965,6 +1965,45 @@ gates remain open.  The experiment therefore stops before elimination and
 does not classify a failure locus or produce a physical point.
 
 The
+[`pointwise selector-failure and decomposable-retraction boundary`](MAXIMAL_ROOT_SURPLUS_TWO_POINTWISE_SELECTOR_FAILURE_AND_DECOMPOSABLE_RETRACTION_BOUNDARY_THEOREM.md)
+replaces that quantifier gap by exact support-free algebra.  Equality of all
+geometric radical Fitting profiles is necessary and sufficient for absorption
+at every residual-torus point; a response-ideal containment gives the gated
+version, and on the complete GLD7 witness equation the three pure columns give
+an equivalent profile and one shared-residual common-attachment incidence
+ideal.  GLS2 function-field failure instead has a finite coefficientwise
+rank-stratum formula.  A decomposable-retraction quotient measures why an
+unrestricted recovery need not be a legal constant selector.  Exact rational
+modules show that injective sensing, maximal nuisance rank, a three-colour pure
+target, and nonzero response still do not force attachment abstractly.  These
+are failure criteria and no-go boundaries, not physical witnesses or branch
+exclusions.
+
+The
+[`common residual contraction and augmented-alignment gate`](MAXIMAL_ROOT_SURPLUS_TWO_COMMON_RESIDUAL_CONTRACTION_AND_AUGMENTED_ALIGNMENT_GATE_THEOREM.md)
+shows that the GLS4 pair has one fully supported contraction with both
+`h=H_Q(z_Q)!=0` and raw `p_(A,Q)(z_Q)!=0`.  For the four-root GLD2 gate it
+also classifies ambient alignment failure exactly by
+`p^T Jp=0` and `Jp in im U^*`, and gives the corresponding annihilator
+criterion after restricting to a proposed legal-weight subspace.  It covers
+every rank without division but does not manufacture that legal subspace,
+response, synchronization, nuisance, or target-pure anchor.
+
+The
+[`four-root supply-to-attachment trichotomy`](FOUR_ROOT_MAXIMAL_ROOT_SUPPLY_TO_ATTACHMENT_TRICHOTOMY_AND_OBSERVABLE_NONSELECTOR_BOUNDARY_THEOREM.md)
+then gives the first source-level cover for an actual root-order-four witness:
+`{observable O, quotient circuit C} x {response zero R, common seven-target
+escape E, generic pure absorption A}`.  Both `O x E` and `C x E` reach the
+required individual-supply plus legal same-`Q` GLD5/7 interface; O additionally
+has stronger pair-block observability.  The four R/A leaves and every
+absorption divisor remain open.  A reconstructed physical graph has a full rank-15 order-two
+sensor and seven nonzero responses while every target selector fails; one
+complete mixed coefficient excludes it from the witness locus.  Thus neither
+collective observability nor coarse graph-side hypotheses replace the missing
+complete-mixed physical identity.  Root order three and every order at least
+five are not covered by this theorem.
+
+The
 [`four-root paired-grade constant-selector theorem`](FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md)
 then resolves the first polarized detector shape.  It decomposes the adjacent
 zero-root-edge and one-root-edge grades exactly and proves that direct-nuisance

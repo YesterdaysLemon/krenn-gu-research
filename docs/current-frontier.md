@@ -189,6 +189,9 @@ flowchart TD
   GLS2["Maximal-root surplus-two deck sensor<br/>PROVED conditional supply / rank-drop boundary"]
   GLS3["Surplus-two raw pair companion / physical fibre<br/>PROVED positive edge and sharp rank-drop"]
   GLS4["Same-pair quotient survival / raw companion<br/>PROVED source edge; target attachment OPEN"]
+  GLS5["Pointwise selector-failure module<br/>PROVED exact criterion / abstract rank-only no-go"]
+  GLS6["Common residual h,p / alignment gate<br/>PROVED exact source corollary and incidence"]
+  GLS7["Four-root source-to-attachment trichotomy<br/>PROVED six-leaf cover; four R/A leaves OPEN"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
@@ -391,6 +394,12 @@ flowchart TD
   M2 -->|surplus-two uncontracted sensor| GLS2
   GLS2 -->|blocker-corank and physical-secant refinement| GLS3
   GLS3 -->|complete contracted mixed target| GLS4
+  GLS4 -->|pointwise/function-field failure topology| GLS5
+  GLS4 -->|common nonzero h,p contraction| GLS6
+  GLD2 -->|exact ambient and legal-subspace alignment gate| GLS6
+  GLS4 -->|four-root pair-block split| GLS7
+  GLS5 -->|pure-profile and common-incidence criterion| GLS7
+  GLD13 -->|four-root R/E/A target split| GLS7
   S1 -->|premise| O1
   M2 -->|premise| O1
   O1 -->|residual refinement| O2
@@ -477,6 +486,10 @@ flowchart TD
   GLS2 -->|rank drop / higher surplus / target attachment open| GL
   GLS4 -. r=4 same-pair raw p_A; legal augmented l unforced .-> GLD2
   GLS4 -->|individual same-Q supply only; legal target selector open| GL
+  GLS5 -->|physical mixed identity still required| GL
+  GLS6 -->|legal M / response / synchronization / anchor open| GL
+  GLS7 -->|E on O or C gives legal seven-target interface| GLD3
+  GLS7 -->|R, A; exceptional fibres; r!=4 open| GL
   GLS3 -->|higher mixed witness-locus equations required| GL
   GLQ2 -->|permanent attachment remains open| GL
   GLD1 -->|four-root target-coupling refinement| GLD2
@@ -740,6 +753,9 @@ flowchart TD
 | `GLS2` | In a maximal-root surplus-two cell, the full uncontracted root tensor contains every nonempty even principal hafnian of the same outside graph.  Injectivity of its `2^(r+1)-1`-column companion sensor reconstructs the complete deck from the GHZ target; kernel projection gives the exact weaker necessary-and-sufficient criterion for linear identification of one fixed residual pair, and sufficient criteria for physical paired-deck or all-pair-block supply.  Failure of the criterion is only linear-sensor nonidentifiability, not a second physical deck.  An explicit maximum-root triple-blocker chart has full rank, so rank drop is a proper ambient determinantal boundary, but observability is not forced on the witness locus.  At surplus at least four, the residual edge and pair moments are absent from every linear root-word selector.  This is **proved conditional Universal Supply and a sharp higher-surplus depth boundary**, not permanent extraction or witness exclusion. | [Surplus-two complete-deck sensor](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_COMPLETE_DECK_SENSOR_AND_HIGHER_SURPLUS_DEPTH_BOUNDARY_THEOREM.md), [hostile review](audits/UNIVERSAL_SUPPLY_AND_TARGET_COUPLED_DETECTION_REVIEW_2026-08-16.md) |
 | `GLS3` | In every blocker-saturated maximum-root surplus-two hypothetical complex-witness cell, the corank-six incidence bound forces some nonzero raw pair companion `p_(A,Q)=per H_(A,Q)`.  This does not force the augmented four-root detector weight `l^T Jp`.  Pair-coordinate supply is exactly independence of the order-two companion columns modulo every higher-order column.  A maximum-root, quota-saturated, locally concise `r=3` family with normalized pure coefficients and zero Hamming-one shell nevertheless has a three-torus physical same-state pair fibre and fails every fixed-`Q` criterion; one displayed higher mixed coefficient excludes the whole family.  This is a **proved positive raw-companion edge and physical rank-drop sharpness theorem**, not universal paired-window supply or a witness. | [Nonzero pair companion and physical rank-drop sharpness](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_NONZERO_PAIR_COMPANION_AND_PHYSICAL_RANK_DROP_SHARPNESS_THEOREM.md), [hostile review](audits/SURPLUS_TWO_RANK_DROP_AND_FOUR_ROOT_SELECTOR_REVIEW_2026-08-16.md) |
 | `GLS4` | In every actual maximum-cardinality-root surplus-two hypothetical complex witness, the complete contracted mixed outside target forces one **same** residual pair `Q` with nonzero physical edge block, nonzero complementary permanent tensor, an order-two companion class surviving individually modulo every order-four-and-higher column over the outside function field, and some fully-supported raw `p_(A,Q)!=0`.  The proof excludes the only all-failure rank-one triangle using the corank-six quota, the three pure target tensors, and one common permanental cofactor map.  Separately, the scalar complementary-permanent map is dominant in characteristic not two, so those scalar readings obey no universal Pluecker-type polynomial identity.  This is a **proved exact source-to-individual-supply edge**.  It is not collective pair-observability, full fixed-`Q` coordinate-family observability, a GLD5/GLD7 selector, response nonvanishing, augmented-weight/alignment/anchor supply, permanent extraction, or witness exclusion. | [Same-pair quotient survival and permanent dominance](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_SAME_PAIR_QUOTIENT_SURVIVAL_AND_COMPLEMENTARY_PERMANENT_DOMINANCE_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_SAME_PAIR_QUOTIENT_SURVIVAL_AND_COMPLEMENTARY_PERMANENT_DOMINANCE_REVIEW_2026-08-20.md) |
+| `GLS5` | On a declared Laurent contraction chart, universal geometric-point absorption of a desired column is equivalent to equality of every geometric radical determinantal/Fitting profile; absence of a fibre with both nonzero response and desired survival is the exact response-ideal containment `Rho I_j([A|g]) subset sqrt_geom I_j(A)`.  On the complete GLD7 witness equation this is equivalently the pure-column profile `[A|D]`, and a single shared-variable incidence ideal encodes common attachment for a finite target family.  GLS2 function-field failure instead has an exact projected-kernel/rank-stratum formula.  A coordinate-free quotient class measures the gap between unrestricted recovery and a legal `lambda tensor id` selector.  Exact rational modules show that injective observability, maximal nuisance rank, three pure targets, and nonzero response do **not** imply legal attachment abstractly.  This is a **proved exact failure-topology reduction and abstract no-go**, not a physical countermodel or exclusion of any witness branch. | [Pointwise selector failure and decomposable-retraction boundary](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_POINTWISE_SELECTOR_FAILURE_AND_DECOMPOSABLE_RETRACTION_BOUNDARY_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_FAILURE_MODULE_ALIGNMENT_AND_FOUR_ROOT_SOURCE_TRICHOTOMY_REVIEW_2026-08-20.md) |
+| `GLS6` | The `GLS4`-supplied pair has one fully supported residual contraction with `h=H_Q(z_Q)!=0` and raw `p_(A,Q)(z_Q)!=0` simultaneously.  At four roots, ambient augmented alignment has the exact pointwise failure locus `p^T Jp=0` and `Jp in im U^*`; after restricting to a proposed legal-weight subspace `M`, failure is exactly `Jp in M^perp+(p^perp intersect im U^*)`.  Every rank, including rank-drop repair directions, is covered without division.  This is a **proved source corollary and alignment criterion**.  It does not force `M`, response nonvanishing, synchronization, nuisance survival, or a target-pure anchor. | [Common residual contraction and augmented-alignment gate](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_COMMON_RESIDUAL_CONTRACTION_AND_AUGMENTED_ALIGNMENT_GATE_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_FAILURE_MODULE_ALIGNMENT_AND_FOUR_ROOT_SOURCE_TRICHOTOMY_REVIEW_2026-08-20.md) |
+| `GLS7` | For an actual maximum-root surplus-two complex witness with root order four, the `GLS4` pair lies in the exhaustive source cover `{O,C} x {R,E,A}`: its order-two block is either observable modulo every other order-two and all higher columns or belongs to a named inclusion-minimal quotient circuit; independently, the seven GLD5 targets have a response-identically-zero branch, one common legal seven-target escape, or a named function-field desired-plus-three-pure absorption branch with denominator-cleared identities and explicit exceptional fibres.  The entire E branch, on both O and C, reaches the required individual pair-supply plus legal same-`Q` GLD5/7 interface; O additionally gives stronger pair-block observability.  An exact physical graph has a rank-15 order-two sensor and seven nonzero responses but no target selector; one complete mixed coefficient excludes it from the witness locus.  This is a **proved six-leaf four-root source cover and sharp off-target boundary**.  The four R/A leaves, root order three, every root order at least five, GLD3 activity, and all downstream nodes remain open. | [Four-root supply-to-attachment trichotomy](../claims/arbitrary-order/FOUR_ROOT_MAXIMAL_ROOT_SUPPLY_TO_ATTACHMENT_TRICHOTOMY_AND_OBSERVABLE_NONSELECTOR_BOUNDARY_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_FAILURE_MODULE_ALIGNMENT_AND_FOUR_ROOT_SOURCE_TRICHOTOMY_REVIEW_2026-08-20.md) |
 | `GLQ2` | For fixed named residual contractions, paired block-polarized `q=2` response charts with three mutually cross-observed rank-two port groups have one unique `O(J)` overlap transition.  A connected finite chart graph glues one residual frame exactly when its cycle holonomies are trivial.  Two groups retain a full `GL_2`/contragredient ambiguity, and an exact three-chart physical-response counteratlas has nontrivial rational holonomy.  This is **proved conditional descent and sharp route boundary**: `GLS2` now supplies the paired data on its observable surplus-two branch, while identifying rank, the rank-drop and higher-surplus branches, and weighted-diagonal permanent attachment remain open. | [Two-residual response-atlas theorem](../claims/arbitrary-order/TWO_RESIDUAL_RESPONSE_ATLAS_IDENTIFYING_OVERLAP_AND_HOLONOMY_BOUNDARY_THEOREM.md), [surplus-two supply](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_COMPLETE_DECK_SENSOR_AND_HIGHER_SURPLUS_DEPTH_BOUNDARY_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GLD1` | Every insertion defect of a literal same-graph `q=2` response vanishes by matching edge-pointing, and one graph's global residual frame makes every identifying-atlas holonomy trivial.  A rational physical control has diagonal uncorrected top block but a nonzero mixed corrected entry cancelled by `hB`.  The exact target attachment is `Omega T=Omega Lambda_Q-hY+hN`; a mixed corrected component becomes an explicit GHZ coefficient only for `h=0` or a nonzero coefficient-pure selector with proved nuisance control.  Odd-root selectors and maximal-root base selectors with `r>2` vanish.  This is a **proved detector boundary and conditional target bridge**, not a forced selector. | [Same-graph defect and target-selector boundary](../claims/arbitrary-order/SAME_GRAPH_RESPONSE_DEFECT_VANISHING_AND_TARGET_COUPLED_SELECTOR_BOUNDARY_THEOREM.md), [hostile review](audits/UNIVERSAL_SUPPLY_AND_TARGET_COUPLED_DETECTION_REVIEW_2026-08-16.md) |
 | `GLD2` | At four roots, the zero-root-edge and one-root-edge grades have an exact common-shore decomposition.  For `h!=0`, one zero-grade equation removes the direct nuisance exactly when `l-kappa p` lies in the kernel of the six direct response tensors; nonzero augmented `Omega=l^T Jp` does not imply this alignment and is itself unforced by `GLS4`.  Function-field inversion is not target purity.  One sufficient detector package uses a legal constant `l` with `l^T Jp!=0`, constant synchronized response/direct selectors, and a separate target-pure residual-absent anchor or exact nuisance identity.  This package is not proved minimal.  One coefficientwise-clean shore has trivial corrected response, and a maximum-root triple-blocker control has augmented `Omega!=0`, nonzero corrected response, and both adjacent matching grades zero by nested cancellation.  This is a **proved conditional detector interface and sharp single-shore no-go**, not a witness or forced detector. | [Four-root constant-selector boundary](../claims/arbitrary-order/FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md), [hostile review](audits/SURPLUS_TWO_RANK_DROP_AND_FOUR_ROOT_SELECTOR_REVIEW_2026-08-16.md) |
@@ -1022,6 +1038,11 @@ flowchart TD
 | `GLS2` | conditional paired-window supply | `GLQ2` | A `Q`-observable surplus-two sensor reconstructs the full block-polarized residual-absent/present response from one graph.  GLQ2 applies only if the chosen overlaps additionally contain three cross-observed rank-two port groups. |
 | `GLS2` | maximal-root incidence and physical-secant refinement | `GLS3` | The blocker corank bound forces some raw two-residual pair companion to be nonzero, but pair supply is the quotient-column condition.  A rational sensor kernel need not integrate physically; the exact matching-secant equations decide that issue. |
 | `GLS3` | complete contracted mixed-target refinement | `GLS4` | Root evaluation kills every order-four-and-higher companion, while the complete outside target and the corank-six quota exclude the only all-failure rank-one triangle.  Thus one same physical pair has individual quotient survival and nonzero raw incidence.  This does not make any multi-column sensor injective or attach a target selector. |
+| `GLS4` | exact failure-topology refinement | `GLS5` | Pointwise selector absorption is compressed by geometric radical Fitting profiles, while GLS2 supply failure remains a distinct outside-function-field projected-kernel condition.  Unrestricted recovery differs from a legal decomposable selector by an exact quotient class; a maximal-rank rational model proves that abstract ranks cannot close the bridge. |
+| `GLS4` | common-contraction refinement | `GLS6` | Nonzero `H_Q` and nonzero raw `p_(A,Q)` are nonzero polynomials on the same residual torus, so one fully supported point retains both.  At four roots the ambient and legal-subspace augmented-alignment failures have exact annihilator/rank descriptions, but the physical legal-weight space and response package are not supplied. |
+| `GLS4`, `GLS5`, `GLD13` | four-root source integration | `GLS7` | Every root-order-four source point lies in `{O,C} x {R,E,A}`.  The whole E branch retains GLS4 individual survival modulo higher columns and adds seven legal nonzero same-`Q` GLD5/7 attachments; O additionally separates `Q` from the other order-two columns.  Response-zero, generic absorption, and exceptional-fibre leaves remain unexcluded. |
+| `GLS7` | conditional legal seven-row attachment | `GLD3` | Both `O x E` and `C x E` supply the same-graph pair block and the six pair plus four-port response selectors on one residual contraction.  GLD3 activity and downstream target contradiction remain separate. |
+| `GLS5`, `GLS6`, `GLS7` | remaining physical source-to-attachment obligation | `GL` | Derive a complete-mixed companion/integrability identity excluding the four-root R/A leaves and their divisors, and construct analogous exhaustive source covers for root order three and every order at least five.  The C leaf is an obligation only for a downstream entry that expressly needs stronger pair observability.  Rank, pure-target, or bounded-support data alone are insufficient. |
 | `GLS2` | remaining supply and attachment obligation | `GL` | Companion-sensor rank drop on the target locus, every higher-surplus nonlinear/cross-window supply, the three-group overlap condition, and weighted-diagonal attachment remain open.  Ambient full rank does not discard the witness rank-drop branch. |
 | `GLS3` | sharp mixed-equation rank-drop boundary | `GL` | Maximum-root data, exact blocker quotas, local concision, pure normalization, the Hamming-one target shell, and nonzero raw `p_A` do not force pair observability.  The exact physical fibre is excluded by one higher mixed coefficient, so a positive theorem must use the full mixed witness equations or a proved physical quotient. |
 | `GLS4` | remaining same-pair attachment obligation | `GL` | The source now supplies one individual order-two class and raw companion on the same `Q`.  It still must force a legal nonzero same-`Q` response/target selector package, including every downstream alignment and anchor gate, or exclude all selector-failure fibres with complete mixed coefficients.  Scalar complementary permanents have no universal polynomial relation that can do this alone. |
@@ -1181,31 +1202,42 @@ branch. They are not an instruction to begin all of them at once.
    needs collective or full fixed-`Q` observability, that stronger rank must
    also be proved.
 
-   The exact `r=3,4` formulation audit stops before a false failure ideal:
-   GLS2 failure is a function-field determinantal condition, selector failure
-   is fibrewise over every fully-supported contraction, and maximum-root
-   maximality is a family of Laurent unit-ideal tests.  The compact exact
-   invariant for pointwise raw selector failure is equality of all radical
-   Fitting-rank ideals of the nuisance matrix and its desired-column
-   augmentation.  A graph-coefficient consequence of those radical
-   equalities, including response/alignment/anchor gates, remains open.
+   `GLS5` now closes the quantifier-compatible failure encoding.  Pointwise
+   absorption on every fully-supported contraction is equality of all
+   geometric radical Fitting profiles; response-gated failure is an exact
+   response-ideal containment; and, on the complete GLD7 witness equation,
+   the three pure columns give an equivalent profile.  One shared-residual
+   incidence ideal encodes common attachment without a 730-rank-stratum
+   atlas.  GLS2 failure remains a separate function-field projected-kernel
+   locus with a finite coefficientwise rank-stratum formula.  An exact
+   maximal-nuisance-rank module has injective sensing, three pure targets, and
+   nonzero response but no legal decomposable selector, so the physical
+   bridge cannot follow from ranks or unrestricted recovery alone.
 
    The exact `r=3` physical fibre still shows that maximum-root data, quotas,
    local concision, pure normalization, and the Hamming-one shell do not force
    collective or fixed-`Q` observability; actual higher mixed equations remain
-   indispensable.  At four roots, the
-   adjacent grades are now decomposed exactly.  For `h!=0`, the direct terms
-   align only if `l-kappa p in ker mathcal U`.  The same-pair theorem still
-   does not force the augmented weight: a legal constant root-edge selector `l` with
-   `l^T Jp!=0` must also be supplied.  One sufficient detector package then
-   needs constant synchronized selectors for the response and zero-grade direct
-   companion plus a separate target-pure `H_U` anchor or exact nuisance
-   identity.  A single coefficientwise-clean shore is trivial, while nested
-   cancellation survives a maximum-root triple-blocker control.  Thus the
-   next positive theorem must force this sufficient augmented multi-selector
-   package from the full mixed witness locus, find a smaller multi-shore or
-   aggregate package, use the separate `h=0` route, or replace it by a proved
-   physical-secant quotient.
+   indispensable.  `GLS6` synchronizes `h!=0` and raw `p!=0` on one
+   fully-supported contraction.  At four roots it classifies ambient
+   augmented-alignment failure exactly by `p^T Jp=0` and
+   `Jp in im mathcal U^*`, and gives the exact annihilator condition after
+   intersecting with a proposed legal-weight space `M`.  This covers every
+   rank without division, but neither forces `M` nor supplies the response,
+   synchronized nuisance, or target-pure anchor required by the GLD2 route.
+
+   `GLS7` provides the first actual-witness source cover at root order four:
+   `{observable O, quotient circuit C} x {response zero R, common seven-row
+   escape E, function-field pure absorption A}`.  Both `O x E` and `C x E`
+   reach the required individual-supply plus legal same-`Q` GLD5/7 interface;
+   O adds stronger separation from the other order-two columns.  The four R/A
+   leaves remain open, as do absorption denominators and exceptional rank-drop
+   fibres.  A full-rank
+   order-two physical control with seven nonzero responses still has all
+   seven selectors swallowed; one complete mixed coefficient excludes it.
+   Therefore the smallest four-root obligation is a same-graph
+   companion/integrability identity contradicting R and A (including all
+   divisors), while root order three and every order at least five still need
+   analogous exhaustive source integration.
    The pair/four-port interference theorem now gives a second, smaller target
    bridge after one exact same-`Q` window is attached: three nonzero
    complementary colour products at one port force one of nine displayed
