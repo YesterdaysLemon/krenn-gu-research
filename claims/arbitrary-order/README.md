@@ -2469,6 +2469,15 @@ denominator lcm `2u^2(u+1)^2`, and a fourteen-row integer certificate closes
 the point.  Hence all `12` same-head masks are pointwise empty; only the chain
 exceptional divisor family remains among minimal two-pair supports.
 
+The
+[`dense two-active-slice chain exceptional-divisor exclusion`](FIXED_Q_DENSE_TWO_ACTIVE_SLICE_CHAIN_EXCEPTIONAL_DIVISOR_EXCLUSION_THEOREM.md)
+closes that final minimal orbit.  Fifteen- and seventeen-row exact
+function-field certificates exclude the GLD44 components `u=-1` and
+`uw+w+1=0`; their denominator roots are all forbidden by active reciprocal
+support.  Thus all `24` directed-chain masks, and consequently all `66`
+minimal two-pair masks across the five orbits, are pointwise empty.
+Three-or-more-pair supports remain open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2542,6 +2551,8 @@ The GLD47 reverse divisor closure is covered by the
 [`dense two-active-slice reverse divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_REVERSE_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD48 same-head divisor closure is covered by the
 [`dense two-active-slice same-head divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_SAME_HEAD_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD49 chain divisor closure is covered by the
+[`dense two-active-slice chain divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_CHAIN_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
