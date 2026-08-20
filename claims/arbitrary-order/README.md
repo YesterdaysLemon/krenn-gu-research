@@ -2487,6 +2487,14 @@ leaves a fully displayed exceptional hypersurface atlas.  This is not a
 pointwise closure: those divisors and every support with four or more pairs
 remain open.
 
+The
+[`three-pair directed-path exceptional-divisor exclusion`](FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_DIRECTED_PATH_EXCEPTIONAL_DIVISOR_EXCLUSION_THEOREM.md)
+closes the first GLD50 orbit pointwise.  On the sole `O10` residue
+`uv+v+1=0`, a fourteen-row exact certificate over `Q(u,w)` leaves `1` with
+denominator lcm `uw(u-1)`, whose roots are forbidden by active reciprocal
+support.  Hence all `24` directed length-three path masks are empty.  The
+other twelve orbitwise exceptional unions remain open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2564,6 +2572,8 @@ The GLD49 chain divisor closure is covered by the
 [`dense two-active-slice chain divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_CHAIN_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD50 three-pair generic exclusion is covered by the
 [`dense two-active-slice three-pair generic hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_GENERIC_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD51 directed-path divisor closure is covered by the
+[`three-pair directed-path divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_DIRECTED_PATH_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
