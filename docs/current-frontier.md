@@ -223,6 +223,7 @@ flowchart TD
   GLD32["Bidirected-spur uv=-1 divisor<br/>PROVED generic refinement"]
   GLD33["Bidirected-spur uv=-1, u=1<br/>PROVED surface exclusion"]
   GLD34["Bidirected-spur uv=-1, z=1<br/>PROVED surface exclusion"]
+  GLD35["Bidirected-spur uv=-1, z=-1<br/>PROVED surface exclusion"]
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
@@ -498,6 +499,7 @@ flowchart TD
   GLD31 -->|uv=-1 generic divisor refinement| GLD32
   GLD32 -->|u=1 residual surface closure| GLD33
   GLD32 -->|z=1 residual surface closure| GLD34
+  GLD32 -->|z=-1 residual surface closure| GLD35
   GLD3 -->|constant synchronized window and three-activity supply open| GL
   GLD4 -->|target attachment / sparse syzygy / deeper depth open| GL
   GLD7 -->|pure survival / response nonvanishing / activity open| GL
@@ -516,7 +518,7 @@ flowchart TD
   GLD20 -->|F-empty / pure-absorption / legal-row exclusion open| GL
   GLD21 -->|proper-secondary / other h!=0 cells open| GL
   GLD31 -->|other four divisors / larger supports open| GL
-  GLD34 -->|two residual surfaces open| GL
+  GLD35 -->|one residual surface open| GL
   BO1 -->|bounded witness-locus certificate still open| GL
   G0 -. route boundary .-> C2
 ```
@@ -713,6 +715,7 @@ flowchart TD
 | `GLD32` | On the `GLD31` divisor `uv=-1`, the legal parametrization `v=-1/u` and a fourteen-row polynomial-cleared relation leave `-2uwz^2(u-1)(z-1)(z+1)(wz-2)`.  Thus the **complement of four explicit residual surfaces is proved empty inside this divisor**.  The four surfaces and the entire divisor remain open pointwise; the `z=0` boundary lies in `GLD27`. | [Bidirected-spur uv=-1 generic exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_GENERIC_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_GENERIC_EXCLUSION_REVIEW_2026-08-20.md) |
 | `GLD33` | On the `GLD32` residual `u=1` surface, hence `v=-1`, two exact detectors reduce all nonzero `(w,z)` to `wz=2` or `(w,z)=(1,-1)`.  A polynomial-cleared curve certificate leaves `24` and a point certificate leaves `6`.  Thus the **entire `u=1` surface is proved empty**.  Three other `GLD32` residual surfaces remain open. | [Bidirected-spur u=1 surface exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_U_ONE_SURFACE_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_U_ONE_SURFACE_EXCLUSION_REVIEW_2026-08-20.md) |
 | `GLD34` | On the `GLD32` residual `z=1` surface, hence `v=-1/u`, the two complete rows `(1202;0212)` and `(2212;2212)` give the exact relation `0=w`.  A disjoint two-row relation gives `0=-u^(-1)`.  Since `u,w!=0`, the **entire `z=1` surface is proved empty**.  Exactly `z=-1` and `wz=2` remain inside this divisor. | [Bidirected-spur z=1 surface exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_Z_ONE_SURFACE_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_Z_ONE_SURFACE_EXCLUSION_REVIEW_2026-08-20.md) |
+| `GLD35` | On the `GLD32` residual `z=-1` surface, hence `v=-1/u`, the two complete rows `(0100;0010)` and `(2212;2212)` give `0=-w/u`.  A disjoint two-row relation gives `0=-u^(-1)`.  Since `u,w!=0`, the **entire `z=-1` surface is proved empty**.  Only `wz=2` remains inside this divisor. | [Bidirected-spur z=-1 surface exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_Z_MINUS_ONE_SURFACE_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_Z_MINUS_ONE_SURFACE_EXCLUSION_REVIEW_2026-08-20.md) |
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
@@ -985,6 +988,7 @@ flowchart TD
 | `GLD31` | generic `uv=-1` divisor refinement | `GLD32` | Substituting `v=-1/u` into fourteen complete rows excludes the complement of `u=1`, `z=1`, `z=-1`, and `wz=2` inside the first exceptional divisor.  No pointwise closure of those four surfaces is claimed. |
 | `GLD32` | pointwise `u=1` residual closure | `GLD33` | Two surface detectors leave one rational curve and one point; exact constant contradictions close both, eliminating the full residual surface. |
 | `GLD32` | pointwise `z=1` residual closure | `GLD34` | One two-row complete-system relation leaves the nonzero chart parameter `w`; a disjoint two-row relation leaves `-u^(-1)`, eliminating the full residual surface. |
+| `GLD32` | pointwise `z=-1` residual closure | `GLD35` | Two disjoint two-row complete-system relations leave `-w/u` and `-u^(-1)`, eliminating the full residual surface. |
 | `GLD13` | remaining generic-absorption obligation | `GL` | Exclude the function-field absorbed branch by the full mixed equations or turn one of its denominator-cleared nuisance identities into a bounded coefficient-pure target contradiction.  Exceptional rank-drop behaviour, response-zero blocks, activity, and permanent attachment remain separate. |
 | `GLD14` | remaining paired-attachment/witness obligation | `GL` | Legally attach a sufficient same-graph same-`Q` package of the selected `M_2,M_4` rows and intersect its radical cross-intersection locus with the full witness equations.  Pure one-colour kernel families show that mixed response shape alone does not remove every `Z` fibre. |
 | `GLD15` | remaining joint-rank and integration obligation | `GL` | Force joint quotient rank two on a pair-block cover and the needed four-port rows, or exclude the rank-one/zero branches with the full mixed witness equations.  `GLD11` shows that maximum-root incidence, blockers, concision, pure/Hamming shell data, and nonzero paired responses do not suffice; no permanent bridge follows. |
@@ -1006,7 +1010,8 @@ flowchart TD
 | `GLD31` | completed first divisor refinement | `GLD32` | The `uv=-1` hypersurface now has an exact generic detector leaving four residual surfaces; the other four `GLD31` divisors remain unchanged. |
 | `GLD32` | completed first residual successor | `GLD33` | The `u=1` component is pointwise empty; `z=1`, `z=-1`, and `wz=2` remain on the `uv=-1` divisor away from their overlap with it. |
 | `GLD32` | completed second residual successor | `GLD34` | The `z=1` component is pointwise empty; exactly `z=-1` and `wz=2` remain on the `uv=-1` divisor away from their overlap with the completed surfaces. |
-| `GLD34` | remaining dense nonprivate integrability obligation | `GL` | Close `z=-1` or `wz=2`, refine another `GLD31` divisor, add further support entries, or derive a coordinate-free permanental/cofactor substitute.  Root-colour-changing blocks, proper-secondary cells, and every weighted-permanent bridge remain separate. |
+| `GLD32` | completed third residual successor | `GLD35` | The `z=-1` component is pointwise empty; only `wz=2` remains on the `uv=-1` divisor away from its overlap with the completed surfaces. |
+| `GLD35` | remaining dense nonprivate integrability obligation | `GL` | Close `wz=2`, refine another `GLD31` divisor, add further support entries, or derive a coordinate-free permanental/cofactor substitute.  Root-colour-changing blocks, proper-secondary cells, and every weighted-permanent bridge remain separate. |
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
@@ -1228,9 +1233,9 @@ branch. They are not an instruction to begin all of them at once.
    prior divisor theorems.  Thus the full directed-spur coordinate family is
    empty.  GLD31 adds the reverse support edge and excludes a generic open
    subset of the resulting four-parameter chart, leaving five explicit
-   divisors.  GLD32 refines `uv=-1` to four residual surfaces, GLD33 closes
-   `u=1` pointwise, and GLD34 closes `z=1` pointwise.  Closing one of the two
-   remaining surfaces,
+   divisors.  GLD32 refines `uv=-1` to four residual surfaces; GLD33, GLD34,
+   and GLD35 close `u=1`, `z=1`, and `z=-1` pointwise.  Closing the last
+   `wz=2` surface,
    refining another divisor, adding further support
    entries, or finding a coordinate-free nonprivate argument is now the
    smallest continuation.
