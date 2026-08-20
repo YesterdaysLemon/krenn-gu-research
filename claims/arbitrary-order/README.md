@@ -2321,6 +2321,15 @@ boundary.  Consequently the entire nonzero `GLD26` chart is empty; with the
 `GLD25` `w=0` boundary, the full coordinate family is empty for all `w`.
 Reverse spurs, broader supports, and the other `GLD21` cells remain open.
 
+The
+[`fixed-Q dense bidirected-spur generic exclusion`](FIXED_Q_DENSE_BIDIRECTED_SPUR_GENERIC_CROSS_ARRAY_EXCLUSION_THEOREM.md)
+then adds the reverse edge `zE_(2,0)` with `z!=0`.  Sixteen complete rows
+leave the exact detector
+`2uv wz(uv+1)(uv+wz-1)(uv+wz+1)(uv+vw+w+1)p`.  Thus the complement of five
+explicit hypersurfaces is empty.  This is a generic/open-subset theorem;
+all five divisors remain open.  Its `z=0` boundary is the completed `GLD30`
+family.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2358,6 +2367,8 @@ The GLD29 `uv-u-v-1=0` divisor exclusion is covered by the
 The GLD30 `uv+vw+w+1=0` divisor exclusion and directed-spur chart completion
 are covered by the
 [`fixed-Q dense directed-spur uv+vw+w+1 hostile review`](../../docs/audits/FIXED_Q_DENSE_DIRECTED_SPUR_UV_PLUS_VW_PLUS_W_PLUS_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD31 bidirected-spur generic exclusion is covered by the
+[`fixed-Q dense bidirected-spur hostile review`](../../docs/audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_GENERIC_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
