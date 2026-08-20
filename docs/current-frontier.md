@@ -215,6 +215,7 @@ flowchart TD
   GLD24["Dense balanced single switch<br/>PROVED first nonprivate chart exclusion"]
   GLD25["Dense two-amplitude switch<br/>PROVED full 2-parameter chart exclusion"]
   GLD26["Dense directed spur<br/>PROVED generic 3-parameter exclusion"]
+  GLD27["Directed-spur uv=-1 divisor<br/>PROVED pointwise exclusion"]
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
@@ -482,6 +483,7 @@ flowchart TD
   GLD23 -->|balanced two-matching switch| GLD24
   GLD24 -->|two-independent-amplitude completion| GLD25
   GLD25 -->|one directed support edge / generic cut| GLD26
+  GLD26 -->|uv=-1 divisor closure| GLD27
   GLD3 -->|constant synchronized window and three-activity supply open| GL
   GLD4 -->|target attachment / sparse syzygy / deeper depth open| GL
   GLD7 -->|pure survival / response nonvanishing / activity open| GL
@@ -499,7 +501,7 @@ flowchart TD
   GLD19 -->|map-zero forcing / sparse support / permanent open| GL
   GLD20 -->|F-empty / pure-absorption / legal-row exclusion open| GL
   GLD21 -->|proper-secondary / other h!=0 cells open| GL
-  GLD26 -->|four divisors and larger supports open| GL
+  GLD27 -->|three divisors and larger supports open| GL
   BO1 -->|bounded witness-locus certificate still open| GL
   G0 -. route boundary .-> C2
 ```
@@ -688,6 +690,7 @@ flowchart TD
 | `GLD24` | In the canonical `GLD23` dense shore gauge, keep two root-to-port colour slices equal to `I_4` and take the third to be `I_4+E_(0,1)+tE_(1,0)` with `t!=0`.  This is genuinely nonprivate and supports two root--port matchings.  An exact polynomial left combination of eighteen complete coefficient rows cancels all `81` root-side and pure-target variables and leaves `-4t(t+1)`; a separate ten-row rational certificate gives `0=1` at `t=-1`.  Thus the **balanced single-switch chart is proved empty**, not a general two-amplitude switch, a larger nonprivate array, proper-secondary cells, or any weighted-permanent branch. | [Dense balanced single-switch exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_BALANCED_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_BALANCED_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md) |
 | `GLD25` | In the same canonical dense shore gauge, keep two root-to-port colour slices equal to `I_4` and take the third to be `I_4+uE_(0,1)+vE_(1,0)` with independent `u,v!=0`.  An eighteen-row polynomial relation leaves `2uv(u+1)(uv+1)(uv-u-v-1)`.  Separate exact relations on its three exceptional divisors, a seven-row point certificate, and a thirteen-row quadratic-quotient certificate close the entire vanishing locus.  Thus the **full two-amplitude single-switch chart is proved empty**, strictly extending `GLD24`; larger-support nonprivate arrays, root-colour-changing blocks, proper-secondary cells, and every weighted-permanent branch remain open. | [Dense two-amplitude single-switch exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_TWO_AMPLITUDE_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_TWO_AMPLITUDE_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md) |
 | `GLD26` | Add one directed support edge and take the active slice to be `I_4+uE_(0,1)+vE_(1,0)+wE_(0,2)` with `u,v,w!=0`.  A sixteen-row polynomial relation cancels all `81` free coefficients and leaves `uvw(uv-1)(uv+1)^2(uv-u-v-1)(uv+vw+w+1)^2`.  Thus the **complement of four explicit divisors is proved empty**, a generic/open-subset larger-support exclusion.  The four divisors, reverse spur, further support entries, root-colour-changing blocks, proper-secondary cells, and every weighted-permanent branch remain open. | [Dense directed-spur generic exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_DIRECTED_SPUR_GENERIC_CROSS_ARRAY_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_DIRECTED_SPUR_GENERIC_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md) |
+| `GLD27` | On the `GLD26` exceptional divisor `uv=-1`, a twelve-row relation leaves `2uw(u-1)(u^2+2u-1)`.  The `u=1,v=-1` line is closed by a `2w(w+1)(w+2)` detector plus exact cores at `w=-1,-2`; the quadratic family is closed in `K[u,w]/(u^2+2u-1)` by a certificate leaving `4w`.  Thus the **entire `uv=-1` divisor is proved empty**.  The other three `GLD26` divisors and all broader boundaries remain open. | [Directed-spur uv=-1 divisor exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_DIRECTED_SPUR_UV_MINUS_ONE_DIVISOR_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_DIRECTED_SPUR_UV_MINUS_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md) |
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
@@ -952,6 +955,7 @@ flowchart TD
 | `GLD23` | first nonprivate balanced-switch exclusion | `GLD24` | On one switched active colour slice `I+E_(0,1)+tE_(1,0)`, an eighteen-row polynomial relation gives the nonzero detector `-4t(t+1)` away from `t=-1`, and a separate ten-row certificate closes that exceptional fibre. |
 | `GLD24` | two-independent-amplitude switch completion | `GLD25` | Replacing the fixed first switch amplitude by independent `u,v!=0` gives a bivariate generic detector.  Three exact divisor relations and point/quadratic residual certificates close its complete exceptional locus, so the two-dimensional chart is empty. |
 | `GLD25` | generic directed-spur support extension | `GLD26` | Adding `wE_(0,2)` produces a three-parameter larger-support chart.  A sixteen-row polynomial relation excludes the complement of the four divisors `uv=1`, `uv=-1`, `uv-u-v-1=0`, and `uv+vw+w+1=0`; no specialization across those divisors is claimed. |
+| `GLD26` | pointwise `uv=-1` divisor closure | `GLD27` | A polynomial-cleared divisor detector reduces `uv=-1` to the `u=1` line and the quadratic `u^2+2u-1=0`; exact line, point, and quotient-ring certificates close every residual point for `w!=0`. |
 | `GLD13` | remaining generic-absorption obligation | `GL` | Exclude the function-field absorbed branch by the full mixed equations or turn one of its denominator-cleared nuisance identities into a bounded coefficient-pure target contradiction.  Exceptional rank-drop behaviour, response-zero blocks, activity, and permanent attachment remain separate. |
 | `GLD14` | remaining paired-attachment/witness obligation | `GL` | Legally attach a sufficient same-graph same-`Q` package of the selected `M_2,M_4` rows and intersect its radical cross-intersection locus with the full witness equations.  Pure one-colour kernel families show that mixed response shape alone does not remove every `Z` fibre. |
 | `GLD15` | remaining joint-rank and integration obligation | `GL` | Force joint quotient rank two on a pair-block cover and the needed four-port rows, or exclude the rank-one/zero branches with the full mixed witness equations.  `GLD11` shows that maximum-root incidence, blockers, concision, pure/Hamming shell data, and nonzero paired responses do not suffice; no permanent bridge follows. |
@@ -965,7 +969,8 @@ flowchart TD
 | `GLD23` | completed first nonprivate successor | `GLD24` | The private-permutation boundary has an exact genuinely nonprivate continuation on the balanced one-switch chart.  `GLD25` subsequently closes its two-independent-amplitude boundary. |
 | `GLD24` | completed two-amplitude successor | `GLD25` | The balanced slice is now subsumed by an exact exclusion with both off-diagonal switch amplitudes independent and nonzero.  The separately replayable `GLD24` certificate remains a simpler one-parameter explanation. |
 | `GLD25` | completed generic directed-spur successor | `GLD26` | One additional directed support edge now has an exact three-parameter detector away from four explicit divisors.  This is a generic successor, not a pointwise completion analogous to `GLD25`. |
-| `GLD26` | remaining dense nonprivate integrability obligation | `GL` | Close the four residual directed-spur divisors, add the reverse spur or further support entries, allow another nonidentity colour slice, or derive a coordinate-free permanental/cofactor substitute.  Root-colour-changing blocks, proper-secondary cells, and every weighted-permanent bridge remain separate. |
+| `GLD26` | completed first divisor successor | `GLD27` | The `uv=-1` component of the generic detector's exceptional locus is now pointwise empty; the generic theorem's other three divisor boundaries remain unchanged. |
+| `GLD27` | remaining dense nonprivate integrability obligation | `GL` | Close `uv=1`, `uv-u-v-1=0`, and `uv+vw+w+1=0`, then add the reverse spur or further support entries, or derive a coordinate-free permanental/cofactor substitute.  Root-colour-changing blocks, proper-secondary cells, and every weighted-permanent bridge remain separate. |
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
@@ -1177,9 +1182,11 @@ branch. They are not an instruction to begin all of them at once.
    `I+uE_(0,1)+vE_(1,0)`: a bivariate generic detector, three divisor cores,
    and point/quadratic residual certificates exhaust every `u,v!=0`.
    GLD26 adds a directed `wE_(0,2)` support edge and excludes the complement
-   of four explicit divisors by one exact sixteen-row detector.  Closing
-   those divisors is the smallest continuation on this chart; the reverse
-   spur, broader supports, and a coordinate-free nonprivate argument remain
+   of four explicit divisors by one exact sixteen-row detector.  GLD27 closes
+   `uv=-1` pointwise through a divisor detector, a line with two point cores,
+   and a quadratic-quotient certificate.  Closing the remaining three
+   divisors is the smallest continuation on this chart; the reverse spur,
+   broader supports, and a coordinate-free nonprivate argument remain
    separate.
    Other `F=empty` and pure-absorption cells and every permanent consequence
    remain open.
