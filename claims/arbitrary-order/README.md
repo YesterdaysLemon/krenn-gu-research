@@ -2107,6 +2107,22 @@ Branch I, Branch II, and the two-port Branch III identity, as well as the
 separate seventh-response quartic, broader response patterns, absorption
 fibres, and every named downstream selector package.
 
+The reviewed exact continuation
+[rank-one two-port P5 extraction](FOUR_ROOT_DETERMINANT_DIVISOR_RANK_ONE_TWO_PORT_P5_EXTRACTION_THEOREM.md)
+([hostile review](../../docs/audits/FOUR_ROOT_DETERMINANT_DIVISOR_RANK_ONE_TWO_PORT_P5_EXTRACTION_REVIEW_2026-08-20.md))
+then treats the remaining two-sided two-port branch without claiming an
+exclusion.  The complete target first forces the two active local factors
+onto the two distinct residual colours.  Twelve exact common-tail
+coefficients, split \(8+4\) between the mixed target and pure complementary
+permanent, admit a Latin bottom-row splice into one weighted
+\(P_5\to\Delta_3\) restriction.  The physical seventh response already
+vanishes term by term on this branch.  The focused primary and independent
+no-import audit and hostile review pass.  This is a downstream
+permanent-extraction edge, not a \(P_5\) nonrestriction theorem, target
+selector, or strategic-node closure.  Rank-one Branches I and II, weaker
+response-zero patterns, nonzero-response absorption and exceptional fibres,
+and every named downstream attachment package remain open.
+
 The
 [`four-root paired-grade constant-selector theorem`](FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md)
 then resolves the first polarized detector shape.  It decomposes the adjacent

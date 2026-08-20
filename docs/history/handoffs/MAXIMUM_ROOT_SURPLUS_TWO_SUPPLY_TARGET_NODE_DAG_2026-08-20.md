@@ -1,8 +1,10 @@
 # Maximum-root surplus-two supply/target node: internal proof-DAG plan
 
 Date: 2026-08-20
-Programme branch: `codex/kg-r4-determinant-divisor-20260820`
-Base: `origin/main` at `b578d599931942b97300be9d936ae14103538806`
+Programme branch: `codex/kg-r4-rank1-two-port-20260820`
+Original determinant-tranche base: `b578d599931942b97300be9d936ae14103538806`
+Current two-port-tranche base: `origin/main` at
+`e9a6c42636f3bfa18dda4d1228d5971fac98d239`
 Global Krenn--Gu status: **UNRESOLVED**
 
 This is an internal research plan, not a theorem, reduction, or claim of case
@@ -75,6 +77,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | Reviewed full-rank literal-response-zero survivor exclusion | On the localized opposite-colour pure-\(\Pi_Q\) chart, the complete `(i,i)` fibre excludes the singleton shore because one insertion line cannot carry both pure colours.  In the two-port normal form the same two alpha-lines occur on both residual shores, but the `(i,i)` and `(j,j)` fibres require incompatible \(\{i,k\}\) and \(\{j,k\}\) covers. | This excludes the whole `det H_Q!=0` literal all-seven-zero branch.  Focused replay, independent no-import audit, and hostile review pass.  The determinant divisor, weaker response-zero patterns, nonzero-response absorption, and the named downstream package remain open. |
 | Reviewed determinant-divisor six-response reduction | On the same GLS4 pair, six full pair-response zeros exclude rank zero and reduce rank two to an exactly-two-active-port conformal core with fixed coordinate blockers.  Rank one has an exhaustive double-contained/one-sided/two-sided quotient trichotomy; its escaping branches have exact support-at-most-two normal forms and complete-target refinements. | The reduction itself leaves the rank-two and rank-one cores.  The linked reviewed follow-up excludes rank two and the singleton triangle.  The seventh four-port response is an independent quartic on the divisor, so literal all-seven zero needs that equation separately.  Focused primary, independent no-import replay, and hostile review pass. |
 | Reviewed rank-two and singleton-triangle exclusion | Six active-pair quotients of the complete target exclude all four rank-two active-dimension profiles.  The rank-one singleton triangle is incompatible with one common incidence family because column splicing its three pure companions would give `P_4 -> Delta_3`, contrary to exact subrank two. | Rank-one double-contained, one-sided, and two-port two-sided branches survive; the seventh quartic and every broader response/absorption branch remain.  Focused primary, independent no-import replay, and hostile review pass. |
+| Reviewed rank-one two-port `P_5` extraction | The complete target forces the two local factors onto the two residual colours.  Twelve common-tail identities split exactly `8+4`; one Latin bottom-row splice yields a weighted `P_5 -> Delta_3` restriction, and the physical seventh response is termwise zero. | This routes the two-port two-sided branch to the downstream `P_5` node; it is not a permanent nonrestriction or selector theorem.  Branches I/II, weaker response patterns, absorption/exceptional fibres, and named downstream gates remain.  Primary, no-import replay, and hostile review pass. |
 | GLD7 | On a fixed target quotient, rank \(q\ge2\) contradicts GHZ and rank \(q=1\) forces attachment. | Rank zero is swallowed pure; response-zero leaves the target class undecided. |
 | GLD9 | Synchronizes a common contraction on the maximal-rank survival stratum. | Does not create survival, and does not cover lower-rank/exceptional contractions. |
 | GLD11 | Gives exact physical simultaneous swallowed-pure/nonzero-response controls; particular higher mixed coefficients exclude those controls. | It is not a classification of all selector failures or all supports. |
@@ -150,8 +153,12 @@ support divisors; and coexistence of all required selectors on the same graph.
 - The reviewed follow-up excludes the whole rank-two conformal survivor by a
   six-quotient support cover and excludes the rank-one singleton triangle by
   common-incidence column splicing into the fourth-order permanent subrank
-  obstruction.  Rank-one Branches I, II, and the two-port Branch III identity
-  remain open.
+  obstruction.
+- The reviewed two-port continuation forces the Branch-III local factors
+  onto the residual colours and uses twelve common-tail identities to build
+  one exact weighted \(P_5\to\Delta_3\) restriction.  This routes that branch
+  to a downstream permanent node; it does not exclude \(P_5\) or attach a
+  GLD target package.  Rank-one Branches I and II remain open.
 
 None of these bullets is an exhaustive path from the source witness to the
 target interface.
@@ -179,8 +186,10 @@ A support-free proof must now cover:
    GLD subcells; at root order four the reviewed complete-fibre theorem
    excludes the literal all-seven/full-rank chart, while the reviewed
    determinant-divisor theorem reduces simultaneous six-pair zero to exact
-   rank-two/rank-one cores and keeps the seventh quartic separate; every
-   weaker response-zero pattern remains;
+   rank-two/rank-one cores and keeps the seventh quartic separate.  The
+   reviewed follow-up excludes rank two and the singleton, while the
+   reviewed two-port theorem routes Branch III to \(P_5\).  Branches I/II
+   and every weaker response-zero pattern remain;
 4. joint selector ranks \(k=0,1,2\), common and unequal slopes, and all response
    visibility alternatives;
 5. the detector's augmented-weight/alignment/anchor failures when that detector
@@ -233,14 +242,19 @@ be hidden by adding support masks.
    Use the complete target quotients to exclude the rank-two conformal core,
    and use common-incidence column splicing plus `subrank(P_4)=2` to exclude
    the rank-one singleton triangle.
-9. **Target exchange-syzygy package.**  Derive a support-free companion-exchange
+9. **Rank-one two-port extraction package (reviewed current tranche).**
+   Force the residual-colour coordinate pairing, derive the twelve common-tail
+   identities, and splice them into one weighted \(P_5\to\Delta_3\)
+   restriction.  This routes the branch to a downstream permanent node and
+   does not claim \(P_5\) nonrestriction.
+10. **Target exchange-syzygy package.**  Derive a support-free companion-exchange
    or target-module identity from the remaining failure conditions, or exhibit
    and fully validate an exact countermodel that disproves the proposed
    implication.
-10. **Exceptional-fibre package.**  Prove the principal-open identity extends by
+11. **Exceptional-fibre package.**  Prove the principal-open identity extends by
    a denominator-free argument, or exhaust every rank-drop/response-zero
    divisor by a finite **proved** cover and complete mixed contradictions.
-11. **Closure audit package.**  Independent no-import replay, hostile
+12. **Closure audit package.**  Independent no-import replay, hostile
    proof-topology and case-cover audit, provenance/dependency records,
    `docs/current-frontier.md` update, full candidate-tree QA, exact-head hosted
    CI, and merged-main replay.
@@ -306,10 +320,13 @@ The node is closed **iff** every box below is discharged:
       their status is refined by the follow-up below.  Focused primary,
       independent no-import replay, and hostile review pass.
 - [x] The reviewed follow-up excludes the rank-two core and the rank-one
-      singleton triangle, but rank-one Branches I, II, and the two-port
-      Branch III identity remain.  Focused primary, independent no-import
-      replay, and hostile review pass.  These two checked items do not close
-      the strategic node.
+      singleton triangle.  Focused primary, independent no-import replay, and
+      hostile review pass.
+- [x] The reviewed continuation routes the rank-one two-port Branch III
+      pointwise to one weighted \(P_5\to\Delta_3\) restriction and proves its
+      seventh response termwise zero.  Primary, no-import replay, and hostile
+      review pass.  Branches I and II are still open, and the downstream
+      \(P_5\) theorem is outside this node.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,
