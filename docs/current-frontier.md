@@ -236,6 +236,7 @@ flowchart TD
   GLD45["Two-pair same-tail orbit<br/>PROVED pointwise exclusion"]
   GLD46["Two-pair disjoint orbit<br/>PROVED pointwise exclusion"]
   GLD47["Two-pair reverse orbit<br/>PROVED pointwise exclusion"]
+  GLD48["Two-pair same-head orbit<br/>PROVED pointwise exclusion"]
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
@@ -526,6 +527,7 @@ flowchart TD
   GLD44 -->|same-tail exceptional-divisor closure| GLD45
   GLD44 -->|disjoint exceptional-divisor closure| GLD46
   GLD44 -->|reverse exceptional-divisor closure| GLD47
+  GLD44 -->|same-head exceptional-divisor closure| GLD48
   GLD3 -->|constant synchronized window and three-activity supply open| GL
   GLD4 -->|target attachment / sparse syzygy / deeper depth open| GL
   GLD7 -->|pure survival / response nonvanishing / activity open| GL
@@ -543,7 +545,7 @@ flowchart TD
   GLD19 -->|map-zero forcing / sparse support / permanent open| GL
   GLD20 -->|F-empty / pure-absorption / legal-row exclusion open| GL
   GLD21 -->|proper-secondary / other h!=0 cells open| GL
-  GLD47 -->|two orbit divisors / larger supports open| GL
+  GLD48 -->|chain divisors / larger supports open| GL
   GLD36 -->|larger supports / integration open| GL
   BO1 -->|bounded witness-locus certificate still open| GL
   G0 -. route boundary .-> C2
@@ -754,6 +756,7 @@ flowchart TD
 | `GLD45` | On the GLD44 same-tail exceptional divisor `u=-1`, the GLD43 reciprocal amplitude is `1/2`.  A twelve-row exact function-field certificate cancels all `81` variables and leaves `1`; its denominator lcm is `2w(w-1)`, whose roots are already forbidden by active reciprocal support.  Thus the **entire same-tail two-pair orbit is proved pointwise empty**, covering all `12` labelled masks.  Reverse, same-head, chain, and disjoint exceptional divisors remain open, as do larger supports and every permanent bridge. | [Same-tail exceptional-divisor exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_SAME_TAIL_EXCEPTIONAL_DIVISOR_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_SAME_TAIL_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md) |
 | `GLD46` | On the GLD44 disjoint component `u=-1`, an eleven-row exact function-field certificate leaves `1` with denominator lcm `2w(w-1)`, whose roots are forbidden by active reciprocal support.  The position permutation `(0 1)(2 3)` exchanges the two disjoint directed pairs and covers the component `w=-1`.  Thus the **entire disjoint two-pair orbit is proved pointwise empty**, covering all `12` labelled masks.  Reverse, same-head, and chain exceptional divisors remain open, as do larger supports and every permanent bridge. | [Disjoint exceptional-divisor exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_DISJOINT_EXCEPTIONAL_DIVISOR_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_DISJOINT_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md) |
 | `GLD47` | The GLD44 reverse exceptional union has components `u=-1`, `w=-1`, and `uw=-1`.  A seventeen-row exact curve certificate closes `u=-1`; position swap `(0 2)` closes `w=-1`; and a fifteen-row exact curve certificate closes `uw=-1`.  Both multiplier denominator loci are disjoint from the legal active reciprocal domain.  Thus the **entire reverse two-pair orbit is proved pointwise empty**, covering all `6` labelled masks.  Same-head and chain exceptional divisors remain open, as do larger supports and every permanent bridge. | [Reverse exceptional-divisor exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_REVERSE_EXCEPTIONAL_DIVISOR_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_REVERSE_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md) |
+| `GLD48` | Applying the GLD44 same-head certificate in both pair orders reduces its full exceptional union to `u+w+1=0` and `(-1,-1)`.  An eleven-row exact curve certificate has denominator lcm `2u^2(u+1)^2`, disjoint from the legal active domain, and a fourteen-row integer certificate closes the point.  Thus the **entire same-head two-pair orbit is proved pointwise empty**, covering all `12` labelled masks.  Only chain exceptional divisors remain among minimal two-pair supports; larger supports and every permanent bridge remain open. | [Same-head exceptional-divisor exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_SAME_HEAD_EXCEPTIONAL_DIVISOR_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_SAME_HEAD_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md) |
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
@@ -1041,6 +1044,7 @@ flowchart TD
 | `GLD44` | same-tail exceptional-divisor closure | `GLD45` | On `u=-1`, a new twelve-row certificate has no denominator root inside the active reciprocal domain, so the generic same-tail exclusion becomes pointwise complete. |
 | `GLD44` | disjoint exceptional-divisor closure | `GLD46` | An eleven-row certificate closes `u=-1`; an explicit support-pair exchange closes `w=-1`, exhausting the generic theorem's disjoint exceptional union. |
 | `GLD44` | reverse exceptional-divisor closure | `GLD47` | Two exact curve certificates close `u=-1` and `uw=-1`; pair exchange closes `w=-1`, exhausting the reverse exceptional union. |
+| `GLD44` | same-head exceptional-divisor closure | `GLD48` | Pair-ordered generic certificates reduce the exceptional intersection to one curve and one point; exact sparse contradictions close both. |
 | `GLD13` | remaining generic-absorption obligation | `GL` | Exclude the function-field absorbed branch by the full mixed equations or turn one of its denominator-cleared nuisance identities into a bounded coefficient-pure target contradiction.  Exceptional rank-drop behaviour, response-zero blocks, activity, and permanent attachment remain separate. |
 | `GLD14` | remaining paired-attachment/witness obligation | `GL` | Legally attach a sufficient same-graph same-`Q` package of the selected `M_2,M_4` rows and intersect its radical cross-intersection locus with the full witness equations.  Pure one-colour kernel families show that mixed response shape alone does not remove every `Z` fibre. |
 | `GLD15` | remaining joint-rank and integration obligation | `GL` | Force joint quotient rank two on a pair-block cover and the needed four-port rows, or exclude the rank-one/zero branches with the full mixed witness equations.  `GLD11` shows that maximum-root incidence, blockers, concision, pure/Hamming shell data, and nonzero paired responses do not suffice; no permanent bridge follows. |
@@ -1049,7 +1053,7 @@ flowchart TD
 | `GLD18` | remaining operator-incidence and response-locus obligation | `GL` | Force nonzero complete-nuisance operator spaces, resolve response-invisible and pure-`Z` axes, force the three edge-dependent cancellation equations and a three-full complement, or exclude the noncancellation and sparse-support strata with the full witness equations.  The response-visible minors and cancellation divisors do not by themselves supply legal rows or a permanent bridge. |
 | `GLD19` | remaining response-map-zero witness-locus obligation | `GL` | Force or exclude the literal all-seven `R_S=0` stratum, force a nonzero legal pair package there, or use the full mixed witness equations to exclude its intersecting/sparse-support locus.  A pure selected line is weaker than map zero, and the support classification supplies neither selector attachment nor a permanent bridge. |
 | `GLD20` | remaining global map-zero support obligation | `GL` | Exclude the `F=empty` cell or the one-to-three complementary pure-target-absorption cells with genuinely uncontracted mixed coefficients, or force a nonzero legal complete-nuisance operator row.  The finite support atlas is exhaustive for response windows but is neither a witness enumeration nor a permanent bridge. |
-| `GLD21` | remaining complete-clique map-zero obligation | `GL` | On the proved `h!=0` residue, integrate the forced pure `G_U(a^4)` slice and dense nuisance absorptions into one same-graph principal-permanent root-companion family and derive a contradiction, or produce a further coefficient detector.  `GLD23` excludes every private colour-diagonal permutation chart; GLD41 closes the single-active-slice cell; GLD42 closes one reciprocal pair; GLD43 forces transpose-matched support with at least two pairs; GLD44 excludes all five generic two-pair orbit parts; and GLD45--GLD47 pointwise close the same-tail, disjoint, and reverse orbits.  Same-head and chain exceptional divisor unions, larger supports, and the proper-secondary-clique cells remain.  The formal solution `G_U=J_Q/h` still shows that fixed-`Q` linear algebra alone cannot close them.  Other `F=empty` and pure-absorption cells remain separate. |
+| `GLD21` | remaining complete-clique map-zero obligation | `GL` | On the proved `h!=0` residue, integrate the forced pure `G_U(a^4)` slice and dense nuisance absorptions into one same-graph principal-permanent root-companion family and derive a contradiction, or produce a further coefficient detector.  `GLD23` excludes every private colour-diagonal permutation chart; GLD41 closes the single-active-slice cell; GLD42 closes one reciprocal pair; GLD43 forces transpose-matched support with at least two pairs; GLD44 excludes all five generic two-pair orbit parts; and GLD45--GLD48 pointwise close the same-tail, disjoint, reverse, and same-head orbits.  The chain exceptional divisor union, larger supports, and the proper-secondary-clique cells remain.  The formal solution `G_U=J_Q/h` still shows that fixed-`Q` linear algebra alone cannot close them.  Other `F=empty` and pure-absorption cells remain separate. |
 | `GLD22` | completed private-permutation successor | `GLD23` | The common-matching `-2hP` detector is now subsumed in scope by an exact exhaustion of every colour-dependent private permutation.  The elementary proof remains a separately replayable explanation of the identity orbit. |
 | `GLD23` | completed first nonprivate successor | `GLD24` | The private-permutation boundary has an exact genuinely nonprivate continuation on the balanced one-switch chart.  `GLD25` subsequently closes its two-independent-amplitude boundary. |
 | `GLD24` | completed two-amplitude successor | `GLD25` | The balanced slice is now subsumed by an exact exclusion with both off-diagonal switch amplitudes independent and nonzero.  The separately replayable `GLD24` certificate remains a simpler one-parameter explanation. |
@@ -1075,7 +1079,8 @@ flowchart TD
 | `GLD44` | completed first pointwise orbit successor | `GLD45` | The same-tail exceptional divisor has no residual point, so one of the five minimal two-pair orbit types is fully empty. |
 | `GLD44` | completed second pointwise orbit successor | `GLD46` | The disjoint `u=-1` curve and its edge-exchanged `w=-1` branch are empty, closing a second minimal two-pair orbit. |
 | `GLD44` | completed third pointwise orbit successor | `GLD47` | The reverse `u=-1`, `w=-1`, and `uw=-1` components are empty, closing a third minimal two-pair orbit. |
-| `GLD47` | remaining dense nonprivate integrability obligation | `GL` | Close or further reduce the same-head and chain exceptional divisor unions, then attack larger transpose-matched supports.  Proper-secondary cells and every weighted-permanent bridge remain separate. |
+| `GLD44` | completed fourth pointwise orbit successor | `GLD48` | The same-head pair-order intersection leaves one curve and one point, and exact contradictions close both, leaving only the chain orbit open among minimal two-pair supports. |
+| `GLD48` | remaining dense nonprivate integrability obligation | `GL` | Close or further reduce the chain exceptional divisor union, then attack larger transpose-matched supports.  Proper-secondary cells and every weighted-permanent bridge remain separate. |
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
@@ -1317,10 +1322,11 @@ branch. They are not an instruction to begin all of them at once.
    divisor without a residual point, proving that full `12`-mask orbit empty.
    GLD46 closes the disjoint orbit by one eleven-row curve certificate and an
    exact support-pair exchange.  GLD47 closes all three reverse exceptional
-   components with two curve certificates and pair exchange.  The smallest
-   continuation is exact closure or further reduction of the same-head and
-   chain divisor unions; a coordinate-free nonprivate argument remains the
-   broader alternative.
+   components with two curve certificates and pair exchange.  GLD48 closes
+   the same-head residue by intersecting the pair-ordered generic divisors and
+   excluding the resulting curve and point.  The smallest continuation is
+   exact closure or further reduction of the chain divisor union; a
+   coordinate-free nonprivate argument remains the broader alternative.
    Other `F=empty` and pure-absorption cells and every permanent consequence
    remain open.
 
