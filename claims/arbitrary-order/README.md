@@ -2426,6 +2426,15 @@ remove the zero- and one-pair masks, leaving at most `4083` patterns with at
 least two reciprocal pairs.  This is an exact support reduction, not an
 exclusion or existence result for those residual patterns.
 
+The
+[`dense two-active-slice two-reciprocal-pair generic exclusion`](FIXED_Q_DENSE_TWO_ACTIVE_SLICE_TWO_RECIPROCAL_PAIR_GENERIC_EXCLUSION_THEOREM.md)
+attacks the minimal GLD43 residue.  The `66` two-pair masks split exhaustively
+into reverse, same-tail, same-head, directed-chain, and disjoint orbits with
+counts `6,12,12,24,12`.  Exact `12`--`17`-row rational-function certificates
+exclude the generic part of every orbit.  Five short orbitwise exceptional
+divisor unions remain open; the theorem does not promote generic exclusion to
+pointwise closure.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2489,6 +2498,8 @@ The GLD42 reciprocal two-active-slice exclusion is covered by the
 [`dense two-active-slice reciprocal-spike hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_RECIPROCAL_SPIKE_AFFINE_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD43 full two-active-slice support reduction is covered by the
 [`dense two-active-slice reciprocal-support hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_RECIPROCAL_SUPPORT_DIVISOR_REDUCTION_REVIEW_2026-08-20.md).
+The GLD44 two-reciprocal-pair generic exclusion is covered by the
+[`dense two-active-slice two-pair generic hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_TWO_RECIPROCAL_PAIR_GENERIC_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
