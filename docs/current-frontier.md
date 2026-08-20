@@ -195,6 +195,8 @@ flowchart TD
   GLS8["Promoted two-probe one-target reduction<br/>PROVED all-r criterion; physical failure OPEN"]
   GLS9["Four-root full-rank all-response-zero localization<br/>PROVED conditional; pure-Pi localized"]
   GLS10["Four-root full-rank literal-zero exclusion<br/>PROVED conditional; determinant and broader leaves OPEN"]
+  GLS11["Four-root determinant-divisor six-response reduction<br/>PROVED exact core/trichotomy; survivor OPEN"]
+  GLS12["Four-root divisor rank-two/singleton exclusion<br/>PROVED exact; rank-one cores OPEN"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
@@ -409,6 +411,8 @@ flowchart TD
   GLS7 -->|one-row refinement of the all-seven split| GLS8
   GLS7 -->|literal all-seven response zero on det H_Q nonzero| GLS9
   GLS9 -->|two complete residual-colour fibres| GLS10
+  GLS10 -->|det H_Q zero; six pair responses zero| GLS11
+  GLS11 -->|six active-pair quotients / P4 column splice| GLS12
   S1 -->|premise| O1
   M2 -->|premise| O1
   O1 -->|residual refinement| O2
@@ -500,7 +504,7 @@ flowchart TD
   GLS7 -->|E on O or C gives legal seven-target interface| GLD3
   GLS7 -->|all-seven R, A and exceptional fibres remain| GL
   GLS8 -->|simultaneous all-target Fitting failure; downstream shape for r>=5| GL
-  GLS10 -->|det divisor, broader R and absorption open| GL
+  GLS12 -->|rank-one six-pair-zero cores / separate seventh response| GL
   GLS3 -->|higher mixed witness-locus equations required| GL
   GLQ2 -->|permanent attachment remains open| GL
   GLD1 -->|four-root target-coupling refinement| GLD2
@@ -1059,7 +1063,9 @@ flowchart TD
 | `GLS4`, `GLS5`, `GLS6`, `GLS7` | arbitrary-root promoted one-row reduction | `GLS8` | Re-rooting at the GLS4 probe pair gives, for every `r>=3`, a top-minus-two/top fixed-`Q` target module.  A desired coefficient survives the unique higher grade, while exact radical--Fitting profiles decide whether any legal nonzero row exists at any residual contraction.  For the standard four-root module this replaces the coarse per-target R/A wording by simultaneous failure of every target for every eligible `Q`; GLS7 E remains the stronger seven-row GLD3 edge. |
 | `GLS7` | full-rank literal all-response-zero localization | `GLS9` | On `D(det H_Q)`, vanishing of all six pair responses forces all direct port blocks to zero and a common one- or two-port shore.  The residual factors are coordinate; the singleton shore is fully monomial, while in the two-port shore at least one local factor is coordinate.  The four-port response then vanishes automatically and the complete contracted target forces opposite residual colours with pure third-colour `Pi_Q`.  The equal-colour branch is excluded, but the opposite-colour pure locus survives. |
 | `GLS9` | two-complete-fibre exclusion | `GLS10` | In the localized opposite-colour chart, the `(i,i)` fibre excludes the singleton shore.  In the two-port normal form the same two alpha-lines occur on both residual shores: `(i,i)` forces them to cover `{i,k}`, while `(j,j)` forces them to cover `{j,k}`.  The labelled active-slot quotient uses no selector, response coordinate, or nuisance-minor division. |
-| `GLS10` | remaining response-zero and absorption obligation | `GL` | Cover `det H_Q=0`, response-zero patterns weaker than literal all-seven zero, and every nonzero-response absorbed or exceptional fibre.  Then supply every additional common-package, synchronization, alignment, activity, nuisance, and anchor gate of a named downstream theorem. |
+| `GLS10` | determinant-divisor six-response reduction | `GLS11` | On the same GLS4 pair, assume all six full pair-response tensors vanish.  Rank zero is absent.  At rank two, complete mixed coefficients and maximality exclude every quotient escape and leave a conformal core with exactly two active combined ports, injective residual projections, fixed coordinate blockers, and a labelled quotient four-port target.  At rank one, an exhaustive double-contained/one-sided/two-sided trichotomy gives support-at-most-two normal forms for the escaping branches and exact target refinements.  Six pair zeros do not imply the seventh response zero; its quartic is separate. |
+| `GLS11` | rank-two and singleton-triangle exclusion | `GLS12` | Six labelled active-pair quotients of the complete target exclude every rank-two active-dimension profile.  In the full `(2,2)` profile, conformal orthogonality gives opposite symplectic graph planes and a rank-two `B_st`, contradicting the final coordinate rank-one quotient.  On rank one, the singleton triangle's three pure companions share three tail incidence maps; column splicing would give a weighted `Delta_3` restriction of `P_4`, contradicting its exact subrank two. |
+| `GLS12` | remaining response-zero and absorption obligation | `GL` | Exclude rank-one Branch I, Branch II and its transpose, and the Branch-III two-port identity, imposing the separate four-port-response quartic when literal all-seven zero is intended.  Also cover response-zero patterns weaker than six simultaneous pair zeros and every nonzero-response absorbed or exceptional fibre.  Then supply every common-package, synchronization, alignment, activity, nuisance, and anchor gate of a named downstream theorem. |
 | `GLS8` | remaining physical and downstream-package obligation | `GL` | Derive a complete-mixed companion/integrability identity forcing at least one failure containment to break for some eligible `(Q,A)`, or contradict the simultaneous all-target profiles on the same graph.  Then prove the rows so obtained satisfy the complete common-package, synchronization, alignment, activity, and anchor hypotheses of a named committed downstream detector; GLS8 alone does not do so.  The C leaf is an obligation only for an entry expressly requiring stronger pair observability.  Rank, pure-target, or bounded-support data alone are insufficient. |
 | `GLS2` | remaining supply and attachment obligation | `GL` | Companion-sensor rank drop on the target locus, every higher-surplus nonlinear/cross-window supply, the three-group overlap condition, and weighted-diagonal attachment remain open.  Ambient full rank does not discard the witness rank-drop branch. |
 | `GLS3` | sharp mixed-equation rank-drop boundary | `GL` | Maximum-root data, exact blocker quotas, local concision, pure normalization, the Hamming-one target shell, and nonzero raw `p_A` do not force pair observability.  The exact physical fibre is excluded by one higher mixed coefficient, so a positive theorem must use the full mixed witness equations or a proved physical quotient. |
@@ -1281,7 +1287,15 @@ branch. They are not an instruction to begin all of them at once.
    two-port branch uses the same two alpha-lines in the incompatible `(i,i)`
    and `(j,j)` colour covers.  It makes the entire literal-zero chart on
    `D(det H_Q)` empty.  The determinant divisor
-   remains.  This does not close the broader `R` branch,
+   is reduced by `GLS11`: rank zero is absent; rank two is a
+   two-active-port conformal core with fixed coordinate blockers; and rank one
+   has an exhaustive double-contained/one-sided/two-sided trichotomy.  The
+   six pair-response equations have a denominator-free 15-matching identity,
+   but they do not imply the seventh four-port response zero.  `GLS12`
+   excludes the whole rank-two core by six support-space quotients and
+   excludes the rank-one singleton triangle by a common-incidence `P_4`
+   column splice.  Rank-one double-contained, one-sided, and two-port
+   two-sided branches remain.  This does not close the broader `R` branch,
    because `GLS7` enters `R` when even one of the seven responses is zero.
    The pair/four-port interference theorem now gives a second, smaller target
    bridge after one exact same-`Q` window is attached: three nonzero

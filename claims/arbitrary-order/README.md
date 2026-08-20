@@ -2065,6 +2065,48 @@ records the bounded relaxed-module experiment that exposed the two-fibre
 certificate; the written quotient argument, rather than the finite probe,
 proves the arbitrary-point statement.
 
+The determinant-divisor continuation
+[`four-root all-pair-response-zero rank reduction`](FOUR_ROOT_DETERMINANT_DIVISOR_ALL_PAIR_RESPONSE_ZERO_RANK_TWO_CORE_AND_RANK_ONE_TRICHOTOMY_REDUCTION_THEOREM.md)
+([hostile review](../../docs/audits/FOUR_ROOT_DETERMINANT_DIVISOR_ALL_PAIR_RESPONSE_ZERO_RANK_REDUCTION_REVIEW_2026-08-20.md))
+keeps the same GLS4 pair and assumes the six full same-`Q` pair-response
+tensors vanish.  Rank zero is incompatible with GLS4 activity.  At rank two,
+maximum-root maximality and the complete contracted target exclude every
+one- or two-sided quotient escape.  The surviving conformal core has exactly
+two active combined ports; both residual projections are injective and each
+active port has a fixed coordinate blocker in its combined coefficient-row
+span.  The core also obeys a labelled four-port quotient target, but that
+quotient loses the selected nonzero `Pi_Q` and does not exclude the core.  At
+rank one, the response equations have an exhaustive double-contained,
+one-sided, or two-sided trichotomy.  The escaping supports have size at most
+two, and the complete target sharpens the two-sided branch to a monomial
+triangle or an exact two-site insertion identity.  A denominator-free
+15-matching identity shows that six pair-response zeros do not imply the
+seventh four-port response zero on this divisor.  This is a reviewed proved
+exact reduction, not an attachment theorem.  The linked follow-up excludes
+the rank-two core and singleton triangle, while the remaining rank-one
+branches, the separate seventh-response quartic, weaker response patterns,
+absorption fibres, and the named downstream package remain open.
+
+The exact follow-up
+[`rank-two core and rank-one singleton-triangle exclusion`](FOUR_ROOT_DETERMINANT_DIVISOR_RANK_TWO_CORE_AND_RANK_ONE_SINGLETON_TRIANGLE_EXCLUSION_THEOREM.md)
+([hostile review](../../docs/audits/FOUR_ROOT_DETERMINANT_DIVISOR_ALL_PAIR_RESPONSE_ZERO_RANK_REDUCTION_REVIEW_2026-08-20.md))
+then removes two of those divisor survivors.  For the rank-two core, quotient
+the complete target in each pair of the four active vertices by its incident
+coefficient-support spaces.  The two inactive pure tags make the surviving
+target colours independent.  The resulting six support-cover conditions
+exclude active-rank profiles `(1,1)`, `(2,1)`, and `(1,2)`; in `(2,2)` the
+two combined images are opposite symplectic graph planes, so `B_st` has rank
+two, while the last quotient forces it to be a coordinate rank-one edge.  For
+the rank-one singleton triangle, its three pure complementary permanents have
+the same three tail incidence maps.  Splicing their three active columns
+would make a weighted three-colour diagonal restriction of `P_4`, contradicting
+the exact fourth-order permanent subrank-two theorem.  This is a reviewed
+proved exact exclusion whose focused primary, independent no-import audit,
+and hostile review pass.  It leaves rank-one
+Branch I, Branch II, and the two-port Branch III identity, as well as the
+separate seventh-response quartic, broader response patterns, absorption
+fibres, and every named downstream selector package.
+
 The
 [`four-root paired-grade constant-selector theorem`](FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md)
 then resolves the first polarized detector shape.  It decomposes the adjacent
