@@ -2235,9 +2235,24 @@ root--root entry to vanish.  The Hamming-one equations make each of the three
 active singleton positions contribute `-h` times the matching private word,
 so the matching mixed coefficient is `h-3h=-2h`, contradicting `h!=0`.
 Thus the standard common private full-rank companion chart is excluded on
-the witness locus.  Colour-dependent private permutations, nonprivate
-root-to-port arrays, the proper-secondary-clique cells, and every weighted-
-permanent consequence remain open.
+the witness locus.  Its colour-dependent private-permutation boundary is
+closed by the next theorem; nonprivate root-to-port arrays, the proper-
+secondary-clique cells, and every weighted-permanent consequence remain open.
+
+The
+[`fixed-Q dense colour-dependent private-permutation exclusion`](FIXED_Q_DENSE_COLOUR_DEPENDENT_PRIVATE_PERMUTATION_EXCLUSION_THEOREM.md)
+closes the entire monomial root-to-port chart left by the common-matching
+argument.  Dense-shore orthogonality and invertible diagonal coordinate
+changes normalize the dead permutation to the identity, both active shores
+to `(1,1)` and `(1,-1)`, `h` and all twelve private entries to `1`.  The two
+active private permutations then range over `24^2=576` ordered pairs, or `28`
+simultaneous-conjugacy/active-swap orbits.  The complete ten-vertex equation
+has `81` freely allowed root-side and pure-target variables, yet exact
+rational elimination gives a `5`--`20`-row contradiction certificate on
+every orbit.  A separate no-import audit checks all `576` pairs without
+symmetry reduction.  This excludes every colour-dependent private
+colour-diagonal array, but not a nonprivate cross array or any other `GLD21`
+cell.
 
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
@@ -2259,6 +2274,8 @@ The GLD21 dead-colour scalar gate is covered by the
 [`fixed-Q response-map-zero dead-colour hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_DEAD_COLOUR_H_GATE_AND_DENSE_COMPANION_ABSORPTION_REVIEW_2026-08-18.md).
 The GLD22 common-private integrability exclusion is covered by the
 [`fixed-Q dense private-cross-matching hostile review`](../../docs/audits/FIXED_Q_DENSE_PRIVATE_CROSS_MATCHING_ROOT_COMPANION_EXCLUSION_REVIEW_2026-08-19.md).
+The GLD23 colour-dependent private-permutation exclusion is covered by the
+[`fixed-Q dense colour-dependent private-permutation hostile review`](../../docs/audits/FIXED_Q_DENSE_COLOUR_DEPENDENT_PRIVATE_PERMUTATION_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
