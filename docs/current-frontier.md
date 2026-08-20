@@ -220,6 +220,7 @@ flowchart TD
   GLD29["Directed-spur uv-u-v-1 divisor<br/>PROVED pointwise exclusion"]
   GLD30["Directed-spur uv+vw+w+1 divisor<br/>PROVED chart completion"]
   GLD31["Dense bidirected spur<br/>PROVED generic 4-parameter exclusion"]
+  GLD32["Bidirected-spur uv=-1 divisor<br/>PROVED generic refinement"]
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
@@ -492,6 +493,7 @@ flowchart TD
   GLD26 -->|uv-u-v-1 divisor closure| GLD29
   GLD26 -->|uv+vw+w+1 divisor closure| GLD30
   GLD30 -->|add reverse support edge / generic cut| GLD31
+  GLD31 -->|uv=-1 generic divisor refinement| GLD32
   GLD3 -->|constant synchronized window and three-activity supply open| GL
   GLD4 -->|target attachment / sparse syzygy / deeper depth open| GL
   GLD7 -->|pure survival / response nonvanishing / activity open| GL
@@ -509,7 +511,8 @@ flowchart TD
   GLD19 -->|map-zero forcing / sparse support / permanent open| GL
   GLD20 -->|F-empty / pure-absorption / legal-row exclusion open| GL
   GLD21 -->|proper-secondary / other h!=0 cells open| GL
-  GLD31 -->|five divisors / larger supports open| GL
+  GLD31 -->|other four divisors / larger supports open| GL
+  GLD32 -->|four residual surfaces open| GL
   BO1 -->|bounded witness-locus certificate still open| GL
   G0 -. route boundary .-> C2
 ```
@@ -703,6 +706,7 @@ flowchart TD
 | `GLD29` | On the `GLD26` exceptional divisor `uv-u-v-1=0`, an eighteen-row relation leaves `2u(u+1)^2(u+w)(w+2)(u+w+1)q_1q_2`.  Exact curve detectors reduce its five components to the `GLD28` `uv=1` locus and one `q_1` cylinder.  A fourteen-row quotient relation leaves `2w(w+2)(3uw+u+7w+3)`; exact cores close its `w=-2` and `w=-u` fibres.  Thus the **entire `uv-u-v-1=0` divisor is proved empty**.  `GLD30` subsequently closes the one divisor then remaining. | [Directed-spur uv-u-v-1 divisor exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_DIRECTED_SPUR_UV_MINUS_U_MINUS_V_MINUS_ONE_DIVISOR_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_DIRECTED_SPUR_UV_MINUS_U_MINUS_V_MINUS_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md) |
 | `GLD30` | On the final `GLD26` exceptional divisor `uv+vw+w+1=0`, the `v=-1` fibre lies in `GLD27`; on `v!= -1`, a sixteen-row relation leaves `-uv(u-1)(u+v)(uv+1)(uv-2v-1)`.  Three curve detectors place every residual in `GLD27`, `GLD28`, `GLD29`, or an excluded chart boundary.  Thus the **entire final divisor and the complete nonzero directed-spur chart are proved empty**.  With the `GLD25` `w=0` theorem, the coordinate family is empty for all `w`.  Reverse spurs, larger supports, and all broader boundaries remain open. | [Directed-spur uv+vw+w+1 divisor exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_DIRECTED_SPUR_UV_PLUS_VW_PLUS_W_PLUS_ONE_DIVISOR_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_DIRECTED_SPUR_UV_PLUS_VW_PLUS_W_PLUS_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md) |
 | `GLD31` | Add the reverse edge `zE_(2,0)` to the completed `GLD30` family, with `u,v,w,z!=0`.  A sixteen-row polynomial relation cancels all `81` free coefficients and leaves `2uv wz(uv+1)(uv+wz-1)(uv+wz+1)(uv+vw+w+1)p`.  Thus the **complement of five explicit hypersurfaces is proved empty**, a generic/open-subset four-parameter exclusion.  The five divisors, further support entries, root-colour-changing blocks, proper-secondary cells, and every weighted-permanent branch remain open; the `z=0` boundary is `GLD30`. | [Dense bidirected-spur generic exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_BIDIRECTED_SPUR_GENERIC_CROSS_ARRAY_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_GENERIC_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md) |
+| `GLD32` | On the `GLD31` divisor `uv=-1`, the legal parametrization `v=-1/u` and a fourteen-row polynomial-cleared relation leave `-2uwz^2(u-1)(z-1)(z+1)(wz-2)`.  Thus the **complement of four explicit residual surfaces is proved empty inside this divisor**.  The four surfaces and the entire divisor remain open pointwise; the `z=0` boundary lies in `GLD27`. | [Bidirected-spur uv=-1 generic exclusion](../claims/arbitrary-order/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_GENERIC_EXCLUSION_THEOREM.md), [hostile review](audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_GENERIC_EXCLUSION_REVIEW_2026-08-20.md) |
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
@@ -972,6 +976,7 @@ flowchart TD
 | `GLD26` | pointwise `uv-u-v-1=0` divisor closure | `GLD29` | An eighteen-row detector reduces the divisor to five curves.  Their exact relations feed the proved `GLD28` locus or one quadratic cylinder, whose two residual fibres have exact quotient contradictions. |
 | `GLD26` | pointwise `uv+vw+w+1=0` divisor closure | `GLD30` | After its `v=-1` fibre feeds `GLD27`, a sixteen-row detector reduces the remaining divisor to three curves and the same proved `uv=-1` locus.  Three exact curve relations feed `GLD27`, `GLD28`, or `GLD29`, completing the exceptional-locus cover and hence the nonzero directed-spur chart. |
 | `GLD30` | generic bidirected-spur support extension | `GLD31` | Adding `zE_(2,0)` produces a four-parameter chart.  A sixteen-row polynomial relation excludes the complement of five explicit hypersurfaces; its `z=0` boundary is the completed `GLD30` family, but no specialization across the five new divisors is claimed. |
+| `GLD31` | generic `uv=-1` divisor refinement | `GLD32` | Substituting `v=-1/u` into fourteen complete rows excludes the complement of `u=1`, `z=1`, `z=-1`, and `wz=2` inside the first exceptional divisor.  No pointwise closure of those four surfaces is claimed. |
 | `GLD13` | remaining generic-absorption obligation | `GL` | Exclude the function-field absorbed branch by the full mixed equations or turn one of its denominator-cleared nuisance identities into a bounded coefficient-pure target contradiction.  Exceptional rank-drop behaviour, response-zero blocks, activity, and permanent attachment remain separate. |
 | `GLD14` | remaining paired-attachment/witness obligation | `GL` | Legally attach a sufficient same-graph same-`Q` package of the selected `M_2,M_4` rows and intersect its radical cross-intersection locus with the full witness equations.  Pure one-colour kernel families show that mixed response shape alone does not remove every `Z` fibre. |
 | `GLD15` | remaining joint-rank and integration obligation | `GL` | Force joint quotient rank two on a pair-block cover and the needed four-port rows, or exclude the rank-one/zero branches with the full mixed witness equations.  `GLD11` shows that maximum-root incidence, blockers, concision, pure/Hamming shell data, and nonzero paired responses do not suffice; no permanent bridge follows. |
@@ -990,7 +995,8 @@ flowchart TD
 | `GLD26` | completed third divisor successor | `GLD29` | The `uv-u-v-1=0` component of the generic detector's exceptional locus is now pointwise empty; exactly one divisor boundary remains on this chart. |
 | `GLD26` | completed final divisor successor | `GLD30` | The `uv+vw+w+1=0` component is pointwise empty.  Together with `GLD27`--`GLD29`, this exhausts the four-factor exceptional locus of `GLD26`; with the `GLD25` `w=0` boundary, the full directed-spur coordinate family is empty for every `w`. |
 | `GLD30` | completed generic reverse-spur successor | `GLD31` | One reverse support edge now has an exact four-parameter detector away from five explicit hypersurfaces.  This is a generic successor, not a pointwise completion analogous to `GLD30`. |
-| `GLD31` | remaining dense nonprivate integrability obligation | `GL` | Close one or more of the five bidirected-spur divisors, add further support entries, or derive a coordinate-free permanental/cofactor substitute.  Root-colour-changing blocks, proper-secondary cells, and every weighted-permanent bridge remain separate. |
+| `GLD31` | completed first divisor refinement | `GLD32` | The `uv=-1` hypersurface now has an exact generic detector leaving four residual surfaces; the other four `GLD31` divisors remain unchanged. |
+| `GLD32` | remaining dense nonprivate integrability obligation | `GL` | Close one of the four `uv=-1` residual surfaces or refine another `GLD31` divisor, add further support entries, or derive a coordinate-free permanental/cofactor substitute.  Root-colour-changing blocks, proper-secondary cells, and every weighted-permanent bridge remain separate. |
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
@@ -1212,9 +1218,10 @@ branch. They are not an instruction to begin all of them at once.
    prior divisor theorems.  Thus the full directed-spur coordinate family is
    empty.  GLD31 adds the reverse support edge and excludes a generic open
    subset of the resulting four-parameter chart, leaving five explicit
-   divisors.  Closing one of those divisors, adding further support entries,
-   or finding a coordinate-free nonprivate argument is now the smallest
-   continuation.
+   divisors.  GLD32 refines `uv=-1` to four residual surfaces.  Closing one
+   of those surfaces, refining another divisor, adding further support
+   entries, or finding a coordinate-free nonprivate argument is now the
+   smallest continuation.
    Other `F=empty` and pure-absorption cells and every permanent consequence
    remain open.
 
