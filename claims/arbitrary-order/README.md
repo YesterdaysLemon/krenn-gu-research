@@ -2517,6 +2517,15 @@ thirteen-row exact certificates close those curves with denominator roots
 only at active-forbidden values.  Hence all `12` reverse-disjoint masks are
 empty, leaving nine GLD50 orbitwise exceptional unions open.
 
+The
+[`three-pair in-star colour-exchange exclusion`](FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_IN_STAR_COLOUR_EXCHANGE_EXCLUSION_THEOREM.md)
+closes `O13` by an exact transfer rather than another divisor chase.  Swapping
+the two active colours reverses all three reciprocal arrows via the
+involution `t->t/(t-1)`.  A signed colour permutation of the `81` nuisance
+coordinates preserves all `6561` complete equations, carrying the in-star
+system to the pointwise-empty GLD52 out-star system.  Hence all `4` in-star
+masks are empty, leaving eight GLD50 orbitwise exceptional unions open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2602,6 +2611,8 @@ The GLD53 fork-path divisor closure is covered by the
 [`three-pair fork-path divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_FORK_PATH_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD54 reverse-disjoint divisor closure is covered by the
 [`three-pair reverse-disjoint divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_REVERSE_DISJOINT_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD55 in-star colour-exchange closure is covered by the
+[`three-pair in-star colour-exchange hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_IN_STAR_COLOUR_EXCHANGE_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
