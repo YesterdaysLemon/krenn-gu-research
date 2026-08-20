@@ -2028,6 +2028,24 @@ downstream common-package, alignment, synchronization, activity, or anchor
 requirements.
 
 The
+[`four-root full-rank all-response-zero localization`](FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_OPPOSITE_COLOUR_PURE_COMPLEMENTARY_PERMANENT_LOCALIZATION_THEOREM.md)
+([hostile review](../../docs/audits/FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_LOCALIZATION_REVIEW_2026-08-20.md))
+then uses the complete contracted mixed target on one literal response-zero
+subbranch.  If the GLS4 pair has `det H_Q!=0` and all six same-`Q` pair
+responses vanish identically, every direct edge among the four complementary
+ports is zero.  Maximum-root maximality leaves one or two active ports with
+coordinate residual factors and, in the two-port case, a forced opposite-sign
+normal form; the four-port response is automatically zero.  Projecting the
+complete six-slot target excludes equal residual colours and forces the
+survivor onto an opposite-colour, pure-third-colour `Pi_Q` locus.  This is an
+exact localization, not an exclusion or attachment theorem.  The
+`det H_Q=0` divisor, the surviving pure-`Pi_Q` locus, every broader
+response-zero branch, and every nonzero-response absorption branch remain
+open.  An exact maximum-root control realizes the localized graph-side data
+but does not verify GLS4 higher-column quotient survival and is excluded by
+one mixed target coefficient equal to one.
+
+The
 [`four-root paired-grade constant-selector theorem`](FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md)
 then resolves the first polarized detector shape.  It decomposes the adjacent
 zero-root-edge and one-root-edge grades exactly and proves that direct-nuisance
