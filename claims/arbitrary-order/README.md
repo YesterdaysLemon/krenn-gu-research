@@ -2556,6 +2556,13 @@ intersections; fifteen-row exact curve certificates have denominator roots
 only at inactive amplitudes.  Hence all `24` O6 masks are empty, leaving four
 GLD50 orbitwise exceptional unions open.
 
+The
+[`three-pair O3 exceptional-divisor exclusion`](FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_O3_EXCEPTIONAL_DIVISOR_EXCLUSION_THEOREM.md)
+closes `O3`.  Four exact surface certificates leave five intersections;
+five exact curve certificates reduce those to two rational points, and
+nine- and twelve-row cores close both.  Hence all `24` O3 masks are empty,
+leaving only `O2`, `O7`, and `O9` among GLD50's orbitwise exceptional unions.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2651,6 +2658,8 @@ The GLD58 out-fork colour-exchange closure is covered by the
 [`three-pair out-fork colour-exchange hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_OUT_FORK_COLOUR_EXCHANGE_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD59 O6 divisor closure is covered by the
 [`three-pair O6 divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_O6_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD60 O3 divisor closure is covered by the
+[`three-pair O3 divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_THREE_RECIPROCAL_PAIR_O3_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
