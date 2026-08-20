@@ -2403,6 +2403,17 @@ GLD23.  This exhausts all `4096` support masks and proves the complete
 Multiple simultaneously nonprivate slices, root-colour-changing blocks,
 proper-secondary cells, and all permanent implications remain open.
 
+The
+[`dense two-active-slice reciprocal-spike affine exclusion`](FIXED_Q_DENSE_TWO_ACTIVE_SLICE_RECIPROCAL_SPIKE_AFFINE_EXCLUSION_THEOREM.md)
+crosses that boundary on the first reciprocal two-colour chart.  For
+`A^0=I_4+uE_(0,2)`, `A^1=I_4+vE_(2,0)`, and `A^2=I_4`, three complete rows
+force `uv-u-v=0`.  On its nonzero part, a thirteen-row function-field
+certificate excludes every point except `(-1,1/2)`, and an eleven-row
+integer certificate closes that point.  GLD41 covers every support-drop
+face, so all four support masks are empty.  Additional support in either
+active slice, arbitrary two-slice arrays, proper-secondary cells, and all
+permanent implications remain open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2462,6 +2473,8 @@ The GLD40 affine-chart completion is covered by the
 [`dense bidirected-spur affine-chart hostile review`](../../docs/audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_AFFINE_CHART_COMPLETION_REVIEW_2026-08-20.md).
 The GLD41 single-active-slice affine completion is covered by the
 [`dense single-active-slice affine cross-array hostile review`](../../docs/audits/FIXED_Q_DENSE_SINGLE_ACTIVE_SLICE_AFFINE_CROSS_ARRAY_COMPLETION_REVIEW_2026-08-20.md).
+The GLD42 reciprocal two-active-slice exclusion is covered by the
+[`dense two-active-slice reciprocal-spike hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_RECIPROCAL_SPIKE_AFFINE_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
