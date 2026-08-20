@@ -2451,6 +2451,15 @@ the two disjoint directed pairs and therefore covers the second GLD44 branch
 `w=-1`.  Hence all `12` disjoint masks are pointwise empty.  Reverse,
 same-head, and chain exceptional divisors remain.
 
+The
+[`dense two-active-slice reverse exceptional-divisor exclusion`](FIXED_Q_DENSE_TWO_ACTIVE_SLICE_REVERSE_EXCEPTIONAL_DIVISOR_EXCLUSION_THEOREM.md)
+closes the reverse orbit.  A seventeen-row certificate closes `u=-1`, pair
+exchange closes `w=-1`, and a separate fifteen-row certificate closes
+`uw=-1`.  Their denominator roots are all already forbidden by the active
+reciprocal parametrization.  Thus all `6` reverse masks are pointwise empty;
+only same-head and chain exceptional divisor families remain among the five
+minimal two-pair orbit types.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2520,6 +2529,8 @@ The GLD45 same-tail divisor closure is covered by the
 [`dense two-active-slice same-tail divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_SAME_TAIL_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD46 disjoint divisor closure is covered by the
 [`dense two-active-slice disjoint divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_DISJOINT_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD47 reverse divisor closure is covered by the
+[`dense two-active-slice reverse divisor hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_REVERSE_EXCEPTIONAL_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
