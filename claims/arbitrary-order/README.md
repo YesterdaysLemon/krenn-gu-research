@@ -2264,7 +2264,19 @@ side and target variables and leaves `-4t(t+1)`.  A separate ten-row
 certificate gives `0=1` at the only exceptional value `t=-1`.  Thus this
 positive-dimensional two-matching switch chart is empty.  A general switch
 with two independent normalized amplitudes and every larger nonprivate array
-remain open.
+remain open in `GLD24`.
+
+The
+[`fixed-Q dense two-amplitude single-switch exclusion`](FIXED_Q_DENSE_TWO_AMPLITUDE_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_THEOREM.md)
+closes that immediate boundary.  Keep the same two identity colour slices
+and replace the third by `I_4+uE_(0,1)+vE_(1,0)` with independent `u,v!=0`.
+An eighteen-row polynomial relation leaves
+`2uv(u+1)(uv+1)(uv-u-v-1)`.  Exact divisor relations on `u=-1`, `uv=-1`,
+and `uv-u-v-1=0`, followed by a seven-row point certificate and a thirteen-
+row quadratic-quotient certificate, close the detector's entire vanishing
+locus.  Thus the full two-amplitude switch chart is empty.  Larger-support
+nonprivate arrays, colour-changing cross blocks, the other `GLD21` cells,
+and every permanent consequence remain open.
 
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
@@ -2290,6 +2302,8 @@ The GLD23 colour-dependent private-permutation exclusion is covered by the
 [`fixed-Q dense colour-dependent private-permutation hostile review`](../../docs/audits/FIXED_Q_DENSE_COLOUR_DEPENDENT_PRIVATE_PERMUTATION_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD24 balanced single-switch exclusion is covered by the
 [`fixed-Q dense balanced single-switch hostile review`](../../docs/audits/FIXED_Q_DENSE_BALANCED_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD25 two-amplitude single-switch exclusion is covered by the
+[`fixed-Q dense two-amplitude single-switch hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_AMPLITUDE_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
