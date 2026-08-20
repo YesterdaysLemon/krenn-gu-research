@@ -2414,6 +2414,18 @@ face, so all four support masks are empty.  Additional support in either
 active slice, arbitrary two-slice arrays, proper-secondary cells, and all
 permanent implications remain open.
 
+The
+[`dense two-active-slice reciprocal-support divisor reduction`](FIXED_Q_DENSE_TWO_ACTIVE_SLICE_RECIPROCAL_SUPPORT_DIVISOR_REDUCTION_THEOREM.md)
+then restores all twenty-four off-diagonal amplitudes across the two active
+slices.  For every ordered pair `i!=j`, three complete rows over the full
+simultaneous ring force
+`x_(ij)y_(ji)-x_(ij)-y_(ji)=0`.  Thus the two off-diagonal supports are exact
+transposes and each active reciprocal pair lies on one rational curve.  Of
+the original `2^24` masks, only `2^12` are transpose matched; GLD41 and GLD42
+remove the zero- and one-pair masks, leaving at most `4083` patterns with at
+least two reciprocal pairs.  This is an exact support reduction, not an
+exclusion or existence result for those residual patterns.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2475,6 +2487,8 @@ The GLD41 single-active-slice affine completion is covered by the
 [`dense single-active-slice affine cross-array hostile review`](../../docs/audits/FIXED_Q_DENSE_SINGLE_ACTIVE_SLICE_AFFINE_CROSS_ARRAY_COMPLETION_REVIEW_2026-08-20.md).
 The GLD42 reciprocal two-active-slice exclusion is covered by the
 [`dense two-active-slice reciprocal-spike hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_RECIPROCAL_SPIKE_AFFINE_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD43 full two-active-slice support reduction is covered by the
+[`dense two-active-slice reciprocal-support hostile review`](../../docs/audits/FIXED_Q_DENSE_TWO_ACTIVE_SLICE_RECIPROCAL_SUPPORT_DIVISOR_REDUCTION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
