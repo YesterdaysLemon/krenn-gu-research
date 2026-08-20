@@ -2254,6 +2254,18 @@ symmetry reduction.  This excludes every colour-dependent private
 colour-diagonal array, but not a nonprivate cross array or any other `GLD21`
 cell.
 
+The
+[`fixed-Q dense balanced single-switch exclusion`](FIXED_Q_DENSE_BALANCED_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_THEOREM.md)
+then makes the first genuinely nonprivate cut.  In the canonical dense shore
+gauge, keep two root-to-port colour slices equal to `I_4` and take the third
+to be `I_4+E_(0,1)+tE_(1,0)` with `t!=0`.  An exact polynomial combination of
+eighteen complete ten-vertex coefficient rows cancels all `81` free graph-
+side and target variables and leaves `-4t(t+1)`.  A separate ten-row
+certificate gives `0=1` at the only exceptional value `t=-1`.  Thus this
+positive-dimensional two-matching switch chart is empty.  A general switch
+with two independent normalized amplitudes and every larger nonprivate array
+remain open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2276,6 +2288,8 @@ The GLD22 common-private integrability exclusion is covered by the
 [`fixed-Q dense private-cross-matching hostile review`](../../docs/audits/FIXED_Q_DENSE_PRIVATE_CROSS_MATCHING_ROOT_COMPANION_EXCLUSION_REVIEW_2026-08-19.md).
 The GLD23 colour-dependent private-permutation exclusion is covered by the
 [`fixed-Q dense colour-dependent private-permutation hostile review`](../../docs/audits/FIXED_Q_DENSE_COLOUR_DEPENDENT_PRIVATE_PERMUTATION_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD24 balanced single-switch exclusion is covered by the
+[`fixed-Q dense balanced single-switch hostile review`](../../docs/audits/FIXED_Q_DENSE_BALANCED_SINGLE_SWITCH_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
