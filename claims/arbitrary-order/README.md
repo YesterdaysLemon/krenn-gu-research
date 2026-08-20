@@ -2380,6 +2380,16 @@ is empty.  This closes the two formerly remaining divisors and subsumes
 GLD31--GLD38 on this chart.  Broader arrays, support-drop boundaries, and
 every permanent implication remain open.
 
+The
+[`dense bidirected-spur affine-chart completion`](FIXED_Q_DENSE_BIDIRECTED_SPUR_AFFINE_CHART_COMPLETION_THEOREM.md)
+removes every remaining nonzero hypothesis in this coordinate family.  A
+relabelled global pair gives `0=u`, GLD39 gives `0=w`, and on `u=w=0` two
+further pairs give `0=v` and `0=z`.  The all-zero endpoint is the proved
+GLD23 identity private-permutation chart.  This exhausts all `16` support
+masks and proves the full four-parameter affine family empty, subsuming
+GLD24--GLD39 on their coordinate subcharts.  Broader nonprivate arrays and
+all permanent implications remain open.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2435,6 +2445,8 @@ The GLD38 `uv+wz+1=0` divisor closure is covered by the
 [`bidirected-spur uv+wz+1 hostile review`](../../docs/audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_PLUS_WZ_PLUS_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD39 nonzero-chart completion is covered by the
 [`dense bidirected-spur chart-completion hostile review`](../../docs/audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_NONZERO_CHART_COMPLETION_REVIEW_2026-08-20.md).
+The GLD40 affine-chart completion is covered by the
+[`dense bidirected-spur affine-chart hostile review`](../../docs/audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_AFFINE_CHART_COMPLETION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
