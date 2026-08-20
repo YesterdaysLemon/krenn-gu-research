@@ -2336,6 +2336,11 @@ refines the first `GLD31` divisor.  After `v=-1/u`, fourteen complete rows
 leave `-2uwz^2(u-1)(z-1)(z+1)(wz-2)`.  Thus only four residual surfaces
 remain on this divisor.  This is not a pointwise closure.
 
+The
+[`bidirected-spur uv=-1, u=1 surface exclusion`](FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_U_ONE_SURFACE_EXCLUSION_THEOREM.md)
+then closes one residual surface pointwise.  Two surface detectors reduce it
+to `wz=2` and `(w,z)=(1,-1)`; exact certificates leave `24` and `6`.
+
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
 The GLD13--GLD14 successor pair is covered by the
@@ -2377,6 +2382,8 @@ The GLD31 bidirected-spur generic exclusion is covered by the
 [`fixed-Q dense bidirected-spur hostile review`](../../docs/audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_GENERIC_CROSS_ARRAY_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD32 `uv=-1` generic divisor refinement is covered by the
 [`fixed-Q dense bidirected-spur uv=-1 hostile review`](../../docs/audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_GENERIC_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD33 `u=1` surface closure is covered by the
+[`bidirected-spur uv=-1, u=1 hostile review`](../../docs/audits/FIXED_Q_DENSE_BIDIRECTED_SPUR_UV_MINUS_ONE_U_ONE_SURFACE_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
