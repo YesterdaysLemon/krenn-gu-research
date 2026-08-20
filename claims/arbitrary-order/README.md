@@ -2309,7 +2309,17 @@ The
 closes a third divisor pointwise.  An eighteen-row relation reduces it to
 five curves.  Exact curve detectors, the `GLD28` `uv=1` exclusion, and a
 fourteen-row quadratic-cylinder relation leave two quotient fibres; exact
-cores close both.  Thus only `uv+vw+w+1=0` remains open on the `GLD26` chart.
+cores close both.  At that checkpoint only `uv+vw+w+1=0` remained; `GLD30`
+below closes it.
+
+The
+[`fixed-Q dense directed-spur uv+vw+w+1 divisor exclusion`](FIXED_Q_DENSE_DIRECTED_SPUR_UV_PLUS_VW_PLUS_W_PLUS_ONE_DIVISOR_EXCLUSION_THEOREM.md)
+closes that final divisor pointwise.  A sixteen-row relation reduces it to
+three new curves plus the proved `GLD27` locus.  Three exact curve detectors
+place every residual in `GLD27`, `GLD28`, `GLD29`, or an excluded chart
+boundary.  Consequently the entire nonzero `GLD26` chart is empty; with the
+`GLD25` `w=0` boundary, the full coordinate family is empty for all `w`.
+Reverse spurs, broader supports, and the other `GLD21` cells remain open.
 
 The four GLD9--GLD12 successor results and their exact scope are covered by the
 [`common-contraction, tensor Wick, and all-depth response hostile review`](../../docs/audits/COMMON_CONTRACTION_TENSOR_WICK_AND_ALL_DEPTH_RESPONSE_REVIEW_2026-08-17.md).
@@ -2345,6 +2355,9 @@ The GLD28 `uv=1` divisor exclusion is covered by the
 [`fixed-Q dense directed-spur uv=1 hostile review`](../../docs/audits/FIXED_Q_DENSE_DIRECTED_SPUR_UV_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The GLD29 `uv-u-v-1=0` divisor exclusion is covered by the
 [`fixed-Q dense directed-spur uv-u-v-1 hostile review`](../../docs/audits/FIXED_Q_DENSE_DIRECTED_SPUR_UV_MINUS_U_MINUS_V_MINUS_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
+The GLD30 `uv+vw+w+1=0` divisor exclusion and directed-spur chart completion
+are covered by the
+[`fixed-Q dense directed-spur uv+vw+w+1 hostile review`](../../docs/audits/FIXED_Q_DENSE_DIRECTED_SPUR_UV_PLUS_VW_PLUS_W_PLUS_ONE_DIVISOR_EXCLUSION_REVIEW_2026-08-20.md).
 The preceding GLD7/GLD8 pair is covered by the
 [`fixed-Q target quotient and global Wick hostile review`](../../docs/audits/FIXED_Q_TARGET_QUOTIENT_AND_GLOBAL_SQUARE_FREE_WICK_REVIEW_2026-08-17.md).
 
