@@ -1,10 +1,10 @@
 # Maximum-root surplus-two supply/target node: internal proof-DAG plan
 
 Date: 2026-08-20
-Programme branch: `codex/kg-maxroot-leading-absorption-20260820`
+Programme branch: `codex/kg-maxroot-shadow-syzygy-20260820`
 Original determinant-tranche base: `b578d599931942b97300be9d936ae14103538806`
-Current leading-shadow-target-tranche base: `origin/main` at
-`572f00cbab7e9bcfa94f0663170b80ef28d14ae8`
+Current residual-present-top-shadow-tranche base: `origin/main` at
+`12c7bbf7a76a480d195aaef3b9447544ef8e6c41`
 Global Krenn--Gu status: **UNRESOLVED**
 
 This is an internal research plan, not a theorem, reduction, or claim of case
@@ -89,6 +89,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLS16 | Maximum-root evaluation sends the original fixed-`Q` pair `M` column to the complementary permanent and kills the pair `Z` column; the complete joint nuisance maps to all other order-two coefficient slices.  Base survival excludes `k=0` and forces rank one to the common pure-`M` line.  Every foreign labelled pair map also has zero cross-contraction against a legal selector for another target. | Source-level base survival is not forced.  Every oblique/pure-`Z` or `k=0` target remains on an explicit swallowed-base circuit, and cross-annihilation is not foreign nuisance membership.  Four-port synchronization, activity, exceptional fibres, and GLS8 remain open. |
 | GLS17 | For any original fixed-`Q` even target `|S|=2t`, leaving `t-1` roots open kills the residual-present grade and every higher grade.  The residual-absent column has an explicit injection/permanent leading tensor; survival modulo every lower-or-equal-grade nuisance slice forces a pure-`M` operator row.  A finite surviving family has one common pure-`M` direction, and at `r=4` the explicit four-port first-root covectors complete the seven-row synchronization gate. | No leading class is forced to survive and physical output/activity remain separate.  At `r=4`, at least one swallowed pair shadow, all four swallowed four-port shadows, or activity/rank/response failure remains.  Foreign transport and GLS8 are not integrated. |
 | GLS18 | Applying every GLS17 shadow to the complete target equation makes the pure leading quotient rank at most one and useful exactly when both its desired leading class and physical `M` response are nonzero.  Universal failure is the exact all-rank geometric radical--Fitting profile, and finite target families are encoded at one shared residual point. | The simultaneous profile is not proved empty.  At `r=4`, four-port failure means four full first-root nuisance shadows, while pair failure forces only a diagonal three-space inside a nine-space.  Activity, foreign transport, source coverage, and GLS8 remain open. |
+| GLS19 | Leaving `t` roots open for a `2t` target and adjoining the generally surviving `M` column to the exact individual-`Z` nuisance exposes an injection/permanent residual-present top class.  Survival supplies pure `Z`; the complete target and all-rank Fitting profile couple it exactly to nonzero `Z_S` response at one shared residual point. | No top class or response is forced.  At `r=4`, the pure top columns span only diagonal three-spaces, and seven useful rows still require GLD16 activity.  Simultaneous GLS18/GLS19 failure, oblique lines, transport, source coverage, and GLS8 remain open. |
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
@@ -137,6 +138,12 @@ support divisors; and coexistence of all required selectors on the same graph.
   is now an exact all-rank radical--Fitting profile.  At `r=4`, the bad
   four-port branch is four full first-root shadows; the theorem does not
   exclude that branch or supply activity.
+- GLS19 supplies the complementary top-grade axis.  Leaving `t` roots open
+  exposes the residual-present injection/permanent tensor after placing the
+  surviving `M` column in the exact individual-`Z` nuisance.  Top survival
+  gives a legal pure-`Z` row, and complete-target usefulness is exactly top
+  survival plus nonzero `Z_S`.  Universal failure is an all-rank Fitting
+  profile; neither that profile nor activity is excluded.
 - GLD19--GLD21 and GLD22--GLD62 close only their explicitly declared
   response-zero/support/dense subcells.
 - The reviewed failure-module theorem compresses all pointwise nuisance-rank
@@ -227,11 +234,12 @@ A support-free proof must now cover:
    or unequal-line residue to an explicit swallowed base pair circuit, while
    GLS17 sends absence of pure `M` at any even target to all of its swallowed
    partial-root leading classes.  GLS18 couples those classes to the physical
-   `M` response and encodes simultaneous failure across all nuisance-rank
-   fibres by exact radical--Fitting containments at one shared residual point.
-   The containments are not yet contradicted.  The common-line detector is
-   denominator-free at arbitrary \(h\), so no residual-scalar divisor remains
-   inside that conditional branch;
+   `M` response.  GLS19 adds the complementary residual-present top classes,
+   each coupled to `Z_S`.  Simultaneous failure of both axes is now encoded
+   across all nuisance-rank fibres by exact radical--Fitting containments at
+   one shared residual point, but the containments are not yet contradicted.
+   The common-line detector is denominator-free at arbitrary \(h\), so no
+   residual-scalar divisor remains inside that conditional branch;
 5. the detector's augmented-weight/alignment/anchor failures when that detector
    is the downstream entry;
 6. at every root order, exclusion of the promoted response-zero/full-nuisance
@@ -291,6 +299,23 @@ nonzero, and failure on every residual/rank-drop fibre is precisely the
 geometric radical--Fitting containment family.  At `r=4`, absence of a pure
 four-port `M` row makes all four first-root shadows full.  This is the exact
 bad-locus profile to contradict, not a proof that it is empty.
+
+GLS19 gives the complementary residual-present chart.  For `|S|=2t`, leave
+`t` roots open and quotient by the exact individual-`Z` nuisance
+`N_S^J+K g_S^M`.  The grade-`t` column becomes an injection/permanent top
+tensor; survival gives pure `Z`.  On a complete witness,
+
+```text
+sum_c alpha_c [d_(A,S,c)^Z] tensor w_(S,c)
+  =c_(A,S) tensor Z_S.
+```
+
+Thus usefulness is exactly top survival plus nonzero `Z_S`, and universal
+failure has its own all-rank radical--Fitting profile.  Seven useful rows at
+`r=4` enter GLD16 with `a=h`; both `h` branches still require the separate
+three-colour activity gate.  The next proof must contradict simultaneous
+failure of the pure-`M` and pure-`Z` profiles or control the remaining
+projective lines.
 
 ## 5. Dependency order for theorem packages
 
@@ -357,20 +382,24 @@ bad-locus profile to contradict, not a proof that it is empty.
     tensor and complete lower-grade nuisance, and force a common pure-`M` row
     whenever the leading classes survive.  Record the four-root four-port
      first-root gate and retain activity as a separate hypothesis.
-14. **Leading-shadow target/Fitting package (current tranche).**  Apply the
+14. **Leading-shadow target/Fitting package (merged as PR #248).**  Apply the
     partial-root shadows to the complete target equation, prove the exact
     response-gated rank-one identity, encode universal and simultaneous failure
     on all nuisance-rank fibres, and record the four-root full-shadow branch
     without claiming its exclusion.
-15. **Target exchange-syzygy package.**  Prove the cross-target transport defect
+15. **Residual-present top-shadow package (current tranche).**  Leave `t`
+    roots open, use the exact individual-`Z` nuisance, prove the explicit top
+    tensor and common pure-`Z` route, and couple it to the complete target and
+    all-rank failure profile without claiming survival or activity.
+16. **Target exchange-syzygy package.**  Prove the cross-target transport defect
     is nuisance from the remaining physical failure conditions, use its nonzero
     pure-target identity to obtain a complete mixed contradiction, or exhibit
     and fully validate an exact countermodel that disproves the proposed
     implication.
-16. **Exceptional-fibre package.**  Prove the principal-open identity extends by
+17. **Exceptional-fibre package.**  Prove the principal-open identity extends by
     a denominator-free argument, or exhaust every rank-drop/response-zero
     divisor by a finite **proved** cover and complete mixed contradictions.
-17. **Closure audit package.**  Independent no-import replay, hostile
+18. **Closure audit package.**  Independent no-import replay, hostile
    proof-topology and case-cover audit, provenance/dependency records,
    `docs/current-frontier.md` update, full candidate-tree QA, exact-head hosted
    CI, and merged-main replay.
@@ -484,6 +513,13 @@ The node is closed **iff** every box below is discharged:
       first-root nuisance shadows.  The profiles are not proved empty and
       activity remains open.  Primary, independent no-import audit, and
       hostile review pass.
+- [x] Every original fixed-`Q` even target also has an exact residual-present
+      top shadow: leaving `t` roots open kills higher grades, while the
+      individual-`Z` quotient exposes an explicit top tensor.  Survival gives
+      pure `Z`, and the complete target makes usefulness equivalent to top
+      survival plus nonzero `Z_S` on every rank fibre.  At `r=4`, seven useful
+      top rows give the common line with `a=h`, but activity and survival remain
+      open.  Primary, independent no-import audit, and hostile review pass.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,
