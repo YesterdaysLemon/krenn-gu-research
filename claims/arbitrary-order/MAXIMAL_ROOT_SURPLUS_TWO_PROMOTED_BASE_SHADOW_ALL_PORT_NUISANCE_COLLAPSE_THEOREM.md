@@ -246,6 +246,12 @@ quotient on the same `p!=0` gate.  The live promoted alternatives are:
 None is proved here.  In particular, quotienting out or deleting the
 all-port label would change the legal-selector problem and is not allowed.
 
+**Subsequent exact continuation.**  `GLS22` implements the first alternative
+without deleting the label: on `D(p)`, the denominator-free operator
+`P_Q=pI-G_Q^A(z_Q) tensor epsilon_A` quotients its exact uncontracted root
+line and gives a selector-equivalent `72/8`-row transverse module.  See
+[`GLS22`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ALL_PORT_TRANSVERSE_QUOTIENT_AND_PROJECTIVE_SYNCHRONIZATION_FAILURE_THEOREM.md).
+
 The following remain **OPEN**:
 
 ```text
