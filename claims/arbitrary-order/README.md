@@ -2084,6 +2084,19 @@ the top target: `omega=0` kills that target, while `omega!=0` gives exact
 survival, common normalization, response activity, or exclusion.
 
 The
+[`promoted one-probe anchor-marginal theorem`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ONE_PROBE_ANCHOR_MARGINAL_NINE_ROW_REDUCTION_AND_DOUBLE_TRANSVERSE_BOUNDARY_THEOREM.md)
+([hostile review](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ONE_PROBE_ANCHOR_MARGINAL_NINE_ROW_REDUCTION_AND_DOUBLE_TRANSVERSE_BOUNDARY_REVIEW_2026-08-20.md))
+then contracts the transverse root factor at either actual probe vector.  A
+nonzero partial top-anchor contraction defines a denominator-free exterior
+quotient, giving one common exact `9`-row factor-through module for every pair
+target.  Zero, nonzero-marginal, and nonzero double-transverse anchors form an
+exhaustive split.  The complete target, all-rank Fitting profile, and a source
+aggregate synchronization fork descend.  At `r=3`, all six marginal rows plus
+the top row and the existing activity gate enter `GLD3`; none of those
+survival/activity conditions is forced, and marginal failure is not full
+`63/72`-row failure.
+
+The
 [`four-root full-rank all-response-zero localization`](FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_OPPOSITE_COLOUR_PURE_COMPLEMENTARY_PERMANENT_LOCALIZATION_THEOREM.md)
 ([hostile review](../../docs/audits/FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_LOCALIZATION_REVIEW_2026-08-20.md))
 then uses the complete contracted mixed target on one literal response-zero
@@ -2891,6 +2904,9 @@ split are covered by the
 The GLS23 complete transverse nuisance decomposition and top-anchor dichotomy
 are covered by the
 [`maximum-root promoted transverse-nuisance hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_TRANSVERSE_COMPLETE_NUISANCE_DECOMPOSITION_AND_TOP_ANCHOR_DICHOTOMY_REVIEW_2026-08-20.md).
+The GLS24 one-probe anchor marginal, nine-row factor-through route, and
+double-transverse boundary are covered by the
+[`maximum-root promoted anchor-marginal hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ONE_PROBE_ANCHOR_MARGINAL_NINE_ROW_REDUCTION_AND_DOUBLE_TRANSVERSE_BOUNDARY_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
