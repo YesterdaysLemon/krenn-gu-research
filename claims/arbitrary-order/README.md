@@ -2811,6 +2811,9 @@ The GLD15 joint quotient is covered by the
 [`fixed-Q joint M/Z quotient hostile review`](../../docs/audits/FIXED_Q_JOINT_MZ_QUOTIENT_AND_PAIRED_ATTACHMENT_REVIEW_2026-08-17.md).
 The GLS15 physical pair-companion transport is covered by the
 [`maximum-root physical pair-companion transport hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PHYSICAL_PAIR_COMPANION_TRANSFORM_AND_PROJECTIVE_SYNCHRONIZATION_REVIEW_2026-08-20.md).
+The GLS16 base-grade pair shadow and foreign-label cross-annihilation are
+covered by the
+[`maximum-root base-grade pair-shadow hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_BASE_GRADE_PAIR_SHADOW_AND_CROSS_TARGET_SELECTOR_ANNIHILATION_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
