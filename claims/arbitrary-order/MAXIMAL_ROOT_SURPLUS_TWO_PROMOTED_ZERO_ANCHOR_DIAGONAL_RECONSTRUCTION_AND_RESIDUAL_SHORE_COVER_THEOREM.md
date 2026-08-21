@@ -339,6 +339,13 @@ derive a mixed contradiction.  On branch S, use the coordinate shore cover
 exclude or attach every exceptional fibre.  Neither task is a support atlas,
 and neither may replace the complete nuisance by `P_Q(T_Q)`.
 
+The subsequent
+[`GLS27` residual-family theorem](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RESIDUAL_FAMILY_GENERIC_ESCAPE_AND_COORDINATE_SHORE_NORMAL_FORM_THEOREM.md)
+shows that branch P occurs on a nonempty principal open unless the shore cover
+holds over the residual function field.  In the latter case only the exact
+`C12`, `C21`, and `C22` generic normal forms remain.  It does not promote the
+essential slice to target survival or exclude those forms.
+
 ## Verification boundary
 
 From repository root run

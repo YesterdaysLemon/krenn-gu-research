@@ -97,6 +97,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLS24 | Each actual probe-root contraction maps the `GLS23` transverse root space `8 -> 2`.  A nonzero top-anchor marginal defines the denominator-free exterior map `v -> u_i wedge rho_i(v)`, giving one exact common `9`-row physical nuisance for every pair target after the `63`-row anchor quotient.  Zero, nonzero-marginal, and nonzero double-transverse anchors are exhaustive.  Complete-target rank, all-rank failure, and an aggregate synchronization fork descend. | Nine-row failure is not full `63/72`-row failure.  No common marginal, pair survival/response, top survival, or activity is forced.  At `r=3` only the all-six-useful plus top-useful plus three-active leaf enters `GLD3`; every failed-row/low-activity branch and every `r>=4` downstream package remain open. |
 | GLS25 | On the nonzero double-transverse anchor branch, `q,p` define the denominator-free scaled projector `Xi_Q` with exact `4/4` image/kernel and `Xi_Q^2=pXi_Q`.  Wedging its core image by `omega` gives exact `27`-row pair modules; the top target has a separate four-row core test with desired `p^2 omega`.  Target rank, Fitting failures, and source synchronization descend. | Reduced failure is not full failure.  No pair/top survival, response, or activity is forced.  At `r=3` only the all-six-core-useful plus top-core-useful plus three-active leaf enters `GLD3`; the zero anchor, every failed-row/low-activity fibre, and every `r>=4` downstream package remain. |
 | GLS26 | On the zero-anchor branch, the full top-target GHZ quotient reconstructs the projected diagonal root space, of rank two or three, from the remaining physical pair labels.  All labels meeting `Q` once lie in a canonical projected residual-shore tangent of dimension at most seven.  Modulo it, either some genuine promoted pair label has an essential nonzero transverse slice or the two residual shore spans cover all three coordinate lines. | The essential slice is raw supply, not survival in its own complete nuisance or response supply.  The coordinate-shore cover is not excluded.  Neither branch gives common synchronization, activity, an `r>=4` detector, or node closure. |
+| GLS27 | Retaining the GLS26 residual pair as a Laurent family gives an exact generic-escape/fixed-cover dichotomy.  Generic escape supplies a nonempty principal open of essential promoted-pair contractions.  Generic fixed cover has only the C12/C21/C22 shore normal forms, with one fixed colour-to-shore assignment on a nonempty principal open.  The GLD11 graph realizes C21 identically with `h,p,Pi_Q!=0` but is killed by a later mixed coefficient. | The open is used only to choose a source contraction; it is not a universal exceptional-fibre theorem.  Essential raw supply still lacks its own complete-nuisance survival and response, while none of C12/C21/C22 is excluded on the complete witness locus.  Synchronization, activity, a named downstream package, and node closure remain open. |
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
@@ -194,6 +195,14 @@ support divisors; and coexistence of all required selectors on the same graph.
   genuine promoted pair label is therefore essential.  This is raw transverse
   supply only; its own complete nuisance, response, synchronization, and
   downstream detector gates remain open.
+- GLS27 varies the fully supported residual pair instead of freezing one
+  contraction.  Either a principal open escapes the coordinate-shore cover,
+  or one fixed cover persists generically and has exactly the C12, C21, or
+  C22 shore-space normal form.  GLD11 sharply realizes C21 with every listed
+  source gate but violates a later mixed equation.  The result chooses a
+  source point; it neither discards exceptional fibres from a universal claim
+  nor proves target survival, response, synchronization, or exclusion of the
+  three normal forms on the witness locus.
 - GLD19--GLD21 and GLD22--GLD62 close only their explicitly declared
   response-zero/support/dense subcells.
 - The reviewed failure-module theorem compresses all pointwise nuisance-rank
@@ -486,6 +495,26 @@ slice survives modulo `P_Q(T_Q)`, or every coordinate line is contained in
 modulo the pair target's own nuisance, and the latter shore cover is still a
 live exceptional branch.
 
+GLS27 retains the residual vectors as Laurent variables.  Over their function
+field, rank minors and augmented membership minors give an exact dichotomy:
+
+```text
+E: some colour is absent from both generic shores;
+C: every colour lies on at least one generic shore.
+```
+
+In E, clearing one rank minor and one augmented minor per shore produces a
+nonempty principal open on which GLS26 supplies an essential promoted-pair
+slice.  In C, clearing basis minors and membership denominators produces one
+fixed colour-to-shore assignment on a nonempty principal open.  The only
+generic rank profiles and shore-space normal forms are C12, C21, and C22.
+This is a source-choice theorem, not a claim about every point on every
+rank-drop divisor.  The exact GLD11 control realizes C21 identically with
+`h,p,Pi_Q!=0`; its nonzero mixed word shows that complete mixed equations are
+load-bearing.  Thus the next alternatives are exact: promote the E raw slice
+through its own complete nuisance and response gates, or contradict C12/C21/
+C22 with the complete physical equations.
+
 ## 5. Dependency order for theorem packages
 
 1. **Same-pair source package (merged as PR #235).**  Use the complete
@@ -572,20 +601,27 @@ live exceptional branch.
     all-port tensor to project denominator-free onto the four-dimensional core,
     derive exact `27/4`-row physical modules, and retain every reduced/full
     failure and activity gate.
-19. **Promoted zero-anchor reconstruction package (current tranche).**  Use
+19. **Promoted zero-anchor reconstruction package (merged as PR #256).**  Use
     the complete top-target equation to reconstruct the projected diagonal
     space, isolate the exact residual-shore tangent, and split the branch into
     essential raw pair supply versus the coordinate-shore cover without
     claiming target survival.
-20. **Target exchange-syzygy package.**  Prove the cross-target transport defect
+20. **Zero-anchor residual-family and shore-normal-form package (current
+    tranche).**  Vary the residual pair, prove generic escape or one fixed
+    coordinate-shore cover, classify the exact C12/C21/C22 normal forms, and
+    retain the distinction between choosing one source contraction and a
+    universal statement on every exceptional fibre.
+21. **Target exchange-syzygy package.**  Prove the cross-target transport defect
     is nuisance from the remaining physical failure conditions, use its nonzero
     pure-target identity to obtain a complete mixed contradiction, or exhibit
     and fully validate an exact countermodel that disproves the proposed
     implication.
-21. **Exceptional-fibre package.**  Prove the principal-open identity extends by
+22. **Remaining mixed and exceptional-fibre package.**  Promote the GLS27 E
+    slice through its complete target nuisance and response gates, exclude the
+    C12/C21/C22 witness loci, and prove any principal-open identity extends by
     a denominator-free argument, or exhaust every rank-drop/response-zero
     divisor by a finite **proved** cover and complete mixed contradictions.
-22. **Closure audit package.**  Independent no-import replay, hostile
+23. **Closure audit package.**  Independent no-import replay, hostile
    proof-topology and case-cover audit, provenance/dependency records,
    `docs/current-frontier.md` update, full candidate-tree QA, exact-head hosted
    CI, and merged-main replay.
