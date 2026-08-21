@@ -2097,6 +2097,18 @@ survival/activity conditions is forced, and marginal failure is not full
 `63/72`-row failure.
 
 The
+[`promoted double-transverse anchor-core theorem`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_DOUBLE_TRANSVERSE_ANCHOR_CORE_PROJECTOR_AND_TWENTY_SEVEN_ROW_REDUCTION_THEOREM.md)
+([hostile review](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_DOUBLE_TRANSVERSE_ANCHOR_CORE_PROJECTOR_AND_TWENTY_SEVEN_ROW_REDUCTION_REVIEW_2026-08-20.md))
+handles the nonzero anchor with both actual-root marginals zero.  The retained
+all-port tensor defines a denominator-free rank-four scaled projector onto the
+double core.  Wedging by the core anchor gives exact `27`-row pair modules;
+the top target has a separate four-row core test with desired `p^2 omega`.
+The complete target, all-rank failure, and source synchronization descend.  At
+`r=3`, all six useful core rows plus useful top and activity enter `GLD3`.
+Reduced survival/activity is not forced, and reduced failure is not full
+selector failure.
+
+The
 [`four-root full-rank all-response-zero localization`](FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_OPPOSITE_COLOUR_PURE_COMPLEMENTARY_PERMANENT_LOCALIZATION_THEOREM.md)
 ([hostile review](../../docs/audits/FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_LOCALIZATION_REVIEW_2026-08-20.md))
 then uses the complete contracted mixed target on one literal response-zero
@@ -2907,6 +2919,9 @@ are covered by the
 The GLS24 one-probe anchor marginal, nine-row factor-through route, and
 double-transverse boundary are covered by the
 [`maximum-root promoted anchor-marginal hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ONE_PROBE_ANCHOR_MARGINAL_NINE_ROW_REDUCTION_AND_DOUBLE_TRANSVERSE_BOUNDARY_REVIEW_2026-08-20.md).
+The GLS25 double-transverse core projector and `27/4`-row factor-through routes
+are covered by the
+[`maximum-root promoted double-core hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_DOUBLE_TRANSVERSE_ANCHOR_CORE_PROJECTOR_AND_TWENTY_SEVEN_ROW_REDUCTION_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the

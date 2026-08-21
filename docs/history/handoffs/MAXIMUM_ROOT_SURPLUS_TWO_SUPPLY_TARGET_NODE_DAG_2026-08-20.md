@@ -3,8 +3,8 @@
 Date: 2026-08-20
 Programme branch: `codex/kg-maxroot-shadow-syzygy-20260820`
 Original determinant-tranche base: `b578d599931942b97300be9d936ae14103538806`
-Current promoted-anchor-marginal-tranche base: `origin/main` at
-`f19897d9eb99f8655203d8c050922bac871a7551`
+Current promoted-double-transverse-tranche base: `origin/main` at
+`b12a235d9344035b05ad5f7a7eb20fde674bc66d`
 Global Krenn--Gu status: **UNRESOLVED**
 
 This is an internal research plan, not a theorem, reduction, or claim of case
@@ -95,6 +95,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLS22 | On `p!=0`, `P_Q=pI-G_Q^A(z_Q) tensor epsilon_A` kills exactly the retained all-port root line and identifies the full GLS8 quotient with an exact transverse quotient (`81 -> 72` rows for top-minus-two, `9 -> 8` for top).  Full legal survival, complete-target pure rank, and all-rank failure are equivalent after projection.  Source terms satisfy `T_Q=pF_Q-G_Q^A(z_Q) tensor Pi_Q`. | No transverse class or response is forced.  Aggregate synchronization is not termwise synchronization, and the `r=3` seven individual quotients still lack common selection/activity.  No `r>=4` downstream package or node closure follows. |
 | GLS23 | Every unwanted promoted complement pair `D` contributes exactly `Slice_(D_0-C)(a_D) tensor V_(C-D_0)^*` to a target's complete transverse nuisance.  The common top tensor `omega=W_(a_0,a_1)` is nuisance for every pair target and desired for the top target.  Disjoint root-slice fullness absorbs a pair target; `omega=0` kills the top target, while `omega!=0` gives exact `63`-row pair quotients and an explicit eight-row top survival test. | The disjoint criterion is sufficient, not necessary.  Proper disjoint spans, overlap slices, top-anchor absorption, pair/top response zero, common normalization/activity, and every `r>=4` downstream package remain.  At `r=3` the anchor split is exhaustive, but it is not seven-row supply or node closure. |
 | GLS24 | Each actual probe-root contraction maps the `GLS23` transverse root space `8 -> 2`.  A nonzero top-anchor marginal defines the denominator-free exterior map `v -> u_i wedge rho_i(v)`, giving one exact common `9`-row physical nuisance for every pair target after the `63`-row anchor quotient.  Zero, nonzero-marginal, and nonzero double-transverse anchors are exhaustive.  Complete-target rank, all-rank failure, and an aggregate synchronization fork descend. | Nine-row failure is not full `63/72`-row failure.  No common marginal, pair survival/response, top survival, or activity is forced.  At `r=3` only the all-six-useful plus top-useful plus three-active leaf enters `GLD3`; every failed-row/low-activity branch and every `r>=4` downstream package remain open. |
+| GLS25 | On the nonzero double-transverse anchor branch, `q,p` define the denominator-free scaled projector `Xi_Q` with exact `4/4` image/kernel and `Xi_Q^2=pXi_Q`.  Wedging its core image by `omega` gives exact `27`-row pair modules; the top target has a separate four-row core test with desired `p^2 omega`.  Target rank, Fitting failures, and source synchronization descend. | Reduced failure is not full failure.  No pair/top survival, response, or activity is forced.  At `r=3` only the all-six-core-useful plus top-core-useful plus three-active leaf enters `GLD3`; the zero anchor, every failed-row/low-activity fibre, and every `r>=4` downstream package remain. |
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
@@ -178,6 +179,12 @@ support divisors; and coexistence of all required selectors on the same graph.
   nuisance, target rank, Fitting failures, and source aggregate descend without
   division.  The zero/double-transverse anchor fibres and every failed-row or
   low-activity branch remain open; marginal failure is not full failure.
+- GLS25 treats the nonzero double-transverse anchor fibre.  The all-port tensor
+  supplies a denominator-free scaled projector onto the four-dimensional core;
+  exterior multiplication by the anchor gives three root rows and exact
+  `27`-row pair modules, while the top target uses a four-row core module.
+  Reduced survival and activity are not forced, and reduced absorption is not
+  full absorption.
 - GLD19--GLD21 and GLD22--GLD62 close only their explicitly declared
   response-zero/support/dense subcells.
 - The reviewed failure-module theorem compresses all pointwise nuisance-rank
@@ -438,6 +445,22 @@ rows through one common marginal, usefulness of the top row, and three-colour
 activity enter `GLD3` and are excluded.  The theorem forces none of those
 conditions and does not identify marginal absorption with full absorption.
 
+GLS25 handles the remaining nonzero double-transverse anchor fibre.  Write
+`s_0=q(-,x_(a_1))` and `s_1=q(x_(a_0),-)`.  The denominator-free operator
+
+```text
+Xi_Q(v)=p v-s_0 tensor rho_0(v)-rho_1(v) tensor s_1
+```
+
+has the four-dimensional double core as image, a four-dimensional marginal
+kernel, and `Xi_Q^2=pXi_Q`.  On `0!=omega` in that core, the map
+`v -> omega wedge Xi_Q(v)` has three root rows, giving exact `27`-row pair
+modules.  The top desired anchor cannot be wedged away and instead has a
+four-row core test with desired `p^2 omega`.  Target rank, every Fitting fibre,
+and the source aggregate descend.  At `r=3`, all six useful pair modules plus
+useful top and activity enter `GLD3`; no usefulness or activity is forced, and
+reduced failure does not imply full failure.
+
 ## 5. Dependency order for theorem packages
 
 1. **Same-pair source package (merged as PR #235).**  Use the complete
@@ -516,19 +539,23 @@ conditions and does not identify marginal absorption with full absorption.
     projected active label into its exact target coefficient-slice space,
     isolate disjoint-label fullness, and prove the common top-anchor
     zero/nonzero dichotomy without claiming either branch is excluded.
-17. **Promoted one-probe anchor-marginal package (current tranche).**  Derive
+17. **Promoted one-probe anchor-marginal package (merged as PR #254).**  Derive
     the exact `8 -> 2 -> 1` root filtration, its nine-row physical pair
     modules, the double-transverse divisor, and the conditional `r=3` detector
     edge without equating marginal failure with full selector failure.
-18. **Target exchange-syzygy package.**  Prove the cross-target transport defect
+18. **Promoted double-transverse core package (current tranche).**  Use the
+    all-port tensor to project denominator-free onto the four-dimensional core,
+    derive exact `27/4`-row physical modules, and retain every reduced/full
+    failure and activity gate.
+19. **Target exchange-syzygy package.**  Prove the cross-target transport defect
     is nuisance from the remaining physical failure conditions, use its nonzero
     pure-target identity to obtain a complete mixed contradiction, or exhibit
     and fully validate an exact countermodel that disproves the proposed
     implication.
-19. **Exceptional-fibre package.**  Prove the principal-open identity extends by
+20. **Exceptional-fibre package.**  Prove the principal-open identity extends by
     a denominator-free argument, or exhaust every rank-drop/response-zero
     divisor by a finite **proved** cover and complete mixed contradictions.
-20. **Closure audit package.**  Independent no-import replay, hostile
+21. **Closure audit package.**  Independent no-import replay, hostile
    proof-topology and case-cover audit, provenance/dependency records,
    `docs/current-frontier.md` update, full candidate-tree QA, exact-head hosted
    CI, and merged-main replay.
@@ -679,6 +706,13 @@ The node is closed **iff** every box below is discharged:
       `r=3`, only the all-six-useful plus top-useful plus three-active leaf is
       excluded by `GLD3`; all other branches remain.  Primary, independent
       no-import audit, and hostile review pass.
+- [x] The nonzero double-transverse anchor branch has an exact
+      denominator-free rank-four core projector, `27`-row pair modules, and a
+      four-row top module.  Target rank, all-rank failure, and core
+      synchronization descend.  At `r=3`, only the all-six-core-useful plus
+      top-core-useful plus three-active leaf is excluded; reduced failure is
+      not full failure.  Primary, independent no-import audit, and hostile
+      review pass.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,
