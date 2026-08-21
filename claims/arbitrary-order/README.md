@@ -2345,14 +2345,15 @@ the activity is proved universal, and no permanent restriction follows.
 The
 [`fixed-Q common projective joint-response selector theorem`](FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_AND_SHIFTED_GLD3_DETECTOR_THEOREM.md)
 then weakens the seven-target rank-two input.  The exact operator-coefficient
-spaces need only share one nonzero projective vector `(alpha,beta)`.  On the
-physical `h=0` branch the resulting shifted package obeys
-`alpha T'=C(alpha B+beta K)-C(beta K)`, so the `GLD3` nine-word determinant
-excludes the common-line branch under three-colour pair-depth activity,
-including the pure-`Z` axis `alpha=0`.  Unequal-slope and two-active controls
-show that slope synchronization and activity are both load-bearing.  The
-theorem does not force a common line or activity on every witness and gives no
-permanent restriction.
+spaces need only share one nonzero projective vector `(delta,eta)`.  For an
+arbitrary physical residual scalar `h`, put `a=delta+h eta`; the resulting
+shifted package obeys the denominator-free identity
+`aT'=C(aB+eta K)-C(eta K)`.  The `GLD3` nine-word determinant excludes the
+common-line branch under three-colour pair-depth activity: `a=0` is the rank
+contradiction and `a!=0` exposes a mixed selected coefficient.  Unequal-slope
+and two-active controls show that slope synchronization and activity are both
+load-bearing.  The theorem does not force a common line or activity on every
+witness and gives no permanent restriction.
 
 The
 [`fixed-Q unequal-slope quadratic-cancellation theorem`](FIXED_Q_UNEQUAL_SLOPE_QUADRATIC_CANCELLATION_THREE_FULL_PAIR_EXCLUSION_THEOREM.md)
@@ -2792,7 +2793,7 @@ The GLD13--GLD14 successor pair is covered by the
 The GLD15 joint quotient is covered by the
 [`fixed-Q joint M/Z quotient hostile review`](../../docs/audits/FIXED_Q_JOINT_MZ_QUOTIENT_AND_PAIRED_ATTACHMENT_REVIEW_2026-08-17.md).
 The GLD16 common-line detector is covered by the
-[`fixed-Q common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_REVIEW_2026-08-17.md).
+[`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
 [`fixed-Q unequal-slope quadratic-cancellation hostile review`](../../docs/audits/FIXED_Q_UNEQUAL_SLOPE_QUADRATIC_CANCELLATION_REVIEW_2026-08-17.md).
 The GLD18 response-visible and edge-dependent refinement is covered by the

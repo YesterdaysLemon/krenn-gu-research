@@ -3,33 +3,42 @@
 ## Status
 
 **Exact characteristic-zero common-line reduction and conditional mixed
-detector.**  The joint `M/Z` quotient of `GLD15` need not have rank two at all
-seven four-root targets.  It is enough that the seven exact operator-supply
-spaces share one nonzero projective coefficient vector.
+detector at arbitrary residual scalar.**  The joint `M/Z` quotient of `GLD15`
+need not have rank two at all seven four-root targets.  It is enough that the
+seven exact operator-supply spaces share one nonzero projective coefficient
+vector.
 
-On the physical `h=0` branch, a common vector `(alpha,beta)` supplies the six
-pair tensors
+For the physical residual scalar `h`, a common vector `(delta,eta)` and the
+effective scalar
 
 ```text
-D_e=alpha M_e+beta Z_e=alpha B_e+beta K_e
+a=delta+h eta
+```
+
+supply the six pair tensors
+
+```text
+D_e=delta M_e+eta Z_e=a B_e+eta K_e
 ```
 
 and the four-port tensor
 
 ```text
-T'=alpha M_U+beta Z_U.
+T'=delta M_U+eta Z_U.
 ```
 
-They satisfy the homogeneous shifted interference identity
+They satisfy the denominator-free shifted interference identity
 
 ```text
-alpha T'=C(D)-C(beta K).
+a T'=C(D)-C(eta K).
 ```
 
 The corrected compound on the right has one-port flattening rank at most two.
 Consequently the `GLD3` nine-word determinant applies with effective scalar
-`alpha`, including the pure-`Z` line `alpha=0`.  Three-colour pair-depth
-activity therefore contradicts the pure GHZ target.
+`a`.  The divisor `a=0`, including the pure-`Z` line when `h=0`, is a rank
+contradiction; when `a!=0`, the detector exposes one of nine mixed selected
+four-port coefficients.  Three-colour pair-depth activity therefore
+contradicts the pure GHZ target for every value of `h`.
 
 This is strictly weaker than seven joint rank-two quotients.  Rank-two target
 spaces impose no constraint on the common line; every rank-one target space
@@ -39,9 +48,10 @@ camouflage on the common line `[1:1]` proves that the activity hypothesis is
 load-bearing.
 
 The theorem does not prove that a common line exists on every hypothetical
-witness, exclude the zero-intersection branch, integrate a formal response
-fibre into a graph fibre, or imply a permanent restriction.  The global
-Krenn--Gu conjecture remains **UNRESOLVED**.
+witness, force selected-response activity, exclude the zero-intersection
+branch, integrate a formal response fibre into a graph fibre, or imply a
+permanent restriction.  The global Krenn--Gu conjecture remains
+**UNRESOLVED**.
 
 Dependencies:
 
@@ -58,10 +68,10 @@ and one four-port set
 U={1,2,3,4}.                                           (1)
 ```
 
-Assume the contracted residual-edge scalar is
+Let the contracted residual-edge scalar be
 
 ```text
-h=0.                                                   (2)
+h in K.                                                (2)
 ```
 
 Retain the complete nonempty even deck module and every nuisance coefficient
@@ -78,11 +88,11 @@ C_S subset K^2                                        (4)
 ```
 
 be the exact constant-open-port operator-coefficient space.  Thus
-`(alpha,beta) in C_S` exactly when some constant functional on the full
+`(delta,eta) in C_S` exactly when some constant functional on the full
 fixed-`Q` companion equation has operator output
 
 ```text
-alpha P_S^M+beta P_S^Z.                               (5)
+delta P_S^M+eta P_S^Z.                                (5)
 ```
 
 The coefficient axes and normalization in (4)--(5) are the globally fixed
@@ -102,13 +112,13 @@ The following are equivalent:
 1. `C_*!=0`;
 2. every `C_S` is nonzero and all rank-one `C_S` are the same projective
    line;
-3. there is one nonzero `(alpha,beta) in K^2` and seven constant functionals
+3. there is one nonzero `(delta,eta) in K^2` and seven constant functionals
    `lambda_S`, on the same graph, `Q`, contraction, and `M/Z` normalization,
    such that
 
    ```text
    (lambda_S tensor id)Gamma_Q
-      =alpha P_S^M+beta P_S^Z                         (7)
+      =delta P_S^M+eta P_S^Z                          (7)
    ```
 
    for every `S in F_7`.
@@ -129,10 +139,10 @@ seven spaces exactly when seven target-specific functionals realize (7) with
 the same coefficients.  This proves the equivalence with 3.  `square`
 
 The functionals in (7) may vary with `S`; the graph, `Q`, contraction, open
-GHZ bases, coefficient axes, and `(alpha,beta)` may not.  Separate nonzero
+GHZ bases, coefficient axes, and `(delta,eta)` may not.  Separate nonzero
 rank-one rows with different slopes do not satisfy Theorem 1.
 
-## 2. Homogeneous shifted response identity
+## 2. Arbitrary-`h` denominator-free shifted response identity
 
 Let `B_e` be the direct pair block and let
 
@@ -141,10 +151,10 @@ K_e=x_u tensor y_v+y_u tensor x_v                  (8)
 ```
 
 be the residual-incidence pair block, with the fixed residual contractions
-already inserted.  On the `h=0` branch,
+already inserted.  The globally labelled `GLD15` pair layers are
 
 ```text
-M_e=B_e,                 Z_e=K_e.                     (9)
+M_e=B_e,                 Z_e=h B_e+K_e.               (9)
 ```
 
 For six pair arrays `X`, put
@@ -165,52 +175,59 @@ X(B,K)=
 The residual-absent and residual-present four-port layers are
 
 ```text
-M_U=C(B),                 Z_U=X(B,K).                 (12)
+M_U=C(B),                 Z_U=h C(B)+X(B,K).          (12)
 ```
 
-Fix a nonzero common vector `(alpha,beta) in C_*`.  Apply the functionals from
-Theorem 1 to one physical deck and define
+Fix a nonzero common vector `(delta,eta) in C_*`, and put
 
 ```text
-D_e=alpha M_e+beta Z_e=alpha B_e+beta K_e,
-T'=alpha M_U+beta Z_U
-  =alpha C(B)+beta X(B,K).                            (13)
+a=delta+h eta.                                       (13a)
 ```
 
-### Theorem 2 (homogeneous shifted GLD3 identity)
+Apply the functionals from Theorem 1 to one physical deck and define
+
+```text
+D_e=delta M_e+eta Z_e=a B_e+eta K_e,
+T'=delta M_U+eta Z_U
+  =a C(B)+eta X(B,K).                                (13b)
+```
+
+### Theorem 2 (arbitrary-`h` shifted GLD3 identity)
 
 The common selected package satisfies
 
 ```text
-alpha T'=C(D)-C(beta K).                              (14)
+a T'=C(D)-C(eta K).                                  (14)
 ```
 
-Moreover every one-port flattening of `C(beta K)` has rank at most two.
+Moreover every one-port flattening of `C(eta K)` has rank at most two.
 
 ### Proof
 
 For each complementary pair partition `{e,f}`, expand
 
 ```text
-(alpha B_e+beta K_e)(alpha B_f+beta K_f)
- =alpha^2 B_eB_f
-  +alpha beta(B_eK_f+K_eB_f)
-  +beta^2 K_eK_f.                                    (15)
+(a B_e+eta K_e)(a B_f+eta K_f)
+ =a^2 B_eB_f
+  +a eta(B_eK_f+K_eB_f)
+  +eta^2 K_eK_f.                                     (15)
 ```
 
 Summing (15) over the three partitions and subtracting
-`C(beta K)=beta^2 C(K)` gives exactly `alpha T'` by (11)--(13).
+`C(eta K)=eta^2 C(K)` gives exactly `a T'` by (11)--(13b).
+This is a polynomial identity in `delta,eta,h`; no response, selector
+coefficient, or effective scalar is divided out.
 
-The pair array `beta K` has the same two-shore form as (8): scale every
-`x_u` by `beta` and leave every `y_u` fixed.  The common-row expansion of
-`GLD3` therefore places every one-port row of `C(beta K)` in
-`span{x_u,y_u}`, proving rank at most two.  This includes `beta=0`.
+The pair array `eta K` has the same two-shore form as (8): scale every
+`x_u` by `eta` and leave every `y_u` fixed.  The common-row expansion of
+`GLD3` therefore places every one-port row of `C(eta K)` in
+`span{x_u,y_u}`, proving rank at most two.  This includes `eta=0`.
 `square`
 
 Equation (14) is derived from one fixed physical graph and one fixed response
 window.  It is not obtained by separately factorizing the six selected pair
 tensors.  Conversely, (14) does not claim that the selected combination is a
-new labelled deck summand or that varying `(alpha,beta)` gives a same-graph
+new labelled deck summand or that varying `(delta,eta)` gives a same-graph
 fibre.
 
 ## 3. Three-active-colour contradiction
@@ -251,14 +268,14 @@ All nine words in (18) are mixed.
 Under (16)--(17), the selected submatrix of (14) is
 
 ```text
-A=diag(g_0,g_1,g_2)-alpha G,
+A=diag(g_0,g_1,g_2)-a G,
 rank A<=2.                                            (19)
 ```
 
 Hence:
 
-1. if `alpha=0`, the three-active stratum is impossible;
-2. if `alpha!=0`, at least one of the nine mixed coefficients in (18) is
+1. if `a=0`, the three-active stratum is impossible;
+2. if `a!=0`, at least one of the nine mixed coefficients in (18) is
    nonzero.
 
 In either case a legally selected pure GHZ package satisfying (17) is
@@ -269,10 +286,10 @@ impossible.
 Target diagonality of every `D_e` makes the selected `3 x 3` submatrix of
 `C(D)` equal to `diag(g_0,g_1,g_2)`, exactly as in the proof of `GLD3`
 Theorem 3.  Restrict (14) to the same rows and columns.  Theorem 2 bounds the
-rank of the selected submatrix of `C(beta K)` by two, giving (19).
+rank of the selected submatrix of `C(eta K)` by two, giving (19).
 
-If `alpha=0`, then (19) says that the invertible diagonal matrix
-`diag(g_0,g_1,g_2)` has rank at most two.  If `alpha!=0` and every entry of
+If `a=0`, then (19) says that the invertible diagonal matrix
+`diag(g_0,g_1,g_2)` has rank at most two.  If `a!=0` and every entry of
 `G` vanished, the same contradiction would follow.  Finally, applying (7)
 to the GHZ target makes `T'` diagonal, so every mixed entry in (18) must be
 zero.  Thus both alternatives contradict a hypothetical witness.  `square`
@@ -373,7 +390,7 @@ M_e=B_e,          Z_e=K_e,
 M_U=C(B),         Z_U=X(B,K).                         (26)
 ```
 
-The common response-level vector `[alpha:beta]=[1:1]` gives exactly the
+The common response-level vector `[delta:eta]=[1:1]` gives exactly the
 camouflage tensors
 
 ```text
@@ -394,18 +411,21 @@ the full witness equations, and is not a counterexample.
 ### 4.4 Zero spaces and pure-axis lines
 
 A single `C_S=0` kills `C_*`.  The pure-`M` and pure-`Z` axes are nevertheless
-valid common lines when they occur at every target.  Theorem 3 includes both:
-`beta=0` gives a pure residual-absent selected package, while `alpha=0` is the
-rank contradiction in item 1.  No division by either coefficient occurs.
+valid common lines when they occur at every target.  Theorem 3 includes both.
+The pure residual-absent axis `eta=0` has `a=delta`.  The pure
+residual-present axis `delta=0` has `a=h eta`, so it lies on the
+rank-contradiction divisor exactly when `h=0`; for `h!=0` it enters the
+nine-word alternative.  More generally `a=0` is the physical projective line
+`[delta:eta]=[-h:1]`.  No division by `a`, `delta`, or `eta` occurs.
 
 ## 5. Exact frontier and scope ledger
 
 ```text
 common coefficient space C_* and projective criterion:       PROVED;
 same-slope seven-target constant operator package:            PROVED;
-homogeneous shifted interference identity (14):              PROVED;
-pure-Z alpha=0 active branch excluded:                        PROVED;
-alpha!=0 nine-word mixed detector:                            PROVED;
+arbitrary-h denominator-free identity (14):                   PROVED;
+effective-scalar a=0 active branch excluded:                  PROVED;
+effective-scalar a!=0 nine-word mixed detector:               PROVED;
 all-pure pair nonvanishing common-line branch excluded:       PROVED;
 different rank-one slopes imply common supply:                FALSE;
 unequal slopes plus target shape and three-activity contradict: FALSE;
@@ -429,6 +449,10 @@ under (17).  The permanent implication is none.
 
 ## Verification boundary
 
+The strengthened arbitrary-`h` statement and its exact residual scope are
+audited in the
+[2026-08-20 hostile review](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
+
 Run from repository root:
 
 ```powershell
@@ -436,10 +460,11 @@ python claims/arbitrary-order/verify_fixed_q_common_projective_joint_response_se
 python -I claims/arbitrary-order/audit_fixed_q_common_projective_joint_response_selector.py
 ```
 
-The primary exact symbolic replay checks the homogeneous identity,
-common-subspace trichotomy, pure-axis cases, unequal-slope three-active
-control, and rational `[1:1]` camouflage response.  The independent
-standard-library audit uses a separate polynomial dictionary, direct
-complementary-matching enumeration, and exact `Fraction` tensor coefficients.
+The primary exact symbolic replay checks the arbitrary-`h` polynomial
+identity, the effective-scalar divisor and pure-axis cases, common-subspace
+trichotomy, unequal-slope three-active control, and rational `[1:1]`
+camouflage response.  The independent standard-library audit uses a separate
+polynomial dictionary, direct complementary-matching enumeration, and exact
+`Fraction` tensor coefficients.
 These scripts audit the bounded identities and controls.  The full-module
 operator criterion and the determinant proof are load-bearing.

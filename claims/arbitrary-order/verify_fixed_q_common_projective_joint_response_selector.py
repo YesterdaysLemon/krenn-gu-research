@@ -1,8 +1,8 @@
 """Primary exact replay for the common projective joint-response theorem.
 
 The operator-space and determinant arguments in the theorem are load-bearing.
-This script checks their bounded algebraic identities and sharpness controls
-with exact SymPy arithmetic.
+This script checks their bounded arbitrary-h algebraic identity, effective-
+scalar split, and sharpness controls with exact SymPy arithmetic.
 """
 
 from fractions import Fraction
@@ -20,35 +20,55 @@ MATCHINGS = (
 )
 
 
-def verify_homogeneous_identity() -> None:
-    alpha, beta = sp.symbols("alpha beta")
+def verify_arbitrary_h_identity() -> None:
+    delta, eta, h = sp.symbols("delta eta h")
+    effective = delta + h * eta
     direct = {edge: sp.symbols(f"B{edge[0]}{edge[1]}") for edge in EDGES}
     channel = {edge: sp.symbols(f"K{edge[0]}{edge[1]}") for edge in EDGES}
-    selected = {edge: alpha * direct[edge] + beta * channel[edge] for edge in EDGES}
+    residual_present = {edge: h * direct[edge] + channel[edge] for edge in EDGES}
+    selected = {
+        edge: delta * direct[edge] + eta * residual_present[edge] for edge in EDGES
+    }
 
     compound_direct = sum(direct[e] * direct[f] for e, f in MATCHINGS)
     compound_channel = sum(channel[e] * channel[f] for e, f in MATCHINGS)
     compound_selected = sum(selected[e] * selected[f] for e, f in MATCHINGS)
     cross = sum(direct[e] * channel[f] + channel[e] * direct[f] for e, f in MATCHINGS)
-    selected_four = alpha * compound_direct + beta * cross
+    residual_present_four = h * compound_direct + cross
+    selected_four = delta * compound_direct + eta * residual_present_four
     assert (
         sp.expand(
-            alpha * selected_four - compound_selected + beta**2 * compound_channel
+            effective * selected_four - compound_selected + eta**2 * compound_channel
         )
         == 0
     )
 
-    # Neither pure axis requires division by its zero coefficient.
+    # No pure axis or effective-scalar divisor requires division.
     pure_m = sp.expand(
-        (alpha * selected_four - compound_selected).subs({alpha: 1, beta: 0})
+        (effective * selected_four - compound_selected).subs({delta: 1, eta: 0})
     )
     pure_z = sp.expand(
-        (alpha * selected_four - compound_selected + beta**2 * compound_channel).subs(
-            {alpha: 0, beta: 1}
-        )
+        (
+            effective * selected_four - compound_selected + eta**2 * compound_channel
+        ).subs({delta: 0, eta: 1})
+    )
+    effective_zero = sp.expand(
+        (
+            effective * selected_four - compound_selected + eta**2 * compound_channel
+        ).subs({delta: -h, eta: 1})
     )
     assert pure_m == 0
     assert pure_z == 0
+    assert effective_zero == 0
+
+
+def verify_effective_scalar_detector_split() -> None:
+    effective = sp.symbols("a")
+    g = sp.symbols("g0:3", nonzero=True)
+    mixed = sp.Matrix(3, 3, lambda row, column: sp.symbols(f"G{row}{column}"))
+    detector = sp.diag(*g) - effective * mixed
+    assert sp.expand(detector.det().subs(effective, 0)) == sp.prod(g)
+    assert sp.expand(detector.det().subs({entry: 0 for entry in mixed})) == sp.prod(g)
 
 
 def intersection_dimension(spaces: tuple[str, ...]) -> int:
@@ -229,7 +249,8 @@ def verify_common_line_camouflage() -> None:
 
 
 def main() -> None:
-    verify_homogeneous_identity()
+    verify_arbitrary_h_identity()
+    verify_effective_scalar_detector_split()
     verify_common_subspace_trichotomy()
     verify_unequal_slope_control()
     verify_common_line_camouflage()

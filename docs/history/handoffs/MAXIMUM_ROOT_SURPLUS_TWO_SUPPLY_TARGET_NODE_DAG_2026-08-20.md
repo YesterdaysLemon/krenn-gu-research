@@ -1,10 +1,10 @@
 # Maximum-root surplus-two supply/target node: internal proof-DAG plan
 
 Date: 2026-08-20
-Programme branch: `codex/kg-r4-rank1-remaining-20260820`
+Programme branch: `codex/kg-maxroot-selector-sync-20260820`
 Original determinant-tranche base: `b578d599931942b97300be9d936ae14103538806`
-Current contained/one-sided-tranche base: `origin/main` at
-`169237f9aa58d8410a27e39a069e1ca26ddb65a7`
+Current arbitrary-`h` common-line-tranche base: `origin/main` at
+`4e98a75c6e596f36e0c1b7e05f5d1b0e3c00095e`
 Global Krenn--Gu status: **UNRESOLVED**
 
 This is an internal research plan, not a theorem, reduction, or claim of case
@@ -85,7 +85,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLD13 | For prechosen \(Q\) and seven nonzero response polynomials, gives the function-field split: common generic legal survival or desired-plus-three-pure absorption. | Response-identically-zero and every exceptional nuisance-rank-drop fibre remain; generic absorption is not pointwise absorption. |
 | GLD14 | Closes the affine fibre and all-depth mixed shape after legal attached rows are supplied. | It cannot supply those rows or choose \(Q\). |
 | GLD15 | Gives the exact fixed-target joint \(M/Z\) ranks \(k=0,1,2\). | Nothing forces \(k>0\); rank-one cancellation and response rank are separate. |
-| GLD16 | A common projective line plus the stated activity gives a legal shifted detector. | Zero target spaces, unequal slopes, and missing activity remain. |
+| GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
 | GLD19 | Under literal all-seven response-map zero, classifies twelve-row complementary support and supplies conditional detectors. | The source does not force response-map zero, and the localized support locus is not excluded. |
@@ -202,7 +202,9 @@ A support-free proof must now cover:
     compression, response-visible-selector, or augmented-face-defect
     interfaces.  Every weaker response-zero pattern remains;
 4. joint selector ranks \(k=0,1,2\), common and unequal slopes, and all response
-   visibility alternatives;
+   visibility alternatives; the common-line detector is now denominator-free
+   at arbitrary \(h\), so no residual-scalar divisor remains inside that
+   conditional branch;
 5. the detector's augmented-weight/alignment/anchor failures when that detector
    is the downstream entry;
 6. at every root order, exclusion of the promoted response-zero/full-nuisance
@@ -258,14 +260,19 @@ be hidden by adding support masks.
    identities, and splice them into one weighted \(P_5\to\Delta_3\)
    restriction.  This routes the branch to a downstream permanent node and
    does not claim \(P_5\) nonrestriction.
-10. **Target exchange-syzygy package.**  Derive a support-free companion-exchange
+10. **Arbitrary-`h` common-line detector package (current tranche).**  Starting
+   from the exact `GLD15` coefficient plane, prove
+   \(aT'=C(D)-C(\eta K)\) for \(a=\delta+h\eta\) without division, audit the
+   \(a=0\) divisor separately, and retain common-line existence and
+   three-colour activity as explicit inputs rather than conclusions.
+11. **Target exchange-syzygy package.**  Derive a support-free companion-exchange
    or target-module identity from the remaining failure conditions, or exhibit
    and fully validate an exact countermodel that disproves the proposed
    implication.
-11. **Exceptional-fibre package.**  Prove the principal-open identity extends by
+12. **Exceptional-fibre package.**  Prove the principal-open identity extends by
    a denominator-free argument, or exhaust every rank-drop/response-zero
    divisor by a finite **proved** cover and complete mixed contradictions.
-12. **Closure audit package.**  Independent no-import replay, hostile
+13. **Closure audit package.**  Independent no-import replay, hostile
    proof-topology and case-cover audit, provenance/dependency records,
    `docs/current-frontier.md` update, full candidate-tree QA, exact-head hosted
    CI, and merged-main replay.
@@ -343,6 +350,12 @@ The node is closed **iff** every box below is discharged:
       selector obligation, or the aligned \(\Phi=0\) augmented-\(P_6\) face
       defect \(\Psi\).  Focused primary, independent no-import replay, and
       hostile review pass.  None of those residual interfaces is closed.
+- [x] The common-projective `GLD16` identity is denominator-free for arbitrary
+      physical residual scalar \(h\): with \(a=\delta+h\eta\), the selected
+      package obeys \(aT'=C(D)-C(\eta K)\), and three-colour activity excludes
+      both \(a=0\) and \(a\ne0\).  This closes only the conditional common-line
+      detector's old `h=0` restriction; it does not force the common line or
+      activity.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,
