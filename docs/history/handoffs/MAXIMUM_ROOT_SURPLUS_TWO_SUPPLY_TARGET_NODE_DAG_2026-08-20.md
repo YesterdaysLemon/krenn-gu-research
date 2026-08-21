@@ -1,10 +1,10 @@
 # Maximum-root surplus-two supply/target node: internal proof-DAG plan
 
 Date: 2026-08-20
-Programme branch: `codex/kg-maxroot-transport-continuation-20260820`
+Programme branch: `codex/kg-maxroot-transport-membership-20260820`
 Original determinant-tranche base: `b578d599931942b97300be9d936ae14103538806`
-Current physical pair-transport-tranche base: `origin/main` at
-`54578965a566a7db1b370a8c0c7b78198107c43c`
+Current base-shadow-tranche base: `origin/main` at
+`8f670d8977671da878c45a8dad92c2cc3e62abc1`
 Global Krenn--Gu status: **UNRESOLVED**
 
 This is an internal research plan, not a theorem, reduction, or claim of case
@@ -86,6 +86,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLD14 | Closes the affine fibre and all-depth mixed shape after legal attached rows are supplied. | It cannot supply those rows or choose \(Q\). |
 | GLD15 | Gives the exact fixed-target joint \(M/Z\) ranks \(k=0,1,2\). | Nothing forces \(k>0\); rank-one cancellation and response rank are separate. |
 | GLS15 | For every root order and pair target in the original `r`-root, `r`-port fixed-`Q` chart, identifies the two GLD15 desired columns as one physical transform `Psi_C` applied to `K^Q` and `R`.  Rank-one absorption is `Psi_C(delta R-eta K^Q)` in the complete joint nuisance, and a foreign absorbed direction gives exactly the projective determinant times the local quotient generator and active pure target class. | The transport defect is not proved nuisance.  Joint rank zero, response-zero/missing activity, the four-port line, and an arbitrary-order downstream package remain.  The distinct two-probe promoted GLS8 interface is not integrated. |
+| GLS16 | Maximum-root evaluation sends the original fixed-`Q` pair `M` column to the complementary permanent and kills the pair `Z` column; the complete joint nuisance maps to all other order-two coefficient slices.  Base survival excludes `k=0` and forces rank one to the common pure-`M` line.  Every foreign labelled pair map also has zero cross-contraction against a legal selector for another target. | Source-level base survival is not forced.  Every oblique/pure-`Z` or `k=0` target remains on an explicit swallowed-base circuit, and cross-annihilation is not foreign nuisance membership.  Four-port synchronization, activity, exceptional fibres, and GLS8 remain open. |
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
@@ -117,6 +118,11 @@ support divisors; and coexistence of all required selectors on the same graph.
 - GLD14 closes the paired affine/all-depth shape after attachment.
 - GLD16--GLD18 close their named common-line, activity, slope, cancellation,
   and three-full subbranches.
+- GLS16 confines pair rank zero and every non-pure-`M` rank-one direction to
+  an explicit swallowed base pair-column quotient.  When all required base
+  classes survive, every rank-one pair line is synchronized to pure `M`.
+  It also proves exact foreign-label cross-annihilations, but neither source
+  base survival nor foreign transport membership.
 - GLD19--GLD21 and GLD22--GLD62 close only their explicitly declared
   response-zero/support/dense subcells.
 - The reviewed failure-module theorem compresses all pointwise nuisance-rank
@@ -203,9 +209,10 @@ A support-free proof must now cover:
     compression, response-visible-selector, or augmented-face-defect
     interfaces.  Every weaker response-zero pattern remains;
 4. joint selector ranks \(k=0,1,2\), common and unequal slopes, and all response
-   visibility alternatives; the common-line detector is now denominator-free
-   at arbitrary \(h\), so no residual-scalar divisor remains inside that
-   conditional branch;
+   visibility alternatives; GLS16 now sends every `k=0`, pure-`Z`, oblique,
+   or unequal-line residue to an explicit swallowed base pair circuit, while
+   the common-line detector is denominator-free at arbitrary \(h\), so no
+   residual-scalar divisor remains inside that conditional branch;
 5. the detector's augmented-weight/alignment/anchor failures when that detector
    is the downstream entry;
 6. at every root order, exclusion of the promoted response-zero/full-nuisance
@@ -233,6 +240,15 @@ Multiplying by an active selected diagonal value identifies this class with
 the same projective determinant times the active pure GHZ class.  The next
 step must prove foreign transport into `N_(C_S)^J` or contradict the resulting
 nonzero pure class; generic raw injectivity of `Psi_C` does neither.
+
+GLS16 adds the maximum-root base shadow.  If the base pair class of `S`
+survives, then `k_S` is nonzero and a rank-one line is necessarily pure `M`.
+Thus every rank-zero target and every oblique, pure-`Z`, or unequal-line
+residue now carries a concrete order-two base-swallowing circuit.  A selector
+for `T` also cross-annihilates both physical columns of every `S!=T`, but this
+map has source `S-T` and target `T-S`; it is not the `S`-quotient membership
+required by GLS15.  The next proof must use these exact circuits and cross
+maps in the complete mixed equations, or force enough base classes to survive.
 
 ## 5. Dependency order for theorem packages
 
@@ -288,15 +304,21 @@ nonzero pure class; generic raw injectivity of `Psi_C` does neither.
     and pure-target identities.  These identities expose, but do not yet kill,
     the projective transport defect.  This is not the GLS8 two-probe promoted
     target, whose target size is `2r-4`.
-12. **Target exchange-syzygy package.**  Prove the cross-target transport defect
+12. **Base-grade and cross-annihilation package (current tranche).**  Evaluate
+    the complete joint pair quotient at the maximum root, retain every other
+    order-two slice, and prove that base survival orients rank one to pure
+    `M` while rank zero and every other slope force a swallowed base circuit.
+    Separately compare foreign labelled coefficients of simultaneous legal
+    selectors and preserve the type distinction from transport membership.
+13. **Target exchange-syzygy package.**  Prove the cross-target transport defect
     is nuisance from the remaining physical failure conditions, use its nonzero
     pure-target identity to obtain a complete mixed contradiction, or exhibit
     and fully validate an exact countermodel that disproves the proposed
     implication.
-13. **Exceptional-fibre package.**  Prove the principal-open identity extends by
+14. **Exceptional-fibre package.**  Prove the principal-open identity extends by
     a denominator-free argument, or exhaust every rank-drop/response-zero
     divisor by a finite **proved** cover and complete mixed contradictions.
-14. **Closure audit package.**  Independent no-import replay, hostile
+15. **Closure audit package.**  Independent no-import replay, hostile
    proof-topology and case-cover audit, provenance/dependency records,
    `docs/current-frontier.md` update, full candidate-tree QA, exact-head hosted
    CI, and merged-main replay.
@@ -387,6 +409,14 @@ The node is closed **iff** every box below is discharged:
       fibres.  The theorem does not prove transport into a foreign nuisance,
       cover joint rank zero, synchronize the four-port line, force activity,
       or integrate the distinct GLS8 promoted interface.
+- [x] The maximum-root base shadow maps each original fixed-`Q` pair `M`
+      column to its complementary permanent, kills its `Z` column, and maps
+      the complete joint nuisance to every other order-two slice.  Hence base
+      survival excludes `k=0` and forces rank one to pure `M`; every remaining
+      pair slope or rank-zero target lies on an explicit base-swallowing
+      circuit.  Foreign labelled cross-annihilations are proved, but are not
+      foreign nuisance membership.  Primary, no-import audit, and hostile
+      review pass.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,
