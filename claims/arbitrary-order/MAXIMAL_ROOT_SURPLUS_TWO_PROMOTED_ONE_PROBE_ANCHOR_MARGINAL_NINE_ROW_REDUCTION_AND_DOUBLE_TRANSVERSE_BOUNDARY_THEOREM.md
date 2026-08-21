@@ -466,7 +466,11 @@ named existing detector contradiction.  The subsequent
 [`GLS25` double-transverse core theorem](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_DOUBLE_TRANSVERSE_ANCHOR_CORE_PROJECTOR_AND_TWENTY_SEVEN_ROW_REDUCTION_THEOREM.md)
 gives the `u_0=u_1=0`, `omega!=0` branch exact `27`-row pair and four-row top
 factor-through modules.  It does not exclude that branch or make reduced
-failure equivalent to full failure.  The following remain **OPEN**:
+failure equivalent to full failure.  The later
+[`GLS26` zero-anchor diagonal-reconstruction theorem](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ZERO_ANCHOR_DIAGONAL_RECONSTRUCTION_AND_RESIDUAL_SHORE_COVER_THEOREM.md)
+splits `omega=0` into essential raw promoted-pair supply versus an exact
+coordinate-shore cover, without proving target survival.  The following
+remain **OPEN**:
 
 ```text
 zero-anchor exclusion:                                      OPEN;

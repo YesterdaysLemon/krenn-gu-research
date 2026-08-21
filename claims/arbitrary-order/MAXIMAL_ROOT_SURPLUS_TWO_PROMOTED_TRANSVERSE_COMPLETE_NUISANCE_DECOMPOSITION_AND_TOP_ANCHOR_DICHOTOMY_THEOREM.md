@@ -366,6 +366,13 @@ common denominator-free nine-row factor-through test for every pair target;
 the zero-marginal divisor is retained as a nonzero double-transverse core.
 That refinement does not make nine-row failure equivalent to full absorption.
 
+The later
+[`GLS26` zero-anchor diagonal-reconstruction theorem](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ZERO_ANCHOR_DIAGONAL_RECONSTRUCTION_AND_RESIDUAL_SHORE_COVER_THEOREM.md)
+refines the other anchor branch.  The complete top-target equation forces the
+projected diagonal root space into the remaining nuisance and gives the exact
+essential-pair versus coordinate-shore-cover alternative.  It does not make
+the essential raw pair survive its own target nuisance.
+
 The following remain **OPEN**:
 
 ```text

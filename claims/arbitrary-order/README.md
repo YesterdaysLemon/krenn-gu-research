@@ -2922,6 +2922,9 @@ double-transverse boundary are covered by the
 The GLS25 double-transverse core projector and `27/4`-row factor-through routes
 are covered by the
 [`maximum-root promoted double-core hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_DOUBLE_TRANSVERSE_ANCHOR_CORE_PROJECTOR_AND_TWENTY_SEVEN_ROW_REDUCTION_REVIEW_2026-08-20.md).
+The GLS26 zero-anchor diagonal reconstruction, residual-shore tangent, and
+essential-pair/coordinate-shore-cover split are covered by the
+[`maximum-root promoted zero-anchor hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ZERO_ANCHOR_DIAGONAL_RECONSTRUCTION_AND_RESIDUAL_SHORE_COVER_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
