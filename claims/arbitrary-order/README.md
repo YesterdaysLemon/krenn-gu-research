@@ -2817,6 +2817,9 @@ covered by the
 The GLS17 partial-root all-even-target shadow and common pure-`M` selector are
 covered by the
 [`maximum-root partial-root grade-shadow hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PARTIAL_ROOT_GRADE_SHADOW_AND_COMMON_PURE_M_SELECTOR_REVIEW_2026-08-20.md).
+The GLS18 complete-target leading-shadow coupling and all-rank Fitting failure
+profile are covered by the
+[`maximum-root leading-shadow target/Fitting hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_LEADING_SHADOW_TARGET_COUPLING_AND_FITTING_FAILURE_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
