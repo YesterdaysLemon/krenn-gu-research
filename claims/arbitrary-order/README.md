@@ -2119,9 +2119,31 @@ permanent, admit a Latin bottom-row splice into one weighted
 vanishes term by term on this branch.  The focused primary and independent
 no-import audit and hostile review pass.  This is a downstream
 permanent-extraction edge, not a \(P_5\) nonrestriction theorem, target
-selector, or strategic-node closure.  Rank-one Branches I and II, weaker
-response-zero patterns, nonzero-response absorption and exceptional fibres,
-and every named downstream attachment package remain open.
+selector, or strategic-node closure.  Rank-one Branches I and II pass to the
+sibling continuation below.  Weaker response-zero patterns, nonzero-response
+absorption and exceptional fibres, and every named downstream attachment
+package remain open.
+
+The sibling exact continuation
+[rank-one contained and one-sided permanent reduction](FOUR_ROOT_DETERMINANT_DIVISOR_RANK_ONE_CONTAINED_AND_ONE_SIDED_PERMANENT_REDUCTION_THEOREM.md)
+([hostile review](../../docs/audits/FOUR_ROOT_DETERMINANT_DIVISOR_RANK_ONE_CONTAINED_AND_ONE_SIDED_PERMANENT_REDUCTION_REVIEW_2026-08-20.md))
+then gives an exhaustive pointwise routing for the remaining rank-one Branches
+I and II on the same six-pair-response-zero divisor.  In Branch I, exact
+deleted-mode \(P_5\) identities either produce a nonzero decomposable pullback
+or force a same-coordinate balanced core.  That core splits without omission:
+if its physical quartic \(\Phi\) is nonzero, the seventh response is nonzero
+but no legal selector follows; if \(\Phi=0\), the partitions align and an
+augmented \(P_6\) identity has one explicit four-port face defect \(\Psi\)
+lying in the active-line module.  The equations do not prove \(\Psi=0\).
+In Branch II, a singleton supplies a pure decomposable \(P_4\) companion and
+two-port support supplies one of two exact decomposable \(P_5\) deletions,
+including the labelled transpose.  These nonconcise outputs are new downstream
+pure-compression interfaces, not the weighted
+\(P_5\to\Delta_3\) node of the preceding theorem.  The focused exact primary,
+genuinely independent no-import audit, and hostile scope review pass.  The
+theorem is not a permanent nonrestriction, legal selector,
+response-absorption exclusion, or strategic node closure, and the global
+conjecture remains **UNRESOLVED**.
 
 The
 [`four-root paired-grade constant-selector theorem`](FOUR_ROOT_PAIRED_GRADE_CONSTANT_TARGET_SELECTOR_AND_SINGLE_SHORE_CLEANNESS_BOUNDARY_THEOREM.md)
