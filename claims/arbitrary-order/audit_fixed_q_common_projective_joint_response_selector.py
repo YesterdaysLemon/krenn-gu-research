@@ -1,7 +1,7 @@
 """Independent standard-library audit of the common projective theorem.
 
 This script imports neither SymPy nor the primary verifier.  It uses sparse
-polynomial dictionaries for the homogeneous identity, elementary exact line
+polynomial dictionaries for the arbitrary-h identity, elementary exact line
 constraints for the common-space classification, and direct complementary
 matching enumeration with ``Fraction`` coefficients for the two controls.
 """
@@ -25,7 +25,7 @@ MATCHINGS: tuple[tuple[Edge, Edge], ...] = (
     ((0, 2), (1, 3)),
     ((0, 3), (1, 2)),
 )
-VARIABLE_COUNT = 2 + 2 * len(EDGES)
+VARIABLE_COUNT = 3 + 2 * len(EDGES)
 
 
 def monomial(variable: int) -> Polynomial:
@@ -65,15 +65,20 @@ def multiply(left: Polynomial, right: Polynomial) -> Polynomial:
     }
 
 
-def audit_homogeneous_identity() -> None:
-    alpha = monomial(0)
-    beta = monomial(1)
-    direct = {edge: monomial(2 + number) for number, edge in enumerate(EDGES)}
+def audit_arbitrary_h_identity() -> None:
+    delta = monomial(0)
+    eta = monomial(1)
+    h = monomial(2)
+    effective = add(delta, multiply(h, eta))
+    direct = {edge: monomial(3 + number) for number, edge in enumerate(EDGES)}
     channel = {
-        edge: monomial(2 + len(EDGES) + number) for number, edge in enumerate(EDGES)
+        edge: monomial(3 + len(EDGES) + number) for number, edge in enumerate(EDGES)
+    }
+    residual_present = {
+        edge: add(multiply(h, direct[edge]), channel[edge]) for edge in EDGES
     }
     selected = {
-        edge: add(multiply(alpha, direct[edge]), multiply(beta, channel[edge]))
+        edge: add(multiply(delta, direct[edge]), multiply(eta, residual_present[edge]))
         for edge in EDGES
     }
     compound_direct = add(*(multiply(direct[e], direct[f]) for e, f in MATCHINGS))
@@ -88,13 +93,75 @@ def audit_homogeneous_identity() -> None:
             for e, f in MATCHINGS
         )
     )
-    selected_four = add(multiply(alpha, compound_direct), multiply(beta, cross))
+    residual_present_four = add(multiply(h, compound_direct), cross)
+    selected_four = add(
+        multiply(delta, compound_direct), multiply(eta, residual_present_four)
+    )
     difference = add(
-        multiply(alpha, selected_four),
+        multiply(effective, selected_four),
         scale(-1, compound_selected),
-        multiply(multiply(beta, beta), compound_channel),
+        multiply(multiply(eta, eta), compound_channel),
     )
     assert difference == {}
+
+    # On delta=-h, eta=1, the selected pair package is exactly K and the
+    # effective scalar is zero.  Check this without polynomial substitution.
+    minus_h = scale(-1, h)
+    for edge in EDGES:
+        divisor_selected = add(multiply(minus_h, direct[edge]), residual_present[edge])
+        assert divisor_selected == channel[edge]
+    assert add(minus_h, h) == {}
+
+
+def determinant_three(matrix: tuple[tuple[Polynomial, ...], ...]) -> Polynomial:
+    permutations = (
+        ((0, 1, 2), 1),
+        ((0, 2, 1), -1),
+        ((1, 0, 2), -1),
+        ((1, 2, 0), 1),
+        ((2, 0, 1), 1),
+        ((2, 1, 0), -1),
+    )
+    terms = []
+    for permutation, sign in permutations:
+        term = multiply(
+            matrix[0][permutation[0]],
+            multiply(matrix[1][permutation[1]], matrix[2][permutation[2]]),
+        )
+        terms.append(scale(sign, term))
+    return add(*terms)
+
+
+def audit_effective_scalar_detector_split() -> None:
+    effective = monomial(0)
+    diagonal = tuple(monomial(1 + index) for index in range(3))
+    mixed = tuple(
+        tuple(monomial(4 + 3 * row + column) for column in range(3)) for row in range(3)
+    )
+    detector = tuple(
+        tuple(
+            add(
+                diagonal[row] if row == column else {},
+                scale(-1, multiply(effective, mixed[row][column])),
+            )
+            for column in range(3)
+        )
+        for row in range(3)
+    )
+    determinant = determinant_three(detector)
+    expected = multiply(diagonal[0], multiply(diagonal[1], diagonal[2]))
+    effective_zero = {
+        powers: coefficient
+        for powers, coefficient in determinant.items()
+        if powers[0] == 0
+    }
+    mixed_zero = {
+        powers: coefficient
+        for powers, coefficient in determinant.items()
+        if all(powers[index] == 0 for index in range(4, 13))
+    }
+    assert effective_zero == expected
+    assert mixed_zero == expected
 
 
 def constraint_rank(rows: list[tuple[Q, Q]]) -> int:
@@ -293,7 +360,8 @@ def audit_common_camouflage() -> None:
 
 
 def main() -> None:
-    audit_homogeneous_identity()
+    audit_arbitrary_h_identity()
+    audit_effective_scalar_detector_split()
     audit_common_spaces()
     audit_unequal_slopes()
     audit_common_camouflage()
