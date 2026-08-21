@@ -3,8 +3,8 @@
 Date: 2026-08-20
 Programme branch: `codex/kg-maxroot-shadow-syzygy-20260820`
 Original determinant-tranche base: `b578d599931942b97300be9d936ae14103538806`
-Current residual-present-top-shadow-tranche base: `origin/main` at
-`12c7bbf7a76a480d195aaef3b9447544ef8e6c41`
+Current promoted-base-shadow-tranche base: `origin/main` at
+`90d52a45cf2703ccb82604824e2b28aa7c34232c`
 Global Krenn--Gu status: **UNRESOLVED**
 
 This is an internal research plan, not a theorem, reduction, or claim of case
@@ -90,6 +90,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLS17 | For any original fixed-`Q` even target `|S|=2t`, leaving `t-1` roots open kills the residual-present grade and every higher grade.  The residual-absent column has an explicit injection/permanent leading tensor; survival modulo every lower-or-equal-grade nuisance slice forces a pure-`M` operator row.  A finite surviving family has one common pure-`M` direction, and at `r=4` the explicit four-port first-root covectors complete the seven-row synchronization gate. | No leading class is forced to survive and physical output/activity remain separate.  At `r=4`, at least one swallowed pair shadow, all four swallowed four-port shadows, or activity/rank/response failure remains.  Foreign transport and GLS8 are not integrated. |
 | GLS18 | Applying every GLS17 shadow to the complete target equation makes the pure leading quotient rank at most one and useful exactly when both its desired leading class and physical `M` response are nonzero.  Universal failure is the exact all-rank geometric radical--Fitting profile, and finite target families are encoded at one shared residual point. | The simultaneous profile is not proved empty.  At `r=4`, four-port failure means four full first-root nuisance shadows, while pair failure forces only a diagonal three-space inside a nine-space.  Activity, foreign transport, source coverage, and GLS8 remain open. |
 | GLS19 | Leaving `t` roots open for a `2t` target and adjoining the generally surviving `M` column to the exact individual-`Z` nuisance exposes an injection/permanent residual-present top class.  Survival supplies pure `Z`; the complete target and all-rank Fitting profile couple it exactly to nonzero `Z_S` response at one shared residual point. | No top class or response is forced.  At `r=4`, the pure top columns span only diagonal three-spaces, and seven useful rows still require GLD16 activity.  Simultaneous GLS18/GLS19 failure, oblique lines, transport, source coverage, and GLS8 remain open. |
+| GLS20 | In the promoted GLS8 chart, maximum-root contraction of the two probe slots maps each source Laplace target's complete `81`-row nuisance to a `9`-row base quotient.  Base survival is exactly a legal factor-through selector.  The source Laplace identity forces a raw nonzero base coefficient and turns universal base absorption into a nonzero `Pi_Q` circuit; the complete target makes usefulness exactly base survival plus nonzero promoted response, with an all-rank Fitting profile. | No base class or response is forced.  At `r=3` only three source-aligned pair rows are reached, and at larger order one promoted row is not a named downstream package.  Upstairs-only selectors, simultaneous base absorption/response zero, activity, and node closure remain. |
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
@@ -144,6 +145,12 @@ support divisors; and coexistence of all required selectors on the same graph.
   gives a legal pure-`Z` row, and complete-target usefulness is exactly top
   survival plus nonzero `Z_S`.  Universal failure is an all-rank Fitting
   profile; neither that profile nor activity is excluded.
+- GLS20 integrates the GLS8 source Laplace terms with the target quotient.
+  Contracting both probe slots at their maximum roots gives a complete nine-row
+  base nuisance.  A surviving base class is a legal factor-through selector;
+  complete-target usefulness is exactly base survival plus nonzero promoted
+  response.  The source forces raw nonvanishing only, so simultaneous base
+  absorption and response-zero branches remain exact open alternatives.
 - GLD19--GLD21 and GLD22--GLD62 close only their explicitly declared
   response-zero/support/dense subcells.
 - The reviewed failure-module theorem compresses all pointwise nuisance-rank
@@ -316,6 +323,23 @@ failure has its own all-rank radical--Fitting profile.  Seven useful rows at
 three-colour activity gate.  The next proof must contradict simultaneous
 failure of the pure-`M` and pure-`Z` profiles or control the remaining
 projective lines.
+
+GLS20 returns to the distinct promoted GLS8 chart and contracts its two probe
+slots at the actual maximum-root vectors.  For each source pair `C subset U`,
+
+```text
+N_C^base=epsilon_A(N_C),
+Pi_Q=sum_C b_C tensor Per_(K_0,U-C).
+```
+
+Base survival is equivalent to a legal selector factoring through
+`epsilon_A`.  If every base class is swallowed, the nonzero `Pi_Q` lies in the
+explicit Laplace nuisance sum; this is a circuit, not a contradiction.  On the
+complete target the three diagonal base columns have rank at most one, and the
+rank rises exactly when `[b_C]` and the promoted physical response are both
+nonzero.  Simultaneous failure is now a nine-row radical--Fitting profile on
+every exceptional fibre.  The next proof must exclude that profile or use
+upstairs-only GLS8 escapes, then assemble a complete named detector package.
 
 ## 5. Dependency order for theorem packages
 
@@ -520,6 +544,12 @@ The node is closed **iff** every box below is discharged:
       survival plus nonzero `Z_S` on every rank fibre.  At `r=4`, seven useful
       top rows give the common line with `a=h`, but activity and survival remain
       open.  Primary, independent no-import audit, and hostile review pass.
+- [x] Every promoted GLS8 source Laplace pair has an exact nine-row base
+      quotient.  Base survival gives a legal factor-through selector, the
+      complete target couples it exactly to response nonvanishing, and all-rank
+      failure is an exact Fitting profile.  The source forces a raw nonzero base
+      term but not quotient survival.  Primary, independent no-import audit,
+      and hostile review pass.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,

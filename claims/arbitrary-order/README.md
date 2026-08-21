@@ -2025,7 +2025,23 @@ not the simultaneous GLD3 package; at higher orders the promoted top layers
 do not alone match a committed downstream detector.  Accordingly this is a
 reduction inside the supply-and-target node, not a replacement for its named
 downstream common-package, alignment, synchronization, activity, or anchor
-requirements.
+ requirements.
+
+The
+[`promoted source-aligned base-shadow theorem`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_SOURCE_ALIGNED_BASE_SHADOW_AND_TARGET_FAILURE_THEOREM.md)
+([hostile review](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_SOURCE_ALIGNED_BASE_SHADOW_AND_TARGET_FAILURE_REVIEW_2026-08-20.md))
+then contracts the two probe-root coefficient slots at their actual
+maximum-root vectors.  For every GLS4 source Laplace pair this maps the
+complete `81`-row nuisance quotient to a `9`-row base quotient.  Base survival
+is equivalent to a legal normalized GLS8 selector factoring through the
+contraction.  The source Laplace identity forces some raw base coefficient
+nonzero and turns simultaneous base absorption into an explicit nonzero
+`Pi_Q` nuisance circuit.  On the complete target, the diagonal base quotient
+has rank at most one and is useful exactly when the base class and physical
+response are both nonzero; nine-row geometric Fitting containments cover all
+rank-drop fibres.  No survival or response is forced, only three source-
+aligned pair targets occur at `r=3`, and no named one-row downstream detector
+is supplied for larger root order.
 
 The
 [`four-root full-rank all-response-zero localization`](FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_OPPOSITE_COLOUR_PURE_COMPLEMENTARY_PERMANENT_LOCALIZATION_THEOREM.md)
@@ -2823,6 +2839,9 @@ profile are covered by the
 The GLS19 residual-present top shadow, common pure-`Z` selector, and target-
 coupled failure profile are covered by the
 [`maximum-root residual-present top-shadow hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_TOP_GRADE_RESIDUAL_PRESENT_SHADOW_COMMON_PURE_Z_SELECTOR_AND_TARGET_FAILURE_REVIEW_2026-08-20.md).
+The GLS20 promoted source-aligned base quotient and nine-row failure profile
+are covered by the
+[`maximum-root promoted source-aligned base-shadow hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_SOURCE_ALIGNED_BASE_SHADOW_AND_TARGET_FAILURE_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
