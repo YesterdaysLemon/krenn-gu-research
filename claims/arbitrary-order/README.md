@@ -2056,6 +2056,20 @@ full `81`-row GLS8 quotient: selectors using non-base probe-root directions,
 full upstairs failure, and every downstream common-package gate remain open.
 
 The
+[`promoted all-target transverse-quotient theorem`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ALL_PORT_TRANSVERSE_QUOTIENT_AND_PROJECTIVE_SYNCHRONIZATION_FAILURE_THEOREM.md)
+([hostile review](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ALL_PORT_TRANSVERSE_QUOTIENT_AND_PROJECTIVE_SYNCHRONIZATION_FAILURE_REVIEW_2026-08-20.md))
+then retains the all-port label while quotienting its exact uncontracted root
+line.  On the already-required `p!=0` gate,
+`P_Q=pI-G_Q^A(z_Q) tensor epsilon_A` has kernel that line, image
+`ker epsilon_A`, and `P_Q^2=pP_Q`.  It reduces the full GLS8 selector problem
+equivalently from `81` to `72` rows for every top-minus-two target and from
+`9` to `8` for the top target.  The complete target and all-rank Fitting
+profile descend exactly.  Source terms obey
+`T_Q=pF_Q-G_Q^A(z_Q) tensor Pi_Q`, giving a raw-transverse/projective-
+synchronization fork.  No transverse class, response, common activity, or
+downstream package is forced.
+
+The
 [`four-root full-rank all-response-zero localization`](FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_OPPOSITE_COLOUR_PURE_COMPLEMENTARY_PERMANENT_LOCALIZATION_THEOREM.md)
 ([hostile review](../../docs/audits/FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_LOCALIZATION_REVIEW_2026-08-20.md))
 then uses the complete contracted mixed target on one literal response-zero
@@ -2857,6 +2871,9 @@ are covered by the
 The GLS21 all-port nuisance collapse and factor-through route no-go are
 covered by the
 [`maximum-root promoted all-port nuisance-collapse hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_BASE_SHADOW_ALL_PORT_NUISANCE_COLLAPSE_REVIEW_2026-08-20.md).
+The GLS22 all-target transverse quotient and projective-synchronization failure
+split are covered by the
+[`maximum-root promoted transverse-quotient hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ALL_PORT_TRANSVERSE_QUOTIENT_AND_PROJECTIVE_SYNCHRONIZATION_FAILURE_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the

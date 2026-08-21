@@ -3,8 +3,8 @@
 Date: 2026-08-20
 Programme branch: `codex/kg-maxroot-shadow-syzygy-20260820`
 Original determinant-tranche base: `b578d599931942b97300be9d936ae14103538806`
-Current promoted-all-port-collapse-tranche base: `origin/main` at
-`441470a6940811563301ee366346d2e8fdb73f16`
+Current promoted-transverse-quotient-tranche base: `origin/main` at
+`1ece09f9562fc7d22cc38373d565edfe3cf3be09`
 Global Krenn--Gu status: **UNRESOLVED**
 
 This is an internal research plan, not a theorem, reduction, or claim of case
@@ -92,6 +92,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLS19 | Leaving `t` roots open for a `2t` target and adjoining the generally surviving `M` column to the exact individual-`Z` nuisance exposes an injection/permanent residual-present top class.  Survival supplies pure `Z`; the complete target and all-rank Fitting profile couple it exactly to nonzero `Z_S` response at one shared residual point. | No top class or response is forced.  At `r=4`, the pure top columns span only diagonal three-spaces, and seven useful rows still require GLD16 activity.  Simultaneous GLS18/GLS19 failure, oblique lines, transport, source coverage, and GLS8 remain open. |
 | GLS20 | In the promoted GLS8 chart, maximum-root contraction of the two probe slots maps each source Laplace target's complete `81`-row nuisance to a `9`-row base quotient.  Base survival is exactly a legal factor-through selector.  The source Laplace identity forces a raw nonzero base coefficient and turns universal base absorption into a nonzero `Pi_Q` circuit; the complete target makes usefulness exactly base survival plus nonzero promoted response, with an all-rank Fitting profile. | GLS21 subsequently proves the nine-row quotient is always zero on the required `p!=0` gate.  The conditional GLS20 identities remain valid, but this base-survival route is a no-go. |
 | GLS21 | The active `D=Q` residual-absent all-port label is retained nuisance for every promoted source target.  Maximum-root contraction makes it exactly `p_(A,Q)id`; its coefficient slices give `pI_9`, so all source base nuisances are full on `D(p)` and every GLS20 Fitting failure profile is automatic. | This proves only the factor-through base route impossible.  It does not absorb the full `81`-row desired class, exclude upstairs selectors or responses, supply a downstream package, or close the node. |
+| GLS22 | On `p!=0`, `P_Q=pI-G_Q^A(z_Q) tensor epsilon_A` kills exactly the retained all-port root line and identifies the full GLS8 quotient with an exact transverse quotient (`81 -> 72` rows for top-minus-two, `9 -> 8` for top).  Full legal survival, complete-target pure rank, and all-rank failure are equivalent after projection.  Source terms satisfy `T_Q=pF_Q-G_Q^A(z_Q) tensor Pi_Q`. | No transverse class or response is forced.  Aggregate synchronization is not termwise synchronization, and the `r=3` seven individual quotients still lack common selection/activity.  No `r>=4` downstream package or node closure follows. |
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
@@ -157,6 +158,11 @@ support divisors; and coexistence of all required selectors on the same graph.
   `pI_9`, filling every base quotient.  This is a route no-go; full upstairs
   GLS8 selectors remain possible and must be treated without deleting that
   nuisance label.
+- GLS22 quotients the uncontracted all-port root line exactly instead of
+  deleting it.  The resulting `72/8`-row transverse modules are equivalent to
+  the full legal GLS8 quotients on `D(p)`.  Their complete-target and Fitting
+  profiles retain every response-zero and rank-drop fibre; survival and
+  downstream common-package gates remain open.
 - GLD19--GLD21 and GLD22--GLD62 close only their explicitly declared
   response-zero/support/dense subcells.
 - The reviewed failure-module theorem compresses all pointwise nuisance-rank
@@ -361,6 +367,23 @@ containment is forced.  The next promoted proof must remain in the full
 `81`-row quotient, use a legal joint construction retaining the all-port
 label, or contradict full upstairs simultaneous failure.  Forcing GLS20 base
 survival is no longer an open route.
+
+GLS22 gives the exact upstairs replacement.  With
+
+```text
+q=G_Q^A(z_Q),
+P_Q=pI-q tensor epsilon_A,
+t_C=(P_Q tensor id)g_C,
+```
+
+one has `ker P_Q=Kq`, `im P_Q=ker epsilon_A`, and `P_Q^2=pP_Q` on `D(p)`.
+Because `q tensor V_C^*` is already complete nuisance, full GLS8 survival is
+equivalent to survival of `t_C` in the projected complete nuisance.  This gives
+`72` rows for all top-minus-two targets and `8` for the top target, with exact
+target coupling and all-rank Fitting profiles.  The source fork
+`T_Q=pF_Q-q tensor Pi_Q` distinguishes raw transverse nonvanishing from an
+aggregate projective synchronization identity, but neither branch proves
+quotient survival or activity.
 
 ## 5. Dependency order for theorem packages
 
@@ -576,6 +599,12 @@ The node is closed **iff** every box below is discharged:
       is identically zero on `p!=0`.  This is a proved no-go, not full GLS8
       absorption.  Primary, independent no-import audit, and hostile review
       pass.
+- [x] The full promoted quotient has an exact legal transverse reduction on
+      `D(p)`: `81 -> 72` rows for top-minus-two targets and `9 -> 8` for the
+      top target, with selector equivalence, target coupling, source aggregate,
+      and all exceptional Fitting fibres preserved.  No transverse survival or
+      response is forced.  Primary, independent no-import audit, and hostile
+      review pass.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,
