@@ -2814,6 +2814,9 @@ The GLS15 physical pair-companion transport is covered by the
 The GLS16 base-grade pair shadow and foreign-label cross-annihilation are
 covered by the
 [`maximum-root base-grade pair-shadow hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_BASE_GRADE_PAIR_SHADOW_AND_CROSS_TARGET_SELECTOR_ANNIHILATION_REVIEW_2026-08-20.md).
+The GLS17 partial-root all-even-target shadow and common pure-`M` selector are
+covered by the
+[`maximum-root partial-root grade-shadow hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PARTIAL_ROOT_GRADE_SHADOW_AND_COMMON_PURE_M_SELECTOR_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
