@@ -272,6 +272,7 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
           <a href={data.source.frontierDocument} target="_blank" rel="noreferrer">
             source {data.source.commit.slice(0, 8)}
           </a>
+          <a href="https://alirezaafshan.com">Portfolio</a>
         </div>
       </section>
 
