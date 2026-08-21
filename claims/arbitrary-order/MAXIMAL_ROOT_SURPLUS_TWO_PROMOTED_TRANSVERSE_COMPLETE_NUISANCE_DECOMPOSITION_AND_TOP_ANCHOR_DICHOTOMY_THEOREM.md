@@ -359,6 +359,13 @@ required transverse desired tensor, or to prove a useful common family with
 all downstream response/activity gates.  Generic full root-slice rank is not
 enough; every rank-drop fibre in (10)--(17) remains load-bearing.
 
+The subsequent
+[`GLS24` one-probe marginal theorem](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ONE_PROBE_ANCHOR_MARGINAL_NINE_ROW_REDUCTION_AND_DOUBLE_TRANSVERSE_BOUNDARY_THEOREM.md)
+refines the nonzero-anchor branch.  A nonzero actual-root marginal gives one
+common denominator-free nine-row factor-through test for every pair target;
+the zero-marginal divisor is retained as a nonzero double-transverse core.
+That refinement does not make nine-row failure equivalent to full absorption.
+
 The following remain **OPEN**:
 
 ```text
