@@ -462,7 +462,11 @@ GLS23 anchor split
 ```
 
 At `r=3`, the all-six-useful plus top-useful plus three-active leaf is now a
-named existing detector contradiction.  The following remain **OPEN**:
+named existing detector contradiction.  The subsequent
+[`GLS25` double-transverse core theorem](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_DOUBLE_TRANSVERSE_ANCHOR_CORE_PROJECTOR_AND_TWENTY_SEVEN_ROW_REDUCTION_THEOREM.md)
+gives the `u_0=u_1=0`, `omega!=0` branch exact `27`-row pair and four-row top
+factor-through modules.  It does not exclude that branch or make reduced
+failure equivalent to full failure.  The following remain **OPEN**:
 
 ```text
 zero-anchor exclusion:                                      OPEN;
