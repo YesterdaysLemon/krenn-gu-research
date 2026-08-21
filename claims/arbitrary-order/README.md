@@ -2343,6 +2343,20 @@ rank-two targets under complementary-colour activity.  None of those ranks or
 the activity is proved universal, and no permanent restriction follows.
 
 The
+[`maximum-root physical pair-companion transform theorem`](MAXIMAL_ROOT_SURPLUS_TWO_PHYSICAL_PAIR_COMPANION_TRANSFORM_AND_PROJECTIVE_SYNCHRONIZATION_OBSTRUCTION_THEOREM.md)
+then exposes the common physical object behind every arbitrary-order pair
+target.  If `C` is the pair complement, the two GLD15 desired columns are
+`Psi_C(K^Q)` and `Psi_C(R)`.  A rank-one line `K(delta,eta)` is exactly
+absorption of `Psi_C(delta R-eta K^Q)`.  Cross-applying another target's
+absorbed direction gives its projective determinant times the local quotient
+generator; on a complete witness, multiplication by any selected active
+diagonal value gives the same determinant times the active pure target class.
+All identities are denominator-free and include pure axes and incidence
+rank drops.  The theorem does not prove the transport class is nuisance, does
+not cover joint rank zero or missing activity, and does not synchronize the
+four-port row required by GLD16.
+
+The
 [`fixed-Q common projective joint-response selector theorem`](FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_AND_SHIFTED_GLD3_DETECTOR_THEOREM.md)
 then weakens the seven-target rank-two input.  The exact operator-coefficient
 spaces need only share one nonzero projective vector `(delta,eta)`.  For an
@@ -2792,6 +2806,8 @@ The GLD13--GLD14 successor pair is covered by the
 [`contraction escape and paired-response hostile review`](../../docs/audits/CONTRACTION_ESCAPE_AND_PAIRED_RESPONSE_CLOSURE_REVIEW_2026-08-17.md).
 The GLD15 joint quotient is covered by the
 [`fixed-Q joint M/Z quotient hostile review`](../../docs/audits/FIXED_Q_JOINT_MZ_QUOTIENT_AND_PAIRED_ATTACHMENT_REVIEW_2026-08-17.md).
+The GLS15 physical pair-companion transport is covered by the
+[`maximum-root physical pair-companion transport hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PHYSICAL_PAIR_COMPANION_TRANSFORM_AND_PROJECTIVE_SYNCHRONIZATION_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
