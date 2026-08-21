@@ -2044,6 +2044,18 @@ aligned pair targets occur at `r=3`, and no named one-row downstream detector
 is supplied for larger root order.
 
 The
+[`promoted base-shadow all-port nuisance-collapse theorem`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_BASE_SHADOW_ALL_PORT_NUISANCE_COLLAPSE_THEOREM.md)
+([hostile review](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_BASE_SHADOW_ALL_PORT_NUISANCE_COLLAPSE_REVIEW_2026-08-20.md))
+then closes that factor-through route as a no-go.  For every source target,
+the distinct active `D=Q` label is the residual-absent all-port input.  Its
+maximum-root-contracted coefficient is exactly `p_(A,Q)`, and complete
+coefficient slicing contributes `pI_9` to the base nuisance.  Thus on the
+required `p!=0` gate every nine-row quotient is zero and every GLS20 Fitting
+failure containment is automatic.  This does not imply absorption in the
+full `81`-row GLS8 quotient: selectors using non-base probe-root directions,
+full upstairs failure, and every downstream common-package gate remain open.
+
+The
 [`four-root full-rank all-response-zero localization`](FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_OPPOSITE_COLOUR_PURE_COMPLEMENTARY_PERMANENT_LOCALIZATION_THEOREM.md)
 ([hostile review](../../docs/audits/FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_LOCALIZATION_REVIEW_2026-08-20.md))
 then uses the complete contracted mixed target on one literal response-zero
@@ -2842,6 +2854,9 @@ coupled failure profile are covered by the
 The GLS20 promoted source-aligned base quotient and nine-row failure profile
 are covered by the
 [`maximum-root promoted source-aligned base-shadow hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_SOURCE_ALIGNED_BASE_SHADOW_AND_TARGET_FAILURE_REVIEW_2026-08-20.md).
+The GLS21 all-port nuisance collapse and factor-through route no-go are
+covered by the
+[`maximum-root promoted all-port nuisance-collapse hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_BASE_SHADOW_ALL_PORT_NUISANCE_COLLAPSE_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the

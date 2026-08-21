@@ -42,6 +42,13 @@ alignment, nuisance survival beyond the selected row, or any permanent
 restriction.  It does not close the strategic node.  The global Krenn--Gu
 conjecture remains **UNRESOLVED**.
 
+**Subsequent route closure.**  `GLS21` identifies the retained `D=Q`
+residual-absent all-port label as the exact nuisance block `p_(A,Q)I_9`.
+Therefore on the required `p_(A,Q)!=0` source gate every base quotient in this
+document is zero.  The conditional equivalences proved here remain correct,
+but their base-survival branch is not physically available on that gate.  See
+[`GLS21`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_BASE_SHADOW_ALL_PORT_NUISANCE_COLLAPSE_THEOREM.md).
+
 ## Dependencies and provenance
 
 The same-pair source, the nonzero complementary permanent, the surviving
@@ -351,20 +358,19 @@ GLS4 source pair and probe pair
      swallowed nonzero/raw base circuit}.             (24)
 ```
 
-The smallest remaining promoted-interface obligation is to use complete mixed
-GHZ coefficients on the same graph to exclude the simultaneous base Fitting
-profile (23), or to show that any base-surviving source term has nonzero
-physical response, and then to assemble the resulting rows into every gate of
-a named downstream detector.  The uncontracted `81`-row `GLS8` quotient may
-still have legal selectors invisible to this base shadow; those are additional
-escape routes, not failure cases.
+`GLS21` proves that the retained all-port nuisance contributes
+`p_(A,Q)V_C^*` to every base nuisance.  Hence on the source gate `D(p)` the
+base Fitting profile (23) is automatic and the first two displayed branches
+collapse to the swallowed-base branch.  Future work must use the uncontracted
+`81`-row `GLS8` quotient, a legal joint construction retaining the all-port
+label, or complete mixed equations contradicting full upstairs failure.
 
 The following remain **OPEN**:
 
 ```text
-base survival for any source Laplace pair:                 OPEN;
-nonzero response for a base-surviving pair:                 OPEN;
-exclusion of simultaneous base absorption/response zero:   OPEN;
+base-shadow survival on the p!=0 source gate:               CLOSED NO-GO (GLS21);
+full 81-row GLS8 survival/nonzero response:                  OPEN;
+exclusion of full upstairs simultaneous failure:            OPEN;
 r=3 common seven-row package and activity:                  OPEN;
 r>=4 named downstream detector:                            OPEN;
 GLS15 foreign transport and original-chart synchronization: OPEN;
