@@ -2344,8 +2344,9 @@ the activity is proved universal, and no permanent restriction follows.
 
 The
 [`maximum-root physical pair-companion transform theorem`](MAXIMAL_ROOT_SURPLUS_TWO_PHYSICAL_PAIR_COMPANION_TRANSFORM_AND_PROJECTIVE_SYNCHRONIZATION_OBSTRUCTION_THEOREM.md)
-then exposes the common physical object behind every arbitrary-order pair
-target.  If `C` is the pair complement, the two GLD15 desired columns are
+then exposes the common physical object behind every pair target in the
+original arbitrary-order `r`-root, `r`-port fixed-`Q` chart.  If `C` is the
+pair complement, the two GLD15 desired columns are
 `Psi_C(K^Q)` and `Psi_C(R)`.  A rank-one line `K(delta,eta)` is exactly
 absorption of `Psi_C(delta R-eta K^Q)`.  Cross-applying another target's
 absorbed direction gives its projective determinant times the local quotient
@@ -2355,6 +2356,8 @@ All identities are denominator-free and include pure axes and incidence
 rank drops.  The theorem does not prove the transport class is nuisance, does
 not cover joint rank zero or missing activity, and does not synchronize the
 four-port row required by GLD16.
+It does not integrate the distinct GLS8 repartition, which has two probe roots,
+`2r-2` promoted ports, and a target of size `2r-4`.
 
 The
 [`fixed-Q common projective joint-response selector theorem`](FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_AND_SHIFTED_GLD3_DETECTOR_THEOREM.md)

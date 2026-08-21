@@ -21,13 +21,24 @@ arbitrary-order downstream package open.
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
+## Postmerge interface correction
+
+The initial review missed one proof-DAG error: it accepted a dependency note
+identifying the original arbitrary-`r` pair targets with the top-minus-two
+targets of `GLS8`.  That identification is false.  GLS15 uses `r` roots,
+`r` ports, and `|S|=2`; GLS8 repartitions the graph into two probe roots,
+`2r-2` promoted ports, and `|S|=2r-4`.  The matching identities and quotient
+proofs below are unaffected, but they do not integrate GLS8.  The live DAG,
+claim provenance, README, and scope ledger are corrected in the follow-up
+erratum tranche.  This review explicitly fails the former dependency claim.
+
 ## Frozen reviewed artifacts
 
-The following SHA256 hashes were computed after the focused scripts and Ruff
-checks passed and before publication:
+The following LF-normalized SHA256 hashes were computed after the focused
+scripts and Ruff checks passed and before the corrected publication:
 
 ```text
-9a3124c94e450085c2cf124483b89ed5bc41e4976ab6da5a1b317f8c9b62fc01
+34bd68315c060fa6e957d261fd860c355d62dbb453973bcd4580e36326db4810
   claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_PHYSICAL_PAIR_COMPANION_TRANSFORM_AND_PROJECTIVE_SYNCHRONIZATION_OBSTRUCTION_THEOREM.md
 
 d6c8cc3773647ee1b7079697936f7c41f5e459c252d16c95b5160b5ac8cf22bd
@@ -131,10 +142,13 @@ The following attempted overextensions were rejected:
 8. **Arbitrary-root pair rows are a downstream package.**  False.  The source
    identity is arbitrary-root, but no named committed theorem accepts only
    these rows at `r=3` or `r>=5` as the complete required interface.
-9. **A finite replay proves the arbitrary-root theorem.**  False.  The proof is
+9. **The pair rows are the promoted GLS8 rows.**  False.  The two partitions
+   have different root counts, port counts, target sizes, companion grades,
+   and nuisance modules.  GLS8 remains an independent source obligation.
+10. **A finite replay proves the arbitrary-root theorem.**  False.  The proof is
    the all-`r` matching bijection.  Orders through seven and eight are bounded
    exact audits only.
-10. **The result changes global status.**  False.  It neither produces a
+11. **The result changes global status.**  False.  It neither produces a
     permanent restriction nor excludes every source point.
 
 The theorem therefore changes the live frontier only by replacing an informal

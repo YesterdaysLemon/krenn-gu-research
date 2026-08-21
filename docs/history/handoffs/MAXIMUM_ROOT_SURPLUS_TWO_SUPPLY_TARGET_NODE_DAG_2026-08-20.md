@@ -1,10 +1,10 @@
 # Maximum-root surplus-two supply/target node: internal proof-DAG plan
 
 Date: 2026-08-20
-Programme branch: `codex/kg-maxroot-node-continuation-20260820`
+Programme branch: `codex/kg-maxroot-transport-continuation-20260820`
 Original determinant-tranche base: `b578d599931942b97300be9d936ae14103538806`
 Current physical pair-transport-tranche base: `origin/main` at
-`5381f07a49de24e2825c4fc952426c2a0cb31a3a`
+`54578965a566a7db1b370a8c0c7b78198107c43c`
 Global Krenn--Gu status: **UNRESOLVED**
 
 This is an internal research plan, not a theorem, reduction, or claim of case
@@ -85,7 +85,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLD13 | For prechosen \(Q\) and seven nonzero response polynomials, gives the function-field split: common generic legal survival or desired-plus-three-pure absorption. | Response-identically-zero and every exceptional nuisance-rank-drop fibre remain; generic absorption is not pointwise absorption. |
 | GLD14 | Closes the affine fibre and all-depth mixed shape after legal attached rows are supplied. | It cannot supply those rows or choose \(Q\). |
 | GLD15 | Gives the exact fixed-target joint \(M/Z\) ranks \(k=0,1,2\). | Nothing forces \(k>0\); rank-one cancellation and response rank are separate. |
-| GLS15 | For every root order and pair target, identifies the two GLD15 desired columns as one physical transform `Psi_C` applied to `K^Q` and `R`.  Rank-one absorption is `Psi_C(delta R-eta K^Q)` in the complete joint nuisance, and a foreign absorbed direction gives exactly the projective determinant times the local quotient generator and active pure target class. | The transport defect is not proved nuisance.  Joint rank zero, response-zero/missing activity, the four-port line, and an arbitrary-order downstream package remain. |
+| GLS15 | For every root order and pair target in the original `r`-root, `r`-port fixed-`Q` chart, identifies the two GLD15 desired columns as one physical transform `Psi_C` applied to `K^Q` and `R`.  Rank-one absorption is `Psi_C(delta R-eta K^Q)` in the complete joint nuisance, and a foreign absorbed direction gives exactly the projective determinant times the local quotient generator and active pure target class. | The transport defect is not proved nuisance.  Joint rank zero, response-zero/missing activity, the four-port line, and an arbitrary-order downstream package remain.  The distinct two-probe promoted GLS8 interface is not integrated. |
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
@@ -280,12 +280,14 @@ nonzero pure class; generic raw injectivity of `Psi_C` does neither.
    \(aT'=C(D)-C(\eta K)\) for \(a=\delta+h\eta\) without division, audit the
    \(a=0\) divisor separately, and retain common-line existence and
    three-colour activity as explicit inputs rather than conclusions.
-11. **Physical pair-transform package (current tranche).**  For arbitrary root
-    order, identify the two pair desired columns as `Psi_C(K^Q),Psi_C(R)`,
+11. **Physical pair-transform package (current tranche).**  In the original
+    fixed-`Q` chart and for arbitrary root order, identify the two pair desired
+    columns as `Psi_C(K^Q),Psi_C(R)`,
     orient every rank-one quotient by the absorbed pencil member
     `delta R-eta K^Q`, and derive the denominator-free cross-target determinant
     and pure-target identities.  These identities expose, but do not yet kill,
-    the projective transport defect.
+    the projective transport defect.  This is not the GLS8 two-probe promoted
+    target, whose target size is `2r-4`.
 12. **Target exchange-syzygy package.**  Prove the cross-target transport defect
     is nuisance from the remaining physical failure conditions, use its nonzero
     pure-target identity to obtain a complete mixed contradiction, or exhibit
@@ -383,7 +385,8 @@ The node is closed **iff** every box below is discharged:
       cross-target slope disagreement are now the exact denominator-free
       transport classes of GLS15, including pure axes and incidence-rank-drop
       fibres.  The theorem does not prove transport into a foreign nuisance,
-      cover joint rank zero, synchronize the four-port line, or force activity.
+      cover joint rank zero, synchronize the four-port line, force activity,
+      or integrate the distinct GLS8 promoted interface.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,
