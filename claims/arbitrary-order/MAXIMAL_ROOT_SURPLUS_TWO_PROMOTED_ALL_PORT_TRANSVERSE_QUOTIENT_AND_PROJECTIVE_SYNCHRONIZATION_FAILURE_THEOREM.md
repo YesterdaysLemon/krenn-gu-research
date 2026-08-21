@@ -401,6 +401,13 @@ and assemble every gate of a named downstream detector.  The aggregate fork
 (29)--(30) supplies the exact source projective-synchronization split; it is
 not itself an exclusion.
 
+The subsequent
+[`GLS23` complete-nuisance theorem](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_TRANSVERSE_COMPLETE_NUISANCE_DECOMPOSITION_AND_TOP_ANCHOR_DICHOTOMY_THEOREM.md)
+expands every projected nuisance label into an exact physical coefficient-slice
+space and isolates the common top-anchor dichotomy.  It refines the failure
+topology but does not exclude the simultaneous profile or supply a downstream
+package.
+
 The following remain **OPEN**:
 
 ```text
