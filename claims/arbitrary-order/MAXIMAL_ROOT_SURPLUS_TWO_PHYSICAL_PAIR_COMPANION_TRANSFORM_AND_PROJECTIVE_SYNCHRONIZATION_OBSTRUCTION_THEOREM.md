@@ -32,14 +32,20 @@ and the complete two-column quotient is the labelled construction of
 
 - [`GLD15`](FIXED_Q_JOINT_MZ_MODULE_QUOTIENT_PAIRED_ATTACHMENT_AND_RANK_ONE_FIBRE_BOUNDARY_THEOREM.md).
 
-The arbitrary-root pair target is also the top-minus-two target isolated by
-
-- [`GLS8`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_TWO_PROBE_ONE_TARGET_ATTACHMENT_AND_POINTWISE_FAILURE_REDUCTION_THEOREM.md).
-
 The new point is to keep the physical root-pair origin of both GLD15 columns,
 identify the exact kernel orientation, and compare different pair targets
 without choosing a denominator or an incidence minor.  No literature claim is
 used.
+
+### Interface correction
+
+This fixed-`Q` chart is **not** the promoted two-probe chart of `GLS8`.  Here
+there are `r` open roots, `r` ports, and a pair target `S subset U`.  In
+`GLS8`, there are two probe roots, `2r-2` promoted ports, and the selected
+top-minus-two target has size `2r-4` with a two-port complement.  The theorem
+below neither integrates nor replaces that promoted source interface.  Its
+arbitrary-`r` statement is an `r`-independent result for the original
+fixed-`Q` pair-target modules only.
 
 ## 1. One common physical transform
 
