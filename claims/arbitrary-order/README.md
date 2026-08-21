@@ -2070,6 +2070,20 @@ synchronization fork.  No transverse class, response, common activity, or
 downstream package is forced.
 
 The
+[`promoted transverse complete-nuisance and top-anchor theorem`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_TRANSVERSE_COMPLETE_NUISANCE_DECOMPOSITION_AND_TOP_ANCHOR_DICHOTOMY_THEOREM.md)
+([hostile review](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_TRANSVERSE_COMPLETE_NUISANCE_DECOMPOSITION_AND_TOP_ANCHOR_DICHOTOMY_REVIEW_2026-08-20.md))
+then expands the projected nuisance label by label.  If `D_0` is the promoted
+part of a complement pair `D`, its exact contribution to target complement
+`C` is the projected companion sliced over `D_0-C`, tensored with the full
+missing left port factors `C-D_0`.  Disjoint root slices spanning
+`ker epsilon_A` fill a pair target.  The top tensor
+`omega=W_(a_0,a_1)` is common nuisance for every pair target and desired for
+the top target: `omega=0` kills that target, while `omega!=0` gives exact
+`63`-row pair quotients and an explicit eight-row top survival test.  At
+`r=3` this is an exhaustive anchor split for all seven shapes, not proof of
+survival, common normalization, response activity, or exclusion.
+
+The
 [`four-root full-rank all-response-zero localization`](FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_OPPOSITE_COLOUR_PURE_COMPLEMENTARY_PERMANENT_LOCALIZATION_THEOREM.md)
 ([hostile review](../../docs/audits/FOUR_ROOT_FULL_RANK_ALL_RESPONSE_ZERO_LOCALIZATION_REVIEW_2026-08-20.md))
 then uses the complete contracted mixed target on one literal response-zero
@@ -2874,6 +2888,9 @@ covered by the
 The GLS22 all-target transverse quotient and projective-synchronization failure
 split are covered by the
 [`maximum-root promoted transverse-quotient hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_ALL_PORT_TRANSVERSE_QUOTIENT_AND_PROJECTIVE_SYNCHRONIZATION_FAILURE_REVIEW_2026-08-20.md).
+The GLS23 complete transverse nuisance decomposition and top-anchor dichotomy
+are covered by the
+[`maximum-root promoted transverse-nuisance hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_TRANSVERSE_COMPLETE_NUISANCE_DECOMPOSITION_AND_TOP_ANCHOR_DICHOTOMY_REVIEW_2026-08-20.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
