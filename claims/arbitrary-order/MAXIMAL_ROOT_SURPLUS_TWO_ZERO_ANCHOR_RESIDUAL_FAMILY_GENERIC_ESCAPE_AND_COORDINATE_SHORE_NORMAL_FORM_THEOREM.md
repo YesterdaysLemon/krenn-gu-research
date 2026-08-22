@@ -287,7 +287,7 @@ generic shore profiles C12/C21/C22:                     PROVED;
 rank-drop and assignment-change fibres as source escape: INCLUDED;
 maximum-root C21 sharp physical control:                PROVED;
 
-essential raw pair survives complete target nuisance:   NOT PROVED;
+essential raw pair survives complete target nuisance:   PARTIAL (GLS28);
 C12/C21/C22 excluded on the complete witness locus:     NOT PROVED;
 nonzero response, synchronization, and activity:        NOT PROVED;
 arbitrary-r downstream promoted detector:               OPEN;
@@ -295,10 +295,13 @@ complete maximum-root supply/attachment node:           OPEN;
 global Krenn--Gu conjecture:                            UNRESOLVED.       (17)
 ```
 
-The next branch is now exact.  On E, promote the GLS26 essential slice to a
-legal response-gated target row or derive a mixed contradiction.  On C, use
-the complete mixed equations on the three normal forms, starting with the
-one-by-two cross-axis form; the GLD11 control shows why pure and Hamming-one
+`GLS28` proves that an essential supplier outside its complete foreign-
+supplier envelope gives a legal row, while a projected diagonal direction
+outside that envelope gives the legal nonzero-response row.  Universal useful-
+row failure is thereby confined to a deletion-stable diagonal cover.  It does
+not force either positive locus or exclude the redundant cover.  On C, use the
+complete mixed equations on the three normal forms, starting with the one-by-
+two cross-axis form; the GLD11 control shows why pure and Hamming-one
 coefficients alone cannot do this.
 
 ## Verification boundary
