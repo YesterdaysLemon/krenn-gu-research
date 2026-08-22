@@ -2928,6 +2928,9 @@ essential-pair/coordinate-shore-cover split are covered by the
 The GLS27 residual-family generic escape, `C12/C21/C22` shore normal forms,
 and GLD11 sharp boundary are covered by the
 [`maximum-root zero-anchor residual-family hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RESIDUAL_FAMILY_GENERIC_ESCAPE_AND_COORDINATE_SHORE_NORMAL_FORM_REVIEW_2026-08-20.md).
+The GLS28 zero-anchor complete target envelope, product-selector criteria, and
+bounded deletion-cover reduction are covered by the
+[`maximum-root zero-anchor target-envelope hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TARGET_ENVELOPE_PRODUCT_SELECTOR_AND_BOUNDED_REDUNDANT_COVER_REVIEW_2026-08-22.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
