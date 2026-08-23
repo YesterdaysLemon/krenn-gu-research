@@ -3020,6 +3020,16 @@ ports forces a nonzero evaluated port-pair deck scalar and leaves profiles
 lines to be the coordinate-line permutation and leave profiles `(2,2,3)`,
 `(2,3,3)`, and `(3,3,3)`; it is covered by the
 [`maximum-root zero-anchor rank-five three-label kernel-profile hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FIVE_THREE_EFFECTIVE_LABEL_KERNEL_PROFILE_AND_MANDATORY_DECK_REDUCTION_REVIEW_2026-08-23.md).
+The GLS51 characteristic-zero arbitrary-root shared-polarization theorem
+classifies the entire exactly-three-effective-label locus.  Three promoted
+ports are impossible by restricting the mandatory coordinate deck frame to
+three hyperplanes and invoking GLS39.  One residual plus two ports forces a
+common coordinate deck, pure residual shores, the separated crossed-square
+normal form, injective port joint maps, and incidence rank exactly seven.
+Thus exactly three labels can occur only at rank seven in that normal form;
+its principal-deck physical realization, four-or-more labels, and every
+source/attachment gate remain open.  The result is covered by the
+[`maximum-root zero-anchor three-label shared-polarization hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_THREE_EFFECTIVE_LABEL_SHARED_POLARIZATION_RANK_SEVEN_NORMAL_FORM_AND_OTHER_RANK_EXCLUSION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
