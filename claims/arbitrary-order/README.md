@@ -2950,6 +2950,10 @@ The GLS33 arbitrary-root residual-Laurent polarized identities, exact
 root-deck kernel-anchor quotient, and fixed-contraction camouflage boundary
 are covered by the
 [`maximum-root zero-anchor residual-Laurent/root-deck hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RESIDUAL_LAURENT_POLARIZATION_AND_ROOT_DECK_KERNEL_ANCHOR_REVIEW_2026-08-22.md).
+The GLS34 tangent-root Fitting boundary, simultaneous constant-anchor
+survival dichotomy, and complete three-colour Segre-silence classification
+are covered by the
+[`maximum-root zero-anchor tangent-root/Segre-silence hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TANGENT_ROOT_FITTING_AND_CONSTANT_ANCHOR_SEGRE_SILENCE_REVIEW_2026-08-22.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
