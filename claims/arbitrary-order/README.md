@@ -3000,6 +3000,10 @@ total effective domain dimension at most twelve, together with the all-cut
 diagonal-rank-two theorem and exhaustive triangle-plus-pure-excess feeder
 fork, is covered by the
 [`maximum-root zero-anchor rank-four complete-pair structural hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_COMPLETE_PAIR_FAMILY_STRUCTURAL_DEGREE_CUT_AND_TRIANGLE_LOCALIZATION_REVIEW_2026-08-23.md).
+The GLS47 characteristic-zero arbitrary-root synchronization and rank-one
+normalization argument excludes both GLS45 complete-pair cores, hence every
+zero-anchor rank-four full-swallow fibre, and is covered by the
+[`maximum-root zero-anchor rank-four complete-pair exclusion hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_COMPLETE_PAIR_FAMILY_EXCLUSION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the

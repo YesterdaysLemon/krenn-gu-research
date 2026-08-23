@@ -231,6 +231,7 @@ flowchart TD
   GLS44["Rank-four full-swallow diagonal root deck<br/>PROVED nonzero-q fibre EMPTY / q=0 remains"]
   GLS45["Rank-four silent residual-shore profile<br/>PROVED only residual-free / sparse one-label cores remain"]
   GLS46["Rank-four silent complete-pair structure<br/>PROVED effective dimension <=12 / triangle-plus-feeder fork"]
+  GLS47["Rank-four silent complete-pair exclusion<br/>PROVED both cores EMPTY / full-swallow rank floor 5"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
@@ -582,7 +583,8 @@ flowchart TD
   GLS43 -->|nonzero diagonal rank-four incidence audit| GLS44
   GLS44 -->|q=0 residual-shore profile audit| GLS45
   GLS45 -->|complete-pair structural-degree / cut audit| GLS46
-  GLS46 -->|triangle-edge / pure-excess feeder classification open| GL
+  GLS46 -->|triangle synchronization / excess locking| GLS47
+  GLS47 -->|rank>=5 full swallow / wider attachment open| GL
   GLS29 -->|r>=4 disjoint cover / other shores open| GL
   GLS14 -->|pure P4/P5 compression; Phi selector or Psi face defect open| GL
   GLS15 -->|physical transport defect| GLS16
@@ -966,6 +968,7 @@ flowchart TD
 | `GLS44` | On the surviving rank-four zero-anchor full-swallow stratum, a nonzero diagonal `q` has rank one or two.  Rank two makes both residual shores the same two-colour support plane; projecting the two residual-label columns to the missing-colour cross blocks gives rank two unless every port misses that colour, contradicting the missing diagonal target.  Rank one makes one residual shore the root-colour line; quotienting by it and selecting the root-colour column gives a two-dimensional image against the sole excess line, again a contradiction.  With `GLS43`, every rank-four full-swallow point therefore has `q=0` and `p=0`, so **rank four on `D(p)` is empty pointwise for arbitrary port domains and every fibre**.  The silent `q=0` rank-four fibre, ranks at least five, raw escape, and every attachment/source-cover gate remain open. | [Rank-four nonzero-diagonal full-swallow exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_FULL_SWALLOW_NONZERO_DIAGONAL_ROOT_DECK_COMPLETE_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_FULL_SWALLOW_NONZERO_DIAGONAL_ROOT_DECK_COMPLETE_EXCLUSION_REVIEW_2026-08-23.md) |
 | `GLS45` | On the rank-four `q=p=0` full-swallow fibre, `q=A_0JC_0^T=0` gives a six-profile residual-shore atlas.  A rank-two shore with zero mate contributes a six-space; a rank-one shore with zero mate contributes a fixed-factor three-space whose sum with `Delta` has dimension at least five.  In dense rank `(1,1)`, the two residual labels polarize the fixed-left and fixed-right aggregate port spaces separately inside `B`; their unique excess quotient lines force both aggregate shores into one two-colour plane, contradicting full generation.  Thus **only the residual-free `(0,0)` and sparse same-label `(1,1)` complete-pair cores remain**, pointwise for arbitrary port domains and every fibre.  Neither survivor is excluded or attached, and ranks at least five, raw escape, and all response/source gates remain open. | [Silent rank-four residual-shore profile reduction](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_RESIDUAL_SHORE_PROFILE_REDUCTION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_RESIDUAL_SHORE_PROFILE_REDUCTION_REVIEW_2026-08-23.md) |
 | `GLS46` | The two `GLS45` survivors have one complete-label form with image `B=Delta direct-sum Kf`.  Rank-one annihilators and the labelled zero-product lemma confine each of the six global coordinate families to at most two labels, giving **at most twelve active labels and total effective domain dimension at most twelve**.  Independently, an arbitrary-dimensional determinant-cubic theorem gives diagonal rank at most two across every label cut.  Hence all three diagonal directions lie on one triangle of independent edge lines, every other edge is diagonal-silent, and the fourth direction must be a two-dimensional triangle edge or an external pure-`f` feeder.  This is a structural reduction, not an exclusion or finite atlas; both forks, ranks at least five, raw escape, and every response/attachment/source gate remain open. | [Rank-four complete-pair structural localization](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_COMPLETE_PAIR_FAMILY_STRUCTURAL_DEGREE_CUT_AND_TRIANGLE_LOCALIZATION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_COMPLETE_PAIR_FAMILY_STRUCTURAL_DEGREE_CUT_AND_TRIANGLE_LOCALIZATION_REVIEW_2026-08-23.md) |
+| `GLS47` | On the GLS46 triangle, the product of the three nonzero edge-diagonal bilinear forms selects one common active vector at each vertex over the original characteristic-zero field.  Their left and right factor matrices are invertible; left--right normalization makes the triangle `Sym_0`.  The transformed physical diagonal supplies three rank-one matrices with independent left and right factors.  Their common quotient skew must vanish, and their common diagonal has full support.  Every external label vector then vanishes, while every extra vector in triangle block `i` is a scalar multiple of `(e_i,e_i)`.  Hence the complete image has rank at most three, contradicting rank four.  Thus **both silent rank-four cores and every zero-anchor rank-four full-swallow fibre are pointwise empty**, and full swallow has nuisance rank at least five.  Ranks five through nine, silent source-to-swallow coverage, raw escape, nonzero anchor, and every response/attachment/source gate remain open. | [Silent rank-four complete-pair exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_COMPLETE_PAIR_FAMILY_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_COMPLETE_PAIR_FAMILY_EXCLUSION_REVIEW_2026-08-23.md) |
 
 ## Typed-edge table
 
@@ -1390,7 +1393,8 @@ flowchart TD
 | `GLS43` | surviving nonzero-diagonal rank-four incidence audit | `GLS44` | The off-diagonal zero-excess fibre is empty.  Use the complete GLS36 incidence family to decide every nonzero diagonal rank-one/rank-two shore profile without entering a localized selector receiver. |
 | `GLS44` | silent residual-shore profile audit | `GLS45` | Every rank-four full-swallow point has `q=p=0`.  Use the complete GLS36 residual--port family to classify every shore-rank and label-support fibre before attacking the remaining pair-family. |
 | `GLS45` | complete-pair structural-degree and cut successor | `GLS46` | Unify the residual-free and sparse same-label cores, prove a uniform arbitrary-root effective-dimension bound, and localize all three diagonal directions without silently selecting a port value. |
-| `GLS46` | residual rank-four triangle/feeder decision and wider physical attachment obligation | `GL` | Classify the finite-dimensional triangle-edge two-dimensional and external pure-excess feeder forks, or construct a separate legal target attachment.  Then retain response/activity, synchronization, complete nuisance survival, anchors, a named receiver, and source coverage.  Ranks at least five and raw escape remain separate. |
+| `GLS46` | completed triangle/feeder successor | `GLS47` | Synchronize one vector at every triangle vertex, normalize the three triangle edges, and use the transformed physical diagonal to eliminate both the internal two-dimensional edge and external pure-excess feeder mechanisms. |
+| `GLS47` | rank-five-through-nine and wider physical attachment obligation | `GL` | Rank four is empty.  Decide or attach full-swallow nuisance ranks five through nine, where the excess has dimension at least two, while retaining response/activity, synchronization, complete nuisance survival, anchors, a named receiver, and source coverage.  Raw escape and nonzero anchor remain separate. |
 
 ## Smallest positive next obligations
 
@@ -1784,6 +1788,18 @@ branch. They are not an instruction to begin all of them at once.
    direction.  The exact symmetric triangle shows why global diagonal rank
    two is false, but spans only three dimensions.  Both fourth-direction
    forks and every wider attachment/source obligation remain open.
+
+   `GLS47` closes both forks.  The product of the three nonzero triangle-edge
+   diagonal coefficient forms supplies a synchronized vector at each label.
+   Their factor matrices are invertible, so a left--right change of basis
+   makes the triangle the symmetric zero-diagonal three-space.  The
+   transformed physical diagonal is a rank-one basis; its common quotient
+   skew would trap all left factors in one plane, and therefore vanishes.
+   Its common diagonal has all three entries nonzero.  In that normal form
+   every external vector is zero and every triangle block is one-dimensional,
+   so no fourth image direction survives.  Both GLS45 cores are empty and
+   zero-anchor full swallow now has nuisance rank at least five.  This does
+   not force silent full swallow or address any wider attachment/source gate.
 
    `GLS15` now identifies a support-free physical synchronization invariant in
    the original `r`-root, `r`-port fixed-`Q` chart.  For every pair target

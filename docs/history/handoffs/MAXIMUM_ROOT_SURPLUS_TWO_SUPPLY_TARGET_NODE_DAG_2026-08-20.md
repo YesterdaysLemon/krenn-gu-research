@@ -117,6 +117,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLS44 | In the surviving rank-four full-swallow diagonal stratum, nonzero `q` has rank one or two.  Rank two makes both residual shores the same two-colour plane, while the missing-colour cross-block projection of the two residual labels has rank two against the sole excess line.  Rank one makes one shore the root-colour line, while quotienting that shore and selecting the root-colour column gives a two-dimensional image against the same excess line.  Both are impossible; with GLS43, rank four forces `q=p=0`. | This is an exact characteristic-zero pointwise exclusion of every rank-four `D(p)` fibre for arbitrary port domains.  The silent `q=0`, `p=0` rank-four fibre has one GLS40 excess row but lies outside the GLS40/41 transverse receiver.  Ranks at least five, raw escape, every attachment gate, source coverage, and node closure remain open. |
 | GLS45 | On the silent rank-four fibre, the zero factorization `q=A_0JC_0^T` leaves six residual-shore profiles.  A rank-two shore with zero mate contributes a six-space, and a rank-one shore with zero mate plus `Delta` has dimension at least five.  In dense rank `(1,1)`, residual-label polarization exposes `K a tensor Y` and `X tensor K b` inside the same four-space; their unique quotient lines force both port shores into one two-colour plane, contradicting full generation. | Only residual-free `(0,0)` and sparse same-label `(1,1)` remain.  They are not existence claims or exclusions and lie on `q=p=0`, outside the GLS40/41 transverse receiver.  Their complete pair-family, ranks at least five, raw escape, every attachment gate, source coverage, and node closure remain open. |
 | GLS46 | The two silent rank-four cores have one complete-label form with image `Delta direct-sum Kf`.  Each global coordinate family is supported on at most two labels, so joint-kernel quotienting leaves at most twelve active labels and total effective domain dimension at most twelve.  An independent arbitrary-dimensional two-block theorem bounds the diagonal image across every label cut by two.  Hence the three diagonal directions occupy one triangle of independent edge lines and every other edge is diagonal-silent. | The fourth direction must come from a two-dimensional triangle edge or an external pure-`f` feeder.  This is a uniform structural-degree and triangle reduction, not an exclusion or finite atlas.  Both forks, ranks at least five, raw escape, every attachment gate, source coverage, node closure, and global resolution remain open. |
+| GLS47 | The three nonzero triangle-edge diagonal forms synchronize one active vector at every triangle label.  Their left and right factor matrices are invertible, and left--right normalization makes their span the symmetric zero-diagonal three-space.  The transformed physical diagonal is a rank-one basis whose common quotient skew must vanish and whose common diagonal has full support.  Every external vector is then zero and every triangle block is scalar, so the complete image has rank at most three. | Both GLS45 silent cores are empty.  Together with GLS43/44, every zero-anchor rank-four full-swallow fibre is empty and the full-swallow rank floor is five.  Ranks five through nine, silent source-to-swallow coverage, raw escape, nonzero anchor, every attachment gate, source coverage, node closure, and global resolution remain open. |
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
@@ -761,6 +762,19 @@ symmetric triangle attains diagonal rank three but spans only a three-space,
 refuting the tempting global diagonal-rank-two claim without furnishing a
 full-swallow point.  The remaining rank-four decision is exactly the
 two-dimensional triangle-edge or external pure-excess feeder fork.
+
+GLS47 closes that fork without selecting a response or using a same-label
+pair.  The product of the three edge-diagonal bilinear coefficients is a
+nonzero polynomial, so characteristic zero supplies one synchronized active
+vector per triangle vertex.  Their factor matrices are invertible and
+normalize the triangle to the symmetric zero-diagonal three-space.  The
+transformed physical diagonal supplies three rank-one matrices with
+independent left and right factors.  A nonzero common skew would confine
+those factors to one two-plane; after it vanishes, their common diagonal has
+full support.  This makes every external label zero and every triangle block
+one-dimensional.  No fourth direction remains, contradicting rank four.
+Thus zero-anchor full swallow now begins at nuisance rank at least five;
+silent source coverage and all wider attachment branches remain open.
 
 ## 5. Dependency order for theorem packages
 
