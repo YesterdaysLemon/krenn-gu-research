@@ -153,9 +153,11 @@ nonvanishing at another.
 
 The downstream receiver corrections are also exact.
 
-- The smallest direct `GLD3` endpoint uses old probes `A` as the physical
-  residual pair.  It still needs one four-set with six diagonal physical pair
-  responses and three-colour pair-depth activity.
+- The formerly suggested direct `GLD3` endpoint using old probes `A` is
+  structurally impossible on this branch.  After any fixed probe contraction,
+  `D_(st)` is supported only at `(kappa(s),kappa(t))`.  At a fixed port `u`, a
+  diagonal coefficient can therefore be nonzero only in colour `kappa(u)`,
+  whereas `GLD3` requires activity in all three colours at one port.
 - One useful promoted-`Q` row is not that package.
 - `omega=W_(a_0,a_1)=0` is not the promoted residual scalar `H_Q(z_Q)`, so it
   is not an `h=0` `GLD15/GLD16` entry.
@@ -174,14 +176,18 @@ The primary verifier uses exact rational tensors.  It checks all `3^6`
 readout assignments, all fifteen residual-pair placements on every compatible
 assignment, full companion entries, all 240 off-readout pair-face words, the
 response monomial, an explicit exceptional cancellation, and a common torus
-point for representative nonzero gate polynomials.
+point for representative nonzero gate polynomials.  It additionally exhausts
+all `90*15*4=5400` compatible profile/window/port cases and finds at most one
+possible active diagonal colour at every port.
 
 The independent audit imports neither the primary verifier nor project code.
 It uses base-three/bit-mask label encodings, a bounded `F_7` shore replay with a
 separate matrix implementation, a separate face census, and sparse
 polynomial-support masks.  It is genuinely independent replay of the finite
-algebra.  The written proof, not the bounded `F_7` replay, carries the
-characteristic-zero complete-witness theorem.
+algebra.  Its separate base-three/bit-mask activity census also exhausts the
+same `5400` cases without importing the primary representation.  The written
+proof, not the bounded `F_7` replay, carries the characteristic-zero
+complete-witness theorem.
 
 ## Hostile boundaries
 
@@ -193,6 +199,8 @@ The review rejects each of the following stronger readings.
 - a nonzero response polynomial is nonzero on every residual fibre;
 - a pure desired coefficient survives complete nuisance;
 - one useful target enters `GLD3`, `GLD6`, or `GLD16`;
+- old-probe selector or synchronization improvements can restore `GLD3`
+  three-colour activity on the rank-one branch;
 - the label-dependent rigid rows synchronize automatically;
 - the contracted six-label first variation is already a weighted `P_6`
   restriction;
@@ -200,10 +208,10 @@ The review rejects each of the following stronger readings.
 - `GLS57` closes the all-rigid branch, strategic node, or global conjecture.
 
 The smallest remaining obligation on this branch is to use the complete
-mixed/deck equations to force either one old-probe four-label window with six
-diagonal pair responses and three-colour activity, or a legal splicing that
-identifies the contracted six-mode tensor with a weighted `P_6` restriction
-accepted by the committed six-vertex theorem.
+mixed/deck equations to force a legal splicing that identifies the contracted
+six-mode tensor with a weighted `P_6` restriction accepted by the committed
+six-vertex theorem, or to construct a different named receiver with all of
+its gates.  The old-probe `GLD3` route is closed, not merely unsynchronized.
 Higher joint ranks remain a separate all-rigid branch.
 
 ## Required replay

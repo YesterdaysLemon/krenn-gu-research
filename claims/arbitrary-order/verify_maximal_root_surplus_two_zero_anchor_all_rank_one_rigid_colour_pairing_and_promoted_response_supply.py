@@ -236,12 +236,59 @@ def audit_response_polynomial() -> dict[str, int]:
     }
 
 
+def audit_old_probe_gld3_activity_no_go() -> dict[str, int]:
+    labels = tuple(range(6))
+    compatible_profiles = 0
+    port_window_cases = 0
+    diagonal_cells_checked = 0
+    maximum_activity_colours = 0
+
+    for kappa in product(range(3), repeat=6):
+        if tuple(kappa.count(colour) for colour in range(3)) != (2, 2, 2):
+            continue
+        compatible_profiles += 1
+        for window in combinations(labels, 4):
+            for port in window:
+                active_colours: set[int] = set()
+                for other in window:
+                    if other == port:
+                        continue
+                    for colour in range(3):
+                        # Equation (8) supports D_(port,other) only at the
+                        # cell (kappa(port),kappa(other)).  This diagonal cell
+                        # can therefore be nonzero only in the stated case.
+                        supported = (
+                            kappa[port] == colour == kappa[other]
+                        )
+                        diagonal_cells_checked += 1
+                        if supported:
+                            active_colours.add(colour)
+                assert active_colours <= {kappa[port]}
+                assert len(active_colours) <= 1
+                maximum_activity_colours = max(
+                    maximum_activity_colours, len(active_colours)
+                )
+                port_window_cases += 1
+
+    assert compatible_profiles == 90
+    assert port_window_cases == 90 * 15 * 4
+    assert diagonal_cells_checked == port_window_cases * 3 * 3
+    assert maximum_activity_colours == 1
+    return {
+        "old_probe_compatible_profiles": compatible_profiles,
+        "old_probe_port_window_cases": port_window_cases,
+        "old_probe_diagonal_cells_checked": diagonal_cells_checked,
+        "old_probe_maximum_activity_colours": maximum_activity_colours,
+    }
+
+
 def main() -> None:
     summary: dict[str, int] = {}
     summary.update(audit_colour_profiles())
     summary.update(audit_full_companion_factorization())
     summary.update(audit_mixed_word_master_support())
     summary.update(audit_response_polynomial())
+    summary.update(audit_old_probe_gld3_activity_no_go())
     for key, value in summary.items():
         print(f"{key}: {value}")
     print("GLS57 focused exact verifier: PASS")
