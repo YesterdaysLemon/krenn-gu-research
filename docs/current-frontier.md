@@ -240,6 +240,7 @@ flowchart TD
   GLS53["Zero-anchor four-promoted-label reconstruction<br/>PROVED no-residual four-label support EMPTY via n=6"]
   GLS54["Zero-anchor four-slot partial uncontraction<br/>PROVED actual-witness activity at least 5 via n=6"]
   GLS55["Zero-anchor torus-kernel contraction<br/>PROVED at least 5 full-map rigid labels via n=6"]
+  GLS56["Probe-kernel pure-star flag / rigid companion<br/>PROVED structural split / natural GLD3 activity NO-GO"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
@@ -604,6 +605,9 @@ flowchart TD
   GLS8 -->|outside torus-kernel contraction / four open slots| GLS55
   GLS55 -->|uniform pointwise activity corollary| GLS54
   GLS55 -->|exactly-five-rigid trilinear decks / six-plus-rigid and attachment open| GL
+  GLS8 -->|nonrigid kernel matching contraction / pure-star flag| GLS56
+  GLS55 -->|r=3 rigid/nonrigid structural bifurcation| GLS56
+  GLS56 -->|all-rigid mixed coupling / different receiver / arbitrary-r attachment open| GL
   GLS29 -->|r>=4 disjoint cover / other shores open| GL
   GLS14 -->|pure P4/P5 compression; Phi selector or Psi face defect open| GL
   GLS15 -->|physical transport defect| GLS16
@@ -996,6 +1000,7 @@ flowchart TD
 | `GLS53` | Suppose the GLS52 floor is attained by four promoted auxiliary labels and no residual label.  Contract the fixed residuals and only the inactive promoted ports.  The six surviving raw pair labels are exactly the fifteen-matching hafnian expansion of a reconstructed legal graph on the two probes and four active ports: the root edge is zero, root--port edges are the physical `X/Y` incidence blocks, and each port--port edge is the corresponding residual- and inactive-evaluated physical complementary deck.  Its target is weighted ternary GHZ with three nonzero weights; one invertible local diagonal scaling normalizes them.  The accepted complete six-vertex theorem therefore makes **the no-residual exactly-four-label support empty at every `r>=3` and on every exceptional fibre**.  Four-label supports with one or two residual labels, five-or-more-label supports, source coverage, raw escape, nonzero anchors, every legal attachment gate, and node closure remain open. | [Four-promoted-label six-vertex reconstruction exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_PROMOTED_LABEL_SIX_VERTEX_RECONSTRUCTION_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_PROMOTED_LABEL_SIX_VERTEX_RECONSTRUCTION_EXCLUSION_REVIEW_2026-08-23.md) |
 | `GLS54` | Start with an actual complete witness, then fix a fully supported residual point and define auxiliary activity.  If `|Act|<=4`, pad `Act` to a four-set using only inactive promoted ports.  Retain that set as four open physical vertices, contract inactive residuals at their defining vectors and other inactive promoted ports at all ones, and apply the complete `GLS8` identity.  Every raw pair outside the four-set has an inactive contracted endpoint and vanishes; each surviving complement is a bilinear edge on the other two open vertices.  The result is a reconstructed legal weighted six-vertex GHZ graph, excluded after local normalization by the accepted finite theorem.  Thus **every actual characteristic-zero zero-anchor witness has `|Act|>=5` at every fully supported residual point**, without full swallow, rank, response, selector, or deck-nonzero assumptions.  One fixed residual equation alone cannot license this uncontraction; inactive residuals remain contracted.  Five-plus labels, source/attachment gates, nonzero anchors, node closure, and global resolution remain open. | [Four-slot partial-uncontraction five-label floor](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_SLOT_PARTIAL_UNCONTRACTION_SIX_VERTEX_RECONSTRUCTION_AND_FIVE_LABEL_FLOOR_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_SLOT_PARTIAL_UNCONTRACTION_SIX_VERTEX_RECONSTRUCTION_AND_FIVE_LABEL_FLOOR_REVIEW_2026-08-23.md) |
 | `GLS55` | Before fixing any residual point, call an auxiliary label rigid when the kernel of its full joint two-probe incidence map contains no fully supported local vector.  If at most four labels were rigid, retain a four-set containing all of them and contract every outside label at its own fully supported simultaneous-kernel vector.  Every outside raw pair vanishes, the zero anchor kills the top term, and the six surviving terms reconstruct a legal weighted six-vertex GHZ graph.  Hence **every actual characteristic-zero zero-anchor witness has at least five full-map rigid labels**.  Over an infinite field, rigidity is exactly containment of some coordinate covector in the joint incidence row space, so those five labels are active at every fully supported residual point.  On `|Rig|=5`, contracting every non-rigid label gives the exact seven-party identity with ten trilinear decks; `|Rig|>=6` remains separate.  This strictly strengthens GLS54 without full swallow, rank, response, selector, or deck assumptions.  The coordinate rows may differ by label and supply no complete nuisance annihilation, response, synchronization, receiver, nonzero-anchor closure, node closure, or global resolution. | [Torus-kernel contraction and five-rigid-label floor](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TORUS_KERNEL_CONTRACTION_AND_FIVE_RIGID_LABEL_FLOOR_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TORUS_KERNEL_CONTRACTION_AND_FIVE_RIGID_LABEL_FLOOR_REVIEW_2026-08-23.md) |
+| `GLS56` | For any nonrigid auxiliary label in the complete `GLS8` chart, contract one fully supported vector in its full joint probe kernel.  If one target colour had no nonzero coordinate-pure edge from that label, choose on every other auxiliary label an edge-kernel vector retaining that colour.  Every complete matching term then dies through the probe-silent label while the pure target word survives.  Thus **every kernel-torus point has three distinct colour-pure neighbours**.  Finite irreducibility gives one fixed nonzero pure restricted shore per colour, one simultaneous activating torus point, and a descending linear-section flag covering every exceptional divisor.  Rigid same-coordinate readouts obey an exact pure-axis/projective-anti-synchronization trichotomy.  On zero-anchor `r=3`, either all six labels are rigid or the unique nonrigid label has a three-colour star into rigid neighbours.  Under the natural `GLD3` re-anchor, `h=0`; if the star triangle is target-diagonal, all three pair responses vanish, so pair-depth activity is impossible.  This is a structural split and receiver no-go, not a promoted response, legal selector, target attachment, source cover, named detector entry, node closure, or global resolution. | [Probe-kernel pure-star flag and GLD3 activity no-go](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_NONRIGID_PROBE_KERNEL_THREE_COLOUR_PURE_STAR_ESCAPE_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_PROBE_KERNEL_PURE_STAR_AND_RIGID_COMPANION_BOUNDARY_REVIEW_2026-08-23.md) |
 
 ## Typed-edge table
 
@@ -1433,6 +1438,9 @@ flowchart TD
 | `GLS8` | full-map torus-kernel contraction | `GLS55` | Return to every original residual and promoted joint incidence map.  If at most four kernels miss no fully supported vector, retain a four-set containing all rigid labels and contract every outside non-rigid label at its own torus-kernel vector. |
 | `GLS55` | uniform pointwise activity corollary | `GLS54` | Every full-map rigid promoted label is whole-domain active, and every fully supported residual vector avoids a rigid residual kernel.  Thus the five fixed rigid labels lie in every pointwise GLS54 activity set; GLS54 is comparison-only and not a proof dependency of GLS55. |
 | `GLS55` | exactly-five-rigid / six-plus-rigid successor | `GL` | On `|Rig|=5`, contract every non-rigid label to obtain the exact seven-party identity with ten trilinear physical decks.  Six-or-more rigid labels remain a separate open branch.  In both branches, coordinate readout alone is not nuisance survival, synchronization, response activity, or a named receiver. |
+| `GLS8` | nonrigid probe-kernel matching contraction | `GLS56` | At one fully supported joint-kernel vector, use the complete promoted identity and a colourwise covector alternative.  If no pure neighbour exists, kill every matching through the silent label while retaining one nonzero pure target coefficient.  Irreducibility then promotes the pointwise escape to fixed restricted shores and a complete exceptional-section flag. |
+| `GLS55` | root-order-three rigid/nonrigid bifurcation | `GLS56` | With six auxiliary labels and at least five rigid, either all six are rigid or the unique nonrigid label receives the simultaneous three-colour pure-star conclusion.  This is exhaustive only as a source-structure split, not as an attachment cover. |
+| `GLS56` | rigid coupling / alternate-receiver successor | `GL` | On the all-six-rigid branch, use complete mixed/deck equations beyond the exact pure-axis, anti-synchronization, and full-rank off-diagonal controls.  On the unique-nonrigid branch, the natural `h=0` `GLD3` re-anchor has zero target-diagonal star triangle and fails activity, so exclude that low-activity cell or construct a different legally transported receiver with every response, selector, synchronization, nuisance-survival, activity, and anchor gate.  For `r>=4`, neighbour rigidity and arbitrary-root receiver coverage remain separate. |
 
 ## Smallest positive next obligations
 
@@ -1946,6 +1954,24 @@ branch. They are not an instruction to begin all of them at once.
    edges.  The six-or-more-rigid branch has no five-label contraction.
    Equality-branch deck coupling, the six-plus branch, and named receiver
    entry all remain open.
+
+   `GLS56` decides what a nonrigid label itself forces.  At every fully
+   supported point of its joint probe kernel, the complete promoted identity
+   supplies three distinct coordinate-pure neighbours, one for each target
+   colour.  On the whole kernel, finite irreducibility gives one fixed
+   nonzero pure restricted shore per colour and one torus point activating
+   all three; a descending linear-section flag retains every exceptional
+   divisor.  Rigid readouts have an exact same-coordinate cancellation
+   trichotomy: common pure probe axis or projective anti-synchronization.  At
+   zero-anchor `r=3`, the source structure is therefore all six rigid or one
+   unique nonrigid label with a star into rigid neighbours.  This is not an
+   attachment cover.  The natural `GLD3` re-anchor has `h=0`, and a
+   target-diagonal star triangle is forced identically zero, so its
+   three-colour activity gate fails.  The all-rigid branch needs complete
+   mixed/deck coupling; the star branch needs either a complete-equation
+   exclusion of this low-activity cell or a differently transported legal
+   receiver.  For higher root order, the star neighbours are not forced
+   rigid.
 
    `GLS15` now identifies a support-free physical synchronization invariant in
    the original `r`-root, `r`-port fixed-`Q` chart.  For every pair target
