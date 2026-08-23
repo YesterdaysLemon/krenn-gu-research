@@ -3089,6 +3089,19 @@ activity fails.  Thus the theorem supplies a structural split and an exact
 receiver no-go, not a response, selector, target attachment, or node closure.
 The result is covered by the
 [`maximum-root probe-kernel pure-star hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROBE_KERNEL_PURE_STAR_AND_RIGID_COMPANION_BOUNDARY_REVIEW_2026-08-23.md).
+The GLS57 characteristic-zero root-order-three theorem decides the
+all-rank-one part of the all-six-rigid zero-anchor branch.  Rank-one torus
+rigidity gives one coordinate readout per label, and the complete target
+forces the exact `2+2+2` colour partition.  Every same-colour pair companion
+is the full pure probe/pair target row times a nonzero scalar, while its
+complementary physical deck has a pure off-readout face with fifteen mixed
+zeros and one nonzero constant-colour cell.  At least one such pair is a
+literal `GLS8` promoted pair target, whose response polynomial is nonzero and
+shares a dense residual-torus open with the two `GLS4` gates.  Complete-
+nuisance survival, pointwise response divisors, legal selector normalization,
+common six-row synchronization, `GLD3` activity, higher joint ranks, and
+arbitrary-root coverage remain open.  The result is covered by the
+[`maximum-root all-rank-one rigid colour-pairing hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ALL_RANK_ONE_RIGID_COLOUR_PAIRING_AND_PROMOTED_RESPONSE_SUPPLY_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
