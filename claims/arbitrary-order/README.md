@@ -3030,6 +3030,16 @@ Thus exactly three labels can occur only at rank seven in that normal form;
 its principal-deck physical realization, four-or-more labels, and every
 source/attachment gate remain open.  The result is covered by the
 [`maximum-root zero-anchor three-label shared-polarization hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_THREE_EFFECTIVE_LABEL_SHARED_POLARIZATION_RANK_SEVEN_NORMAL_FORM_AND_OTHER_RANK_EXCLUSION_REVIEW_2026-08-23.md).
+The GLS52 characteristic-zero arbitrary-root uncontracted-deck theorem
+excludes that last conditional rank-seven normal form.  Before evaluating
+inactive promoted ports, both off-common-coordinate diagonal target rows
+isolate the same physical port-pair complementary deck.  GLS51 makes every
+residual--port value invisible to those rows; the two rows then force the
+shared nonzero deck to be two distinct pure inactive-port words.  Hence every
+zero-anchor fully swallowed fixed-residual target point has at least four
+effective labels.  Four-or-more labels and every source/attachment gate
+remain open.  The result is covered by the
+[`maximum-root zero-anchor three-label uncontracted-deck hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_THREE_EFFECTIVE_LABEL_UNCONTRACTED_COMPLEMENTARY_DECK_TWO_COLOUR_SEPARATION_EXCLUSION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
