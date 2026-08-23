@@ -2970,6 +2970,9 @@ The GLS38 arbitrary-root nonzero-root-companion low-shore collapse and
 complete nonzero-`q` rank-three full-swallow exclusion (hence the GLS35
 non-silent branch) are covered by the
 [`maximum-root zero-anchor nonzero-root-companion hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_NONZERO_ROOT_DECK_MINIMAL_RAW_SWALLOW_EXCLUSION_REVIEW_2026-08-22.md).
+The GLS39 arbitrary-dimensional complete pairwise-diagonal family bound and
+unconditional rank-three full-swallow exclusion are covered by the
+[`maximum-root zero-anchor complete pairwise-diagonal hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_COMPLETE_PAIRWISE_DIAGONAL_FAMILY_RANK_BOUND_AND_MINIMAL_RAW_SWALLOW_EXCLUSION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
