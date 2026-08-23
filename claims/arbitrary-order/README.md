@@ -2983,6 +2983,10 @@ all-rank nuisance-intersection reduction are covered by the
 The GLS42 arbitrary-root full-residual excess first variation, trace-zero
 vertex-gauge family, and active physical boundary are covered by the
 [`maximum-root zero-anchor excess-hafnian hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FULL_RESIDUAL_EXCESS_HAFNIAN_FIRST_VARIATION_AND_ACTIVE_VERTEX_GAUGE_BOUNDARY_REVIEW_2026-08-23.md).
+The GLS43 characteristic-zero arbitrary-root exclusion of the rank-four
+full-swallow `q notin Delta` fibre, including every residual-shore and divisor
+fibre and the exact repeated-anchor shortcut boundary, is covered by the
+[`maximum-root zero-anchor rank-four off-diagonal full-swallow hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_FULL_SWALLOW_OFF_DIAGONAL_ROOT_DECK_COMPLETE_EXCLUSION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
