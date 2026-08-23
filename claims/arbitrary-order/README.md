@@ -3073,6 +3073,22 @@ These labels are active at every fully supported residual point, but their
 coordinate readouts are not responses, selectors, synchronized rows, or
 nuisance annihilators.  The result is covered by the
 [`maximum-root zero-anchor torus-kernel contraction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TORUS_KERNEL_CONTRACTION_AND_FIVE_RIGID_LABEL_FLOOR_REVIEW_2026-08-23.md).
+The GLS56 characteristic-zero probe-kernel theorem refines the nonrigid side
+without assuming a zero anchor.  Every fully supported vector in a nonrigid
+joint probe kernel has, in each target colour, a nonzero coordinate-pure edge
+to another auxiliary label.  On the whole kernel there is one fixed nonzero
+pure restricted shore per colour, the three fixed shores activate
+simultaneously on one torus point, and a descending linear-section flag
+retains every exceptional divisor without denominators.  Rigid readouts have
+an exact same-coordinate pure-axis/anti-synchronization trichotomy.  At
+`r=3` on the zero-anchor branch, either all six auxiliary labels are rigid or
+the unique nonrigid label has a simultaneous three-colour pure star into
+rigid neighbours.  The natural `GLD3` re-anchor has `h=0`; if its star
+triangle is target-diagonal, all three pair responses vanish and pair-depth
+activity fails.  Thus the theorem supplies a structural split and an exact
+receiver no-go, not a response, selector, target attachment, or node closure.
+The result is covered by the
+[`maximum-root probe-kernel pure-star hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_PROBE_KERNEL_PURE_STAR_AND_RIGID_COMPANION_BOUNDARY_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
