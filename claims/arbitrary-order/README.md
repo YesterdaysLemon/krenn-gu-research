@@ -3040,6 +3040,17 @@ zero-anchor fully swallowed fixed-residual target point has at least four
 effective labels.  Four-or-more labels and every source/attachment gate
 remain open.  The result is covered by the
 [`maximum-root zero-anchor three-label uncontracted-deck hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_THREE_EFFECTIVE_LABEL_UNCONTRACTED_COMPLEMENTARY_DECK_TWO_COLOUR_SEPARATION_EXCLUSION_REVIEW_2026-08-23.md).
+The GLS53 characteristic-zero arbitrary-root reconstruction theorem excludes
+the exactly-four-label support consisting of four promoted ports and no
+residual label.  After contracting the fixed residuals and only the inactive
+ports, the six surviving promoted pair labels are exactly the hafnian
+expansion of a reconstructed legal six-vertex ternary graph on the two probes and four
+active ports.  The fully supported target normalizes by one invertible local
+diagonal scaling, so the accepted complete six-vertex theorem gives a
+contradiction.  Four-label supports containing residual labels, supports of
+five or more labels, and every source/attachment gate remain open.  The
+result is covered by the
+[`maximum-root zero-anchor four-promoted-label six-vertex reconstruction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_PROMOTED_LABEL_SIX_VERTEX_RECONSTRUCTION_EXCLUSION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
