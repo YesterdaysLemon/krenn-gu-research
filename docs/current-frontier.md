@@ -232,6 +232,7 @@ flowchart TD
   GLS45["Rank-four silent residual-shore profile<br/>PROVED only residual-free / sparse one-label cores remain"]
   GLS46["Rank-four silent complete-pair structure<br/>PROVED effective dimension <=12 / triangle-plus-feeder fork"]
   GLS47["Rank-four silent complete-pair exclusion<br/>PROVED both cores EMPTY / full-swallow rank floor 5"]
+  GLS48["Zero-anchor two-effective-label pure target<br/>PROVED adaptive-cut rank 1 vs 3 / at least 3 labels"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
@@ -585,6 +586,8 @@ flowchart TD
   GLS45 -->|complete-pair structural-degree / cut audit| GLS46
   GLS46 -->|triangle synchronization / excess locking| GLS47
   GLS47 -->|rank>=5 full swallow / wider attachment open| GL
+  GLS40 -->|two-effective-label adaptive target cut| GLS48
+  GLS48 -->|rank-5 >=3-label target-coupled classification open| GL
   GLS29 -->|r>=4 disjoint cover / other shores open| GL
   GLS14 -->|pure P4/P5 compression; Phi selector or Psi face defect open| GL
   GLS15 -->|physical transport defect| GLS16
@@ -969,6 +972,7 @@ flowchart TD
 | `GLS45` | On the rank-four `q=p=0` full-swallow fibre, `q=A_0JC_0^T=0` gives a six-profile residual-shore atlas.  A rank-two shore with zero mate contributes a six-space; a rank-one shore with zero mate contributes a fixed-factor three-space whose sum with `Delta` has dimension at least five.  In dense rank `(1,1)`, the two residual labels polarize the fixed-left and fixed-right aggregate port spaces separately inside `B`; their unique excess quotient lines force both aggregate shores into one two-colour plane, contradicting full generation.  Thus **only the residual-free `(0,0)` and sparse same-label `(1,1)` complete-pair cores remain**, pointwise for arbitrary port domains and every fibre.  Neither survivor is excluded or attached, and ranks at least five, raw escape, and all response/source gates remain open. | [Silent rank-four residual-shore profile reduction](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_RESIDUAL_SHORE_PROFILE_REDUCTION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_RESIDUAL_SHORE_PROFILE_REDUCTION_REVIEW_2026-08-23.md) |
 | `GLS46` | The two `GLS45` survivors have one complete-label form with image `B=Delta direct-sum Kf`.  Rank-one annihilators and the labelled zero-product lemma confine each of the six global coordinate families to at most two labels, giving **at most twelve active labels and total effective domain dimension at most twelve**.  Independently, an arbitrary-dimensional determinant-cubic theorem gives diagonal rank at most two across every label cut.  Hence all three diagonal directions lie on one triangle of independent edge lines, every other edge is diagonal-silent, and the fourth direction must be a two-dimensional triangle edge or an external pure-`f` feeder.  This is a structural reduction, not an exclusion or finite atlas; both forks, ranks at least five, raw escape, and every response/attachment/source gate remain open. | [Rank-four complete-pair structural localization](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_COMPLETE_PAIR_FAMILY_STRUCTURAL_DEGREE_CUT_AND_TRIANGLE_LOCALIZATION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_COMPLETE_PAIR_FAMILY_STRUCTURAL_DEGREE_CUT_AND_TRIANGLE_LOCALIZATION_REVIEW_2026-08-23.md) |
 | `GLS47` | On the GLS46 triangle, the product of the three nonzero edge-diagonal bilinear forms selects one common active vector at each vertex over the original characteristic-zero field.  Their left and right factor matrices are invertible; left--right normalization makes the triangle `Sym_0`.  The transformed physical diagonal supplies three rank-one matrices with independent left and right factors.  Their common quotient skew must vanish, and their common diagonal has full support.  Every external label vector then vanishes, while every extra vector in triangle block `i` is a scalar multiple of `(e_i,e_i)`.  Hence the complete image has rank at most three, contradicting rank four.  Thus **both silent rank-four cores and every zero-anchor rank-four full-swallow fibre are pointwise empty**, and full swallow has nuisance rank at least five.  Ranks five through nine, silent source-to-swallow coverage, raw escape, nonzero anchor, and every response/attachment/source gate remain open. | [Silent rank-four complete-pair exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_COMPLETE_PAIR_FAMILY_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_COMPLETE_PAIR_FAMILY_EXCLUSION_REVIEW_2026-08-23.md) |
+| `GLS48` | Adjoin the two residual labels to the promoted ports as in GLS39 and call a label effective when one of its whole-domain root-incidence maps is nonzero.  With at most two effective labels, at most one raw physical pair label survives.  Across the adaptive cut placing the two probe roots and every effective promoted label on one shore, that complete coefficient/deck term has rank at most one.  At least two promoted ports remain opposite for every `r>=3`, and the three nonzero pure-colour target words give rank three.  Thus **every zero-anchor fully supported fixed-residual target point has at least three effective auxiliary labels**, including every divisor, cancellation, zero-deck, and incidence-rank fibre.  This excludes the full two-label rank-five cell but not rank five with at least three effective labels, ranks six through nine, silent source-to-swallow coverage, raw escape, nonzero anchor, or any legal attachment gate. | [Two-effective-label adaptive-cut pure-target exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TWO_EFFECTIVE_LABEL_ADAPTIVE_CUT_PURE_TARGET_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TWO_EFFECTIVE_LABEL_ADAPTIVE_CUT_PURE_TARGET_EXCLUSION_REVIEW_2026-08-23.md) |
 
 ## Typed-edge table
 
@@ -1395,6 +1399,8 @@ flowchart TD
 | `GLS45` | complete-pair structural-degree and cut successor | `GLS46` | Unify the residual-free and sparse same-label cores, prove a uniform arbitrary-root effective-dimension bound, and localize all three diagonal directions without silently selecting a port value. |
 | `GLS46` | completed triangle/feeder successor | `GLS47` | Synchronize one vector at every triangle vertex, normalize the three triangle edges, and use the transformed physical diagonal to eliminate both the internal two-dimensional edge and external pure-excess feeder mechanisms. |
 | `GLS47` | rank-five-through-nine and wider physical attachment obligation | `GL` | Rank four is empty.  Decide or attach full-swallow nuisance ranks five through nine, where the excess has dimension at least two, while retaining response/activity, synchronization, complete nuisance survival, anchors, a named receiver, and source coverage.  Raw escape and nonzero anchor remain separate. |
+| `GLS40` | complete two-effective-label target-coupling audit | `GLS48` | Use the one-to-one auxiliary-pair/raw-label factorization and an adaptive coefficient/deck cut to decide every residual--residual, residual--port, and port--port two-label cell without treating a high-rank incidence tensor as one `E_A^*` coefficient. |
+| `GLS48` | rank-five three-label target-coupled successor | `GL` | The target forces at least three effective auxiliary labels.  Classify or attach rank-five full swallow on that surviving support, then integrate ranks six through nine, raw escape, nonzero anchor, and every named receiver/source gate. |
 
 ## Smallest positive next obligations
 
@@ -1800,6 +1806,18 @@ branch. They are not an instruction to begin all of them at once.
    so no fourth image direction survives.  Both GLS45 cores are empty and
    zero-anchor full swallow now has nuisance rank at least five.  This does
    not force silent full swallow or address any wider attachment/source gate.
+
+   `GLS48` closes the entire two-effective-label target cell without a support
+   atlas.  GLS39 identifies auxiliary pairs with the raw physical labels.
+   When at most two labels are effective, only one coefficient/deck summand
+   can remain.  Moving its zero, one, or two open port variables to the probe
+   shore makes that summand rank one across the complementary-port cut,
+   whereas the exact GHZ target has rank three and at least two ports on the
+   other shore.  The tempting `E_A^*|Uhat` cut is invalid for residual--port
+   and port--port labels because their incidence tensors can have higher
+   rank; the adaptive cut is load-bearing.  Rank-five full swallow with at
+   least three effective labels, higher ranks, and every attachment/source
+   gate remain open.
 
    `GLS15` now identifies a support-free physical synchronization invariant in
    the original `r`-root, `r`-port fixed-`Q` chart.  For every pair target
