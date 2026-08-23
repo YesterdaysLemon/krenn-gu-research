@@ -216,12 +216,55 @@ def audit_polynomial_support() -> dict[str, int]:
     }
 
 
+def audit_old_probe_activity_bitmasks() -> dict[str, int]:
+    full_mask = (1 << 6) - 1
+    compatible_codes = 0
+    port_window_cases = 0
+    maximum_colour_mask_size = 0
+
+    for code in range(3**6):
+        colour_masks = tuple(colour_mask(code, colour) for colour in range(3))
+        assert colour_masks[0] ^ colour_masks[1] ^ colour_masks[2] == full_mask
+        if tuple(mask.bit_count() for mask in colour_masks) != (2, 2, 2):
+            continue
+        compatible_codes += 1
+        for window_tuple in combinations(range(6), 4):
+            window_mask = sum(1 << label for label in window_tuple)
+            for port in window_tuple:
+                port_bit = 1 << port
+                possible_colour_mask = 0
+                for colour, members in enumerate(colour_masks):
+                    # A diagonal response of colour c incident with port can
+                    # exist only when port and its partner both lie in P_c.
+                    partners = members & window_mask & ~port_bit
+                    if members & port_bit and partners:
+                        possible_colour_mask |= 1 << colour
+                assert possible_colour_mask.bit_count() <= 1
+                maximum_colour_mask_size = max(
+                    maximum_colour_mask_size,
+                    possible_colour_mask.bit_count(),
+                )
+                port_window_cases += 1
+
+    assert compatible_codes == 90
+    assert port_window_cases == 90 * 15 * 4
+    assert maximum_colour_mask_size == 1
+    return {
+        "independent_old_probe_compatible_codes": compatible_codes,
+        "independent_old_probe_port_window_cases": port_window_cases,
+        "independent_old_probe_maximum_activity_colours": (
+            maximum_colour_mask_size
+        ),
+    }
+
+
 def main() -> None:
     summary: dict[str, int] = {}
     summary.update(audit_bitmask_partition())
     summary.update(audit_incidence_factorization())
     summary.update(audit_off_readout_faces())
     summary.update(audit_polynomial_support())
+    summary.update(audit_old_probe_activity_bitmasks())
     for key, value in summary.items():
         print(f"{key}: {value}")
     print("GLS57 independent no-import audit: PASS")

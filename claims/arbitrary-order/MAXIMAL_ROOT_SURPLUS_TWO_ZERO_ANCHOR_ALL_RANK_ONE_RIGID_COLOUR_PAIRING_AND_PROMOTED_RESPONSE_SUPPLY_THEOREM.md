@@ -2,8 +2,9 @@
 
 ## Status and scope
 
-**Exact characteristic-zero root-order-three source/deck theorem; the
-all-rigid branch and the strategic node remain open.**  Fix an actual
+**Exact characteristic-zero root-order-three source/deck theorem and
+old-probe receiver no-go; the all-rigid branch and the strategic node remain
+open.**  Fix an actual
 hypothetical Krenn--Gu witness in one `GLS4`-eligible promoted `GLS8` chart
 with
 
@@ -41,12 +42,19 @@ probe roots.  Assume all six maps are torus-rigid and have rank one.  Then:
 
    is a nonzero polynomial in the residual contraction.  It is nonzero on a
    common dense torus open with the two original `GLS4` gates.
+5. after any fixed contraction of the old probes `A`, every physical pair
+   response on auxiliary labels `s,t` is supported only at the coordinate
+   cell `(kappa(s),kappa(t))`.  Consequently, at any fixed auxiliary port,
+   diagonal pair-depth activity can occur in at most one colour.  The direct
+   old-probe `GLD3` three-colour activity gate is therefore pointwise
+   impossible on this branch.
 
 This is a genuine same-graph source-to-response-polynomial advance.  It does
 **not** prove survival of `G^A_(P_c)` modulo the complete labelled nuisance,
 a normalized legal selector, simultaneous attachment of all six pair rows,
-projective synchronization, selected-response activity, nuisance survival,
-a `GLD3` receiver entry, the higher-rank rigid branch, any `r>=4` branch, or
+projective synchronization, selected-response activity for any other
+receiver, nuisance survival, a `GLD3` receiver entry, the higher-rank rigid
+branch, any `r>=4` branch, or
 pointwise nonvanishing on every residual fibre.  The maximum-root surplus-two
 strategic node and the global Krenn--Gu conjecture remain **UNRESOLVED**.
 
@@ -65,8 +73,8 @@ The proof uses exactly the following committed interfaces.
 
 The new argument is the complete pure-slice coupling of all six rank-one
 rigid readouts, its exact `Q`-incidence classification, and the resulting
-nonzero promoted-response polynomial.  No logical dependence is inferred
-from filenames.
+nonzero promoted-response polynomial, together with the pointwise old-probe
+`GLD3` activity no-go.  No logical dependence is inferred from filenames.
 
 ## 1. Joint rank-one coordinate readouts
 
@@ -358,12 +366,51 @@ residual function field, its dense survival open intersects the dense
 Neither form of the survival hypothesis is proved here.  Pointwise survival
 at one unspecified point cannot be combined with response nonvanishing at a
 different point.  More importantly, even one useful row is
-not a named downstream detector package.  At zero probe anchor, the smallest
-direct `GLD3` route uses the old probes `A` as its physical residual pair and
-requires one four-label window whose six physical pair responses are all
-target-diagonal together with three-colour pair-depth activity.  The local
-readout rows realizing (6) may vary with `t`, so they cannot be silently
-synchronized into one probe contraction.
+not a named downstream detector package.
+
+### Theorem 5 (old-probe `GLD3` activity no-go)
+
+Use the old probes `A` as the physical residual pair of `GLD3`.  Fix arbitrary
+contraction vectors on them, and let `D_(st)` be the resulting physical
+residual-present pair response on any two auxiliary labels `s,t`.  Then
+
+```text
+supp D_(st) subset {(kappa(s),kappa(t))}.              (21)
+```
+
+For every four-label window `U subset Bhat`, every port `u in U`, and every
+colour `c`, a diagonal response coefficient can be nonzero only if
+
+```text
+D_(uv)(c,c)!=0  ==>  c=kappa(u)=kappa(v).             (22)
+```
+
+Thus the set of colours having any diagonal pair response incident with `u`
+has size at most one.  In particular, the three-colour pair-depth activity
+condition (10) of `GLD3` is impossible for every old-probe four-label window,
+including all response-zero and contraction-divisor fibres.
+
+### Proof
+
+Because the old-probe edge is the zero tensor in (1), the `h B_(st)` direct
+term in the `GLD3` response formula is zero.  Before contracting `A`, the
+remaining response is exactly `G^A_(st)`, and equation (8) says that it has
+only one possible auxiliary coordinate cell, namely
+`(kappa(s),kappa(t))`.  Evaluation in the probe slots changes only its scalar
+coefficient and cannot create a new auxiliary cell.  This proves (21), hence
+(22).
+
+In the notation of `GLD3`, three-colour activity at `u` requires, for each
+colour `c`, a nonzero product whose first factor is a diagonal coefficient
+`d_(u v_c,c)=D_(u v_c)(c,c)`.  Equation (22) permits such a factor only for
+the single colour `c=kappa(u)`.  At least two of the three required products
+therefore vanish.  The argument uses no division and covers every choice of
+probe contraction and every four-label window.  `square`
+
+This rules out the formerly suggested direct old-probe `GLD3` successor; it
+does not create a different receiver.  The local readout rows realizing (6)
+may also vary with `t`, so they cannot be silently synchronized into one
+probe contraction.
 
 The zero tensor `omega=W_(a_0,a_1)` is also not the promoted residual scalar
 `H_Q(z_Q)`.  Hence (1) is not an `h=0` entry to the distinct promoted-`Q`
@@ -396,7 +443,11 @@ The following distinctions are load-bearing.
 4. **One target is not common attachment.**  `GLD3` does not accept an
    isolated promoted pair row, and `GLD6` requires a much larger lower-depth
    attachment package.  No activity or synchronization is manufactured.
-5. **Root order is fixed.**  The counting step uses exactly six auxiliary
+5. **Old-probe activity is structurally unavailable.**  Even if all six
+   old-probe pair responses were legally attached and target-diagonal,
+   Theorem 5 permits at most one active diagonal colour at each port.  More
+   selector work cannot make this branch enter `GLD3` through that window.
+6. **Root order is fixed.**  The counting step uses exactly six auxiliary
    labels.  At `r>=4`, the inequalities `|P_c|>=2` leave additional labels
    and do not force a three-pair partition.
 
@@ -411,7 +462,8 @@ one or two named promoted pair response polynomials:     PROVED NONZERO;
 common torus point retaining GLS4 gates and one response: PROVED EXISTS;
 response nonzero on every residual fibre:                OPEN / FALSE IN GENERAL;
 complete-nuisance survival and legal selector:            OPEN;
-six-row synchronization and GLD3 activity:                OPEN;
+old-probe GLD3 three-colour activity:                      PROVED IMPOSSIBLE;
+other-receiver synchronization and activity:              OPEN;
 higher-rank all-six-rigid branch:                         OPEN;
 unique-nonrigid alternate receiver:                       OPEN;
 arbitrary-root and nonzero-anchor coverage:               OPEN;
@@ -420,13 +472,11 @@ global Krenn--Gu conjecture:                              UNRESOLVED.
 ```
 
 The smallest successor on this branch is to use the complete mixed/deck
-equations to force either:
-
-- one four-label old-probe response window with six diagonal pair responses
-  and three-colour activity, entering `GLD3`; or
-- a legal contraction/splicing that identifies the contracted six-mode
-  tensor with a weighted `P_6` restriction accepted by the committed
-  six-vertex theorem.
+equations either to force a legal contraction/splicing that identifies the
+contracted six-mode tensor with a weighted `P_6` restriction accepted by the
+committed six-vertex theorem, or to construct a different named receiver with
+all of its selector, response, synchronization, nuisance-survival, activity,
+and anchor gates.  The old-probe `GLD3` route is closed by Theorem 5.
 
 The higher-rank rigid maps and the unique-nonrigid low-activity star remain
 separate branches.
@@ -442,9 +492,11 @@ python -I claims/arbitrary-order/audit_maximal_root_surplus_two_zero_anchor_all_
 
 The primary verifier uses exact rational tensors to replay the unique
 pure-slice factorization, exhaustively checks all `3^6` coordinate-readout
-profiles and all residual-pair placements, and audits the response-monomial
-coefficient and cancellation boundary.  The independent no-project-import
-audit uses a bounded finite-field shore replay, a separately implemented sparse
-label algebra, and polynomial-support masks.  The written proof carries the
+profiles and all residual-pair placements, audits the response-monomial
+coefficient and cancellation boundary, and checks all `5400` compatible
+old-probe profile/window/port activity cases.  The independent
+no-project-import audit uses a bounded finite-field shore replay, a separately
+implemented sparse label algebra, polynomial-support masks, and a distinct
+bit-mask census of the same `5400` cases.  The written proof carries the
 characteristic-zero and complete-witness quantifiers; neither bounded replay
 is used as a source-witness coverage argument.

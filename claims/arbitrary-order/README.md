@@ -3099,8 +3099,11 @@ zeros and one nonzero constant-colour cell.  At least one such pair is a
 literal `GLS8` promoted pair target, whose response polynomial is nonzero and
 shares a dense residual-torus open with the two `GLS4` gates.  Complete-
 nuisance survival, pointwise response divisors, legal selector normalization,
-common six-row synchronization, `GLD3` activity, higher joint ranks, and
-arbitrary-root coverage remain open.  The result is covered by the
+common six-row synchronization for another receiver, higher joint ranks, and
+arbitrary-root coverage remain open.  The direct old-probe `GLD3` route is
+pointwise impossible: every pair response has only the readout cell
+`(kappa(s),kappa(t))`, so a fixed port has diagonal activity in at most one
+colour rather than the required three.  The result is covered by the
 [`maximum-root all-rank-one rigid colour-pairing hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ALL_RANK_ONE_RIGID_COLOUR_PAIRING_AND_PROMOTED_RESPONSE_SUPPLY_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
