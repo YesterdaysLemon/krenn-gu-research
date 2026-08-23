@@ -1119,7 +1119,7 @@ The node is closed **iff** every box below is discharged:
       pass.
 - [x] The no-residual exactly-four-label successor is empty.  Contracting the
       fixed residuals and only inactive promoted ports makes its six raw pair
-      terms the complete hafnian of one physical six-vertex ternary graph on
+      terms the complete hafnian of one reconstructed legal six-vertex ternary graph on
       the probes and four active ports.  A local diagonal target normalization
       enters the accepted complete six-vertex theorem.  Residual-containing
       four-label supports, five-plus supports, and every source/attachment

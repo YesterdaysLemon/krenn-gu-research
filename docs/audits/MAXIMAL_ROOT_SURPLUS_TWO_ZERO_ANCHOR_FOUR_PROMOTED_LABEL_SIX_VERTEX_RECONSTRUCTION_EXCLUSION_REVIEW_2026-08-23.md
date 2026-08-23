@@ -10,7 +10,7 @@ dependency.**
 `GLS53` excludes the zero-residual support in which exactly four effective
 auxiliary labels are promoted ports.  Fixed-residual and inactive-port
 contraction turns the six surviving raw pair terms into the exact hafnian of
-one literal six-vertex ternary graph.  The accepted six-vertex theorem then
+one reconstructed legal six-vertex ternary graph.  The accepted six-vertex theorem then
 gives a contradiction after a legal one-vertex diagonal normalization.
 
 This does not treat a four-label support containing either residual label,

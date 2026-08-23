@@ -3044,7 +3044,7 @@ The GLS53 characteristic-zero arbitrary-root reconstruction theorem excludes
 the exactly-four-label support consisting of four promoted ports and no
 residual label.  After contracting the fixed residuals and only the inactive
 ports, the six surviving promoted pair labels are exactly the hafnian
-expansion of a literal six-vertex ternary graph on the two probes and four
+expansion of a reconstructed legal six-vertex ternary graph on the two probes and four
 active ports.  The fully supported target normalizes by one invertible local
 diagonal scaling, so the accepted complete six-vertex theorem gives a
 contradiction.  Four-label supports containing residual labels, supports of
