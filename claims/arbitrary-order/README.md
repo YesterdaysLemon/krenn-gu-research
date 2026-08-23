@@ -2934,6 +2934,10 @@ bounded deletion-cover reduction are covered by the
 The GLS29 rank-two-shore normal channel, complete mixed-response identity, and
 four-port full-normal-activity exclusion are covered by the
 [`maximum-root zero-anchor normal-channel hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_TWO_SHORE_NORMAL_CHANNEL_AND_INTERSECTING_SUPPLIER_EXCLUSION_REVIEW_2026-08-22.md).
+The GLS30 normal-product divisor complement-kernel profile, same-graph scalar
+controls, and maximum-root pure-normalized sharpness boundary are covered by
+the
+[`maximum-root zero-anchor normal-product divisor hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_NORMAL_PRODUCT_DIVISOR_KERNEL_PROFILE_AND_SAME_GRAPH_SHARPNESS_REVIEW_2026-08-22.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
