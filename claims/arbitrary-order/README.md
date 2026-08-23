@@ -2973,6 +2973,10 @@ non-silent branch) are covered by the
 The GLS39 arbitrary-dimensional complete pairwise-diagonal family bound and
 unconditional rank-three full-swallow exclusion are covered by the
 [`maximum-root zero-anchor complete pairwise-diagonal hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_COMPLETE_PAIRWISE_DIAGONAL_FAMILY_RANK_BOUND_AND_MINIMAL_RAW_SWALLOW_EXCLUSION_REVIEW_2026-08-23.md).
+The GLS40 arbitrary-root aggregate-deck image, canonical excess-syzygy
+module, transverse-cylinder reduction, and exact rank-five/rank-six
+boundaries are covered by the
+[`maximum-root zero-anchor aggregate-deck/cylinder hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FULL_SWALLOW_AGGREGATE_DECK_EXCESS_SYZYGY_AND_TRANSVERSE_CYLINDER_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
