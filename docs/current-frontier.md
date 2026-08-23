@@ -227,6 +227,7 @@ flowchart TD
   GLS40["Full-swallow aggregate deck / excess syzygies / cylinders<br/>PROVED rank-stratified reduction / rank-5 and rank-6 sharp boundaries"]
   GLS41["Full-swallow pure core / excess response<br/>PROVED 18/27-row useful-core reduction"]
   GLS42["Full-residual excess hafnian first variation<br/>PROVED trace-zero gauge family / active physical boundary"]
+  GLS43["Rank-four full-swallow off-diagonal root deck<br/>PROVED q-outside-Delta fibre EMPTY"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
@@ -574,6 +575,8 @@ flowchart TD
   GLS40 -->|pure-core / excess-response audit| GLS41
   GLS41 -->|selected excess first-variation audit| GLS42
   GLS42 -->|additional GHZ coupling / pure-core attachment open| GL
+  GLS40 -->|rank-four zero-excess complete-labelled audit| GLS43
+  GLS43 -->|q-in-Delta rank-four / higher-rank attachment open| GL
   GLS29 -->|r>=4 disjoint cover / other shores open| GL
   GLS14 -->|pure P4/P5 compression; Phi selector or Psi face defect open| GL
   GLS15 -->|physical transport defect| GLS16
@@ -952,6 +955,8 @@ flowchart TD
 | `BO1` | For every fixed port-support bound, there is a permutation-invariant, restriction-natural deck whose every bounded window is the zero-edge physical deck with trivial overlaps, but whose first Euler--Wick failure occurs above the bound.  The same defect is invisible to a finite `q=2` identifying atlas with common frames and trivial holonomy.  Thus ambient bounded-window characterization is **refuted**; bounded certification after imposing the full witness/target locus or a proved structural-degree theorem remains open. | [Uniform bounded-window noncharacterization](../claims/arbitrary-order/UNIFORM_BOUNDED_WINDOW_WICK_AND_RESPONSE_ATLAS_NONCHARACTERIZATION_THEOREM.md), [hostile review](audits/UNIVERSAL_EXTRACTION_GLUING_RESPONSE_ATLAS_SUPPORTING_LANES_REVIEW_2026-08-16.md) |
 | `GL` | Universal extraction, cross-chart/depth synchronization, and local-to-global gluing for the local restriction lanes: **open**. The balanced full-sensor lane instead has the exact same-graph gate `S2E`. | [Top two-port observability boundary](../claims/arbitrary-order/GRAPH_EXTRACTION_TOP_TWO_PORT_SYNCHRONIZATION_OBSERVABILITY_BOUNDARY.md) |
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
+
+| `GLS43` | On the zero-anchor full-swallow fibre, rank four and `q notin Delta` would give `B_Q^anc=Delta+Kq`.  If either residual shore has rank one, quotienting by that shore confines every promoted left or right incidence factor to a two-space, which cannot generate all three diagonal tensors.  With both residual shores rank two, full generation makes both residual normals fully supported; diagonal covariance normalizes both shore planes to `1^perp`.  Row/column sums then align both residual and every port shore, while an exhaustive three-coordinate compatibility lemma confines all port images to one common line.  The complete labelled incidence image consequently has rank at most three, a contradiction.  This is an **exact characteristic-zero arbitrary-root pointwise exclusion of the off-diagonal zero-excess rank-four fibre**, not an exclusion of rank-four `q in Delta`, ranks at least five, raw escape, or any selector/response/synchronization/activity/nuisance/anchor/source-cover gate. | [Rank-four off-diagonal full-swallow exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_FULL_SWALLOW_OFF_DIAGONAL_ROOT_DECK_COMPLETE_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_FULL_SWALLOW_OFF_DIAGONAL_ROOT_DECK_COMPLETE_EXCLUSION_REVIEW_2026-08-23.md) |
 
 ## Typed-edge table
 
@@ -1372,6 +1377,9 @@ flowchart TD
 | `BO1` | refutation of ambient bounded-window route | `GL` | Symmetry, restriction functoriality, all bounded physical windows, identifying overlaps, and trivial holonomy do not characterize an unrestricted full deck or response.  A positive bounded-obstruction theorem must use the actual target locus, prove global generative equality, expose the first higher defect as a target coefficient, or establish a uniform structural-degree bound. |
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
+| `GLS40` | rank-four zero-excess complete-labelled incidence audit | `GLS43` | On `q notin Delta` and `rank B_Q^anc=4`, use the whole-domain residual--port and distinct-label port--port incidence family to decide whether `B_Q^anc=Delta+Kq` can occur on any shore-rank or divisor fibre. |
+| `GLS43` | surviving rank-four and higher-rank physical attachment obligation | `GL` | The off-diagonal zero-excess rank-four fibre is empty.  The smallest surviving rank-four branch has `q in Delta` and one excess row.  Force a same-target pure-core rank rise at a common contraction with `H_Qp!=0`, or contradict all containments using complete same-graph equations; then retain response/activity, synchronization, complete nuisance survival, anchors, a named receiver, and source coverage.  Ranks at least five, `p=0`, and raw escape remain separate. |
+
 ## Smallest positive next obligations
 
 These are positive theorems or exact decisions that would advance a surviving
@@ -1724,6 +1732,17 @@ branch. They are not an instruction to begin all of them at once.
    GHZ-row/target coupling or nonlinear principal-deck compatibility, plus all
    response, synchronization/activity, receiver, exceptional-fibre, and
    source-coverage gates.
+
+   `GLS43` removes the unique zero-excess rank-four line.  If
+   `q notin Delta`, full swallow and rank four would make the complete
+   incidence image exactly `Delta+Kq`.  Low residual shores cannot generate
+   all three diagonal rows after quotienting by the residual line.  When both
+   shores have rank two, diagonal covariance, row/column alignment, and the
+   exact three-coordinate compatibility lemma confine every port image to one
+   line and the total labelled incidence image to rank at most three.  Thus
+   the rank-four remainder is only `q in Delta`; it carries one excess row.
+   Ranks at least five and every response, attachment, raw-escape, silent,
+   and source-cover obligation remain open.
 
    `GLS15` now identifies a support-free physical synchronization invariant in
    the original `r`-root, `r`-port fixed-`Q` chart.  For every pair target
