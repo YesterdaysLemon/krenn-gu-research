@@ -2977,6 +2977,9 @@ The GLS40 arbitrary-root aggregate-deck image, canonical excess-syzygy
 module, transverse-cylinder reduction, and exact rank-five/rank-six
 boundaries are covered by the
 [`maximum-root zero-anchor aggregate-deck/cylinder hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FULL_SWALLOW_AGGREGATE_DECK_EXCESS_SYZYGY_AND_TRANSVERSE_CYLINDER_REVIEW_2026-08-23.md).
+The GLS41 arbitrary-root pure-core/excess-response dichotomy and exact
+all-rank nuisance-intersection reduction are covered by the
+[`maximum-root zero-anchor pure-core/excess-response hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FULL_SWALLOW_PURE_CORE_EXCESS_RESPONSE_DICHOTOMY_AND_ALL_RANK_INTERSECTION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
