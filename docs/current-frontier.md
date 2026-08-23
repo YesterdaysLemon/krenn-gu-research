@@ -228,6 +228,7 @@ flowchart TD
   GLS41["Full-swallow pure core / excess response<br/>PROVED 18/27-row useful-core reduction"]
   GLS42["Full-residual excess hafnian first variation<br/>PROVED trace-zero gauge family / active physical boundary"]
   GLS43["Rank-four full-swallow off-diagonal root deck<br/>PROVED q-outside-Delta fibre EMPTY"]
+  GLS44["Rank-four full-swallow diagonal root deck<br/>PROVED nonzero-q fibre EMPTY / q=0 remains"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
@@ -576,7 +577,8 @@ flowchart TD
   GLS41 -->|selected excess first-variation audit| GLS42
   GLS42 -->|additional GHZ coupling / pure-core attachment open| GL
   GLS40 -->|rank-four zero-excess complete-labelled audit| GLS43
-  GLS43 -->|q-in-Delta rank-four / higher-rank attachment open| GL
+  GLS43 -->|nonzero diagonal rank-four incidence audit| GLS44
+  GLS44 -->|q=0 rank-four / higher-rank attachment open| GL
   GLS29 -->|r>=4 disjoint cover / other shores open| GL
   GLS14 -->|pure P4/P5 compression; Phi selector or Psi face defect open| GL
   GLS15 -->|physical transport defect| GLS16
@@ -957,6 +959,7 @@ flowchart TD
 | `C2` | Automatic reduction of arbitrary characteristic-zero solutions to the pinned `F_2` argument: **refuted as a general lemma** | [Characteristic-two route boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
 
 | `GLS43` | On the zero-anchor full-swallow fibre, rank four and `q notin Delta` would give `B_Q^anc=Delta+Kq`.  If either residual shore has rank one, quotienting by that shore confines every promoted left or right incidence factor to a two-space, which cannot generate all three diagonal tensors.  With both residual shores rank two, full generation makes both residual normals fully supported; diagonal covariance normalizes both shore planes to `1^perp`.  Row/column sums then align both residual and every port shore, while an exhaustive three-coordinate compatibility lemma confines all port images to one common line.  The complete labelled incidence image consequently has rank at most three, a contradiction.  This is an **exact characteristic-zero arbitrary-root pointwise exclusion of the off-diagonal zero-excess rank-four fibre**, not an exclusion of rank-four `q in Delta`, ranks at least five, raw escape, or any selector/response/synchronization/activity/nuisance/anchor/source-cover gate. | [Rank-four off-diagonal full-swallow exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_FULL_SWALLOW_OFF_DIAGONAL_ROOT_DECK_COMPLETE_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_FULL_SWALLOW_OFF_DIAGONAL_ROOT_DECK_COMPLETE_EXCLUSION_REVIEW_2026-08-23.md) |
+| `GLS44` | On the surviving rank-four zero-anchor full-swallow stratum, a nonzero diagonal `q` has rank one or two.  Rank two makes both residual shores the same two-colour support plane; projecting the two residual-label columns to the missing-colour cross blocks gives rank two unless every port misses that colour, contradicting the missing diagonal target.  Rank one makes one residual shore the root-colour line; quotienting by it and selecting the root-colour column gives a two-dimensional image against the sole excess line, again a contradiction.  With `GLS43`, every rank-four full-swallow point therefore has `q=0` and `p=0`, so **rank four on `D(p)` is empty pointwise for arbitrary port domains and every fibre**.  The silent `q=0` rank-four fibre, ranks at least five, raw escape, and every attachment/source-cover gate remain open. | [Rank-four nonzero-diagonal full-swallow exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_FULL_SWALLOW_NONZERO_DIAGONAL_ROOT_DECK_COMPLETE_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_FULL_SWALLOW_NONZERO_DIAGONAL_ROOT_DECK_COMPLETE_EXCLUSION_REVIEW_2026-08-23.md) |
 
 ## Typed-edge table
 
@@ -1378,7 +1381,8 @@ flowchart TD
 | `G0` | refutation of argument | `C2` | Good reduction to the prime field is not automatic, and the source theorem's local correspondence remains pending. |
 
 | `GLS40` | rank-four zero-excess complete-labelled incidence audit | `GLS43` | On `q notin Delta` and `rank B_Q^anc=4`, use the whole-domain residual--port and distinct-label port--port incidence family to decide whether `B_Q^anc=Delta+Kq` can occur on any shore-rank or divisor fibre. |
-| `GLS43` | surviving rank-four and higher-rank physical attachment obligation | `GL` | The off-diagonal zero-excess rank-four fibre is empty.  The smallest surviving rank-four branch has `q in Delta` and one excess row.  Force a same-target pure-core rank rise at a common contraction with `H_Qp!=0`, or contradict all containments using complete same-graph equations; then retain response/activity, synchronization, complete nuisance survival, anchors, a named receiver, and source coverage.  Ranks at least five, `p=0`, and raw escape remain separate. |
+| `GLS43` | surviving nonzero-diagonal rank-four incidence audit | `GLS44` | The off-diagonal zero-excess fibre is empty.  Use the complete GLS36 incidence family to decide every nonzero diagonal rank-one/rank-two shore profile without entering a localized selector receiver. |
+| `GLS44` | silent rank-four and higher-rank physical attachment obligation | `GL` | Every rank-four full-swallow point has `q=p=0`; rank four on `D(p)` is empty.  Decide the silent `q=0` complete pair-family on `p=0`, where the GLS40 cylinder and GLS41 core receiver are unavailable, or construct a separate legal target attachment.  Then retain response/activity, synchronization, complete nuisance survival, anchors, a named receiver, and source coverage.  Ranks at least five and raw escape remain separate. |
 
 ## Smallest positive next obligations
 
@@ -1733,7 +1737,7 @@ branch. They are not an instruction to begin all of them at once.
    response, synchronization/activity, receiver, exceptional-fibre, and
    source-coverage gates.
 
-   `GLS43` removes the unique zero-excess rank-four line.  If
+   `GLS43` removes the unique off-diagonal zero-excess rank-four line.  If
    `q notin Delta`, full swallow and rank four would make the complete
    incidence image exactly `Delta+Kq`.  Low residual shores cannot generate
    all three diagonal rows after quotienting by the residual line.  When both
@@ -1741,6 +1745,14 @@ branch. They are not an instruction to begin all of them at once.
    exact three-coordinate compatibility lemma confine every port image to one
    line and the total labelled incidence image to rank at most three.  Thus
    the rank-four remainder is only `q in Delta`; it carries one excess row.
+
+   `GLS44` then removes every nonzero diagonal point.  Rank-two `q` pins both
+   residual shores to one two-colour plane, and the missing-colour cross-block
+   projection contradicts the one-dimensional excess.  Rank-one `q` pins one
+   shore to a root-colour axis; the left quotient and right root-column test
+   produce two independent vectors against that same excess line.  Thus every
+   rank-four full-swallow point has `q=p=0`, and `D(p)` begins at rank five.
+   The silent rank-four fibre lies outside the GLS40/41 transverse receiver.
    Ranks at least five and every response, attachment, raw-escape, silent,
    and source-cover obligation remain open.
 
