@@ -19,7 +19,8 @@ The global Krenn--Gu conjecture remains **UNRESOLVED**.
 - [`independent no-import audit`](../../claims/arbitrary-order/audit_maximal_root_surplus_two_zero_anchor_incidence_image_common_row_silence_and_labelwise_lift_sharpness.py)
 - the `GLS36` entries in [`current frontier`](../current-frontier.md) and the
   [`supply/target node DAG`](../history/handoffs/MAXIMUM_ROOT_SURPLUS_TWO_SUPPLY_TARGET_NODE_DAG_2026-08-20.md)
-- owning interfaces `GLS21`, `GLS23`, `GLS35`, and the exact `GLD11` control.
+- owning interfaces `GLS8`, `GLS21`, `GLS23`, `GLS35`, and the exact `GLD11`
+  control.
 
 The hostile review was read-only and separate from the primary derivation.
 It checked definitions, types, quantifiers, finite certificates, and claimed
@@ -72,17 +73,23 @@ equations constrain which parameter-locus fibres occur.
 
 ### Incidence-image theorem
 
-At `omega=0`, the two kinds of non-`Q` four-vertex matching coefficient are
+At `omega=0`, the two kinds of non-`Q` grade-zero root-companion coefficient
+are
 
 ```text
 xi_0^s tensor Y_u x+X_u x tensor xi_1^s,
 X_u x tensor Y_v y+X_v y tensor Y_u x.
 ```
 
-The third matching in each case is multiplied by `omega`.  Complete slicing
-therefore gives exactly `B_Q^anc=im sigma_Q` without a rank-open assumption or
-division.  The all-rank augmentation test for swallowing is ordinary finite-
-dimensional column membership and retains every exceptional fibre.
+The owning `GLS8` root-companion definition contains only the two
+root-to-label bijections; an internal-label matching is not part of this
+grade.  The separate top summand is `K omega` and vanishes here.  Complete
+slicing therefore gives exactly `B_Q^anc=im sigma_Q` without a rank-open
+assumption or division.  The all-rank augmentation test for swallowing is
+ordinary finite-dimensional column membership and retains every exceptional
+fibre.  This paragraph corrects the first merged review's pre-vanishing
+three-matching explanation; the accepted zero-anchor formula and all finite
+checks are unchanged.
 
 ### Fixed-common-row theorem
 
