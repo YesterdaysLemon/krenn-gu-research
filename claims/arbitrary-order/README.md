@@ -3044,13 +3044,24 @@ The GLS53 characteristic-zero arbitrary-root reconstruction theorem excludes
 the exactly-four-label support consisting of four promoted ports and no
 residual label.  After contracting the fixed residuals and only the inactive
 ports, the six surviving promoted pair labels are exactly the hafnian
-expansion of a reconstructed legal six-vertex ternary graph on the two probes and four
-active ports.  The fully supported target normalizes by one invertible local
+expansion of a reconstructed legal six-vertex ternary graph on the two probes
+and four active ports.  The fully supported target normalizes by one invertible local
 diagonal scaling, so the accepted complete six-vertex theorem gives a
 contradiction.  Four-label supports containing residual labels, supports of
 five or more labels, and every source/attachment gate remain open.  The
 result is covered by the
 [`maximum-root zero-anchor four-promoted-label six-vertex reconstruction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_PROMOTED_LABEL_SIX_VERTEX_RECONSTRUCTION_EXCLUSION_REVIEW_2026-08-23.md).
+The GLS54 characteristic-zero arbitrary-root partial-uncontraction theorem
+starts instead from an actual complete witness.  At any fully supported
+residual point on the zero-anchor branch, an activity set of size at most
+four can be padded to four using inactive promoted ports.  Retaining those
+four vertices and partially contracting the full graph again reconstructs a
+legal six-vertex target, even when one or both active residual vertices are
+left open.  Hence every actual zero-anchor witness has at least five
+effective labels at every such residual point, without assuming full swallow.
+Inactive residuals are never reopened.  Five-plus labels and every
+source/attachment gate remain open.  The result is covered by the
+[`maximum-root zero-anchor four-slot partial-uncontraction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_SLOT_PARTIAL_UNCONTRACTION_SIX_VERTEX_RECONSTRUCTION_AND_FIVE_LABEL_FLOOR_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
