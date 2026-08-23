@@ -122,6 +122,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLS49 | The residual-pair-plus-one-port three-label support is impossible by the zero-`q` rank gap or the complete `q`-cylinder quotient and residual-shore contradiction. | On `D(p)`, the activity floor is four.  The other `p=0` three-label supports, four-or-more labels, and every source/attachment gate remain open. |
 | GLS50 | In the remaining rank-five exactly-three-label `p=0` supports, complete inactive-port contraction forces a nonzero port-pair deck scalar in the one-residual case and a coordinate-line permutation of all three opposite-pair deck covectors in the three-port case.  Every promoted joint kernel is at most a line; simultaneous deficient profiles collapse the incidence image into `Delta`. | Exactly five profiles remain: `(1,2,3)`, `(1,3,3)`, `(2,2,3)`, `(2,3,3)`, `(3,3,3)`.  Their existence/exclusion, shared polarization, principal-deck coupling, four-or-more labels, higher ranks, and every source/attachment gate remain open.  Coordinate deck lines are not named responses or selectors. |
 | GLS51 | Exactly three effective labels are now classified pointwise at arbitrary root order.  GLS49 excludes two residuals.  Three promoted ports contradict GLS39 after restriction to the mandatory coordinate-deck hyperplanes.  One residual plus two ports has a denominator-free common-coordinate deck lock and a unique separated crossed-square normal form; both ports are injective and the complete incidence image has rank exactly seven. | Exactly three labels can occur only at rank seven in that normal form; existence is not asserted.  A rational shared-interface control is sharp but does not realize principal complementary decks of one graph.  Four-or-more labels, rank-seven principal-deck compatibility, source coverage, raw escape, and every legal response/selector/attachment gate remain open. |
+| GLS52 | Retaining the inactive promoted ports in the sole GLS51 one-residual/two-port normal form exposes one common physical port-pair deck.  The two off-common-coordinate diagonal rows kill both residual--port terms and force that same nonzero deck to be two distinct pure inactive-port words. | The rank-seven conditional branch is empty.  Together with GLS49 and GLS51's three-port exclusion, every zero-anchor full-swallow fixed-residual target point has at least four effective labels.  Four-or-more labels, source coverage, raw escape, nonzero anchor, and every legal response/selector/attachment gate remain open. |
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
@@ -1106,6 +1107,15 @@ The node is closed **iff** every box below is discharged:
       realization is not asserted.  Four-or-more labels and every source or
       attachment gate remain open.  Primary, independent no-import audit, and
       hostile review pass.
+- [x] Retaining every inactive promoted port excludes the conditional GLS51
+      rank-seven normal form.  Both off-common-coordinate diagonal rows kill
+      the residual--port images and isolate the same physical port-pair deck.
+      The complete target forces that nonzero deck to equal two distinct pure
+      inactive-port words, a contradiction.  Thus every exactly-three-label
+      support is empty and zero-anchor full swallow has at least four
+      effective labels.  Four-or-more labels and every source/attachment gate
+      remain open.  Primary, independent no-import audit, and hostile review
+      pass.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,
