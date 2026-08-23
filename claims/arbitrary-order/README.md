@@ -2991,6 +2991,10 @@ The GLS44 characteristic-zero arbitrary-root exclusion of every nonzero
 diagonal rank-four full-swallow root deck, and its integrated conclusion that
 rank four forces `q=p=0` and is empty on `D(p)`, is covered by the
 [`maximum-root zero-anchor rank-four nonzero-diagonal full-swallow hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_FULL_SWALLOW_NONZERO_DIAGONAL_ROOT_DECK_COMPLETE_EXCLUSION_REVIEW_2026-08-23.md).
+The GLS45 characteristic-zero arbitrary-root reduction of the silent
+rank-four fibre to the residual-free `(0,0)` and sparse same-label `(1,1)`
+complete-pair cores is covered by the
+[`maximum-root zero-anchor rank-four silent-shore hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_RESIDUAL_SHORE_PROFILE_REDUCTION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
