@@ -46,6 +46,8 @@ node and the global Krenn--Gu conjecture remain **UNRESOLVED**.
 
 The owning interfaces are:
 
+- [`GLS8`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_TWO_PROBE_ONE_TARGET_ATTACHMENT_AND_POINTWISE_FAILURE_REDUCTION_THEOREM.md)
+  for the grade-zero two-root/two-label companion definition;
 - [`GLS21`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_BASE_SHADOW_ALL_PORT_NUISANCE_COLLAPSE_THEOREM.md)
   for the raw promoted matching decomposition;
 - [`GLS23`](MAXIMAL_ROOT_SURPLUS_TWO_PROMOTED_TRANSVERSE_COMPLETE_NUISANCE_DECOMPOSITION_AND_TOP_ANCHOR_DICHOTOMY_THEOREM.md)
@@ -115,36 +117,35 @@ nuisance-rank, divisor, and `p` fibre,
 B_Q^anc=im sigma_Q.                                   (6)
 ```
 
-In particular, `B_Q^anc` depends only on the incidence data (2).  Every edge
-whose endpoints both lie in `Bhat` occurs only in a term multiplied by
-`omega`, and hence disappears from (6).
+In particular, `B_Q^anc` depends only on the incidence data (2).  Under the
+owning `GLS8` root-companion grading, edges whose endpoints both lie in
+`Bhat` do not occur in the grade-zero pair companions at all.  The separate
+top summand `K omega` vanishes on the present zero-anchor branch.
 
 #### Proof
 
-For `D={q_s,u}`, the three perfect matchings on
-`{a_0,a_1,q_s,u}` give
+For `D={q_s,u}`, the grade-zero root companion is the sum of the two
+root-to-`D` bijections.  After evaluating `q_s` it gives
 
 ```text
 g_D(z_Q)
- =omega tensor W_(q_s,u)(z_(q_s),-)
-  +xi_0^s tensor Y_u+X_u tensor xi_1^s.              (7)
+ =xi_0^s tensor Y_u+X_u tensor xi_1^s.               (7)
 ```
 
-The first term vanishes by (1).  Taking every coefficient slice in the open
-`u` slot gives exactly the image of (4).
+Taking every coefficient slice in the open `u` slot gives exactly the image
+of (4).
 
-For `D={u,v}`, the same three matchings give
+For `D={u,v}`, the same two-bijection definition gives
 
 ```text
 g_D
- =omega tensor W_(u,v)
-  +X_u tensor Y_v+X_v tensor Y_u.                    (8)
+ =X_u tensor Y_v+X_v tensor Y_u.                     (8)
 ```
 
-Again the first term vanishes, and complete slicing in `u,v` gives the image
-of (5).  These are every label `D!=Q` in the definition of `B_Q^anc`; the top
-summand `K omega` is zero.  Summing their images proves (6) without division
-or a rank-open restriction. `square`
+Complete slicing in `u,v` gives the image of (5).  These are every label
+`D!=Q` in the definition of `B_Q^anc`; the separate top summand `K omega` is
+zero by (1).  Summing their images proves (6) without division or a rank-open
+restriction. `square`
 
 ### Corollary 1.1 (all-rank finite criterion)
 

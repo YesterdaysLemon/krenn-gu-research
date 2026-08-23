@@ -2962,6 +2962,10 @@ The GLS36 zero-anchor incidence-image presentation, common coefficient-row
 silence theorem, exact mixed labelwise-lift reduction, and maximum-root
 full-swallow/flattening sharpness control are covered by the
 [`maximum-root zero-anchor labelwise-lift hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_INCIDENCE_IMAGE_COMMON_ROW_SILENCE_AND_LABELWISE_LIFT_SHARPNESS_REVIEW_2026-08-22.md).
+The GLS37 arbitrary-root minimal full-swallow/two-shore fibre exclusion,
+corrected root-companion provenance, two-channel audit, and exact mixed-only
+labelwise-faithfulness no-go are covered by the
+[`maximum-root zero-anchor minimal-swallow hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_MINIMAL_RAW_SWALLOW_INCIDENCE_CLASSIFICATION_AND_MIXED_ONLY_FAITHFULNESS_NOGO_REVIEW_2026-08-22.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
