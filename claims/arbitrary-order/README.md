@@ -3004,6 +3004,11 @@ The GLS47 characteristic-zero arbitrary-root synchronization and rank-one
 normalization argument excludes both GLS45 complete-pair cores, hence every
 zero-anchor rank-four full-swallow fibre, and is covered by the
 [`maximum-root zero-anchor rank-four complete-pair exclusion hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_COMPLETE_PAIR_FAMILY_EXCLUSION_REVIEW_2026-08-23.md).
+The GLS48 characteristic-zero arbitrary-root adaptive-cut theorem excludes
+every zero-anchor fully supported fixed-residual target point with at most two effective
+auxiliary labels, including every physical realization of the GLS40
+rank-five two-label cell, and is covered by the
+[`maximum-root zero-anchor two-effective-label hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TWO_EFFECTIVE_LABEL_ADAPTIVE_CUT_PURE_TARGET_EXCLUSION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the

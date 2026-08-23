@@ -1057,6 +1057,16 @@ The node is closed **iff** every box below is discharged:
       top-core-useful plus three-active leaf is excluded; reduced failure is
       not full failure.  Primary, independent no-import audit, and hostile
       review pass.
+- [x] On the zero-anchor fully supported fixed-residual target equation, at most two effective
+      GLS39 auxiliary labels leave at most one raw physical pair label.  An
+      adaptive cut places its zero, one, or two open port variables with the
+      two probe roots, making the whole source rank at most one; the GHZ target
+      has rank three because at least two promoted ports remain opposite.
+      Thus every target point has at least three effective labels, including
+      all zero-deck, cancellation, divisor, and incidence-rank fibres.  This
+      excludes the GLS40 two-label rank-five cell, not rank five with three or
+      more labels or any wider attachment/source branch.  Primary,
+      independent no-import audit, and hostile review pass.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,
