@@ -116,6 +116,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLS43 | Rank four, full swallow, and `q notin Delta` would identify the complete `GLS36` incidence image with `Delta+Kq`.  A rank-one residual shore confines all incidence factors to a two-space after quotienting by that shore.  With two rank-two residual shores, full-support kernel normalization, row/column alignment, and the exact three-coordinate compatibility lemma put every port image on one line and the total incidence image in a three-space. | This is an exact characteristic-zero pointwise exclusion of the zero-excess rank-four fibre across all shore-rank/divisor fibres and arbitrary port domains.  Rank-four `q in Delta`, ranks at least five, raw escape, pure-core survival, every attachment gate, source coverage, and node closure remain open. |
 | GLS44 | In the surviving rank-four full-swallow diagonal stratum, nonzero `q` has rank one or two.  Rank two makes both residual shores the same two-colour plane, while the missing-colour cross-block projection of the two residual labels has rank two against the sole excess line.  Rank one makes one shore the root-colour line, while quotienting that shore and selecting the root-colour column gives a two-dimensional image against the same excess line.  Both are impossible; with GLS43, rank four forces `q=p=0`. | This is an exact characteristic-zero pointwise exclusion of every rank-four `D(p)` fibre for arbitrary port domains.  The silent `q=0`, `p=0` rank-four fibre has one GLS40 excess row but lies outside the GLS40/41 transverse receiver.  Ranks at least five, raw escape, every attachment gate, source coverage, and node closure remain open. |
 | GLS45 | On the silent rank-four fibre, the zero factorization `q=A_0JC_0^T` leaves six residual-shore profiles.  A rank-two shore with zero mate contributes a six-space, and a rank-one shore with zero mate plus `Delta` has dimension at least five.  In dense rank `(1,1)`, residual-label polarization exposes `K a tensor Y` and `X tensor K b` inside the same four-space; their unique quotient lines force both port shores into one two-colour plane, contradicting full generation. | Only residual-free `(0,0)` and sparse same-label `(1,1)` remain.  They are not existence claims or exclusions and lie on `q=p=0`, outside the GLS40/41 transverse receiver.  Their complete pair-family, ranks at least five, raw escape, every attachment gate, source coverage, and node closure remain open. |
+| GLS46 | The two silent rank-four cores have one complete-label form with image `Delta direct-sum Kf`.  Each global coordinate family is supported on at most two labels, so joint-kernel quotienting leaves at most twelve active labels and total effective domain dimension at most twelve.  An independent arbitrary-dimensional two-block theorem bounds the diagonal image across every label cut by two.  Hence the three diagonal directions occupy one triangle of independent edge lines and every other edge is diagonal-silent. | The fourth direction must come from a two-dimensional triangle edge or an external pure-`f` feeder.  This is a uniform structural-degree and triangle reduction, not an exclusion or finite atlas.  Both forks, ranks at least five, raw escape, every attachment gate, source coverage, node closure, and global resolution remain open. |
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
@@ -746,6 +747,20 @@ forces both aggregate port shores into the same coordinate two-plane,
 contradicting full factor generation.  Only residual-free `(0,0)` and sparse
 same-label `(1,1)` survive.  The latter contributes one star family
 `a tensor Y_u+tX_u tensor b`; neither core is excluded or attached.
+
+GLS46 gives the first arbitrary-root structural-degree theorem for those two
+cores.  Rank-one annihilators of `Delta+Kf` turn every coordinate row and
+column into a labelled zero product, confining each of the six global
+coordinate families to two labels.  The effective complete family therefore
+has total domain dimension at most twelve, independently of the promoted
+root order.  A separate determinant-cubic argument works across every label
+cut and bounds its diagonal image by two.  Three independent diagonal
+directions must consequently lie on one triangle of one-dimensional edge
+images; all nontriangle edges are diagonal-silent.  An exact rational
+symmetric triangle attains diagonal rank three but spans only a three-space,
+refuting the tempting global diagonal-rank-two claim without furnishing a
+full-swallow point.  The remaining rank-four decision is exactly the
+two-dimensional triangle-edge or external pure-excess feeder fork.
 
 ## 5. Dependency order for theorem packages
 
