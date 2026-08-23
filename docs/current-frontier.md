@@ -234,6 +234,7 @@ flowchart TD
   GLS47["Rank-four silent complete-pair exclusion<br/>PROVED both cores EMPTY / full-swallow rank floor 5"]
   GLS48["Zero-anchor two-effective-label pure target<br/>PROVED adaptive-cut rank 1 vs 3 / at least 3 labels"]
   GLS49["Zero-anchor residual-pair-plus-one-port target<br/>PROVED q-cylinder exclusion / D(p) at least 4 labels"]
+  GLS50["Zero-anchor rank-five three-label kernel/deck profiles<br/>PROVED five-profile reduction / existence and exclusion OPEN"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
@@ -590,7 +591,8 @@ flowchart TD
   GLS40 -->|two-effective-label adaptive target cut| GLS48
   GLS48 -->|rank-5 >=3-label target-coupled classification open| GL
   GLS48 -->|D(p) equality / q-cylinder audit| GLS49
-  GLS49 -->|D(p) >=4-label and p=0 three-label cells open| GL
+  GLS49 -->|p=0 three-label kernel/deck audit| GLS50
+  GLS50 -->|five profiles and >=4-label rank-5 cells open| GL
   GLS29 -->|r>=4 disjoint cover / other shores open| GL
   GLS14 -->|pure P4/P5 compression; Phi selector or Psi face defect open| GL
   GLS15 -->|physical transport defect| GLS16
@@ -977,6 +979,7 @@ flowchart TD
 | `GLS47` | On the GLS46 triangle, the product of the three nonzero edge-diagonal bilinear forms selects one common active vector at each vertex over the original characteristic-zero field.  Their left and right factor matrices are invertible; left--right normalization makes the triangle `Sym_0`.  The transformed physical diagonal supplies three rank-one matrices with independent left and right factors.  Their common quotient skew must vanish, and their common diagonal has full support.  Every external label vector then vanishes, while every extra vector in triangle block `i` is a scalar multiple of `(e_i,e_i)`.  Hence the complete image has rank at most three, contradicting rank four.  Thus **both silent rank-four cores and every zero-anchor rank-four full-swallow fibre are pointwise empty**, and full swallow has nuisance rank at least five.  Ranks five through nine, silent source-to-swallow coverage, raw escape, nonzero anchor, and every response/attachment/source gate remain open. | [Silent rank-four complete-pair exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_COMPLETE_PAIR_FAMILY_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FOUR_SILENT_FULL_SWALLOW_COMPLETE_PAIR_FAMILY_EXCLUSION_REVIEW_2026-08-23.md) |
 | `GLS48` | Adjoin the two residual labels to the promoted ports as in GLS39 and call a label effective when one of its whole-domain root-incidence maps is nonzero.  With at most two effective labels, at most one raw physical pair label survives.  Across the adaptive cut placing the two probe roots and every effective promoted label on one shore, that complete coefficient/deck term has rank at most one.  At least two promoted ports remain opposite for every `r>=3`, and the three nonzero pure-colour target words give rank three.  Thus **every zero-anchor fully supported fixed-residual target point has at least three effective auxiliary labels**, including every divisor, cancellation, zero-deck, and incidence-rank fibre.  This excludes the full two-label rank-five cell but not rank five with at least three effective labels, ranks six through nine, silent source-to-swallow coverage, raw escape, nonzero anchor, or any legal attachment gate. | [Two-effective-label adaptive-cut pure-target exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TWO_EFFECTIVE_LABEL_ADAPTIVE_CUT_PURE_TARGET_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TWO_EFFECTIVE_LABEL_ADAPTIVE_CUT_PURE_TARGET_EXCLUSION_REVIEW_2026-08-23.md) |
 | `GLS49` | The whole residual-pair-plus-one-port support `Q disjoint-union {u}` is target-inconsistent: if `q=0`, its source has only two left generators against three GHZ columns; if `q!=0`, the complete `(A union {u})|(Uhat-{u})` source lies in two residual--port tensors plus the `q tensor V_u^*` cylinder.  The target quotient forces `q` pure.  Its rank-one residual factorization makes one residual shore a coordinate line; projecting the other two target-column representations then forces the opposite at-most-two-dimensional shore to contain all three coordinate axes.  On `D(p)`, both residual labels are effective, so **exactly three effective labels are impossible and GLS48 raises the `D(p)` floor to four**, with arbitrary physical decks and every exceptional fibre retained.  The other `p=0` three-label types, four-or-more labels, full-swallow/source coverage, raw escape, and every legal attachment gate remain open.  Here `p` is a root-deck coefficient evaluation, not a physical response. | [Residual-pair-plus-one-port q-cylinder exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RESIDUAL_PAIR_PLUS_ONE_PORT_THREE_EFFECTIVE_LABEL_Q_CYLINDER_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RESIDUAL_PAIR_PLUS_ONE_PORT_THREE_EFFECTIVE_LABEL_Q_CYLINDER_EXCLUSION_REVIEW_2026-08-23.md) |
+| `GLS50` | In the two `p=0` exactly-three-label rank-five supports left by GLS49, contracting only inactive promoted ports gives a complete physical target consequence.  With one residual and two ports, the evaluated port-pair deck scalar is nonzero, every port joint kernel has dimension at most one, and two simultaneous kernel lines would put all incidence images in `Delta`; the only profiles are `(1,2,3)` and `(1,3,3)`.  With three ports, triple quotient forces the three opposite-pair deck covectors to be the coordinate-line permutation, every joint kernel has dimension at most one, and all three kernels cannot be lines; the only profiles are `(2,2,3)`, `(2,3,3)`, and `(3,3,3)`.  This is an **exhaustive pointwise rank-five exactly-three-label kernel/deck reduction**, not existence or exclusion of the five profiles, a physical response/selector, downstream synchronization, source coverage, four-or-more-label classification, higher-rank closure, or node closure. | [Rank-five three-label kernel/deck profiles](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FIVE_THREE_EFFECTIVE_LABEL_KERNEL_PROFILE_AND_MANDATORY_DECK_REDUCTION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FIVE_THREE_EFFECTIVE_LABEL_KERNEL_PROFILE_AND_MANDATORY_DECK_REDUCTION_REVIEW_2026-08-23.md) |
 
 ## Typed-edge table
 
@@ -1406,7 +1409,8 @@ flowchart TD
 | `GLS40` | complete two-effective-label target-coupling audit | `GLS48` | Use the one-to-one auxiliary-pair/raw-label factorization and an adaptive coefficient/deck cut to decide every residual--residual, residual--port, and port--port two-label cell without treating a high-rank incidence tensor as one `E_A^*` coefficient. |
 | `GLS48` | rank-five three-label target-coupled successor | `GL` | The target forces at least three effective auxiliary labels.  Classify or attach rank-five full swallow on that surviving support, then integrate ranks six through nine, raw escape, nonzero anchor, and every named receiver/source gate. |
 | `GLS48` | `D(p)` equality audit | `GLS49` | On `D(p)`, both residual labels are active.  Quotient the unique three-label source by its full `q`-cylinder, then retain both residual-shore rank-one orientations and every physical deck-zero fibre. |
-| `GLS49` | four-label `D(p)` / other three-label `p=0` successor | `GL` | The `D(p)` activity floor is four.  Couple four-or-more active labels to rank-five full swallow and the named target modules; separately decide the other `p=0` three-label types without treating `p` as a physical response. |
+| `GLS49` | other three-label `p=0` kernel/deck successor | `GLS50` | Contract only inactive promoted ports, then use the complete target to decide every joint-kernel and evaluated-deck fibre in the one-residual/two-port and three-port supports. |
+| `GLS50` | shared-polarization five-profile / four-label successor | `GL` | Use the shared `X/Y` polarization and principal-deck coupling to decide the five surviving three-label profiles; separately couple the `D(p)` four-or-more-label floor and all other rank-five supports to the same physical target.  Do not reinterpret coordinate deck lines as named response or selector gates. |
 
 ## Smallest positive next obligations
 
@@ -1836,6 +1840,21 @@ branch. They are not an instruction to begin all of them at once.
    evaluation, not a physical response.  The proof supplies activity only,
    not a legal response/selector package, and leaves the other `p=0` three-
    label types, the four-label cell, and all source/attachment obligations.
+
+   `GLS50` now exhausts those other exactly-three-label `p=0` support types
+   at rank five.  Contracting only inactive promoted ports preserves the
+   three nonzero target colours and turns every surviving principal deck into
+   its exact scalar or covector slice.  With one residual and two ports, the
+   port-pair deck scalar cannot vanish, each port joint kernel is at most a
+   line, and the two-line profile would collapse the entire incidence image
+   into `Delta`; only `(1,2,3)` and `(1,3,3)` remain.  With three ports, the
+   target triple quotient forces the three opposite-pair deck lines to be a
+   permutation of the coordinate lines, each joint kernel is at most a line,
+   and at least one port is injective; only `(2,2,3)`, `(2,3,3)`, and
+   `(3,3,3)` remain.  These five profiles are not proved realizable or empty,
+   and the coordinate deck permutation is not a downstream response or
+   selector package.  Shared `X/Y` polarization and principal-deck coupling
+   are the smallest remaining load-bearing structure in this cell.
 
    `GLS15` now identifies a support-free physical synchronization invariant in
    the original `r`-root, `r`-port fixed-`Q` chart.  For every pair target

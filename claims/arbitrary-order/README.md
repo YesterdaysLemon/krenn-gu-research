@@ -3013,6 +3013,13 @@ The GLS49 characteristic-zero arbitrary-root `q`-cylinder theorem excludes
 the whole residual-pair-plus-one-port support and, with GLS48, raises the
 pointwise `D(p)` floor to four; it is covered by the
 [`maximum-root zero-anchor residual-pair-plus-one-port hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RESIDUAL_PAIR_PLUS_ONE_PORT_THREE_EFFECTIVE_LABEL_Q_CYLINDER_EXCLUSION_REVIEW_2026-08-23.md).
+The GLS50 characteristic-zero arbitrary-root rank-five reduction classifies
+the complete exactly-three-effective-label successor: one residual plus two
+ports forces a nonzero evaluated port-pair deck scalar and leaves profiles
+`(1,2,3)` and `(1,3,3)`, while three ports force the three opposite-pair deck
+lines to be the coordinate-line permutation and leave profiles `(2,2,3)`,
+`(2,3,3)`, and `(3,3,3)`; it is covered by the
+[`maximum-root zero-anchor rank-five three-label kernel-profile hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_FIVE_THREE_EFFECTIVE_LABEL_KERNEL_PROFILE_AND_MANDATORY_DECK_REDUCTION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
