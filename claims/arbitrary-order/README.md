@@ -3062,6 +3062,17 @@ effective labels at every such residual point, without assuming full swallow.
 Inactive residuals are never reopened.  Five-plus labels and every
 source/attachment gate remain open.  The result is covered by the
 [`maximum-root zero-anchor four-slot partial-uncontraction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_SLOT_PARTIAL_UNCONTRACTION_SIX_VERTEX_RECONSTRUCTION_AND_FIVE_LABEL_FLOOR_REVIEW_2026-08-23.md).
+The GLS55 characteristic-zero arbitrary-root torus-kernel theorem strengthens
+that floor at the level of the original full physical maps.  If at most four
+auxiliary labels were torus-rigid, retain a four-set containing them and
+contract every outside label at its own fully supported simultaneous-kernel
+vector.  The complete GLS8 identity again reconstructs a legal weighted
+six-vertex graph.  Hence at least five labels have torus-free joint kernels,
+equivalently a coordinate covector in their joint probe-incidence row space.
+These labels are active at every fully supported residual point, but their
+coordinate readouts are not responses, selectors, synchronized rows, or
+nuisance annihilators.  The result is covered by the
+[`maximum-root zero-anchor torus-kernel contraction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TORUS_KERNEL_CONTRACTION_AND_FIVE_RIGID_LABEL_FLOOR_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
