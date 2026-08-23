@@ -2942,6 +2942,10 @@ The GLS31 zero-anchor evaluation-pencil identities and maximum-root,
 pure-normalized, simultaneous-complete-absorption mixed-equation sharpness
 certificate are covered by the
 [`maximum-root zero-anchor simultaneous-absorption hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIMULTANEOUS_ABSORPTION_EVALUATION_PENCIL_AND_MIXED_EQUATION_SHARPNESS_REVIEW_2026-08-22.md).
+The GLS32 arbitrary-root first-polarized singleton-kernel identities and exact
+four-port whole projected evaluation-pencil simultaneous-absorption sharpness
+certificate are covered by the
+[`maximum-root zero-anchor first-polarized singleton-kernel hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FIRST_POLARIZED_SINGLETON_KERNEL_AND_SIMULTANEOUS_ABSORPTION_SHARPNESS_REVIEW_2026-08-22.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
