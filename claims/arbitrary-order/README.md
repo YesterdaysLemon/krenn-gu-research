@@ -2954,6 +2954,10 @@ The GLS34 tangent-root Fitting boundary, simultaneous constant-anchor
 survival dichotomy, and complete three-colour Segre-silence classification
 are covered by the
 [`maximum-root zero-anchor tangent-root/Segre-silence hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TANGENT_ROOT_FITTING_AND_CONSTANT_ANCHOR_SEGRE_SILENCE_REVIEW_2026-08-22.md).
+The GLS35 raw residual-absent root-deck quotient, complete-target
+escape/swallow dichotomy, and exact output-to-coefficient separation no-go are
+covered by the
+[`maximum-root zero-anchor raw-anchor hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RAW_ROOT_DECK_QUOTIENT_AND_OUTPUT_COEFFICIENT_SEPARATION_NOGO_REVIEW_2026-08-22.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
