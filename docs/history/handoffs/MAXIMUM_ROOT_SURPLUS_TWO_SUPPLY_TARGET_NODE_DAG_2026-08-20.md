@@ -1067,6 +1067,19 @@ The node is closed **iff** every box below is discharged:
       excludes the GLS40 two-label rank-five cell, not rank five with three or
       more labels or any wider attachment/source branch.  Primary,
       independent no-import audit, and hostile review pass.
+- [x] On `D(p)`, nonzero `q` makes both residual auxiliary labels active.  A
+      three-label support would therefore be `Q` plus one promoted port.  The
+      complete cut source has only two residual--port tensors modulo the full
+      `q tensor V_u^*` cylinder; target quotient rank forces `q` pure, after
+      which its residual rank-one factorization makes one at-most-two-dimensional
+      shore contain all three coordinate axes.  Thus GLS48's lower bound is
+      strict on `D(p)`: every such target point has at least four effective
+      labels.  The same support is already impossible at `q=0` by a two-
+      generator/three-column rank gap.  This is an activity floor, not a
+      selector/response/attachment package; `p` is a root-deck coefficient
+      evaluation, not a physical response.  Other `p=0` support types,
+      four-or-more labels, and source coverage remain open.  Primary,
+      independent no-import audit, and hostile review pass.
 - [ ] The same \(Q\) carries the complete legal response/target package needed
       by the named downstream attachment theorem.
 - [ ] Constant-selector, full-nuisance, synchronization, augmented-weight,

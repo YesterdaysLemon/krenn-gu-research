@@ -3009,6 +3009,10 @@ every zero-anchor fully supported fixed-residual target point with at most two e
 auxiliary labels, including every physical realization of the GLS40
 rank-five two-label cell, and is covered by the
 [`maximum-root zero-anchor two-effective-label hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TWO_EFFECTIVE_LABEL_ADAPTIVE_CUT_PURE_TARGET_EXCLUSION_REVIEW_2026-08-23.md).
+The GLS49 characteristic-zero arbitrary-root `q`-cylinder theorem excludes
+the whole residual-pair-plus-one-port support and, with GLS48, raises the
+pointwise `D(p)` floor to four; it is covered by the
+[`maximum-root zero-anchor residual-pair-plus-one-port hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RESIDUAL_PAIR_PLUS_ONE_PORT_THREE_EFFECTIVE_LABEL_Q_CYLINDER_EXCLUSION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
