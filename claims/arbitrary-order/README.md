@@ -3105,6 +3105,19 @@ pointwise impossible: every pair response has only the readout cell
 `(kappa(s),kappa(t))`, so a fixed port has diagonal activity in at most one
 colour rather than the required three.  The result is covered by the
 [`maximum-root all-rank-one rigid colour-pairing hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ALL_RANK_ONE_RIGID_COLOUR_PAIRING_AND_PROMOTED_RESPONSE_SUPPLY_REVIEW_2026-08-23.md).
+The GLS58 characteristic-zero root-order-three theorem gives the exhaustive
+rank-profile continuation on the all-six-rigid zero-anchor branch.  Every
+supported coordinate of a deficient joint-kernel vector forces a fixed pure
+neighbour shore; one contraction gives ten trilinear decks, while two
+contractions reconstruct a legal six-vertex graph with the exact port block
+`hW_uv+a_u tensor b_v+b_u tensor a_v`.  Rigidity makes that graph's target
+zero, mono, or binary, and an exact all-rigid `h=0` binary control shows the
+three-colour finite theorem cannot exclude it.  The no-deficient cell obeys a
+denominator-free cross-product identity with an exact coordinate-cover versus
+genuine-cancellation fork.  This is a structural reduction and sharp no-go,
+not a response, selector, receiver, branch exclusion, or node closure.  It is
+covered by the
+[`maximum-root all-rigid kernel-contraction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ALL_RIGID_KERNEL_CONTRACTION_AND_CROSS_PRODUCT_REDUCTION_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
