@@ -2539,6 +2539,30 @@ rows, promoted sources, swallowed-circuit target contradictions, other root
 orders, activity, and permanent consequences remain open.
 
 The
+[`four-root maximal-base-survivor common-incidence and sparse-radical detector boundary`](FOUR_ROOT_MAXIMAL_BASE_SURVIVOR_COMMON_INCIDENCE_AND_SPARSE_RADICAL_DETECTOR_BOUNDARY_THEOREM.md)
+then makes one parent attempt on all eight star/triangle profiles.  A common
+labelled coefficient module still has exact three-colour models for every
+profile, so `GLD68` plus an aggregate GHZ equality is insufficient by itself.
+On an actual graph, however, all six pair companions are pullbacks of the one
+zero-diagonal form `J=P_4(xi,eta,-,-)`.  With four rank-three port maps, a
+maximal profile forces `rank J=2`: a star has one common radical plane in all
+four port images, while a triangle has three equal maximal-isotropic sibling
+hyperplanes and a potentially transverse centre.  The internal six-label
+port-pair image then has exact dimension `21` for a star and `19` for a
+triangle; weighted concise GHZ lies in neither.  The complete base equation
+still has nine labels meeting `Q`.  Any support-at-most-two radical vector
+common to all four images supplies one decomposable functional that kills all
+fifteen contracted order-two labels.  Its nonzero weighted-GHZ evaluation is
+a contradiction.  The common sparse vector is automatic for a star, but its
+target scalar may vanish; for a triangle the centre need not contain a sparse
+radical line.  Exact incidence controls realize both gaps.  Thus this is a
+proved universal pair-layer obstruction, a bounded full-layer detector, and
+an exact boundary classification for that detector, not a universal complete
+star/triangle exclusion.  The unsynchronized `Q` layer, scalar-zero,
+nonsparse-centre, port-rank-deficient, nonmaximal, non-leading, and promoted
+source fibres remain open.
+
+The
 [`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
 then closes the strongest response-map-zero residue at the level of support.
 If the complete realized mixed-response map is zero for all six pair targets
@@ -3222,6 +3246,8 @@ which rejects the two exclusions and independently accepts the exact
 coefficient separation and three-colour control.
 The GLD68 complementary base-shadow source exclusion is covered by the
 [`four-root complementary-pair base-nuisance saturation hostile review`](../../docs/audits/FOUR_ROOT_COMPLEMENTARY_PAIR_BASE_NUISANCE_SATURATION_REVIEW_2026-08-24.md).
+The GLD69 maximal-survivor parent reduction is covered by the
+[`four-root maximal-base-survivor common-incidence hostile review`](../../docs/audits/FOUR_ROOT_MAXIMAL_BASE_SURVIVOR_COMMON_INCIDENCE_REVIEW_2026-08-24.md).
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the
