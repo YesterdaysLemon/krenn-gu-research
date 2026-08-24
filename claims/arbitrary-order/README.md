@@ -2511,6 +2511,20 @@ responses, cover arbitrary legal selectors or other root orders, integrate
 the promoted source, or imply a permanent restriction.
 
 The
+[`fixed-Q four-root product-selector two-colour exclusion and first-root plane synchronization theorem`](FIXED_Q_FOUR_ROOT_PRODUCT_SELECTOR_TWO_COLOUR_EXCLUSION_AND_FIRST_ROOT_PLANE_SYNCHRONIZATION_THEOREM.md)
+uses the same selector's foreign `{q_0,u}` and `{q_1,u}` equations.  The
+nonzero desired response confines every root-to-port incidence vector to one
+common subspace of dimension at most three.  Combining that bound with the
+cross-Gram identity excludes zero-edge, third-colour, and two-colour matching
+profiles, so a pure response has at most one nonzero coefficient.  On the
+all-six-pair-base-survival witness branch, any proper first-root shadow now
+forces a nonzero monocolour `M_U`; every proper first-root nuisance shadow is
+the coordinate plane missing that same colour, while every other shadow is
+full.  The all-four-full and synchronized monocolour/plane profiles, swallowed
+pair shadows, arbitrary non-product selectors, other roots, promoted-source
+coverage, and permanent consequences remain open.
+
+The
 [`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
 then closes the strongest response-map-zero residue at the level of support.
 If the complete realized mixed-response map is zero for all six pair targets
@@ -3185,6 +3199,8 @@ The GLD64 decomposable variable-slope refinement is covered by the
 [`fixed-Q globally decomposable variable-slope hostile review`](../../docs/audits/FIXED_Q_GLOBALLY_DECOMPOSABLE_CHANNEL_VARIABLE_SLOPE_THREE_FULL_PAIR_EXCLUSION_REVIEW_2026-08-23.md).
 The GLD65 product-selector refinement is covered by the
 [`fixed-Q product-selector camouflage hostile review`](../../docs/audits/FIXED_Q_FOUR_ROOT_PRODUCT_SELECTOR_THREE_COLOUR_CAMOUFLAGE_EXCLUSION_REVIEW_2026-08-23.md).
+The GLD66 response-anchor and first-root-plane refinement is covered by the
+[`fixed-Q product-selector two-colour hostile review`](../../docs/audits/FIXED_Q_FOUR_ROOT_PRODUCT_SELECTOR_TWO_COLOUR_EXCLUSION_AND_FIRST_ROOT_PLANE_SYNCHRONIZATION_REVIEW_2026-08-23.md).
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the

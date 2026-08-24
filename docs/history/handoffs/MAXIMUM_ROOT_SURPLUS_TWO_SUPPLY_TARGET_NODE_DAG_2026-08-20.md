@@ -136,6 +136,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
 | GLD64 | On a globally vertex-factorable `h=0` channel, forty-three fixed mixed words exclude arbitrary independent finite pair slopes and the finite four-port slope under one three-full complementary pair. | Seven legal `M`-active rows, global decomposability, and three-fullness are assumptions.  Pure-`Z`, general rank-two channels, arbitrary-root source coverage, anchors, nuisance survival, and permanent consequences remain. |
 | GLD65 | A surviving `GLS17` four-port first-root class supplies a product-form pure-`M` selector.  Its complete foreign-label equations put the six direct port blocks into one four-dimensional cross-Gram form.  Diagonal pure-three `C(B)` forces the exact three-matching camouflage support, which would require five independent root-incidence vectors. | On the all-six-pair-shadow branch, every first-root four-port quotient loses at least one pure colour.  Swallowed shadows, zero/one/two-colour responses, arbitrary non-leading selectors, other roots, promoted source coverage, anchors, and permanent consequences remain. |
+| GLD66 | The product selector's foreign `{q_0,u}` and `{q_1,u}` equations put all root-to-port incidences in one common space of dimension at most three.  The `GLD65` cross-pairing then excludes every pure response with two active colours, including zero-edge, third-colour, proportional-anchor, and all rank-drop fibres.  With all six pair base shadows surviving, any proper first-root shadow forces a nonzero monocolour `M_U`, and every proper first-root nuisance is the coordinate plane missing that shared colour. | The exact residues are all four first-root shadows full, or one monocolour response with each shadow full or its synchronized coordinate plane and at least one plane.  Swallowed pair shadows, non-leading selectors, other roots, promoted source coverage, anchors, and permanent consequences remain. |
 | GLD19 | Under literal all-seven response-map zero, classifies twelve-row complementary support and supplies conditional detectors. | The source does not force response-map zero, and the localized support locus is not excluded. |
 | GLD20 | Exhaustively classifies response-window support masks inside that fixed-\(Q\), response-zero stratum. | Mask exhaustiveness is not witness exhaustiveness; \(F=\varnothing\), star/triangle absorption, coefficients, and same-graph integration remain. |
 | GLD21 | In the two-corrected-colour, one-\(K_4\), response-zero cell, excludes \(h=0\) and identifies the \(h\neq0\) integrability residue. | It neither forces the cell nor excludes \(h\neq0\); its absorbed scalar rows are not legal GLD15 operators. |
@@ -172,6 +173,12 @@ support divisors; and coexistence of all required selectors on the same graph.
   needs five independent vectors.  Thus all-six pair base-shadow survival
   forces a pure-column loss in every four-port first-root quotient; the
   zero-to-two-colour and swallowed-shadow residues remain.
+- GLD66 sharpens that residue using the selector's foreign two-set response
+  anchors.  All port incidences lie in a common space of dimension at most
+  three, excluding every two-active-colour pure response.  On all-six pair
+  base-shadow survival, the four first-root shadows are therefore either all
+  full or synchronized full/coordinate-plane shadows for one nonzero
+  monocolour response.  Neither exact profile is yet excluded.
 - GLS16 confines pair rank zero and every non-pure-`M` rank-one direction to
   an explicit swallowed base pair-column quotient.  When all required base
   classes survive, every rank-one pair line is synchronized to pure `M`.
