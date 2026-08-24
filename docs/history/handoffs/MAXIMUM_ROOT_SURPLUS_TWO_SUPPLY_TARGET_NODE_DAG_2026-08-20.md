@@ -134,6 +134,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLD16 | For arbitrary physical residual scalar \(h\), a common projective line plus the stated activity gives a legal shifted detector through \(a=\delta+h\eta\) and the denominator-free identity \(aT'=C(D)-C(\eta K)\).  Both \(a=0\) and \(a\ne0\) are excluded under three-colour activity. | Zero target spaces, unequal slopes, and missing activity remain; the `h=0` restriction no longer remains inside the common-line branch. |
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
+| GLD64 | On a globally vertex-factorable `h=0` channel, forty-three fixed mixed words exclude arbitrary independent finite pair slopes and the finite four-port slope under one three-full complementary pair. | Seven legal `M`-active rows, global decomposability, and three-fullness are assumptions.  Pure-`Z`, general rank-two channels, arbitrary-root source coverage, anchors, nuisance survival, and permanent consequences remain. |
 | GLD19 | Under literal all-seven response-map zero, classifies twelve-row complementary support and supplies conditional detectors. | The source does not force response-map zero, and the localized support locus is not excluded. |
 | GLD20 | Exhaustively classifies response-window support masks inside that fixed-\(Q\), response-zero stratum. | Mask exhaustiveness is not witness exhaustiveness; \(F=\varnothing\), star/triangle absorption, coefficients, and same-graph integration remain. |
 | GLD21 | In the two-corrected-colour, one-\(K_4\), response-zero cell, excludes \(h=0\) and identifies the \(h\neq0\) integrability residue. | It neither forces the cell nor excludes \(h\neq0\); its absorbed scalar rows are not legal GLD15 operators. |
@@ -161,7 +162,9 @@ support divisors; and coexistence of all required selectors on the same graph.
   killed by particular complete mixed coefficients.
 - GLD14 closes the paired affine/all-depth shape after attachment.
 - GLD16--GLD18 close their named common-line, activity, slope, cancellation,
-  and three-full subbranches.
+  and three-full subbranches.  GLD64 removes both slope synchronization and
+  cancellation equations on the globally decomposable finite-slope branch,
+  still conditional on legal rows and one three-full complement.
 - GLS16 confines pair rank zero and every non-pure-`M` rank-one direction to
   an explicit swallowed base pair-column quotient.  When all required base
   classes survive, every rank-one pair line is synchronized to pure `M`.

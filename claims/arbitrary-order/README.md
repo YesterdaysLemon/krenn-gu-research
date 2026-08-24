@@ -2483,6 +2483,19 @@ noncancellation, and sparse-support branches remain open; no witness
 integration or permanent restriction follows.
 
 The
+[`fixed-Q globally decomposable channel variable-slope exclusion`](FIXED_Q_GLOBALLY_DECOMPOSABLE_CHANNEL_VARIABLE_SLOPE_THREE_FULL_PAIR_EXCLUSION_THEOREM.md)
+then removes the last slope restriction inside `GLD18`'s globally
+vertex-factorable branch.  If `K_uv=a_u tensor a_v`, all six independently
+sloped finite selected pair blocks are diagonal, and one complementary pair
+is three-full, thirty-six `2+1+1` words and six named `2+2` words force full
+ternary support and one common aggregate relation.  The fixed `3+1` word
+reduces to `-2G` times a nonzero port monomial, and a final `2+2` word gives
+the contradiction.  Thus neither synchronization nor cancellation equations
+are needed on this physical subfamily after seven legal `GLD15` rows attach.
+The theorem does not force those rows, global decomposability, three-fullness,
+pure-`Z` axes, arbitrary-root source coverage, or any permanent consequence.
+
+The
 [`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
 then closes the strongest response-map-zero residue at the level of support.
 If the complete realized mixed-response map is zero for all six pair targets
@@ -3153,6 +3166,8 @@ The GLD17 unequal-slope detector is covered by the
 [`fixed-Q unequal-slope quadratic-cancellation hostile review`](../../docs/audits/FIXED_Q_UNEQUAL_SLOPE_QUADRATIC_CANCELLATION_REVIEW_2026-08-17.md).
 The GLD18 response-visible and edge-dependent refinement is covered by the
 [`fixed-Q response-visible slope hostile review`](../../docs/audits/FIXED_Q_RESPONSE_VISIBLE_OPERATOR_SLOPE_AND_EDGE_DEPENDENT_CANCELLATION_REVIEW_2026-08-17.md).
+The GLD64 decomposable variable-slope refinement is covered by the
+[`fixed-Q globally decomposable variable-slope hostile review`](../../docs/audits/FIXED_Q_GLOBALLY_DECOMPOSABLE_CHANNEL_VARIABLE_SLOPE_THREE_FULL_PAIR_EXCLUSION_REVIEW_2026-08-23.md).
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the
