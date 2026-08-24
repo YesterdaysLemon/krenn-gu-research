@@ -2525,6 +2525,19 @@ genuine full-target equation, a second independently legal response axis, or
 another coefficient-pure bridge;
 additional labels from the same complete companion row cannot suffice.
 
+The successor
+[`four-root complementary-pair base-nuisance saturation theorem`](FOUR_ROOT_COMPLEMENTARY_PAIR_BASE_NUISANCE_SATURATION_AND_SEVEN_SHADOW_SOURCE_EXCLUSION_THEOREM.md)
+removes the immediate all-six leading-shadow source branch without crossing
+that coefficient boundary.  For complementary port pairs `S` and `T`, the
+order-two label `I=T` occurs in the complete target-`S` base nuisance as
+`H_T tensor Pi_T`.  If `Pi_T` is nonzero, its coefficient slices span the
+whole target-`S` receiver and swallow `b_S`; if it is zero, then `b_T=0`.
+Hence at most three of the six pair base shadows survive, and a maximal
+survivor family is a star or triangle.  The conditional `GLS17 -> GLD16`
+route cannot be sourced by all six pair base shadows.  Non-leading legal
+rows, promoted sources, swallowed-circuit target contradictions, other root
+orders, activity, and permanent consequences remain open.
+
 The
 [`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
 then closes the strongest response-map-zero residue at the level of support.
@@ -3207,6 +3220,8 @@ The controlling verdict is now the
 [`root-companion/full-coefficient interface correction review`](../../docs/audits/FIXED_Q_PRODUCT_SELECTOR_ROOT_COMPANION_FULL_COEFFICIENT_INTERFACE_CORRECTION_REVIEW_2026-08-24.md),
 which rejects the two exclusions and independently accepts the exact
 coefficient separation and three-colour control.
+The GLD68 complementary base-shadow source exclusion is covered by the
+[`four-root complementary-pair base-nuisance saturation hostile review`](../../docs/audits/FOUR_ROOT_COMPLEMENTARY_PAIR_BASE_NUISANCE_SATURATION_REVIEW_2026-08-24.md).
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the

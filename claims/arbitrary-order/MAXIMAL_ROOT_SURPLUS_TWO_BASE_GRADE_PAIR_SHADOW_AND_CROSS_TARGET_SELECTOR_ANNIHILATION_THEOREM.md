@@ -32,8 +32,15 @@ order `r>=2`; it divides by no response, minor, permanent, or selector
 coordinate.  It does not force any base pair class to survive, does not attach
 the four-port row, does not force response activity, and does not close the
 supply-and-target-attachment node.  The promoted two-probe module of GLS8 is
-a different partition and is not covered.  The global Krenn--Gu conjecture
-remains **UNRESOLVED**.
+a different partition and is not covered.
+
+**Successor update (2026-08-24).**  At root order four,
+[`GLD68`](FOUR_ROOT_COMPLEMENTARY_PAIR_BASE_NUISANCE_SATURATION_AND_SEVEN_SHADOW_SOURCE_EXCLUSION_THEOREM.md)
+applies the complete order-two nuisance description above to complementary
+port pairs and proves that their base classes cannot both survive.  Thus at
+most three of the six pair base shadows survive.  This strengthens the
+four-root source boundary without changing any arbitrary-root theorem here.
+The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
 ## Dependencies and provenance
 

@@ -30,6 +30,13 @@ survival of all six pair shadows and one four-port first-root shadow produces
 the common seven-target pure-`M` package required by GLD16; GLD16 then excludes
 that branch only if its separate three-colour activity hypothesis holds.
 
+**Successor update (2026-08-24).**  The implication remains correct, but
+[`GLD68`](FOUR_ROOT_COMPLEMENTARY_PAIR_BASE_NUISANCE_SATURATION_AND_SEVEN_SHADOW_SOURCE_EXCLUSION_THEOREM.md)
+proves that its all-six pair-base premise is empty: complementary pair base
+classes cannot both survive, so at most three of the six are nonzero.  A
+seven-row package must therefore come from non-leading operator supply or a
+different promoted interface, not from the displayed six pair base shadows.
+
 The theorem is pointwise on every incidence-rank fibre and uses no support
 atlas, response division, incidence inverse, or chosen rank minor.  It does
 **not** force a leading class to survive, response activity, or a nonzero
@@ -437,7 +444,8 @@ complete nuisance shadow through order 2t:                 PROVED;
 leading survival forces pure-M operator supply:            PROVED;
 finite-family leading survival gives common pure-M line:   PROVED;
 r=4 four-port first-root shadow (29):                       PROVED;
-r=4 seven-shadow plus activity branch excluded by GLD16:   PROVED CONDITIONAL;
+r=4 seven-shadow plus activity implication via GLD16:      PROVED CONDITIONAL;
+r=4 all-six pair-base source premise (by GLD68):            IMPOSSIBLE;
 needed leading survival on every actual witness:           UNKNOWN;
 three-colour selected-response activity:                    UNKNOWN;
 foreign GLS15 transport on swallowed-leading branches:      UNKNOWN;
@@ -446,9 +454,10 @@ complete maximum-root supply/attachment node:               OPEN;
 global Krenn--Gu conjecture:                                 UNRESOLVED.      (35)
 ```
 
-The smallest next obligation is to force the leading-survival conditions for
-a sufficient target family, or use the complete mixed GHZ equations to
-contradict the simultaneous lower-grade absorption identities (22), including
+The smallest next obligation is to exploit the complementary swallowed-base
+circuits forced by GLD68, obtain pair rows from a non-leading source, or use
+the complete mixed GHZ equations to contradict the simultaneous lower-grade
+absorption identities (22), including
 every exceptional incidence fibre.  For `r=4`, failure of the four-port gate
 is the four exact first-root absorptions `b_(a,U)=0`; it is not a generic
 determinant or an untracked response divisor.

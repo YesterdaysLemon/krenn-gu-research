@@ -47,6 +47,14 @@ distinct rank-one slopes destroy the common package.  Exact two-active
 camouflage on the common line `[1:1]` proves that the activity hypothesis is
 load-bearing.
 
+**Successor update (2026-08-24).**
+[`GLD68`](FOUR_ROOT_COMPLEMENTARY_PAIR_BASE_NUISANCE_SATURATION_AND_SEVEN_SHADOW_SOURCE_EXCLUSION_THEOREM.md)
+proves that the six `GLS16` pair base shadows cannot source this all-seven
+package: at most one member of each complementary pair survives.  The present
+common-line theorem remains valid for rows supplied non-leadingly or through
+another interface; only the former `GLS17` all-six base-shadow incoming edge
+is removed.
+
 The theorem does not prove that a common line exists on every hypothetical
 witness, force selected-response activity, exclude the zero-intersection
 branch, integrate a formal response fibre into a graph fibre, or imply a
