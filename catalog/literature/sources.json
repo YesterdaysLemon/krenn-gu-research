@@ -284,6 +284,83 @@
           "source_locator": null
         }
       ]
+    },
+    {
+      "citekey": "buczynski-landsberg-2014-third-secant",
+      "title": "On the third secant variety",
+      "authors": ["Jaroslaw Buczynski", "J. M. Landsberg"],
+      "year": 2014,
+      "identifiers": {
+        "arxiv": "1111.7005",
+        "doi": "10.1007/s10801-013-0495-0"
+      },
+      "authoritative_url": "https://link.springer.com/article/10.1007/s10801-013-0495-0",
+      "identity_verification": {
+        "source_url": "https://link.springer.com/article/10.1007/s10801-013-0495-0",
+        "date": "2026-08-24"
+      },
+      "search_trail": [],
+      "relevance": "Normal-form classification for complex tensors of border rank at most three, used to identify the epsilon-nonzero open part of a four-qutrit third secant.",
+      "limitations": [
+        "The normal-form theorem is stated over the complex numbers.",
+        "The source does not state the repository's epsilon characterization; that deduction is proved internally by inspecting the listed normal forms."
+      ],
+      "repository_usages": [
+        {
+          "path": "claims/arbitrary-order/FOUR_ROOT_COMPLETE_Q_LAYER_SECANT_BOUNDARY_TRAP_AND_TORUS_STAR_COMPRESSION_THEOREM.md",
+          "role": "imported_result",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "Theorem 1.2 and equations (1.2)-(1.5)",
+          "assumptions_scope": "The imported classification concerns sigma_3 of a Segre product of at least three complex projective factors; the repository applies it to four factors of vector dimension three.",
+          "correspondence_note": "The four source normal forms are used as an exhaustive case list. The repository separately proves that its cubic epsilon invariant vanishes on types (ii)-(iv) and on sigma_2, while type (i) has nonzero epsilon exactly on the concise GHZ orbit.",
+          "unresolved_obligations": []
+        },
+        {
+          "path": "claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+          "role": "background",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "Theorem 1.2 and equations (1.2)-(1.5)"
+        }
+      ]
+    },
+    {
+      "citekey": "qi-2013-third-secant-equations",
+      "title": "Equations for the third secant variety of the Segre product of n projective spaces",
+      "authors": ["Yang Qi"],
+      "year": 2013,
+      "identifiers": {
+        "arxiv": "1311.2566"
+      },
+      "authoritative_url": "https://arxiv.org/abs/1311.2566",
+      "identity_verification": {
+        "source_url": "https://arxiv.org/abs/1311.2566",
+        "date": "2026-08-24"
+      },
+      "search_trail": [],
+      "relevance": "Set-theoretic equations for third secants of Segre products, used to make the complete Q-layer boundary trap an exact saturation problem.",
+      "limitations": [
+        "The imported theorem is set-theoretic and does not assert a scheme-theoretic generating set for the secant ideal.",
+        "The repository has not yet performed the restricted saturation or produced a radical-membership certificate for its fixed nuisance space."
+      ],
+      "repository_usages": [
+        {
+          "path": "claims/arbitrary-order/FOUR_ROOT_COMPLETE_Q_LAYER_SECANT_BOUNDARY_TRAP_AND_TORUS_STAR_COMPRESSION_THEOREM.md",
+          "role": "imported_result",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "Theorem 1.4",
+          "assumptions_scope": "For local vector dimensions at most three, the theorem gives set-theoretic equations for sigma_3 using degree-four Strassen equations for singleton-singleton-rest partitions and 4 x 4 generalized-flattening minors; the repository uses the four-factor, dimension-three case over C.",
+          "correspondence_note": "The equations are pulled back along the explicit 79-column nuisance map. Their saturation by the pulled-back epsilon invariant is unit exactly when the nuisance space has no epsilon-nonzero third-secant point.",
+          "unresolved_obligations": [
+            "Compute or certify the restricted saturation for the fixed root-torus star nuisance space."
+          ]
+        },
+        {
+          "path": "claims/p7/COMMITTED_LEGAL_SENSOR_ORDERED_SECANT_FACTOR_CHOW_NORM_AND_BOUNDARY_TRAP_CRITERION.md",
+          "role": "background",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "Theorem 1.4"
+        }
+      ]
     }
   ]
 }
