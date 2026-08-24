@@ -3118,6 +3118,22 @@ genuine-cancellation fork.  This is a structural reduction and sharp no-go,
 not a response, selector, receiver, branch exclusion, or node closure.  It is
 covered by the
 [`maximum-root all-rigid kernel-contraction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ALL_RIGID_KERNEL_CONTRACTION_AND_CROSS_PRODUCT_REDUCTION_REVIEW_2026-08-23.md).
+The GLS59 characteristic-zero probe-exchange theorem gives the exact
+continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
+kernel vector forces, for either old probe and every jointly supported
+colour, a distinct coordinate-pure neighbour.  Finite irreducibility gives
+fixed whole-domain pure probe blocks and complete exceptional-section flags.
+The two old-probe three-colour stars therefore overlap among the five rigid
+labels: same-colour overlap gives a rank-one coordinate-plane kernel and an
+exact binary six-vertex descent, while cross-colour overlap gives a rank-two
+coordinate-axis kernel and an exact monocolour descent.  The accepted
+three-colour six-vertex theorem excludes neither endpoint.  At every fully
+supported old-probe contraction, the natural `GLD3` pure-star triangle cannot
+be simultaneously target-diagonal, closing that receiver proposal but not
+the source branch.  Responses, selectors, complete nuisance survival, an
+alternate receiver, all-rigid coupling, arbitrary-root source coverage, and
+nonzero anchor remain open.  The result is covered by the
+[`maximum-root zero-anchor probe-exchange hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_PROBE_EXCHANGE_OVERLAP_AND_UNIQUE_NONRIGID_DESCENT_REVIEW_2026-08-23.md).
 The GLD16 common-line detector is covered by the
 [`fixed-Q arbitrary-h common projective selector hostile review`](../../docs/audits/FIXED_Q_COMMON_PROJECTIVE_JOINT_RESPONSE_SELECTOR_ARBITRARY_H_REVIEW_2026-08-20.md).
 The GLD17 unequal-slope detector is covered by the
