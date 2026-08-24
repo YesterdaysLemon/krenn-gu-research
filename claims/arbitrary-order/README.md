@@ -2563,6 +2563,22 @@ nonsparse-centre, port-rank-deficient, nonmaximal, non-leading, and promoted
 source fibres remain open.
 
 The
+[`four-root complete-Q-layer secant boundary trap and torus-star compression`](FOUR_ROOT_COMPLETE_Q_LAYER_SECANT_BOUNDARY_TRAP_AND_TORUS_STAR_COMPRESSION_THEOREM.md)
+keeps all nine missing labels in one exact `79`-column nuisance map.  A cubic
+epsilon relative invariant identifies concise GHZ as the epsilon-nonzero open
+inside the complex third Segre secant, turning universal exclusion into one
+restricted flattening-plus-Strassen saturation.  On the fully supported
+residual-coordinate locus, `rank J=2` has one ratio pattern up to the declared
+gauges, and every nonisotropic maximal-star quotient slope gives the same
+fixed `44`-dimensional nuisance space.  Its quotient beyond the pair layer has
+dimension `23`; the projection-full triangle instead has corrected quotient
+dimension `16`.  The fixed-space saturation remains open, and a `Q`-only
+epsilon-nonzero rank-`(5,5,5)` flattening control shows why epsilon without
+the secant equations cannot close it.  Residual-coordinate boundaries,
+general triangles, lower port ranks, smaller survivor families, and source
+integration remain separate.
+
+The
 [`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
 then closes the strongest response-map-zero residue at the level of support.
 If the complete realized mixed-response map is zero for all six pair targets
@@ -3248,6 +3264,9 @@ The GLD68 complementary base-shadow source exclusion is covered by the
 [`four-root complementary-pair base-nuisance saturation hostile review`](../../docs/audits/FOUR_ROOT_COMPLEMENTARY_PAIR_BASE_NUISANCE_SATURATION_REVIEW_2026-08-24.md).
 The GLD69 maximal-survivor parent reduction is covered by the
 [`four-root maximal-base-survivor common-incidence hostile review`](../../docs/audits/FOUR_ROOT_MAXIMAL_BASE_SURVIVOR_COMMON_INCIDENCE_REVIEW_2026-08-24.md).
+The GLD70 complete-Q-layer secant reduction and torus-star compression are
+covered by the
+[`four-root complete-Q-layer secant hostile review`](../../docs/audits/FOUR_ROOT_COMPLETE_Q_LAYER_SECANT_BOUNDARY_TRAP_AND_TORUS_STAR_COMPRESSION_REVIEW_2026-08-24.md).
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the
