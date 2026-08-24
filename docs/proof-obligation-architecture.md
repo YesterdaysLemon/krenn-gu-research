@@ -71,6 +71,61 @@ machine-readable proof-DAG schema until the actual post-migration
 obligations have been inventoried under the evidence-semantics
 contract.
 
+## 2A. Parent-theorem discipline and proof-distance accounting
+
+Research progress is measured by justified edges in the proof DAG, not by
+the number of nearby leaves.  Apply the operating rule:
+
+> **No third sibling theorem without a serious parent-theorem attempt.**
+
+For this purpose, two results are *siblings* when they refine nearby cells,
+supports, ranks, divisors, or response profiles under the same open parent
+obligation, while neither result:
+
+- closes a proved exhaustive child cover;
+- supplies a reusable implication used by at least two distinct downstream
+  branches;
+- refutes a proposed parent route by an exact control; or
+- is already identified as load-bearing inside a recorded parent proof
+  attempt.
+
+The count follows the mathematical parent, not filenames, node labels,
+branches, agents, or PR boundaries.  Splitting a census or changing notation
+does not create a new lane.
+
+A *serious parent-theorem attempt* must leave a durable research note, claim,
+or frontier entry with all of the following:
+
+1. the exact parent statement, including quantifiers, field, generic or
+   pointwise scope, nonzero conditions, and exceptional fibres;
+2. the upstream theorem that supplies its hypotheses and at least two sibling
+   results it is intended to consume;
+3. the downstream node or theorem that would become applicable;
+4. an exact synthesis attempt using the siblings' mechanisms, not only their
+   conclusions;
+5. hostile tests against every relevant committed control and no-go result;
+6. one of three honest outcomes: a proved implication, an exact
+   countermodel/no-go, or a sharply stated obstruction naming the next
+   load-bearing lemma; and
+7. an explicit proof-distance delta.
+
+The proof-distance delta is qualitative, not a scalar score.  State which of
+the following occurred:
+
+- an exhaustive child or implication edge closed;
+- one parent obligation was replaced by strictly smaller typed obligations;
+- two or more branches acquired a common reusable theorem;
+- a proposed route was eliminated by an exact countermodel; or
+- no frontier distance changed.
+
+Every PR adding a local mathematical result must identify its parent
+obligation and say which item above applies.  If no frontier distance changed,
+the PR must state why the result is nevertheless load-bearing or why it falls
+outside sibling research (for example an integrity repair, independent audit,
+exact-counterexample escalation, or execution of an already proved exhaustive
+finite cover).  This reporting requirement does not change the evidence
+status of the result.
+
 ## 3. Certificate discharge rule
 
 A computational certificate closes a mathematical obligation only
