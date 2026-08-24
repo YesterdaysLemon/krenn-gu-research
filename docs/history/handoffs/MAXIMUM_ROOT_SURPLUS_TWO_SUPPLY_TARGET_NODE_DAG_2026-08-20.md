@@ -135,6 +135,7 @@ extraction/gluing, and global-conjecture resolution are not part of it.
 | GLD17 | Excludes the stated \(M\)-active slope/cancellation alternatives with a three-full complement. | Pure-\(Z\), other slopes, missing three-full activity, and support drops remain. |
 | GLD18 | Proves \(C_S\subseteq\ker R_S\) and treats the stated edge-dependent cancellation locus. | The converse fails; invisible/visible rank one, rank zero, noncancellation, pure-\(Z\), and sparse support remain. |
 | GLD64 | On a globally vertex-factorable `h=0` channel, forty-three fixed mixed words exclude arbitrary independent finite pair slopes and the finite four-port slope under one three-full complementary pair. | Seven legal `M`-active rows, global decomposability, and three-fullness are assumptions.  Pure-`Z`, general rank-two channels, arbitrary-root source coverage, anchors, nuisance survival, and permanent consequences remain. |
+| GLD65 | A surviving `GLS17` four-port first-root class supplies a product-form pure-`M` selector.  Its complete foreign-label equations put the six direct port blocks into one four-dimensional cross-Gram form.  Diagonal pure-three `C(B)` forces the exact three-matching camouflage support, which would require five independent root-incidence vectors. | On the all-six-pair-shadow branch, every first-root four-port quotient loses at least one pure colour.  Swallowed shadows, zero/one/two-colour responses, arbitrary non-leading selectors, other roots, promoted source coverage, anchors, and permanent consequences remain. |
 | GLD19 | Under literal all-seven response-map zero, classifies twelve-row complementary support and supplies conditional detectors. | The source does not force response-map zero, and the localized support locus is not excluded. |
 | GLD20 | Exhaustively classifies response-window support masks inside that fixed-\(Q\), response-zero stratum. | Mask exhaustiveness is not witness exhaustiveness; \(F=\varnothing\), star/triangle absorption, coefficients, and same-graph integration remain. |
 | GLD21 | In the two-corrected-colour, one-\(K_4\), response-zero cell, excludes \(h=0\) and identifies the \(h\neq0\) integrability residue. | It neither forces the cell nor excludes \(h\neq0\); its absorbed scalar rows are not legal GLD15 operators. |
@@ -165,6 +166,12 @@ support divisors; and coexistence of all required selectors on the same graph.
   and three-full subbranches.  GLD64 removes both slope synchronization and
   cancellation equations on the globally decomposable finite-slope branch,
   still conditional on legal rows and one three-full complement.
+- GLD65 removes the sharp three-matching camouflage from the `GLS17`
+  first-root product-selector branch.  Complete foreign-label vanishing gives
+  one four-dimensional root-incidence cross-Gram form, while the camouflage
+  needs five independent vectors.  Thus all-six pair base-shadow survival
+  forces a pure-column loss in every four-port first-root quotient; the
+  zero-to-two-colour and swallowed-shadow residues remain.
 - GLS16 confines pair rank zero and every non-pure-`M` rank-one direction to
   an explicit swallowed base pair-column quotient.  When all required base
   classes survive, every rank-one pair line is synchronized to pure `M`.
