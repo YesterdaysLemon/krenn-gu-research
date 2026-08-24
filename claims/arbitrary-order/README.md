@@ -3105,6 +3105,19 @@ pointwise impossible: every pair response has only the readout cell
 `(kappa(s),kappa(t))`, so a fixed port has diagonal activity in at most one
 colour rather than the required three.  The result is covered by the
 [`maximum-root all-rank-one rigid colour-pairing hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ALL_RANK_ONE_RIGID_COLOUR_PAIRING_AND_PROMOTED_RESPONSE_SUPPLY_REVIEW_2026-08-23.md).
+The GLS60 continuation proves that each same-colour pair has a complete
+coordinate-pure shore on at least one old probe, with exact opposite-shore
+anti-synchronization; every label has some nonzero pure old-probe edge and one
+probe is shore-pure on at least two colour pairs.  At a fully supported probe
+contraction, the resulting six-label tensor is a hafnian first variation.
+Its direct companion graph is decomposable on the mixed `2+2+2` word, and a
+vertex-gauge identification with the internal graph would contradict the
+accepted six-vertex theorem.  Thus both natural graph splices are excluded.
+The package also corrects an earlier interface error: the repository's
+`P_6` is a separate permanent tensor and is not accepted by the six-vertex
+theorem.  Non-gauge reconstruction, permanent extraction, every legal
+receiver gate, higher ranks, and arbitrary-root coverage remain open.  See
+the [`GLS60 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_ONE_PURE_PROBE_ORIENTATION_AND_HAFNIAN_SPLICING_BOUNDARY_REVIEW_2026-08-23.md).
 The GLS58 characteristic-zero root-order-three theorem gives the exhaustive
 rank-profile continuation on the all-six-rigid zero-anchor branch.  Every
 supported coordinate of a deficient joint-kernel vector forces a fixed pure
