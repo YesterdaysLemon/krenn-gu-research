@@ -1,10 +1,11 @@
-"""Independent no-import audit for the GLD66 two-colour exclusion.
+"""Independent no-import audit of the surviving finite GLD66 identities.
 
 This audit shares no code with the primary replay.  It represents matching
 polynomials as integer dictionaries of edge words, reduces the support
 classification to the 49 pairs of nonempty colour subsets on a complementary
 matching, and checks the final kernel patterns from the 27 matching-colour
 assignments rather than scanning edge masks.
+It does not supply GLD65's withdrawn root-companion/full-coefficient bridge.
 """
 
 from __future__ import annotations
@@ -213,13 +214,16 @@ def main():
     response_terms, strata = check_matching_dictionaries()
     local_supports = check_local_support_lemma()
     assignments, third, two_colour = check_assignment_kernel_proof()
-    print("GLD66 independent no-import audit: PASS")
+    print("GLD66 surviving finite-identity no-import audit: PASS")
     print("  independent response-anchor terms:", response_terms)
     print("  independent eight-vertex strata:", strata)
     print("  compatible nonempty complementary support pairs:", local_supports)
     print("  matching-colour assignments with both active colours:", assignments)
     print("  third-colour/two-colour kernel contradictions:", (third, two_colour))
     print("  no primary imports; no numerical or generic-rank inference")
+    print(
+        "  scope: conditional support/kernel identities; graph-side exclusion withdrawn"
+    )
     print("  global Krenn-Gu status: UNRESOLVED")
 
 

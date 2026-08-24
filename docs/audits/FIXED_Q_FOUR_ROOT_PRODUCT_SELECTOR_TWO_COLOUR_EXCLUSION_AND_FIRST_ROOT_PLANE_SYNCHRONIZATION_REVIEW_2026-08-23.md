@@ -2,7 +2,13 @@
 
 ## Review verdict
 
-**Accepted as an exact characteristic-zero conditional module/source
+**SUPERSEDED / FAILED (2026-08-24).**  The acceptance below inherited the
+invalid `GLD65` root-companion/full-coefficient substitution.  Its common
+cross-pairing form, two-colour exclusion, and synchronized-plane corollaries
+are withdrawn.  See the
+[interface correction review](FIXED_Q_PRODUCT_SELECTOR_ROOT_COMPANION_FULL_COEFFICIENT_INTERFACE_CORRECTION_REVIEW_2026-08-24.md).
+
+**Historical verdict (superseded): accepted as an exact characteristic-zero conditional module/source
 theorem after focused and independent replay.**  The package strengthens
 `GLD65`: a `GLS17` first-root product selector, six diagonal direct blocks,
 and a pure four-port response permit at most one nonzero pure response

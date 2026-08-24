@@ -2497,32 +2497,33 @@ pure-`Z` axes, arbitrary-root source coverage, or any permanent consequence.
 
 The
 [`fixed-Q four-root product-selector camouflage exclusion`](FIXED_Q_FOUR_ROOT_PRODUCT_SELECTOR_THREE_COLOUR_CAMOUFLAGE_EXCLUSION_THEOREM.md)
-uses a different part of the legal-module structure.  A surviving `GLS17`
-four-port first-root class supplies a product evaluation on the four roots.
-The complete foreign labels then express every direct block `B_uv` as a
-cross-Gram block of one bilinear form on four root coordinates.  If the six
-direct blocks are diagonal and `C(B)` is pure with three nonzero colours, the
-mixed `2+2` coefficients force the unique three-matching camouflage support.
-That support would make five named incidence vectors independent, which is
-impossible in four dimensions.  Thus all-six pair base-shadow survival forces
-at least one pure-column loss in every four-port first-root quotient.  The
-theorem does not force any shadow or response, exclude zero/one/two-colour
-responses, cover arbitrary legal selectors or other root orders, integrate
-the promoted source, or imply a permanent restriction.
+is **partially withdrawn as of 2026-08-24**.  Its exact matching
+stratification, standalone diagonal-support lemma, and abstract conditional
+dimension lemma survive.  Its load-bearing cross-Gram step does not: the
+legal product-selector row annihilates a root companion `G_D`, while the proof
+silently treated the distinct full matching coefficient `F_D` as zero after
+direct edges inside `D` were restored.  The three-colour exclusion and every
+corollary using that bridge are therefore not live.
 
 The
 [`fixed-Q four-root product-selector two-colour exclusion and first-root plane synchronization theorem`](FIXED_Q_FOUR_ROOT_PRODUCT_SELECTOR_TWO_COLOUR_EXCLUSION_AND_FIRST_ROOT_PLANE_SYNCHRONIZATION_THEOREM.md)
-uses the same selector's foreign `{q_0,u}` and `{q_1,u}` equations.  The
-nonzero desired response confines every root-to-port incidence vector to one
-common subspace of dimension at most three.  Combining that bound with the
-cross-Gram identity excludes zero-edge, third-colour, and two-colour matching
-profiles, so a pure response has at most one nonzero coefficient.  On the
-all-six-pair-base-survival witness branch, any proper first-root shadow now
-forces a nonzero monocolour `M_U`; every proper first-root nuisance shadow is
-the coordinate plane missing that same colour, while every other shadow is
-full.  The all-four-full and synchronized monocolour/plane profiles, swallowed
-pair shadows, arbitrary non-product selectors, other roots, promoted-source
-coverage, and permanent consequences remain open.
+is withdrawn in its load-bearing product-selector conclusions.  The
+response-anchor common-subspace observation remains a conditional
+linear-algebra statement, but the two-colour exclusion and first-root plane
+synchronization use the false `GLD65` cross-pairing identity.
+
+The owning
+[`root-companion/full-coefficient separation and exact three-colour control`](FIXED_Q_PRODUCT_SELECTOR_ROOT_COMPANION_FULL_COEFFICIENT_SEPARATION_AND_THREE_COLOUR_COUNTEREXAMPLE.md)
+proves the corrected formula
+`F_(Q union {u,v})=G_(Q union {u,v})+B_uv G_Q=mB_uv` for a legal pure-`M`
+row.  It supplies an explicit ternary maximum-root graph whose complete `431`
+evaluated companion entries realize that row while all six direct blocks are
+diagonal and `M_U=0000+1111+2222`.  This refutes former GLD65 Theorem 5 and
+removes the claimed legal-selector source for GLD66, but it is not a full GHZ
+witness or a Krenn--Gu counterexample.  The corrected parent obligation is a
+genuine full-target equation, a second independently legal response axis, or
+another coefficient-pure bridge;
+additional labels from the same complete companion row cannot suffice.
 
 The
 [`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
@@ -3197,10 +3198,15 @@ The GLD18 response-visible and edge-dependent refinement is covered by the
 [`fixed-Q response-visible slope hostile review`](../../docs/audits/FIXED_Q_RESPONSE_VISIBLE_OPERATOR_SLOPE_AND_EDGE_DEPENDENT_CANCELLATION_REVIEW_2026-08-17.md).
 The GLD64 decomposable variable-slope refinement is covered by the
 [`fixed-Q globally decomposable variable-slope hostile review`](../../docs/audits/FIXED_Q_GLOBALLY_DECOMPOSABLE_CHANNEL_VARIABLE_SLOPE_THREE_FULL_PAIR_EXCLUSION_REVIEW_2026-08-23.md).
-The GLD65 product-selector refinement is covered by the
-[`fixed-Q product-selector camouflage hostile review`](../../docs/audits/FIXED_Q_FOUR_ROOT_PRODUCT_SELECTOR_THREE_COLOUR_CAMOUFLAGE_EXCLUSION_REVIEW_2026-08-23.md).
-The GLD66 response-anchor and first-root-plane refinement is covered by the
-[`fixed-Q product-selector two-colour hostile review`](../../docs/audits/FIXED_Q_FOUR_ROOT_PRODUCT_SELECTOR_TWO_COLOUR_EXCLUSION_AND_FIRST_ROOT_PLANE_SYNCHRONIZATION_REVIEW_2026-08-23.md).
+The former GLD65 and GLD66 reviews are retained as superseded historical
+records:
+[`product-selector camouflage review`](../../docs/audits/FIXED_Q_FOUR_ROOT_PRODUCT_SELECTOR_THREE_COLOUR_CAMOUFLAGE_EXCLUSION_REVIEW_2026-08-23.md)
+and
+[`product-selector two-colour review`](../../docs/audits/FIXED_Q_FOUR_ROOT_PRODUCT_SELECTOR_TWO_COLOUR_EXCLUSION_AND_FIRST_ROOT_PLANE_SYNCHRONIZATION_REVIEW_2026-08-23.md).
+The controlling verdict is now the
+[`root-companion/full-coefficient interface correction review`](../../docs/audits/FIXED_Q_PRODUCT_SELECTOR_ROOT_COMPANION_FULL_COEFFICIENT_INTERFACE_CORRECTION_REVIEW_2026-08-24.md),
+which rejects the two exclusions and independently accepts the exact
+coefficient separation and three-colour control.
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the

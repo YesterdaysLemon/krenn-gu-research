@@ -2,7 +2,13 @@
 
 ## Review verdict
 
-**Accepted as an exact characteristic-zero conditional module/source
+**SUPERSEDED / FAILED (2026-08-24).**  The acceptance below did not audit the
+load-bearing distinction between the root companion `G_D` and the full
+matching coefficient `F_D`.  The claimed cross-Gram bridge and downstream
+exclusion are withdrawn.  See the
+[interface correction review](FIXED_Q_PRODUCT_SELECTOR_ROOT_COMPANION_FULL_COEFFICIENT_INTERFACE_CORRECTION_REVIEW_2026-08-24.md).
+
+**Historical verdict (superseded): accepted as an exact characteristic-zero conditional module/source
 exclusion after focused and independent replay.**  The package proves that a
 `GLS17` first-root factored four-port selector cannot coexist with six
 target-diagonal direct pair blocks and a target-pure residual-absent four-port

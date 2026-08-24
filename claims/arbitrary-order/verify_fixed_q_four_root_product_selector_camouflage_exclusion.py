@@ -1,10 +1,12 @@
-"""Primary exact replay for the GLD65 product-selector exclusion.
+"""Primary replay of the surviving finite GLD65 identities.
 
-The proof has three finite interfaces:
+GLD65's product-selector exclusion was withdrawn on 2026-08-24 because its
+legal module row constrains root companions G_D, not the full coefficients F_D
+used by the matching expansion below.  This script does not verify that
+invalid interface.  It retains three independently useful finite checks:
 
-1. the eight-vertex matching expansion that turns a product four-port
-   selector into one common four-dimensional cross-Gram form for the six
-   direct port blocks;
+1. the generic eight-vertex full-matching expansion, conditional on full
+   coefficient equations not supplied by the product selector;
 2. the complete support classification of diagonal pair blocks whose
    four-port compound is pure with three nonzero colours; and
 3. the five-vector dimension obstruction for the resulting one-factorization
@@ -255,12 +257,12 @@ def main() -> None:
     matching_counts = check_matching_expansion()
     support_count, support_profiles = check_support_classification()
     dimension_checks = check_five_vector_obstruction()
-    print("GLD65 primary exact replay: PASS")
+    print("GLD65 surviving finite-identity replay: PASS")
     print("  exact generic matching identity and outside-edge counts:", matching_counts)
     print("  exhaustive diagonal pure-three support profiles:", support_count)
     print("  matching-colour permutations:", support_profiles)
     print("  five-vector dimension certificates:", dimension_checks)
-    print("  scope: product four-port selector and pure-three M response only")
+    print("  withdrawn interface not tested: legal G_D row does not imply full F_D=0")
     print("  global Krenn-Gu status: UNRESOLVED")
 
 

@@ -1,5 +1,14 @@
 # Maximum-root surplus-two supply/target node: internal proof-DAG plan
 
+> **Superseded correction (2026-08-24).**  The GLD65 cross-Gram bridge
+> conflates the legal root companion with a distinct full matching
+> coefficient.  GLD65's three-colour exclusion and GLD66's dependent
+> two-colour/plane conclusions are withdrawn.  This historical plan must be
+> read with the
+> [owning interface correction](../../audits/FIXED_Q_PRODUCT_SELECTOR_ROOT_COMPANION_FULL_COEFFICIENT_INTERFACE_CORRECTION_REVIEW_2026-08-24.md)
+> and the live `docs/current-frontier.md`; its GLD65/66 rows are not live proof
+> edges.
+
 Date: 2026-08-20
 Programme branch: `codex/kg-maxroot-attachment-resume-20260822`
 Original determinant-tranche base: `b578d599931942b97300be9d936ae14103538806`
