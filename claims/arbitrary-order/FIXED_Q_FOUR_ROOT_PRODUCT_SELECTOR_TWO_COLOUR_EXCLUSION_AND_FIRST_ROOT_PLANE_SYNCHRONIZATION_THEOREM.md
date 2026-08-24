@@ -2,8 +2,22 @@
 
 ## Status
 
-**Exact characteristic-zero fixed-module exclusion and source-interface
-refinement.**  A surviving `GLS17` four-port first-root class supplies the
+**PARTIALLY WITHDRAWN (2026-08-24).**  Lemma 2 inherits the invalid `GLD65`
+cross-Gram identity, which transfers a legal root-companion nuisance equation
+to a distinct full matching coefficient.  Lemmas 3--4, Theorem 5, and
+Corollaries 5.1--5.2 consequently have no proved physical source and are
+withdrawn from live use.  The correction and exact graph-side counterexample
+to the parent conditional theorem are in
+[`FIXED_Q_PRODUCT_SELECTOR_ROOT_COMPANION_FULL_COEFFICIENT_SEPARATION_AND_THREE_COLOUR_COUNTEREXAMPLE.md`](FIXED_Q_PRODUCT_SELECTOR_ROOT_COMPANION_FULL_COEFFICIENT_SEPARATION_AND_THREE_COLOUR_COUNTEREXAMPLE.md).
+
+Lemma 1's response-anchor kernel statement survives independently.  The
+later dimension arguments remain valid only as abstract conditional linear
+algebra if their cross-pairing form is separately supplied; they no longer
+give a graph/source theorem.  Everything below that states the withdrawn
+exclusion or synchronized-plane consequences is retained as a historical
+audit trail.
+
+**Former claim (withdrawn).**  A surviving `GLS17` four-port first-root class supplies the
 product-form pure-`M` selector of `GLD65`.  The selector's additional foreign
 two-set equations imply that every root-to-port incidence vector lies in one
 common subspace `W` of dimension at most three.  The six direct port blocks
@@ -44,15 +58,18 @@ coupling come from
 - [`GLS17`](MAXIMAL_ROOT_SURPLUS_TWO_PARTIAL_ROOT_GRADE_SHADOW_AND_COMMON_PURE_M_SELECTOR_THEOREM.md), and
 - [`GLS18`](MAXIMAL_ROOT_SURPLUS_TWO_LEADING_SHADOW_TARGET_COUPLING_AND_FITTING_FAILURE_THEOREM.md).
 
-The product-selector construction and eight-vertex cross-Gram identity are
-the proved starting interface of
+The product-selector construction comes from
 
 - [`GLD65`](FIXED_Q_FOUR_ROOT_PRODUCT_SELECTOR_THREE_COLOUR_CAMOUFLAGE_EXCLUSION_THEOREM.md).
 
-No external literature claim is used.  The new content is the response-anchor
-bilinear form, the common dimension-at-most-three incidence space, the exact
-zero-edge/no-zero-edge cover for two active pure colours, and the synchronized
-first-root plane corollary.
+The eight-vertex cross-Gram identity was formerly claimed there but is now
+withdrawn; it is not a proved starting interface.
+
+No external literature claim is used.  The surviving new content is the
+response-anchor bilinear form and common dimension-at-most-three incidence
+space.  The exact zero-edge/no-zero-edge cover remains conditional algebra;
+the graph-side two-colour exclusion and synchronized first-root plane
+corollary are withdrawn.
 
 ## 1. Product-selector notation
 
@@ -66,20 +83,35 @@ Q={q_0,q_1},       U={1,2,3,4}.                       (1)
 
 Fix one `GLS17` first-root selector, contract the four root slots at its
 product vectors `rho_i`, and evaluate `Q` at the fixed fully supported
-residual point.  For every outside set `D subset B`, let `F_D` be the
-resulting companion matching coefficient.  If the desired coefficient
+residual point.  Let `G_D` be the resulting root companion, with no direct
+outside--outside edges, and let `F_D` be the distinct full matching
+coefficient after those edges are restored.  If the desired coefficient
 before normalization is `m`, legality and the complete labelled nuisance
-give
+give the correct companion table
 
 ```text
-F_empty=0,                 F_Q=m!=0,
-F_D=0 for every two-set D!=Q,
-F_(Q union {u,v})=0        for u!=v in U.             (2)
+G_empty=0,                 G_Q=m!=0,
+G_D=0 for every two-set D!=Q,
+G_(Q union {u,v})=0        for u!=v in U.             (2)
 ```
 
 The first equality is the selector's zero `Z` coefficient.  The second is
 its nonzero `M` coefficient.  Every other equality is a distinct coefficient
 slice of the complete joint nuisance; no selected subledger replaces it.
+For sets of size at most two, restoring a direct outside edge only adds a
+multiple of `G_empty=0`, so the same displayed values hold for `F_empty`,
+`F_Q`, and the two-set `F_D`.
+
+The former proof additionally used
+
+```text
+F_(Q union {u,v})=0        for u!=v in U.             (2w)
+```
+
+Equation (2w) is **not** selector legality: the correct full coefficient is
+`F_(Q union {u,v})=mB_uv`.  It is retained below only as the withdrawn
+conditional assumption behind the historical cross-pairing and dimension
+arguments.
 
 For roots `i!=j`, write
 
@@ -106,7 +138,7 @@ nondegeneracy is assumed.
 
 ### Lemma 1 (response-anchor common kernel)
 
-Under (2),
+Under the correct legal consequences (2),
 
 ```text
 H=0,
@@ -124,23 +156,23 @@ dim W<=3.                                             (7)
 
 #### Proof
 
-The coefficient on the empty outside set is the root hafnian, so (2) gives
-`H=0`.  A perfect matching on the four roots plus two outside vertices is
-either the outside edge times `H`, or attaches both outside vertices to
-distinct roots and pairs the remaining roots.  Hence
+The companion on the empty outside set is the root hafnian, so (2) gives
+`G_empty=F_empty=H=0`.  A perfect matching on the four roots plus two outside
+vertices is either the outside edge times `H`, or attaches both outside
+vertices to distinct roots and pairs the remaining roots.  Hence
 
 ```text
 F_Q=B_(q_0q_1)H+P(xi,eta)=P(xi,eta)=m.               (8)
 ```
 
-The identical expansion for `{q_0,u}` and `{q_1,u}`, together with their
-zero coefficients in (2), gives the two annihilations in (6).  Since
+The identical expansion for `{q_0,u}` and `{q_1,u}`, together with the derived
+full two-set zeros following (2), gives the two annihilations in (6).  Since
 `P(xi,eta)=m!=0`, both functionals `P(xi,-)` and `P(eta,-)` are nonzero.
 Their kernels may coincide, so only the universally valid bound
 `dim W<=3` is used.  This includes the proportional-functional fibre.
 `square`
 
-### Lemma 2 (common cross-pairing form)
+### Lemma 2 (withdrawn: common cross-pairing form)
 
 For distinct ports `u,v` and all colours `c,d`,
 
@@ -150,14 +182,16 @@ J(ell_u^c,ell_v^d)=-m B_uv(c,d).                     (9)
 
 #### Proof
 
-This is the denominator-free `GLD65` eight-vertex matching identity.  For
-completeness, split the 105 perfect matchings on the four roots and
+Conditionally assume the withdrawn equation (2w).  The historical
+denominator-free `GLD65` matching calculation then proceeds as follows.  Split
+the 105 perfect matchings on the four roots and
 `q_0,q_1,u,v` according to the number of outside--outside edges.  The nine
 two-edge terms contain `H=0`.  In the 72 one-edge terms, the complementary
 two-outside coefficient vanishes by (2), except for the edge `uv`, whose
 complement is `Q` and contributes `m B_uv(c,d)`.  The 24 zero-edge terms are
-exactly `J(ell_u^c,ell_v^d)`.  The zero coefficient on
-`Q union {u,v}` now gives (9).  `square`
+exactly `J(ell_u^c,ell_v^d)`.  The assumed full zero coefficient on
+`Q union {u,v}` now gives (9).  This is conditional algebra, not a legal-
+selector consequence.  `square`
 
 No step divides by `m`; normalization by the already nonzero selector
 coefficient is optional.
@@ -184,7 +218,7 @@ mixed `2+2` word is
 b_e^c b_f^d=0.                                       (12)
 ```
 
-### Lemma 3 (two-colour local dimension data)
+### Lemma 3 (conditional only: two-colour local dimension data)
 
 Suppose two distinct pure coefficients of `C(B)`, with colours `c,d`, are
 nonzero.  Put
@@ -218,7 +252,7 @@ and a nonzero second coordinate under the map in (14), while their other
 coordinate is zero by diagonality.  The map therefore has rank two.  Lemma 1
 gives `dim W<=3`, so rank-nullity gives `dim E_u^perp<=1`.  `square`
 
-### Lemma 4 (exhaustive edge-support split)
+### Lemma 4 (conditional only: exhaustive edge-support split)
 
 Under the assumptions of Lemma 3, either:
 
@@ -241,13 +275,15 @@ nonempty colour supports be `S_e,S_f`.  Equation (12) says every element of
 singleton.  This gives (15).  Each selected nonzero pure coefficient must
 have a live complementary product, so both `c,d` occur.  `square`
 
-### Theorem 5 (product-selector two-colour exclusion)
+### Theorem 5 (conditional salvage; product-selector source withdrawn)
 
 Assume:
 
 1. a legal product-form four-port pure-`M` selector satisfying (2);
-2. all six physical direct blocks `B_uv` are target-diagonal; and
-3. `M_U=C(B)` is target-pure.
+2. the additional full-coefficient zeros (2w), which the selector does not
+   supply;
+3. all six physical direct blocks `B_uv` are target-diagonal; and
+4. `M_U=C(B)` is target-pure.
 
 Then `M_U` has at most one nonzero pure coefficient.
 
@@ -288,7 +324,7 @@ in (15).
 
 ## 4. Complete-witness first-root consequences
 
-### Corollary 5.1 (monocolour response and synchronized planes)
+### Corollary 5.1 (withdrawn: monocolour response and synchronized planes)
 
 On a complete four-root maximum-root surplus-two hypothetical witness,
 assume all six pair base classes survive:
@@ -331,7 +367,7 @@ basis vectors, so it is exactly their plane.  The response `M_U` is one
 physical tensor shared by all four shadows, which synchronizes the missing
 colour.  `square`
 
-### Corollary 5.2 (sharp all-six-pair first-root profile)
+### Corollary 5.2 (withdrawn: sharp all-six-pair first-root profile)
 
 Under (16), exactly one of the following holds:
 
@@ -353,26 +389,26 @@ applies.  `square`
 ## 5. Exact boundary
 
 ```text
-product selector and complete cross-Gram identity:           PROVED (GLD65);
-response-anchor common space dim W<=3:                       PROVED;
-zero-edge and all no-zero-edge two-colour profiles:          EXCLUDED;
-product-selector pure response has at most one colour:       PROVED;
-all-pair-survival first-root shadow profile:                  PROVED;
+product selector and complete cross-Gram identity:           FALSE/WITHDRAWN;
+response-anchor common space dim W<=3:                       PROVED CONDITIONALLY;
+zero-edge and all no-zero-edge two-colour profiles:          NOT EXCLUDED;
+product-selector pure response has at most one colour:       WITHDRAWN;
+all-pair-survival first-root shadow profile:                  WITHDRAWN;
+exact legal-row diagonal three-colour graph-side control:     EXISTS;
 existence of any surviving pair/four-port source class:      OPEN;
-all-four-full-shadow profile:                                OPEN;
-nonzero monocolour synchronized-plane profile:               OPEN;
 arbitrary non-product, pure-Z, and oblique rows:              OPEN;
 promoted GLS8 and arbitrary-root source coverage:            OPEN;
+full-target / second-axis / coefficient-pure bridge:          OPEN;
 permanent restriction/extraction/gluing:                     NOT ENTERED;
 complete supply-and-target-attachment strategic node:        OPEN;
 global Krenn--Gu conjecture:                                 UNRESOLVED.      (19)
 ```
 
-The smallest remaining obligation on this branch is no longer a missing
-colour census.  It is to contradict the two exact profiles in Corollary 5.2
-using the complete mixed witness equations, or to derive a legal downstream
-row from one of them with every response, activity, synchronization,
-nuisance-survival, anchor, and exceptional-fibre gate intact.
+The two profiles formerly stated in Corollary 5.2 are not live reductions.
+The controlling boundary is the root-companion/full-coefficient separation
+theorem linked in the status.  A successor must couple the legal companion
+row to the direct response through a genuine full-target equation, a second
+independently legal axis, or another coefficient-pure bridge.
 
 ## Verification boundary
 

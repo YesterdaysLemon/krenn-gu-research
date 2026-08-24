@@ -1,9 +1,10 @@
-"""Primary exact replay for the GLD66 two-colour exclusion.
+"""Primary replay of the surviving finite GLD66 identities.
 
-The written proof is arbitrary-field linear algebra.  This focused replay
-checks the two matching identities, exhausts every diagonal edge-colour
-support mask, and audits the dimension contradictions on every surviving
-no-zero-edge profile.
+GLD66's graph-side exclusion was withdrawn on 2026-08-24 because it inherits
+GLD65's invalid root-companion/full-coefficient bridge.  This focused replay
+checks the response-anchor identity and conditional finite linear algebra; it
+does not prove that a legal product selector supplies the assumed cross-Gram
+form.
 """
 
 from __future__ import annotations
@@ -258,7 +259,7 @@ def main():
     response_terms, matching_counts = check_response_anchor_and_cross_gram_identities()
     valid, zero_edge, assignments = check_support_cover()
     third, proportional = check_dimension_certificates(assignments)
-    print("GLD66 primary exact replay: PASS")
+    print("GLD66 surviving finite-identity replay: PASS")
     print("  response-anchor root-only terms:", response_terms)
     print("  eight-vertex outside-edge strata:", matching_counts)
     print("  exact two-active-colour support masks:", valid)
@@ -266,7 +267,9 @@ def main():
     print("  no-zero-edge matching assignments:", len(assignments))
     print("  third-colour kernel certificates:", third)
     print("  proportional-kernel certificates:", proportional)
-    print("  scope: GLS17 product selector; at most one pure M colour survives")
+    print(
+        "  scope: conditional support/kernel identities; graph-side exclusion withdrawn"
+    )
     print("  global Krenn-Gu status: UNRESOLVED")
 
 

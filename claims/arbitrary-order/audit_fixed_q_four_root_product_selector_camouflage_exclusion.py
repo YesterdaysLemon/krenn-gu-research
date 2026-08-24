@@ -1,10 +1,11 @@
-"""Independent no-import audit for the GLD65 product-selector exclusion.
+"""Independent no-import audit of the surviving finite GLD65 identities.
 
 This audit intentionally does not import the primary replay.  It uses a
 recursive string-word matching polynomial, constructs the six support
 profiles from colour-to-matching assignments instead of scanning 2^18 masks,
 and checks the dimension obstruction through the kernel of a three-row
 pairing map rather than the primary five-vector elimination certificate.
+It does not supply the withdrawn root-companion/full-coefficient bridge.
 """
 
 from __future__ import annotations
@@ -229,11 +230,12 @@ def main() -> None:
     counts = check_direct_matching_identity()
     profiles = check_assignment_supports()
     kernels = check_kernel_dimension_obstruction()
-    print("GLD65 independent no-import audit: PASS")
+    print("GLD65 surviving finite-identity no-import audit: PASS")
     print("  independently generated matching strata:", counts)
     print("  maximal matching-colour support profiles:", profiles)
     print("  rank-three-map/kernel contradictions:", kernels)
     print("  no primary-verifier imports; no finite-field or numerical inference")
+    print("  withdrawn interface not tested: legal G_D row does not imply full F_D=0")
     print("  global Krenn-Gu status: UNRESOLVED")
 
 

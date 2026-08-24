@@ -210,6 +210,39 @@ state why no frontier update is needed.  The frontier is a maintained
 navigation and proof-topology map; it does not replace the owning theorem
 document, proof, verifier, audit, or formalization record.
 
+### Parent-theorem checkpoint
+
+Use the rule **"No third sibling theorem without a serious parent-theorem
+attempt."**  Here, sibling results are nearby case refinements owned by the
+same open parent obligation that neither close an exhaustive child cover nor
+prove a new reusable implication edge.  Renaming a lane, support profile, or
+PR does not restart the count.
+
+Before beginning or merging a third consecutive sibling, record a parent
+attempt that:
+
+- states the exact parent proposition, quantifiers, scope, upstream supply,
+  and intended downstream consumers;
+- synthesizes at least two existing sibling mechanisms rather than merely
+  restating their conclusions;
+- tests the proposed synthesis against the relevant sharp controls,
+  exceptional fibres, and known no-go theorems;
+- seeks either a proved parent implication, an exact countermodel/no-go, or a
+  precise obstruction that identifies a genuinely load-bearing next lemma;
+  and
+- records the proof-topology delta in `docs/current-frontier.md`, or explains
+  explicitly why the live frontier is unchanged.
+
+A later local theorem may proceed when that recorded attempt shows it is
+load-bearing for the declared parent route.  Integrity repairs, independent
+audits, exact-counterexample escalation, and execution of an already proved
+exhaustive finite cover are not sibling research for this rule.  The rule is
+a research-prioritization gate; it does not upgrade, downgrade, or withdraw
+the mathematical status of existing claims.
+
+The detailed proof-distance and PR reporting contract is in
+`docs/proof-obligation-architecture.md`.
+
 ## 8. Software and verifier mode
 
 Prefer reproducible, portable tooling.
