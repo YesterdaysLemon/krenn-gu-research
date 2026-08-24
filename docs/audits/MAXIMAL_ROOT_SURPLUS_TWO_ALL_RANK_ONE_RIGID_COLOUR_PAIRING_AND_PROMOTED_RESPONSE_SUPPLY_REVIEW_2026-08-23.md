@@ -162,10 +162,10 @@ The downstream receiver corrections are also exact.
 - `omega=W_(a_0,a_1)=0` is not the promoted residual scalar `H_Q(z_Q)`, so it
   is not an `h=0` `GLD15/GLD16` entry.
 - A six-vertex contradiction would require a legal contraction/splicing that
-  identifies the contracted six-mode tensor with one weighted `P_6`
-  restriction.  The original equation is already the physical eight-vertex
-  matching identity; its contracted first-variation presentation does not by
-  itself provide the six-mode reduction.
+  constructs an honest six-vertex matching graph.  The original equation is
+  already the physical eight-vertex matching identity; its contracted first-
+  variation presentation does not by itself provide that graph.  A weighted
+  permanent `P_6` restriction is a separate downstream interface.
 
 The local probe row realizing one rigid coordinate may vary with the label;
 no common contraction or projective synchronization is silently inferred.
@@ -208,11 +208,20 @@ The review rejects each of the following stronger readings.
 - `GLS57` closes the all-rigid branch, strategic node, or global conjecture.
 
 The smallest remaining obligation on this branch is to use the complete
-mixed/deck equations to force a legal splicing that identifies the contracted
-six-mode tensor with a weighted `P_6` restriction accepted by the committed
-six-vertex theorem, or to construct a different named receiver with all of
-its gates.  The old-probe `GLD3` route is closed, not merely unsynchronized.
-Higher joint ranks remain a separate all-rigid branch.
+mixed/deck equations to construct an honest six-vertex edge array, or to
+construct a different named receiver with all of its gates.  The old-probe
+`GLD3` route is closed, not merely unsynchronized.  Higher joint ranks remain
+a separate all-rigid branch.
+
+### Post-publication interface correction
+
+The accepted version of the preceding paragraph incorrectly said that a
+weighted `P_6` restriction would be accepted by the committed six-vertex
+theorem.  `GLS60` proves the pure-probe orientation, excludes the direct-
+companion and vertex-gauge graph splices, and audits the correction: `P_6` is
+the separate six-factor permanent tensor whose unrestricted restriction
+problem remains open.  This correction changes the successor routing, not
+the proofs of the five `GLS57` theorems.
 
 ## Required replay
 

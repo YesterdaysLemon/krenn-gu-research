@@ -416,15 +416,22 @@ The zero tensor `omega=W_(a_0,a_1)` is also not the promoted residual scalar
 `H_Q(z_Q)`.  Hence (1) is not an `h=0` entry to the distinct promoted-`Q`
 `GLD15/GLD16` operator interface.
 
-The direct finite endpoint is the accepted six-vertex theorem.  Equation (9)
-is already the eight-vertex matching identity on `A union Bhat`; the missing
+The direct finite endpoint is the accepted six-vertex theorem only after an
+honest six-vertex **matching graph** has been reconstructed.  Equation (9) is
+already the eight-vertex matching identity on `A union Bhat`; the missing
 step is not physicality of that original tensor.  After a common probe
 contraction, its six-label presentation is a matrix-valued first-variation
 sum of contracted pair companions times complementary four-decks, not
-automatically the matching tensor of a six-vertex graph.  A legal
-contraction/splicing that identifies a six-mode tensor with one weighted
-`P_6` restriction would enter the accepted theorem.  Rank-one colour pairing
-alone does not supply that reduction.
+automatically the matching tensor of a six-vertex graph.  A weighted `P_6`
+restriction is instead a six-factor permanent restriction and enters the
+separate open permanent subtree.  `GLS60` proves the pure-probe orientation
+and excludes both the direct-companion and vertex-gauge graph splices.
+
+**Post-publication interface correction.**  The accepted version of this
+paragraph incorrectly said that a weighted `P_6` restriction would enter the
+six-vertex theorem.  `GLS60` records and audits the hafnian/permanent type
+distinction.  No mathematical conclusion above depends on the corrected
+sentence.
 
 ## 5. Sharpness and no-go boundaries
 
@@ -471,12 +478,14 @@ strategic-node closure:                                   OPEN;
 global Krenn--Gu conjecture:                              UNRESOLVED.
 ```
 
-The smallest successor on this branch is to use the complete mixed/deck
-equations either to force a legal contraction/splicing that identifies the
-contracted six-mode tensor with a weighted `P_6` restriction accepted by the
-committed six-vertex theorem, or to construct a different named receiver with
-all of its selector, response, synchronization, nuisance-survival, activity,
-and anchor gates.  The old-probe `GLD3` route is closed by Theorem 5.
+After `GLS60`, the smallest successor on this branch is to use the complete
+mixed/deck equations either to construct an honest six-vertex edge array by a
+non-gauge transformation of the internal blocks and contracted companions,
+or to construct a different named receiver with all of its selector,
+response, synchronization, nuisance-survival, activity, and anchor gates.  A
+separately proved permanent `P_6` extraction would enter the open permanent
+subtree, not the six-vertex theorem.  The old-probe `GLD3` route is closed by
+Theorem 5.
 
 The higher-rank rigid maps and the unique-nonrigid low-activity star remain
 separate branches.
