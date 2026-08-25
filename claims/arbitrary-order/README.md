@@ -2602,6 +2602,33 @@ survivor locus, every non-star `GLD70` boundary, and the global conjecture
 remain open.
 
 The
+[`four-root torus-star Gaussian survivor contracted-edge control and first-transverse nonextension`](FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_CONTRACTED_EDGE_CONTROL_AND_FIRST_TRANSVERSE_NONEXTENSION_THEOREM.md)
+then changes the four open-port bases so that the exact survivor is the
+literal `Delta_4`, transforms one pinned `79`-coefficient preimage
+equivariantly, and realizes it by one ten-vertex contracted edge array.  All
+`945` perfect matchings replay the target exactly.  At each of the six
+contracted vertices the complete first-response map has full/mixed/diagonal
+intersection ranks `(17,16,1)`, so no completion of the unused edge-matrix
+rows over that preimage can be a ten-mode GHZ graph.  This is exact
+single-fibre grade-zero control and pointwise first-transverse nonextension,
+not exclusion of the full `35`-dimensional raw fibre, maximum-root
+certification, a graph witness, or global resolution.
+
+The parent successor
+[`four-root torus-star Gaussian survivor full coefficient-fibre first-response nonextension`](FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_FULL_COEFFICIENT_FIBRE_FIRST_RESPONSE_NONEXTENSION_THEOREM.md)
+then parametrizes that complete affine `35`-space and analyzes the full legal
+response at `q_0`.  Thirteen fixed mixed-response columns have rank `13`.
+After quotienting them, the four root cofactors give a `65 x 4` affine matrix
+with the exact relation `Z_0+Z_1+Z_2-Z_3=0`.  A three-dimensional GHZ response
+would force `[Z_0 Z_1 Z_2]` to have rank at most one.  Two exact sparse
+Nullstellensatz identities and one inconsistent affine coordinate system
+exclude the exhaustive three-chart projective cover.  Hence every raw
+preimage of the exact GLD72 tensor fails first response in this fixed
+ten-vertex effective model.  This closes the full-fibre target left by GLD73,
+not the whole survivor locus, all source presentations, maximum-root or
+fifth-root obligations, a graph witness, or global resolution.
+
+The
 [`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
 then closes the strongest response-map-zero residue at the level of support.
 If the complete realized mixed-response map is zero for all six pair targets
@@ -3295,6 +3322,11 @@ the
 [`four-root torus-star punctured-syndrome hostile review`](../../docs/audits/FOUR_ROOT_TORUS_STAR_PUNCTURED_SYNDROME_AND_EISENSTEIN_NORM_GATE_REVIEW_2026-08-24.md).
 The GLD72 exact fixed-star survivor and route refutation are covered by the
 [`four-root torus-star Gaussian GHZ survivor hostile review`](../../docs/audits/FOUR_ROOT_TORUS_STAR_GAUSSIAN_GHZ_SURVIVOR_AND_DETERMINANT_SAFE_ROUTE_REFUTATION_REVIEW_2026-08-24.md).
+The GLD73 contracted-edge control and first-transverse nonextension are covered
+by the
+[`four-root torus-star Gaussian survivor contracted-edge hostile review`](../../docs/audits/FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_CONTRACTED_EDGE_CONTROL_AND_FIRST_TRANSVERSE_NONEXTENSION_REVIEW_2026-08-24.md).
+The GLD74 full coefficient-fibre first-response nonextension is covered by the
+[`four-root torus-star Gaussian survivor full-fibre hostile review`](../../docs/audits/FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_FULL_COEFFICIENT_FIBRE_FIRST_RESPONSE_NONEXTENSION_REVIEW_2026-08-24.md).
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the
