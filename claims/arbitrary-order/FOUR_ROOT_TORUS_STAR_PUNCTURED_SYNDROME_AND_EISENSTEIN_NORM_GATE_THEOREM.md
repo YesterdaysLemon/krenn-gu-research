@@ -9,11 +9,13 @@ nuisance space.  It replaces the original `79` nuisance parameters by a
 derives exact root-slice and Eisenstein-norm gates, and exhibits a nonhidden
 two-word dependency that rules out an overstrong MDS-style route.
 
-It does **not** prove the determinant-safe three-word statement.  In
-particular, it does not prove that the fixed nuisance space misses the
-concise GHZ orbit.  The residual-coordinate boundary, triangle, lower-rank,
-source-integration, and other `GLD70` obligations also remain open.  The
-global Krenn--Gu conjecture remains **UNRESOLVED**.
+**Successor notice (2026-08-24).**  `GLD72` gives an exact Gaussian-rational
+three-word kernel with all four frame determinants nonzero.  It refutes the
+determinant-safe statement (8) and proves that the fixed nuisance space does
+meet the concise GHZ orbit.  Every theorem actually proved here remains
+valid.  Residual-coordinate boundary, triangle, lower-rank, source-integration,
+and other `GLD70` obligations remain open, and the global Krenn--Gu conjecture
+remains **UNRESOLVED**.
 
 The fixed space and coordinate conventions are those of the
 [`GLD70` complete-Q-layer theorem](FOUR_ROOT_COMPLETE_Q_LAYER_SECANT_BOUNDARY_TRAP_AND_TORUS_STAR_COMPRESSION_THEOREM.md).
@@ -100,8 +102,8 @@ sum_(s=0)^2 a_s tensor b_s tensor c_s tensor d_s in N_star
        iff M(B,C,D) vec(A)=0.                              (7)
 ```
 
-Consequently the unresolved fixed-star exclusion is the following exact
-determinant-safety statement:
+At the time of `GLD71`, the unresolved fixed-star exclusion was represented by
+the following exact determinant-safety statement:
 
 ```text
 det B det C det D !=0 and M(B,C,D) vec(A)=0
@@ -114,6 +116,9 @@ desired calculation is
 ```text
 1 in I_syn : (det A det B det C det D)^infinity.           (9)
 ```
+
+`GLD72` subsequently provides an exact point on the localized variety, so
+(8)--(9) are now refuted rather than open.
 
 Equations (8)--(9) are reformulations, not conclusions of this theorem.
 
@@ -302,8 +307,10 @@ epsilon=0,                 balanced ranks=(2,2,2).          (22)
 
 Thus the fixed nuisance space genuinely meets the nonhidden second secant.
 This does not threaten (8), because the centre frame in (20) is singular.
-It instead identifies the correct universal target: syndrome dependencies
-must be shown **determinant-safe**, not absent.
+At publication this motivated determinant-safe reasoning rather than absence.
+The exact three-word survivor in `GLD72` shows that the stronger inference is
+also false; the two-word counterexample and every assertion proved above are
+unchanged.
 
 ## 7. Verification
 
@@ -341,6 +348,9 @@ independent GLD71 punctured-syndrome audit: PASS
   global Krenn-Gu conjecture: UNRESOLVED
 ```
 
+In these historical verifier summaries, `proved: false` records that `GLD71`
+did not prove the statement.  `GLD72` supplies the later exact refutation.
+
 The exact Singular atlas was replayed under WSL with Singular 4.3.2.  It is a
 second computer-algebra implementation of Theorem 3.2, not a proof of (8).
 Regenerate it, when Singular 4.x is available directly or through WSL, with:
@@ -361,10 +371,10 @@ Relative to `GLD70`:
 - six root-slice gates and three `A_2` norm products expose low-degree
   structure suitable for a parent theorem;
 - a genuine nonhidden second-secant point refutes pairwise-MDS
-  strengthening and forces determinant-safe reasoning;
-- the next load-bearing obligation is still (8) or (9), preferably attacked
-  through the coupled root gates and the equal-norm divisors rather than by a
-  third local sibling theorem.
+  strengthening and historically motivated determinant-safe reasoning;
+- `GLD72` subsequently refutes (8)--(9), so the live successor obligation is
+  source/graph integrability of the GHZ-survivor locus, not another local
+  syndrome theorem.
 
 No graph status, source coverage, residual-boundary coverage, or global
 status is changed by this package.

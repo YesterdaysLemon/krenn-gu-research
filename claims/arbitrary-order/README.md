@@ -2587,9 +2587,19 @@ rank exactly three in characteristic zero, certified by a complete `36`-chart
 atlas and an independent `108`-chart Singular replay.  Six root-slice checks
 and three balanced binary determinants expose an Eisenstein `A_2` norm gate.
 A nonhidden exact second-secant point shows that pairwise syndrome independence
-is false, so the live parent target is determinant safety of every three-word
-kernel, not an MDS bound.  That determinant-safe statement, the fixed-star GHZ
-exclusion, and every other `GLD70` boundary remain open.
+is false.  This historically isolated determinant safety of every three-word
+kernel as the next fixed-space target rather than an MDS bound.
+
+The
+[`four-root torus-star Gaussian GHZ survivor and determinant-safe route refutation`](FOUR_ROOT_TORUS_STAR_GAUSSIAN_GHZ_SURVIVOR_AND_DETERMINANT_SAFE_ROUTE_REFUTATION_THEOREM.md)
+then gives exact Gaussian-rational frames with nonzero determinants whose
+three-word tensor lies in the original rank-`44` nuisance space, has all four
+local and all three balanced ranks equal to three, and has
+`epsilon=144-144i`.  This refutes both the fixed-star GHZ exclusion and the
+determinant-safe syndrome route.  It does not provide legal graph/source data
+or the three-cell weighted target diagonal.  Source integrability of the
+survivor locus, every non-star `GLD70` boundary, and the global conjecture
+remain open.
 
 The
 [`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
@@ -3283,6 +3293,8 @@ covered by the
 The GLD71 punctured-syndrome and Eisenstein-norm parent theorem is covered by
 the
 [`four-root torus-star punctured-syndrome hostile review`](../../docs/audits/FOUR_ROOT_TORUS_STAR_PUNCTURED_SYNDROME_AND_EISENSTEIN_NORM_GATE_REVIEW_2026-08-24.md).
+The GLD72 exact fixed-star survivor and route refutation are covered by the
+[`four-root torus-star Gaussian GHZ survivor hostile review`](../../docs/audits/FOUR_ROOT_TORUS_STAR_GAUSSIAN_GHZ_SURVIVOR_AND_DETERMINANT_SAFE_ROUTE_REFUTATION_REVIEW_2026-08-24.md).
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the
