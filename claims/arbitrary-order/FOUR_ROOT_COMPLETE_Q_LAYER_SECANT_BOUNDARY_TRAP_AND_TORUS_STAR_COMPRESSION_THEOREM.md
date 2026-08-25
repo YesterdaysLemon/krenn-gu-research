@@ -7,6 +7,14 @@ root-torus star compression.**  This is the first successor to `GLD69` that
 keeps all nine labels meeting `Q` in one object.  It does not exclude that
 object from the target.
 
+**Successor notice (2026-08-24).**  `GLD72` gives an exact Gaussian-rational
+concise GHZ tensor in the fixed space `N_star`.  It therefore refutes the
+fixed-space question (3), the restricted saturation target, and the stronger
+balanced-minor shortcut.  The complete `79`-column construction, rank-`44`
+compression, epsilon open-orbit theorem, and one-way graph-level reduction
+below remain valid.  The survivor has not been lifted to legal shared graph
+and source data, so it is not a counterexample to the global conjecture.
+
 The complete contracted nuisance space is the image of one explicit
 `79`-column map.  A degree-three epsilon contraction cuts the honest concise
 three-colour GHZ orbit out of the third Segre secant: over `C`,
@@ -42,7 +50,8 @@ N_star intersect GHZ_3 = empty ?                         (3)
 ```
 
 Equivalently, the restricted third-secant ideal must force `epsilon=0`.
-This radical-membership calculation has not been completed.  The
+This was the radical-membership question left open by `GLD70`; `GLD72`
+subsequently refutes it by an exact point of `N_star intersect GHZ_3`.  The
 projection-full triangle gives a different `35`-dimensional nuisance space
 with a `16`-dimensional quotient beyond the pair layer; it has not been
 compressed to (3).  Scalar-zero stars, residual coordinate boundaries,
@@ -448,22 +457,20 @@ For the torus star, `d_2` already lies in the nuisance space while `d_0` and
 `d_1` add two directions.  These are exact coordinate controls, not a
 basis-independent GHZ-orbit decision.
 
-## 7. Best next proof-producing targets
+## 7. Successor status and next proof-producing targets
 
-The smallest high-leverage successor is no longer another star or triangle
-incidence lemma.  It is one of the following two certificates for the fixed
-space `N_star=N_star(1)`:
+`GLD72` supplies exactly the tensor anticipated at the end of the original
+search prescription: it lies in `N_star`, has all three balanced ranks equal
+to three, has nonzero epsilon, and is explicitly a three-term GHZ
+decomposition.  Hence both proposed fixed-space certificates above are false;
+neither should remain a live proof route.
 
-1. prove (19), equivalently show that the ideal of all balanced `4 x 4`
-   minors on `N_star` forces `epsilon=0`; or
-2. if that stronger claim fails, use the complete restricted Qi ideal and
-   certify `epsilon^m in I_N` as in (18).
-
-The first route is cheaper and should be tested first, but a failed search or
-a finite-field sample is not a proof.  An exact tensor in `N_star` with all
-balanced ranks at most three and `epsilon!=0` would refute route 1 and must be
-tested against the Strassen equations before it is called a third-secant
-survivor.
+The smallest high-leverage successor is now the nonlinear source-integrability
+problem.  One must compare the GHZ-survivor locus in `N_star` with the image of
+coefficients coming from one legal graph, shared decks, responses, and source
+attachments.  The exact `GLD72` point is the first hostile control: a proposed
+bridge based only on contracted membership in `N_star` is necessarily too
+weak.
 
 In parallel, the root-coordinate boundary of Theorem 4.1 and the general
 triangle centre require their own finite canonical atlases.  They should feed
