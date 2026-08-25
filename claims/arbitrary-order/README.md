@@ -2579,6 +2579,19 @@ general triangles, lower port ranks, smaller survivor families, and source
 integration remain separate.
 
 The
+[`four-root torus-star punctured syndrome and Eisenstein-norm gate`](FOUR_ROOT_TORUS_STAR_PUNCTURED_SYNDROME_AND_EISENSTEIN_NORM_GATE_THEOREM.md)
+then removes the fixed star's exact `21`-dimensional pair erasure and realizes
+the `23`-dimensional quotient inside a `60`-coordinate punctured tensor space
+with `37` parity checks.  Every non-erased decomposable leaf word has syndrome
+rank exactly three in characteristic zero, certified by a complete `36`-chart
+atlas and an independent `108`-chart Singular replay.  Six root-slice checks
+and three balanced binary determinants expose an Eisenstein `A_2` norm gate.
+A nonhidden exact second-secant point shows that pairwise syndrome independence
+is false, so the live parent target is determinant safety of every three-word
+kernel, not an MDS bound.  That determinant-safe statement, the fixed-star GHZ
+exclusion, and every other `GLD70` boundary remain open.
+
+The
 [`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
 then closes the strongest response-map-zero residue at the level of support.
 If the complete realized mixed-response map is zero for all six pair targets
@@ -3267,6 +3280,9 @@ The GLD69 maximal-survivor parent reduction is covered by the
 The GLD70 complete-Q-layer secant reduction and torus-star compression are
 covered by the
 [`four-root complete-Q-layer secant hostile review`](../../docs/audits/FOUR_ROOT_COMPLETE_Q_LAYER_SECANT_BOUNDARY_TRAP_AND_TORUS_STAR_COMPRESSION_REVIEW_2026-08-24.md).
+The GLD71 punctured-syndrome and Eisenstein-norm parent theorem is covered by
+the
+[`four-root torus-star punctured-syndrome hostile review`](../../docs/audits/FOUR_ROOT_TORUS_STAR_PUNCTURED_SYNDROME_AND_EISENSTEIN_NORM_GATE_REVIEW_2026-08-24.md).
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the
