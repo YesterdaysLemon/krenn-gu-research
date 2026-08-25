@@ -21,6 +21,14 @@ decks, responses, and source attachments.  The tensor below is not the
 three-cell weighted coordinate diagonal.  Graph/source integrability remains
 open, and the global conjecture remains **UNRESOLVED**.
 
+**Successor notice (2026-08-24).**  `GLD73` pulls this point back to the
+literal diagonal, realizes one pinned raw preimage by exact ten-vertex
+contracted-edge data, and proves pointwise first-transverse nonextension.
+`GLD74` then excludes every point of the full `35`-dimensional raw-coefficient
+fibre at the complete `q_0` first response in that fixed effective model.
+The rest of the fixed-star survivor locus, other source presentations,
+maximum-root certification, and global graph/source integrability remain open.
+
 The fixed space is the one constructed in the
 [`GLD70` complete-Q-layer theorem](FOUR_ROOT_COMPLETE_Q_LAYER_SECANT_BOUNDARY_TRAP_AND_TORUS_STAR_COMPRESSION_THEOREM.md),
 and the syndrome conventions are those of the
