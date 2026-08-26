@@ -25,6 +25,13 @@ It does not exclude the rest of the fixed-star GHZ-survivor locus, certify
 maximum root order four, exclude a fifth root, produce a graph witness, or
 resolve Krenn--Gu.  The global conjecture remains **UNRESOLVED**.
 
+**Successor notice (2026-08-26).**  `GLD75` proves that the survivor germ at
+this tensor is smooth of dimension five while the fixed-interface symmetry
+orbit has dimension one.  Thus four transverse survivor parameters remain;
+the present full-fibre certificate does not transport by symmetry, and the
+next local parent obligation is a parametric response incidence over those
+directions.
+
 The predecessor is the
 [`GLD73` contracted-edge theorem](FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_CONTRACTED_EDGE_CONTROL_AND_FIRST_TRANSVERSE_NONEXTENSION_THEOREM.md).
 

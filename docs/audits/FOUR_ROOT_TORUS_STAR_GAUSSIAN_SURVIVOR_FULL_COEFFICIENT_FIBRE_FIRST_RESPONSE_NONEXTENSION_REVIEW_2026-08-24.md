@@ -18,6 +18,12 @@ source presentation, exclude the whole fixed-star GHZ-survivor locus, certify
 maximum root order or fifth-root absence, produce a graph witness, or resolve
 Krenn--Gu.  The global conjecture remains **UNRESOLVED**.
 
+**Successor update (2026-08-26).**  `GLD75` exactly rules out symmetry
+compression near the Gaussian point: its survivor germ is smooth of
+dimension five, whereas the fixed-interface orbit is the one-dimensional
+scaling line.  This leaves four transverse parameters for the still-open
+parametric response incidence and does not change the accepted scope below.
+
 Reviewed artifacts:
 
 - [`FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_FULL_COEFFICIENT_FIBRE_FIRST_RESPONSE_NONEXTENSION_THEOREM.md`](../../claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_FULL_COEFFICIENT_FIBRE_FIRST_RESPONSE_NONEXTENSION_THEOREM.md);
