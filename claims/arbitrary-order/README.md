@@ -2628,6 +2628,21 @@ ten-vertex effective model.  This closes the full-fibre target left by GLD73,
 not the whole survivor locus, all source presentations, maximum-root or
 fifth-root obligations, a graph witness, or global resolution.
 
+The parent-level
+[`four-root torus-star survivor-locus symmetry and local-germ reduction`](FOUR_ROOT_TORUS_STAR_SURVIVOR_LOCUS_SYMMETRY_AND_LOCAL_GERM_REDUCTION_THEOREM.md)
+then tests whether interface symmetry can transport that full-fibre
+certificate.  Exact stabilizer linearization shows that the identity
+component preserving the complete rank-`44` nuisance space consists only of
+four factor scalars and has a one-dimensional tensor orbit at GLD72.  The
+survivor tangent is five-dimensional.  A bidirectional `Q(i)` ideal
+certificate integrates those directions: on an explicit frame gauge, the
+full survivor germ is smooth of dimension five and equals its equal-leaf
+subgerm.  Thus four genuine survivor parameters remain after tensor scaling.
+This rules out symmetry compression and supplies a minimal local parent
+reduction; it does not lift the GLD74 response certificate off its basepoint,
+cover every survivor component or source presentation, or resolve the global
+conjecture.
+
 The
 [`fixed-Q response-map-zero support classification`](FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md)
 then closes the strongest response-map-zero residue at the level of support.
@@ -3327,6 +3342,8 @@ by the
 [`four-root torus-star Gaussian survivor contracted-edge hostile review`](../../docs/audits/FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_CONTRACTED_EDGE_CONTROL_AND_FIRST_TRANSVERSE_NONEXTENSION_REVIEW_2026-08-24.md).
 The GLD74 full coefficient-fibre first-response nonextension is covered by the
 [`four-root torus-star Gaussian survivor full-fibre hostile review`](../../docs/audits/FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_FULL_COEFFICIENT_FIBRE_FIRST_RESPONSE_NONEXTENSION_REVIEW_2026-08-24.md).
+The GLD75 survivor symmetry and local-germ reduction is covered by the
+[`four-root torus-star survivor-locus local-germ hostile review`](../../docs/audits/FOUR_ROOT_TORUS_STAR_SURVIVOR_LOCUS_SYMMETRY_AND_LOCAL_GERM_REDUCTION_REVIEW_2026-08-26.md).
 The GLD19 response-map-zero support refinement is covered by the
 [`fixed-Q response-map-zero support hostile review`](../../docs/audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md).
 The GLD20 global common-shore refinement is covered by the

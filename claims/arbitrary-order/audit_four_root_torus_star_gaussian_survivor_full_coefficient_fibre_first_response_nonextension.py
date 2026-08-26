@@ -49,6 +49,33 @@ def gi(real: int | Fraction, imaginary: int | Fraction = 0) -> Gaussian:
     return Q(real), Q(imaginary)
 
 
+PROJECTIVE_ESCAPE_WITNESSES = (
+    (
+        -1,
+        1,
+        {13: gi(-1), 15: gi(1), 22: gi(1), 24: gi(-1), 31: gi(-1), 33: gi(1)},
+    ),
+    (
+        1,
+        -1,
+        {
+            9: gi(0, -1),
+            10: gi(-1),
+            11: gi(0, 1),
+            14: gi(1),
+            18: gi(0, 1),
+            19: gi(1),
+            20: gi(0, -1),
+            23: gi(-1),
+            27: gi(0, -1),
+            28: gi(-1),
+            29: gi(0, 1),
+            32: gi(1),
+        },
+    ),
+)
+
+
 def gadd(left: Gaussian, right: Gaussian) -> Gaussian:
     return left[0] + right[0], left[1] + right[1]
 
@@ -847,6 +874,74 @@ def check() -> dict[str, object]:
         ]
         for row in range(65)
     ]
+
+    escape_profiles = []
+    for a, b, sparse_vector in PROJECTIVE_ESCAPE_WITNESSES:
+        vector = [ZERO] * 35
+        for index, value in sparse_vector.items():
+            vector[index] = value
+        raw_direction = [
+            gsum(gmul(kernels[index][row], vector[index]) for index in range(35))
+            for row in range(79)
+        ]
+        assert raw_direction != [ZERO] * 79
+        assert (
+            matrix_vector(matrix_from_columns(transformed_columns), raw_direction)
+            == [ZERO] * 81
+        )
+
+        linear_columns = []
+        for column in range(3):
+            linear_columns.append(
+                [
+                    gsum(
+                        gmul(
+                            coefficient_rows[row][column][34 - index],
+                            vector[index],
+                        )
+                        for index in range(35)
+                    )
+                    for row in range(65)
+                ]
+            )
+        z0, z1, z2 = linear_columns
+        assert z0 != [ZERO] * 65
+        assert z1 == [gmul(gi(a), value) for value in z0]
+        assert z2 == [gmul(gi(b), value) for value in z0]
+        assert rank(
+            [[z0[row], z1[row], z2[row]] for row in range(65)]
+        ) == 1
+
+        proportionality_rows = []
+        for row in range(65):
+            proportionality_rows.append(
+                [
+                    gsub(
+                        gmul(gi(a), coefficient_rows[row][0][34 - index]),
+                        coefficient_rows[row][1][34 - index],
+                    )
+                    for index in range(35)
+                ]
+            )
+        for row in range(65):
+            proportionality_rows.append(
+                [
+                    gsub(
+                        gmul(gi(b), coefficient_rows[row][0][34 - index]),
+                        coefficient_rows[row][2][34 - index],
+                    )
+                    for index in range(35)
+                ]
+            )
+        assert rank(proportionality_rows) == 34
+        escape_profiles.append(
+            {
+                "column_ratios": [1, a, b],
+                "support_size": len(sparse_vector),
+                "proportionality_rank_nullity": [34, 1],
+            }
+        )
+
     certificate_bytes, term_counts = replay_certificates(coefficient_rows)
     point_rows = [
         coefficient_rows[row][column] for row in range(65) for column in (0, 1)
@@ -868,6 +963,8 @@ def check() -> dict[str, object]:
         "affine_fibre_dimension": 35,
         "q0_constant_full_mixed_ranks": [13, 13],
         "q0_quotient_matrix_shape": [65, 3],
+        "projective_raw_fibre_escape_profiles": escape_profiles,
+        "projective_escape_is_not_affine_response_lift": True,
         "reverse_variable_order": list(REVERSED_VARIABLES),
         "rank_at_most_one_projective_cover": [
             "z0_nonzero",
