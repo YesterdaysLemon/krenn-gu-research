@@ -97,6 +97,66 @@ def fixed_quotient(constant: sp.Matrix):
     return pivot_rows, quotient_rows, project
 
 
+def tensor_intertwiner(frames: tuple[sp.Matrix, ...], words) -> sp.Matrix:
+    """Return the tensor-coordinate change induced by ``F_u^(-1)``."""
+
+    return sp.Matrix(
+        [
+            [
+                sp.prod(
+                    frames[mode].inv()[output[mode], source[mode]]
+                    for mode in range(4)
+                )
+                for source in words
+            ]
+            for output in words
+        ]
+    )
+
+
+def raw_intertwiner(frames: tuple[sp.Matrix, ...]) -> sp.Matrix:
+    """Change raw coefficient coordinates under the four local frames.
+
+    If ``B`` is the canonical fixed-interface map and ``B_F`` is the map
+    rebuilt from ``P_u F_u^(-T)``, this matrix is oriented so that
+    ``U_F B = B_F S_F``.  Residual labels transform by one inverse frame and
+    pair labels by the corresponding Kronecker product.
+    """
+
+    change = sp.zeros(79, 79)
+    change[0, 0] = 1
+    for residual in range(2):
+        for mode in range(4):
+            inverse = frames[mode].inv()
+            for old_colour in range(3):
+                old_index = 1 + residual * 12 + mode * 3 + old_colour
+                for new_colour in range(3):
+                    new_index = 1 + residual * 12 + mode * 3 + new_colour
+                    change[new_index, old_index] = inverse[new_colour, old_colour]
+    for pair_index, (left_mode, right_mode) in enumerate(combinations(range(4), 2)):
+        for old_left, old_right in product(range(3), repeat=2):
+            old_index = 25 + pair_index * 9 + 3 * old_left + old_right
+            for new_left, new_right in product(range(3), repeat=2):
+                new_index = 25 + pair_index * 9 + 3 * new_left + new_right
+                change[new_index, old_index] = (
+                    frames[left_mode].inv()[new_left, old_left]
+                    * frames[right_mode].inv()[new_right, old_right]
+                )
+    return change
+
+
+def transformed_ports(ports, frames: tuple[sp.Matrix, ...]):
+    """Build the literal-Delta port presentation used by GLD74."""
+
+    output = []
+    for port, frame in zip(ports, frames, strict=True):
+        port_matrix = sp.Matrix.hstack(*(sp.Matrix(column) for column in port))
+        transformed = port_matrix * frame.inv().T
+        assert transformed.rank() == 3
+        output.append([list(transformed[:, column]) for column in range(3)])
+    return output
+
+
 def check():
     gld75 = load(GLD75, "gld75_local_germ")
     gld74 = load(GLD74, "gld74_full_fibre")
@@ -211,6 +271,78 @@ def check():
         *(matrix[:, 0].subs(origin) for matrix in projected_root_affine)
     ).shape == (68, 4)
 
+    # The Gaussian specialization must be connected to GLD74 by the actual
+    # local-coordinate changes, rather than by replaying GLD74's fingerprint
+    # in isolation.  U_F acts on tensor coordinates by F_u^(-1), while S_F
+    # changes the residual/pair raw labels by the induced inverse frames.
+    gaussian_frames = (centre0, leaf0, leaf0, leaf0)
+    tensor_change = tensor_intertwiner(gaussian_frames, parent.LOCAL_INDICES)
+    raw_change = raw_intertwiner(gaussian_frames)
+    gaussian_ports = transformed_ports(ports, gaussian_frames)
+    transformed_columns = list(
+        chain.from_iterable(parent.full_q_layer_columns(xi, eta, gaussian_ports))
+    )
+    transformed_map = sp.Matrix.hstack(
+        *(sp.Matrix(column) for column in transformed_columns)
+    )
+    assert raw_change.det() != 0
+    assert all(
+        sp.simplify(value) == 0
+        for value in tensor_change * nuisance - transformed_map * raw_change
+    )
+
+    transformed_response_maps = q0_response_maps(
+        gld73, eta, gaussian_ports, parent.LOCAL_INDICES
+    )
+    assert all(
+        all(
+            sp.simplify(value) == 0
+            for value in tensor_change * response
+            - transformed_response * raw_change
+        )
+        for response, transformed_response in zip(
+            response_maps, transformed_response_maps, strict=True
+        )
+    )
+    transformed_constant = sp.Matrix.hstack(
+        sp.Matrix(transformed_columns[0]),
+        *(sp.Matrix(column) for column in transformed_columns[13:25]),
+    )
+    constant_indices = (0, *range(13, 25))
+    constant_change = raw_change.extract(constant_indices, constant_indices)
+    assert all(
+        sp.simplify(value) == 0
+        for value in tensor_change * constant - transformed_constant * constant_change
+    )
+    gaussian_target = sp.Matrix(
+        [
+            sp.Integer(word[0] == word[1] == word[2] == word[3])
+            for word in parent.LOCAL_INDICES
+        ]
+    )
+    assert all(
+        sp.simplify(value) == 0
+        for value in tensor_change * target.subs(origin) - gaussian_target
+    )
+    gaussian_response_target = response_target.subs(origin)
+    diagonal_response = sp.Matrix.hstack(
+        *(
+            sp.Matrix(
+                [
+                    sp.Integer(
+                        word[0] == word[1] == word[2] == word[3] == colour
+                    )
+                    for word in parent.LOCAL_INDICES
+                ]
+            )
+            for colour in range(3)
+        )
+    )
+    assert all(
+        sp.simplify(value) == 0
+        for value in tensor_change * gaussian_response_target - diagonal_response
+    )
+
     gld74_data = gld74.quotient_forms()
     assert gld74.coefficient_fingerprint(gld74_data["coefficient_rows"]) == (
         "17c10d8e04a4e29b073914919beb0a99ff77735be12cc16f095e07ef7549452e"
@@ -261,6 +393,10 @@ def check():
         "gld74_specialization_quotient_fingerprint": (
             "17c10d8e04a4e29b073914919beb0a99ff77735be12cc16f095e07ef7549452e"
         ),
+        "gld74_gaussian_intertwining_verified": True,
+        "gaussian_tensor_intertwiner_shape": [81, 81],
+        "gaussian_raw_intertwiner_shape": [79, 79],
+        "gaussian_full_response_intertwining_verified": True,
         "rank_drop_fibres_retained": True,
         "universal_incidence_empty": False,
     }

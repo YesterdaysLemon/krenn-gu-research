@@ -122,6 +122,58 @@ def character_decomposition(identity: int, transposition: int, three_cycle: int)
     }
 
 
+def full_q0_response_maps(gld73, eta, ports, words):
+    """Build the complete 81-coordinate q0 root-response maps.
+
+    The mixed restriction is useful for the GLD74 quotient, but GLD76's
+    universal module is formed before that restriction.  Keep this
+    reconstruction local so the covariance assertion below covers the same
+    full response maps used by the universal-module verifier.
+    """
+
+    matchings = tuple(gld73.perfect_matchings(tuple(range(10))))
+    pair_offset = {pair: index for index, pair in enumerate(combinations(range(4), 2))}
+    response_maps = []
+    for root in range(4):
+        varied_edge = (root, 4)
+        root_matchings = tuple(
+            matching for matching in matchings if varied_edge in matching
+        )
+        rows = []
+        for word in words:
+            row = [sp.Integer(0)] * 79
+            for matching in root_matchings:
+                complement = tuple(edge for edge in matching if edge != varied_edge)
+                if any(right < 4 for _left, right in complement):
+                    continue
+                raw_edges = [edge for edge in complement if edge[0] >= 5]
+                assert len(raw_edges) == 1
+                left, right = raw_edges[0]
+                if left == 5:
+                    port = right - 6
+                    raw_index = 1 + 3 * port + word[port]
+                else:
+                    left_port = left - 6
+                    right_port = right - 6
+                    raw_index = (
+                        25
+                        + 9 * pair_offset[(left_port, right_port)]
+                        + 3 * word[left_port]
+                        + word[right_port]
+                    )
+                fixed_weight = sp.prod(
+                    eta[left_root]
+                    if right_vertex == 5
+                    else ports[right_vertex - 6][word[right_vertex - 6]][left_root]
+                    for left_root, right_vertex in complement
+                    if left_root < 4
+                )
+                row[raw_index] += fixed_weight
+            rows.append(row)
+        response_maps.append(sp.Matrix(rows))
+    return response_maps
+
+
 def check():
     gld75 = load_gld75()
     gld74 = load_gld74()
@@ -144,6 +196,13 @@ def check():
         row for row, word in enumerate(parent.LOCAL_INDICES) if len(set(word)) != 1
     )
     response_maps = gld74.q0_response_context(gld73, eta, ports)
+    complete_response_maps = full_q0_response_maps(
+        gld73, eta, ports, parent.LOCAL_INDICES
+    )
+    constant = sp.Matrix.hstack(
+        *(sp.Matrix(column) for column in [columns[0], *columns[13:25]])
+    )
+    assert constant.shape == (81, 13) and constant.rank() == 13
     constant_mixed = sp.Matrix(
         [[column[row] for column in [columns[0], *columns[13:25]]] for row in mixed_rows]
     )
@@ -167,6 +226,11 @@ def check():
         assert nuisance * raw_action == tensor_action * nuisance
 
         mixed_action = tensor_action[list(mixed_rows), list(mixed_rows)]
+        assert all(
+            complete_response * raw_action == tensor_action * complete_response
+            for complete_response in complete_response_maps
+        )
+        assert constant.row_join(tensor_action * constant).rank() == 13
         assert all(
             response_map * raw_action == mixed_action * response_map
             for response_map in response_maps
@@ -247,6 +311,8 @@ def check():
         "constant_response_character": list(constant_character),
         "gld74_quotient": quotient_decomposition,
         "complete_q0_response_covariance_verified": True,
+        "complete_q0_response_shape": [81, 79],
+        "complete_q0_fixed_block_covariance_verified": True,
         "s3_invariant_raw_preimage_exists": True,
         "s3_invariant_raw_fibre_dimension": kernel_decomposition[
             "multiplicities_trivial_sign_standard"
