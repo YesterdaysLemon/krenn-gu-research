@@ -4,9 +4,9 @@
 This checker deliberately uses only the standard library.  It rebuilds the
 literal-Delta 81-by-79 permanent map, solves its 35-dimensional Gaussian
 fibre, derives the q0 response quotient by a reversed fibre-variable order,
-and replays the two sparse Q(i) unit certificates with custom polynomial
-arithmetic.  It does not import the primary verifier or any repository
-module.
+replays the sparse Q(i) unit certificates with custom polynomial arithmetic,
+and independently checks the three-point rank-one locus on the raw sign
+plane.  It does not import the primary verifier or any repository module.
 """
 
 from __future__ import annotations
@@ -73,6 +73,51 @@ PROJECTIVE_ESCAPE_WITNESSES = (
             32: gi(1),
         },
     ),
+    (
+        -1,
+        -1,
+        {
+            9: gi(1),
+            10: gi(-1),
+            11: gi(-1),
+            14: gi(1),
+            18: gi(-1),
+            19: gi(1),
+            20: gi(1),
+            23: gi(-1),
+            27: gi(1),
+            28: gi(-1),
+            29: gi(-1),
+            32: gi(1),
+        },
+    ),
+)
+
+SIGN_FIBRE_BASIS = (
+    {
+        9: gi(Q(1, 6)),
+        11: gi(Q(-1, 6)),
+        18: gi(Q(-1, 6)),
+        20: gi(Q(1, 6)),
+        27: gi(Q(1, 6)),
+        29: gi(Q(-1, 6)),
+    },
+    {
+        10: gi(Q(1, 6)),
+        14: gi(Q(-1, 6)),
+        19: gi(Q(-1, 6)),
+        23: gi(Q(1, 6)),
+        28: gi(Q(1, 6)),
+        32: gi(Q(-1, 6)),
+    },
+    {
+        13: gi(Q(1, 6)),
+        15: gi(Q(-1, 6)),
+        22: gi(Q(-1, 6)),
+        24: gi(Q(1, 6)),
+        31: gi(Q(1, 6)),
+        33: gi(Q(-1, 6)),
+    },
 )
 
 
@@ -116,6 +161,56 @@ def gprod(values) -> Gaussian:
     for value in values:
         result = gmul(result, value)
     return result
+
+
+def raw_descriptors():
+    descriptors = [("q",)]
+    descriptors.extend(
+        ("residual", residual, mode, colour)
+        for residual in range(2)
+        for mode in range(4)
+        for colour in range(3)
+    )
+    descriptors.extend(
+        ("pair", modes, colours)
+        for modes in combinations(range(4), 2)
+        for colours in product(range(3), repeat=2)
+    )
+    assert len(descriptors) == 79
+    return tuple(descriptors)
+
+
+def permute_raw_descriptor(descriptor, mode_permutation):
+    if descriptor[0] == "q":
+        return descriptor
+    if descriptor[0] == "residual":
+        _tag, residual, mode, colour = descriptor
+        return "residual", residual, mode_permutation[mode], colour
+    _tag, modes, colours = descriptor
+    transported = sorted(
+        zip(
+            (mode_permutation[modes[0]], mode_permutation[modes[1]]),
+            colours,
+            strict=True,
+        )
+    )
+    return (
+        "pair",
+        tuple(mode for mode, _colour in transported),
+        tuple(colour for _mode, colour in transported),
+    )
+
+
+def permute_raw_vector(vector, mode_permutation):
+    descriptors = raw_descriptors()
+    index = {descriptor: position for position, descriptor in enumerate(descriptors)}
+    # This is the transpose/contragredient convention used by the raw
+    # coefficient columns.  Sign eigenvectors have the same eigenvalue under
+    # the inverse action, but the orientation is retained explicitly here.
+    return [
+        vector[index[permute_raw_descriptor(descriptor, mode_permutation)]]
+        for descriptor in descriptors
+    ]
 
 
 def matrix_transpose(matrix: list[list[Gaussian]]) -> list[list[Gaussian]]:
@@ -875,6 +970,78 @@ def check() -> dict[str, object]:
         for row in range(65)
     ]
 
+    # Independently recover the sign-plane response matrix.  The basis is
+    # given in the certificate's original t-order, whereas coefficient_rows
+    # retains the audit's reversed internal order.
+    sign_fibre_vectors = []
+    sign_raw_vectors = []
+    for sparse_basis_vector in SIGN_FIBRE_BASIS:
+        fibre_vector = [ZERO] * 35
+        for index, value in sparse_basis_vector.items():
+            fibre_vector[index] = value
+        sign_fibre_vectors.append(fibre_vector)
+        raw_vector = [
+            gsum(
+                gmul(kernels[index][row], fibre_vector[index])
+                for index in range(35)
+            )
+            for row in range(79)
+        ]
+        assert raw_vector != [ZERO] * 79
+        assert (
+            matrix_vector(matrix_from_columns(transformed_columns), raw_vector)
+            == [ZERO] * 81
+        )
+        for sigma in permutations((1, 2, 3)):
+            sign = gi(permutation_sign(sigma))
+            transported = permute_raw_vector(raw_vector, (0, *sigma))
+            assert transported == [gmul(sign, value) for value in raw_vector]
+        sign_raw_vectors.append(raw_vector)
+    assert rank(matrix_from_columns(sign_raw_vectors)) == 3
+
+    sign_images = []
+    for response_column in range(3):
+        image = []
+        for row in range(65):
+            image_row = []
+            for fibre_vector in sign_fibre_vectors:
+                image_row.append(
+                    gsum(
+                        gmul(
+                            coefficient_rows[row][response_column][34 - index],
+                            fibre_vector[index],
+                        )
+                        for index in range(35)
+                    )
+                )
+            image.append(image_row)
+        sign_images.append(image)
+    sign_output_basis = sign_images[0]
+    assert rank(sign_output_basis) == 3
+    expected_sign_coordinate_matrices = (
+        [[ONE, ZERO, ZERO], [ZERO, ONE, ZERO], [ZERO, ZERO, ONE]],
+        [
+            [gi(0, 1), gi(1, 1), ZERO],
+            [gi(1, -1), gi(0, -1), ZERO],
+            [ZERO, ZERO, gi(-1)],
+        ],
+        [[gi(-1), ZERO, ZERO], [ZERO, gi(-1), ZERO], [ZERO, ZERO, ONE]],
+    )
+    for image, coordinates in zip(
+        sign_images, expected_sign_coordinate_matrices, strict=True
+    ):
+        assert matrix_multiply(sign_output_basis, coordinates) == image
+
+    # Hence for sign coordinates (u,v,w) the three response columns are the
+    # columns of
+    # [[u, i*u+(1+i)*v, -u],
+    #  [v, (1-i)*u-i*v, -v],
+    #  [w, -w, w]].
+    # Its nonzero 2-minors generate
+    # ((u+v)(u-i*v), u*w, v*w).  The elementary projective split w!=0 / w=0
+    # gives exactly [0:0:1], [i:1:0], and [1:-1:0], with distinct linear
+    # factors over Q(i), so this three-point scheme is reduced.
+
     escape_profiles = []
     for a, b, sparse_vector in PROJECTIVE_ESCAPE_WITNESSES:
         vector = [ZERO] * 35
@@ -964,6 +1131,14 @@ def check() -> dict[str, object]:
         "q0_constant_full_mixed_ranks": [13, 13],
         "q0_quotient_matrix_shape": [65, 3],
         "projective_raw_fibre_escape_profiles": escape_profiles,
+        "raw_fibre_sign_dimension": 3,
+        "sign_plane_rank_one_ideal": [
+            "(u+v)*(u-i*v)",
+            "u*w",
+            "v*w",
+        ],
+        "sign_plane_reduced_projective_point_count": 3,
+        "boundary_outside_sign_plane_classified": False,
         "projective_escape_is_not_affine_response_lift": True,
         "reverse_variable_order": list(REVERSED_VARIABLES),
         "rank_at_most_one_projective_cover": [
