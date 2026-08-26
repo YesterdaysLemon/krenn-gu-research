@@ -299,6 +299,33 @@ def rank(matrix: list[list[Gaussian]]) -> int:
     return pivot_row
 
 
+def determinant(matrix: list[list[Gaussian]]) -> Gaussian:
+    assert matrix and len(matrix) == len(matrix[0])
+    work = [row[:] for row in matrix]
+    result = ONE
+    for column in range(len(work)):
+        pivot = next(
+            (row for row in range(column, len(work)) if work[row][column] != ZERO),
+            None,
+        )
+        if pivot is None:
+            return ZERO
+        if pivot != column:
+            work[column], work[pivot] = work[pivot], work[column]
+            result = gneg(result)
+        scale = work[column][column]
+        result = gmul(result, scale)
+        for row in range(column + 1, len(work)):
+            if work[row][column] == ZERO:
+                continue
+            factor = gdiv(work[row][column], scale)
+            work[row] = [
+                gsub(value, gmul(factor, pivot_value))
+                for value, pivot_value in zip(work[row], work[column], strict=True)
+            ]
+    return result
+
+
 def pivot_columns(matrix: list[list[Gaussian]]) -> tuple[int, ...]:
     if not matrix:
         return ()
@@ -932,6 +959,8 @@ def check() -> dict[str, object]:
     assert rank(constant_mixed) == 13
     pivot_rows = pivot_columns(matrix_transpose(constant_mixed))
     assert len(pivot_rows) == 13
+    quotient_pivot = determinant([constant_mixed[row] for row in pivot_rows])
+    assert quotient_pivot == gi(Q(8, 27), Q(8, 27))
     quotient_rows = tuple(row for row in range(78) if row not in set(pivot_rows))
     assert len(quotient_rows) == 65
     pivot_inverse = matrix_inverse([constant_mixed[row] for row in pivot_rows])
@@ -941,12 +970,13 @@ def check() -> dict[str, object]:
     )
 
     affine_columns = [particular, *ordered_kernels]
-    projected = [
-        response_on_affine(
-            project_response(response, pivot_rows, quotient_rows, correction),
-            affine_columns,
-        )
+    projected_response_maps = [
+        project_response(response, pivot_rows, quotient_rows, correction)
         for response in response_maps
+    ]
+    projected = [
+        response_on_affine(response, affine_columns)
+        for response in projected_response_maps
     ]
     relation = [
         [
@@ -1042,6 +1072,112 @@ def check() -> dict[str, object]:
     # gives exactly [0:0:1], [i:1:0], and [1:-1:0], with distinct linear
     # factors over Q(i), so this three-point scheme is reduced.
 
+    # Reynolds-average the complete raw kernel and the affine section using
+    # the standard-library raw action above.  This independently reconstructs
+    # the eight-dimensional invariant fibre used by the GLD78 principal-open
+    # obstruction.
+    def reynolds(vector):
+        transported = [
+            permute_raw_vector(vector, (0, *sigma))
+            for sigma in permutations((1, 2, 3))
+        ]
+        return [
+            gdiv(gsum(values), gi(6))
+            for values in zip(*transported, strict=True)
+        ]
+
+    invariant_candidates = [
+        [gmul(gi(6), value) for value in reynolds(kernel_vector)]
+        for kernel_vector in kernels
+    ]
+    invariant_indices = (0, 7, 8, 9, 10, 12, 13, 16)
+    invariant_raw = [invariant_candidates[index] for index in invariant_indices]
+    assert rank(matrix_from_columns(invariant_candidates)) == 8
+    assert rank(matrix_from_columns(invariant_raw)) == 8
+    invariant_basis_rows = (0, 1, 8, 9, 10, 12, 13, 16)
+    invariant_fibre = [
+        [raw_vector[free[row]] for raw_vector in invariant_raw]
+        for row in range(35)
+    ]
+    invariant_basis_pivot = determinant(
+        [invariant_fibre[row] for row in invariant_basis_rows]
+    )
+    assert invariant_basis_pivot == gi(0, 1008)
+    for raw_vector in invariant_raw:
+        assert all(
+            permute_raw_vector(raw_vector, (0, *sigma)) == raw_vector
+            for sigma in permutations((1, 2, 3))
+        )
+
+    averaged_particular = reynolds(particular)
+    assert (
+        matrix_vector(matrix_from_columns(transformed_columns), averaged_particular)
+        == transformed_target
+    )
+    assert all(
+        permute_raw_vector(averaged_particular, (0, *sigma))
+        == averaged_particular
+        for sigma in permutations((1, 2, 3))
+    )
+
+    invariant_profiles = []
+    invariant_expected = (
+        (
+            (2, 3, 6, 14, 15, 16, 18, 19, 67),
+            gi(Q(6574160, 27), Q(1735448, 9)),
+        ),
+        (
+            (2, 3, 6, 14, 15, 16, 18, 19, 22),
+            gi(Q(153664, 9), Q(44480, 3)),
+        ),
+        (
+            (2, 3, 6, 14, 15, 16, 18, 19, 67),
+            gi(Q(-29451260, 81), Q(3419540, 81)),
+        ),
+    )
+    for (a, b, _sparse_vector), (selected_rows, expected_determinant) in zip(
+        PROJECTIVE_ESCAPE_WITNESSES, invariant_expected, strict=True
+    ):
+        operator_columns = []
+        for raw_vector in invariant_raw:
+            z0, z1, z2 = (
+                matrix_vector(response, raw_vector)
+                for response in projected_response_maps[:3]
+            )
+            operator_columns.append(
+                [gsub(gmul(gi(a), z0[row]), z1[row]) for row in range(65)]
+                + [gsub(gmul(gi(b), z0[row]), z2[row]) for row in range(65)]
+            )
+        operator = matrix_from_columns(operator_columns)
+        c0, c1, c2 = (
+            matrix_vector(response, averaged_particular)
+            for response in projected_response_maps[:3]
+        )
+        affine_column = [
+            gsub(gmul(gi(a), c0[row]), c1[row]) for row in range(65)
+        ] + [gsub(gmul(gi(b), c0[row]), c2[row]) for row in range(65)]
+        augmented = [
+            row + [affine_column[index]] for index, row in enumerate(operator)
+        ]
+        selected = [augmented[row] for row in selected_rows]
+        selected_operator = [row[:8] for row in selected]
+        selected_determinant = determinant(selected)
+        assert rank(operator) == 8
+        assert rank(augmented) == 9
+        assert rank(selected_operator) == 8
+        assert selected_determinant == expected_determinant != ZERO, (
+            selected_determinant,
+            expected_determinant,
+        )
+        invariant_profiles.append(
+            {
+                "chart_ratios": [a, b],
+                "operator_augmented_ranks": [8, 9],
+                "selected_rows": list(selected_rows),
+                "selected_determinant": gaussian_serial(selected_determinant),
+            }
+        )
+
     escape_profiles = []
     for a, b, sparse_vector in PROJECTIVE_ESCAPE_WITNESSES:
         vector = [ZERO] * 35
@@ -1129,6 +1265,8 @@ def check() -> dict[str, object]:
         "transformed_permanent_map_rank": 44,
         "affine_fibre_dimension": 35,
         "q0_constant_full_mixed_ranks": [13, 13],
+        "q0_quotient_pivot_rows": list(pivot_rows),
+        "q0_quotient_pivot": gaussian_serial(quotient_pivot),
         "q0_quotient_matrix_shape": [65, 3],
         "projective_raw_fibre_escape_profiles": escape_profiles,
         "raw_fibre_sign_dimension": 3,
@@ -1138,6 +1276,12 @@ def check() -> dict[str, object]:
             "v*w",
         ],
         "sign_plane_reduced_projective_point_count": 3,
+        "sign_boundary_invariant_open_profiles": invariant_profiles,
+        "sign_boundary_invariant_basis_fibre_rows": list(invariant_basis_rows),
+        "sign_boundary_invariant_basis_pivot": gaussian_serial(
+            invariant_basis_pivot
+        ),
+        "sign_boundary_invariant_principal_open_obstruction": True,
         "boundary_outside_sign_plane_classified": False,
         "projective_escape_is_not_affine_response_lift": True,
         "reverse_variable_order": list(REVERSED_VARIABLES),

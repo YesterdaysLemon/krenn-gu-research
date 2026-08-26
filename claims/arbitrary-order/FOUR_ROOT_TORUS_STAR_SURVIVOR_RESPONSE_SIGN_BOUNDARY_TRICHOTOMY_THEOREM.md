@@ -15,6 +15,12 @@ classify boundary points in the eight-dimensional trivial block or the
 survivor neighbourhood, prove a source graph, or resolve Krenn--Gu.  The
 global conjecture remains **UNRESOLVED**.
 
+**Successor notice.**  `GLD78` retains all survivor and slope directions,
+checks the corrected first strict jet at all three points, and proves an
+all-order invariant-sector exclusion on one explicit principal open around
+each sign-boundary chart.  Boundary directions with trivial or standard raw
+components remain open.
+
 ## 1. Fixed-fibre homogeneous response
 
 Write the exact `GLD74` mixed quotient as
