@@ -15,7 +15,9 @@
         "source_url": "https://export.arxiv.org/api/query?id_list=1705.06646",
         "date": "2026-08-11"
       },
-      "search_trail": [],
+      "search_trail": [
+        "2026-08-26 bounded web search: Krenn-Gu conjecture perfect matching graph arXiv"
+      ],
       "relevance": "Primary physics and graph formulation background for the Krenn-Gu programme.",
       "limitations": ["The pilot did not inspect the full text."],
       "repository_usages": [
@@ -23,6 +25,12 @@
           "path": "docs/LITERATURE_REVIEW_2026-07-30.md",
           "role": "background",
           "inspection_level": "metadata_only",
+          "source_locator": null
+        },
+        {
+          "path": "docs/literature/FOUR_ROOT_SURVIVOR_RESPONSE_METHODS_REVIEW_2026-08-26.md",
+          "role": "novelty_assessment",
+          "inspection_level": "abstract_inspected",
           "source_locator": null
         }
       ]
@@ -66,7 +74,10 @@
         "source_url": "https://export.arxiv.org/api/query?id_list=2202.05562",
         "date": "2026-08-11"
       },
-      "search_trail": [],
+      "search_trail": [
+        "2026-08-26 bounded web search: Krenn-Gu conjecture perfect matching graph arXiv",
+        "2026-08-26 bounded web search: Krenn-Gu conjecture 2025 and 2026"
+      ],
       "relevance": "Published graph-theoretic background adjacent to the conjecture.",
       "limitations": ["The pilot did not inspect the full text."],
       "repository_usages": [
@@ -74,6 +85,12 @@
           "path": "docs/LITERATURE_REVIEW_2026-07-30.md",
           "role": "background",
           "inspection_level": "metadata_only",
+          "source_locator": null
+        },
+        {
+          "path": "docs/literature/FOUR_ROOT_SURVIVOR_RESPONSE_METHODS_REVIEW_2026-08-26.md",
+          "role": "novelty_assessment",
+          "inspection_level": "abstract_inspected",
           "source_locator": null
         }
       ]
@@ -92,7 +109,10 @@
         "source_url": "https://export.arxiv.org/api/query?id_list=2407.00303",
         "date": "2026-08-11"
       },
-      "search_trail": [],
+      "search_trail": [
+        "2026-08-26 bounded web search: Krenn-Gu conjecture perfect matching graph arXiv",
+        "2026-08-26 bounded web search: Krenn-Gu conjecture 2025 and 2026"
+      ],
       "relevance": "Sparse-graph results and a secondary statement of the matching theorem cited by a live claim.",
       "limitations": [
         "The pilot inspected metadata and abstract only, not the theorem text.",
@@ -102,6 +122,12 @@
         {
           "path": "docs/LITERATURE_REVIEW_2026-07-30.md",
           "role": "background",
+          "inspection_level": "abstract_inspected",
+          "source_locator": null
+        },
+        {
+          "path": "docs/literature/FOUR_ROOT_SURVIVOR_RESPONSE_METHODS_REVIEW_2026-08-26.md",
+          "role": "novelty_assessment",
           "inspection_level": "abstract_inspected",
           "source_locator": null
         },
@@ -275,12 +301,156 @@
       },
       "search_trail": [],
       "relevance": "Standard background for Fitting-ideal and rank-degeneracy language used in the repository.",
-      "limitations": ["This is a living reference without a fixed publication year in the inspected page; the relevant mathematical text was not audited in this pilot."],
+      "limitations": ["This is a living reference without a fixed publication year in the inspected page."],
       "repository_usages": [
         {
           "path": "docs/LITERATURE_REVIEW_2026-07-30.md",
           "role": "background",
           "inspection_level": "metadata_only",
+          "source_locator": null
+        },
+        {
+          "path": "docs/literature/FOUR_ROOT_SURVIVOR_RESPONSE_METHODS_REVIEW_2026-08-26.md",
+          "role": "background",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "Lemma 15.8.4 and Lemma 15.8.7"
+        }
+      ]
+    },
+    {
+      "citekey": "stacks-project-tag-052f-flattening-stratifications",
+      "title": "Section 38.21: Flattening stratifications",
+      "authors": ["The Stacks Project Authors"],
+      "year": null,
+      "identifiers": {
+        "stacks_tag": "052F"
+      },
+      "authoritative_url": "https://stacks.math.columbia.edu/tag/052F",
+      "identity_verification": {
+        "source_url": "https://stacks.math.columbia.edu/tag/052F",
+        "date": "2026-08-26"
+      },
+      "search_trail": [
+        "2026-08-26 web search: Stacks Project flattening stratification module Fitting ideals"
+      ],
+      "relevance": "Background for decomposing the survivor parameter base into locally closed rank and flatness strata before response elimination.",
+      "limitations": ["This is a living reference without a fixed publication year; only the section introduction and definition were inspected for this use."],
+      "repository_usages": [
+        {
+          "path": "docs/literature/FOUR_ROOT_SURVIVOR_RESPONSE_METHODS_REVIEW_2026-08-26.md",
+          "role": "background",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "Section 38.21 introduction and Definition 38.21.3"
+        }
+      ]
+    },
+    {
+      "citekey": "montes-wibmer-2010-groebner-parameters",
+      "title": "Gröbner bases for polynomial systems with parameters",
+      "authors": ["Antonio Montes", "Michael Wibmer"],
+      "year": 2010,
+      "identifiers": {
+        "doi": "10.1016/j.jsc.2010.06.017"
+      },
+      "authoritative_url": "https://www.sciencedirect.com/science/article/pii/S0747717110000970",
+      "identity_verification": {
+        "source_url": "https://www.sciencedirect.com/science/article/pii/S0747717110000970",
+        "date": "2026-08-26"
+      },
+      "search_trail": [
+        "2026-08-26 web search: comprehensive Groebner systems parametric polynomial systems",
+        "2026-08-26 web search: Singular grobcov comprehensive Groebner cover"
+      ],
+      "relevance": "The Groebner-cover output is a finite locally closed parameter partition with stable specialized leading data, matching the desired principal-open certificate plus explicit exceptional branches.",
+      "limitations": ["Only authoritative metadata and the publisher abstract were inspected; the algorithm and hypotheses were not imported as a proof result."],
+      "repository_usages": [
+        {
+          "path": "docs/literature/FOUR_ROOT_SURVIVOR_RESPONSE_METHODS_REVIEW_2026-08-26.md",
+          "role": "novelty_assessment",
+          "inspection_level": "abstract_inspected",
+          "source_locator": null
+        }
+      ]
+    },
+    {
+      "citekey": "lazard-rouillier-2007-parametric-systems",
+      "title": "Solving parametric polynomial systems",
+      "authors": ["Daniel Lazard", "Fabrice Rouillier"],
+      "year": 2007,
+      "identifiers": {
+        "doi": "10.1016/j.jsc.2007.01.007"
+      },
+      "authoritative_url": "https://www.sciencedirect.com/science/article/pii/S0747717107000132",
+      "identity_verification": {
+        "source_url": "https://www.sciencedirect.com/science/article/pii/S0747717107000132",
+        "date": "2026-08-26"
+      },
+      "search_trail": [
+        "2026-08-26 web search: discriminant varieties parametric polynomial systems",
+        "2026-08-26 HAL author index lookup for title, authors, journal, and DOI"
+      ],
+      "relevance": "Discriminant varieties are a candidate framework for isolating the survivor-parameter locus where the projected response incidence changes behaviour.",
+      "limitations": ["Only authoritative metadata and the publisher abstract were inspected; the paper's well-behaved-system hypotheses were not checked against the response incidence."],
+      "repository_usages": [
+        {
+          "path": "docs/literature/FOUR_ROOT_SURVIVOR_RESPONSE_METHODS_REVIEW_2026-08-26.md",
+          "role": "novelty_assessment",
+          "inspection_level": "abstract_inspected",
+          "source_locator": null
+        }
+      ]
+    },
+    {
+      "citekey": "sommese-verschelde-wampler-2001-numerical-decomposition",
+      "title": "Numerical Decomposition of the Solution Sets of Polynomial Systems into Irreducible Components",
+      "authors": ["Andrew J. Sommese", "Jan Verschelde", "Charles W. Wampler"],
+      "year": 2001,
+      "identifiers": {
+        "doi": "10.1137/S0036142900372549"
+      },
+      "authoritative_url": "https://epubs.siam.org/doi/abs/10.1137/S0036142900372549",
+      "identity_verification": {
+        "source_url": "https://epubs.siam.org/doi/abs/10.1137/S0036142900372549",
+        "date": "2026-08-26"
+      },
+      "search_trail": [
+        "2026-08-26 web search: numerical algebraic geometry irreducible decomposition certification polynomial systems"
+      ],
+      "relevance": "Witness-set and monodromy methods could provide a discovery-only component census for the compactified survivor-response incidence.",
+      "limitations": ["Only authoritative metadata and the publisher abstract were inspected; numerical decomposition is proposed only for reconnaissance, not proof."],
+      "repository_usages": [
+        {
+          "path": "docs/literature/FOUR_ROOT_SURVIVOR_RESPONSE_METHODS_REVIEW_2026-08-26.md",
+          "role": "novelty_assessment",
+          "inspection_level": "abstract_inspected",
+          "source_locator": null
+        }
+      ]
+    },
+    {
+      "citekey": "hauenstein-sottile-2012-alphacertified",
+      "title": "Algorithm 921: alphaCertified: Certifying Solutions to Polynomial Systems",
+      "authors": ["Jonathan D. Hauenstein", "Frank Sottile"],
+      "year": 2012,
+      "identifiers": {
+        "arxiv": "1011.1091",
+        "doi": "10.1145/2331130.2331136"
+      },
+      "authoritative_url": "https://arxiv.org/abs/1011.1091",
+      "identity_verification": {
+        "source_url": "https://arxiv.org/abs/1011.1091",
+        "date": "2026-08-26"
+      },
+      "search_trail": [
+        "2026-08-26 web search: alphaCertified certifying solutions polynomial systems"
+      ],
+      "relevance": "Alpha-theory certification could validate isolated numerical candidates found during reconnaissance before exact reconstruction.",
+      "limitations": ["Only the authoritative arXiv metadata and abstract were inspected; the method does not certify emptiness of a positive-dimensional incidence."],
+      "repository_usages": [
+        {
+          "path": "docs/literature/FOUR_ROOT_SURVIVOR_RESPONSE_METHODS_REVIEW_2026-08-26.md",
+          "role": "novelty_assessment",
+          "inspection_level": "abstract_inspected",
           "source_locator": null
         }
       ]
