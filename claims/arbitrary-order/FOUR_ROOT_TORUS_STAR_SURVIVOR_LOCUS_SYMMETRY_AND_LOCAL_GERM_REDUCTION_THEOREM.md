@@ -34,6 +34,13 @@ raw fibre only over the single tensor `T_0`.  The global conjecture remains
 The predecessor is the
 [`GLD74` full coefficient-fibre theorem](FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_FULL_COEFFICIENT_FIBRE_FIRST_RESPONSE_NONEXTENSION_THEOREM.md).
 
+**Successor notice.**  `GLD76` constructs the denominator-free universal
+response module over the four scale-fixed directions and finds two exact
+sign-type raw directions on the projective boundary of the `GLD74` necessary
+rank-one system.  The local parent obligation is therefore the strict
+transform along those named boundary branches, not an unqualified
+properness transport of the pointwise certificate.
+
 ## 1. Fixed interface and exact point
 
 Use the canonical `GLD70` data

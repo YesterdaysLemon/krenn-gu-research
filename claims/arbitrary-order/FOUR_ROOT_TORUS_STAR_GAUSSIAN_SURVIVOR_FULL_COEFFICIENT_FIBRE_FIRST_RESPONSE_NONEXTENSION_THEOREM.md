@@ -32,6 +32,15 @@ the present full-fibre certificate does not transport by symmetry, and the
 next local parent obligation is a parametric response incidence over those
 directions.
 
+`GLD76` constructs that exact local response module and finds two rank-one
+points on the boundary obtained by projectivizing the raw `t`-space.  This
+does not contradict the present theorem: all finite affine `t` remain
+excluded.  The "projective cover" in Section 3 covers the possible column
+directions of a finite affine matrix `Z(t)`; it is not a claim that the
+projective compactification of the raw parameter space has empty boundary.
+The new boundary directions block only the naive properness transport of this
+affine theorem to nearby survivor tensors.
+
 The predecessor is the
 [`GLD73` contracted-edge theorem](FOUR_ROOT_TORUS_STAR_GAUSSIAN_SURVIVOR_CONTRACTED_EDGE_CONTROL_AND_FIRST_TRANSVERSE_NONEXTENSION_THEOREM.md).
 
