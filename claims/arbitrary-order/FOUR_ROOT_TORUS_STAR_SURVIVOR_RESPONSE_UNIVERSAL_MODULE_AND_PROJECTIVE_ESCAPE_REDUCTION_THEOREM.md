@@ -24,6 +24,12 @@ neighbourhood, classify the entire projective boundary, cover other survivor
 components or interfaces, integrate a source graph, or resolve Krenn--Gu.
 The global conjecture remains **UNRESOLVED**.
 
+**Successor notice.**  `GLD77` restricts the homogeneous boundary to the
+entire three-dimensional leaf-sign raw block and proves that it consists of
+exactly three reduced projective points.  It recovers the two witnesses below
+and adds the ratio `(1,-1,-1)`.  Boundary directions with trivial or standard
+components and every strict-transform branch remain open.
+
 ## 1. The scale-fixed survivor base
 
 Use the `GLD75` equal-leaf frame gauge
