@@ -261,6 +261,28 @@ explicitly treats a particular artifact as durable certificate data.
 Large search programs should ideally produce smaller independently
 checkable witnesses.
 
+### Process ownership and cleanup
+
+Every agent owns every process it launches until that process exits or is
+explicitly handed off.  Before completing, merging, switching scope, or
+abandoning an execution session, inspect all task-owned child processes and
+either wait for them, preserve or checkpoint their output and terminate them,
+or document a live handoff.  Never leave detached long-running `python -` or
+`python -c` jobs or duplicate long-running computations.
+
+Any computation expected to run longer than 60 seconds must use a durable
+script and log, a unique run identifier, and declared wall-clock and
+memory/commit budgets.  Use `tools/research/run_bounded.py` by default.  If its
+noninteractive execution model cannot contain a required tool, document the
+equivalent logging, resource bounds, duplicate suppression, process-tree
+cleanup, and ownership handoff before launch.  A timeout or completed agent
+turn does not imply that a child process stopped.  Before terminating a
+process, revalidate its PID, executable name, creation time, command/worktree,
+and ownership; never terminate another worker's process.
+
+The runner contract, platform limits, exit codes, and handoff procedure are
+documented in `docs/research-process-runbook.md`.
+
 ## 9. Layout-migration mode
 
 The active layout-migration procedure is documented separately:
