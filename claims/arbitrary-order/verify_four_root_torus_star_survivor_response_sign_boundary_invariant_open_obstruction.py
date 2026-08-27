@@ -6,8 +6,10 @@ the actual leaf S3 action, restricts each proportionality operator to the
 eight-dimensional invariant raw-kernel block, and checks a named nonzero
 9-by-9 augmented minor at every reduced GLD77 sign-plane boundary point.
 
-The accompanying theorem supplies the equivariant local-algebra argument.
-This verifier does not classify projective boundary outside the sign plane.
+The accompanying theorem supplies the regular moving literal-Delta transport
+and equivariant local-algebra argument.  This verifier checks their exact
+Gaussian specializations; it does not expand the universal moving-frame
+polynomials or classify projective boundary outside the sign plane.
 """
 
 from __future__ import annotations
@@ -254,6 +256,10 @@ def check():
         "invariant_basis_fibre_rows": list(invariant_basis_rows),
         "invariant_basis_pivot_at_gld72": str(invariant_basis_pivot),
         "points": profiles,
+        "moving_literal_delta_continuation": (
+            "defined_algebraically_in_theorem_not_symbolically_expanded"
+        ),
+        "untransformed_moving_fixed_65_by_3_necessity_claimed": False,
         "sign_plane_boundary_branches_excluded_on_named_principal_opens": True,
         "boundary_outside_sign_plane_classified": False,
         "full_survivor_open_exclusion_proved": False,

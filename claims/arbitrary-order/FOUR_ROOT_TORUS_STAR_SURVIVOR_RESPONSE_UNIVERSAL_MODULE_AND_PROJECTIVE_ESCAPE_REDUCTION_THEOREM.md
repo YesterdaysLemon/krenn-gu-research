@@ -130,6 +130,25 @@ mixed constant block, as in `GLD74`.  It does not vanish in the full quotient
 (5).  Thus replacing (6) by three columns would silently discard diagonal
 response information; all four columns in (7) are load-bearing.
 
+**Successor clarification (`GLD80`, 2026-08-26).**  After a frame transport,
+let `b_F`, `H'_(r,F)`, and `C'_F` be respectively the nuisance map, four root
+response operators, and thirteen-column constant response block rebuilt from
+the transformed ports.  Let `Lambda` select the raw `Q` and twelve eta-
+residual coordinates.  The matching partition gives the exact matrix identity
+
+```text
+b_F-sum_r xi_r H'_(r,F)=C'_F Lambda.                   (8a)
+```
+
+The strengthened verifier checks (8a) in both the canonical and Gaussian
+literal-Delta presentations.  In untransformed moving coordinates the mixed
+part of `b alpha=T(F)` need not vanish, so (8a) does not reduce the full
+legal incidence (7).  After transporting the complete interface by the moving
+frame, however, `b_F beta=Delta_4` has zero mixed part; quotienting (8a) then
+recovers the three-column signed relation and the `GLD74` necessary rank-one
+bound.  This is the exact bridge used by `GLD80` and does not weaken the
+four-column warning above.
+
 The equivalent Fitting formulation is the finite rank cover
 
 ```text

@@ -111,11 +111,10 @@ branch is omitted.
 
 ## Recommended successor
 
-Form the projective compactification of the affine necessary incidence over
-the scale-fixed `GLD75` survivor chart.  Let `C` be the closure of its affine
-part.  Properness of the projection and the `GLD79` boundary fibre reduce
-possible specialization over `F_0` to the three sign points; `GLD78` excludes
-formal/analytic affine branches through each.  If written with a precise
-curve-selection argument, this gives an existential principal survivor-open
-exclusion containing `F_0`.  Computing an explicit base polynomial remains a
-separate elimination obligation.
+**Completed by `GLD80` (2026-08-26).**  The accepted successor uses the
+intrinsic minor incidence in `B x P^35`, saturates by the affine homogenizing
+coordinate, and replaces informal analytic curve selection by a finite-type
+algebraic DVR lemma.  The three `GLD78` determinant units exclude every
+trait through the `GLD79` fibre, so a principal survivor-open containing
+`F_0` exists.  Computing an explicit base polynomial remains a separate
+elimination obligation.
