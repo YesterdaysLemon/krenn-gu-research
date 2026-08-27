@@ -44,6 +44,19 @@ jobs:
           # full history: provenance checks may need more than a tip
           fetch-depth: 0
 
+      - name: Set up Node.js for proof-topology validation
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Render live proof-topology Mermaid
+        run: >-
+         npx --yes @mermaid-js/mermaid-cli@11.12.0
+         --input docs/current-frontier.md
+         --output "$RUNNER_TEMP/current-frontier-rendered.md"
+         --puppeteerConfigFile .github/mermaid-puppeteer-config.json
+         --quiet
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
