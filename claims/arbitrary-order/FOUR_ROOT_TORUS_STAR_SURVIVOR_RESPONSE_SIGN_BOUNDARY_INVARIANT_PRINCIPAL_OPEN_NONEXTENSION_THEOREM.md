@@ -225,13 +225,15 @@ principal open containing its Gaussian boundary point.  The unresolved
 projective boundary is therefore outside the pure sign plane: it may contain
 trivial components, standard components, or mixtures of isotypic blocks.
 
-This is not yet a principal-open exclusion for every raw preimage over the
-survivor germ.  The next parent obligation is to classify the full
-projective rank-one boundary in `P(ker b)`, then cover its remaining
-components by invariant/Fitting minors or exact strict transforms.  Only
-after that cover is exhaustive can properness transport the `GLD74` affine
-exclusion to a survivor-open theorem.  Other survivor components and the
-source/interface bridge remain separate.
+**Successor update (`GLD79`, 2026-08-26).**  Exact `S_3` isotypic and
+determinantal certificates subsequently prove that the complete Gaussian
+projective boundary is exactly these three reduced sign points: the trivial
+and standard blocks are empty, mixed blocks cannot cancel, and the other two
+projective charts are empty.  Thus the missing boundary-fibre cover is now
+exhaustive.  A separate proper-image/curve-selection successor must combine
+`GLD74`, `GLD78`, and `GLD79` before a survivor-open theorem is claimed.
+Other survivor components, an explicit survivor-only exceptional polynomial,
+and the source/interface bridge remain separate.
 
 ## 6. Verification and hostile controls
 
