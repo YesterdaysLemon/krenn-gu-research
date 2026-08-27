@@ -6671,6 +6671,33 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Four-root torus-star equal-leaf survivor rank-eight full intrinsic Fitting nonzero point",
+      "document": "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_FULL_INTRINSIC_FITTING_NONZERO_THEOREM.md",
+      "document_sha256_16": "94f55d16e48dce40",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero specialization on the GLD84 named rank-eight Schur chart R_8=(0,1,2,3,4,5,6,7) inside the displayed scale-fixed equal-leaf base",
+        "the pinned six-leaf/two-residual point satisfies rho_(R,8)=rho_(R,9)=0, mu_R is nonzero, and the frame/gauge factor Omega is nonzero",
+        "the GLD83 full intrinsic quadratic Fitting map is represented pointwise after quotienting rank(C_F)=13; the selected quotient pivot gamma_old is not inverted",
+        "the two split-safe primes are exact modular reductions because every real/imaginary rational denominator slot in the transported blocks is a unit at each prime",
+        "the result proves only a nonzero pullback and proper closed residual on one rank-eight chart; it does not make I_Pl unit or the residual empty",
+        "other rank-eight charts, rank-seven and lower-rank strata, survivor components/gauges, source branches, other roots/orders, and global Krenn-Gu remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_survivor_rank_eight_full_intrinsic_fitting_nonzero.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_survivor_rank_eight_full_intrinsic_fitting_nonzero.py",
+      "audit_provenance": "independent_modular_audit",
+      "review": "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_FULL_INTRINSIC_FITTING_NONZERO_REVIEW_2026-08-27.md",
+      "expected_runtime": "about three minutes for the SymPy primary; seconds for the standard-library no-import audit",
+      "external_binaries": [],
+      "note": "The exact point has mu_R=-140/9-20i/9, both Schur residuals zero, rank(C_F)=13, and a pinned 45-by-45 maximal minor of the 45-by-6240 full intrinsic quotient map with nonzero residues 9639769+249939722i modulo 1000000007 and 1610829+5232695i modulo 10000019. All 6240 rational denominator slots are checked at both primes. The old selected M_Pl is exactly zero at this point. Thus the rank-eight pullback of I_Pl is nonzero and its vanishing locus is proper, while the intrinsic residual, other charts/ranks/components, and global Krenn-Gu remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

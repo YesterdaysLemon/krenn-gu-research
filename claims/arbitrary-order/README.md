@@ -18,6 +18,19 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
+## GLD83--GLD85 rank-eight checkpoint
+
+The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
+defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
+selected mixed pivot.  [`GLD84`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_CENTER_RANK_DETERMINANTAL_CHART_REDUCTION_THEOREM.md)
+gives its finite centre-rank cover.  [`GLD85`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_FULL_INTRINSIC_FITTING_NONZERO_THEOREM.md)
+now certifies one exact point on the named rank-eight chart where the full
+`I_Pl` pullback is nonzero, using two denominator-checked characteristic-zero
+reductions.  The old selected `M_Pl` vanishes at this point, so GLD85 is a
+full-intrinsic proper-open result rather than a selected-minor computation.
+The intrinsic residual, all other charts/ranks/components, and the global
+conjecture remain **UNRESOLVED**.
+
 ## Current symbolic checkpoint
 
 The
