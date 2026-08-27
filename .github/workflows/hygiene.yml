@@ -60,6 +60,9 @@ jobs:
       - name: Run migration-tool tests
         run: python -m unittest -v tests.test_migration_tools
 
+      - name: Run bounded research-process tests
+        run: python -m unittest -v tests.test_bounded_research_runner
+
       - name: Run literature-registry tests
         run: python -m unittest -v tests.test_literature_registry
 

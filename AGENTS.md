@@ -261,6 +261,19 @@ explicitly treats a particular artifact as durable certificate data.
 Large search programs should ideally produce smaller independently
 checkable witnesses.
 
+### Process ownership
+
+Every agent owns every process it launches until that process exits or is
+explicitly handed off.  Before completing or changing scope, wait for it,
+terminate it after preserving needed output, or document a live handoff.  For
+computations expected to exceed 60 seconds, use
+`tools/research/run_bounded.py` or document equivalent containment and
+resource limits.  A tool timeout or completed turn does not mean its child
+stopped; revalidate identity and ownership before termination, and never stop
+another worker's process.
+
+See `docs/research-process-runbook.md`.
+
 ## 9. Layout-migration mode
 
 The active layout-migration procedure is documented separately:

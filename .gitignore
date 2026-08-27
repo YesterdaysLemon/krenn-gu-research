@@ -5,6 +5,7 @@ __pycache__/
 # Scratch space (kept on disk for reference, never committed)
 tmp/
 .claude/
+.research-runs/
 
 # Solver run inputs and outputs (regenerable from the Python generators)
 *.sing
