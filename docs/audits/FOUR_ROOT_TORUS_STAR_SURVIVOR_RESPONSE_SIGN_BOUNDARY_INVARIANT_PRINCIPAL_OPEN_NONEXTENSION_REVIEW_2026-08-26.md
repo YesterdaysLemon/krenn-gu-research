@@ -108,10 +108,10 @@ exclusion.
 
 ## Recommended successor
 
-Exploit the `S_3` isotypic decomposition before attempting a full
-35-variable blow-up.  Classify the projective rank-one scheme by the
-isotypic support of a raw direction: trivial-only, standard-only, and mixed
-supports.  Use Reynolds central idempotents, determinantal/Fitting ideals,
-and exact saturation by the already named chart factors.  A finite exhaustive
-component cover would combine with `GLD78` to reopen the properness route from
-the pointwise `GLD74` certificate to a genuine survivor-open exclusion.
+**Completed by `GLD79` (2026-08-26).**  Central idempotents and Schur
+compression reduce the full Gaussian projective boundary to exact trivial,
+sign, and standard determinant systems.  The trivial and standard systems
+are empty in every slope and `K_0` is injective, so the complete boundary is
+exactly the three reduced `GLD77` sign points.  The next successor is the
+proper-image/curve-selection bridge from the pointwise `GLD74` certificate
+and the `GLD78` entrance exclusions to a genuine survivor-open theorem.
