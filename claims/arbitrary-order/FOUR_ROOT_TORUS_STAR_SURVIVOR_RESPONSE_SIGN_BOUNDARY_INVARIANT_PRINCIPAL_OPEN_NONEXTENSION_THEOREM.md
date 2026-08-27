@@ -18,14 +18,38 @@ exclude the full survivor neighbourhood, cover other survivor components or
 source presentations, prove maximum-root or no-fifth-root statements, or
 resolve Krenn--Gu.  The global conjecture remains **UNRESOLVED**.
 
-## 1. Regular moving system
+## 1. Regular moving literal-Delta system
 
 Let `X` be the scale-fixed four-dimensional equal-leaf survivor germ in the
-certified `GLD75` frame chart, with Gaussian point `F_0`.  Work in the
-original fixed-star coordinates: the map `b`, its raw kernel, and the legal
-response operators are fixed, while the survivor tensor `T(F)` and its
-chosen affine preimage move.  This avoids treating a frame-dependent
-literal-Delta conjugate as a fixed interface.  Define the exact frame open
+certified `GLD75` frame chart, with Gaussian point `F_0`.  For each moving
+frame, conjugate the target to literal `Delta_4` **and transport the complete
+interface with it**.  Put
+
+```text
+U_F=tensor_(u=0)^3 F_u^(-1),        P'_u=P_u F_u^(-T).
+```
+
+Let `b_F` and `D'_F` be the nuisance and complete legal-response maps rebuilt
+from the transformed ports.  The induced raw-coordinate map `S_F` acts by an
+inverse frame on each residual label and by the corresponding Kronecker
+product on each pair label.  Let `J_F` be the invertible response-domain
+change induced on the thirteen constant and four root directions.
+Multilinearity of the matching cofactors gives
+
+```text
+U_F b=b_F S_F,          U_F D_q0(alpha)=D'_F(S_F alpha)J_F,
+U_F R(F)=Diag.                                           (1)
+```
+
+Equivalently, the constant-block images agree and every root-response
+operator satisfies `U_F H_r=H'_(r,F)S_F`.
+
+Thus this is covariance of the actual graph/source response semantics.  The
+fixed-coordinate universal legal incidence remains the `68 x 4` system of
+`GLD76`; the three-column system below is used only in the transported
+literal-Delta presentation.
+
+Define the exact frame open
 
 ```text
 Omega(F)=delta_gauge(F) product_(u=0)^3 det F_u,
@@ -33,48 +57,58 @@ delta_gauge=product_(u=1)^3 product_(c=0)^2 (F_u)_(0,c).
 ```
 
 The fully-supported and nonisotropic data belong to the fixed `GLD70`
-interface and retain their already-declared nonzero hypotheses; they are not
-new moving divisors.
-
-Use the fixed `GLD76` pivot solve
-
-```text
-alpha(F,t)=alpha_0(F)+K t,       t in A^35,             (1)
-```
-
-where `K` is a basis of `ker b` and `alpha_0(F)` is regular on `X`.  Quotient
-the mixed legal response by the fixed `13`-column `Q`/eta-residual block.
-The resulting three columns are
+interface and retain their already-declared nonzero hypotheses.  After also
+inverting the selected rank-44 nuisance pivot, use pivot choices specializing
+exactly to `GLD74`:
 
 ```text
-Z_r(F,t)=A_r(F)+K_r t,           r=0,1,2,               (2)
+beta(F,t)=beta_0(F)+K_F t,       t in A^35,             (2)
 ```
 
-in a `65`-dimensional quotient.  Any legal first-response lift in the
-corresponding chart satisfies the `GLD74` necessary condition
-`rank[Z_0 Z_1 Z_2]<=1`.
-
-All constructions in (1)--(2) are regular in the survivor coordinate ring.
-The quotient uses the fixed mixed rows
+where `b_F beta=Delta_4`, `K_F` is a regular frame of `ker b_F`, and
+`beta_0(F)` is regular.  Quotient the mixed legal response by the moving
+`13`-column `Q`/eta-residual block.  The resulting columns are
 
 ```text
-(0,1,2,3,4,5,7,8,9,11,17,27,53),                      (3)
+Z_r(F,t)=A_r(F)+K_(r,F)t,        r=0,1,2,3.             (3)
 ```
 
-whose `13 x 13` determinant is the named function `gamma`.  In the Gaussian
-coordinates,
+Partitioning matchings by the neighbor of `q_0` gives, for every solution of
+`b_F beta=Delta_4`,
 
 ```text
-gamma(F_0)=8(1+i)/27 != 0.                              (4)
+Z_0+Z_1+Z_2-Z_3=0.                                    (4)
 ```
 
-Thus no response-pivot divisor is omitted.
+The `q_1` and port classes lie in the quotient block, the four root classes
+have coefficients `xi=(1,1,1,-1)`, and the mixed part of `Delta_4` is zero.
+Since the transported target is the three-dimensional diagonal space, the
+same `17-(13+rank Z)` argument as `GLD74` proves that every legal lift
+satisfies `rank[Z_0 Z_1 Z_2]<=1`.
+
+All constructions in (1)--(4) are regular after the named localizations.  The
+quotient uses mixed rows specializing at `F_0` to
+
+```text
+(0,1,2,3,4,5,7,8,9,11,17,27,53),
+```
+
+whose moving `13 x 13` determinant is the named function `gamma`, with
+
+```text
+gamma(F_0)=8(1+i)/27 != 0.
+```
+
+Thus no response-pivot divisor is omitted.  The original wording that used a
+fixed mixed quotient in untransformed moving coordinates is superseded by
+(1)--(4); it would discard the moving target's mixed coordinates and is not
+used.
 
 On the first proportional-column chart introduce slopes `(a,b)` and write
 
 ```text
 Phi_(F,a,b)(t)=
-  ((a K_0-K_1)t, (b K_0-K_2)t),
+  ((a K_(0,F)-K_(1,F))t, (b K_(0,F)-K_(2,F))t),
 
 w_(F,a,b)=
   (a A_0(F)-A_1(F), b A_0(F)-A_2(F)).                  (5)
@@ -92,21 +126,22 @@ minor.
 
 ## 2. Leaf-invariant compression
 
-The actual leaf-`S_3` action preserves the fixed interface, the nuisance map,
-all complete legal response maps, the equal-leaf survivor family, and the
-diagonal target response.  Hence (6), interpreted in the intrinsic mixed
-quotient, is `S_3`-equivariant.  Since the characteristic is zero, the
+Because the three leaf frames are equal, the actual leaf-`S_3` action
+preserves the transported interface, nuisance map, all complete legal
+response maps, kernel bundle, mixed quotient, and diagonal target response.
+Hence (6) is `S_3`-equivariant.  Since the characteristic is zero, the
 Reynolds projector is exact.
 
 The `GLD76` raw-kernel decomposition is
 
 ```text
-ker b = 8 trivial + 3 sign + 24 standard dimensions.   (7)
+ker b_F = 8 trivial + 3 sign + 24 standard dimensions. (7)
 ```
 
-Average the section `alpha_0(F)` over `S_3`.  It remains a preimage of the
-equal-leaf tensor and makes `w_(F,a,b)` invariant.  Select the invariant raw
-basis obtained by Reynolds-averaging kernel columns
+Average the section `beta_0(F)` over `S_3`.  It remains a preimage of
+`Delta_4` and makes `w_(F,a,b)` invariant.  Select the regular moving
+invariant raw basis whose Gaussian specialization is obtained by
+Reynolds-averaging kernel columns
 
 ```text
 (0,7,8,9,10,12,13,16).                                (8)
@@ -118,7 +153,7 @@ Its determinant on fibre rows
 (0,1,8,9,10,12,13,16)                                 (9)
 ```
 
-is the named basis minor `beta`, with
+is the Gaussian value of the named moving basis minor `beta`, with
 
 ```text
 beta=1008 i != 0.                                      (10)
@@ -126,13 +161,13 @@ beta=1008 i != 0.                                      (10)
 
 This records explicitly the basis open used below.
 
-Let `V_triv` denote those eight fixed invariant columns.  If (6) has a
+Let `V_triv(F)` denote those eight regular invariant columns.  If (6) has a
 solution, project it with the output Reynolds idempotent.  Every sign or
 standard raw component disappears from this projected equation, while the
 invariant raw component and `s w` remain.  Therefore a necessary condition is
 
 ```text
-Phi_(F,a,b)|_triv u + s w_(F,a,b)=0,    u in A^8.      (11)
+Phi_(F,a,b)(V_triv(F))u + s w_(F,a,b)=0, u in A^8.     (11)
 ```
 
 This step does not assume that an arbitrary raw correction is invariant; it
@@ -153,7 +188,7 @@ For a row set `J_j`, define the regular polynomial
 
 ```text
 delta_j(F,a,b)=det(
-  [ Phi_(F,a,b)(V_triv) | w_(F,a,b) ]_(J_j)
+  [ Phi_(F,a,b)(V_triv(F)) | w_(F,a,b) ]_(J_j)
 ).                                                       (12)
 ```
 
@@ -173,7 +208,7 @@ For `j` equal to `-`, `+`, or `x`, equation (6) has no solution with `s!=0`
 on
 
 ```text
-D(Omega gamma beta delta_j)                            (14)
+D(Omega theta gamma beta delta_j)                      (14)
 ```
 
 in the corresponding first proportional-column chart.  In particular, no
@@ -184,8 +219,8 @@ sign point can remain in (14).
 
 On `D(beta)` the eight columns in (8) are a basis of the invariant raw
 kernel.  Suppose an actual `79`-coordinate coefficient vector solved (6).
-Average that vector under the actual raw `S_3` action.  Equivariance of `b`,
-the complete response, and the equal-leaf target shows that the average is
+Average that vector under the actual raw `S_3` action.  Equivariance of `b_F`,
+the complete response, and `Delta_4` shows that the average is
 still a raw preimage satisfying the same proportionality equations.  Its
 kernel correction is invariant, so it has coordinates in the basis (8) and
 gives (11).  This averages the coefficient vector itself, not a potentially
@@ -194,7 +229,8 @@ non-equivariant choice of free `t`-coordinates.
 On `D(delta_j)` the selected `9 x 9` matrix in (12) is invertible.  Hence the
 coefficients of its first eight columns and its final coefficient `s` must
 all vanish, contradicting `s!=0`.  No division by `s` is needed.  The factors
-`Omega` and `gamma` retain the declared interface and quotient charts.  The
+`Omega`, `theta`, and `gamma` retain the declared frame, nuisance-pivot, and
+quotient charts.  The
 same column-independence argument holds over the localized coordinate ring,
 so it also forces `s=0` for a formal arc even when `s` vanishes to positive
 order.  This excludes arcs of every order, not only first-order
@@ -230,10 +266,12 @@ determinantal certificates subsequently prove that the complete Gaussian
 projective boundary is exactly these three reduced sign points: the trivial
 and standard blocks are empty, mixed blocks cannot cancel, and the other two
 projective charts are empty.  Thus the missing boundary-fibre cover is now
-exhaustive.  A separate proper-image/curve-selection successor must combine
-`GLD74`, `GLD78`, and `GLD79` before a survivor-open theorem is claimed.
-Other survivor components, an explicit survivor-only exceptional polynomial,
-and the source/interface bridge remain separate.
+exhaustive.  `GLD80` subsequently combines `GLD74`, `GLD78`, and `GLD79`
+using the intrinsic `s`-saturated projective incidence and an algebraic
+DVR-selection lemma; it proves that an existential principal survivor-open
+containing `F_0` excludes every raw preimage.  Other survivor components, an
+explicit survivor-only exceptional polynomial, and the source/interface
+bridge remain separate.
 
 ## 6. Verification and hostile controls
 
@@ -242,12 +280,15 @@ Run:
 ```powershell
 python claims/arbitrary-order/verify_four_root_torus_star_survivor_response_sign_boundary_first_strict_jet_obstruction.py
 python claims/arbitrary-order/verify_four_root_torus_star_survivor_response_sign_boundary_invariant_open_obstruction.py
+python claims/arbitrary-order/verify_four_root_torus_star_survivor_response_universal_module_reduction.py
 python -I claims/arbitrary-order/audit_four_root_torus_star_gaussian_survivor_full_coefficient_fibre_first_response_nonextension.py
 ```
 
-The invariant verifier evaluates the fixed quotient, invariant basis, and
-the three regular determinants at their Gaussian boundary points.  Their
-continuations are defined by the determinant formula (12); the all-order
+The invariant verifier evaluates the literal-Delta quotient, invariant basis,
+and three determinants at their Gaussian boundary points.  The universal
+verifier checks the nuisance, complete-response, raw-coordinate, and target
+intertwiners at that specialization.  Their regular moving continuations are
+defined by (1)--(6) and determinant formula (12); the all-order
 extension from a nonzero value to its principal open is the localized-ring
 argument in Theorem 3.1, not a claim that the verifier expanded a universal
 four-parameter polynomial.  The independent audit rebuilds the same base
@@ -261,7 +302,7 @@ The hostile controls are preserved:
 - the actual nuisance and all complete `81`-coordinate response maps, not
   merely the abstract GHZ orbit, are checked for leaf covariance;
 - frame ambiguity is handled in the certified `GLD75` gauge;
-- `Omega`, `gamma`, `beta`, and every `delta_j` are named, and no determinant,
+- `Omega`, `theta`, `gamma`, `beta`, and every `delta_j` are named, and no determinant,
   support coordinate, nonisotropic slope, or chart coordinate is discarded;
 - arbitrary raw corrections are decomposed, not assumed invariant;
 - the first-jet calculation retains all `35` raw, four survivor, and two

@@ -12,6 +12,26 @@ theorem because boundary directions with trivial or standard raw components,
 and mixtures among isotypic blocks, have not been classified.  The global
 Krenn--Gu conjecture remains **UNRESOLVED**.
 
+**Coordinate-repair addendum (2026-08-26).**  Hostile review during `GLD80`
+found that the first edition described the moving `65 x 3` quotient in the
+untransformed fixed coordinates.  That is not a legal necessary condition:
+the moving GHZ response has mixed coordinates there, and `GLD76` correctly
+keeps all four columns of its `68 x 4` quotient.  The theorem now constructs
+the `65 x 3` system only after transporting the complete nuisance and legal
+response interface by the moving frame to literal `Delta_4`.  The accepted
+verdict applies to that repaired formulation.
+
+The failure is visible exactly, not only conceptually.  Along the `GLD75`
+`x_6` survivor tangent, in fixed Gaussian literal-Delta output coordinates,
+
+```text
+d(U_(F_0)R(F))[(0,1,1,1),1]/dx_6=(1-i)/4,
+d(U_(F_0)R(F))[(2,0,0,0),0]/dx_6=1.
+```
+
+Thus the moving target immediately acquires mixed entries if the output
+coordinate change is frozen at `F_0`.
+
 ## Evidence checked
 
 The invariant verifier reconstructs the exact `GLD74` raw fibre and mixed
@@ -41,8 +61,10 @@ operator and its affine augmentation have ranks `(8,9)`.  The selected exact
 -29451260/81 + (3419540/81)i.
 ```
 
-They are nonzero and define regular principal opens in survivor-frame times
-slope-chart space.
+They are nonzero.  The repaired theorem defines their regular continuations
+in survivor-frame times slope-chart space using the moving literal-Delta
+kernel frame and quotient.  The verifier evaluates their exact Gaussian
+specializations; it does not expand the universal moving polynomials.
 
 The independent no-import audit uses only the Python standard library,
 rebuilds the permanent map and response quotient in reverse free-variable
@@ -53,29 +75,30 @@ affine certificate and the `GLD77` sign-plane trichotomy.
 
 ## All-order argument audited
 
-Use the original fixed-star coordinates.  The nuisance map `b`, its kernel,
-and the legal response operators are fixed; only the equal-leaf survivor
-tensor and an affine raw section move.  Consequently the eight invariant raw
-directions above are a fixed basis, rather than a guessed moving basis.
+For each frame `F`, apply the tensor intertwiner `U_F` and raw intertwiner
+`S_F`.  The target becomes literal `Delta_4`; the transformed nuisance map,
+complete response, kernel frame, mixed quotient, and invariant columns all
+move regularly after inverting the named frame, rank-44, rank-13, and rank-8
+pivots.  A matching partition gives the signed four-root relation in this
+presentation, so the `GLD74` dimension count again makes rank at most one a
+necessary legal-response condition.  This step repairs the missing bridge;
+it is not implied merely by abstract GHZ covariance.
 
-Given any solution of the homogenized proportionality equations, average its
-actual `79`-coordinate raw vector over leaf `S_3`.  The averaged vector remains
-a preimage of the equal-leaf tensor and satisfies the same equations.  This
-step is valid for an arbitrary raw correction: it does not assume the
-35-coordinate pivot basis is equivariant.  Its kernel component is invariant,
-so it is a combination of the eight certified columns.  Nonvanishing of the
-corresponding augmented `9 x 9` determinant then forces the homogenizing
-coefficient `s` to vanish.  Because this is column independence over the
-localized coordinate ring, it also excludes formal arcs for which `s`
-vanishes to positive order but is not identically zero.  The proof is thus
+Because the leaf frames are equal, the transported system is leaf-`S_3`
+equivariant.  Given a solution of its homogenized proportionality equations,
+average the actual moving raw vector.  Its kernel component belongs to the
+regular eight-dimensional invariant kernel subbundle.  Nonvanishing of the
+corresponding augmented `9 x 9` determinant forces the homogenizing
+coefficient `s` to vanish.  Column independence over the localized coordinate
+ring excludes formal arcs even when `s` has positive valuation.  The proof is
 all-order; the separate first-jet computation is corroboration, not the
 geometric bridge.
 
 ## First-strict-jet control and corrected derivation
 
-The dual-number verifier retains the moving tensor/interface presentation,
-all `35` raw corrections, all four scale-fixed survivor tangents, the moving
-`13`-column quotient, and both proportionality-slope derivatives.  At every
+The dual-number verifier retains all `35` raw corrections, all four
+scale-fixed survivor tangents, a selected moving `13`-column quotient, and
+both proportionality-slope derivatives.  At every
 sign point it obtains
 
 ```text
@@ -85,12 +108,13 @@ rank M=34,   rank S=36,   rank[S|r]=37.
 Early scratch calculations for two points omitted the two slope derivatives.
 Those incomplete numbers were rejected before publication.  The portable
 verifier and the theorem use only the corrected `41`-column first-jet system.
-The jet result by itself is explicitly not used to claim an all-order
-exclusion.
+The jet result by itself neither proves legal necessity in moving coordinates
+nor an all-order exclusion; both bridges come from the repaired transported
+argument above.
 
 ## Load-bearing limits
 
-1. Each `delta_j` depends on both the survivor frame and slope variables.
+1. Each repaired `delta_j` depends on both the survivor frame and slope variables.
    `GLD78` does not produce a survivor-only exceptional polynomial by
    eliminating the slopes.
 2. The conclusion is in the local `z_0!=0` proportional-column chart around
@@ -105,6 +129,9 @@ exclusion.
    non-star interfaces, maximum-root/no-fifth-root certification, and global
    graph coverage remain open.
 6. No raw lift, source graph, graph witness, or counterexample was found.
+7. The exact verifier certifies the Gaussian values and intertwiners.  The
+   regular moving continuation and matching-partition identity are proved in
+   the theorem; they are not a symbolic four-parameter CAS expansion.
 
 ## Recommended successor
 
@@ -112,6 +139,7 @@ exclusion.
 compression reduce the full Gaussian projective boundary to exact trivial,
 sign, and standard determinant systems.  The trivial and standard systems
 are empty in every slope and `K_0` is injective, so the complete boundary is
-exactly the three reduced `GLD77` sign points.  The next successor is the
-proper-image/curve-selection bridge from the pointwise `GLD74` certificate
-and the `GLD78` entrance exclusions to a genuine survivor-open theorem.
+exactly the three reduced `GLD77` sign points.  `GLD80` then completes the
+proper-image bridge with an intrinsic `s`-saturated projective incidence and
+an algebraic DVR-selection lemma, proving an existential survivor-open
+theorem.  The explicit base divisor and source/interface bridge remain open.

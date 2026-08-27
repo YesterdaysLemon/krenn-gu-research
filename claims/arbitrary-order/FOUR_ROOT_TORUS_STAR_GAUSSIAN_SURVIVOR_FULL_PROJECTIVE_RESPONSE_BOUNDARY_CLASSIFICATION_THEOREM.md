@@ -209,12 +209,16 @@ minors eliminate those coordinates scheme-theoretically; the sign ideal
 (14) is reduced.  Thus no embedded or infinitesimal mixed-isotypic boundary
 structure is left.  `square`
 
-This closes the boundary obligation named by `GLD76`--`GLD78`.  Combined
-with the pointwise affine exclusion `GLD74` and the all-order entrance
-exclusions `GLD78`, it permits a proper-image argument for an existential
-survivor-open nonextension theorem.  That geometric step is a separate
-successor: `GLD79` alone does not claim it, and it does not compute a
-survivor-only exceptional polynomial.
+This closes the boundary obligation named by `GLD76`--`GLD78`.
+
+**Successor update (`GLD80`, 2026-08-26).**  The intrinsic projective
+rank-one incidence, saturated by the affine homogenizing coordinate, is
+proper over an affine finite-type survivor neighborhood.  Algebraic DVR
+selection and the three `GLD78` determinant units show that its strict
+closure misses the Gaussian fibre.  Consequently an existential principal
+survivor-open containing `F_0` excludes every raw preimage's first response.
+The base polynomial is not explicitly computed; `GLD79` itself remains the
+fixed-Gaussian boundary theorem.
 
 ## 5. Verification and hostile controls
 

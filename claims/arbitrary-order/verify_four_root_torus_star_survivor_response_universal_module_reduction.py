@@ -6,6 +6,9 @@ quotient of the complete q0 response.  It replaces the original 17 by 3 lift
 matrix by an equivalent 4 by 3 lift against a 68 by 4 root-response matrix,
 without choosing a response minor and without deleting rank-drop fibres.
 
+It also checks the exact matching-partition matrix identity used by GLD80 in
+both the canonical and Gaussian literal-Delta presentations.
+
 This is a denominator-free incidence reduction, not an emptiness theorem.
 """
 
@@ -232,6 +235,18 @@ def check():
     assert constant.shape == (81, 13) and constant.rank() == 13
     response_maps = q0_response_maps(gld73, eta, ports, parent.LOCAL_INDICES)
     assert all(response.shape == (81, 79) for response in response_maps)
+    constant_selector = sp.zeros(13, 79)
+    constant_selector[0, 0] = 1
+    for local_index, raw_index in enumerate(range(13, 25), start=1):
+        constant_selector[local_index, raw_index] = 1
+    matching_partition_difference = nuisance - sum(
+        (xi[root] * response_maps[root] for root in range(4)),
+        sp.zeros(81, 79),
+    )
+    assert all(
+        sp.simplify(value) == 0
+        for value in matching_partition_difference - constant * constant_selector
+    )
     _constant_pivots, quotient_rows, project = fixed_quotient(constant)
     assert len(quotient_rows) == 68
 
@@ -307,6 +322,15 @@ def check():
     transformed_constant = sp.Matrix.hstack(
         sp.Matrix(transformed_columns[0]),
         *(sp.Matrix(column) for column in transformed_columns[13:25]),
+    )
+    transformed_partition_difference = transformed_map - sum(
+        (xi[root] * transformed_response_maps[root] for root in range(4)),
+        sp.zeros(81, 79),
+    )
+    assert all(
+        sp.simplify(value) == 0
+        for value in transformed_partition_difference
+        - transformed_constant * constant_selector
     )
     constant_indices = (0, *range(13, 25))
     constant_change = raw_change.extract(constant_indices, constant_indices)
@@ -394,6 +418,7 @@ def check():
             "17c10d8e04a4e29b073914919beb0a99ff77735be12cc16f095e07ef7549452e"
         ),
         "gld74_gaussian_intertwining_verified": True,
+        "matching_partition_identity_verified_in_both_presentations": True,
         "gaussian_tensor_intertwiner_shape": [81, 81],
         "gaussian_raw_intertwiner_shape": [79, 79],
         "gaussian_full_response_intertwining_verified": True,
