@@ -133,6 +133,8 @@ flowchart TD
   S3P["Common-quadric mixed/pure residues<br/>PROVED; common-conformal shore EXCLUDED"]
   S3B["Root-quadric basepoint bridge<br/>m=3,4 EXCLUDED; m>=5 -> PR"]
   S3C["Every induced K5 of an n=8 witness<br/>CODIMENSION >=3 boundary envelope"]
+  S3CA["Fixed adjacent five-set pair<br/>CODIMENSION >=5 boundary overlap"]
+  S3CB["Same adjacent pair inside B_all<br/>CODIMENSION >=6; NONEMPTY residual"]
   S3H["Adjacent-cut monomial control<br/>H1 BLIND; pair-local H2 DETECTS"]
 
   M1["Maximum torus-root split<br/>PROVED reduction"]
@@ -459,7 +461,9 @@ flowchart TD
   S3Q -. strict special case .-> S3P
   S3P -->|fully supported conic point| S3B
   G0 -->|n=8 anchored five-root slices| S3C
-  S3C -. overlap with all-cut minors open .-> S3
+  S3C -->|exact fixed adjacent-pair overlap| S3CA
+  S3CA -->|proper B_all cut on equality sources| S3CB
+  S3CB -. multi-pair compatibility and witness exclusion open .-> S3
   S3 -. rankdrop + pure + H1 insufficient .-> S3H
 
   G0 -->|universal reduction| M1
@@ -884,6 +888,8 @@ flowchart TD
 | `S3P` | On any balanced shore whose root-root diagonal quadratics share one nondegenerate `Q`, every nonconstant mixed-word cross permanent is **divisible by `Q`**, while each constant word has the exact pure-root residue; every physical common-conformal shore is **excluded**, even with arbitrary internal nonroot blocks, by the nonzero-permanent mixed branch or zero-permanent pure branch | [Common-quadric mixed/pure residue theorem](../claims/arbitrary-order/BALANCED_COMMON_QUADRIC_MIXED_PERMANENT_DIVISIBILITY_AND_CONFORMAL_SHORE_EXCLUSION_THEOREM.md) |
 | `S3B` | A fully target-supported common projective zero of all diagonal root quadrics on one balanced shore exposes the existing zero-surplus restriction `P_m -> Delta_3`.  A common nondegenerate `Q` always supplies such a conic point, so the entire common-`Q` shore is **excluded for `m=3,4`** and **reduced to PR for `m>=5`**, without cross-column separability.  An exact normalized `n=8` fixture shows `B_all` does not force a basepoint in a prescribed root gauge; the fixture is latently common-quadratic and not a witness. | [Root-quadric basepoint bridge and gauge sharpness](../claims/arbitrary-order/BALANCED_ROOT_QUADRIC_BASEPOINT_PERMANENT_RESTRICTION_AND_GAUGE_SHARPNESS_THEOREM.md) |
 | `S3C` | For every five-set of an eight-vertex weighted concise ternary witness, the three target-colour root products belong to the ten internal-edge ideal.  Five-root nonemptiness and a `120`-product incidence cover put every induced `K_5` tuple whose ten blocks are all nonzero in a fixed closed projective **codimension-at-least-three** envelope, with the same affine bound after whole-zero-block branches are added.  The result uses `729` anchored-slice equations, including `726` mixed zeros; it does not use balanced minors or prove independence across the `56` five-sets. | [Five-root three-colour boundary-incidence theorem](../claims/arbitrary-order/EIGHT_VERTEX_FIVE_ROOT_THREE_COLOUR_BOUNDARY_INCIDENCE_CODIMENSION_THREE_THEOREM.md) |
+| `S3CA` | For any fixed labelled adjacent pair of five-sets at eight vertices, exact synchronization stratification gives a closed necessary envelope of **codimension at least five** in the selected fourteen projective blocks, the selected affine blocks, and the full twenty-eight-block affine pullback.  Exactly `60` labelled fully synchronized common-`K_4` selector strata attain the source-dimension bound.  Exact projected codimension, distinct intrinsic components, independence among the `420` adjacent pairs, and witness exclusion are not claimed. | [Adjacent five-set boundary-overlap theorem](../claims/arbitrary-order/EIGHT_VERTEX_ADJACENT_FIVE_SET_BOUNDARY_OVERLAP_CODIMENSION_FIVE_THEOREM.md) |
+| `S3CB` | On the same fixed adjacent-pair envelope, the all-balanced rank-drop equations cut every dimension-`247` equality source properly in the full affine block space.  Every hypothetical witness in this branch therefore lies in a fixed closed subset of `A^252` of dimension at most `246`, hence **ambient codimension at least six**.  A common-quadratic rank-seven control proves the residual is nonempty; no transverse intersection, exact codimension, multi-pair additivity, or witness exclusion follows. | [Balanced adjacent-overlap codimension-six theorem](../claims/arbitrary-order/EIGHT_VERTEX_ADJACENT_FIVE_SET_BOUNDARY_OVERLAP_BALANCED_RANK_DROP_CODIMENSION_SIX_THEOREM.md) |
 | `S3H` | In the invertible monomial common-form orbit, every nonzero pure coefficient makes all Hamming-one mixed coefficients vanish, while for every vertex pair and base colour one or two of the four pair-local Hamming-two cells are nonzero.  An exact all-rank-drop adjacent-cut control has empty prescribed-gauge base loci and all `48` Hamming-one zeros, so rank drop plus pure and Hamming-one data do not force compatible fixed-gauge roots.  This is route sharpness, not a witness or a general `B_all` classification. | [Adjacent-cut monomial Hamming-shell sharpness](../claims/arbitrary-order/EIGHT_VERTEX_ADJACENT_CUT_MONOMIAL_HAMMING_ONE_BLINDNESS_AND_HAMMING_TWO_DETECTOR_SHARPNESS_THEOREM.md) |
 | `M1` | Maximum torus-root saturation and `r=1` / `r>=2` split: **proved universal reduction** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md) |
 | `M2` | One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: **proved reduction, not exclusion** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer) |
@@ -1224,7 +1230,9 @@ flowchart TD
 | `S3P` | exact proof-DAG bridge | `S3B` | A point on the common nondegenerate conic avoids the finite target-coordinate line arrangement, producing a fully supported balanced root half.  The already proved zero-surplus extraction gives `P_m -> Delta_3`; `P_3` rank and `P_4` subrank exclude `m=3,4`, while `m>=5` remains at PR. |
 | `S3B` | exact fixed-gauge sharpness | `S3` | All-cut rank drop, invertible blocks, local concision, and normalized pure coefficients do not force a projective basepoint for the same-vector root quadrics in a prescribed gauge.  The control is latently common-quadratic, so existential multiroot synchronization remains open. |
 | `G0` | eight-vertex mixed-slice specialization | `S3C` | On each five-set, every matching in a complement-colour slice contains an internal five-set edge, while the target slice is one colour product.  Existing five-root nonemptiness plus projective incidence yields the codimension-at-least-three necessary envelope. |
-| `S3C` | unresolved intersection obligation | `S3` | The `56` overlapping five-set envelopes constrain every witness, but their incidence roots may vary and no independence or incompatibility with the all-cut minors is proved. |
+| `S3C` | exact adjacent-pair overlap refinement | `S3CA` | For one fixed adjacent pair, exact common-root synchronization accounts for the shared `K_4` evaluations and improves the necessary coefficient envelope from codimension at least three per five-set to codimension at least five for the pair. |
+| `S3CA` | exact all-balanced affine dimension refinement | `S3CB` | The all-balanced maximal-minor locus cuts every dimension-`247` equality source properly, giving ambient codimension at least six in the full affine block space; a rank-seven common-quadratic fixture shows the cut is nonempty. |
+| `S3CB` | unresolved multi-pair compatibility obligation | `S3` | All `420` adjacent-pair conditions constrain every witness, but no independence or additive dimension gain among their pullbacks is proved.  Compatibility with the remaining mixed equations and boundary strata, and witness exclusion, remain open. |
 | `S3` | refutation of prescribed-gauge extraction | `S3H` | Two adjacent all-rank-drop shores, nonzero pure coefficients, and the complete Hamming-one shell do not force compatible same-vector basepoints.  Four pair-local Hamming-two equations detect the monomial synchronized control class only. |
 | `G0` | reduction | `M1` | Maximum-cardinality torus roots give a pointwise exhaustive split. |
 | `M1` | case coverage | `M2`, `U1` | The two cases are `r>=2` and `r=1`; neither is excluded by the split. |
@@ -2899,14 +2907,19 @@ branch. They are not an instruction to begin all of them at once.
    now give a gauge-invariant alternative: on every five-set, every induced
    `K_5` tuple whose ten blocks are all nonzero lies in a closed projective
    codimension-at-least-three three-colour boundary envelope; the affine
-   envelope also includes whole-zero-block branches.  Rank drop, pure
+   envelope also includes whole-zero-block branches.  For one fixed adjacent
+   pair, exact synchronization improves this to codimension at least five;
+   imposing the all-balanced minors cuts the equality sources properly and
+   gives ambient affine codimension at least six.  The cut is nonempty, so
+   this is a dimension gain rather than an exclusion.  Rank drop, pure
    coefficients, and all
    Hamming-one equations still do not force adjacent fixed-gauge basepoints;
    pair-local Hamming-two equations detect only the monomial synchronized
-   control class.  The residual S3 problem is to intersect the `56`
-   overlapping five-set envelopes with the all-cut maximal-minor equations
-   and the transverse/nontransverse boundary strata, without assuming their
-   codimensions add.
+   control class.  The residual S3 problem is to prove compatibility or
+   further dimension gain among the `420` adjacent-pair pullbacks and then
+   couple those loci to the remaining mixed equations and
+   transverse/nontransverse boundary strata, without assuming codimensions
+   add.
 
 4. **Zero-surplus permanent restrictions.** Every hypothetical restriction
    lies in the simultaneous co-two product-sensor corank-two locus.  The

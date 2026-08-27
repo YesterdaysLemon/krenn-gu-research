@@ -1379,12 +1379,26 @@ codimension-at-least-three projective incidence envelope; the same bound
 survives in affine block space after adding the
 whole-zero-block branches.  This uses the full three anchored mixed slices,
 not pure normalization alone, and no independence is claimed among the `56`
-overlapping five-set conditions.  The companion
+overlapping five-set conditions.  The
+[`adjacent five-set overlap theorem`](EIGHT_VERTEX_ADJACENT_FIVE_SET_BOUNDARY_OVERLAP_CODIMENSION_FIVE_THEOREM.md)
+then treats any fixed pair of five-sets sharing four vertices.  Exact
+synchronization stratification improves the necessary envelope to
+codimension at least five in the selected fourteen-block space and its full
+twenty-eight-block affine pullback; the only source strata attaining the
+dimension bound are the `60` labelled common-`K_4` selector configurations.
+The
+[`balanced overlap refinement`](EIGHT_VERTEX_ADJACENT_FIVE_SET_BOUNDARY_OVERLAP_BALANCED_RANK_DROP_CODIMENSION_SIX_THEOREM.md)
+shows that imposing `B_all` cuts each of those equality sources properly, so
+the fixed adjacent-pair envelope inside the all-balanced locus has ambient
+affine codimension at least six.  A common-quadratic rank-seven fixture shows
+that this residual is nonempty.  No exact projected codimension, independence
+among the `420` adjacent pairs, or witness exclusion is claimed.  The companion
 [`adjacent-cut mixed-shell sharpness theorem`](EIGHT_VERTEX_ADJACENT_CUT_MONOMIAL_HAMMING_ONE_BLINDNESS_AND_HAMMING_TWO_DETECTOR_SHARPNESS_THEOREM.md)
 shows exactly that rank drop, pure terms, and the complete Hamming-one shell
 still do not force fixed-gauge basepoints in a synchronized monomial control;
-four pair-local Hamming-two equations detect that control class.  Intersecting
-the five-set envelopes with the all-cut minors remains open.
+four pair-local Hamming-two equations detect that control class.  Compatibility
+and possible dimension gain among several adjacent-pair envelopes, together
+with the remaining mixed equations and boundary strata, remain open.
 
 Independently, the
 [`co-two permanent product-sensor theorem`](ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md)
