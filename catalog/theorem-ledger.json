@@ -6698,6 +6698,35 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Four-root Torus-Star Equal-Leaf Survivor Rank-at-Most-Six Syndrome Boundary Containment (GLD86)",
+      "document": "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_AT_MOST_SIX_SYNDROME_BOUNDARY_CONTAINMENT_THEOREM.md",
+      "document_sha256_16": "6eed762276626a15",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero statement over Q(i), then C, on the complete scale-fixed equal-leaf survivor chart B with x_8=0",
+        "the ten GLD75 generators and bidirectional sparse ideal certificate are the exact survivor/incidence bridge; its canonical carrier is pinned by SHA-256 05a2540431023b7add3d3ae60189cac31ebd375609911cfdc66b8c4028346b57",
+        "the 37 fixed GLD71 sparse relations form an annihilator basis for the rank-44 torus-star nuisance space, and M(G)C denotes their equal-leaf syndrome",
+        "the common leaf frame is G=[[1,1,1],[p,q,1+i+r],[a,1+b,1+c]], the center is row-major, and the scale-fixed chart has C_8=1",
+        "the selected exact minor uses rows (0,1,17,19,31,32,33) and columns (2,3,4,5,6,7,8), and factors as 432(p-q)^2(p-s)^2(q-s)^2(pq+ps+qs-p-q-s)^2 with s=1+i+r",
+        "differentiating both directions of the certificate at an incidence-zero point transfers rank M(G)[:,0:8] to the GLD84 center coefficient matrix A",
+        "the conclusion is set-theoretic boundary containment only; no radical ideal equality, divisor emptiness, Omega-saturated Fitting unit, component theorem, source integration, or global resolution is claimed",
+        "the four named divisors, other gauges/components and source branches, lower-rank charts outside this chart, triangles, other roots, and global Krenn-Gu resolution remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_survivor_rank_at_most_six_syndrome_boundary_containment.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_survivor_rank_at_most_six_syndrome_boundary_containment.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_AT_MOST_SIX_SYNDROME_BOUNDARY_CONTAINMENT_REVIEW_2026-08-27.md",
+      "expected_runtime": "seconds for the exact symbolic primary and independent standard-library sparse-polynomial audit",
+      "external_binaries": [],
+      "note": "GLD86 proves that every rank-at-most-six point on the displayed equal-leaf base lies on one of four named divisors. None of those divisors is excluded after Omega saturation, and no GLD83 pulled-back Fitting ideal is computed. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
