@@ -621,7 +621,7 @@ flowchart TD
   GLS47 -->|rank>=5 full swallow / wider attachment open| GL
   GLS40 -->|two-effective-label adaptive target cut| GLS48
   GLS48 -->|four-or-more-label / higher-rank target coupling open| GL
-  GLS48 -->|D(p) equality / q-cylinder audit| GLS49
+  GLS48 -->|"D(p) equality / q-cylinder audit"| GLS49
   GLS49 -->|p=0 three-label kernel/deck audit| GLS50
   GLS50 -->|shared-polarization profile classification| GLS51
   GLS51 -->|uncontracted inactive-port deck coupling| GLS52
@@ -3147,6 +3147,8 @@ conjecture.
   leaves this live frontier unchanged must explicitly state why no frontier
   update is needed. The owning claim document must change when the theorem
   itself changes.
+- CI renders this Mermaid block with the pinned Mermaid CLI. Keep edge labels
+  containing punctuation quoted so GitHub and the CI renderer parse them alike.
 
 The detailed reconstruction, reviewer disagreements, relocation inventory,
 and PR #72–#82 evidence are in the
