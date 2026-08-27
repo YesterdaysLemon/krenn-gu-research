@@ -1193,6 +1193,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Eight-Vertex Four-Five-Set Pencil Tensor-Span-Rank Boundary Correction",
+      "document": "claims/arbitrary-order/EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_TENSOR_SPAN_RANK_BOUNDARY_CORRECTION.md",
+      "document_sha256_16": "189d248aba5765b0",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero route correction for four induced K5 charts over one fixed common K4 in the eight-vertex incidence geometry",
+        "all four charts use the displayed nonconstant selector and the exact common-root partition system; every coordinate factor is nonempty",
+        "the six shared-edge tensor spans have ranks (2,3,3,4,4,4), while the partition-pair cardinalities are all four",
+        "exact kernel forms and an incidence Jacobian give a locally projected projective image of dimension 168 and full affine incidence dimension 244, both codimension eight",
+        "whole-zero blocks are not discarded; the boundary is a route correction, not a Krenn-Gu counterexample, witness, B_all classification, or global resolution"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_eight_vertex_four_five_set_pencil_tensor_span_rank_boundary_correction.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_eight_vertex_four_five_set_pencil_tensor_span_rank_boundary_correction.py",
+      "audit_provenance": "independent_modular_audit",
+      "review": "docs/audits/EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_TENSOR_SPAN_RANK_BOUNDARY_CORRECTION_REVIEW_2026-08-27.md",
+      "expected_runtime": "seconds (SymPy primary; standard-library modular audit)",
+      "external_binaries": [],
+      "note": "The prior codimension-nine/codimension-ten pencil promotion is withdrawn: distinct partition-block pairs do not determine tensor-span rank for four decomposable evaluations. An exact feasible stratum has common span ranks (2,3,3,4,4,4), a nonzero Jacobian projection certificate, and affine codimension eight. The independent audit is modular corroboration only. Corrected span-rank stratification, B_all, seventy-pencil compatibility, witness exclusion, and Krenn-Gu remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Eight-Vertex Adjacent-Cut Monomial Hamming-One Blindness and Hamming-Two Detector Sharpness Theorem",
       "document": "claims/arbitrary-order/EIGHT_VERTEX_ADJACENT_CUT_MONOMIAL_HAMMING_ONE_BLINDNESS_AND_HAMMING_TWO_DETECTOR_SHARPNESS_THEOREM.md",
       "document_sha256_16": "45a50e3bd78a58eb",

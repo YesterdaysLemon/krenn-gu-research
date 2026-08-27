@@ -135,6 +135,7 @@ flowchart TD
   S3C["Every induced K5 of an n=8 witness<br/>CODIMENSION >=3 boundary envelope"]
   S3CA["Fixed adjacent five-set pair<br/>CODIMENSION >=5 boundary overlap"]
   S3CB["Same adjacent pair inside B_all<br/>CODIMENSION >=6; NONEMPTY residual"]
+  S3CC["Four-K5 pencil rank-cardinality boundary<br/>CODIM-9 ROUTE WITHDRAWN; CODIM-8 STRATUM"]
   S3H["Adjacent-cut monomial control<br/>H1 BLIND; pair-local H2 DETECTS"]
 
   M1["Maximum torus-root split<br/>PROVED reduction"]
@@ -463,7 +464,8 @@ flowchart TD
   G0 -->|n=8 anchored five-root slices| S3C
   S3C -->|exact fixed adjacent-pair overlap| S3CA
   S3CA -->|proper B_all cut on equality sources| S3CB
-  S3CB -. multi-pair compatibility and witness exclusion open .-> S3
+  S3CB -->|span-rank counterboundary corrects pencil route| S3CC
+  S3CC -. corrected span-rank analysis and seventy-pencil compatibility open .-> S3
   S3 -. rankdrop + pure + H1 insufficient .-> S3H
 
   G0 -->|universal reduction| M1
@@ -890,6 +892,7 @@ flowchart TD
 | `S3C` | For every five-set of an eight-vertex weighted concise ternary witness, the three target-colour root products belong to the ten internal-edge ideal.  Five-root nonemptiness and a `120`-product incidence cover put every induced `K_5` tuple whose ten blocks are all nonzero in a fixed closed projective **codimension-at-least-three** envelope, with the same affine bound after whole-zero-block branches are added.  The result uses `729` anchored-slice equations, including `726` mixed zeros; it does not use balanced minors or prove independence across the `56` five-sets. | [Five-root three-colour boundary-incidence theorem](../claims/arbitrary-order/EIGHT_VERTEX_FIVE_ROOT_THREE_COLOUR_BOUNDARY_INCIDENCE_CODIMENSION_THREE_THEOREM.md) |
 | `S3CA` | For any fixed labelled adjacent pair of five-sets at eight vertices, exact synchronization stratification gives a closed necessary envelope of **codimension at least five** in the selected fourteen projective blocks, the selected affine blocks, and the full twenty-eight-block affine pullback.  Exactly `60` labelled fully synchronized common-`K_4` selector strata attain the source-dimension bound.  Exact projected codimension, distinct intrinsic components, independence among the `420` adjacent pairs, and witness exclusion are not claimed. | [Adjacent five-set boundary-overlap theorem](../claims/arbitrary-order/EIGHT_VERTEX_ADJACENT_FIVE_SET_BOUNDARY_OVERLAP_CODIMENSION_FIVE_THEOREM.md) |
 | `S3CB` | On the same fixed adjacent-pair envelope, the all-balanced rank-drop equations cut every dimension-`247` equality source properly in the full affine block space.  Every hypothetical witness in this branch therefore lies in a fixed closed subset of `A^252` of dimension at most `246`, hence **ambient codimension at least six**.  A common-quadratic rank-seven control proves the residual is nonempty; no transverse intersection, exact codimension, multi-pair additivity, or witness exclusion follows. | [Balanced adjacent-overlap codimension-six theorem](../claims/arbitrary-order/EIGHT_VERTEX_ADJACENT_FIVE_SET_BOUNDARY_OVERLAP_BALANCED_RANK_DROP_CODIMENSION_SIX_THEOREM.md) |
+| `S3CC` | The proposed four-chart Bell-partition codimension lift is **withdrawn**: its shared-edge cardinality `q_ij` is not tensor-span rank for four decomposable evaluations.  An exact feasible selector/partition stratum has common span ranks `(2,3,3,4,4,4)` versus six cardinalities `4`, and a locally projected affine incidence image of codimension eight.  This is a route boundary, not a Krenn--Gu counterexample; corrected span-rank stratification, the `B_all` intersection, independence among the `70` pencils, witness exclusion, and global resolution remain open. | [Four-five-set pencil tensor-span-rank boundary correction](../claims/arbitrary-order/EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_TENSOR_SPAN_RANK_BOUNDARY_CORRECTION.md), [correction review](audits/EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_TENSOR_SPAN_RANK_BOUNDARY_CORRECTION_REVIEW_2026-08-27.md) |
 | `S3H` | In the invertible monomial common-form orbit, every nonzero pure coefficient makes all Hamming-one mixed coefficients vanish, while for every vertex pair and base colour one or two of the four pair-local Hamming-two cells are nonzero.  An exact all-rank-drop adjacent-cut control has empty prescribed-gauge base loci and all `48` Hamming-one zeros, so rank drop plus pure and Hamming-one data do not force compatible fixed-gauge roots.  This is route sharpness, not a witness or a general `B_all` classification. | [Adjacent-cut monomial Hamming-shell sharpness](../claims/arbitrary-order/EIGHT_VERTEX_ADJACENT_CUT_MONOMIAL_HAMMING_ONE_BLINDNESS_AND_HAMMING_TWO_DETECTOR_SHARPNESS_THEOREM.md) |
 | `M1` | Maximum torus-root saturation and `r=1` / `r>=2` split: **proved universal reduction** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md) |
 | `M2` | One complete fixed-surplus physical hafnian layer; coordinate two-residual absorption: **proved reduction, not exclusion** | [Maximal torus-root theorem](../claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md#2-the-saturated-principal-hafnian-layer) |
@@ -1232,7 +1235,8 @@ flowchart TD
 | `G0` | eight-vertex mixed-slice specialization | `S3C` | On each five-set, every matching in a complement-colour slice contains an internal five-set edge, while the target slice is one colour product.  Existing five-root nonemptiness plus projective incidence yields the codimension-at-least-three necessary envelope. |
 | `S3C` | exact adjacent-pair overlap refinement | `S3CA` | For one fixed adjacent pair, exact common-root synchronization accounts for the shared `K_4` evaluations and improves the necessary coefficient envelope from codimension at least three per five-set to codimension at least five for the pair. |
 | `S3CA` | exact all-balanced affine dimension refinement | `S3CB` | The all-balanced maximal-minor locus cuts every dimension-`247` equality source properly, giving ambient codimension at least six in the full affine block space; a rank-seven common-quadratic fixture shows the cut is nonempty. |
-| `S3CB` | unresolved multi-pair compatibility obligation | `S3` | All `420` adjacent-pair conditions constrain every witness, but no independence or additive dimension gain among their pullbacks is proved.  Compatibility with the remaining mixed equations and boundary strata, and witness exclusion, remain open. |
+| `S3CB` | four-chart pencil rank correction | `S3CC` | The proposed `15^4` Bell-partition lift used partition-pair cardinality in place of tensor-span rank.  An exact feasible stratum exposes a codimension-eight local incidence image, so the codimension-nine/ten promotion is withdrawn. |
+| `S3CC` | unresolved corrected pencil compatibility obligation | `S3` | The four-chart rank boundary is not a witness or global counterexample.  Actual span-rank stratification, its `B_all` intersection, the `70`-pencil compatibility problem, remaining mixed equations, and witness exclusion remain open. |
 | `S3` | refutation of prescribed-gauge extraction | `S3H` | Two adjacent all-rank-drop shores, nonzero pure coefficients, and the complete Hamming-one shell do not force compatible same-vector basepoints.  Four pair-local Hamming-two equations detect the monomial synchronized control class only. |
 | `G0` | reduction | `M1` | Maximum-cardinality torus roots give a pointwise exhaustive split. |
 | `M1` | case coverage | `M2`, `U1` | The two cases are `r>=2` and `r=1`; neither is excluded by the split. |
@@ -2910,13 +2914,18 @@ branch. They are not an instruction to begin all of them at once.
    envelope also includes whole-zero-block branches.  For one fixed adjacent
    pair, exact synchronization improves this to codimension at least five;
    imposing the all-balanced minors cuts the equality sources properly and
-   gives ambient affine codimension at least six.  The cut is nonempty, so
-   this is a dimension gain rather than an exclusion.  Rank drop, pure
+   gives ambient affine codimension at least six.  A proposed four-chart
+   refinement over one common `K_4` is withdrawn after an exact
+   tensor-span-rank boundary: four distinct partition-block pairs can have
+   only a two- or three-dimensional tensor span.  The explicit feasible
+   stratum has a locally projected affine incidence image of codimension
+   eight, so the prior codimension-nine/ten lift is not valid.  Corrected
+   span-rank stratification and the `B_all` intersection remain open.  Rank drop, pure
    coefficients, and all
    Hamming-one equations still do not force adjacent fixed-gauge basepoints;
    pair-local Hamming-two equations detect only the monomial synchronized
    control class.  The residual S3 problem is to prove compatibility or
-   further dimension gain among the `420` adjacent-pair pullbacks and then
+   further dimension gain among the `70` four-chart pencil pullbacks and then
    couple those loci to the remaining mixed equations and
    transverse/nontransverse boundary strata, without assuming codimensions
    add.

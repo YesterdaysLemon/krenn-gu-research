@@ -1391,14 +1391,22 @@ The
 shows that imposing `B_all` cuts each of those equality sources properly, so
 the fixed adjacent-pair envelope inside the all-balanced locus has ambient
 affine codimension at least six.  A common-quadratic rank-seven fixture shows
-that this residual is nonempty.  No exact projected codimension, independence
-among the `420` adjacent pairs, or witness exclusion is claimed.  The companion
+that this residual is nonempty.  A proposed four-five-set pencil refinement is
+retained only as a route correction: its Bell-partition calculation counted
+distinct partition-block pairs as tensor rank, which fails for four
+decomposable evaluation tensors.  The exact
+ [`tensor-span-rank boundary correction`](EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_TENSOR_SPAN_RANK_BOUNDARY_CORRECTION.md)
+ gives a feasible selector/partition stratum with common span ranks
+ `(2,3,3,4,4,4)` rather than six cardinalities `4`, and a locally projected
+ affine incidence image of codimension eight.  The associated codimension-nine
+ and balanced codimension-ten claims are withdrawn; the corrected package is
+  not a witness or a global counterexample.  The companion
 [`adjacent-cut mixed-shell sharpness theorem`](EIGHT_VERTEX_ADJACENT_CUT_MONOMIAL_HAMMING_ONE_BLINDNESS_AND_HAMMING_TWO_DETECTOR_SHARPNESS_THEOREM.md)
 shows exactly that rank drop, pure terms, and the complete Hamming-one shell
 still do not force fixed-gauge basepoints in a synchronized monomial control;
 four pair-local Hamming-two equations detect that control class.  Compatibility
-and possible dimension gain among several adjacent-pair envelopes, together
-with the remaining mixed equations and boundary strata, remain open.
+and possible dimension gain among the seventy pencil envelopes, together with
+the remaining mixed equations and boundary strata, remain open.
 
 Independently, the
 [`co-two permanent product-sensor theorem`](ARBITRARY_PERMANENT_COTWO_PRODUCT_SENSOR_RANK_DROP_THEOREM.md)
