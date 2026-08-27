@@ -20,9 +20,10 @@ point transfers that rank to the `10 x 8` center coefficient matrix `A` of
 `GLD84`.
 
 This theorem does **not** compute or exclude the pulled-back `GLD83` Fitting
-ideal. After `Omega` saturation, all four named divisors remain retained
-branches: none of the four divisors is excluded after `Omega` saturation.
-The Gaussian rank-seven chart of `GLD83`/`GLD84` remains open context, and the
+ideal. Within the GLD86 package, no divisor-specific exclusion was supplied,
+so all four named divisors were retained as explicit obligations. The later
+`GLD87` theorem closes H1/H2/H3 on the determinant-safe `Omega` open; H4 and
+the Gaussian rank-seven chart of `GLD83`/`GLD84` remain open context, and the
 global Krenn--Gu conjecture remains **UNRESOLVED**.
 
 Owning dependencies are the exact `GLD71` punctured-syndrome basis, the
@@ -242,10 +243,11 @@ Z_low subseteq
 
 or, equivalently, the union of the four named divisor intersections with
 `D(Omega)`. Saturating by `Omega` does not invert any `H_j` in this theorem.
-No unit certificate, emptiness proof, or pointwise exclusion is supplied for
-any of the four components. In particular, **none of the four divisors is
-excluded after `Omega` saturation**; all four remain explicit low-rank
-boundary obligations.
+No unit certificate, emptiness proof, or pointwise exclusion is supplied by
+GLD86 for any of the four components. Thus all four remain explicit low-rank
+boundary obligations at GLD86's own evidence boundary. The later GLD87
+determinant-safety theorem proves that H1/H2/H3 have only singular-center
+incidences and therefore excludes those three on `D(Omega)`; H4 remains.
 
 The theorem also does not assert that each divisor intersection is nonempty.
 It records exactly what is proved: any surviving low-rank point must be on
@@ -268,11 +270,11 @@ the named union, while the divisor-by-divisor analysis remains to be done.
   other roots, or other support profiles.
 - The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
-The highest-value successor is now divisor-by-divisor analysis of the
-`GLD83` Fitting pullback on `V(H_j) intersect D(Omega)`, retaining the full
-raw response incidence on any `C_F` rank drop. A proof that one divisor is
-empty would be a separate scoped theorem; a result on one principal open
-would not close the other three.
+The highest-value successor after GLD87 is divisor-specific analysis of the
+`GLD83` Fitting pullback on `V(H_4) intersect D(Omega)`, retaining the full
+raw response incidence on any `C_F` rank drop. A proof that H4 is empty would
+be a separate scoped theorem; a result on one principal open would not close
+the other charts.
 
 ## 6. Verification
 

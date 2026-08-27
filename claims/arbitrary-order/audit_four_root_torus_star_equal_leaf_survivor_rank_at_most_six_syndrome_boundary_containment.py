@@ -77,7 +77,10 @@ def add(left: Polynomial, right: Polynomial) -> Polynomial:
 
 
 def negate(value: Polynomial) -> Polynomial:
-    return {exponent: gaussian_negate(coefficient) for exponent, coefficient in value.items()}
+    return {
+        exponent: gaussian_negate(coefficient)
+        for exponent, coefficient in value.items()
+    }
 
 
 def subtract(left: Polynomial, right: Polynomial) -> Polynomial:
@@ -245,7 +248,17 @@ def compact_selected_matrix() -> list[list[Polynomial]]:
 
     full_rows = [
         [zero, zero, zero, cube(p), cube(q), cube(s), zero, zero, zero],
-        [constant(ONE), constant(ONE), constant(ONE), zero, zero, zero, zero, zero, zero],
+        [
+            constant(ONE),
+            constant(ONE),
+            constant(ONE),
+            zero,
+            zero,
+            zero,
+            zero,
+            zero,
+            zero,
+        ],
         [
             zero,
             zero,
@@ -319,9 +332,7 @@ def check_column_replacement_fixture() -> None:
         last = []
         for row in range(7):
             value = constant((0, 0))
-            for column, coefficient in enumerate(
-                (c0, c1, 0, 0, 0, 0, 0, 0, 1)
-            ):
+            for column, coefficient in enumerate((c0, c1, 0, 0, 0, 0, 0, 0, 1)):
                 value = add(value, scale(matrix[row][column], (coefficient, 0)))
             last.append(value)
         replacement = [
@@ -384,9 +395,7 @@ def audit() -> None:
     for divisor in divisors:
         expected = multiply(expected, power(divisor, 2))
     assert determinant_value == expected
-    assert all(
-        exponent[3:] == (0, 0, 0) for exponent in determinant_value
-    )
+    assert all(exponent[3:] == (0, 0, 0) for exponent in determinant_value)
     check_column_replacement_fixture()
 
     theorem = THEOREM.read_text(encoding="utf-8")
@@ -400,7 +409,8 @@ def audit() -> None:
         "p q+p s+q s-p-q-s",
         "V(I_7(A))",
         "D(Omega)",
-        "none of the four divisors is excluded",
+        "Within the GLD86 package",
+        "GLD87",
         "GLD83",
         "**UNRESOLVED**",
     )
@@ -414,7 +424,7 @@ def main() -> None:
     print("exact factorization and C8=1 column replacement fixture: PASS")
     print(
         "scope: rank-at-most-six containment in four named divisors; "
-        "Omega-saturated divisor emptiness and pulled-back Fitting remain open"
+        "Omega-saturated H4 divisor and pulled-back Fitting remain open"
     )
 
 

@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD86 equal-leaf checkpoint
+## GLD83--GLD87 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -31,13 +31,17 @@ full-intrinsic proper-open result rather than a selected-minor computation.
 The intrinsic residual, all other charts/ranks/components, and the global
 conjecture remain **UNRESOLVED**.
 
-The latest equal-leaf boundary package is
+The preceding equal-leaf boundary package is
 [`GLD86 rank-at-most-six syndrome containment`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_AT_MOST_SIX_SYNDROME_BOUNDARY_CONTAINMENT_THEOREM.md).
 It proves that the retained center-rank-at-most-six branch lies in the union
 of four named Gaussian leaf-frame divisors using one exact `7 x 7` syndrome
-minor and the scale-fixed `C_8=1` relation.  All four divisors remain open
-after `Omega` saturation; this is not a pulled-back Fitting exclusion or a
-global resolution.
+minor and the scale-fixed `C_8=1` relation.  It intentionally supplied no
+divisor-specific exclusion.  [`GLD87`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_THREE_COLLISION_DIVISOR_DETERMINANT_SAFETY_THEOREM.md)
+now closes the H1/H2/H3 part of that boundary on the determinant-safe
+`D(Omega)` open: exact H1 kernel analysis forces every compatible center to be
+singular, and exact leaf-column equivariance transfers this to H2 and H3.
+The nonlinear H4 divisor, the pulled-back Fitting ideal, and the global
+conjecture remain **UNRESOLVED**.
 
 ## Current symbolic checkpoint
 

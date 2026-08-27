@@ -7,8 +7,9 @@ Date: 2026-08-27
 Accept `GLD86` as an **exact characteristic-zero, set-theoretic boundary
 containment** on the displayed scale-fixed equal-leaf chart. The theorem does
 not claim that the rank-at-most-six branch is empty. It confines that branch
-to the union of four named leaf-frame divisors and leaves all four available
-after the `GLD83` `Omega` localization.
+to the union of four named leaf-frame divisors. The statements below record
+GLD86's own evidence boundary; the later `GLD87` divisor theorem closes
+H1/H2/H3 on the determinant-safe `Omega` open, while H4 remains.
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**. No pulled-back
 Fitting ideal is computed, no Gaussian rank-seven component is closed, and no
@@ -109,8 +110,9 @@ Z_low subseteq
 The review specifically rejects the following stronger readings:
 
 - the displayed factorization does not prove any `H_j` divisor empty;
-- `Omega` saturation does not invert any `H_j` here, so none of the four
-  divisors is excluded after `Omega` saturation;
+- the GLD86 syndrome calculation does not invert any `H_j` or supply a
+  divisor-specific exclusion after `Omega` saturation; GLD87 subsequently
+  supplies that exclusion for H1/H2/H3 on the determinant-safe open;
 - the theorem does not claim that each divisor intersection is nonempty or
   that these four divisors are the complete irreducible decomposition;
 - the syndrome minor does not compute `I_Pl` or prove a Fitting residual
@@ -140,8 +142,9 @@ carrier; this package pins and scopes that dependency rather than claiming a
 second replay is a new GLD86 conclusion.
 
 Both scripts finish with the global status `UNRESOLVED` and explicitly report
-that the `Omega`-saturated divisors and the pulled-back Fitting problem remain
-open.
+that GLD86 supplies no pulled-back Fitting computation. The later GLD87
+package handles H1/H2/H3 on the determinant-safe `Omega` open; H4 and the
+remaining Fitting problem stay open.
 
 ## Proof-tree delta and remaining obligation
 
@@ -149,12 +152,12 @@ open.
 adds the exact edge
 
 ```text
-GLD84 -> GLD86 -> GL
+GLD84 -> GLD86 -> GLD87 -> GL
 ```
 
-where the first edge is the syndrome-minor containment and the second edge
-is the remaining divisor/Fitting/source/component work. The next load-bearing
-task is to analyze `V(H_j) intersect D(Omega)` one divisor at a time, including
-the `GLD83` Fitting pullback and the full raw response incidence on any
-`C_F` rank drop. Any result on one divisor is a scoped successor and does not
-close the other three.
+where the first edge is the syndrome-minor containment, the second is the
+three-collision determinant-safety theorem, and the last edge is the
+remaining H4/Fitting/source/component work. The next load-bearing task is to
+analyze `V(H_4) intersect D(Omega)`, including the `GLD83` Fitting pullback
+and the full raw response incidence on any `C_F` rank drop. Any result on one
+principal open is a scoped successor and does not close the other charts.
