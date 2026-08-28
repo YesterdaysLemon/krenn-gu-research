@@ -68,6 +68,18 @@ H4 low-rank boundaries are `Q6=0` and `e=0` away from those handled
 intersections; the pulled-back Fitting ideal and the other
 chart/component/source branches remain open in this lane.
 
+[`GLD92`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_BOUNDARY_DENSE_MINOR_EXCLUSION_THEOREM.md)
+now gives the exact dense Q6-boundary continuation **inside the GLD88
+three-parameter family**.  Two alternative six-minors have numerators
+`(p-q)^3 F28` and `(p+q-1)(p-q)^3 F31`; `Q6` is irreducible, each stripped
+factor is proper on it, and their exact `a`-resultant has no common Q6
+component.  An additional coefficient-ideal certificate rules out vertical
+common-minor fibres on `D(Delta)`, so the remaining `V(Q6,F28,F31)` locus is
+finite but retained.  This does not force arbitrary H4 Q6 points into the
+GLD88 family and is not full Q6 closure.  The `L1/L2/e` boundaries, Fitting
+pullback, other charts/components/source branches, and global conjecture
+remain **UNRESOLVED**.
+
 [`GLD91`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_THEOREM.md)
 now gives an exact characteristic-zero exclusion on the two-leaf slice
 `x9=1, x10=x11=x12=0, x13=t, x14=u` of the named rank-eight chart.  After
