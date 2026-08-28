@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD91 equal-leaf checkpoint
+## GLD83--GLD93 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -58,9 +58,15 @@ classifies their double-pivot branch by two auxiliary charts and one exact
 residual curve, excludes four factor corners by coprime seven-minors, and
 closes `T=2pq-p-q+2=0` without dividing by `T`.  Every positive-dimensional
 rank-six family has the complete common-row kernel and hence singular center.
-Only `Q6=0`, the `L1/L2/e` coefficient boundaries, the pulled-back Fitting
-ideal, and the other chart/component/source branches remain open in this
-lane.
+[`GLD93`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_L1_L2_RANK_SEVEN_EXCLUSION_THEOREM.md)
+now closes the entire `L1=0` and `L2=0` coefficient boundaries on the
+upstream-open H4 chart by direct rank-seven minors, including the `e=T=0`
+and `T=0` exceptional fibres.  Its L2 computation does not assume the
+naive p/q leaf-column symmetry, and its independent audit contracts the
+selected sparse relations through a separate representation.  The remaining
+H4 low-rank boundaries are `Q6=0` and `e=0` away from those handled
+intersections; the pulled-back Fitting ideal and the other
+chart/component/source branches remain open in this lane.
 
 [`GLD91`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_THEOREM.md)
 now gives an exact characteristic-zero exclusion on the two-leaf slice
