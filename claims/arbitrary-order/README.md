@@ -3539,6 +3539,24 @@ the global conjecture remain open.  See the
 [`GLS67 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_THREE_DEFICIENT_PAIR_CLASS_AND_P3_ORBIT_LOCALIZATION_THEOREM.md)
 and
 [`GLS67 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_THREE_DEFICIENT_PAIR_CLASS_AND_P3_ORBIT_LOCALIZATION_REVIEW_2026-08-28.md).
+The GLS68 characteristic-zero four-deficient parent attempt applies every
+GLS63 incidence/singleton rule and all six GLS67 pair classes to the complete
+normalized support/rank/zero-count census.  It gives `137,781 -> 20,778 ->
+4,794` surviving profiles in fifty canonical keys; the two-pure-axis branch
+is empty.  Exactly fifty-four profiles in two keys have two nonaxis labels
+with no cross-product zero and therefore a fully ternary four-port target.
+They are **not** six-vertex exclusions.  Each nonaxis cross product depends
+bilinearly on the two probe variables, so the complementary two-port decks
+also depend on those probes and the exact pullback has bidegree `(3,3)`.
+Keeping the probes open therefore gives probe-dependent would-be edge blocks;
+fixing the probes leaves only four open ports.  This corrects the tempting
+but invalid direct six-vertex reconstruction.  All `4,794` profiles remain
+open: fifty-four ternary profiles in two keys and `4,740` binary/monocolour
+profiles in forty-eight keys.  A same-source factorization, polarization, or
+coefficientwise integrability theorem is now required.  See the
+[`GLS68 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_DEFICIENT_PAIR_CLASS_AND_PROBE_DEPENDENT_FOUR_PORT_BOUNDARY_THEOREM.md)
+and
+[`GLS68 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_DEFICIENT_PAIR_CLASS_AND_PROBE_DEPENDENT_FOUR_PORT_BOUNDARY_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
