@@ -269,28 +269,23 @@ B tensor H+F tensor D=beta z_(0,b) tensor z_(1,b).   (15b)
 ```
 
 At least one of the eight forms in (15a) is zero.  Otherwise the two middle
-rank-one syzygies give
+rank-one syzygies give nonzero scalars `e,f` with
 
 ```text
-F proportional A,       H proportional C,
-E proportional B,       G proportional D,            (15c)
+F=f A,             H=-f C,
+E=e B,             G=-e D.                           (15c)
 ```
 
-with nonzero proportionality constants.  Put
-`X=A tensor D` and `Y=B tensor C`.  The two diagonal equations in (15b) are
-independent linear combinations of `X,Y`; their coefficient matrix must be
-invertible because their right sides are independent.  Hence
+The two diagonal left sides in (15b) are consequently
 
 ```text
-span{X,Y}=span{z_(0,a) tensor z_(1,a),
-               z_(0,b) tensor z_(1,b)}.              (15d)
+e(B tensor C-A tensor D),
+f(A tensor D-B tensor C).                            (15d)
 ```
 
-The only decomposable lines in the plane on the right are its two displayed
-generators: a combination with both coefficients nonzero has matrix rank
-two.  Thus `X,Y` are those two lines in some order.  But every coefficient
-in the two combinations coming from (15c) is nonzero, so neither combination
-can equal just one generator.  This contradiction proves the claim.
+They are proportional, whereas the two right sides are the independent
+nonzero tensors `z_(0,a) tensor z_(1,a)` and
+`z_(0,b) tensor z_(1,b)`.  This contradiction proves the claim.
 
 The symmetries exchanging `s,t`, exchanging `a,b`, and exchanging the two
 old probes act transitively on the eight forms, so take `A=0`.  The first
