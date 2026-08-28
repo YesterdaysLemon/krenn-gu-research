@@ -3415,6 +3415,26 @@ genuine-cancellation fork.  This is a structural reduction and sharp no-go,
 not a response, selector, receiver, branch exclusion, or node closure.  It is
 covered by the
 [`maximum-root all-rigid kernel-contraction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ALL_RIGID_KERNEL_CONTRACTION_AND_CROSS_PRODUCT_REDUCTION_REVIEW_2026-08-23.md).
+The GLS61 characteristic-zero theorem returns to the complete `GLS8` tensor
+before the GLS58 full cross-product contraction.  Leaving an arbitrary set
+`S` of auxiliary labels open retains structurally exactly the physical pair
+companions indexed by `binom(S,2)`.  The one-open equations force at least
+two identically zero cross-product coordinates per target colour.  At
+`r=3`, six injective nonaxis labels would therefore form an exact labelled
+`2+2+2` zero-coordinate partition; the corresponding two-open equation
+would force a same-colour physical companion to be pure diagonal, while all
+four injective shore orientations have a nonzero off-diagonal projection.
+The nonaxis cell is empty.  For any nonempty set of pure-probe axes, quotient
+each pure slot by its full active probe-row line.  The `S=P` equation forces
+three disjoint nonaxis zero sets, so at most three axes can remain; a
+singleton nonaxis zero then makes the `S=P union {u}` target a nonzero pure
+tensor while every physical companion is killed by an active-line quotient.
+Thus the complete all-injective `r=3` branch is empty.  The hierarchy is
+arbitrary-root, but the branch exclusion uses `|Bhat|=6`; deficient maps, the
+unique-nonrigid branch, response and selector gates, nonzero anchor,
+arbitrary-root attachment, and global resolution remain open.  The result
+is covered by the
+[`maximum-root cross-product partial-uncontraction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_CROSS_PRODUCT_PARTIAL_UNCONTRACTION_AND_INJECTIVE_NONAXIS_EXCLUSION_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
