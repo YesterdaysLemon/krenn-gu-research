@@ -3515,6 +3515,30 @@ the unique-nonrigid/alternate-receiver branch, every attachment and
 synchronization gate, nonzero anchor, arbitrary root order, and the global
 conjecture remain open.  See the
 [`GLS66 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_ETA_ZERO_TWO_TWO_SCALAR_AXIS_AND_COMMON_HYPERPLANE_EXCLUSION_REVIEW_2026-08-28.md).
+The GLS67 characteristic-zero parent localization opens any two deficient
+labels while contracting every other deficient kernel and every nonaxis
+cross product.  After pure-axis quotients, the only source is one actual
+pair companion times its common physical deck; every surviving colour has
+one exact deficient support class.  For exactly three deficient labels, the
+GLS63 incidence rules and this pair-class theorem give `61,965 -> 2,367 ->
+516 -> 453` labelled profiles in ten initial orbits, with `P=empty` and
+`|U|=3`.  Cross-contracting `U` identifies the deficient-side source as one
+exact `P_3`; its pair scalar is the same one-port deck evaluated on the third
+kernel.  Contracting all three deficient kernels instead identifies a
+second exact `P_3` on `U`.  A common deficient colour would make that target
+nonzero and pure, but all eight injective-nonaxis orientation words are
+excluded by probe-independent deck quotients.  Thus common-support orbits 1
+and 6 are empty and the exact residual is **432 labelled profiles in eight
+orbits**.  On every residual, the kernel-side `P_3` is zero and forces its
+three complementary one-port decks to vanish.  Binary, pure, and zero
+deficient-side `P_3` endpoints remain algebraically nonempty; their fixed
+shore rows must now be coupled to those vanishing cofactors and the
+higher-open physical decks.  The eight residual orbits, four-plus-deficient
+profiles, unique-nonrigid/alternate receiver, every downstream gate, and
+the global conjecture remain open.  See the
+[`GLS67 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_THREE_DEFICIENT_PAIR_CLASS_AND_P3_ORBIT_LOCALIZATION_THEOREM.md)
+and
+[`GLS67 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_THREE_DEFICIENT_PAIR_CLASS_AND_P3_ORBIT_LOCALIZATION_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
