@@ -68,9 +68,13 @@ exceptional `T=0` fibres; it does not rely on a naive p/q carrier symmetry.
 now closes the retained `e=0` boundary inside `D(Omega)` by an exact
 parameterisation, simultaneous-pivot obstruction, and all-block common-kernel
 argument.  Its unsaturated low-rank leaf family is nonempty but every
-compatible centre is singular.  The remaining `Q6=0` and `L1/L2` boundaries,
-the pulled-back Fitting ideal, and the other chart/component/source branches
-remain open; the global conjecture is still **UNRESOLVED**.
+compatible centre is singular.  [`GLD95`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_FINITE_COMMON_MINOR_EXCLUSION_THEOREM.md)
+now closes the finite common-minor residual on the written GLD88 `F88`
+rational family over `D(Delta)`, including every retained old-`P6=0` content
+fibre via exact branch decomposition and unit six-minors.  This does not
+claim arbitrary H4 `Q6=0` closure outside `F88`; the pulled-back Fitting
+ideal, other chart/component/source branches, and the global conjecture remain
+open, and the global status is still **UNRESOLVED**.
 
 The [`catalog/theorem-ledger.json`](catalog/theorem-ledger.json) is a partial
 claim/evidence index. Its empty `dependencies` arrays mean “not recorded,” not

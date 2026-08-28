@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD93 equal-leaf checkpoint
+## GLD83--GLD95 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -79,6 +79,15 @@ finite but retained.  This does not force arbitrary H4 Q6 points into the
 GLD88 family and is not full Q6 closure.  The `L1/L2/e` boundaries, Fitting
 pullback, other charts/components/source branches, and global conjecture
 remain **UNRESOLVED**.
+
+[`GLD95`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_FINITE_COMMON_MINOR_EXCLUSION_THEOREM.md)
+now closes that finite common-minor residual on the written `F88` family over
+`D(Delta)`.  The exact resultant-content decomposition covers every generic
+factor and all five retained content fibres; a direct specialization handles
+the `H2=LC_q(Q6)` fibre, and new unit six-minors explicitly cover every old
+`P6=0` content component.  This is not arbitrary H4 Q6 closure: points
+outside `F88`, the GLD83 Fitting pullback, other charts/components/source
+branches, and the global conjecture remain **UNRESOLVED**.
 
 [`GLD91`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_THEOREM.md)
 now gives an exact characteristic-zero exclusion on the two-leaf slice
