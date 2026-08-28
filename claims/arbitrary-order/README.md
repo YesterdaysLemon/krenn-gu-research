@@ -3481,6 +3481,23 @@ divisor: its effective port blocks are permanent-type cross terms, and exact
 scalar controls retain a nonzero raw matching deck.  Three-or-more-deficient
 profiles and every attachment gate remain open.  See the
 [`GLS64 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TWO_DEFICIENT_MATCHING_INTEGRABILITY_AND_KERNEL_EDGE_ZERO_LOCALIZATION_REVIEW_2026-08-28.md).
+The GLS65 characteristic-zero theorem identifies the full eta-zero source,
+rather than treating its six complementary blocks separately.  Its
+twenty-four terms are exactly one separated `P_4` restriction with nonzero
+pure `c` target.  The accepted `P_4` rank-drop theorem supplies a fixed
+generic rank-two pair; every such port is necessarily `c`-oriented and both
+fixed deficient-edge rows lie on the `c`-line.  A complete sixteen-word
+orientation calculation excludes four rank-two ports.  With three,
+mixed off-row words violate the perfect `R_1 x R_3` pairing bound, while a
+homogeneous triple forces the fourth shore pure and exact anchor rigidity
+then prevents its joint map from being injective.  The eta-zero residual is
+therefore confined to exact local rank profile `2233`, with two silent
+rank-two ports and two rank-three ports.  A mixed pure-`P_4` fibre and an
+exact three-port flat show that fixed-fibre purity alone cannot close the
+branch.  The `2233` same-source hyperplane boundary, the nonzero raw matching
+deck, three-or-more-deficient profiles, and every attachment gate remain
+open.  See the
+[`GLS65 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_ETA_ZERO_PERMANENT_SOURCE_AND_TWO_TWO_LOCAL_RANK_LOCALIZATION_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
