@@ -3498,6 +3498,23 @@ branch.  The `2233` same-source hyperplane boundary, the nonzero raw matching
 deck, three-or-more-deficient profiles, and every attachment gate remain
 open.  See the
 [`GLS65 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_ETA_ZERO_PERMANENT_SOURCE_AND_TWO_TWO_LOCAL_RANK_LOCALIZATION_REVIEW_2026-08-28.md).
+The GLS66 characteristic-zero theorem closes that exact `2233` residual by
+recombining the permanent source with the full GLS64 scalar hierarchy.  The
+two rank-three ports must be active on one common deficient side; the silent
+edge vanishes and all four silent--rank-three edges synchronize on one
+nonzero scalar axis.  Their source rowspaces are hyperplanes omitting the
+same fixed-row coordinate.  Permanent purity forces those hyperplanes to
+coincide, and one of the at least three `c`-oriented ports reduces their
+common normal to `tau P+B` up to probe exchange.  For `tau!=0`, the exact
+squarefree annihilator turns the surviving all-`c` slice into a rank-two
+bilinear form where GHZ purity requires rank one; for `tau=0`, the common
+pair image is totally isotropic and the target coefficient vanishes.
+Hence the complete zero-anchor root-order-three all-six-rigid
+exactly-two-deficient branch is empty.  Three-or-more-deficient profiles,
+the unique-nonrigid/alternate-receiver branch, every attachment and
+synchronization gate, nonzero anchor, arbitrary root order, and the global
+conjecture remain open.  See the
+[`GLS66 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_ETA_ZERO_TWO_TWO_SCALAR_AXIS_AND_COMMON_HYPERPLANE_EXCLUSION_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
