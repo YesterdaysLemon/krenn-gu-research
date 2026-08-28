@@ -89,6 +89,15 @@ the `H2=LC_q(Q6)` fibre, and new unit six-minors explicitly cover every old
 outside `F88`, the GLD83 Fitting pullback, other charts/components/source
 branches, and the global conjecture remain **UNRESOLVED**.
 
+[`GLD96`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GENERIC_RESULTANT_EXCLUSION_THEOREM.md)
+now gives the generic R31 continuation into that finite closure.  On
+`D(R31*E31*H2*g0*Delta)`, four exact bordered seven-minors, a Q6 resultant
+witness, and the GLD88 common-kernel origin force the offsets `B=C=0`; GLD95
+then excludes the resulting written `F88` incidence on `D(Omega)`.  The
+R31=0/double-pivot branch, `E31=0`, `g0=0`, `H2=0`, arbitrary H4 points
+outside `F88`, the pulled-back Fitting ideal, and the other chart/component/
+source obligations remain open; no global status change is claimed.
+
 [`GLD91`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_THEOREM.md)
 now gives an exact characteristic-zero exclusion on the two-leaf slice
 `x9=1, x10=x11=x12=0, x13=t, x14=u` of the named rank-eight chart.  After

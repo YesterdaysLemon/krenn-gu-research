@@ -298,6 +298,7 @@ flowchart TD
   GLD93["Equal-leaf H4 L1/L2 boundaries<br/>PROVED rank-seven exclusion"]
   GLD94["Equal-leaf H4 e=0 boundary<br/>PROVED determinant-safe exclusion"]
   GLD95["Equal-leaf H4 Q6 finite residual<br/>PROVED F88 closure incl. P6=0"]
+  GLD96["Equal-leaf H4 Q6 generic R31 residual<br/>PROVED localized F88 reduction"]
   GLD91["Rank-eight two-leaf Fitting slice<br/>PROVED exact slice exclusion"]
   GLD92["Equal-leaf H4 Q6 dense boundary<br/>PROVED two-minor cover inside GLD88 family"]
   GLD19["Response-map-zero support<br/>PROVED five-row detector / opposite annihilation"]
@@ -741,6 +742,7 @@ flowchart TD
   GLD90 -->|direct L1/L2 rank-seven divisors and exceptional fibres| GLD93
   GLD93 -->|exact e=0 parameterization, pivot obstruction, and common kernel| GLD94
   GLD92 -->|exact all-factor finite-residual decomposition and P6=0 unit cover| GLD95
+  GLD95 -->|generic R31 E31/H2/g0 offset reduction into F88| GLD96
   GLD85 -->|exact Q(i) two-leaf residual elimination and fibre boundary cover| GLD91
   GLD90 -->|exact two-minor Q6 boundary cover inside GLD88 family| GLD92
   GLD18 -->|response-map-zero support refinement| GLD19
@@ -819,7 +821,8 @@ flowchart TD
   GLD90 -->|H4 Q6 outside GLD88 / finite residual / L1/L2/e boundaries / pulled-back Fitting / other branches open| GL
   GLD91 -->|full six-leaf rank-eight residual and remaining chart/component coverage open| GL
   GLD92 -->|finite common-minor residual / full H4 Q6 outside GLD88 / L1/L2/e / Fitting / other branches open| GL
-  GLD95 -->|full H4 Q6 outside F88 / pulled-back Fitting / other branches open| GL
+  GLD95 -->|R31=0/double-pivot, exceptional R31 factors, full H4 Q6 outside F88 / pulled-back Fitting / other branches open| GL
+  GLD96 -->|R31=0/double-pivot, E31/g0/H2 exceptions, arbitrary H4 outside F88 / pulled-back Fitting / other branches open| GL
   GLD19 -->|map-zero forcing / sparse support / permanent open| GL
   GLD20 -->|F-empty / pure-absorption / legal-row exclusion open| GL
   GLD21 -->|proper-secondary / other h!=0 cells open| GL
@@ -1432,7 +1435,8 @@ flowchart TD
 | `GLD94` | H4 Q6 boundary, Fitting, and remaining component/source cover | `GL` | Analyze the retained `Q6=0` boundary, compute the GLD83 pullback with full raw response incidence on `C_F` rank drops, and then cover remaining gauges, components, sources, profiles, roots and orders. |
 | `GLD90` | H4 Q6 boundary on the GLD88 family | `GLD92` | Reconstruct two alternative six-minors on the GLD88 family, prove their Q6-open union is dense, and retain the finite common-minor locus explicitly; do not infer full H4 Q6 closure. |
 | `GLD92` | H4 Q6 outside the GLD88 family, finite common residual, L1/L2/e boundaries, Fitting, and remaining component/source cover | `GLD95` | Close the finite `V(Q6,F28,F31)` residual on the written GLD88 family by an exact all-factor decomposition, direct H2 correction, and generic/content unit-minor cover; retain arbitrary H4 Q6 points outside the family and the remaining Fitting/component/source obligations. |
-| `GLD95` | H4 Q6 outside the written F88 family, Fitting, and remaining component/source cover | `GL` | Analyze arbitrary H4 Q6 points outside F88, compute the GLD83 pullback with full raw response incidence on `C_F` rank drops, and cover remaining gauges, components, sources, profiles, roots and orders. |
+| `GLD95` | H4 Q6 outside the written F88 family, Fitting, and remaining component/source cover | `GLD96` | On the R31 chart, use the exact four bordered seven-minors and the E31/H2/g0 localization to force the written F88 offsets; retain R31=0/double-pivot and all exceptional factors. |
+| `GLD96` | R31=0/double-pivot, E31/g0/H2 exceptional strata, arbitrary H4 Q6 outside F88, Fitting, and remaining component/source cover | `GL` | Analyze the retained R31 and exceptional loci, compute the GLD83 pullback with full raw response incidence on `C_F` rank drops, and cover remaining gauges, components, sources, profiles, roots and orders. |
 | `GLD85` | named rank-eight chart full intrinsic Fitting specialization | `GLD91` | The pinned point proves only that the full intrinsic pullback is nonzero/proper.  The exact two-leaf residual slice now supplies the next finite fibre-classification edge. |
 | `GLD91` | completed two-leaf rank-eight Fitting-slice exclusion | `GL` | The corrected characteristic-zero slice has exactly one Schur/frame-open residual fibre, the GLD85 point, so the full intrinsic residual is empty on this two-leaf slice.  Full six-leaf rank-eight unitness/residual coverage, other charts, rank-seven/lower branches, components, source branches, and global resolution remain open. |
 | `GLS19` | four-root seven-target common-line gate | `GLD16` | Useful top shadows for all six pair targets and the four-port target give legal nonzero pure-`Z` rows with one common direction.  GLD16 has effective scalar `a=h`; its proved `h=0` and `h!=0` branches both contradict a witness only under the unchanged three-colour activity gate. |
@@ -1598,7 +1602,8 @@ flowchart TD
 | `GLD94` | remaining H4-boundary/Fitting/component/source-cover obligation | `GL` | Analyze `Q6=0`, compute the GLD83 Fitting pullback with full raw response incidence on `C_F` rank drops, and then cover other components/gauges, lower ranks, source branches, profiles, roots, orders and global resolution. |
 | `GLD90` | H4 Q6 boundary on the GLD88 family | `GLD92` | Reconstruct two alternative six-minors on the GLD88 family, prove their Q6-open union is dense, and retain the finite common-minor locus explicitly; do not infer full H4 Q6 closure. |
 | `GLD92` | remaining H4 Q6 and global Fitting/component/source-cover obligation | `GLD95` | Close `V(Q6,F28,F31)` on the written F88 family, including the H2 direct fibre and all old-P6-zero content fibres, while retaining arbitrary H4 Q6 points outside F88 and the remaining global obligations. |
-| `GLD95` | remaining H4 Q6 outside F88 and global Fitting/component/source-cover obligation | `GL` | Analyze arbitrary H4 Q6 points outside F88, compute the GLD83 Fitting pullback, and then cover other components/gauges, lower ranks, source branches, profiles, roots, orders and global resolution. |
+| `GLD95` | remaining H4 Q6 outside F88 and global Fitting/component/source-cover obligation | `GLD96` | Close the generic R31 offset residual on `D(R31*E31*H2*g0*Delta)` by an exact four-minor resultant witness, while retaining R31=0 and exceptional strata. |
+| `GLD96` | R31=0/double-pivot, E31/g0/H2 exceptional strata, arbitrary H4 Q6 outside F88 and global Fitting/component/source-cover obligation | `GL` | Analyze the retained R31 and exceptional loci, arbitrary H4 Q6 points outside F88, compute the GLD83 Fitting pullback, and then cover other components/gauges, lower ranks, source branches, profiles, roots, orders and global resolution. |
 | `GLD19` | remaining response-map-zero witness-locus obligation | `GL` | Force or exclude the literal all-seven `R_S=0` stratum, force a nonzero legal pair package there, or use the full mixed witness equations to exclude its intersecting/sparse-support locus.  A pure selected line is weaker than map zero, and the support classification supplies neither selector attachment nor a permanent bridge. |
 | `GLD20` | remaining global map-zero support obligation | `GL` | Exclude the `F=empty` cell or the one-to-three complementary pure-target-absorption cells with genuinely uncontracted mixed coefficients, or force a nonzero legal complete-nuisance operator row.  The finite support atlas is exhaustive for response windows but is neither a witness enumeration nor a permanent bridge. |
 | `GLD21` | remaining complete-clique map-zero obligation | `GL` | On the proved `h!=0` residue, integrate the forced pure `G_U(a^4)` slice and dense nuisance absorptions into one same-graph principal-permanent root-companion family and derive a contradiction, or produce a further coefficient detector.  `GLD23` excludes every private colour-diagonal permutation chart; GLD41 closes the single-active-slice cell; GLD42 closes one reciprocal pair; GLD43 forces transpose-matched support with at least two pairs; GLD45--GLD49 pointwise close all `66` two-pair masks; and GLD50--GLD62 pointwise close all `220` three-pair masks.  Four-or-more-pair supports and the proper-secondary-clique cells remain.  The formal solution `G_U=J_Q/h` still shows that fixed-`Q` linear algebra alone cannot close them.  Other `F=empty` and pure-absorption cells remain separate. |
@@ -2855,6 +2860,16 @@ branch. They are not an instruction to begin all of them at once.
    Thus `V(Q6,F28,F31)` is empty on `D(Delta)` inside `F88`.  This does not
    close arbitrary H4 Q6 points outside `F88`, the GLD83 Fitting pullback,
    or the other chart/component/source and global obligations.
+
+   GLD96 now closes the generic R31 continuation into that F88 result.  On
+   `D(R31*E31*H2*g0*Delta)`, the four exact bordered seven-minors are affine
+   in the C offset, vanish at the GLD88 common-kernel origin, and their two
+   B-cross-resultants have a nonzero Q6 norm at the exact witness
+   `(p,a)=(2,3)`.  Hence the offsets are forced to `B=C=0`, and GLD95
+   excludes the resulting F88 incidence on `D(Omega)`.  This is a localized
+   generic statement only: `R31=0`/double-pivot, `E31=0`, `g0=0`, `H2=0`,
+   arbitrary H4 Q6 points outside F88, the GLD83 Fitting pullback, and the
+   other chart/component/source obligations remain open.
 
    GLD91 makes the next finite slice exact without promoting it to a
    full-chart statement.  On the same `R_8` chart, impose

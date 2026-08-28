@@ -75,6 +75,10 @@ fibre via exact branch decomposition and unit six-minors.  This does not
 claim arbitrary H4 `Q6=0` closure outside `F88`; the pulled-back Fitting
 ideal, other chart/component/source branches, and the global conjecture remain
 open, and the global status is still **UNRESOLVED**.
+[`GLD96`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GENERIC_RESULTANT_EXCLUSION_THEOREM.md)
+then closes the generic R31 localization on
+`D(R31*E31*H2*g0*Delta)` into the GLD95 `F88` theorem, while retaining the
+R31=0/double-pivot and all named exceptional strata.
 
 The [`catalog/theorem-ledger.json`](catalog/theorem-ledger.json) is a partial
 claim/evidence index. Its empty `dependencies` arrays mean “not recorded,” not
