@@ -3578,6 +3578,26 @@ theorem.  See the
 [`GLS69 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FIVE_SIX_DEFICIENT_OPEN_SET_SUPPORT_TOWER_AND_OVERLAP_INTEGRABILITY_BOUNDARY_THEOREM.md)
 and
 [`GLS69 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FIVE_SIX_DEFICIENT_OPEN_SET_SUPPORT_TOWER_AND_OVERLAP_INTEGRABILITY_BOUNDARY_REVIEW_2026-08-28.md).
+The GLS70 exact characteristic-zero parent theorem classifies every
+post-span six-deficient profile with a binary triangle.  The `3,360`
+single-triangle profiles form exactly eight keys in two families: a
+`pair+pair` family whose triangle is the first common parent of two pure
+pair faces, and an `exact-triple+exact-triple` family whose triangle is a
+minimal binary leaf with three strict four-open parents.  The remaining
+`45` profiles form the sole `S_c^2 T_c^4` binary pair-class key.  Its pair
+equation forces a crossed separated endpoint normalization.  Although the
+proper-face map of its four-port complementary deck has a
+sixteen-dimensional kernel containing an explicit physical hafnian
+direction, the different pure-`c` four-open source equation forces one
+outside `z_(0,c)` probe coefficient.  In that port's binary triangle the
+coefficient kills both non-pair deck terms, after which one common one-port
+deck cannot supply the two independent target colours.  Thus the complete
+key is excluded and the six-deficient residual becomes `99,135 / 85`.
+This is a same-source top-down branch closure, not a closure of the other
+profiles or the conjecture.  See the
+[`GLS70 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_BINARY_TRIANGLE_PARENT_TAXONOMY_AND_PROPER_FACE_DECK_KERNEL_THEOREM.md)
+and
+[`GLS70 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_BINARY_TRIANGLE_PARENT_TAXONOMY_AND_PROPER_FACE_DECK_KERNEL_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
