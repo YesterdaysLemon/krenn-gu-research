@@ -3435,6 +3435,20 @@ unique-nonrigid branch, response and selector gates, nonzero anchor,
 arbitrary-root attachment, and global resolution remain open.  The result
 is covered by the
 [`maximum-root cross-product partial-uncontraction hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_CROSS_PRODUCT_PARTIAL_UNCONTRACTION_AND_INJECTIVE_NONAXIS_EXCLUSION_REVIEW_2026-08-28.md).
+The GLS62 characteristic-zero theorem applies the same hierarchy to the
+exactly-one-deficient `r=3` cell.  Quotienting the deficient open slot by its
+joint row space, and every pure-axis slot by its active full-row line, forces
+at least three distinct injective nonaxis zero labels for every coordinate
+visible on the deficient kernel.  Their disjointness leaves only a rank-two
+deficient map with a pure-coordinate kernel.  The zero-pure-axis case then
+has an exact `3+1+1` zero partition whose singleton two-open equation would
+make a rank-two/nonaxis companion pure diagonal; the one- and two-pure-axis
+cases have zero source after active-line quotient but a surviving target.
+Thus exactly one deficient label is impossible, and every all-six-rigid
+zero-anchor `r=3` witness has at least two deficient maps.  Double-kernel
+targets remain zero, mono, or binary, so this is not source integrability,
+an attachment, or global closure.  The result is covered by the
+[`GLS62 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_EXACTLY_ONE_DEFICIENT_ROW_QUOTIENT_EXCLUSION_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
