@@ -47,6 +47,14 @@ qualifications are recorded in the owning claims and in the current frontier.
 - [P6 claim packages](claims/p6/README.md)
 - [P7 claim packages](claims/p7/README.md)
 
+The four-chart `K5` pencil lane now has an exact finite support-Segre
+generic-rank census: [theorem and replay package](claims/arbitrary-order/EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_SUPPORT_SEGRE_GENERIC_RANK_CENSUS_THEOREM.md).
+It gives `q >= 20`, hence affine codimension at least eight on the generic
+exact-partition strata, with exactly two equality orbits.  Rank-degenerate
+components, the `B_all` cut, compatibility among the 70 pencils, full target
+equations, and witness exclusion remain open; this is not a codimension-nine
+or codimension-ten result.
+
 The [`catalog/theorem-ledger.json`](catalog/theorem-ledger.json) is a partial
 claim/evidence index. Its empty `dependencies` arrays mean “not recorded,” not
 “no dependencies”; it is not the proof DAG.

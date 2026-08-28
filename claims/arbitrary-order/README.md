@@ -1430,7 +1430,15 @@ decomposable evaluation tensors.  The exact
  `(2,3,3,4,4,4)` rather than six cardinalities `4`, and a locally projected
  affine incidence image of codimension eight.  The associated codimension-nine
  and balanced codimension-ten claims are withdrawn; the corrected package is
-  not a witness or a global counterexample.  The companion
+ not a witness or a global counterexample.  The follow-on
+ [`support-Segre generic-rank census`](EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_SUPPORT_SEGRE_GENERIC_RANK_CENSUS_THEOREM.md)
+ exhausts the 120 nonconstant selector maps modulo safe symmetries and all
+ feasible exact common-root partition systems using actual generic tensor
+ ranks.  It finds `q>=20`, exactly two q=20 equality orbits, and affine
+ codimension at least eight on generic exact-partition strata.  Rank-
+ degenerate components, their root codimensions, the `B_all` cut, compatibility
+ among the 70 pencils, and full target equations are not covered; no
+ codimension-nine/ten or global conclusion follows.  The companion
 [`adjacent-cut mixed-shell sharpness theorem`](EIGHT_VERTEX_ADJACENT_CUT_MONOMIAL_HAMMING_ONE_BLINDNESS_AND_HAMMING_TWO_DETECTOR_SHARPNESS_THEOREM.md)
 shows exactly that rank drop, pure terms, and the complete Hamming-one shell
 still do not force fixed-gauge basepoints in a synchronized monomial control;
