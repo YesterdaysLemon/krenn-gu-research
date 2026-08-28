@@ -3449,6 +3449,24 @@ zero-anchor `r=3` witness has at least two deficient maps.  Double-kernel
 targets remain zero, mono, or binary, so this is not source integrability,
 an attachment, or global closure.  The result is covered by the
 [`GLS62 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_EXACTLY_ONE_DEFICIENT_ROW_QUOTIENT_EXCLUSION_REVIEW_2026-08-28.md).
+The GLS63 parent attempt extends the same-source hierarchy by contracting
+each deficient label at an independent generic vector of its whole joint
+kernel while retaining cross-product contractions at injective nonaxis
+labels.  Common deficient-kernel colours require at least three disjoint
+nonaxis zeros, and a singleton zero forces the opposite deficient map to be
+a rank-one coordinate readout.  For exactly two deficient labels, the full
+support/rank census and a two-dimensional pure-companion no-go exclude every
+profile except two rank-two maps with the same pure-coordinate kernel, no
+pure axes, no zeros on the complementary colours, and a nonzero binary
+diagonal deficient companion.  This residual is sharp for the present
+method: mixed-orientation three-port and four-port identities give exact
+pure-colour cancellation using decks from one common source table at the
+displayed fibres.  The next lemma must separate those higher-open
+restrictions from the nonzero binary contraction over the function field;
+pointwise polarization alone is
+insufficient.  Three-or-more-deficient profiles and every attachment gate
+remain open.  See the
+[`GLS63 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_MIXED_KERNEL_PARTIAL_UNCONTRACTION_AND_TWO_DEFICIENT_BINARY_LOCALIZATION_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
