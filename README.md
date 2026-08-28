@@ -55,12 +55,14 @@ components, the `B_all` cut, compatibility among the 70 pencils, full target
 equations, and witness exclusion remain open; this is not a codimension-nine
 or codimension-ten result.
 
-In the equal-leaf H4 low-rank lane, GLD89 now gives an exact
-determinant-safe exclusion of the full `P=p^2-p+1` divisor and its
-`d0=p+q-1=0` overlap.  The remaining `L1/L2/e` intersections with the
-GLD88 six-pivot boundary, pure `P6`, the pulled-back Fitting ideal, and the
-other chart/component/source branches remain open; the global conjecture is
-still **UNRESOLVED**.
+In the equal-leaf H4 low-rank lane, GLD89 gives an exact determinant-safe
+exclusion of the full `P=p^2-p+1` divisor and its `d0=p+q-1=0` overlap.
+[`GLD90`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_OPEN_LOW_RANK_EXCLUSION_THEOREM.md)
+now closes the whole complementary `D((p-q)d0 P L1 L2 e Q6)` stratum,
+including the old-six-pivot boundary and the formerly exceptional `T=0`
+divisor.  The remaining `Q6=0` and `L1/L2/e` boundaries, the pulled-back
+Fitting ideal, and the other chart/component/source branches remain open;
+the global conjecture is still **UNRESOLVED**.
 
 The [`catalog/theorem-ledger.json`](catalog/theorem-ledger.json) is a partial
 claim/evidence index. Its empty `dependencies` arrays mean “not recorded,” not

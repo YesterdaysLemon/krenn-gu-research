@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD89, GLD91 equal-leaf checkpoint
+## GLD83--GLD91 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -50,9 +50,17 @@ Fitting ideal, and the global conjecture remain **UNRESOLVED**.
 [`GLD89`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_P_DIVISOR_AND_D0_OVERLAP_DETERMINANT_SAFETY_THEOREM.md)
 then closes the full `P=p^2-p+1` divisor and its `d0=p+q-1=0` overlap on
 `D(Omega)`: exact six-/seven-minor factors and a complete common kernel make
-every retained center singular.  The `L1/L2/e` intersections with the
-GLD88 six-pivot boundary, pure `P6`, the pulled-back Fitting ideal, and all
-other chart/component/source branches remain open.
+every retained center singular.
+[`GLD90`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_OPEN_LOW_RANK_EXCLUSION_THEOREM.md)
+then closes all of the H4 low-rank branch on
+`D((p-q)d0 P L1 L2 e Q6)`.  It factors old and alternate six-pivots,
+classifies their double-pivot branch by two auxiliary charts and one exact
+residual curve, excludes four factor corners by coprime seven-minors, and
+closes `T=2pq-p-q+2=0` without dividing by `T`.  Every positive-dimensional
+rank-six family has the complete common-row kernel and hence singular center.
+Only `Q6=0`, the `L1/L2/e` coefficient boundaries, the pulled-back Fitting
+ideal, and the other chart/component/source branches remain open in this
+lane.
 
 [`GLD91`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_THEOREM.md)
 now gives an exact characteristic-zero exclusion on the two-leaf slice
