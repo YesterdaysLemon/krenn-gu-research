@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD88 equal-leaf checkpoint
+## GLD83--GLD89 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -47,6 +47,12 @@ linear Schur residuals force a rational three-parameter family, and the
 complete center kernel on that family has proportional rows.  The named
 parameter, linear-coefficient, and six-pivot boundaries, the pulled-back
 Fitting ideal, and the global conjecture remain **UNRESOLVED**.
+[`GLD89`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_P_DIVISOR_AND_D0_OVERLAP_DETERMINANT_SAFETY_THEOREM.md)
+then closes the full `P=p^2-p+1` divisor and its `d0=p+q-1=0` overlap on
+`D(Omega)`: exact six-/seven-minor factors and a complete common kernel make
+every retained center singular.  The `L1/L2/e` intersections with the
+GLD88 six-pivot boundary, pure `P6`, the pulled-back Fitting ideal, and all
+other chart/component/source branches remain open.
 
 ## Current symbolic checkpoint
 
