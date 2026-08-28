@@ -64,9 +64,13 @@ divisor.  [`GLD93`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_L1
 then closes the complete `L1=0` and `L2=0` coefficient boundaries on the
 upstream-open H4 chart by direct rank-seven certificates, including their
 exceptional `T=0` fibres; it does not rely on a naive p/q carrier symmetry.
-The remaining `Q6=0` and `e=0` boundaries, the pulled-back Fitting ideal,
-and the other chart/component/source branches remain open; the global
-conjecture is still **UNRESOLVED**.
+[`GLD94`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_E_BOUNDARY_DETERMINANT_SAFETY_THEOREM.md)
+now closes the retained `e=0` boundary inside `D(Omega)` by an exact
+parameterisation, simultaneous-pivot obstruction, and all-block common-kernel
+argument.  Its unsaturated low-rank leaf family is nonempty but every
+compatible centre is singular.  The remaining `Q6=0` and `L1/L2` boundaries,
+the pulled-back Fitting ideal, and the other chart/component/source branches
+remain open; the global conjecture is still **UNRESOLVED**.
 
 The [`catalog/theorem-ledger.json`](catalog/theorem-ledger.json) is a partial
 claim/evidence index. Its empty `dependencies` arrays mean “not recorded,” not
