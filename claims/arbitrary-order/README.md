@@ -3557,6 +3557,27 @@ coefficientwise integrability theorem is now required.  See the
 [`GLS68 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_DEFICIENT_PAIR_CLASS_AND_PROBE_DEPENDENT_FOUR_PORT_BOUNDARY_THEOREM.md)
 and
 [`GLS68 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_DEFICIENT_PAIR_CLASS_AND_PROBE_DEPENDENT_FOUR_PORT_BOUNDARY_REVIEW_2026-08-28.md).
+The GLS69 candidate characteristic-zero localization extends the same-source
+hierarchy to five and six deficient maps.  For every open set `T`, with
+`D_a=N-M_a` and `L_a=D_a disjoint-union E_a`, the formal colour-term support
+is exactly `L_a subseteq T`, and all face maps are restrictions of the same
+physical matching decks.  The five-deficient branches give `59,049 ->
+18,270 -> 2,640` for `P=1` and `236,196 -> 79,095 -> 24,435` for `U=1`;
+270 `U=1` profiles have a five-open colour, including 150 with no size-two
+minimum.  For six deficient labels, the pair-level `99,855 / 90` residual is
+corrected by the actual three-open source-span test to `99,180 / 86`,
+removing 675 profiles in four type-profile orbits.  Ternary three-open
+targets are excluded, but binary, pure, and zero targets remain.  The sole
+binary pair-class key is `S_c^2 T_c^4`; its pair equation propagates to four
+triangle faces and exposes the shared-deck integrability problem directly.
+The exact `Q(omega)` binary `P_3 -> Delta_2` control shows that triangle shape
+alone is not contradictory; it is a fixed-fibre row/deck control, not a
+global physical source realization.  Thus GLS69 is a support/face/census
+localization, not a five-/six-deficient exclusion or source-integrability
+theorem.  See the
+[`GLS69 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FIVE_SIX_DEFICIENT_OPEN_SET_SUPPORT_TOWER_AND_OVERLAP_INTEGRABILITY_BOUNDARY_THEOREM.md)
+and
+[`GLS69 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FIVE_SIX_DEFICIENT_OPEN_SET_SUPPORT_TOWER_AND_OVERLAP_INTEGRABILITY_BOUNDARY_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
