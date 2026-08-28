@@ -6835,6 +6835,34 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Four-root torus-star equal-leaf survivor rank-eight two-leaf slice Fitting exclusion (GLD91)",
+      "document": "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "7fbb7955d765682c",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero Q(i) specialization on the GLD84 named rank-eight Schur chart R_8=(0,1,2,3,4,5,6,7) inside the scale-fixed equal-leaf base",
+        "the two-leaf slice is x9=1, x10=x11=x12=0, x13=t, x14=u, x8=0, with the corrected Gaussian-offset centre base reconstructed from the committed builder",
+        "the earlier exploratory frame-boundary calculation used an omitted-offset real centre base; that output is withdrawn and is not evidence for this theorem",
+        "the exact lifted residual Groebner/resultant data classify six linear fibres and a squarefree degree-five Q5 component, retaining Schur and centre-frame boundary fibres rather than dividing them away",
+        "the five Q5 points and two linear fibres have mu_R=0, three further linear fibres have nonzero mu_R but zero centre-frame determinant, and the sole Schur/frame-open fibre is the GLD85 point",
+        "at that sole open fibre the upstream GLD85 full intrinsic Fitting certificate has rank 45 with all 6240 denominator slots checked as units at both split-safe primes",
+        "the result excludes V(I_Pl) only on this two-leaf slice after the named Schur/frame localization; full six-leaf rank-eight unitness or residual components, other charts/ranks/components/source branches, and global Krenn-Gu remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_survivor_rank_eight_two_leaf_slice_fitting_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_survivor_rank_eight_two_leaf_slice_fitting_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_REVIEW_2026-08-27.md",
+      "expected_runtime": "about two minutes for the SymPy primary; seconds for the standard-library no-import audit",
+      "external_binaries": [],
+      "note": "The exact two-leaf residual classification leaves one Schur/frame-open fibre, the GLD85 point, where the full intrinsic map has rank 45; hence the intrinsic Fitting residual is empty on this named slice. This finite-slice theorem does not prove full-chart unitness or global resolution.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

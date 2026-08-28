@@ -1,0 +1,2318 @@
+{
+  "canonical_expression_hashes": {
+    "affine_relation": "A4E117C554119AC6F0A0C752E163A101107B6625B03891529424DA196CD00DB6",
+    "centre_det_numerator": "92CA138BC7E0FF1B11425DADF611B7A4CE8F7A192B82F107174951733ED7430B",
+    "mu": "16EE81EDB42FC74A2697E67F078204EF6765C99CAEE03FE8B2535410A5F4AC70",
+    "q5": "5773F201045222E94D3FDC7C6FD714CD24E76F8B838DBD88A8C4E8F498083253",
+    "u_q5": "1ADE4A09A3D9709D45B3235A0BAEB8CC80745CAF6A79BD66775B0B1914FAD5EA"
+  },
+  "chart": {
+    "centre_base": [
+      [
+        [
+          -2,
+          1,
+          -2,
+          1
+        ],
+        [
+          -1,
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          -3,
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "rank_eight_rows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "slice": {
+      "variables": [
+        "t=x13",
+        "u=x14"
+      ],
+      "x10": 0,
+      "x11": 0,
+      "x12": 0,
+      "x8": 0,
+      "x9": 1
+    }
+  },
+  "fibre_classification": [
+    {
+      "centre_det_numerator": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "centre_frame_open": false,
+      "label": "t=0",
+      "leaf_det": [
+        -2,
+        5,
+        -6,
+        5
+      ],
+      "leaf_frame_open": true,
+      "mu": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "reason": "schur_boundary",
+      "schur_open": false,
+      "t": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "u": [
+        -3,
+        5,
+        1,
+        5
+      ]
+    },
+    {
+      "centre_det_numerator": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "centre_frame_open": false,
+      "label": "t=-2/3",
+      "leaf_det": [
+        -1,
+        3,
+        -1,
+        3
+      ],
+      "leaf_frame_open": true,
+      "mu": [
+        -92,
+        3,
+        44,
+        3
+      ],
+      "reason": "centre_frame_boundary",
+      "schur_open": true,
+      "t": [
+        -2,
+        3,
+        0,
+        1
+      ],
+      "u": [
+        -2,
+        3,
+        0,
+        1
+      ]
+    },
+    {
+      "centre_det_numerator": [
+        1471360,
+        2187,
+        1412480,
+        2187
+      ],
+      "centre_frame_open": true,
+      "full_intrinsic_rank": 45,
+      "label": "t=-2/3",
+      "leaf_det": [
+        -1,
+        1,
+        -1,
+        3
+      ],
+      "leaf_frame_open": true,
+      "mu": [
+        -140,
+        9,
+        -20,
+        9
+      ],
+      "reason": "pinned_full_intrinsic_rank_point",
+      "schur_open": true,
+      "t": [
+        -2,
+        3,
+        0,
+        1
+      ],
+      "u": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "centre_det_numerator": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "centre_frame_open": false,
+      "label": "t=-1/5-3i/5",
+      "leaf_det": [
+        -8,
+        5,
+        -4,
+        5
+      ],
+      "leaf_frame_open": true,
+      "mu": [
+        -576,
+        125,
+        -3168,
+        125
+      ],
+      "reason": "centre_frame_boundary",
+      "schur_open": true,
+      "t": [
+        -1,
+        5,
+        -3,
+        5
+      ],
+      "u": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "centre_det_numerator": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "centre_frame_open": false,
+      "label": "t=-6/13-4i/13",
+      "leaf_det": [
+        -12,
+        13,
+        -8,
+        13
+      ],
+      "leaf_frame_open": true,
+      "mu": [
+        -3264,
+        169,
+        -1344,
+        169
+      ],
+      "reason": "centre_frame_boundary",
+      "schur_open": true,
+      "t": [
+        -6,
+        13,
+        -4,
+        13
+      ],
+      "u": [
+        -5,
+        13,
+        1,
+        13
+      ]
+    },
+    {
+      "centre_det_numerator": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "centre_frame_open": false,
+      "label": "t=-1+i",
+      "leaf_det": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "leaf_frame_open": false,
+      "mu": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "reason": "schur_boundary",
+      "schur_open": false,
+      "t": [
+        -1,
+        1,
+        1,
+        1
+      ],
+      "u": [
+        0,
+        1,
+        0,
+        1
+      ]
+    }
+  ],
+  "field": "Q(i)",
+  "format": "gld91-rank-eight-two-leaf-slice-q-i-v1",
+  "groebner": {
+    "frame_basis_length": 2,
+    "frame_eliminant_degree": 10,
+    "frame_eliminant_equals_residual_eliminant": true,
+    "q5_at_minus_two_thirds": [
+      2752,
+      9477,
+      -32,
+      351
+    ],
+    "q5_squarefree": true,
+    "residual_basis_degrees": [
+      9,
+      9,
+      10
+    ],
+    "residual_basis_length": 3,
+    "residual_basis_term_counts": [
+      12,
+      12,
+      10
+    ],
+    "residual_eliminant_degree": 10,
+    "residual_resultant_degree": 11
+  },
+  "open_slice": {
+    "linear_fibre_count": 6,
+    "open_label": "t=-2/3,u=0",
+    "q5_component_degree": 5,
+    "resultant_length": 11,
+    "schur_frame_open_count": 1
+  },
+  "polynomials": {
+    "affine_relation": {
+      "degree": 8,
+      "term_count": 10,
+      "terms": [
+        {
+          "coefficient": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            1546184984524251,
+            28389911697280,
+            -2617940846444823,
+            28389911697280
+          ],
+          "exponents": [
+            0,
+            8
+          ]
+        },
+        {
+          "coefficient": [
+            283745785505776863,
+            922672130161600,
+            -527928661789170647,
+            2768016390484800
+          ],
+          "exponents": [
+            0,
+            7
+          ]
+        },
+        {
+          "coefficient": [
+            15967560970754657261,
+            26988159807226800,
+            -1473503406118731983,
+            7710902802064800
+          ],
+          "exponents": [
+            0,
+            6
+          ]
+        },
+        {
+          "coefficient": [
+            4373927381033568721,
+            7710902802064800,
+            696998668272581741,
+            13494079903613400
+          ],
+          "exponents": [
+            0,
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            4360517913185071669,
+            17992106538151200,
+            893210076204283117,
+            7710902802064800
+          ],
+          "exponents": [
+            0,
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            1887266298009869729,
+            26988159807226800,
+            155663236996742471,
+            3373519975903350
+          ],
+          "exponents": [
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            12932591731243181,
+            963862850258100,
+            116405271745511579,
+            6747039951806700
+          ],
+          "exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            295297923088937,
+            3373519975903350,
+            2767080360964999,
+            963862850258100
+          ],
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            3,
+            5,
+            -1,
+            5
+          ],
+          "exponents": [
+            0,
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "u",
+        "t"
+      ]
+    },
+    "centre_det_numerator": {
+      "degree": 10,
+      "term_count": 54,
+      "terms": [
+        {
+          "coefficient": [
+            20736,
+            1,
+            -3888,
+            1
+          ],
+          "exponents": [
+            8,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            56520,
+            1,
+            11124,
+            1
+          ],
+          "exponents": [
+            8,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -3210,
+            1,
+            9690,
+            1
+          ],
+          "exponents": [
+            8,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            -1296,
+            1,
+            -42768,
+            1
+          ],
+          "exponents": [
+            7,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            8028,
+            1,
+            116568,
+            1
+          ],
+          "exponents": [
+            7,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            13260,
+            1,
+            118464,
+            1
+          ],
+          "exponents": [
+            7,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -16938,
+            1,
+            14208,
+            1
+          ],
+          "exponents": [
+            7,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            25920,
+            1,
+            128304,
+            1
+          ],
+          "exponents": [
+            6,
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            -18504,
+            1,
+            -52848,
+            1
+          ],
+          "exponents": [
+            6,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            -89532,
+            1,
+            -33936,
+            1
+          ],
+          "exponents": [
+            6,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -72528,
+            1,
+            49428,
+            1
+          ],
+          "exponents": [
+            6,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -32532,
+            1,
+            11784,
+            1
+          ],
+          "exponents": [
+            6,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            -45360,
+            1,
+            -58320,
+            1
+          ],
+          "exponents": [
+            5,
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            -207720,
+            1,
+            137088,
+            1
+          ],
+          "exponents": [
+            5,
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            14430,
+            1,
+            118086,
+            1
+          ],
+          "exponents": [
+            5,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            91770,
+            1,
+            -17112,
+            1
+          ],
+          "exponents": [
+            5,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -3948,
+            1,
+            -18732,
+            1
+          ],
+          "exponents": [
+            5,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -26304,
+            1,
+            -4164,
+            1
+          ],
+          "exponents": [
+            5,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            62496,
+            1,
+            -185652,
+            1
+          ],
+          "exponents": [
+            4,
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            -245802,
+            1,
+            -195918,
+            1
+          ],
+          "exponents": [
+            4,
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            -267564,
+            1,
+            108396,
+            1
+          ],
+          "exponents": [
+            4,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            -28380,
+            1,
+            134616,
+            1
+          ],
+          "exponents": [
+            4,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            7080,
+            1,
+            24408,
+            1
+          ],
+          "exponents": [
+            4,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -9528,
+            1,
+            864,
+            1
+          ],
+          "exponents": [
+            4,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            24012,
+            1,
+            20376,
+            1
+          ],
+          "exponents": [
+            3,
+            6
+          ]
+        },
+        {
+          "coefficient": [
+            187128,
+            1,
+            -36228,
+            1
+          ],
+          "exponents": [
+            3,
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            91890,
+            1,
+            -264288,
+            1
+          ],
+          "exponents": [
+            3,
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            -151824,
+            1,
+            -190368,
+            1
+          ],
+          "exponents": [
+            3,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            -118128,
+            1,
+            -14328,
+            1
+          ],
+          "exponents": [
+            3,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -34656,
+            1,
+            11088,
+            1
+          ],
+          "exponents": [
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -7464,
+            1,
+            3072,
+            1
+          ],
+          "exponents": [
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            -16152,
+            1,
+            36636,
+            1
+          ],
+          "exponents": [
+            2,
+            6
+          ]
+        },
+        {
+          "coefficient": [
+            55704,
+            1,
+            92268,
+            1
+          ],
+          "exponents": [
+            2,
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            143580,
+            1,
+            3696,
+            1
+          ],
+          "exponents": [
+            2,
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            75456,
+            1,
+            -99312,
+            1
+          ],
+          "exponents": [
+            2,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            -12672,
+            1,
+            -68544,
+            1
+          ],
+          "exponents": [
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -18624,
+            1,
+            -13968,
+            1
+          ],
+          "exponents": [
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -3696,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            -90,
+            1,
+            -5130,
+            1
+          ],
+          "exponents": [
+            1,
+            7
+          ]
+        },
+        {
+          "coefficient": [
+            -19602,
+            1,
+            -7464,
+            1
+          ],
+          "exponents": [
+            1,
+            6
+          ]
+        },
+        {
+          "coefficient": [
+            -29652,
+            1,
+            28476,
+            1
+          ],
+          "exponents": [
+            1,
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            15264,
+            1,
+            46092,
+            1
+          ],
+          "exponents": [
+            1,
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            39480,
+            1,
+            6936,
+            1
+          ],
+          "exponents": [
+            1,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            15192,
+            1,
+            -15072,
+            1
+          ],
+          "exponents": [
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -720,
+            1,
+            -6480,
+            1
+          ],
+          "exponents": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -768,
+            1,
+            -528,
+            1
+          ],
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            2916,
+            1,
+            -1788,
+            1
+          ],
+          "exponents": [
+            0,
+            7
+          ]
+        },
+        {
+          "coefficient": [
+            276,
+            1,
+            -6768,
+            1
+          ],
+          "exponents": [
+            0,
+            6
+          ]
+        },
+        {
+          "coefficient": [
+            -7176,
+            1,
+            -2232,
+            1
+          ],
+          "exponents": [
+            0,
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            -3648,
+            1,
+            6024,
+            1
+          ],
+          "exponents": [
+            0,
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            2832,
+            1,
+            4368,
+            1
+          ],
+          "exponents": [
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            2448,
+            1,
+            192,
+            1
+          ],
+          "exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            480,
+            1,
+            -480,
+            1
+          ],
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            0,
+            1,
+            -96,
+            1
+          ],
+          "exponents": [
+            0,
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t",
+        "u"
+      ]
+    },
+    "frame_eliminant": {
+      "degree": 10,
+      "term_count": 10,
+      "terms": [
+        {
+          "coefficient": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            10
+          ]
+        },
+        {
+          "coefficient": [
+            748,
+            195,
+            278,
+            117
+          ],
+          "exponents": [
+            9
+          ]
+        },
+        {
+          "coefficient": [
+            126026,
+            22815,
+            184282,
+            22815
+          ],
+          "exponents": [
+            8
+          ]
+        },
+        {
+          "coefficient": [
+            120202,
+            68445,
+            882538,
+            68445
+          ],
+          "exponents": [
+            7
+          ]
+        },
+        {
+          "coefficient": [
+            -95032,
+            22815,
+            688892,
+            68445
+          ],
+          "exponents": [
+            6
+          ]
+        },
+        {
+          "coefficient": [
+            -21316,
+            4563,
+            238772,
+            68445
+          ],
+          "exponents": [
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            -142144,
+            68445,
+            8464,
+            22815
+          ],
+          "exponents": [
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            -41408,
+            68445,
+            -8608,
+            68445
+          ],
+          "exponents": [
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            -7424,
+            68445,
+            -7168,
+            68445
+          ],
+          "exponents": [
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            64,
+            68445,
+            -448,
+            22815
+          ],
+          "exponents": [
+            1
+          ]
+        }
+      ],
+      "variables": [
+        "t"
+      ]
+    },
+    "leaf_det": {
+      "degree": 1,
+      "term_count": 3,
+      "terms": [
+        {
+          "coefficient": [
+            0,
+            1,
+            -1,
+            1
+          ],
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "exponents": [
+            0,
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t",
+        "u"
+      ]
+    },
+    "mu": {
+      "degree": 3,
+      "term_count": 9,
+      "terms": [
+        {
+          "coefficient": [
+            -6,
+            1,
+            30,
+            1
+          ],
+          "exponents": [
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            72,
+            1,
+            60,
+            1
+          ],
+          "exponents": [
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            6,
+            1,
+            78,
+            1
+          ],
+          "exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            -66,
+            1,
+            -18,
+            1
+          ],
+          "exponents": [
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -72,
+            1,
+            96,
+            1
+          ],
+          "exponents": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            12,
+            1,
+            60,
+            1
+          ],
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            -30,
+            1,
+            -30,
+            1
+          ],
+          "exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -48,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -12,
+            1,
+            12,
+            1
+          ],
+          "exponents": [
+            0,
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t",
+        "u"
+      ]
+    },
+    "q5": {
+      "degree": 5,
+      "term_count": 6,
+      "terms": [
+        {
+          "coefficient": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            98,
+            65,
+            1444,
+            585
+          ],
+          "exponents": [
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            -1402,
+            1755,
+            3416,
+            1755
+          ],
+          "exponents": [
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            -2,
+            5,
+            526,
+            1755
+          ],
+          "exponents": [
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -304,
+            1755,
+            272,
+            1755
+          ],
+          "exponents": [
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -88,
+            1755,
+            -56,
+            1755
+          ],
+          "exponents": [
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t"
+      ]
+    },
+    "residual_eliminant": {
+      "degree": 10,
+      "term_count": 10,
+      "terms": [
+        {
+          "coefficient": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            10
+          ]
+        },
+        {
+          "coefficient": [
+            748,
+            195,
+            278,
+            117
+          ],
+          "exponents": [
+            9
+          ]
+        },
+        {
+          "coefficient": [
+            126026,
+            22815,
+            184282,
+            22815
+          ],
+          "exponents": [
+            8
+          ]
+        },
+        {
+          "coefficient": [
+            120202,
+            68445,
+            882538,
+            68445
+          ],
+          "exponents": [
+            7
+          ]
+        },
+        {
+          "coefficient": [
+            -95032,
+            22815,
+            688892,
+            68445
+          ],
+          "exponents": [
+            6
+          ]
+        },
+        {
+          "coefficient": [
+            -21316,
+            4563,
+            238772,
+            68445
+          ],
+          "exponents": [
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            -142144,
+            68445,
+            8464,
+            22815
+          ],
+          "exponents": [
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            -41408,
+            68445,
+            -8608,
+            68445
+          ],
+          "exponents": [
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            -7424,
+            68445,
+            -7168,
+            68445
+          ],
+          "exponents": [
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            64,
+            68445,
+            -448,
+            22815
+          ],
+          "exponents": [
+            1
+          ]
+        }
+      ],
+      "variables": [
+        "t"
+      ]
+    },
+    "residual_resultant": {
+      "degree": 11,
+      "term_count": 11,
+      "terms": [
+        {
+          "coefficient": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            11
+          ]
+        },
+        {
+          "coefficient": [
+            878,
+            195,
+            278,
+            117
+          ],
+          "exponents": [
+            10
+          ]
+        },
+        {
+          "coefficient": [
+            36874,
+            4563,
+            73474,
+            7605
+          ],
+          "exponents": [
+            9
+          ]
+        },
+        {
+          "coefficient": [
+            372254,
+            68445,
+            417034,
+            22815
+          ],
+          "exponents": [
+            8
+          ]
+        },
+        {
+          "coefficient": [
+            -614884,
+            205335,
+            3831752,
+            205335
+          ],
+          "exponents": [
+            7
+          ]
+        },
+        {
+          "coefficient": [
+            -509804,
+            68445,
+            418820,
+            41067
+          ],
+          "exponents": [
+            6
+          ]
+        },
+        {
+          "coefficient": [
+            -355304,
+            68445,
+            110744,
+            41067
+          ],
+          "exponents": [
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            -31424,
+            15795,
+            128,
+            1053
+          ],
+          "exponents": [
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            -105088,
+            205335,
+            -7744,
+            41067
+          ],
+          "exponents": [
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            -14656,
+            205335,
+            -18368,
+            205335
+          ],
+          "exponents": [
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            128,
+            205335,
+            -896,
+            68445
+          ],
+          "exponents": [
+            1
+          ]
+        }
+      ],
+      "variables": [
+        "t"
+      ]
+    },
+    "rho8": {
+      "degree": 3,
+      "term_count": 9,
+      "terms": [
+        {
+          "coefficient": [
+            432,
+            1,
+            144,
+            1
+          ],
+          "exponents": [
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            864,
+            1,
+            -864,
+            1
+          ],
+          "exponents": [
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            864,
+            1,
+            96,
+            1
+          ],
+          "exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            -432,
+            1,
+            1584,
+            1
+          ],
+          "exponents": [
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            768,
+            1,
+            1344,
+            1
+          ],
+          "exponents": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            672,
+            1,
+            288,
+            1
+          ],
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            -1056,
+            1,
+            288,
+            1
+          ],
+          "exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -384,
+            1,
+            768,
+            1
+          ],
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            192,
+            1,
+            192,
+            1
+          ],
+          "exponents": [
+            0,
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t",
+        "u"
+      ]
+    },
+    "rho9": {
+      "degree": 4,
+      "term_count": 13,
+      "terms": [
+        {
+          "coefficient": [
+            -2160,
+            1,
+            -504,
+            1
+          ],
+          "exponents": [
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            144,
+            1,
+            -432,
+            1
+          ],
+          "exponents": [
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            2016,
+            1,
+            144,
+            1
+          ],
+          "exponents": [
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -1440,
+            1,
+            -1584,
+            1
+          ],
+          "exponents": [
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            96,
+            1,
+            -864,
+            1
+          ],
+          "exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            -288,
+            1,
+            -504,
+            1
+          ],
+          "exponents": [
+            1,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            1008,
+            1,
+            1296,
+            1
+          ],
+          "exponents": [
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            912,
+            1,
+            -192,
+            1
+          ],
+          "exponents": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            288,
+            1,
+            -672,
+            1
+          ],
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": [
+            0,
+            1,
+            -720,
+            1
+          ],
+          "exponents": [
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            -288,
+            1,
+            480,
+            1
+          ],
+          "exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            480,
+            1,
+            384,
+            1
+          ],
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            192,
+            1,
+            -192,
+            1
+          ],
+          "exponents": [
+            0,
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t",
+        "u"
+      ]
+    },
+    "u_q5": {
+      "degree": 8,
+      "term_count": 9,
+      "terms": [
+        {
+          "coefficient": [
+            -1546184984524251,
+            28389911697280,
+            2617940846444823,
+            28389911697280
+          ],
+          "exponents": [
+            8
+          ]
+        },
+        {
+          "coefficient": [
+            -283745785505776863,
+            922672130161600,
+            527928661789170647,
+            2768016390484800
+          ],
+          "exponents": [
+            7
+          ]
+        },
+        {
+          "coefficient": [
+            -15967560970754657261,
+            26988159807226800,
+            1473503406118731983,
+            7710902802064800
+          ],
+          "exponents": [
+            6
+          ]
+        },
+        {
+          "coefficient": [
+            -4373927381033568721,
+            7710902802064800,
+            -696998668272581741,
+            13494079903613400
+          ],
+          "exponents": [
+            5
+          ]
+        },
+        {
+          "coefficient": [
+            -4360517913185071669,
+            17992106538151200,
+            -893210076204283117,
+            7710902802064800
+          ],
+          "exponents": [
+            4
+          ]
+        },
+        {
+          "coefficient": [
+            -1887266298009869729,
+            26988159807226800,
+            -155663236996742471,
+            3373519975903350
+          ],
+          "exponents": [
+            3
+          ]
+        },
+        {
+          "coefficient": [
+            -12932591731243181,
+            963862850258100,
+            -116405271745511579,
+            6747039951806700
+          ],
+          "exponents": [
+            2
+          ]
+        },
+        {
+          "coefficient": [
+            -295297923088937,
+            3373519975903350,
+            -2767080360964999,
+            963862850258100
+          ],
+          "exponents": [
+            1
+          ]
+        },
+        {
+          "coefficient": [
+            -3,
+            5,
+            1,
+            5
+          ],
+          "exponents": [
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t"
+      ]
+    }
+  },
+  "q5_component": {
+    "degree": 5,
+    "mu_reduction_is_zero": true,
+    "reason": "entire Q5 component is outside the Schur localization mu != 0",
+    "residual_point_count_over_algebraic_closure": 5,
+    "u_relation": "affine_relation=0"
+  },
+  "q5_reductions": {
+    "centre_det_numerator": {
+      "degree": 0,
+      "term_count": 1,
+      "terms": [
+        {
+          "coefficient": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t"
+      ]
+    },
+    "mu": {
+      "degree": 0,
+      "term_count": 1,
+      "terms": [
+        {
+          "coefficient": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t"
+      ]
+    },
+    "rho8": {
+      "degree": 0,
+      "term_count": 1,
+      "terms": [
+        {
+          "coefficient": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t"
+      ]
+    },
+    "rho9": {
+      "degree": 0,
+      "term_count": 1,
+      "terms": [
+        {
+          "coefficient": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "exponents": [
+            0
+          ]
+        }
+      ],
+      "variables": [
+        "t"
+      ]
+    }
+  },
+  "scope": {
+    "full_chart_residual_proved_empty": false,
+    "full_chart_unit_ideal_proved": false,
+    "global_conjecture_resolved": false,
+    "omitted_offset_bug_corrected": true,
+    "other_rank_eight_charts_checked": false,
+    "rank_seven_or_lower_checked": false,
+    "slice_residual_fitting_zero_locus_empty_on_schur_frame_open": true
+  },
+  "source_files": {
+    "gld75_certificate": {
+      "bytes": 15040,
+      "path": "claims/arbitrary-order/four_root_torus_star_survivor_locus_symmetry_and_local_germ_certificates.json",
+      "sha256": "05A2540431023B7ADD3D3AE60189CAC31EBD375609911CFDC66B8C4028346B57"
+    },
+    "gld85_certificate": {
+      "bytes": 48149,
+      "path": "claims/arbitrary-order/four_root_torus_star_equal_leaf_survivor_rank_eight_full_intrinsic_fitting_certificate.json",
+      "sha256": "B037DC23CEEBFDBCE3DB3EE9A48EDA1E981D627C044EEF45D7D87B86414ADF59"
+    }
+  },
+  "theorem_id": "GLD91",
+  "upstream_gld85": {
+    "certificate_sha256": "B037DC23CEEBFDBCE3DB3EE9A48EDA1E981D627C044EEF45D7D87B86414ADF59",
+    "denominator_slots_checked": {
+      "1000000007": 6240,
+      "10000019": 6240
+    },
+    "full_intrinsic_rank": 45,
+    "minor_residues": {
+      "1000000007": [
+        9639769,
+        249939722
+      ],
+      "10000019": [
+        1610829,
+        5232695
+      ]
+    },
+    "selected_columns": [
+      252,
+      257,
+      259,
+      260,
+      261,
+      263,
+      264,
+      267,
+      272,
+      275,
+      284,
+      285,
+      286,
+      288,
+      289,
+      431,
+      433,
+      434,
+      435,
+      437,
+      438,
+      441,
+      446,
+      449,
+      458,
+      459,
+      460,
+      462,
+      703,
+      704,
+      705,
+      707,
+      708,
+      711,
+      716,
+      719,
+      728,
+      729,
+      805,
+      806,
+      808,
+      809,
+      812,
+      855,
+      2784
+    ]
+  }
+}

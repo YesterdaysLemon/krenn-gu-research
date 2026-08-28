@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD89 equal-leaf checkpoint
+## GLD83--GLD89, GLD91 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -53,6 +53,19 @@ then closes the full `P=p^2-p+1` divisor and its `d0=p+q-1=0` overlap on
 every retained center singular.  The `L1/L2/e` intersections with the
 GLD88 six-pivot boundary, pure `P6`, the pulled-back Fitting ideal, and all
 other chart/component/source branches remain open.
+
+[`GLD91`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_THEOREM.md)
+now gives an exact characteristic-zero exclusion on the two-leaf slice
+`x9=1, x10=x11=x12=0, x13=t, x14=u` of the named rank-eight chart.  After
+correcting the prior exploratory calculation that omitted the Gaussian
+centre offsets, the degree-eleven residual resultant has six linear fibres
+and a squarefree degree-five `Q5` component.  The five `Q5` points and two
+linear fibres lie on the Schur boundary, three further linear fibres lie on
+the centre-frame boundary, and the sole Schur/frame-open fibre is the GLD85
+point where the full intrinsic map has rank `45`.  Thus `V(I_Pl)` is empty
+on this slice after the named localization.  Full six-leaf rank-eight
+unitness/residual coverage, all other charts/ranks/components and source
+branches, and the global conjecture remain **UNRESOLVED**.
 
 ## Current symbolic checkpoint
 
