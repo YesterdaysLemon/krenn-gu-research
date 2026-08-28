@@ -3467,6 +3467,20 @@ pointwise polarization alone is
 insufficient.  Three-or-more-deficient profiles and every attachment gate
 remain open.  See the
 [`GLS63 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_MIXED_KERNEL_PARTIAL_UNCONTRACTION_AND_TWO_DEFICIENT_BINARY_LOCALIZATION_REVIEW_2026-08-28.md).
+The GLS64 characteristic-zero theorem couples the residual at two different
+levels of that same physical hierarchy.  Contracting each port pair kills
+all six effective edge scalars, and contracting one deficient kernel with
+three ports kills the four complementary matching cofactors.  Their exact
+denominator-free complementary-edge identity counts the raw four-port
+matching deck twice.  Since the binary deficient-pair equation makes that
+deck nonzero, the raw edge between the two deficient kernel directions must
+vanish.  Thus the entire GLS63 residual is confined to
+`W_(nm)(e_c,e_c)=0`, for both three and four cross-product zeros.  This is a
+source-integrability localization, not an exclusion of the remaining
+divisor: its effective port blocks are permanent-type cross terms, and exact
+scalar controls retain a nonzero raw matching deck.  Three-or-more-deficient
+profiles and every attachment gate remain open.  See the
+[`GLS64 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TWO_DEFICIENT_MATCHING_INTEGRABILITY_AND_KERNEL_EDGE_ZERO_LOCALIZATION_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
