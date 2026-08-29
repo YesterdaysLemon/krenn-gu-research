@@ -3687,6 +3687,23 @@ and residual `98,355 / 81` are unchanged.  See the
 [`GLS75 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ONE_SIDED_KOSZUL_AND_COMPLETE_NONENDPOINT_EXCLUSION_THEOREM.md)
 and
 [`GLS75 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ONE_SIDED_KOSZUL_AND_COMPLETE_NONENDPOINT_EXCLUSION_REVIEW_2026-08-28.md).
+The GLS76 exact characteristic-zero successor closes the P/Q-common outside
+endpoints without assuming that their transverse probe functionals are
+nonsynchronized.  At a P-common endpoint, the three complete `P_0Q_s`
+coefficients split in the central `S_0` row plane.  Direct comparison of the
+outside-kernel and transverse tensor grades forces every complementary pair
+deck to vanish on two kernel lines and every one-port correction on its
+kernel line, including root-only and zero central `p` shores.  In the
+one-central-edge case, both inactive central labels then kill their kernel
+rows at the selected endpoint port.  The two incident outside kernel edges
+vanish, and the active label kills the sole spoke that could use the opposite
+edge.  Probe exchange closes the Q-common endpoint.  Thus the complete
+Family-B `S_0^3T_0^3` key is empty, removing `60 / 1` and changing the
+six-deficient residual to `98,295 / 80`.  Family A `r=1,2,3` and all other
+stated branches remain open.  See the
+[`GLS76 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ENDPOINT_MIXED_COEFFICIENT_AND_COMPLETE_KEY_EXCLUSION_THEOREM.md)
+and
+[`GLS76 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ENDPOINT_MIXED_COEFFICIENT_AND_COMPLETE_KEY_EXCLUSION_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
