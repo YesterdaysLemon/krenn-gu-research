@@ -16,6 +16,12 @@ The [theorem ledger](../catalog/theorem-ledger.json) is a partial claim/evidence
 index, not the proof graph, and its empty `dependencies` arrays mean “not
 recorded.”
 
+An [evidence-status reconciliation](audits/GLS66_GLS69_EVIDENCE_STATUS_RECONCILIATION_2026-08-29.md)
+aligns the owning `GLS66`--`GLS69` status headers with their already-committed
+PASS hostile reviews and the `PROVED` nodes below.  It changes no theorem
+statement, assumption, divisor, residual count, dependency, or frontier edge;
+all stated open branches and the global **UNRESOLVED** status are unchanged.
+
 Except where an owner says otherwise, the live symbolic trunk below is over
 `C` or characteristic zero. Generic/function-field theorems do not include
 excluded divisors, projective boundaries, or arbitrary points without a proved

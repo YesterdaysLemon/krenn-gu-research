@@ -1,4 +1,4 @@
-"""Independent no-project-import audit for candidate GLS69 finite leaves."""
+"""Independent no-project-import audit for the reviewed GLS69 finite leaves."""
 
 from collections import Counter
 from itertools import permutations, product
@@ -449,6 +449,6 @@ print(f"independent_N6_minimum_sizes: {six_min}")
 print(f"independent_N6_triple_targets: {six_maximum}")
 print("F7_binary_P3_control: exact")
 print(
-    "PASS (candidate GLS69 finite/displayed audit only; same-source "
+    "PASS (GLS69 finite/displayed audit only; same-source "
     "integrability and global conjecture remain unresolved)"
 )

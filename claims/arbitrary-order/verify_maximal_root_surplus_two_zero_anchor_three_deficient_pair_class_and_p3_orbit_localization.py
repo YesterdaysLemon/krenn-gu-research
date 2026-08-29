@@ -1,4 +1,4 @@
-"""Primary exact checks for the candidate GLS67 parent localization."""
+"""Primary exact checks for the reviewed GLS67 parent localization."""
 
 from collections import Counter
 from dataclasses import dataclass
@@ -283,6 +283,6 @@ print(f"binary_P3_hyperdeterminant: {hyperdeterminant(binary_tensor)}")
 print("pure_P3_nonzero_coefficients: 2")
 print("zero_P3_nonzero_coefficients: 0")
 print(
-    "PASS: candidate GLS67 pair-class/P3 localization checks "
+    "PASS: GLS67 pair-class/P3 localization checks "
     "(audit only; eight residual orbits and global conjecture remain unresolved)"
 )

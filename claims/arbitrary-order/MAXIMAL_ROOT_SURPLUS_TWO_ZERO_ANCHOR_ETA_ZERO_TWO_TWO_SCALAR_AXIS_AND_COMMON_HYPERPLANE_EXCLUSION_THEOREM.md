@@ -2,7 +2,7 @@
 
 ## Status
 
-**Candidate exact characteristic-zero same-source exclusion (`GLS66`).**
+**Proved exact characteristic-zero same-source exclusion (`GLS66`).**
 Continue from the `GLS65` eta-zero local rank profile `2,2,3,3`.  The full
 `GLS64` scalar hierarchy first forces the two rank-three ports to be active
 on the same deficient side.  It kills the cross-product edge between the
@@ -17,12 +17,12 @@ squarefree annihilator of that common hyperplane excludes every same- or
 opposite-orientation pair of silent ports.
 
 Consequently the complete `GLS65` eta-zero `2+2` residual is empty.  With
-`GLS64`, this would exclude the entire `GLS63` exactly-two-deficient family.
-This candidate does not touch profiles with three or more deficient maps,
-the unique-nonrigid branch, attachment, response, selector,
+`GLS64`, this excludes the entire `GLS63` exactly-two-deficient family.
+The focused primary replay, independent audit, and hostile review pass at
+this exact scope.  This theorem does not touch profiles with three or more
+deficient maps, the unique-nonrigid branch, attachment, response, selector,
 synchronization/activity, the nonzero-anchor branch, or arbitrary root
-order.  It does not change the global status without hostile review.  The
-global Krenn--Gu conjecture remains **UNRESOLVED**.
+order.  The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
 ## Dependencies and exact scope
 

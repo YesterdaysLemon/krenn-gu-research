@@ -1,4 +1,4 @@
-"""Independent no-project-import audit for the candidate GLS68 finite leaves."""
+"""Independent no-project-import audit for the reviewed GLS68 finite leaves."""
 
 from collections import Counter
 from itertools import permutations, product
@@ -193,6 +193,6 @@ print(f"independent_ternary_four_port_profiles: {len(ternary)}")
 print(f"independent_nonternary_profiles: {len(nonternary)}")
 print(f"independent_probe_bidegree: {source_degree}")
 print(
-    "PASS (candidate GLS68 finite/interface audit only; all 4,794 profiles "
+    "PASS (GLS68 finite/interface audit only; all 4,794 profiles "
     "and the global conjecture remain unresolved)"
 )

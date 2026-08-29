@@ -1,4 +1,4 @@
-"""Primary exact checks for the candidate GLS68 four-deficient boundary."""
+"""Primary exact checks for the reviewed GLS68 four-deficient boundary."""
 
 from collections import Counter
 from dataclasses import dataclass
@@ -241,7 +241,7 @@ print(f"nonternary_four_deficient_profiles: {len(nonternary_profiles)}")
 print(f"nonternary_four_deficient_orbits: {len(nonternary_orbits)}")
 print(f"probe_bidegree: {four_port_source_bidegree}")
 print(
-    "PASS: candidate GLS68 normalized finite localization "
+    "PASS: GLS68 normalized finite localization "
     "and receiver-interface boundary "
     "(audit only; all 4,794 profiles and global conjecture remain unresolved)"
 )

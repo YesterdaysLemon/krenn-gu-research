@@ -2,7 +2,7 @@
 
 ## Status
 
-**Candidate exact characteristic-zero higher-deficient parent localization
+**Proved exact characteristic-zero higher-deficient parent localization
 (`GLS69`).**  Continue on the zero-anchor, root-order-three, all-six-rigid
 branch from the `GLS63` same-source mixed hierarchy and the universal `GLS67`
 pair classes.
