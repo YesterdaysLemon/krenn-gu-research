@@ -249,6 +249,26 @@ flowchart TD
   GLS58["All-rigid kernel contraction / cross product<br/>PROVED rank-profile reduction / binary n=6 boundary"]
   GLS59["Unique-nonrigid old-probe exchange / overlap<br/>PROVED mono-binary descent / natural GLD3 target gate NO-GO"]
   GLS60["Rank-one pure-probe orientation / splice boundary<br/>PROVED two-colour shore purity<br/>direct / vertex-gauge graph splices NO-GO"]
+  GLS61["Cross-product partial uncontraction<br/>PROVED arbitrary-r hierarchy<br/>r=3 all-injective branch EMPTY"]
+  GLS62["Exactly-one-deficient row quotient<br/>PROVED r=3 branch EMPTY<br/>all-rigid deficient floor at least 2"]
+  GLS63["Mixed-kernel partial uncontraction<br/>PROVED two-deficient localization<br/>binary same-kernel residual OPEN"]
+  GLS64["Two-deficient matching integrability<br/>PROVED deficient kernel edge ZERO<br/>eta=0 residual OPEN"]
+  GLS65["Eta-zero separated permanent source<br/>PROVED exact local ranks 2+2<br/>two-rank-three residual OPEN"]
+  GLS66["Eta-zero scalar axis / common hyperplane<br/>PROVED 2233 EMPTY<br/>exactly-two-deficient branch EMPTY"]
+  GLS67["Three-deficient dual P3 localization<br/>PROVED common-support orbits EMPTY<br/>432 profiles / 8 orbits OPEN"]
+  GLS68["Four-deficient pair-class census<br/>PROVED 4,794 profiles / 50 keys OPEN<br/>direct n=6 bridge INVALID"]
+  GLS69["Five-/six-deficient open-set tower<br/>PROVED support / face / span localization<br/>six residual 99,180 / 86 keys OPEN"]
+  GLS70["Six-deficient binary-triangle parents<br/>PROVED two-family taxonomy / deck kernel<br/>S_c^2 T_c^4 EMPTY / residual 99,135 / 85"]
+  GLS71["Single-binary strict-parent descent<br/>PROVED Family B r<=2 / Family A r=0 EMPTY<br/>residual 98,355 / 81"]
+  GLS72["One-T_0 single-binary full-parent refinement<br/>PROVED Family A r=1 localized / transverse control<br/>residual unchanged 98,355 / 81"]
+  GLS73["One-T_0 off-port-core full-source test<br/>PROVED arbitrary incident-edge completion EMPTY<br/>Family A r=1 still OPEN"]
+  GLS74["All-T_0 Family-B full-parent boundary<br/>PROVED central-mixed-support nonendpoint EMPTY<br/>root-axis / endpoints OPEN"]
+  GLS75["All-T_0 Family-B one-sided Koszul<br/>PROVED complete outside nonendpoint EMPTY<br/>P/Q-common endpoints OPEN"]
+  GLS76["All-T_0 Family-B endpoint mixed coefficients<br/>PROVED P/Q-common endpoints EMPTY<br/>complete key EMPTY / residual 98,295 / 80"]
+  GLS77["One-T_0 Family-A full-source kernel differences<br/>PROVED complete r=1 key EMPTY<br/>residual 97,215 / 79"]
+  GLS78["Multi-T_0 Family-A parent attempt<br/>PROVED proper-face / repair boundary<br/>r=2,3 OPEN / residual unchanged"]
+  GLS79["Multi-T_0 Family-A silent slice<br/>PROVED complete linear nonseparation<br/>nonlinear / cross-slice coupling OPEN"]
+  GLS80["Multi-T_0 Family-A complete row span<br/>PROVED universal scalar-linear no-go<br/>specialized / nonlinear coupling OPEN"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
@@ -659,7 +679,30 @@ flowchart TD
   GLS56 -->|alternate receiver / arbitrary-r attachment open| GL
   GLS57 -->|pure-shore orientation / natural splice audit| GLS60
   GLS60 -->|non-gauge reconstruction / promoted attachment open| GL
-  GLS58 -->|binary descents / injective cancellation / attachment open| GL
+  GLS58 -->|complete cross-product partial uncontraction| GLS61
+  GLS61 -->|exactly one deficient / row and active-line quotients| GLS62
+  GLS62 -->|mixed-kernel parent attempt / exactly two deficient| GLS63
+  GLS63 -->|complementary-edge integrability identity| GLS64
+  GLS64 -->|eta-zero separated P4 extraction / local rank drop| GLS65
+  GLS65 -->|scalar axis / common hyperplane annihilator| GLS66
+  GLS66 -->|three-deficient pair classes / dual P3 extraction| GLS67
+  GLS67 -->|four-deficient census / probe-dependent four-port test| GLS68
+  GLS67 -->|eight three-deficient residual orbits / attachment open| GL
+  GLS68 -->|four-deficient same-source pullback integrability| GL
+  GLS68 -->|five-/six-deficient support tower / three-open span| GLS69
+  GLS69 -->|binary-triangle first-parent / source-integrability test| GLS70
+  GLS70 -->|single-binary strict-parent descent / attachment activity| GLS71
+  GLS71 -->|one-T_0 activity and full-deck refinement| GLS72
+  GLS72 -->|transverse coefficient / full-source completion test| GLS73
+  GLS73 -->|coupled-correction boundary / complete kernel differences| GLS77
+  GLS71 -->|all-T_0 full-parent Koszul descent| GLS74
+  GLS74 -->|one-sided Koszul / central root-axis completion| GLS75
+  GLS75 -->|P/Q-common outside endpoint integrability| GLS76
+  GLS76 -->|Family-B key complete / remaining branches| GL
+  GLS77 -->|multi-T_0 parent / repair-channel audit| GLS78
+  GLS78 -->|complete silent-slice row span| GLS79
+  GLS79 -->|restore every outside source row| GLS80
+  GLS80 -->|specialized or nonlinear repair synchronization| GL
   GLS59 -->|coupled overlaps / promoted attachment open| GL
   GLS29 -->|r>=4 disjoint cover / other shores open| GL
   GLS14 -->|pure P4/P5 compression; Phi selector or Psi face defect open| GL
@@ -1150,6 +1193,26 @@ flowchart TD
 | `GLS58` | On the zero-anchor `r=3` all-six-rigid branch, every nonzero boundary-kernel coordinate forces a fixed coordinate-pure neighbour shore.  One deficient contraction gives an exact seven-slot identity with ten physical trilinear decks.  Two deficient contractions reconstruct one honest six-vertex graph with `D_uv=hW_uv+a_u tensor b_v+b_u tensor a_v`; rigidity makes its target zero, mono, or binary, and an exact all-rigid `h=0` binary control shows the three-colour finite theorem cannot exclude it.  With no deficient label, all six joint maps are injective and obey the denominator-free cross-product identity `sum_c z_(0,c)z_(1,c) product_t(k_t)_c=0`, split exactly into a coordinate-axis-shore cover or genuine polynomial cancellation.  Transverse all-rank-two maps force their kernel zero sets to cover all three colours.  This is an exhaustive rank-profile reduction, not a response, selector, receiver, higher-rank exclusion, arbitrary-root theorem, node closure, or global resolution. | [All-rigid kernel contraction and cross-product reduction](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_ALL_RIGID_KERNEL_CONTRACTION_AND_CROSS_PRODUCT_REDUCTION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ALL_RIGID_KERNEL_CONTRACTION_AND_CROSS_PRODUCT_REDUCTION_REVIEW_2026-08-23.md) |
 | `GLS59` | At zero anchor, a nonzero auxiliary joint-kernel vector forces, for either old probe and every colour supported by both vectors, a distinct nonzero coordinate-pure neighbour block.  Finite irreducibility gives fixed whole-domain pure probe blocks and complete three-step exceptional-section flags.  On the `r=3` unique-nonrigid branch, the two three-label old-probe stars overlap among five rigid labels.  Same-colour overlap gives a rank-one coordinate-plane kernel and an exact binary six-vertex descent; cross-colour overlap gives a rank-two coordinate-axis kernel and an exact monocolour descent.  At every fully supported old-probe vector, the natural `GLD3` pure-star triangle cannot be simultaneously target-diagonal.  This is an arbitrary-root conditional exchange theorem and an exhaustive unique-nonrigid `r=3` structural reduction, not a response, selector, nuisance survivor, alternate receiver, branch exclusion, arbitrary-root source cover, node closure, or global resolution. | [Probe exchange, overlap, and unique-nonrigid descent](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_PROBE_EXCHANGE_OVERLAP_AND_UNIQUE_NONRIGID_DESCENT_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_PROBE_EXCHANGE_OVERLAP_AND_UNIQUE_NONRIGID_DESCENT_REVIEW_2026-08-23.md) |
 | `GLS60` | On the `GLS57` all-rank-one branch, each same-colour pair equation has rank one, so at least one full old-probe shore lies on the corresponding coordinate line; the opposite shore has an exact quotient anti-synchronization, every label has a nonzero pure old-probe edge, and one probe is shore-pure on at least two colour pairs.  Every fully supported probe contraction is the one-edge hafnian first variation with three nonzero diagonal weights.  The direct companion graph is zero or decomposable on the mixed `2+2+2` word, while a vertex-gauge identification with the internal graph would either kill the first variation or create an excluded ternary six-vertex witness.  The earlier claim that a weighted permanent `P_6` restriction is accepted by the six-vertex theorem is corrected: it enters the separate open permanent subtree.  This is a pointwise raw-structure theorem and two-splice no-go, not a non-gauge reconstruction, permanent restriction, nuisance survivor, selector, response synchronization/activity theorem, named receiver, higher-rank/arbitrary-root cover, node closure, or global resolution. | [Pure-probe orientation and hafnian splicing boundary](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_ONE_PURE_PROBE_ORIENTATION_AND_HAFNIAN_SPLICING_BOUNDARY_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_RANK_ONE_PURE_PROBE_ORIENTATION_AND_HAFNIAN_SPLICING_BOUNDARY_REVIEW_2026-08-23.md) |
+| `GLS61` | Return to the complete zero-anchor `GLS8` tensor before fully contracting the auxiliary labels.  For every open set `S`, cross-product contraction retains structurally exactly the companions indexed by `binom(S,2)` and gives one compatible same-source tensor hierarchy.  One-open equations force every target colour to have at least two identically zero cross coordinates.  At `r=3`, six injective nonaxis labels would give an exact `2+2+2` partition; a two-open equation then forces one physical companion to be pure `(c,c)`, contradicting each injective shore orientation.  For any nonempty pure-axis set `P`, quotient every pure slot by its active full-row line.  The `S=P` equation forces three disjoint nonaxis zero sets, hence `|P|<=3`; a singleton zero and the `S=P union {u}` equation then have a surviving pure target but a completely killed source side.  Thus the entire all-injective `r=3` branch is empty, and every all-six-rigid witness has a deficient joint map.  The arbitrary-root hierarchy is proved, but the branch exclusion is root-order-three only.  All deficient-map branches, the unique-nonrigid branch, responses, selectors, synchronization/activity, anchors, arbitrary-root attachment, node closure, and global resolution remain open. | [Cross-product partial uncontraction and all-injective exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_CROSS_PRODUCT_PARTIAL_UNCONTRACTION_AND_INJECTIVE_NONAXIS_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_CROSS_PRODUCT_PARTIAL_UNCONTRACTION_AND_INJECTIVE_NONAXIS_EXCLUSION_REVIEW_2026-08-28.md) |
+| `GLS62` | On the all-six-rigid zero-anchor `r=3` branch, assume exactly one joint probe map `J_n` is deficient.  In the `GLS61` same-source hierarchy, quotient the open `n`-slot by `row J_n` and every injective pure-axis slot by its active full-row line.  Every deficient-kernel-supported colour then needs at least two nonaxis zero labels; equality two would force the corresponding nonaxis pair companion to be pure `(c,c)`, contradicting the exact GLS61 orientation obstruction.  Hence it needs at least three.  Disjointness forces `rank J_n=2` with a pure-coordinate kernel and at most two pure-axis labels.  The remaining zero-, one-, and two-axis cases are excluded by, respectively, the exact `3+1+1` singleton companion obstruction and active-line quotient equations with a surviving target.  Thus the exactly-one-deficient cell is empty and every all-six-rigid witness has at least two deficient maps.  Their common one-/two-/higher-kernel deck compatibility, response, selector, synchronization/activity, anchors, arbitrary-root attachment, node closure, and global resolution remain open. | [Exactly-one-deficient row-quotient exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_EXACTLY_ONE_DEFICIENT_ROW_QUOTIENT_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_EXACTLY_ONE_DEFICIENT_ROW_QUOTIENT_EXCLUSION_REVIEW_2026-08-28.md) |
+| `GLS63` | For any all-rigid deficient set, independently contract selected deficient labels at generic vectors of their whole joint kernels and selected injective nonaxis labels at their cross products, leaving every pure axis open.  This gives one complete same-source partial-uncontraction hierarchy.  A colour visible on every deficient kernel needs at least three disjoint nonaxis zero labels; a singleton zero visible on all but one deficient kernel forces that remaining map to be a rank-one coordinate readout.  For exactly two deficient labels, the support/rank census and a two-dimensional pure-companion no-go exclude every profile except two rank-two maps with the same pure-coordinate kernel, no pure axes, three or four nonaxis zeros on that colour, no complementary-colour zeros, and a nonzero binary-diagonal deficient companion.  Exact mixed-orientation triangle and four-port controls realize the higher-open pure-colour cancellation with shared physical source/deck data, refuting termwise separation and leaving a function-field restriction-separation lemma open.  Three-or-more-deficient profiles, attachment gates, node closure, and global resolution remain open. | [Mixed-kernel hierarchy and two-deficient binary localization](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_MIXED_KERNEL_PARTIAL_UNCONTRACTION_AND_TWO_DEFICIENT_BINARY_LOCALIZATION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_MIXED_KERNEL_PARTIAL_UNCONTRACTION_AND_TWO_DEFICIENT_BINARY_LOCALIZATION_REVIEW_2026-08-28.md) |
+| `GLS64` | In the GLS63 exactly-two-deficient residual, evaluate every raw port edge at its cross products.  Each pair-contracted same-source equation kills the corresponding effective scalar `delta_ij=eta w_ij+A_iB_j+B_iA_j`, and each one-deficient-kernel equation kills the physical four-vertex cofactor `C_u^A` and its `B` mate.  The denominator-free complementary-edge identity `sum w_ij delta_complement = 2 eta H_U + sum B_u C_u^A`, together with the nonzero binary deck `H_U`, forces `eta=W_nm(e_c,e_c)=0`.  Thus both the three-zero and four-zero residuals are empty on `D(eta)` and survive only on the exact deficient-kernel-edge-zero divisor.  Scalar controls show the identity alone cannot remove that divisor.  The full source-realizable permanent-type tensor there, three-or-more-deficient profiles, attachment gates, and global resolution remain open. | [Two-deficient matching-integrability localization](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TWO_DEFICIENT_MATCHING_INTEGRABILITY_AND_KERNEL_EDGE_ZERO_LOCALIZATION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_TWO_DEFICIENT_MATCHING_INTEGRABILITY_AND_KERNEL_EDGE_ZERO_LOCALIZATION_REVIEW_2026-08-28.md) |
+| `GLS65` | On the GLS64 zero-edge divisor, the two-kernel source is exactly one separated restriction of `P_4`: the six pair choices and the two orders in each companion/fixed-row block give all twenty-four `P,Q,A,B` assignments once.  The nonzero pure target and the exact `P_4` rank-drop theorem force a fixed generic rank-two pair.  Every rank-two port is necessarily `c`-oriented and has both fixed rows on its `c`-line.  A complete sixteen-word orientation census excludes local profile `2222`; a perfect-pairing mixed-triple argument and a denominator-free separated anchor-rigidity lemma exclude `2223`, including all zero-coefficient strata.  Hence the only eta-zero local profile is **exactly `2233`**, with two silent rank-two ports and two rank-three ports.  A mixed `YXXX` pure-`P_4` fibre and its exact three-port flat show why pointwise purity is insufficient.  The `2233` same-/opposite-orientation hyperplane boundary, nonzero raw matching deck, three-plus-deficient profiles, attachment gates, and global resolution remain open. | [Eta-zero permanent-source local-rank localization](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_ETA_ZERO_PERMANENT_SOURCE_AND_TWO_TWO_LOCAL_RANK_LOCALIZATION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_ETA_ZERO_PERMANENT_SOURCE_AND_TWO_TWO_LOCAL_RANK_LOCALIZATION_REVIEW_2026-08-28.md) |
+| `GLS66` | In the GLS65 `2233` residual, the full GLS64 cofactors and nonzero raw matching scalar force the two rank-three ports onto one active deficient-side axis, kill the silent--silent edge, and synchronize all four silent--rank-three edges.  The two rank-three source rowspaces are hyperplanes omitting the inactive fixed-row coordinate.  If they were distinct, their pair image would contain `A span{P,Q,B}`, whose perfect complement pairing detects every possible silent off-row product; hence purity makes them equal.  Since at least one rank-three port is `c`-oriented, the common normal is `tau P+B` up to probe exchange.  For `tau!=0`, the exact pair-image annihilator forces a rank-two all-`c` slice where the nonzero pure target requires rank one; for `tau=0`, the pair image is totally isotropic and the target vanishes.  Thus the complete zero-anchor root-order-three all-six-rigid **exactly-two-deficient branch is empty**.  Three-plus-deficient profiles, the unique-nonrigid branch, attachment/synchronization gates, nonzero anchor, arbitrary-root transport, and global resolution remain open. | [Eta-zero scalar-axis/common-hyperplane exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_ETA_ZERO_TWO_TWO_SCALAR_AXIS_AND_COMMON_HYPERPLANE_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_ETA_ZERO_TWO_TWO_SCALAR_AXIS_AND_COMMON_HYPERPLANE_EXCLUSION_REVIEW_2026-08-28.md) |
+| `GLS67` | For any two open deficient labels, contract every other deficient kernel and every injective nonaxis cross product, then quotient every pure-axis active line.  The sole source is one actual pair companion times its common physical deck, and every surviving target colour has one exact deficient support class.  For exactly three deficient maps, the GLS63 incidence/singleton rules and this pair-class theorem give `61,965 -> 2,367 -> 516 -> 453` labelled profiles in ten initial orbits, all with `P=empty, |U|=3`.  Cross-contracting `U` gives one exact deficient-side `P_3`; its pair scalar is the same one-port deck evaluated on the third kernel.  Contracting all three deficient kernels instead gives a second exact `P_3` on `U`.  A common deficient colour makes that target nonzero and pure, but probe-independent deck quotients exclude all injective-nonaxis orientation words.  Thus common-support orbits 1 and 6 are empty and the residual is **432 labelled profiles in eight orbits**.  On every residual the kernel-side `P_3` is zero and forces its three complementary one-port decks to vanish.  Binary, pure, and zero deficient-side endpoints remain algebraically nonempty, so the eight residuals require a shared-cofactor/higher-open integrability argument.  Four-plus-deficient profiles, unique-nonrigid attachment, every downstream gate, and global resolution remain open. | [Three-deficient pair-class and dual-P3 localization](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_THREE_DEFICIENT_PAIR_CLASS_AND_P3_ORBIT_LOCALIZATION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_THREE_DEFICIENT_PAIR_CLASS_AND_P3_ORBIT_LOCALIZATION_REVIEW_2026-08-28.md) |
+| `GLS68` | With exactly four deficient labels, the GLS63 incidence/singleton rules and all six universal GLS67 pair classes give the exact normalized census `137,781 -> 20,778 -> 4,794`, with fifty canonical support/rank/zero-count keys and no survivor having two pure-axis labels.  Exactly fifty-four profiles in two keys have `P=empty` and no nonaxis cross-product zero, hence a fully ternary four-port target.  They are not accepted six-vertex inputs: each of the two cross-product contraction vectors has probe bidegree `(1,1)`, each complementary deck has `(2,2)`, and the same-source pullback has `(3,3)` rather than being multilinear in two open roots.  Fixing the probes instead removes those roots and leaves a four-port equation.  Thus the direct finite-`n=6` bridge is invalid and all **4,794 profiles in fifty keys remain open**; `4,740` of them have binary or monocolour targets.  A common-physical-deck factorization, polarization, or coefficientwise integrability theorem is required. | [Four-deficient pair-class and probe-dependent four-port boundary](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_DEFICIENT_PAIR_CLASS_AND_PROBE_DEPENDENT_FOUR_PORT_BOUNDARY_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_DEFICIENT_PAIR_CLASS_AND_PROBE_DEPENDENT_FOUR_PORT_BOUNDARY_REVIEW_2026-08-28.md) |
+| `GLS69` | For five or six deficient maps, put `D_a=N-M_a` and `L_a=D_a disjoint-union E_a`.  Every arbitrary open-set member has formal colour-term support exactly when `L_a subseteq T`; face evaluations commute and remain restrictions of the same physical matching decks.  The five-deficient census is `59,049 -> 18,270 -> 2,640` (`P=1`, twelve keys) and `236,196 -> 79,095 -> 24,435` (`U=1`, eighty-nine keys); 270 `U=1` profiles have a five-open colour, including 150 with no size-two minimum.  The six-deficient census is `531,441 -> 276,750 -> 99,855 -> 99,180`, with `90 -> 86` keys: the exact three-open source-span condition removes 675 profiles in four type-profile orbits.  Ternary three-open targets are excluded, but binary, pure, and zero faces remain; the sole binary pair-class key is `S_c^2 T_c^4`, and the `Q(omega)` binary triangle is only a fixed-fibre control.  Shared-deck restriction separation and five-/six-deficient branch exclusion remain open. | [Five-/six-deficient open-set tower and overlap boundary](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FIVE_SIX_DEFICIENT_OPEN_SET_SUPPORT_TOWER_AND_OVERLAP_INTEGRABILITY_BOUNDARY_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FIVE_SIX_DEFICIENT_OPEN_SET_SUPPORT_TOWER_AND_OVERLAP_INTEGRABILITY_BOUNDARY_REVIEW_2026-08-28.md) |
+| `GLS70` | The `3,360` six-deficient profiles with one binary triangle form exactly eight keys in two families: `pair+pair`, where the triangle is the first common parent of two pure pair faces, and `exact-triple+exact-triple`, where the triangle is a minimal binary leaf with three strict four-open parents.  The other `45` binary profiles are the one `S_c^2 T_c^4` key.  Its pair equation forces a crossed separated endpoint normalization.  The complementary four-port deck's complete proper-face map is not separating: its ambient kernel has dimension sixteen and contains an explicit physical hafnian direction.  Nevertheless the different pure-`c` four-open source equation forces a nonzero outside `z_(0,c)` probe coefficient; in that port's binary triangle, coefficient separation kills both non-pair decks and leaves one pair tensor times one deck unable to supply two target colours.  Thus `S_c^2 T_c^4` is empty and the six-deficient residual is **`99,135 / 85`**.  The two single-triangle families and every pure/zero-triangle profile remain open. | [Binary-triangle parent taxonomy and proper-face deck kernel](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_BINARY_TRIANGLE_PARENT_TAXONOMY_AND_PROPER_FACE_DECK_KERNEL_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_BINARY_TRIANGLE_PARENT_TAXONOMY_AND_PROPER_FACE_DECK_KERNEL_REVIEW_2026-08-28.md) |
+| `GLS71` | For Family B `S_0^3R_0^(3-r)T_0^r` with `r<=2`, quotient one outside `R_0` strict parent.  Its two target coordinates give simultaneous pure `P_3` equations with common probe shores.  An endpoint-complete six-edge lemma forces incompatible common forms for the two independent target colours, so all three keys are empty.  For Family A at `r=0`, the two pure pair faces force a crossed normalization.  Three active outside selectors contradict the pure attachments.  With one silent port, the full `P_0Q_0` coefficient isolates a nonzero pure physical four-deck; either nonzero crossed activity product supplies two further legal selector decks, and an exhaustive `alpha!=0`/`alpha=0` projection kills every supplier of the pure coefficient.  Thus the complete Family-A `r=0` key is empty.  A restricted edge-array control proves that the two-E attachment subsystem alone is compatible.  The six-deficient residual is **`98,355 / 81`**; Family A `r=1,2,3`, Family B `r=3`, and all pure/zero-triangle profiles remain open. | [Single-binary strict-parent edge chart and attachment activity](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_SINGLE_BINARY_STRICT_PARENT_EDGE_CHART_AND_ATTACHMENT_ACTIVITY_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_SINGLE_BINARY_STRICT_PARENT_EDGE_CHART_AND_ATTACHMENT_ACTIVITY_REVIEW_2026-08-28.md) |
+| `GLS72` | In Family A `S_0R_2R_1R_0^2T_0`, a whole-row activity lemma handles the two-dimensional `T_0` row plane without pretending its `P_0,Q_0` coefficients are pure: each nonzero row covector still exposes its unique strict-parent selectors, and the one-silent `P_0Q_0` coefficient factors the full pure deck.  Three active outside selectors are impossible and a one-silent source cannot be silent at an `R_0` port.  Put the unique silent `T_0` port at `5`.  The two `E` selectors, pure attachments, mixed `F/G` selectors, and full pure deck exclude every `alpha!=0` branch and the `alpha=0,ab!=0` branch by exact rank-two determinant, tangent-space, and characteristic-zero sign arguments.  Every survivor is therefore on `alpha=a=b=0`, where the target-leading restrictions of `W_15,W_25` vanish on `K_5`.  An exact common physical edge array realizes all four selectors, both pure attachments, the zero triangle deck, and the nonzero pure full deck there; its supplier `W_25(e_(2,0),e_(5,0))` is transverse to `K_5`.  Thus the Family-A `r=1` key is **localized but still OPEN**, and the residual remains **`98,355 / 81`**. | [One-T0 activity localization and transverse full-deck sharpness](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_SINGLE_BINARY_ACTIVITY_LOCALIZATION_AND_TRANSVERSE_FULL_DECK_SHARPNESS_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_SINGLE_BINARY_ACTIVITY_LOCALIZATION_AND_TRANSVERSE_FULL_DECK_SHARPNESS_REVIEW_2026-08-28.md) |
+| `GLS73` | Keep the ten physical edges avoiding the silent `T_0` port fixed to the GLS72 `alpha=a=b=0` common-edge control, but allow all five incident edges and every unused compatible probe coefficient to vary arbitrarily.  In the complete six-open source identity, the `P_0Q_0` all-zero word has only source pair `{3,4}` and forces `c_34 xi=mu_0`, where `xi=W_25(e_(2,0),e_(5,0))`.  A mixed `P_0Q_2` word has zero target; its direct `{0,3}` channel is `-A xi`, while all port-4 endpoint channels have the wrong local factor and the sole `{3,5}` repair channel has zero complementary deck.  Since `A c_34 mu_0!=0`, the two rows contradict.  Thus this exact off-port core has **no full source completion by any incident-edge repair**.  Family A `r=1` remains OPEN because a source may change an off-port core edge and open another coupled deck channel; no profile is removed and the residual remains **`98,355 / 81`**. | [Off-port-core full-source nonextension and coupled-correction boundary](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_OFF_PORT_CORE_FULL_SOURCE_NONEXTENSION_AND_COUPLED_CORRECTION_BOUNDARY_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_OFF_PORT_CORE_FULL_SOURCE_NONEXTENSION_AND_COUPLED_CORRECTION_BOUNDARY_REVIEW_2026-08-28.md) |
+| `GLS74` | In the last Family-B single-binary key `S_0^3T_0^3`, take a nonendpoint outside pure-`P_3` chart and assume that both central probe shores have a non-root coefficient at every triangle label.  The two legal mixed-root strict-parent rows put each triple of full pair decks in its one-dimensional alternating Koszul kernel.  The complete `P_0Q_0` row cancels those nuisance sums and its three-one-port outside map is injective, so all full corrections vanish.  Restriction to the common outside kernel lines then gives one coupled physical-edge system.  Splitting the three central all-zero edge coefficients by support size `3,2,1,0` either kills every outside kernel edge or kills the sole spoke that could use its unique survivor.  Thus the **central-mixed-support nonendpoint chart is EMPTY**.  Central root-axis degeneracies lack one Koszul row and P/Q-common outside endpoints have a genuine parent-map kernel; both remain OPEN.  No profile is removed and the residual remains **`98,355 / 81`**. | [All-T0 Family-B nonendpoint full-parent boundary](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_NONENDPOINT_FULL_PARENT_TRANSVERSE_INJECTIVITY_AND_ENDPOINT_ACTIVITY_BOUNDARY_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_NONENDPOINT_FULL_PARENT_TRANSVERSE_INJECTIVITY_AND_ENDPOINT_ACTIVITY_BOUNDARY_REVIEW_2026-08-28.md) |
+| `GLS75` | In the same Family-B `S_0^3T_0^3` key, both shores at one central label cannot be root-axis-only: the two nonzero `P_aQ_a` rows would force one common four-port deck onto two independent pure-colour lines.  Thus every central label supplies at least one Koszul row.  One row coupled to the complete `P_0Q_0` coefficient already forces each pair deck to vanish on its two outside kernel lines and every one-port correction to vanish on its kernel line; the exact `31/36` block retains only one alternating parameter and four harmless full-row coboundaries.  The GLS74 support-`3,2,0` cases transfer.  In support one, the nonendpoint pure-`P_3` normal form makes every active central row transverse to both outside shore lines, so the single identities kill the last two kernel-row families and then every outside kernel edge.  Hence the **complete outside nonendpoint chart is EMPTY**.  Only P/Q-common outside endpoints remain OPEN; the typed key and residual **`98,355 / 81`** are unchanged. | [One-sided Koszul and complete nonendpoint exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ONE_SIDED_KOSZUL_AND_COMPLETE_NONENDPOINT_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ONE_SIDED_KOSZUL_AND_COMPLETE_NONENDPOINT_EXCLUSION_REVIEW_2026-08-28.md) |
+| `GLS76` | At a P-common outside endpoint, write `p_u=P_0U_u` and `q_u(t)=A_u(t)U_u+B_u(t)V_u` with each nonzero transverse functional `B_u`.  The complete family of mixed `P_0Q_t` coefficients, not the rank-deficient `P_0Q_0` row alone, splits in each central `S_0` row plane.  Direct two-kernel evaluation and one-slot transverse comparison force every physical pair deck to vanish on the two outside kernel lines and every one-port correction on its kernel line, including root-only and zero central `p` shores and every synchronized projective incidence.  Genuine full endpoint coboundaries remain but already satisfy those restrictions.  The GLS75 support-`3,2,0` cases transfer.  In support one, each inactive central label kills its remaining kernel row at the selected endpoint; both incident outside kernel edges vanish and the active label kills the only spoke using the opposite edge.  Probe exchange closes Q-common endpoints.  Thus the **complete Family-B `S_0^3T_0^3` key is EMPTY**, removing `60 / 1` and changing the six-deficient residual to **`98,295 / 80`**.  Family A `r=1,2,3`, all other branches, and global Krenn--Gu remain OPEN/UNRESOLVED. | [Endpoint mixed coefficient and complete key exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ENDPOINT_MIXED_COEFFICIENT_AND_COMPLETE_KEY_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ENDPOINT_MIXED_COEFFICIENT_AND_COMPLETE_KEY_EXCLUSION_REVIEW_2026-08-28.md) |
+| `GLS77` | Return to the `GLS72` Family-A `r=1` survivor and write the silent `T_0` row plane as `F e_(5,0)^*+F h_5`.  Twenty-four literal zero-target coefficients factor the four entries of `r p^T+s m^T` against six row-plane coordinates.  A nonzero entry would leave only the two exceptional endpoint coefficients, both on `F h_5`, contradicting rank two; hence the outer-product matrix vanishes.  Five differences of complete slot-5 colour rows cancel every endpoint, off-kernel, and synchronized repair term before restriction.  The remaining five scalar identities and `r p^T+s m^T=0` have an elementary characteristic-zero rank-one/zero-product contradiction against both nonzero GHZ targets.  Thus the **complete Family-A `r=1` key is EMPTY**, removing `1,080 / 1` and changing the six-deficient residual to **`97,215 / 79`**.  Family A `r=2,3`, all other branches, and global Krenn--Gu remain OPEN/UNRESOLVED. | [Full-source kernel difference and complete key exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_FULL_SOURCE_KERNEL_DIFFERENCE_AND_COMPLETE_KEY_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_FULL_SOURCE_KERNEL_DIFFERENCE_AND_COMPLETE_KEY_EXCLUSION_REVIEW_2026-08-28.md) |
+| `GLS78` | Treat the remaining Family-A keys `S_0R_2R_1R_0T_0^2` and `S_0R_2R_1T_0^3` as one parent obligation.  The intersection of the three single-slot proper-face kernels is exactly `J_3 tensor J_4 tensor J_5`, with dimensions `4` and `8`; an explicit nonzero physical four-deck lies in that blind spot.  Exact common-edge controls satisfy all three kernel selector equations and both nonzero pure attachments in each key.  On the one-silent `r=2` chart, even the additional relation `C=rp+sm=0` has a characteristic-zero control.  Contracting one `T_0` port retains the complete repair family from every other uncontracted `T_0` port; contracting them all synchronizes target colours and collapses to the accepted strict parent.  On the conditional `c_2=c_5=0` slice, exact independent-slope expansion finds no slope-field linear leakage separator within the `28/78` leakage-bearing three-row blocks or any of the `81` nine-row active-port blocks; global modular spans agree but are evidence only.  This is a **PROVED SOURCE-INTEGRABILITY BOUNDARY**, not an exclusion: Family A `r=2,3` remain OPEN and the residual stays **`97,215 / 79`**. | [Multi-T0 proper-face repair and source-integrability boundary](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_PROPER_FACE_REPAIR_AND_SOURCE_INTEGRABILITY_BOUNDARY_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_PROPER_FACE_REPAIR_AND_SOURCE_INTEGRABILITY_BOUNDARY_REVIEW_2026-08-28.md) |
+| `GLS79` | On the complete `2,187`-row `c_5=0` family, split monomials by divisibility by the off-kernel physical coefficient `I_2500`.  The nonleak row-incidence graph decomposes into `1,512` components of size at most two for `r=2` and `972` components of size at most four for `r=3`.  Exact componentwise stacked ranks are `1,692=1,692` and `1,899=1,899`.  The sole nonzero-target all-zero word is an isolated rank-one component, so the same nonseparation holds on the `2,186` zero-target rows.  Local diagonal torus equivariance covers every nonzero slope specialization.  This is a **PROVED COMPLETE SILENT-SLICE LINEAR NOGO**, not an exclusion: nonlinear syzygies, rows with `c_5!=0`, activity localization, and arbitrary complete-source couplings remain OPEN; the residual stays **`97,215 / 79`**. | [Complete silent-slice linear nonseparation](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_SILENT_SLICE_LINEAR_NONSEPARATION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_SILENT_SLICE_LINEAR_NONSEPARATION_REVIEW_2026-08-29.md) |
+| `GLS80` | Restore every `P_a,Q_a` row-plane coordinate at every outside port and remove exactly the three GHZ target words.  On all `6,558` zero-target rows, the `RTT` and `TTT` nonleak incidence graphs have `2,915` and `1,943` components.  Exact componentwise ranks are `4,794=4,794` and `5,460=5,460`; every `RTT` leak component has zero kernel, and all `55` `TTT` leak-component kernel dimensions are killed by the leakage map.  Nonzero slopes are one local-torus orbit.  This is a **PROVED COMPLETE UNIVERSAL SCALAR-LINEAR NOGO**, not an exclusion: source-coordinate specializations, nonlinear ideal consequences, activity localization, and arbitrary complete-source couplings remain OPEN; the residual stays **`97,215 / 79`**. | [Complete all-active linear nonseparation](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_ALL_ACTIVE_LINEAR_NONSEPARATION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_ALL_ACTIVE_LINEAR_NONSEPARATION_REVIEW_2026-08-29.md) |
 
 ## Typed-edge table
 
@@ -1670,12 +1733,35 @@ flowchart TD
 | `GLS55` | exactly-five-rigid / six-plus-rigid successor | `GL` | On `|Rig|=5`, contract every non-rigid label to obtain the exact seven-party identity with ten trilinear physical decks.  Six-or-more rigid labels remain a separate open branch.  In both branches, coordinate readout alone is not nuisance survival, synchronization, response activity, or a named receiver. |
 | `GLS8` | nonrigid probe-kernel matching contraction | `GLS56` | At one fully supported joint-kernel vector, use the complete promoted identity and a colourwise covector alternative.  If no pure neighbour exists, kill every matching through the silent label while retaining one nonzero pure target coefficient.  Irreducibility then promotes the pointwise escape to fixed restricted shores and a complete exceptional-section flag. |
 | `GLS55` | root-order-three rigid/nonrigid bifurcation | `GLS56` | With six auxiliary labels and at least five rigid, either all six are rigid or the unique nonrigid label receives the simultaneous three-colour pure-star conclusion.  This is exhaustive only as a source-structure split, not as an attachment cover. |
-| `GLS56` | rigid coupling / alternate-receiver successor | `GL` | On the all-six-rigid branch, `GLS57` handles the all-rank-one cell and `GLS58` gives an exhaustive but nonexclusive higher-rank profile reduction.  `GLS59` now handles the unique-nonrigid source structure: old-probe exchange forces overlapping pure probe stars and closes the natural `GLD3` re-anchor because its star triangle cannot be target-diagonal.  A different legally transported receiver or complete-equation exclusion is still required, with every response, selector, synchronization, nuisance-survival, activity, and anchor gate.  For `r>=4`, neighbour rigidity and arbitrary-root receiver coverage remain separate. |
+| `GLS56` | rigid coupling / alternate-receiver successor | `GL` | On the all-six-rigid branch, `GLS57` handles the all-rank-one cell, `GLS58` gives the exhaustive rank-profile reduction, `GLS61` excludes the complete all-injective cell, `GLS62` excludes the exactly-one-deficient cell, and `GLS63`--`GLS66` exclude the complete exactly-two-deficient cell through mixed-kernel localization, scalar integrability, separated permanent extraction, and the common-hyperplane annihilator.  `GLS67` localizes exactly three deficient maps to 432 profiles in eight orbits, excludes their common-support cells, and forces the opposite kernel-side one-port decks to vanish.  `GLS68` localizes four deficient maps to 4,794 normalized profiles in fifty keys and proves that their direct cross-deck six-vertex shortcut is invalid because the would-be edges depend on the open probes.  `GLS69` gives the exact five-/six-deficient open-set support tower, localizes the five-deficient branches to `2,640/12` and `24,435/89`, and corrects the six-deficient residual to `99,180/86` after a rank-one three-open span exclusion.  `GLS70` classifies all binary triangles and excludes the sole `S_c^2 T_c^4` pair-class key by descending from the pure four-open parent, leaving `99,135/85`.  `GLS71` descends through both single-binary strict-parent families, excludes Family B `r<=2` and the complete Family-A `r=0` key, and leaves `98,355/81`.  `GLS72` localizes Family A `r=1` to one silent-`T_0`, `alpha=a=b=0` transverse cell and exhibits a common-edge control there.  `GLS73` proves that this exact off-port core has no full source completion even after arbitrary replacement of all five silent-port incident edges, forcing any repair to be coupled to the core.  `GLS74` returns to Family B `r=3` and excludes its central-mixed-support nonendpoint full-parent chart by alternating pair-deck camouflage and common-edge kernel integrability.  `GLS75` proves one legal Koszul row per central label is automatic and sufficient, closing every outside nonendpoint.  `GLS76` uses all mixed complete endpoint coefficients, retains the genuine full coboundary kernel, and nevertheless closes every P/Q-common endpoint; the complete Family-B single-binary family is empty and the residual becomes `98,295/80`.  `GLS77` returns to the complete GLS72 Family-A `r=1` source: twenty-four literal full coefficients force a common outer-product matrix to vanish, while five complete colour-row differences cancel every repair channel and contradict both nonzero GHZ targets.  The complete Family-A `r=1` key is empty and the residual becomes `97,215/79`.  `GLS78` treats the two remaining Family-A keys as one serious parent attempt: their exact proper-face blind spot has dimensions four and eight and a nonzero physical direction, all kernel selectors plus attachments have common-edge controls, and every off-kernel `T_0` contraction retains repairs from the other `T_0` ports.  It leaves both keys open and the residual unchanged.  The eight three-deficient orbits, all four-deficient survivors, both five-deficient residuals, the remaining six-deficient residual, and their distinct same-source integrability obligations remain open.  `GLS59` handles the unique-nonrigid source structure: old-probe exchange forces overlapping pure probe stars and closes the natural `GLD3` re-anchor because its star triangle cannot be target-diagonal.  A different legally transported receiver or complete-equation exclusion is still required, with every response, selector, synchronization, nuisance-survival, activity, and anchor gate.  For `r>=4`, neighbour rigidity and arbitrary-root receiver coverage remain separate. |
 | `GLS56` | all-six-rigid rank-one refinement | `GLS57` | At `r=3`, assume all six rigid joint maps have rank one.  Coordinate-row rigidity and the complete pure/mixed target equations force the exact `2+2+2` partition, pure pair companions, pure off-readout deck faces, and at least one nonzero promoted pair response polynomial. |
 | `GLS57` | pure-shore orientation / natural-splice audit | `GLS60` | Factor each pure same-colour companion through its two probe shores, retain the zero-edge boundaries, and distinguish the contracted hafnian first variation from both a six-vertex matching graph and the permanent `P_6` tensor. |
 | `GLS60` | remaining rank-one rigid receiver successor | `GL` | The direct companion graph and vertex-gauge splice are impossible.  Use additional complete mixed/deck equations to construct a demonstrably non-gauge honest six-vertex graph, or transport the raw pure-probe data into one promoted target quotient with pointwise response, selector, synchronization, nuisance-survival, activity, and anchor gates.  A separately proved permanent `P_6` extraction enters the open permanent subtree, not the six-vertex theorem.  Higher joint ranks, the unique-nonrigid branch, response divisors, and arbitrary-root coverage remain separate. |
 | `GLS56` | all-six-rigid higher-rank refinement | `GLS58` | Split by the number of joint maps of rank below three.  One deficient label gives fixed boundary pure shores and ten trilinear decks; two give a legal six-vertex descent with at most two target colours; none gives the injective cross-product polynomial identity. |
-| `GLS58` | remaining rigid mixed-equation successor | `GL` | Couple the zero/mono/binary descents across kernel choices or contradict the all-injective coordinate-cover/cancellation fork using additional complete mixed equations.  The accepted three-colour six-vertex theorem and the cross-product identity alone are sharp no-gos.  Every response, selector, nuisance-survival, synchronization, activity, anchor, arbitrary-root, and nonzero-anchor gate remains separate. |
+| `GLS58` | complete cross-product partial-uncontraction successor | `GLS61` | Return to the complete same-graph tensor identity before contracting all six cross products, leave each open-label set in turn, and retain every structurally surviving physical companion/deck term. |
+| `GLS61` | exactly-one-deficient row-quotient successor | `GLS62` | Keep the unique deficient label and every pure-axis injective label open.  Quotient the former by its joint row space and the latter by their active full-row lines, while preserving every same-source complementary physical deck. |
+| `GLS62` | mixed-kernel deficient parent attempt | `GLS63` | Contract arbitrary deficient labels at independent whole-kernel vectors, retain cross-product contractions at injective nonaxis labels, and couple every open-set equation with row-space and active-line quotients on the same physical decks. |
+| `GLS63` | complementary-edge integrability successor | `GLS64` | Evaluate the six raw port edges and the deficient--port shores on one common cross-product tuple.  Couple every two-kernel pair equation to the four one-kernel cofactor equations, without dividing by the deficient edge or the nonzero binary deck. |
+| `GLS64` | eta-zero permanent extraction | `GLS65` | On `W_nm(e_c,e_c)=0`, retain the factorization `a_i tensor b_j+b_i tensor a_j` across all six complementary pairs.  Identify the resulting twenty-four terms with one separated `P_4` source and apply its exact decomposable rank-drop geometry without choosing fibre-dependent local bases. |
+| `GLS65` | two-two scalar-axis/common-hyperplane successor | `GLS66` | Reinsert the full GLS64 pair/cofactor hierarchy and `H!=0` into the exact `2233` separated permanent source.  Synchronize the rank-three active deficient side and source hyperplanes, then compute the common pair-image annihilator without choosing fibre-dependent bases or discarding `tau=0`. |
+| `GLS66` | three-deficient pair-class / dual-permanent successor | `GLS67` | Open each deficient pair in turn, retain one physical deck, enumerate the exact three-deficient typed profiles, and compare the deficient-side and nonaxis-side `P_3` contractions over the common probe function field. |
+| `GLS67` | four-deficient pair-class / receiver-interface successor | `GLS68` | Apply the universal two-open pair classes and GLS63 incidence rules to all four deficient maps, then test the fully ternary full-cross stratum without treating probe-dependent cross-product decks as fixed graph edges. |
+| `GLS67` | residual three-deficient cofactor-integrability successor | `GL` | Couple the eight residual full-cross `P_3` equations to the vanishing kernel-side one-port decks and proper higher-open members through the same deficient--nonaxis edge blocks. |
+| `GLS68` | five-/six-deficient support-tower refinement | `GLS69` | Apply the GLS63 incidence rules and GLS67 pair classes to the higher-deficient branches, retain every arbitrary-open face on common physical decks, and impose the corrected three-open source-span condition. |
+| `GLS68` | four-deficient same-source integrability obligation | `GL` | Compare the probe-dependent two-port decks as cofactors of one physical matching tensor, polarize the full `(3,3)` identity, or prove a genuine fixed-edge descent.  All `4,794` four-deficient profiles remain open. |
+| `GLS69` | binary-triangle first-parent and source-integrability successor | `GLS70` | Classify every binary three-open profile, normalize the sole binary pair-class key, audit the common complementary deck's proper-face kernel, and use a different pure four-open parent before descending to a synchronized triangle. |
+| `GLS70` | single-binary strict-parent and activity successor | `GLS71` | For Family B, quotient an outside `R_0` strict parent and compare the two pure target-colour equations on common probe shores.  For Family A `r=0`, combine its crossed pair normalization, all legal activity selectors, the pure attachments, and the full missing-colour four-deck. |
+| `GLS71` | one-`T_0` activity/full-deck refinement | `GLS72` | Reuse the crossed pair normalization and exact activity fork on Family A `r=1`.  Separate the silent-`R_0` and silent-`T_0` cells, retain both mixed selectors, and compare the kernel-restricted equations with the actual unrestricted missing-colour deck. |
+| `GLS71` | all-`T_0` Family-B full-parent refinement | `GLS74` | On Family B `r=3`, take the outside pure-`P_3` chart before contracting its row-plane kernels.  Use both legal central mixed-root rows, the complete `P_0Q_0` coefficient, and the common physical pair/spoke edges to test the nonendpoint chart. |
+| `GLS72` | transverse full-source completion test | `GLS73` | Hold the exact surviving off-port edge core fixed, allow arbitrary changes on every edge incident to the silent port, and inspect complete six-open coefficients that evaluate the transverse `W_25(e_(2,0),e_(5,0))` entry. |
+| `GLS73` | complete kernel-difference successor | `GLS77` | Abandon the fixed off-port control.  In the full GLS72 survivor, use literal complete-source rows to constrain the varying off-port core, then subtract two slot-5 colour rows only where their endpoint and off-kernel repair channels cancel identically before restriction. |
+| `GLS74` | one-sided Koszul / complete nonendpoint successor | `GLS75` | Prove that double central root-axis support is impossible, couple one remaining Koszul row to the full `P_0Q_0` one-port map, and replace the two-sided exactly-one-central-edge argument by nonendpoint row transversality. |
+| `GLS75` | remaining all-`T_0` Family-B endpoint obligation | `GLS76` | Resolve every P-common and Q-common outside endpoint kernel using additional mixed complete coefficients with exact source-pair provenance.  The `P_0Q_0` row alone has rank drops for two- and one-active opposite shores, so nonendpoint injectivity may not be reused. |
+| `GLS76` | remaining single-binary / source-integrability obligations | `GL` | The Family-B single-binary family is empty.  GLS77 independently closes Family A `r=1`; continue its `r=2,3` keys separately, and retain every pure/zero-triangle, five-deficient, three-/four-deficient, unique-nonrigid, attachment, anchor, arbitrary-root, and local-to-global obligation. |
+| `GLS77` | multi-`T_0` Family-A parent attempt | `GLS78` | Treat the `r=2,3` keys through their distinct row-plane configurations.  Audit the common proper-face kernel, test all selector/attachment equations against exact controls, and enumerate which complete-source repair channels survive every partial `T_0` kernel contraction. |
+| `GLS78` | complete silent-slice linear audit | `GLS79` | Determine whether combinations across all active-port blocks can isolate an off-kernel `T_0` coordinate after every repair channel is retained; preserve independent slopes and distinguish exact characteristic-zero rank from modular controls. |
+| `GLS79` | restore the complete all-active row span | `GLS80` | Retain every `P_a,Q_a` coordinate at every outside port and audit all `6,558` zero-target colour words, with all three diagonal target words excluded and independent nonzero slopes preserved. |
+| `GLS80` | specialized or nonlinear active-`T_0` repair synchronization | `GL` | No universal scalar linear combination of the complete zero-target row family isolates `I_2500`.  Prove a nonlinear saturated coefficient-ideal consequence, an exhaustive source-coordinate/activity localization with a legal specialized relation, or an exact complete-source control.  Every pure/zero-triangle, five-deficient, three-/four-deficient, unique-nonrigid, attachment, anchor, arbitrary-root, and local-to-global obligation also remains separate. |
 | `GLS56` | unique-nonrigid old-probe exchange and overlap | `GLS59` | At zero anchor, kill every complete matching by the chosen old probe rather than by the nonrigid auxiliary label.  Uniformize the resulting pointwise pure shores on each old-probe space, overlap the two three-label stars among five rigid labels, and contract the resulting second deficient label together with the fully supported nonrigid kernel. |
 | `GLS59` | remaining unique-nonrigid mixed-equation/attachment successor | `GL` | Couple the mono/binary descents across all overlap labels and coordinate-plane kernel choices, or transport a forced pure probe block into one named promoted target quotient with nonzero response and complete nuisance survival.  One overlap and the accepted three-colour six-vertex theorem are insufficient.  Alternate receiver, synchronization, activity, anchors, arbitrary-root source coverage, all-rigid branches, and nonzero anchor remain separate. |
 
@@ -2260,6 +2346,326 @@ branch. They are not an instruction to begin all of them at once.
    and the termwise identity while `61` mixed words survive.  Thus the
    remaining step is additional complete mixed/deck coupling, not another
    application of the finite theorem or a rank-minor division.
+
+   `GLS61` performs that first complete mixed coupling without changing the
+   graph or choosing independent local charts.  Before the GLS58 full
+   contraction, leave an arbitrary auxiliary set `S` open.  Exactly the
+   physical pair companions in `binom(S,2)` remain structurally, producing
+   one compatible arbitrary-root hierarchy.  Its one-open equations force
+   two identically zero cross coordinates for each target colour.  At
+   `r=3`, injective nonaxis labels would then form a labelled `2+2+2`
+   partition, but the associated two-open physical companion is forced pure
+   diagonal while every possible injective shore orientation has a nonzero
+   off-diagonal projection.  The nonaxis branch is empty.  The same
+   hierarchy excludes every nonempty pure-axis set.  Quotient each pure slot
+   by its own full active probe-row line.  The `S=P` equation forces three
+   disjoint nonaxis zero sets and hence at most three axes; a singleton zero
+   then makes `S=P union {u}` a nonzero pure target whose complete source side
+   is killed by those quotients.  Thus the entire all-injective `r=3` branch
+   is empty.  This is genuine progress down the source-integrability tree,
+   but every deficient-map continuation, the unique-nonrigid branch,
+   promoted attachment gates, nonzero anchor, and higher-root exclusions
+   remain open.
+
+   `GLS62` continues down that same-source hierarchy on the
+   exactly-one-deficient `r=3` cell.  With the deficient label open, quotient
+   its covector slot by the joint probe-row space; quotient every injective
+   pure-axis slot by its active full-row line.  The one-nonaxis-open equations
+   force at least two zero labels for every coordinate visible on the
+   deficient kernel.  Equality two leaves exactly one nonaxis pair companion
+   and its actual complementary deck; the nonzero pure target would force
+   that companion pure diagonal, contradicting all injective orientations.
+   Hence each visible coordinate needs three labels.  Disjointness forces a
+   rank-two deficient map with a pure-coordinate kernel.  Zero pure axes give
+   an exact `3+1+1` partition and an impossible rank-two/nonaxis pure
+   companion; one or two pure axes are killed by active-line quotients while
+   a target coefficient survives.  Thus the cell is empty and every
+   all-six-rigid witness has at least two deficient maps.  The next obstruction
+   is now their common same-source overlap: rigid double contractions are only
+   zero, mono, or binary, and neither pairwise kernel choices nor their
+   physical decks synchronize automatically.
+
+   `GLS63` makes the required serious parent attempt.  It contracts arbitrary
+   deficient labels at independent generic vectors of their whole kernels
+   while retaining the cross-product hierarchy at injective nonaxis labels.
+   Common kernel-supported colours need three disjoint nonaxis zero labels;
+   a singleton zero forces the opposite deficient map to be a rank-one
+   coordinate readout.  For exactly two deficient labels, the complete
+   support/rank census and a rank-two pure-companion no-go leave only two
+   rank-two maps with one common pure-coordinate kernel, no pure axes, no
+   complementary-colour zeros, and a nonzero binary diagonal deficient-pair
+   companion.  That final family is not excluded.  Mixed `XXY` orientations
+   give an exact pure-colour three-port triangle, and a two-`X`/two-`Y`
+   six-pair identity gives the four-port analogue; both can use shared
+   physical source/deck data.  The next load-bearing lemma is therefore
+   function-field restriction-separation coupling every proper-subset deck
+   equation to the nonzero binary residual.  Pointwise polarization or
+   termwise purity cannot supply it.
+
+   `GLS64` supplies the first exact restriction-separation edge.  On one
+   common cross-product tuple, all six pair-contracted equations kill the
+   effective edge scalars `delta_ij`, while the four one-kernel equations
+   kill the physical cofactors `C_u^A` and `C_u^B`.  The complementary-edge
+   identity counts every raw four-port matching twice and gives
+   `2 eta H_U=0`.  The binary `S={n,m}` contraction has `H_U!=0`, so the raw
+   deficient edge must satisfy `eta=W_nm(e_c,e_c)=0`.  This closes both the
+   three-zero and four-zero residuals on `D(eta)`, but not the zero divisor.
+   There the contracted tensor has permanent-type port blocks
+   `a_i tensor b_j+b_i tensor a_j`; scalar controls retain nonzero `H_U`, so
+   a full tensor source-integrability theorem or a legal receiver is still
+   required.
+
+   `GLS65` identifies that full tensor exactly.  The six choices of the
+   `P,Q` port pair and the two orders in each probe and fixed-row block are
+   the twenty-four terms of one separated `P_4` restriction, with nonzero
+   target `kappa z_(0,c)z_(1,c)c^tensor4`.  The accepted `P_4` rank-drop
+   theorem forces a fixed generic rank-two pair; each rank-two port must be
+   `c`-oriented and both of its fixed deficient-edge rows lie on the
+   `c`-line.  The complete binary orientation census excludes four
+   rank-two ports.  For three, mixed off-row words violate the perfect
+   `R_1 x R_3` pairing bound, while a homogeneous word forces the fourth
+   shore pure and then loses a transverse source direction by exact anchor
+   rigidity.  Thus the eta-zero branch has exactly two rank-two and two
+   rank-three local maps.
+
+   `GLS66` closes that load-bearing `2233` boundary by reusing the complete
+   scalar hierarchy rather than the pure permanent equation alone.  The
+   rank-three ports lie on one active deficient-side axis and their source
+   hyperplanes coincide.  One `c`-oriented rank-three port reduces the
+   common normal to `tau P+B` up to probe exchange.  Its exact degree-two
+   pair-image annihilator is incompatible with a nonzero rank-one GHZ
+   slice for both `tau!=0` and `tau=0`.  Hence exactly two deficient maps
+   are now excluded; the next all-rigid parent is the complete
+   three-plus-deficient mixed-kernel branch.
+
+   `GLS67` attacks that parent from both sides of the same hierarchy.  Every
+   two-open deficient contraction has only one physical pair companion and
+   forces exact support classes.  At deficient count three this reduces the
+   complete typed search to `453` profiles in ten initial orbits, all with
+   three nonaxis ports.  Cross-contracting those ports gives one exact
+   `P_3` on the deficient modes, while contracting the three deficient
+   kernels gives another exact `P_3` on the nonaxis modes.  A common
+   deficient colour would make the second target pure; its deck rows cannot
+   follow the independent probe variables, so all same and mixed orientation
+   words force the source to zero.  This excludes two orbits and leaves
+   exactly `432` profiles in eight orbits.  On each residual, the second
+   `P_3` is zero and its three physical one-port decks vanish.  The eight
+   deficient-side binary/pure/zero endpoints remain algebraically possible;
+   their shared deficient--nonaxis cofactors and higher-open equations are
+   now the load-bearing integrability wall.  Four-plus-deficient profiles
+   remain a separate part of the same parent.
+
+   `GLS68` carries the same parent attempt through exactly four deficient
+   labels.  The complete normalized support/rank/zero-count search falls from
+   `137,781` profiles to `20,778` after GLS63 and to `4,794` after all GLS67
+   pair classes, in fifty canonical keys.  Fifty-four profiles in two keys
+   have a fully ternary target after the two nonaxis cross contractions.  A
+   hostile receiver audit rejects the obvious finite-`n=6` shortcut: those
+   contraction vectors are bilinear in the open probes, so the complementary
+   decks vary with the same probes and the exact pullback has bidegree `(3,3)`
+   rather than root multilinearity `(1,1)`.  Fixing the probes leaves only
+   four open ports; reopening independent probes restores the terms incident
+   with the contracted labels.  Thus none of the fifty-four profiles is
+   excluded, and the other `4,740` profiles are binary or monocolour anyway.
+   A same-source cofactor/factorization theorem, not target shape, is the
+   next four-deficient obligation.  Five-/six-deficient profiles now pass to
+   the `GLS69` support tower; their shared-deck integrability remains open.
+
+   `GLS69` extends the same-source parent to five and six deficient labels.
+   With `D_a=N-M_a` and `L_a=D_a disjoint-union E_a`, every arbitrary
+   open-set equation has formal colour-term support exactly on the classes
+   `L_a subseteq T`; evaluating an open deficient or nonaxis slot gives a
+   commuting face of the same physical matching deck.  The five-deficient
+   censuses are `59,049 -> 18,270 -> 2,640` for `P=1` and `236,196 ->
+   79,095 -> 24,435` for `U=1`.  In the latter branch, 270 profiles have a
+   five-open colour and 150 have no size-two minimum, so the tower cannot be
+   reduced to pair and triangle leaves.
+
+   For six deficient labels, the pair-level census is `531,441 -> 276,750
+   -> 99,855` in ninety keys.  The actual three-open source-span condition
+   removes 675 profiles in four type-profile orbits, giving the corrected
+   residual `99,180` profiles in eighty-six keys.  This excludes ternary
+   three-open targets and the rank-one obstruction inside four candidate
+   binary-pair orbits; binary, pure, and zero three-open targets remain.  The
+   sole surviving binary pair-class key is `S_c^2 T_c^4`, whose nonzero pair
+   face propagates to four triangles.  The exact `Q(omega)` control realizes
+   the binary `P_3 -> Delta_2` shape at a fixed fibre but is not a global
+   physical-deck realization.  Therefore `GLS69` proves support extraction,
+   face synchronization, and finite necessary-profile localization, while
+   shared-deck restriction separation and both higher-deficient branch
+   exclusions remain open.
+
+   `GLS70` attacks the complete binary-triangle stratum.  The `3,360`
+   one-triangle profiles split into exactly eight keys in a pair-plus-pair
+   family and an exact-three-set family, with different first-parent maps.
+   The other `45` profiles are the sole `S_c^2 T_c^4` pair-class key.  Its
+   pair equation forces crossed endpoint probe forms.  Although the proper
+   face tower of its four-port complementary deck has a sixteen-dimensional
+   kernel meeting the physical hafnian family, the pure-`c` four-open source
+   equation forces one outside `z_(0,c)` coefficient.  The corresponding
+   triangle then kills both non-pair decks and leaves one common one-port
+   deck unable to carry two independent target coordinates.  This excludes
+   the key and leaves `99,135` six-deficient profiles in eighty-five keys.
+   The next six-deficient theorem must couple Family A's two pure pair faces
+   or Family B's exact-three-set leaf to its three strict four-open parents;
+   another quotient of the excluded pair class is not load-bearing.
+
+   `GLS71` performs that strict-parent descent on both single-binary
+   families.  For Family B, any outside `R_0` quotient separates the two
+   target coordinates into pure `P_3` equations with the same probe shores.
+   The six oriented cube-edge charts, including every endpoint, force a
+   common `P` or `Q` form, and the two independent target colours conflict.
+   This removes the `r=0,1,2` keys.  For Family A at `r=0`, the pure pair
+   faces give a crossed normalization.  Three active selectors contradict
+   the two pure attachments.  In the remaining one-silent activity pattern,
+   the full missing-colour coefficient isolates a pure physical four-deck;
+   either nonzero crossed activity term also forces two mixed selector decks.
+   An exhaustive central-coordinate projection then makes the pure
+   four-deck coefficient vanish.  Thus the complete Family-A `r=0` key is
+   empty and the live six-deficient residual is `98,355` profiles in
+   eighty-one keys.  The next single-binary obligations are Family A
+   `r=1,2,3` and the all-`T_0` Family B `r=3`; the pure/zero-triangle profiles
+   and both five-deficient branches remain separate.
+
+   `GLS72` refines the first of those four keys.  With two `R_0` outside
+   ports and one `T_0` port, three active selectors are impossible.  In the
+   one-silent cell, a silent `R_0` port retains enough independent target
+   factors for the `GLS71` full-parent contradiction.  If the `T_0` port is
+   silent, exact determinant and tangent-space calculations exclude every
+   branch except `alpha=a=b=0`, where both target-leading spokes vanish on
+   its kernel.  That last cell is genuinely sharp for the equations used:
+   one common physical edge array makes both `E` decks, both mixed `F/G`
+   decks, and the zero triangle deck vanish while supplying both pure
+   attachments and the required pure unrestricted deck.  The supplier is a
+   transverse `W_25(e_(2,0),e_(5,0))` coefficient that no kernel selector
+   sees.  Hence Family A `r=1` remains open and the live residual stays
+   `98,355` profiles in eighty-one keys.  The next load-bearing step must
+   expose that transverse coefficient through another legal same-source
+   equation or prove a source-integrability bridge; repeating kernel-only
+   selectors cannot close the cell.
+
+   `GLS73` performs the first complete-source test of that coefficient.
+   Holding only the ten edges away from the silent port fixed to the GLS72
+   control, it permits arbitrary replacement of all five incident edges and
+   arbitrary unused compatible probe coefficients.  The full `P_0Q_0`
+   all-zero word forces `c_34 xi=mu_0` for
+   `xi=W_25(e_(2,0),e_(5,0))`.  A mixed `P_0Q_2` word has zero target and,
+   after exhaustive source-pair and matching support separation, equals
+   `-A xi`.  Since `A c_34 mu_0!=0`, no incident-edge-only completion exists.
+   This is an exact source-integrability obstruction, not a key exclusion:
+   a surviving source must change an off-port core edge and open a coupled
+   cancelling deck channel.  Family A `r=1` remains open and the live
+   residual stays `98,355` profiles in eighty-one keys.
+
+   `GLS74` attacks the last Family-B single-binary key directly at its
+   complete parent.  On a nonendpoint outside pure-`P_3` chart, and when
+   both probe shores have a non-root coefficient at every central label,
+   two legal mixed-root rows leave only a one-dimensional alternating
+   camouflage among the three full pair decks.  The complete `P_0Q_0` row
+   cancels that camouflage and its three-one-port outside map is injective.
+   Restricting the resulting full equations to the three common outside
+   kernel lines leaves one physical-edge system; the four support sizes of
+   the central all-zero edge triple are all impossible against the binary
+   target.  Thus the central-mixed-support nonendpoint chart is empty.  A
+   root-axis-only central shore removes one of the two Koszul rows, and a
+   P/Q-common outside endpoint gives the parent map a genuine kernel.  Both
+   boundaries remain open, the typed key is not removed, and the live
+   residual stays `98,355` profiles in eighty-one keys.
+
+   `GLS75` closes the root-axis boundary of that nonendpoint argument.  A
+   central label cannot have both shores root-axis-only, because its two
+   nonzero diagonal probe coefficients would leave the same complementary
+   physical deck as a pure tensor in two independent colours.  Thus every
+   central label has one legal Koszul row.  One row plus the complete
+   `P_0Q_0` coefficient forces every complementary pair deck and one-port
+   correction to vanish on the relevant outside kernel lines; the exact
+   block retains only one alternating parameter and four full-row
+   coboundaries.  The common-edge support argument then closes support sizes
+   three, two, and zero.  At support one, the nonendpoint pure-`P_3` normal
+   form makes every active row transverse to both shore lines, so the single
+   identities kill the last kernel rows.  Hence every outside nonendpoint is
+   empty.  Only the P/Q-common endpoints remain, and the typed key and live
+   residual are unchanged.
+
+   `GLS76` closes those endpoints with the mixed complete coefficient family
+   rather than the rank-deficient `P_0Q_0` row alone.  At a P-common endpoint,
+   write each outside opposite shore as
+   `q_u(t)=A_u(t)U_u+B_u(t)V_u`, with only `B_u!=0` required.  Splitting every
+   complete `P_0Q_t` row in the central `S_0` plane and comparing the
+   two-kernel and one-slot transverse tensor grades forces the exact pair- and
+   one-port kernel restrictions used by the common physical system.  This
+   includes root-only, zero, and projectively synchronized central shores.
+   Full row-plane coboundaries and pure endpoint target-line directions do
+   remain, so no endpoint-map injectivity is claimed.  In the support-one
+   physical case, both inactive central labels nevertheless kill their
+   kernel rows at the selected endpoint.  The two incident outside kernel
+   edges and the sole opposite-edge spoke then vanish, contradicting the
+   binary target.  Probe exchange closes Q-common endpoints.  Hence the
+   complete Family-B single-binary family is empty; `60 / 1` is removed and
+   the live six-deficient residual becomes `98,295` profiles in eighty keys.
+
+   `GLS77` then returns to the complete Family-A `r=1` source rather than
+   repairing the fixed GLS73 control.  Twenty-four literal zero-target
+   coefficients expose the four entries of one common outer-product matrix
+   against six coordinates of the silent-port row plane.  If any entry were
+   nonzero, the remaining endpoint rows would span only one dimension,
+   contradicting the rank-two `T_0` type.  Five differences of complete
+   slot-5 colour rows subsequently cancel every endpoint, off-kernel, and
+   synchronized repair channel before any restriction.  The resulting five
+   scalar equations and the vanished outer-product matrix contradict the two
+   nonzero GHZ target coefficients by an exhaustive characteristic-zero
+   rank-one/zero-product split.  Hence the complete Family-A `r=1` key is
+   empty; `1,080 / 1` is removed and the live six-deficient residual is now
+   `97,215` profiles in seventy-nine keys.  Family A `r=2,3` and every other
+   stated branch remain open.
+
+   `GLS78` makes the required serious parent attempt on those last two
+   single-binary keys.  The intersection of the three single-slot
+   proper-face kernels is exactly `J_3 tensor J_4 tensor J_5`, of dimensions
+   four for `r=2` and eight for `r=3`; an explicit nonzero physical
+   four-deck lies in that blind spot.  Exact common-edge arrays satisfy all
+   three kernel selector equations and both nonzero pure attachments in
+   each chart.  Even adjoining the `GLS77`-shaped relation `C=rp+sm=0` on a
+   one-silent `r=2` cell remains compatible.  A partial `T_0` kernel
+   contraction leaves the repairs from every other uncontracted `T_0`
+   port.  Contracting all of them removes those repairs only by
+   synchronizing the two target colours and collapsing to the already-known
+   strict parent.  On the conditional `c_2=c_5=0` slice, exact
+   independent-slope expansion of the active-port rows finds no
+   slope-field linear leakage separator within the `28/78` relevant three-row blocks or any of the
+   `81` nine-row blocks; the two global
+   modular row spans agree but are evidence only.  Thus the direct
+   proper-face/kernel-difference route is
+   proved insufficient, no profile is removed, and the residual remains
+   `97,215 / 79`.  The next lemma must retain an off-kernel active-`T_0`
+   coordinate and synchronize its complete-source repairs.
+
+   `GLS79` closes the remaining cross-block linear loophole on that silent
+   slice.  Among all `2,187` literal `c_5=0` rows, the nonleak incidence
+   components have size at most two in the `r=2` chart and at most four in
+   the `r=3` chart.  Exact ambient stacked-rank calculations give
+   `1,692=1,692` and `1,899=1,899`.  The sole nonzero-target all-zero row is
+   an isolated rank-one component, so every linear combination of the other
+   `2,186` zero-target rows that cancels the repair monomials also cancels
+   every term containing the off-kernel coefficient `I_2500`.  A local
+   diagonal torus transports the calculation to every nonzero slope
+   specialization.  This is a complete
+   linear no-go only: nonlinear coefficient-ideal consequences, rows with
+   `c_5!=0`, activity localization, and complete-source exclusion remain
+   open.  No profile is removed and the residual remains `97,215 / 79`.
+
+   `GLS80` then restores every outside source-row coordinate and all colour
+   slices.  After removing exactly the three diagonal GHZ target words, the
+   `6,558` zero-target rows decompose into `2,915` components in the `r=2`
+   chart and `1,943` in the `r=3` chart.  Their exact stacked ranks are
+   `4,794=4,794` and `5,460=5,460`.  Every `r=2` leak-bearing component is
+   already full-column-rank; all `55` remaining leak-component kernel
+   dimensions for `r=3` are killed by the leakage map.  Hence no universal
+   scalar linear combination of the complete zero-target family isolates
+   `I_2500`.  This does not cover relations created by specializing source
+   coordinates, nonlinear coefficient-ideal consequences, or an exhaustive
+   activity localization.  Both keys remain open and the residual remains
+   `97,215 / 79`.
 
    `GLS59` gives the corresponding exact continuation on the `r=3`
    unique-nonrigid branch.  At zero anchor, contract every slot except one old
