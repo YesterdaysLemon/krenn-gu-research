@@ -3630,7 +3630,7 @@ selectors, the two mixed `F/G` selectors, both pure attachments, the zero
 triangle deck, and the nonzero pure full deck simultaneously.  Its full
 deck is supplied by `W_25(e_(2,0),e_(5,0))`, which is transverse to and
 invisible on the `T_0` kernel.  Thus GLS72 proves a sharp localization and
-source-integrability obstruction, not a key exclusion; the residual remains
+source-integrability boundary, not a key exclusion; the residual remains
 `98,355 / 81`, with all four post-GLS71 single-binary keys still open.  See
 the
 [`GLS72 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_SINGLE_BINARY_ACTIVITY_LOCALIZATION_AND_TRANSVERSE_FULL_DECK_SHARPNESS_THEOREM.md)

@@ -440,7 +440,8 @@ remaining separated syzygy is
 beta_3=kL_3,                     beta_4=-kL_4         (28)
 ```
 
-for some scalar `k`.  The `e_(1,0)e_(2,0)` equations give `t=0`, while the
+for some scalar `k`.  The `e_(1,0)e_(2,0)` coordinates of the underlying
+`E` equations give `t=0`, while the
 `e_(0,0)e_(2,0)` projection of `G_35` gives `V_00=0`.
 
 Let
@@ -532,11 +533,12 @@ in (32).  Hence `r=d=0` and all delta coordinates vanish.  Symmetrically,
 ```
 
 forces `s=c=0` and all beta coordinates to vanish, since the nonzero `Y`
-coefficient of `D` is not tangent at `X`.  Equations (16) now give `t=0`,
+coefficient of `D` is not tangent at `X`.  The underlying `E` equations now
+give `t=0`,
 and the two selectors kill `U_00,V_00` because `L_4,L_3` are nonzero.
 Again the pure coefficient in (18) vanishes.  If `a=b=0`, neither
-attachment vanishes: they reduce to two tangent-space equations with the
-same `L_3,L_4`.  That branch is treated next. `square`
+attachment vanishes: the two attachment equations retain the same
+`L_3,L_4` factors.  That branch is treated next. `square`
 
 The proof never evaluates an off-kernel coefficient of `W_15` or `W_25`.
 In the two generic branches it kills their full central multipliers.  In
