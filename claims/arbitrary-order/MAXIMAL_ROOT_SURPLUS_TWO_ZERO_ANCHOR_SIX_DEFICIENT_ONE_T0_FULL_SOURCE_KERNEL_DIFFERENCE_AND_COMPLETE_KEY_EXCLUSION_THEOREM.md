@@ -300,7 +300,8 @@ No Family-A source exists in the `r=1` key.
 ### Proof
 
 `GLS72` exhaustively excludes the all-active cell, every silent-`R_0` cell,
-and every generic silent-`T_0` branch.  Its only survivor is exactly (7).
+and the silent-`T_0` branches with `alpha!=0` or `alpha=0,ab!=0`.  Its only
+survivor is exactly (7).
 Corollary 2.2 and the five complete-row differences (18) apply to that
 survivor, while Lemma 4.1 excludes it.  Therefore no cell remains. `square`
 
