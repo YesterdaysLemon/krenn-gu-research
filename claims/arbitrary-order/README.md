@@ -98,6 +98,18 @@ R31=0/double-pivot branch, `E31=0`, `g0=0`, `H2=0`, arbitrary H4 points
 outside `F88`, the pulled-back Fitting ideal, and the other chart/component/
 source obligations remain open; no global status change is claimed.
 
+[`GLD97`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md)
+is the required parent-level follow-up on the complete normalized p=2 fibre.
+Keeping `a` symbolic and the original `b,c` coordinates arbitrary through the
+affine offsets `B,C`, adjoining `Q2` to four bordered and two direct
+seven-minors gives the exact ideal
+`(Q2,T0,T1,T2,T3,D0,D2)=(Q2/5,B,C)`.  Hence full syndrome rank at most six forces
+`B=C=0` without an `R31`, `E31`, or `g0` localization; GLD95 then excludes the
+F88 endpoint on `D(Omega Delta_2)`.  Exact primary and independent Bareiss
+replays agree on all six polynomial hashes and the pinned basis hash.  This
+does not extend to arbitrary `p`, the GLD83 Fitting pullback, other charts or
+components, or global resolution; the global status remains **UNRESOLVED**.
+
 [`GLD91`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_THEOREM.md)
 now gives an exact characteristic-zero exclusion on the two-leaf slice
 `x9=1, x10=x11=x12=0, x13=t, x14=u` of the named rank-eight chart.  After
