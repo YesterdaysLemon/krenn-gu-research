@@ -3669,6 +3669,24 @@ profile is removed and the residual remains `98,355 / 81`.  See the
 [`GLS74 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_NONENDPOINT_FULL_PARENT_TRANSVERSE_INJECTIVITY_AND_ENDPOINT_ACTIVITY_BOUNDARY_THEOREM.md)
 and
 [`GLS74 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_NONENDPOINT_FULL_PARENT_TRANSVERSE_INJECTIVITY_AND_ENDPOINT_ACTIVITY_BOUNDARY_REVIEW_2026-08-28.md).
+The GLS75 exact characteristic-zero successor removes GLS74's central
+mixed-support hypothesis and closes the complete outside nonendpoint chart.
+If both shores at one central label were root-axis-only, each of the two
+nonzero `P_aQ_a` binary coefficients would have only the complementary
+central source pair; the same four-port physical deck would then have to be
+pure in both colours.  Hence every central label supplies at least one legal
+Koszul row.  One row plus the complete `P_0Q_0` coefficient forces every
+pair deck to vanish on its two outside kernel lines and every full one-port
+correction to vanish on its one kernel line.  The remaining full-row kernel
+is exactly four coboundary directions and is harmless for the common-edge
+support equations.  In the one-central-edge case, the nonendpoint pure-`P_3`
+normal form makes all three active rows transverse to both outside shore
+lines, so a single identity kills the last kernel rows.  Thus every outside
+nonendpoint is empty.  P/Q-common endpoints remain open, so the typed key
+and residual `98,355 / 81` are unchanged.  See the
+[`GLS75 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ONE_SIDED_KOSZUL_AND_COMPLETE_NONENDPOINT_EXCLUSION_THEOREM.md)
+and
+[`GLS75 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ONE_SIDED_KOSZUL_AND_COMPLETE_NONENDPOINT_EXCLUSION_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
