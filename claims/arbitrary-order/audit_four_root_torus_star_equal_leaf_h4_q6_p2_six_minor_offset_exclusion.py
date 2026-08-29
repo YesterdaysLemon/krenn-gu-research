@@ -537,7 +537,7 @@ def check() -> dict[str, object]:
             "the exact basis forces B=C=0; GLD95 then excludes F88 incidence on D(Omega*Delta)"
         ),
         "scope_fences": [
-            "R31-open E31/g0 localization is not independently reproved here",
+            "the arbitrary-p E31/g0 localization is not independently reproved here; GLD96 uses no R31 gate",
             "the chart denominators and det(G)/D(Omega) gates are retained",
             "GLD75/GLD86 bridge and GLD95 are upstream dependencies",
             "arbitrary p, other H4 charts, Fitting, and global resolution remain open",

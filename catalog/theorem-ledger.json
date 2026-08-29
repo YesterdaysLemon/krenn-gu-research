@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "cac86c13314b72a2",
+      "document_sha256_16": "be85ee1e84aa7e3d",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -7012,30 +7012,30 @@
       "legacy_paths": []
     },
     {
-      "name": "Four-root torus-star equal-leaf H4 Q6 generic R31 resultant localization (GLD96)",
+      "name": "Four-root torus-star equal-leaf H4 Q6 R31-free generic resultant localization (GLD96)",
       "document": "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GENERIC_RESULTANT_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "fdb27d5a4e65bd5e",
+      "document_sha256_16": "2d989620d8255419",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact characteristic-zero statement over Q then C on the normalized equal-leaf H4 chart using the GLD71 syndrome and the written GLD88 offset family",
         "the offsets b=b88+B and c=c88+C are defined only on D(Delta), with Delta=(p-q)(p+q-1)P L1 L2 e; no cancellation of these factors is permitted",
-        "R31 is the raw six-by-six pivot on rows (0,1,2,17,25,31) and columns (0,1,3,4,6,7), and the four selected bordered seven-minors are (28,8),(32,2),(32,5),(33,8)",
+        "R31 is the raw six-by-six submatrix determinant on rows (0,1,2,17,25,31) and columns (0,1,3,4,6,7), and the four selected bordered seven-minors are (28,8),(32,2),(32,5),(33,8); the global polynomial adjugate identity is checked directly and no R31 inverse or gate is used",
         "the raw target c-degree is one, the GLD88 family supplies 111 exact common block-kernel identities at B=C=0, and H2=2p^2-2p+1 is inverted for q reduction",
         "E31 is the cleared q-resultant/norm of the B-cross-resultants H01,H02 after Q6 reduction, while g0 is the cleared q-norm of the first C-coefficient at B=0; a specialization (p,a)=(2,3) proves both are nonzero generic polynomials",
         "the exact GLD75/GLD86 incidence bridge and C_8=1 connect B intersect V(I_7(A)) to the fixed GLD71 syndrome rank condition",
         "GLD95 is an upstream theorem and is invoked only after B=C=0, on its written F88 family and D(Delta); it is not reproved here",
         "the independent audit uses a direct sparse-support/Bareiss representation, shares fixed supports and written formulae, and does not independently reprove GLD75/GLD86, GLD88, or GLD95",
-        "R31=0/double-pivot, E31=0, g0=0, H2=0, Delta=0, arbitrary H4 Q6 outside F88, the GLD83 Fitting pullback, other charts/components/source branches, and global Krenn-Gu remain open"
+        "R31=0 is included wherever E31 H2 g0 Delta is nonzero; E31=0, g0=0, H2=0, Delta=0, arbitrary H4 Q6 outside F88, the GLD83 Fitting pullback, other charts/components/source branches, and global Krenn-Gu remain open"
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_r31_generic_resultant_exclusion.py",
       "verifier_provenance": "script_is_the_verifier",
       "independent_audit": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_r31_generic_resultant_exclusion.py",
       "audit_provenance": "independent_exact_identity_audit",
-      "review": "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GENERIC_RESULTANT_EXCLUSION_REVIEW_2026-08-28.md",
+      "review": "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GATE_REMOVAL_REVIEW_2026-08-29.md",
       "expected_runtime": "under one minute for the primary and under ten seconds for the independent audit on the reference host",
       "external_binaries": [],
-      "note": "GLD96 proves the generic R31 offset reduction on D(R31*E31*H2*g0*Delta) intersect V(Q6), then hands the written F88 case to GLD95. It does not close the R31=0/double-pivot or exceptional factors, arbitrary H4 Q6 outside F88, the pulled-back Fitting ideal, or the global conjecture, which remains UNRESOLVED.",
+      "note": "GLD96 proves the R31-free generic offset reduction on D(E31*H2*g0*Delta) intersect V(Q6), then hands the written F88 case to GLD95. The polynomial bordered-determinant identity includes R31=0 on that open. It does not close the remaining exceptional factors, arbitrary H4 Q6 outside F88, the pulled-back Fitting ideal, or the global conjecture, which remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
@@ -7044,7 +7044,7 @@
     {
       "name": "Four-root torus-star equal-leaf H4 Q6 p=2 six-minor offset exclusion (GLD97)",
       "document": "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "8354fc4f20b93d62",
+      "document_sha256_16": "9ebaf71baf17d328",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact characteristic-zero statement over Q then C on the normalized scale-fixed equal-leaf H4 chart at p=2 with symbolic a and Q2=Q6(2,q)=5q^4-4q^3+12q^2-16q+8",
