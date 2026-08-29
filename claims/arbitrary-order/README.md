@@ -3704,6 +3704,22 @@ stated branches remain open.  See the
 [`GLS76 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ENDPOINT_MIXED_COEFFICIENT_AND_COMPLETE_KEY_EXCLUSION_THEOREM.md)
 and
 [`GLS76 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ENDPOINT_MIXED_COEFFICIENT_AND_COMPLETE_KEY_EXCLUSION_REVIEW_2026-08-28.md).
+The GLS77 exact characteristic-zero successor returns to the sole GLS72
+Family-A `r=1` survivor.  In a basis of the silent `T_0` row plane, twenty-four
+literal zero-target coefficients factor as the four entries of one common
+outer-product matrix times six source-row coordinates.  Any nonzero matrix
+entry would leave the rank-two `T_0` plane supported on only one transverse
+line, so the whole matrix vanishes.  Five differences between full slot-5
+colour rows then cancel both the endpoint repair terms and the unrestricted
+off-kernel physical coefficients before restriction.  The remaining five
+scalar identities, together with the vanished outer-product matrix, have an
+elementary rank-one/zero-product contradiction against the two nonzero GHZ
+targets.  Thus the complete Family-A `r=1` key is empty, removing `1,080 / 1`
+and changing the six-deficient residual to `97,215 / 79`.  Family A `r=2,3`
+and all other stated branches remain open.  See the
+[`GLS77 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_FULL_SOURCE_KERNEL_DIFFERENCE_AND_COMPLETE_KEY_EXCLUSION_THEOREM.md)
+and
+[`GLS77 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_FULL_SOURCE_KERNEL_DIFFERENCE_AND_COMPLETE_KEY_EXCLUSION_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
