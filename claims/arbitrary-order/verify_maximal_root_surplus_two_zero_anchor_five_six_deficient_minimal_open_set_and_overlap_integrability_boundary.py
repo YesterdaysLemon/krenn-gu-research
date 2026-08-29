@@ -1,4 +1,4 @@
-"""Primary finite checks for the candidate GLS69 higher-deficient boundary."""
+"""Primary finite checks for the reviewed GLS69 higher-deficient boundary."""
 
 from collections import Counter
 from dataclasses import dataclass
@@ -518,6 +518,6 @@ print(f"N6_minimum_open_sizes: {n6_minimum}")
 print(f"N6_max_triple_targets: {n6_max_triple}")
 print("Q(omega)_binary_P3_control: exact")
 print(
-    "PASS: candidate GLS69 finite/minimal-open checks only "
+    "PASS: GLS69 finite/minimal-open checks only "
     "(same-source integrability and global conjecture remain unresolved)"
 )

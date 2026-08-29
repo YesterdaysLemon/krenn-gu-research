@@ -1,4 +1,4 @@
-"""Independent standard-library audit for the candidate GLS67 finite leaves."""
+"""Independent standard-library audit for the reviewed GLS67 finite leaves."""
 
 from collections import Counter
 from itertools import combinations, permutations, product
@@ -182,6 +182,6 @@ print(f"F101_binary_hyperdeterminant: {hyperdet(binary, prime)}")
 print("F101_pure_support_size: 2")
 print("F101_zero_support_size: 0")
 print(
-    "PASS (candidate GLS67 independent finite/displayed audit only; "
+    "PASS (GLS67 independent finite/displayed audit only; "
     "eight residual orbits and global conjecture remain unresolved)"
 )

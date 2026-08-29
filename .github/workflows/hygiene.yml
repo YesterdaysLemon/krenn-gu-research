@@ -82,6 +82,11 @@ jobs:
       - name: Run H31 marked-fibre reconciliation tests
         run: python -m unittest -v tests.test_h31_cbmf_reconciliation
 
+      - name: Run GLS66-GLS69 evidence reconciliation tests
+        run: >-
+          python -m unittest -v
+          tests.test_gls66_gls69_evidence_reconciliation
+
       - name: Run the self-contained test module
         run: python -m unittest -v tests.test_fourteen_vertex_cycle_cover_lattice
 

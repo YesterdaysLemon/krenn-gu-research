@@ -2,7 +2,7 @@
 
 ## Status
 
-**Candidate exact characteristic-zero localization and receiver-interface
+**Proved exact characteristic-zero localization and receiver-interface
 boundary (`GLS68`).**  Continue from the `GLS63` mixed-kernel hierarchy and
 the universal `GLS67` pair-class theorem on the zero-anchor, root-order-three,
 all-six-rigid branch.  Assume exactly four auxiliary joint maps are deficient.

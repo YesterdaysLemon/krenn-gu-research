@@ -3557,8 +3557,8 @@ coefficientwise integrability theorem is now required.  See the
 [`GLS68 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_DEFICIENT_PAIR_CLASS_AND_PROBE_DEPENDENT_FOUR_PORT_BOUNDARY_THEOREM.md)
 and
 [`GLS68 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_FOUR_DEFICIENT_PAIR_CLASS_AND_PROBE_DEPENDENT_FOUR_PORT_BOUNDARY_REVIEW_2026-08-28.md).
-The GLS69 candidate characteristic-zero localization extends the same-source
-hierarchy to five and six deficient maps.  For every open set `T`, with
+The reviewed exact characteristic-zero GLS69 localization extends the
+same-source hierarchy to five and six deficient maps.  For every open set `T`, with
 `D_a=N-M_a` and `L_a=D_a disjoint-union E_a`, the formal colour-term support
 is exactly `L_a subseteq T`, and all face maps are restrictions of the same
 physical matching decks.  The five-deficient branches give `59,049 ->

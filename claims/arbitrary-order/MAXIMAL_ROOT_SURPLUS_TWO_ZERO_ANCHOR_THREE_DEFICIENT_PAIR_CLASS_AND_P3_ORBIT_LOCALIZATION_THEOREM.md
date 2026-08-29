@@ -2,7 +2,7 @@
 
 ## Status
 
-**Candidate exact characteristic-zero parent localization (`GLS67`).**
+**Proved exact characteristic-zero parent localization (`GLS67`).**
 Continue from the `GLS63` mixed-kernel hierarchy after `GLS66` excludes the
 complete exactly-two-deficient branch.  For any two deficient labels left
 open, contract every other deficient kernel and every injective nonaxis

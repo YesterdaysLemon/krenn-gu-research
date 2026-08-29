@@ -80,6 +80,18 @@ then closes the generic R31 localization on
 `D(R31*E31*H2*g0*Delta)` into the GLD95 `F88` theorem, while retaining the
 R31=0/double-pivot and all named exceptional strata.
 
+The newest zero-anchor, root-order-three, all-six-rigid source-integrability
+line is `GLS61`--`GLS80`.  `GLS66` closes the exactly-two-deficient branch;
+`GLS67`--`GLS69` localize the surviving three-, four-, five-, and
+six-deficient families; and `GLS70`--`GLS77` remove several exact
+six-deficient keys.  The required `GLS78` parent attempt leaves Family-A
+`r=2,3` open, while `GLS79`--`GLS80` prove that the complete stated
+scalar-linear separator route cannot remove them.  Nonlinear or specialized
+same-source integrability, the other deficient families, attachment and
+arbitrary-root transport, and global gluing remain open.  The
+[`GLS66`--`GLS69` evidence-status reconciliation](docs/audits/GLS66_GLS69_EVIDENCE_STATUS_RECONCILIATION_2026-08-29.md)
+records the owner/review/frontier alignment without changing those scopes.
+
 The [`catalog/theorem-ledger.json`](catalog/theorem-ledger.json) is a partial
 claim/evidence index. Its empty `dependencies` arrays mean “not recorded,” not
 “no dependencies”; it is not the proof DAG.
