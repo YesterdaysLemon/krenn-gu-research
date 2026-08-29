@@ -3652,6 +3652,23 @@ cancelling channel.  No profile is removed and the residual remains
 [`GLS73 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_OFF_PORT_CORE_FULL_SOURCE_NONEXTENSION_AND_COUPLED_CORRECTION_BOUNDARY_THEOREM.md)
 and
 [`GLS73 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_OFF_PORT_CORE_FULL_SOURCE_NONEXTENSION_AND_COUPLED_CORRECTION_BOUNDARY_REVIEW_2026-08-28.md).
+The GLS74 exact characteristic-zero parent theorem returns to the all-`T_0`
+Family-B `r=3` key.  On a nonendpoint outside pure-`P_3` chart, assume that
+at every central `S_0` label both probe shores have some non-root
+coefficient.  The two legal mixed-root strict-parent rows then put the three
+full complementary pair decks in their one-dimensional alternating Koszul
+kernel.  The complete `P_0Q_0` row cancels those nuisance sums and exposes an
+injective three-one-port outside map, so all full corrections vanish.
+Restricting the common physical edges to the three outside kernel lines and
+splitting by the support of the central all-zero edge coefficients then
+forces every outside kernel edge to vanish or kills its sole binary spoke.
+Thus the central-mixed-support nonendpoint subchart is empty.  Central
+root-axis degeneracies lack one of the two Koszul rows, while P/Q-common
+outside endpoints have a genuine parent-map kernel; both remain open.  No
+profile is removed and the residual remains `98,355 / 81`.  See the
+[`GLS74 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_NONENDPOINT_FULL_PARENT_TRANSVERSE_INJECTIVITY_AND_ENDPOINT_ACTIVITY_BOUNDARY_THEOREM.md)
+and
+[`GLS74 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_NONENDPOINT_FULL_PARENT_TRANSVERSE_INJECTIVITY_AND_ENDPOINT_ACTIVITY_BOUNDARY_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
