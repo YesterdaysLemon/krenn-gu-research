@@ -500,7 +500,7 @@ def check() -> dict[str, object]:
             "dependency, while all other charts remain outside this replay."
         ),
         "scope_fences": [
-            "No arbitrary-p R31/double-pivot theorem is claimed; R31 is not inverted at p=2",
+            "No arbitrary-p closure of the E31/g0/H2 exceptional strata is claimed; R31 is not inverted at p=2",
             "No E31 or g0 localization is asserted",
             "GLD95 incidence exclusion is not replayed here",
             "Other H4 charts, exceptional fibres, Fitting, and the global conjecture remain open",

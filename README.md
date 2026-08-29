@@ -76,9 +76,11 @@ claim arbitrary H4 `Q6=0` closure outside `F88`; the pulled-back Fitting
 ideal, other chart/component/source branches, and the global conjecture remain
 open, and the global status is still **UNRESOLVED**.
 [`GLD96`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GENERIC_RESULTANT_EXCLUSION_THEOREM.md)
-then closes the generic R31 localization on
-`D(R31*E31*H2*g0*Delta)` into the GLD95 `F88` theorem, while retaining the
-R31=0/double-pivot and all named exceptional strata.
+then closes an R31-free generic localization on
+`D(E31*H2*g0*Delta)` into the GLD95 `F88` theorem.  Its polynomial bordered-
+determinant identity uses no inverse of `R31`, so `R31=0` is included wherever
+the remaining gates are nonzero; the named `E31/g0/H2/Delta` exceptional
+strata remain open.
 [`GLD97`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md)
 now gives a parent-level exact p=2 fibre closure: for symbolic `a` and
 arbitrary offset coordinates `B,C`, four bordered and two direct seven-minors

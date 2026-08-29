@@ -1,9 +1,10 @@
-# Four-root torus-star equal-leaf H4 Q6 generic R31 resultant localization (GLD96)
+# Four-root torus-star equal-leaf H4 Q6 R31-free generic resultant localization (GLD96)
 
 ## Status and exact scope
 
-**Exact scoped characteristic-zero theorem (`GLD96`).**  In the normalized
-equal-leaf H4 chart, use the R31 pivot
+**Exact scoped characteristic-zero theorem (`GLD96`, strengthened
+2026-08-29).**  In the normalized equal-leaf H4 chart, use the six-row and
+six-column selector
 
 ```text
 R31 = (0,1,2,17,25,31),   S = (0,1,3,4,6,7).
@@ -13,10 +14,10 @@ Write `b=b88+B` and `c=c88+C`, where `(b88,c88)` is the written GLD88
 three-parameter family.  On `V(Q6)` and the explicitly localized open
 
 ```text
-D(R31 * E31 * H2 * g0 * Delta),
+D(E31 * H2 * g0 * Delta),
 ```
 
-the four selected R31 bordered seven-minors force `B=C=0`.  Consequently,
+the four selected raw bordered seven-minors force `B=C=0`.  Consequently,
 after the GLD88-to-GLD95 family identification, the corresponding
 rank-at-most-six incidence is excluded on `D(Omega)` by GLD95.  This is a
 generic resultant localization: it proves that `E31` and `g0` are nonzero
@@ -26,11 +27,12 @@ loci from the statement.  It does **not** close those exceptional loci.
 The calculation is over `Q` and extends scalars to `C`.  The global
 Krenn--Gu conjecture remains **UNRESOLVED**.
 
-The result is deliberately narrower than a full H4 closure.  It does not
-cover the R31/double-pivot boundary, arbitrary H4 points outside the written
-F88 offset chart, the exceptional factors in the displayed localization,
-the GLD83 pulled-back Fitting ideal, other charts/components/source branches,
-or any unrelated root/order obligations.
+The result is deliberately narrower than a full H4 closure.  It includes
+`R31=0` wherever the displayed remaining factors are nonzero, because no
+inverse of `R31` occurs.  It does not cover arbitrary H4 points outside the
+written F88 offset chart, the exceptional factors in the displayed
+localization, the GLD83 pulled-back Fitting ideal, other
+charts/components/source branches, or any unrelated root/order obligations.
 
 ## 1. Coordinates, divisors, and the exact statement
 
@@ -64,8 +66,8 @@ c = c88(p,q,a) + C.
 ```
 
 Let `M(G)` be the fixed 37-by-9 GLD71 syndrome.  Let `R31` denote the
-following raw pivot determinant (the symbol is overloaded in the usual way
-with its row set):
+following raw submatrix determinant (the symbol is overloaded in the usual
+way with its row set):
 
 ```text
 R31(G) = det M(G)[(0,1,2,17,25,31), (0,1,3,4,6,7)].
@@ -79,6 +81,23 @@ T1 = det M[(0,1,2,17,25,31,32), (0,1,3,4,6,7,2)],
 T2 = det M[(0,1,2,17,25,31,32), (0,1,3,4,6,7,5)],
 T3 = det M[(0,1,2,17,25,31,33), (0,1,3,4,6,7,8)].
 ```
+
+If `P` is the displayed 6-by-6 submatrix and the added row and column for
+`T_i` are written as `r_i,c_i,x_i`, then the polynomial bordered-determinant
+identity is
+
+```text
+T_i = det [ P    c_i ]
+          [ r_i  x_i ]
+    = R31*x_i - r_i*adj(P)*c_i.
+```
+
+This is an identity in the polynomial ring, not a Schur-complement division.
+It remains valid when `R31=0`.  On the exact `(p,a)=(2,3)` witness replay, the
+primary checks the adjugate expression against each direct bordered
+determinant; the independent audit starts from the direct 7-by-7 determinants.
+Thus `R31` selects the common rows and columns and supplies a diagnostic
+factorization, but it is not a localization gate.
 
 The Q6 equation is
 
@@ -116,13 +135,13 @@ denominators are removed before taking the primitive numerator; multiplying
 open.  This gives the precise localization
 
 ```text
-U31 = D(R31 * E31 * H2 * g0 * Delta).
+Ures = D(E31 * H2 * g0 * Delta).
 ```
 
 The theorem is
 
 ```text
-V(Q6,T0,T1,T2,T3) intersect U31
+V(Q6,T0,T1,T2,T3) intersect Ures
     is contained in {B=0,C=0} = F88.
 ```
 
@@ -131,10 +150,10 @@ the load-bearing consequence is the scoped empty intersection
 
 ```text
 B_incidence intersect V(I_7(A)) intersect H4 intersect V(Q6)
-  intersect U31 intersect D(Omega) = empty,
+  intersect Ures intersect D(Omega) = empty,
 ```
 
-on this normalized R31 chart and offset domain.  Here `B_incidence` denotes
+on this normalized offset domain.  Here `B_incidence` denotes
 the incidence variety, not the offset variable `B`.
 
 ## 2. Exact raw determinant certificate
@@ -158,9 +177,10 @@ The raw pivot numerator factors as
 R31 = 2*(p-q)*(p+q-1)*J31,
 ```
 
-with a nonzero exact polynomial `J31`.  The factor is retained rather than
-cancelled.  In particular, the theorem never divides by `p-q` or `d0` in a
-way that would silently change the chart.
+with a nonzero exact polynomial `J31`.  This factorization is retained as a
+diagnostic rather than cancelled or inverted.  The theorem neither divides
+by `R31` nor uses its factors to change the chart.  The independent audit's
+direct bordered determinants do not compute an inverse of this submatrix.
 
 The GLD88 vector used at `B=C=0` is
 
@@ -235,7 +255,7 @@ that the displayed integer factors remain units in every characteristic.
 
 ## 4. Proof of the localized implication
 
-Assume a point on `V(Q6)` lies in `U31` and all four selected bordered
+Assume a point on `V(Q6)` lies in `Ures` and all four selected bordered
 minors vanish.  Since `H2` is inverted, the definitions above are valid in
 the finite q-algebra.  If `B` is nonzero, each equation
 `f_i(B)+C*g_i(B)=0` gives, after cross-multiplication,
@@ -263,7 +283,7 @@ The localization and the implication have these explicit fences:
 
 | stratum | treatment in GLD96 |
 | --- | --- |
-| `R31=0` | not covered; this includes the unresolved double-pivot branch and any overlap with another pivot chart |
+| `R31=0` | covered wherever `E31 H2 g0 Delta` is nonzero; the intersections with retained exceptional factors remain open |
 | `E31=0` | not covered; cross-resultant degeneracy is the next generic-boundary obligation |
 | `g0=0` | not covered; the B=0 C-equation loses the selected unit coefficient |
 | `H2=0` | not covered by this q-algebra reduction; no invalid generic division is used there |
@@ -273,8 +293,10 @@ The localization and the implication have these explicit fences:
 | global Krenn--Gu conjecture | remains **UNRESOLVED** |
 
 The exploratory double-pivot census and any resultant on that boundary are
-retained only as scoped evidence.  They are not used in the theorem and do
-not close `R31=0`.
+retained only as historical scoped evidence.  They are not used in the
+theorem.  The strengthened implication covers `R31=0` directly on the same
+remaining principal open; it does not close intersections of `R31=0` with
+`E31=0`, `g0=0`, `H2=0`, or `Delta=0`.
 
 ## 6. Reproduction and independent audit
 
@@ -286,7 +308,8 @@ python claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_r31_ge
 ```
 
 The primary reconstructs the 37 sparse relations through the GLD71
-`coefficient_matrix`, uses the R31 adjugate/Schur identity, and checks the
+`coefficient_matrix`, uses the global bordered-determinant/adjugate identity,
+checks it against direct determinants, and checks the
 raw determinant hashes, all 111 GLD88 block identities, the four exact
 specialized residuals, and the two nonzero norms.  The audit does not import
 the primary or GLD88: it transcribes the F88 functions locally, accumulates
@@ -302,6 +325,7 @@ GLD86 supplies the four-divisor rank-at-most-six syndrome containment.
 GLD87 closes H1/H2/H3, and GLD88 supplies the H4 rational family and its
 common block kernel.  GLD89, GLD90, GLD93, and GLD94 close separate named
 divisor pieces.  GLD95 closes the finite Q6 common-minor residual on the
-written F88 family.  GLD96 supplies the generic R31 resultant localization
-that reaches that GLD95 family from the four selected seven-minors; it does
-not replace the retained R31=0, exceptional-factor, or global obligations.
+written F88 family.  GLD96 supplies the R31-free generic resultant
+localization that reaches that GLD95 family from the four selected
+seven-minors.  It removes `R31=0` as an independent wall on this offset
+route, while retaining the exceptional-factor and global obligations.

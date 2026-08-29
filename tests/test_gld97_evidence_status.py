@@ -4,6 +4,7 @@ import hashlib
 import importlib.util
 import json
 import re
+import subprocess
 import unittest
 from pathlib import Path
 
@@ -43,6 +44,17 @@ REDUCED_HASHES = {
 
 def read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
+
+
+def index_hash(path: Path) -> str:
+    relative = path.relative_to(ROOT).as_posix()
+    blob = subprocess.run(
+        ["git", "show", f":{relative}"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+    ).stdout
+    return hashlib.sha256(blob).hexdigest()[:16]
 
 
 def load_module(path: Path, name: str):
@@ -88,7 +100,7 @@ class GLD97EvidenceStatusTests(unittest.TestCase):
     def test_ledger_hash_and_evidence_links_are_current(self) -> None:
         ledger = json.loads(read(LEDGER))
         entry = next(item for item in ledger["entries"] if "(GLD97)" in item["name"])
-        owner_hash = hashlib.sha256(OWNER.read_bytes()).hexdigest()[:16]
+        owner_hash = index_hash(OWNER)
         self.assertEqual(entry["document_sha256_16"], owner_hash)
         self.assertEqual(entry["status"], "verified")
         self.assertEqual(entry["primary_verifier"], PRIMARY.relative_to(ROOT).as_posix())

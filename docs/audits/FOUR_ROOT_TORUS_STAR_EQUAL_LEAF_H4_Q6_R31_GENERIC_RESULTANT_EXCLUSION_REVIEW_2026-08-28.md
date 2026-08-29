@@ -1,5 +1,12 @@
 # GLD96 hostile review: generic R31 resultant localization
 
+> **Historical scope note (2026-08-29).**  This review records the narrower
+> first publication.  Its treatment of `R31` as a localization gate is
+> superseded by the exact
+> [R31 gate-removal review](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GATE_REMOVAL_REVIEW_2026-08-29.md),
+> which leaves the original determinant/resultant evidence intact and expands
+> the proved open only to `D(E31*H2*g0*Delta)`.
+
 ## Disposition
 
 **Accepted as a scoped exact localization, with the exceptional factors

@@ -90,13 +90,15 @@ outside `F88`, the GLD83 Fitting pullback, other charts/components/source
 branches, and the global conjecture remain **UNRESOLVED**.
 
 [`GLD96`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GENERIC_RESULTANT_EXCLUSION_THEOREM.md)
-now gives the generic R31 continuation into that finite closure.  On
-`D(R31*E31*H2*g0*Delta)`, four exact bordered seven-minors, a Q6 resultant
+now gives an R31-free generic continuation into that finite closure.  On
+`D(E31*H2*g0*Delta)`, four exact raw bordered seven-minors, a Q6 resultant
 witness, and the GLD88 common-kernel origin force the offsets `B=C=0`; GLD95
 then excludes the resulting written `F88` incidence on `D(Omega)`.  The
-R31=0/double-pivot branch, `E31=0`, `g0=0`, `H2=0`, arbitrary H4 points
-outside `F88`, the pulled-back Fitting ideal, and the other chart/component/
-source obligations remain open; no global status change is claimed.
+polynomial adjugate identity uses no inverse of `R31`, so `R31=0` is included
+where the remaining gates are nonzero.  The `E31=0`, `g0=0`, `H2=0`,
+`Delta=0`, arbitrary H4 outside `F88`, pulled-back Fitting, and other
+chart/component/source obligations remain open; no global status change is
+claimed.
 
 [`GLD97`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md)
 is the required parent-level follow-up on the complete normalized p=2 fibre.

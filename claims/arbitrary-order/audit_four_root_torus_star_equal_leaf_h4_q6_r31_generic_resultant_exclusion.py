@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent exact audit of the GLD96 R31 witness.
+"""Independent exact audit of the strengthened GLD96 R31-free witness.
 
 This audit intentionally does not import the GLD96 primary or GLD88.  It reads
 only the pinned sparse relation supports from GLD71, rebuilds each syndrome
@@ -215,17 +215,14 @@ def check() -> dict[str, object]:
         sp.cancel
     )
     assert syndrome.shape == (37, 9)
-    pivot = syndrome.extract(ROWS, COLUMNS)
-    pivot_det = polynomial_determinant(pivot, B, C, q)
-    assert pivot_det != 0
     q6 = sp.Poly(q6_polynomial(sp.Integer(2), q), q, domain=QQ)
     parsed = []
     metadata = []
     for row, column in TARGETS:
         bordered = syndrome.extract((*ROWS, row), (*COLUMNS, column))
-        # The audit's primary object is the bordered determinant itself.  This
-        # is the Schur residual numerator: on D(R31), the bordered determinant
-        # vanishes exactly when the residual vanishes.
+        # The audit's primary object is the bordered determinant itself.  The
+        # polynomial adjugate identity identifies it with the usual Schur
+        # numerator globally; no inverse of R31 is used or needed.
         residual = sp.cancel(polynomial_determinant(bordered, B, C, q))
         numerator, denominator = residual.as_numer_denom()
         if denominator.has(B, C):
@@ -283,11 +280,14 @@ def check() -> dict[str, object]:
     g0_norm = int(sp.resultant(q6.as_expr(), g0_numerator, q))
     assert sp.factorint(abs(g0_norm)) == EXPECTED_G0_NORM_FACTORS
     return {
-        "status": "independent_exact_GL D96_R31_witness_audit".replace(" ", ""),
+        "status": "independent_exact_GLD96_R31_free_witness_audit",
         "gld_identifier": "GLD96",
         "matrix_shape": list(syndrome.shape),
         "construction": "direct sparse-support accumulation",
         "determinant_route": "bordered 7x7 Bareiss determinants in Q(q)[B,C]",
+        "R31_gate_used": False,
+        "bordered_identity_scope": "global polynomial identity, including R31=0",
+        "global_conjecture": "UNRESOLVED",
         "residuals": metadata,
         "resultant_primitive_tuple_sha256": EXPECTED_RESULTANT_TUPLE_SHA256,
         "Q6_norm_factorization": EXPECTED_RESULTANT_NORM_FACTORS,
@@ -297,7 +297,7 @@ def check() -> dict[str, object]:
 
 
 def main() -> None:
-    print("GLD96 generic R31 independent audit: PASS")
+    print("GLD96 R31-free generic independent audit: PASS")
     print(json.dumps(check(), indent=2, default=str))
 
 

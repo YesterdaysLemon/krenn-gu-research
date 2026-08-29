@@ -1,21 +1,23 @@
 #!/usr/bin/env python3
-"""Verify the scoped GLD96 generic-R31 resultant localization.
+"""Verify the strengthened GLD96 R31-free generic resultant localization.
 
 The replay is exact over ``Q``.  It reconstructs the fixed GLD71 syndrome,
-checks the raw R31 pivot and four selected seven-minors, and then specializes
+checks the raw R31 submatrix determinant and four selected seven-minors, and
+then specializes
 the GLD88 F88 chart at ``(p,a)=(2,3)``.  On that exact Q6 fibre it computes the
-four bordered Schur residuals in the two offsets ``B,C``, forms the first two
+four raw bordered determinants in the two offsets ``B,C``, forms the first two
 cross-resultants, and verifies a nonzero Q6 norm.  This specialization proves
 that the corresponding generic resultant polynomial E31 is not identically
 zero; the theorem localizes at E31 and does not silently claim that the
 exceptional E31=0 locus is closed.
 
 The GLD88-to-GLD95 consequence is recorded as an upstream dependency: after
-the generic R31 residuals force ``B=C=0``, GLD95 excludes the resulting F88
+the raw bordered determinants force ``B=C=0``, GLD95 excludes the resulting F88
 point on its declared D(Delta) open.  This verifier does not re-run GLD95's
-all-factor decomposition.  The R31=0/double-pivot branch, the exceptional
-E31/H2/g0 strata, arbitrary H4 points outside F88, and the global conjecture
-remain open.
+all-factor decomposition.  No inverse of R31 is used: the polynomial
+adjugate expression is the bordered determinant even when R31 vanishes.  The
+exceptional E31/H2/g0 strata, arbitrary H4 points outside F88, and the global
+conjecture remain open.
 """
 
 from __future__ import annotations
@@ -258,6 +260,12 @@ def residual_data(syndrome, gld88, variables):
                 for j in range(6)
             )
         )
+        direct_bordered = sp.cancel(
+            specialized.extract(
+                (*PIVOT_ROWS, row), (*PIVOT_COLUMNS, column)
+            ).det(method="domain-ge")
+        )
+        assert sp.cancel(schur - direct_bordered) == 0
         numerator, denominator = schur.as_numer_denom()
         assert not denominator.has(B, C)
         polynomial = sp.Poly(numerator, B, C, domain=QQ.frac_field(q))
@@ -371,13 +379,13 @@ def check() -> dict[str, object]:
     assert GLD95_DOC.is_file()
     assert "GLD95" in GLD95_DOC.read_text(encoding="utf-8")
     return {
-        "status": "exact_scoped_generic_R31_resultant_localization",
+        "status": "exact_scoped_R31_free_generic_resultant_localization",
         "gld_identifier": "GLD96",
         "field": "Q_characteristic_zero_then_C",
         "global_conjecture": "UNRESOLVED",
         "scope": (
-            "normalized equal-leaf H4 Q6 chart on the R31 pivot open, after "
-            "localization at E31, H2, g0, and Delta; the conclusion is the "
+            "normalized equal-leaf H4 Q6 offset chart, after localization "
+            "at E31, H2, g0, and Delta; R31 is not inverted, and the conclusion is the "
             "GLD88 F88 reduction followed by the GLD95 exclusion"
         ),
         "syndrome_shape": list(syndrome.shape),
@@ -386,10 +394,12 @@ def check() -> dict[str, object]:
             "columns": list(PIVOT_COLUMNS),
             "raw_replay": raw,
             "raw_factor_contains": "2*(p-q)*(p+q-1)",
+            "required_as_gate": False,
+            "role": "row/column selector and polynomial adjugate diagnostic only",
         },
         "GLD88_F88_kernel": kernel,
         "localization": {
-            "open": "D(R31*E31*H2*g0*Delta)",
+            "open": "D(E31*H2*g0*Delta)",
             "Delta": str(delta),
             "H2": str(h2),
             "E31_definition": (
@@ -398,23 +408,25 @@ def check() -> dict[str, object]:
             ),
             "g0_definition": (
                 "cleared q-norm of the C-coefficient g_0(B=0) of the first "
-                "R31 Schur residual"
+                "raw bordered determinant (polynomial adjugate numerator)"
             ),
         },
         "specialized_nonzero_witness": specialization,
         "implication": (
-            "On D(R31*E31*H2*g0*Delta), rank-at-most-six plus Q6 forces "
+            "On D(E31*H2*g0*Delta), rank-at-most-six plus Q6 forces "
             "B=C=0, hence the written F88 family; GLD95 then excludes the "
             "F88 incidence on D(Omega*Delta)."
         ),
         "exceptional_strata": [
-            "R31=0, including the unresolved double-pivot branch",
             "E31=0 or g0=0, where this residual localization is silent",
             "H2=2*p^2-2*p+1=0, where q-leading-coefficient division is invalid",
             "Delta=0 (p-q, d0, P, L1, L2, or e), handled only by the separately scoped GLD87/89/93/94 results where applicable",
             "arbitrary H4 intersect V(Q6) points outside the GLD88 F88 family",
             "the GLD83 pulled-back Fitting ideal, other charts/components/source branches, and global resolution",
         ],
+        "R31_zero_scope": (
+            "included whenever E31*H2*g0*Delta is nonzero; no R31 inverse occurs"
+        ),
         "upstream": {
             "GLD88": "forces F88 on its own declared principal open",
             "GLD95": "excludes V(Q6) common minors on F88 intersect D(Delta), including old P6=0 content fibres",
@@ -426,7 +438,7 @@ def check() -> dict[str, object]:
 
 def main() -> None:
     result = check()
-    print("GLD96 generic R31 resultant localization verifier: PASS")
+    print("GLD96 R31-free generic resultant localization verifier: PASS")
     print(json.dumps(result, indent=2, default=str))
 
 

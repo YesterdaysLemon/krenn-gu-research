@@ -302,12 +302,13 @@ calculation into an incidence equivalence.
 
 ## 5. Why this does not hide an R31, E31, or g0 localization
 
-GLD96's generic resultant proof uses the open
-'D(R31 E31 H2 g0 Delta)' and therefore leaves its R31 boundary and
-exceptional resultant factors outside its scope; see
-'claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GENERIC_RESULTANT_EXCLUSION_THEOREM.md:92-120'
-and ':260-277'.  GLD97 is a p=2 boundary calculation with a different
-logical shape:
+The strengthened GLD96 generic resultant proof uses the open
+'D(E31 H2 g0 Delta)'.  Its polynomial bordered-determinant identity does not
+invert 'R31', so that theorem already includes 'R31=0' wherever the remaining
+gates are nonzero.  It still leaves the exceptional resultant factors outside
+its scope; see
+'claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GENERIC_RESULTANT_EXCLUSION_THEOREM.md'.
+GLD97 is a p=2 calculation with a different logical shape:
 
 1. 'R31' is not a generator of 'J', and no inverse of 'R31' is used.
    The producer's four residual expressions are formed by the polynomial
@@ -323,7 +324,7 @@ logical shape:
 
 2. 'E31' and 'g0' are not defined or inverted in the p=2 ideal.  They are
    generic coefficient/resultant devices used to select a unit coefficient
-   on the R31 chart; the direct D-minors replace that need on this fibre.
+   in GLD96; the direct D-minors replace that need on this fibre.
 
 3. 'H2=2p^2-2p+1' specializes to the constant '5', so the generic H2
    exceptional fibre is absent in characteristic zero at p=2.  The
@@ -350,14 +351,14 @@ This is intended as the serious parent-theorem attempt required before a
 third sibling refinement:
 
 * GLD86 supplies the upstream rank-at-most-six boundary, but leaves H4.
-* GLD96 supplies four bordered-minor forcing only after the generic R31,
-  E31, H2, and g0 localizations.
+* GLD96 supplies four bordered-minor forcing after the generic E31, H2, and
+  g0 localizations, without an R31 gate.
 * GLD92 and GLD95 close the Q6 common-minor residual after the F88 family
   has been reached.
 * GLD97 combines the bordered T-minors with two additional direct raw
   seven-minors D0 and D2.  The resulting p=2 ideal forces the F88 offsets
-  without imposing R31, so it directly tests the R31/double-pivot
-  boundary and selected-minor false positives.
+  without imposing E31 or g0, so it directly tests their exceptional fibres
+  and selected-minor false positives.
 
 The proof-topology delta is therefore a p=2 closure of the H4/Q6
 rank-at-most-six route inside the full written F88-offset coordinate
@@ -377,7 +378,7 @@ GLD97 does not claim:
 * a pullback, saturation, or computation of the intrinsic GLD83 Fitting
   ideal 'I_Pl';
 * validity on 'Delta_2=0' or 'Omega=0';
-* a global replacement for the GLD96 'R31,E31,H2,g0' generic argument; or
+* a global replacement for the GLD96 'E31,H2,g0' generic argument; or
 * a counterexample, a numerical result, or a resolution of the
   Krenn--Gu conjecture.
 
