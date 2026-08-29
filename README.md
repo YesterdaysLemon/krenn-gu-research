@@ -79,6 +79,15 @@ open, and the global status is still **UNRESOLVED**.
 then closes the generic R31 localization on
 `D(R31*E31*H2*g0*Delta)` into the GLD95 `F88` theorem, while retaining the
 R31=0/double-pivot and all named exceptional strata.
+[`GLD97`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md)
+now gives a parent-level exact p=2 fibre closure: for symbolic `a` and
+arbitrary offset coordinates `B,C`, four bordered and two direct seven-minors
+adjoined to `Q2` give the exact ideal
+`(Q2,T0,T1,T2,T3,D0,D2)=(Q2/5,B,C)`.  Thus syndrome rank at most six forces the F88
+origin without inverting `R31`, `E31`, or `g0`, and GLD95 excludes the
+resulting incidence on `D(Omega Delta_2)`.  This closes only the normalized
+p=2 H4/Q6 fibre; arbitrary `p`, the pulled-back Fitting lane, other charts and
+components, and the global conjecture remain open.
 
 The newest zero-anchor, root-order-three, all-six-rigid source-integrability
 line is `GLS61`--`GLS80`.  `GLS66` closes the exactly-two-deficient branch;
