@@ -3720,6 +3720,28 @@ and all other stated branches remain open.  See the
 [`GLS77 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_FULL_SOURCE_KERNEL_DIFFERENCE_AND_COMPLETE_KEY_EXCLUSION_THEOREM.md)
 and
 [`GLS77 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_FULL_SOURCE_KERNEL_DIFFERENCE_AND_COMPLETE_KEY_EXCLUSION_REVIEW_2026-08-28.md).
+The GLS78 characteristic-zero parent attempt treats the two remaining
+Family-A keys together without assuming that the one-`T_0` rank argument
+transfers.  For `r=2,3`, the intersection of the three single-slot
+proper-face kernels is exactly `J_3 tensor J_4 tensor J_5`, of dimensions
+four and eight, and a nonzero physical four-deck lies in that blind spot.
+Exact common-edge controls satisfy all three kernel selector equations and
+both nonzero pure attachments in each key; on the one-silent `r=2` chart an
+additional `GLS77`-shaped outer-product relation is still compatible.
+Contracting one `T_0` port leaves the full repair family from every other
+uncontracted `T_0` port, while contracting all such ports synchronizes the
+two target colours and returns only the already-compatible strict parent.
+On the conditional `c_2=c_5=0` silent-port slice, an exact independent-slope
+expansion finds no slope-field linear leakage separator within any of the `28/78`
+leakage-bearing three-row blocks or the `81` nine-row active-port blocks;
+two global modular spans agree but remain evidence only.
+Thus this is a proved source-integrability boundary, not a profile
+exclusion: the residual stays `97,215 / 79`, both keys remain open, and the
+next lemma must retain an off-kernel active-`T_0` coordinate while
+synchronizing its repair channels.  See the
+[`GLS78 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_PROPER_FACE_REPAIR_AND_SOURCE_INTEGRABILITY_BOUNDARY_THEOREM.md)
+and
+[`GLS78 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_PROPER_FACE_REPAIR_AND_SOURCE_INTEGRABILITY_BOUNDARY_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
