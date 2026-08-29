@@ -3598,6 +3598,25 @@ profiles or the conjecture.  See the
 [`GLS70 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_BINARY_TRIANGLE_PARENT_TAXONOMY_AND_PROPER_FACE_DECK_KERNEL_THEOREM.md)
 and
 [`GLS70 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_BINARY_TRIANGLE_PARENT_TAXONOMY_AND_PROPER_FACE_DECK_KERNEL_REVIEW_2026-08-28.md).
+The GLS71 exact characteristic-zero strict-parent theorem descends through
+both single-binary families.  In Family B, any outside `R_0` quotient gives
+two pure `P_3` equations with common old-probe shores.  An endpoint-complete
+six-edge classification forces incompatible common probe forms for their two
+target colours, excluding `r=0,1,2`.  In Family A at `r=0`, the two pure pair
+faces force a crossed normalization.  Three active outside selectors are
+incompatible with the two pure attachments.  With exactly two active ports,
+the missing-colour coefficient isolates a pure full physical four-deck; the
+two additional selector decks forced by either nonzero crossed activity term
+then kill all three possible suppliers of its pure coefficient.  Thus the
+complete Family-A `r=0` key and three Family-B keys are empty, and the
+six-deficient residual becomes `98,355 / 81`.  The surviving single-binary
+stratum is `2,580` profiles in four keys: Family A `r=1,2,3` and Family B
+`r=3`.  A common restricted edge-array control shows that the reduced two-E
+attachment system alone is compatible; it is not a six-label witness.  See
+the
+[`GLS71 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_SINGLE_BINARY_STRICT_PARENT_EDGE_CHART_AND_ATTACHMENT_ACTIVITY_THEOREM.md)
+and
+[`GLS71 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_SINGLE_BINARY_STRICT_PARENT_EDGE_CHART_AND_ATTACHMENT_ACTIVITY_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
