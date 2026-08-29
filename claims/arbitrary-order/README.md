@@ -3617,6 +3617,25 @@ the
 [`GLS71 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_SINGLE_BINARY_STRICT_PARENT_EDGE_CHART_AND_ATTACHMENT_ACTIVITY_THEOREM.md)
 and
 [`GLS71 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_SINGLE_BINARY_STRICT_PARENT_EDGE_CHART_AND_ATTACHMENT_ACTIVITY_REVIEW_2026-08-28.md).
+The GLS72 exact characteristic-zero refinement localizes the Family-A
+`r=1` key.  A whole-row activity lemma first justifies the selectors for the
+two-dimensional `T_0` row plane without assuming a pure activity covector.
+Its unique `T_0` port cannot coexist with three active selectors,
+and a one-silent source cannot be silent at either `R_0` port.  With the
+`T_0` port silent, determinant and tangent-space projections exclude every
+`alpha!=0` branch and the `alpha=0,ab!=0` branch.  The sole surviving cell
+has `alpha=a=b=0`: both target-leading spokes at the silent port vanish on
+its kernel.  One exact common physical edge array satisfies both `E`
+selectors, the two mixed `F/G` selectors, both pure attachments, the zero
+triangle deck, and the nonzero pure full deck simultaneously.  Its full
+deck is supplied by `W_25(e_(2,0),e_(5,0))`, which is transverse to and
+invisible on the `T_0` kernel.  Thus GLS72 proves a sharp localization and
+source-integrability obstruction, not a key exclusion; the residual remains
+`98,355 / 81`, with all four post-GLS71 single-binary keys still open.  See
+the
+[`GLS72 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_SINGLE_BINARY_ACTIVITY_LOCALIZATION_AND_TRANSVERSE_FULL_DECK_SHARPNESS_THEOREM.md)
+and
+[`GLS72 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_SINGLE_BINARY_ACTIVITY_LOCALIZATION_AND_TRANSVERSE_FULL_DECK_SHARPNESS_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
