@@ -3636,6 +3636,22 @@ the
 [`GLS72 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_SINGLE_BINARY_ACTIVITY_LOCALIZATION_AND_TRANSVERSE_FULL_DECK_SHARPNESS_THEOREM.md)
 and
 [`GLS72 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_SINGLE_BINARY_ACTIVITY_LOCALIZATION_AND_TRANSVERSE_FULL_DECK_SHARPNESS_REVIEW_2026-08-28.md).
+The GLS73 exact full-source nonextension theorem tests that transverse
+control against coefficients that the kernel-only parents do not see.  Keep
+the ten physical edges avoiding the silent `T_0` port fixed to the GLS72
+control, but replace all five incident edges arbitrarily and allow all unused
+probe-map coefficients.  The full `P_0Q_0` all-zero word then forces
+`c_34 xi=mu_0` for the transverse coefficient
+`xi=W_25(e_(2,0),e_(5,0))`, while a mixed `P_0Q_2` word has zero target and
+isolates `-A xi=0`.  The GLS72 off-port core therefore has no full GHZ-source
+completion by any incident-edge repair.  This is a genuine source-
+integrability obstruction, but not an exclusion of Family A `r=1`: a
+surviving source may change an off-port core edge and open a coupled
+cancelling channel.  No profile is removed and the residual remains
+`98,355 / 81`.  See the
+[`GLS73 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_OFF_PORT_CORE_FULL_SOURCE_NONEXTENSION_AND_COUPLED_CORRECTION_BOUNDARY_THEOREM.md)
+and
+[`GLS73 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_OFF_PORT_CORE_FULL_SOURCE_NONEXTENSION_AND_COUPLED_CORRECTION_BOUNDARY_REVIEW_2026-08-28.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported
