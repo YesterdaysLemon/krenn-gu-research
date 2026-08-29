@@ -3742,6 +3742,37 @@ synchronizing its repair channels.  See the
 [`GLS78 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_PROPER_FACE_REPAIR_AND_SOURCE_INTEGRABILITY_BOUNDARY_THEOREM.md)
 and
 [`GLS78 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_PROPER_FACE_REPAIR_AND_SOURCE_INTEGRABILITY_BOUNDARY_REVIEW_2026-08-28.md).
+The GLS79 exact successor upgrades GLS78's two modular global ranks.  On the
+complete `2,187`-row `c_5=0` family, the nonleak incidence graph has only
+size-one/two components for `r=2` and size-one/two/four components for
+`r=3`.  Exact stacked ranks over the independent-slope fields prove ambient
+linear nonseparation.  The sole nonzero-target all-zero word is an isolated
+rank-one component, so no linear combination of the remaining `2,186`
+zero-target rows can isolate the off-kernel coefficient `I_2500` from its
+repair monomials.  A local diagonal torus
+normalizes every nonzero slope, so there is no omitted nonzero exceptional
+fibre.  This closes the cross-block **linear** loophole only: rows outside the
+silent slice, nonlinear coefficient-ideal consequences, activity
+localization, and complete-source exclusion remain open; no profile is
+removed.  See the
+[`GLS79 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_SILENT_SLICE_LINEAR_NONSEPARATION_THEOREM.md)
+and
+[`GLS79 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_SILENT_SLICE_LINEAR_NONSEPARATION_REVIEW_2026-08-29.md).
+The GLS80 exact successor restores every source-row coordinate at every
+outside port and uses all `6,558` zero-target colour words.  The complete
+nonleak incidence decompositions have `2,915` components for `r=2` and
+`1,943` for `r=3`.  Exact stacked ranks are respectively
+`4,794=4,794` and `5,460=5,460`; in the `r=2` chart every leak-bearing
+component is already full-column-rank, while the `55` leak-component kernel
+dimensions in `r=3` are all killed by the leakage map.  Thus no universal
+scalar linear combination of the complete zero-target rows isolates
+`I_2500`, even after the silent slice is abandoned.  This does not cover
+new relations on specialized source-coordinate fibres, nonlinear
+coefficient-ideal consequences, activity localization, or complete-source
+exclusion.  Both keys and the residual remain unchanged.  See the
+[`GLS80 theorem`](MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_ALL_ACTIVE_LINEAR_NONSEPARATION_THEOREM.md)
+and
+[`GLS80 hostile review`](../../docs/audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_ALL_ACTIVE_LINEAR_NONSEPARATION_REVIEW_2026-08-29.md).
 The GLS59 characteristic-zero probe-exchange theorem gives the exact
 continuation on the zero-anchor `r=3` unique-nonrigid branch.  A nonzero joint
 kernel vector forces, for either old probe and every jointly supported

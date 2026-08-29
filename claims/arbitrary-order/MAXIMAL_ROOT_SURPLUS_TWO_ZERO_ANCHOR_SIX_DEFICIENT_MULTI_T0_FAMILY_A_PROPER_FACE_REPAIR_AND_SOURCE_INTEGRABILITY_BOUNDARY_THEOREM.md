@@ -419,6 +419,16 @@ specified block, with coefficients in that field.  Exceptional slope
 specializations, combinations across blocks, nonlinear syzygies, and other
 complete-source couplings remain available.
 
+**Successor update.** `GLS79` subsequently decomposes the entire `c_5=0`
+row family into exact nonleak-incidence components and proves global linear
+nonseparation in characteristic zero.  `GLS80` then restores every outside
+source-row coordinate and all `6,558` zero-target colour words and proves the
+same nonseparation for the complete universal scalar-linear row span.  Thus
+combinations across the blocks named here, rows with `c_5!=0`, and nonzero
+slope specializations are no longer open universal linear loopholes.
+Source-coordinate specializations, nonlinear syzygies, activity
+localization, and other complete-source couplings remain open.
+
 ## 6. Exact next obligation
 
 A load-bearing successor must do at least one of the following:

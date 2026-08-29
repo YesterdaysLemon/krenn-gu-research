@@ -267,6 +267,8 @@ flowchart TD
   GLS76["All-T_0 Family-B endpoint mixed coefficients<br/>PROVED P/Q-common endpoints EMPTY<br/>complete key EMPTY / residual 98,295 / 80"]
   GLS77["One-T_0 Family-A full-source kernel differences<br/>PROVED complete r=1 key EMPTY<br/>residual 97,215 / 79"]
   GLS78["Multi-T_0 Family-A parent attempt<br/>PROVED proper-face / repair boundary<br/>r=2,3 OPEN / residual unchanged"]
+  GLS79["Multi-T_0 Family-A silent slice<br/>PROVED complete linear nonseparation<br/>nonlinear / cross-slice coupling OPEN"]
+  GLS80["Multi-T_0 Family-A complete row span<br/>PROVED universal scalar-linear no-go<br/>specialized / nonlinear coupling OPEN"]
   GLQ2["Two-residual response-atlas descent<br/>PROVED conditional / sharp boundary"]
   GLD1["Same-graph defects and target selector<br/>PROVED boundary / conditional detector"]
   GLD2["Four-root adjacent-grade target selectors<br/>PROVED decomposition / single-shore no-go"]
@@ -698,7 +700,9 @@ flowchart TD
   GLS75 -->|P/Q-common outside endpoint integrability| GLS76
   GLS76 -->|Family-B key complete / remaining branches| GL
   GLS77 -->|multi-T_0 parent / repair-channel audit| GLS78
-  GLS78 -->|off-kernel T_0 repair synchronization| GL
+  GLS78 -->|complete silent-slice row span| GLS79
+  GLS79 -->|restore every outside source row| GLS80
+  GLS80 -->|specialized or nonlinear repair synchronization| GL
   GLS59 -->|coupled overlaps / promoted attachment open| GL
   GLS29 -->|r>=4 disjoint cover / other shores open| GL
   GLS14 -->|pure P4/P5 compression; Phi selector or Psi face defect open| GL
@@ -1207,6 +1211,8 @@ flowchart TD
 | `GLS76` | At a P-common outside endpoint, write `p_u=P_0U_u` and `q_u(t)=A_u(t)U_u+B_u(t)V_u` with each nonzero transverse functional `B_u`.  The complete family of mixed `P_0Q_t` coefficients, not the rank-deficient `P_0Q_0` row alone, splits in each central `S_0` row plane.  Direct two-kernel evaluation and one-slot transverse comparison force every physical pair deck to vanish on the two outside kernel lines and every one-port correction on its kernel line, including root-only and zero central `p` shores and every synchronized projective incidence.  Genuine full endpoint coboundaries remain but already satisfy those restrictions.  The GLS75 support-`3,2,0` cases transfer.  In support one, each inactive central label kills its remaining kernel row at the selected endpoint; both incident outside kernel edges vanish and the active label kills the only spoke using the opposite edge.  Probe exchange closes Q-common endpoints.  Thus the **complete Family-B `S_0^3T_0^3` key is EMPTY**, removing `60 / 1` and changing the six-deficient residual to **`98,295 / 80`**.  Family A `r=1,2,3`, all other branches, and global Krenn--Gu remain OPEN/UNRESOLVED. | [Endpoint mixed coefficient and complete key exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ENDPOINT_MIXED_COEFFICIENT_AND_COMPLETE_KEY_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ALL_T0_FAMILY_B_ENDPOINT_MIXED_COEFFICIENT_AND_COMPLETE_KEY_EXCLUSION_REVIEW_2026-08-28.md) |
 | `GLS77` | Return to the `GLS72` Family-A `r=1` survivor and write the silent `T_0` row plane as `F e_(5,0)^*+F h_5`.  Twenty-four literal zero-target coefficients factor the four entries of `r p^T+s m^T` against six row-plane coordinates.  A nonzero entry would leave only the two exceptional endpoint coefficients, both on `F h_5`, contradicting rank two; hence the outer-product matrix vanishes.  Five differences of complete slot-5 colour rows cancel every endpoint, off-kernel, and synchronized repair term before restriction.  The remaining five scalar identities and `r p^T+s m^T=0` have an elementary characteristic-zero rank-one/zero-product contradiction against both nonzero GHZ targets.  Thus the **complete Family-A `r=1` key is EMPTY**, removing `1,080 / 1` and changing the six-deficient residual to **`97,215 / 79`**.  Family A `r=2,3`, all other branches, and global Krenn--Gu remain OPEN/UNRESOLVED. | [Full-source kernel difference and complete key exclusion](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_FULL_SOURCE_KERNEL_DIFFERENCE_AND_COMPLETE_KEY_EXCLUSION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_ONE_T0_FULL_SOURCE_KERNEL_DIFFERENCE_AND_COMPLETE_KEY_EXCLUSION_REVIEW_2026-08-28.md) |
 | `GLS78` | Treat the remaining Family-A keys `S_0R_2R_1R_0T_0^2` and `S_0R_2R_1T_0^3` as one parent obligation.  The intersection of the three single-slot proper-face kernels is exactly `J_3 tensor J_4 tensor J_5`, with dimensions `4` and `8`; an explicit nonzero physical four-deck lies in that blind spot.  Exact common-edge controls satisfy all three kernel selector equations and both nonzero pure attachments in each key.  On the one-silent `r=2` chart, even the additional relation `C=rp+sm=0` has a characteristic-zero control.  Contracting one `T_0` port retains the complete repair family from every other uncontracted `T_0` port; contracting them all synchronizes target colours and collapses to the accepted strict parent.  On the conditional `c_2=c_5=0` slice, exact independent-slope expansion finds no slope-field linear leakage separator within the `28/78` leakage-bearing three-row blocks or any of the `81` nine-row active-port blocks; global modular spans agree but are evidence only.  This is a **PROVED SOURCE-INTEGRABILITY BOUNDARY**, not an exclusion: Family A `r=2,3` remain OPEN and the residual stays **`97,215 / 79`**. | [Multi-T0 proper-face repair and source-integrability boundary](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_PROPER_FACE_REPAIR_AND_SOURCE_INTEGRABILITY_BOUNDARY_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_PROPER_FACE_REPAIR_AND_SOURCE_INTEGRABILITY_BOUNDARY_REVIEW_2026-08-28.md) |
+| `GLS79` | On the complete `2,187`-row `c_5=0` family, split monomials by divisibility by the off-kernel physical coefficient `I_2500`.  The nonleak row-incidence graph decomposes into `1,512` components of size at most two for `r=2` and `972` components of size at most four for `r=3`.  Exact componentwise stacked ranks are `1,692=1,692` and `1,899=1,899`.  The sole nonzero-target all-zero word is an isolated rank-one component, so the same nonseparation holds on the `2,186` zero-target rows.  Local diagonal torus equivariance covers every nonzero slope specialization.  This is a **PROVED COMPLETE SILENT-SLICE LINEAR NOGO**, not an exclusion: nonlinear syzygies, rows with `c_5!=0`, activity localization, and arbitrary complete-source couplings remain OPEN; the residual stays **`97,215 / 79`**. | [Complete silent-slice linear nonseparation](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_SILENT_SLICE_LINEAR_NONSEPARATION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_SILENT_SLICE_LINEAR_NONSEPARATION_REVIEW_2026-08-29.md) |
+| `GLS80` | Restore every `P_a,Q_a` row-plane coordinate at every outside port and remove exactly the three GHZ target words.  On all `6,558` zero-target rows, the `RTT` and `TTT` nonleak incidence graphs have `2,915` and `1,943` components.  Exact componentwise ranks are `4,794=4,794` and `5,460=5,460`; every `RTT` leak component has zero kernel, and all `55` `TTT` leak-component kernel dimensions are killed by the leakage map.  Nonzero slopes are one local-torus orbit.  This is a **PROVED COMPLETE UNIVERSAL SCALAR-LINEAR NOGO**, not an exclusion: source-coordinate specializations, nonlinear ideal consequences, activity localization, and arbitrary complete-source couplings remain OPEN; the residual stays **`97,215 / 79`**. | [Complete all-active linear nonseparation](../claims/arbitrary-order/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_ALL_ACTIVE_LINEAR_NONSEPARATION_THEOREM.md), [hostile review](audits/MAXIMAL_ROOT_SURPLUS_TWO_ZERO_ANCHOR_SIX_DEFICIENT_MULTI_T0_FAMILY_A_COMPLETE_ALL_ACTIVE_LINEAR_NONSEPARATION_REVIEW_2026-08-29.md) |
 
 ## Typed-edge table
 
@@ -1753,7 +1759,9 @@ flowchart TD
 | `GLS75` | remaining all-`T_0` Family-B endpoint obligation | `GLS76` | Resolve every P-common and Q-common outside endpoint kernel using additional mixed complete coefficients with exact source-pair provenance.  The `P_0Q_0` row alone has rank drops for two- and one-active opposite shores, so nonendpoint injectivity may not be reused. |
 | `GLS76` | remaining single-binary / source-integrability obligations | `GL` | The Family-B single-binary family is empty.  GLS77 independently closes Family A `r=1`; continue its `r=2,3` keys separately, and retain every pure/zero-triangle, five-deficient, three-/four-deficient, unique-nonrigid, attachment, anchor, arbitrary-root, and local-to-global obligation. |
 | `GLS77` | multi-`T_0` Family-A parent attempt | `GLS78` | Treat the `r=2,3` keys through their distinct row-plane configurations.  Audit the common proper-face kernel, test all selector/attachment equations against exact controls, and enumerate which complete-source repair channels survive every partial `T_0` kernel contraction. |
-| `GLS78` | active-`T_0` off-kernel repair synchronization | `GL` | Retain an off-kernel coordinate at an active `T_0` port and couple the surviving repairs from every other `T_0` port through the same physical decks, or prove a new exhaustive activity localization that supplies an equivalent separating coefficient.  Kernel-only selectors and the relation `C=0` are insufficient.  Every pure/zero-triangle, five-deficient, three-/four-deficient, unique-nonrigid, attachment, anchor, arbitrary-root, and local-to-global obligation also remains separate. |
+| `GLS78` | complete silent-slice linear audit | `GLS79` | Determine whether combinations across all active-port blocks can isolate an off-kernel `T_0` coordinate after every repair channel is retained; preserve independent slopes and distinguish exact characteristic-zero rank from modular controls. |
+| `GLS79` | restore the complete all-active row span | `GLS80` | Retain every `P_a,Q_a` coordinate at every outside port and audit all `6,558` zero-target colour words, with all three diagonal target words excluded and independent nonzero slopes preserved. |
+| `GLS80` | specialized or nonlinear active-`T_0` repair synchronization | `GL` | No universal scalar linear combination of the complete zero-target row family isolates `I_2500`.  Prove a nonlinear saturated coefficient-ideal consequence, an exhaustive source-coordinate/activity localization with a legal specialized relation, or an exact complete-source control.  Every pure/zero-triangle, five-deficient, three-/four-deficient, unique-nonrigid, attachment, anchor, arbitrary-root, and local-to-global obligation also remains separate. |
 | `GLS56` | unique-nonrigid old-probe exchange and overlap | `GLS59` | At zero anchor, kill every complete matching by the chosen old probe rather than by the nonrigid auxiliary label.  Uniformize the resulting pointwise pure shores on each old-probe space, overlap the two three-label stars among five rigid labels, and contract the resulting second deficient label together with the fully supported nonrigid kernel. |
 | `GLS59` | remaining unique-nonrigid mixed-equation/attachment successor | `GL` | Couple the mono/binary descents across all overlap labels and coordinate-plane kernel choices, or transport a forced pure probe block into one named promoted target quotient with nonzero response and complete nuisance survival.  One overlap and the accepted three-colour six-vertex theorem are insufficient.  Alternate receiver, synchronization, activity, anchors, arbitrary-root source coverage, all-rigid branches, and nonzero anchor remain separate. |
 
@@ -2623,7 +2631,7 @@ branch. They are not an instruction to begin all of them at once.
    port.  Contracting all of them removes those repairs only by
    synchronizing the two target colours and collapsing to the already-known
    strict parent.  On the conditional `c_2=c_5=0` slice, exact
-   independent-slope expansion of the active-port rows finds no constant
+   independent-slope expansion of the active-port rows finds no
    slope-field linear leakage separator within the `28/78` relevant three-row blocks or any of the
    `81` nine-row blocks; the two global
    modular row spans agree but are evidence only.  Thus the direct
@@ -2631,6 +2639,33 @@ branch. They are not an instruction to begin all of them at once.
    proved insufficient, no profile is removed, and the residual remains
    `97,215 / 79`.  The next lemma must retain an off-kernel active-`T_0`
    coordinate and synchronize its complete-source repairs.
+
+   `GLS79` closes the remaining cross-block linear loophole on that silent
+   slice.  Among all `2,187` literal `c_5=0` rows, the nonleak incidence
+   components have size at most two in the `r=2` chart and at most four in
+   the `r=3` chart.  Exact ambient stacked-rank calculations give
+   `1,692=1,692` and `1,899=1,899`.  The sole nonzero-target all-zero row is
+   an isolated rank-one component, so every linear combination of the other
+   `2,186` zero-target rows that cancels the repair monomials also cancels
+   every term containing the off-kernel coefficient `I_2500`.  A local
+   diagonal torus transports the calculation to every nonzero slope
+   specialization.  This is a complete
+   linear no-go only: nonlinear coefficient-ideal consequences, rows with
+   `c_5!=0`, activity localization, and complete-source exclusion remain
+   open.  No profile is removed and the residual remains `97,215 / 79`.
+
+   `GLS80` then restores every outside source-row coordinate and all colour
+   slices.  After removing exactly the three diagonal GHZ target words, the
+   `6,558` zero-target rows decompose into `2,915` components in the `r=2`
+   chart and `1,943` in the `r=3` chart.  Their exact stacked ranks are
+   `4,794=4,794` and `5,460=5,460`.  Every `r=2` leak-bearing component is
+   already full-column-rank; all `55` remaining leak-component kernel
+   dimensions for `r=3` are killed by the leakage map.  Hence no universal
+   scalar linear combination of the complete zero-target family isolates
+   `I_2500`.  This does not cover relations created by specializing source
+   coordinates, nonlinear coefficient-ideal consequences, or an exhaustive
+   activity localization.  Both keys remain open and the residual remains
+   `97,215 / 79`.
 
    `GLS59` gives the corresponding exact continuation on the `r=3`
    unique-nonrigid branch.  At zero anchor, contract every slot except one old
