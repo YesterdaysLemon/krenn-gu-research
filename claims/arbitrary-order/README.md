@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD100 equal-leaf checkpoint
+## GLD83--GLD101 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -141,6 +141,24 @@ the `C_8=1` incidence bridge and GLD95 then retain the physical exclusion on
 chart, the GLD83 Fitting pullback, other charts/components/source branches,
 other roots/orders, and global resolution remain open.  The global conjecture
 remains **UNRESOLVED**.
+
+[`GLD101`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_SIX_SELECTOR_NORM_COVER_REDUCTION.md)
+is a separate exact scoped characteristic-zero `a=0` norm-cover reduction on
+the normalized GLD88/F88 equal-leaf H4 chart.  On `V(a,Q6) intersect
+D(H2*Delta)`, the six
+selected seven-minors vanish at every rank-at-most-six syndrome point.  If
+`(B,C)!=(0,0)`, their exact quotient-field coefficient matrix has a
+nontrivial kernel, so the primitive degree-548 six-selector norm vanishes and
+the point lies in its eight-factor support
+`(p-1)*p*(p^2+1)*P*H2*R4*R8*R110`.  This is a one-way necessary support cover,
+not a conclusion that `B=C=0`, a closure of any retained factor, a selector
+or norm converse, or physical emptiness.  `P=0` and `H2=0` are outside the
+declared `D(H2*Delta)` open; the other factor supports remain unclosed.  The
+result is not arbitrary in `a` and does not close the full `E31=0` wall,
+`Delta=0`, the Fitting pullback, other charts/components/source branches, or
+the wider physical and global obligations.  The
+[hostile review](../../docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_SIX_SELECTOR_NORM_COVER_REDUCTION_REVIEW_2026-08-30.md)
+passes the owner theorem without changing any of those boundaries.
 
 The [`GLD98-membership-pilot`](explore_four_root_torus_star_equal_leaf_h4_q6_modular_membership_census.py)
 is an **exploratory instrument, not a theorem node**.  It independently
