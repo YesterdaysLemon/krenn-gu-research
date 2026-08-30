@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD95 equal-leaf checkpoint
+## GLD83--GLD99 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -95,10 +95,12 @@ now gives an R31-free generic continuation into that finite closure.  On
 witness, and the GLD88 common-kernel origin force the offsets `B=C=0`; GLD95
 then excludes the resulting written `F88` incidence on `D(Omega)`.  The
 polynomial adjugate identity uses no inverse of `R31`, so `R31=0` is included
-where the remaining gates are nonzero.  The `E31=0`, `g0=0`, `H2=0`,
-`Delta=0`, arbitrary H4 outside `F88`, pulled-back Fitting, and other
+where the remaining gates are nonzero.  The `E31=0`, `g0=0`, `Delta=0`,
+arbitrary H4 outside `F88`, pulled-back Fitting, and other
 chart/component/source obligations remain open; no global status change is
-claimed.
+claimed.  GLD99 now handles the normalized `H2=Q6=0` degree-drop branch on
+`D(Delta)`, so the remaining GLD96 residual is `E31=0`, `g0=0`, or
+`Delta=0`, together with the other listed obligations.
 
 [`GLD97`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md)
 is the required parent-level follow-up on the complete normalized p=2 fibre.
@@ -111,6 +113,19 @@ F88 endpoint on `D(Omega Delta_2)`.  Exact primary and independent Bareiss
 replays agree on all six polynomial hashes and the pinned basis hash.  This
 does not extend to arbitrary `p`, the GLD83 Fitting pullback, other charts or
 components, or global resolution; the global status remains **UNRESOLVED**.
+
+[`GLD99`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_H2_DEGREE_DROP_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md)
+closes the full normalized `H2=Q6=0` degree-drop branch of the GLD88/F88
+offset chart on `D(Delta)`.  Both quadratic `Q(i)` branches are recomputed
+with symbolic `a`, and the six selected seven-minors all have total `BC`
+degree `3`; `D0,D2` retain genuine `C^2` terms.  The exact multiplier system
+is `158 x 144` of rank `140`, while adjoining either `B` or `C` target keeps
+rank `140` and has zero residual, forcing `B=C=0`.  Branch-specific support,
+generator, and certificate hashes are pinned, with no `R31/E31/g0`
+localization; the `d0` component is excluded by `Delta`, and GLD95 remains a
+separate endpoint.  This is not arbitrary H4/Q6 closure, `Delta=0`, the
+GLD83 Fitting pullback, other charts/components/source branches, or global
+resolution; the global status remains **UNRESOLVED**.
 
 The [`GLD98-membership-pilot`](explore_four_root_torus_star_equal_leaf_h4_q6_modular_membership_census.py)
 is an **exploratory instrument, not a theorem node**.  It independently
