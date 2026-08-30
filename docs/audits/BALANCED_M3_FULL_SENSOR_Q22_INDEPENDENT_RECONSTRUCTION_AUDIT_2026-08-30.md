@@ -29,8 +29,8 @@ q=`20/21/22`; no derived Kestrel output or failure ledger is an input.
 
 The two durable, independently written scripts are:
 
-- [`audit_balanced_m3_full_sensor_q22_independent_reconstruction.py`](../../claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py), SHA-256 `fa33ab377a23a4d1d5ed9e89e15f26b83521f78acacbb0af28123f455c7de6f7`;
-- [`audit_balanced_m3_full_sensor_q20_exact_fixtures.py`](../../claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py), SHA-256 `11f61f4d7a370e44090b6ec2afff874b01bb7acbb078e5dfbb51f236510cf6a1`.
+- [`audit_balanced_m3_full_sensor_q22_independent_reconstruction.py`](../../claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py), SHA-256 `f3bbf3d257081a2b071755102414119423c6762b05cdbd94698c691b6b449bbf`;
+- [`audit_balanced_m3_full_sensor_q20_exact_fixtures.py`](../../claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py), SHA-256 `c7e8e424dea2a4a2f1fc7f5e2fd531b70d5a386648ca668a1005d43103ca65c8`.
 
 The first imports only the standard library and NumPy, and no repository or
 Kestrel module.  The second imports only the standard library and SymPy, and
@@ -47,7 +47,7 @@ checked the base ranks, and explained every rank drop by the implemented
 fixed-side, three-point, two-three, or complementary-ruling mechanisms.
 It also includes active-structural as well as active-active ruling logic.
 
-The exact replay output was:
+The bounded finite-field replay output was:
 
 ```text
 records                         547
@@ -76,7 +76,7 @@ index  Delta vector       edge ranks (01,02,03,12,13,23)  cells  option shape
 431    (3,3,3,0)           (1,1,3,1,3,3)                   21     (1,1,1,36)
 ```
 
-The nine equality strata recorded by the independent detail pass are:
+The no-import audit extracts and asserts these nine equality strata directly:
 
 ```text
 record  (Delta,c_rank)  edge-rank vector              description
@@ -95,7 +95,9 @@ Under the declared vertex symmetries, `8` and `36` form one orbit, the two
 single-line orientations in record `50` form one orbit, and the remaining
 five rows are singleton orbits: seven declared orbits in total.  These are
 finite ledger strata, not a claim that every rank-degenerate component is
-classified.
+classified.  The script verifies both nontrivial orbit identifications by the
+explicit vertex swap `2 <-> 3`, rather than trusting a separately prepared
+orbit label.
 
 ### Corrected option census
 
@@ -176,17 +178,20 @@ witness equations.
 From the repository root, the bounded runs were:
 
 ```powershell
-python tools/research/run_bounded.py --run-id q22-independent-reconstruction-durable-20260830 --timeout-seconds 240 --memory-mb 4096 --run-root .research-runs --cwd . -- python claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py
-python tools/research/run_bounded.py --run-id q20-exact-fixture-b-all-audit-durable-20260830 --timeout-seconds 240 --memory-mb 4096 --run-root .research-runs --cwd . -- python claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py
+python tools/research/run_bounded.py --run-id kestrel-s3-independent-q22-audit-review-v2 --timeout-seconds 240 --memory-mb 4096 --run-root .research-runs --cwd . -- python claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py
+python tools/research/run_bounded.py --run-id kestrel-s3-independent-exact-fixture-audit-v2 --timeout-seconds 60 --memory-mb 4096 --run-root .research-runs --cwd . -- python claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py
 python -m py_compile claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py
 python -m ruff check --output-format concise claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py
 ```
 
 Both bounded runs returned exit code zero and `PASS`.  The q<=22 run took
-147.796 seconds (runner PID 19024, child PID 43212); the exact fixture run
-took 3.591 seconds (runner PID 34512, child PID 22332).  All four processes
-exited before this audit package was finalized.  Other workers observed on
-the host were not stopped or modified.
+113.205 seconds (runner PID 39308, child PID 4572); its `run.json` has
+SHA-256 `2acab9640e3abeb8c208291b6e3385af015e0ab6b25b0cefef9aed1bd4bf1875`.
+The exact fixture run took 4.037 seconds (runner PID 18776, child PID 36556);
+its `run.json` has SHA-256
+`8ad8efe7c8797aba7e40f9676f63e0694b082c7040f7d7c4288eb532ff39e662`.
+All four processes exited before this audit package was finalized.  Other
+workers observed on the host were not stopped or modified.
 
 The existing parent package remains the owner of the analytic claim:
 [`BALANCED_M3_FULL_SENSOR_PARENT_GATE_FAILURE_FINITE_COVER_THEOREM.md`](../../claims/arbitrary-order/BALANCED_M3_FULL_SENSOR_PARENT_GATE_FAILURE_FINITE_COVER_THEOREM.md).

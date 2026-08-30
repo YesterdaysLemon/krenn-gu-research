@@ -162,6 +162,18 @@ EXPECTED_COMPENSATION = {
     "C_two_one_three_synchronized_plus_line": (9, 2),
     "D_injective_three_synchronized_plus_line": (9, 2),
 }
+EXPECTED_SENSOR_MINOR_SHA256 = {
+    "A_generic": "3ead1685d01721b5a10802af122bc7d2fe36f8851ea151c876590dd17a5a1ac4",
+    "A_one_collinear_cross_incompatible": "ed7a0d8198264db11ebbd544fddcb0b20f25c08daa8e506e7f114b9d5a175681",
+    "A_one_collinear_cross_compatible": "47286041651b3a86d0452551ead02f9634582c1cb06383a70f45f896ca6997ad",
+    "A_both_collinear_cross_compatible": "cffa66a9b1e3408a7d65e91ff7e8ed369fb3a6ab791cd35e7f810a6a7eb0410e",
+    "B_generic": "9619f64f21eeae3245cd86263dc884bbe01484e5b404deb64a946db1081a2f8e",
+    "B_one_collinear": "e099454c9f7df383f2dea9ce3eecdd3f33fecd9ff573479c61923f428d28ca04",
+    "B_both_collinear_cross_incompatible": "da72695a6529dd2589b65e013d9c698ebce87888e3249aa4b2bdfd310c96e353",
+    "B_both_collinear_cross_compatible": "6bb7429998d942f54dec423d4d9d424a1b384753045c98689619983e5cd191a5",
+    "C_two_one_three_synchronized_plus_line": "a2544a72e5d82098cccc55fbebf05a0e35e7bc09d5f3ab78b3bf13a6dc03992c",
+    "D_injective_three_synchronized_plus_line": "4f4814b13b7b512f763f1da2a2cd36fbed17bea6ca5e884b529ef2e58e57a58d",
+}
 
 
 def parity_subsets(vertex_count: int) -> tuple[tuple[int, ...], ...]:
@@ -379,6 +391,10 @@ def audit_q20_fixtures() -> dict[str, object]:
     assert results["B_both_collinear_cross_compatible"]["compensated_q"] == 20
     assert results["C_two_one_three_synchronized_plus_line"]["compensated_q"] == 20
     assert results["D_injective_three_synchronized_plus_line"]["compensated_q"] == 20
+    assert {
+        name: result["full_sensor"]["minor_sha256"]
+        for name, result in results.items()
+    } == EXPECTED_SENSOR_MINOR_SHA256
     return results
 
 

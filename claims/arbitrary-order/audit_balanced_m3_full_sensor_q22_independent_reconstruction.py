@@ -53,6 +53,17 @@ EXPECTED_NORMAL_TOTAL = {
 }
 EXPECTED_PRODUCT_SUM = 1_994_316
 EXPECTED_Q20_INDICES = (50, 142)
+EXPECTED_EQUALITY_SIGNATURES = (
+    (8, 9, 2, "subset-plane", (1, 1, 2, 1, 2, 2), ()),
+    (36, 9, 2, "subset-plane", (1, 2, 1, 2, 1, 2), ()),
+    (50, 3, 0, "subset-plane", (1, 3, 3, 3, 3, 4), ()),
+    (50, 3, 2, "subset-plane", (1, 2, 3, 2, 3, 4), ()),
+    (50, 3, 2, "subset-plane", (1, 3, 2, 3, 2, 4), ()),
+    (50, 3, 4, "subset-plane", (1, 2, 2, 2, 2, 4), ()),
+    (50, 3, 5, "subset-plane+crossratio", (1, 2, 2, 2, 2, 3), ((2, 3),)),
+    (142, 0, 0, "subset-plane", (2, 3, 3, 4, 4, 4), ()),
+    (431, 9, 2, "subset-plane", (1, 1, 2, 1, 2, 2), ()),
+)
 
 
 def finite_inverse(value: int) -> int:
@@ -515,6 +526,245 @@ def crossratio_candidate_cost(
     return best
 
 
+def equality_descriptors(
+    record: dict[str, object], record_index: int
+) -> list[dict[str, object]]:
+    """Independently reconstruct every value-20 event stratum in one record."""
+
+    partitions = tuple(tuple(values) for values in record["partitions"])
+    masks = tuple(tuple(values) for values in record["support_masks_by_vertex_block"])
+    options_by_vertex = [
+        options(
+            masks[vertex],
+            partitions[vertex],
+            1009 * (record_index + 1) + 113 * vertex,
+        )
+        for vertex in VERTICES
+    ]
+    shape = tuple(len(values) for values in options_by_vertex)
+    matrices = {
+        pair: edge_matrix(options_by_vertex[pair[0]], options_by_vertex[pair[1]])
+        for pair in PAIRS
+    }
+    delta = sum(record["delta_by_vertex"])
+    cost = np.full(shape, delta, dtype=np.int16)
+    for vertex in VERTICES:
+        cost += np.array(
+            [option["codim"] for option in options_by_vertex[vertex]],
+            dtype=np.int16,
+        ).reshape(
+            tuple(
+                len(options_by_vertex[vertex]) if coordinate == vertex else 1
+                for coordinate in VERTICES
+            )
+        )
+    for (left, right), matrix in matrices.items():
+        cost += matrix.reshape(
+            tuple(
+                matrix.shape[0]
+                if coordinate == left
+                else matrix.shape[1]
+                if coordinate == right
+                else 1
+                for coordinate in VERTICES
+            )
+        )
+
+    def describe(
+        indices: tuple[int, int, int, int],
+        kind: str,
+        cross_classes: tuple[tuple[int, ...], ...] = (),
+    ) -> dict[str, object]:
+        selected_options = tuple(
+            options_by_vertex[vertex][indices[vertex]] for vertex in VERTICES
+        )
+        ranks = [
+            int(matrices[pair][indices[pair[0]], indices[pair[1]]])
+            for pair in PAIRS
+        ]
+        cross_cost = sum(len(block) - 1 for block in cross_classes)
+        for block in cross_classes:
+            for left, right in itertools.combinations(block, 2):
+                pair_index = PAIRS.index(tuple(sorted((left, right))))
+                if ranks[pair_index] == 4:
+                    ranks[pair_index] -= 1
+        plane_codimension = sum(int(option["codim"]) for option in selected_options)
+        c_rank = plane_codimension + cross_cost
+        assert delta + c_rank + sum(ranks) == 20
+        return {
+            "record_index": record_index,
+            "type": kind,
+            "Delta": delta,
+            "c_rank": c_rank,
+            "effective_ranks_01_02_03_12_13_23": tuple(ranks),
+            "crossratio_classes": cross_classes,
+            "line_vertices": tuple(
+                vertex
+                for vertex, option in enumerate(selected_options)
+                if option["selected"]
+            ),
+            "option_indices": indices,
+        }
+
+    descriptors = [
+        describe(tuple(int(value) for value in indices), "subset-plane")
+        for indices in np.argwhere(cost == 20)
+    ]
+    all_indices = tuple(np.arange(size) for size in shape)
+    eligible = tuple(
+        np.array(
+            [
+                index
+                for index, option in enumerate(options_by_vertex[vertex])
+                if option["crossratio"]
+            ],
+            dtype=int,
+        )
+        for vertex in VERTICES
+    )
+    for equivalence in unique_set_partitions(VERTICES):
+        nontrivial = tuple(block for block in equivalence if len(block) > 1)
+        if not nontrivial:
+            continue
+        involved = {vertex for block in nontrivial for vertex in block}
+        if any(len(eligible[vertex]) == 0 for vertex in involved):
+            continue
+        indices_by_vertex = tuple(
+            eligible[vertex] if vertex in involved else all_indices[vertex]
+            for vertex in VERTICES
+        )
+        candidate = cost[np.ix_(*indices_by_vertex)].astype(np.int16, copy=True)
+        candidate += sum(len(block) - 1 for block in nontrivial)
+        candidate_shape = tuple(len(indices) for indices in indices_by_vertex)
+        for block in nontrivial:
+            for left, right in itertools.combinations(block, 2):
+                pair = tuple(sorted((left, right)))
+                restricted = matrices[pair][
+                    np.ix_(indices_by_vertex[left], indices_by_vertex[right])
+                ]
+                candidate -= (restricted == 4).astype(np.int16).reshape(
+                    tuple(
+                        restricted.shape[0]
+                        if coordinate == pair[0]
+                        else restricted.shape[1]
+                        if coordinate == pair[1]
+                        else 1
+                        for coordinate in VERTICES
+                    )
+                )
+        for local in np.argwhere(candidate == 20):
+            local_indices = tuple(int(value) for value in local)
+            global_indices = tuple(
+                int(indices_by_vertex[vertex][local_indices[vertex]])
+                for vertex in VERTICES
+            )
+            assert len(global_indices) == len(candidate_shape)
+            descriptors.append(
+                describe(
+                    global_indices,
+                    "subset-plane+crossratio",
+                    nontrivial,
+                )
+            )
+    return sorted(
+        descriptors,
+        key=lambda item: (
+            item["record_index"],
+            item["c_rank"],
+            item["type"],
+            item["effective_ranks_01_02_03_12_13_23"],
+            item["crossratio_classes"],
+        ),
+    )
+
+
+def equality_signature(descriptor: dict[str, object]):
+    return (
+        descriptor["record_index"],
+        descriptor["Delta"],
+        descriptor["c_rank"],
+        descriptor["type"],
+        descriptor["effective_ranks_01_02_03_12_13_23"],
+        descriptor["crossratio_classes"],
+    )
+
+
+def permute_vertex_record(
+    record: dict[str, object], new_to_old: tuple[int, int, int, int]
+) -> dict[str, object]:
+    """Relabel common vertices while leaving the four chart labels fixed."""
+
+    old_to_new = {old: new for new, old in enumerate(new_to_old)}
+    old_ranks = {
+        pair: int(rank)
+        for pair, rank in zip(
+            PAIRS, record["ranks_01_02_03_12_13_23"], strict=True
+        )
+    }
+    return {
+        "selectors": [
+            [old_to_new[int(value)] for value in selector]
+            for selector in record["selectors"]
+        ],
+        "partitions": [record["partitions"][old] for old in new_to_old],
+        "support_masks_by_vertex_block": [
+            record["support_masks_by_vertex_block"][old] for old in new_to_old
+        ],
+        "delta_by_vertex": [record["delta_by_vertex"][old] for old in new_to_old],
+        "ranks_01_02_03_12_13_23": [
+            old_ranks[tuple(sorted((new_to_old[left], new_to_old[right])))]
+            for left, right in PAIRS
+        ],
+    }
+
+
+def vertex_record_projection(record: dict[str, object]) -> dict[str, object]:
+    return {
+        key: record[key]
+        for key in (
+            "selectors",
+            "partitions",
+            "support_masks_by_vertex_block",
+            "delta_by_vertex",
+            "ranks_01_02_03_12_13_23",
+        )
+    }
+
+
+def audit_declared_equality_symmetries(
+    data: dict[str, object], descriptors: list[dict[str, object]]
+) -> dict[str, object]:
+    swap_two_three = (0, 1, 3, 2)
+    records = data["records"]
+    assert permute_vertex_record(records[8], swap_two_three) == vertex_record_projection(
+        records[36]
+    )
+    assert permute_vertex_record(records[50], swap_two_three) == vertex_record_projection(
+        records[50]
+    )
+    record_8_line = next(
+        item["line_vertices"] for item in descriptors if item["record_index"] == 8
+    )
+    record_36_line = next(
+        item["line_vertices"] for item in descriptors if item["record_index"] == 36
+    )
+    assert record_8_line == (3,) and record_36_line == (2,)
+    record_50_one_lines = {
+        item["line_vertices"]
+        for item in descriptors
+        if item["record_index"] == 50 and item["c_rank"] == 2
+    }
+    assert record_50_one_lines == {(2,), (3,)}
+    declared_orbit_count = len(descriptors) - 2
+    assert len(descriptors) == 9 and declared_orbit_count == 7
+    return {
+        "record_8_to_36_vertex_permutation": swap_two_three,
+        "record_50_one_line_vertex_permutation": swap_two_three,
+        "equality_strata": len(descriptors),
+        "declared_orbits": declared_orbit_count,
+    }
+
+
 def screen_record(
     record: dict[str, object], index: int
 ) -> tuple[tuple[int, ...], int, int, int, list[list[dict[str, object]]]]:
@@ -635,6 +885,7 @@ def run(path: Path, progress: bool) -> dict[str, object]:
     best_hist: Counter[int] = Counter()
     best_records = []
     q20_records = []
+    equality_components = []
     census: dict[str, object] = {
         "line_options_by_kind": Counter(),
         "line_options_by_q": defaultdict(Counter),
@@ -656,6 +907,7 @@ def run(path: Path, progress: bool) -> dict[str, object]:
         best_hist[best] += 1
         update_option_census(census, record, options_by_vertex)
         if best == 20:
+            equality_components.extend(equality_descriptors(record, index))
             best_records.append(
                 {
                     "index": index,
@@ -704,8 +956,15 @@ def run(path: Path, progress: bool) -> dict[str, object]:
     assert dict(census["line_options_by_kind"]) == EXPECTED_LINE_OPTIONS_BY_KIND
     assert dict(census["normal_total"]) == EXPECTED_NORMAL_TOTAL
     assert census["vertex_product_sum"] == EXPECTED_PRODUCT_SUM
+    equality_signatures = tuple(
+        equality_signature(descriptor) for descriptor in equality_components
+    )
+    assert equality_signatures == EXPECTED_EQUALITY_SIGNATURES
+    equality_symmetry_audit = audit_declared_equality_symmetries(
+        data, equality_components
+    )
     return {
-        "status": "independent_exact_q22_reconstruction",
+        "status": "independent_finite_field_q22_reconstruction",
         "global_conjecture": "UNRESOLVED",
         "input": {
             "path": path.relative_to(Path(__file__).parents[2]).as_posix(),
@@ -721,6 +980,8 @@ def run(path: Path, progress: bool) -> dict[str, object]:
         "best_hist": dict(sorted(best_hist.items())),
         "best_min_records": best_records,
         "q20_records": q20_records,
+        "equality_components": equality_components,
+        "equality_symmetry_audit": equality_symmetry_audit,
         "option_census": {
             "line_options_total": int(sum(census["line_options_by_kind"].values())),
             "line_options_by_kind": dict(sorted(census["line_options_by_kind"].items())),
