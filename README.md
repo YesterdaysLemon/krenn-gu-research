@@ -79,8 +79,9 @@ open, and the global status is still **UNRESOLVED**.
 then closes an R31-free generic localization on
 `D(E31*H2*g0*Delta)` into the GLD95 `F88` theorem.  Its polynomial bordered-
 determinant identity uses no inverse of `R31`, so `R31=0` is included wherever
-the remaining gates are nonzero; the named `E31/g0/H2/Delta` exceptional
-strata remain open.
+the remaining gates are nonzero.  The normalized `H2=Q6=0` degree-drop branch
+is now handled separately by GLD99, leaving the `E31/g0/Delta` exceptional
+strata open.
 [`GLD97`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md)
 now gives a parent-level exact p=2 fibre closure: for symbolic `a` and
 arbitrary offset coordinates `B,C`, four bordered and two direct seven-minors
@@ -90,6 +91,18 @@ origin without inverting `R31`, `E31`, or `g0`, and GLD95 excludes the
 resulting incidence on `D(Omega Delta_2)`.  This closes only the normalized
 p=2 H4/Q6 fibre; arbitrary `p`, the pulled-back Fitting lane, other charts and
 components, and the global conjecture remain open.
+
+[`GLD99`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_H2_DEGREE_DROP_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md)
+now closes the normalized `H2=Q6=0` degree-drop branch in the GLD88/F88
+offset chart on `D(Delta)`.  Both `Q(i)` branches are recomputed with
+symbolic `a`; all six selected minor payloads have total `BC` degree `3`,
+with genuine `C^2` terms in `D0,D2`, and the exact `158 x 144` system has
+rank `140` with both target augmentations still rank `140`.  The branch-
+specific payload and certificate hashes are pinned, no `R31/E31/g0`
+localization is used, and GLD95 remains the separate endpoint.  This does not
+cover arbitrary H4/Q6 points outside F88, `Delta=0`, the pulled-back Fitting
+lane, other charts/components/source branches, or global resolution; the
+global status remains **UNRESOLVED**.
 
 The newest zero-anchor, root-order-three, all-six-rigid source-integrability
 line is `GLS61`--`GLS80`.  `GLS66` closes the exactly-two-deficient branch;
