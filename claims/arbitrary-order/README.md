@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD99 equal-leaf checkpoint
+## GLD83--GLD100 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -95,12 +95,11 @@ now gives an R31-free generic continuation into that finite closure.  On
 witness, and the GLD88 common-kernel origin force the offsets `B=C=0`; GLD95
 then excludes the resulting written `F88` incidence on `D(Omega)`.  The
 polynomial adjugate identity uses no inverse of `R31`, so `R31=0` is included
-where the remaining gates are nonzero.  The `E31=0`, `g0=0`, `Delta=0`,
-arbitrary H4 outside `F88`, pulled-back Fitting, and other
-chart/component/source obligations remain open; no global status change is
-claimed.  GLD99 now handles the normalized `H2=Q6=0` degree-drop branch on
-`D(Delta)`, so the remaining GLD96 residual is `E31=0`, `g0=0`, or
-`Delta=0`, together with the other listed obligations.
+where the remaining gates are nonzero.  GLD99 handles the normalized
+`H2=Q6=0` degree-drop branch on `D(Delta)`, and GLD100 removes the normalized
+`g0` gate on the remaining `H2`-open.  Thus the combined normalized route
+retains only `E31=0` and `Delta=0` before the physical `Omega` open and the
+other listed obligations; no global status change is claimed.
 
 [`GLD97`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md)
 is the required parent-level follow-up on the complete normalized p=2 fibre.
@@ -126,6 +125,22 @@ localization; the `d0` component is excluded by `Delta`, and GLD95 remains a
 separate endpoint.  This is not arbitrary H4/Q6 closure, `Delta=0`, the
 GLD83 Fitting pullback, other charts/components/source branches, or global
 resolution; the global status remains **UNRESOLVED**.
+
+[`GLD100`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_G0_GATE_REMOVAL_THEOREM.md)
+is the parent-level synthesis of GLD96, GLD99, and the GLD95 `F88` endpoint,
+not a third sibling refinement.  On the normalized `D(E31*H2*Delta)` open,
+GLD96 first forces `B=0`.  The source-recomputed pair-resultant screen gives
+the exact necessary eight-factor cover
+`p(p-1)(p^2+1)(p^2-2p+2)P H2 A4 C4`; strict quotient-field checks close the
+admissible quadratic and quartic fibres and force `C=0` on every branch not
+already on `Delta` or handed to GLD99.  Hence the normalized `g0` gate is
+removed.  Combining this with GLD99 gives the normalized `D(E31*Delta)` route;
+the `C_8=1` incidence bridge and GLD95 then retain the physical exclusion on
+`D(Omega)`.  This is a scoped characteristic-zero theorem only: `E31=0`,
+`Delta=0`, `Omega=0`, arbitrary H4 Q6 points outside the normalized F88-offset
+chart, the GLD83 Fitting pullback, other charts/components/source branches,
+other roots/orders, and global resolution remain open.  The global conjecture
+remains **UNRESOLVED**.
 
 The [`GLD98-membership-pilot`](explore_four_root_torus_star_equal_leaf_h4_q6_modular_membership_census.py)
 is an **exploratory instrument, not a theorem node**.  It independently

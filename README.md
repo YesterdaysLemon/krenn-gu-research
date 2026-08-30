@@ -80,8 +80,10 @@ then closes an R31-free generic localization on
 `D(E31*H2*g0*Delta)` into the GLD95 `F88` theorem.  Its polynomial bordered-
 determinant identity uses no inverse of `R31`, so `R31=0` is included wherever
 the remaining gates are nonzero.  The normalized `H2=Q6=0` degree-drop branch
-is now handled separately by GLD99, leaving the `E31/g0/Delta` exceptional
-strata open.
+is now handled separately by GLD99, and GLD100 below removes the normalized
+`g0` gate on the remaining `H2`-open.  Thus the combined normalized route
+retains only the `E31=0` and `Delta=0` boundaries before the physical
+`Omega`-open and the wider chart/component obligations.
 [`GLD97`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md)
 now gives a parent-level exact p=2 fibre closure: for symbolic `a` and
 arbitrary offset coordinates `B,C`, four bordered and two direct seven-minors
@@ -103,6 +105,21 @@ localization is used, and GLD95 remains the separate endpoint.  This does not
 cover arbitrary H4/Q6 points outside F88, `Delta=0`, the pulled-back Fitting
 lane, other charts/components/source branches, or global resolution; the
 global status remains **UNRESOLVED**.
+
+[`GLD100`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_G0_GATE_REMOVAL_THEOREM.md)
+is the parent-level synthesis of GLD96, GLD99, and the GLD95 `F88` endpoint,
+not a third sibling refinement.  On the normalized `D(E31*H2*Delta)` open,
+GLD96 first forces `B=0`; the source-recomputed pair-resultant cover has the
+eight necessary factors
+`p(p-1)(p^2+1)(p^2-2p+2)P H2 A4 C4`, and exact quotient-field fibre closures
+force `C=0` on every admissible branch.  This removes `g0` on that open.
+Combining it with GLD99's exact `H2=0` handoff gives the normalized
+`D(E31*Delta)` route.  The `C_8=1` incidence bridge and GLD95 then retain the
+physical exclusion on `D(Omega)`.  This remains a scoped characteristic-zero
+result: `E31=0`, `Delta=0`, `Omega=0`, arbitrary H4 Q6 points outside the
+normalized F88-offset chart, the GLD83 Fitting pullback, other
+charts/components/source branches, other roots/orders, and global resolution
+remain open; the global status is still **UNRESOLVED**.
 
 The newest zero-anchor, root-order-three, all-six-rigid source-integrability
 line is `GLS61`--`GLS80`.  `GLS66` closes the exactly-two-deficient branch;
