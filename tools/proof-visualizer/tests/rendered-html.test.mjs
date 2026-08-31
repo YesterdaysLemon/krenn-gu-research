@@ -40,7 +40,7 @@ test("server-renders the proof bonsai shell and scientific boundary", async () =
   assert.match(html, /open, partial, conditional, or unresolved boundary/);
   assert.match(html, /refuted or retired/);
   assert.match(html, /Nearby/);
-  assert.match(html, /Whole map/);
+  assert.match(html, /Bonsai tree/);
   assert.match(html, /one-edge neighborhood/);
   assert.match(html, /Copy node link/);
   assert.match(html, /Source topology aligned/);
@@ -59,10 +59,11 @@ test("server-renders the append-only public field notes boundary", async () => {
   assert.doesNotMatch(html, /progress percentage|solved fraction|confidence meter/i);
 });
 test("removes starter-only preview infrastructure", async () => {
-  const [page, layout, packageJson] = await Promise.all([
+  const [page, layout, packageJson, proofBonsai] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../package.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/ProofBonsai.tsx", import.meta.url), "utf8"),
   ]);
 
   assert.match(page, /<ProofBonsai/);
@@ -70,5 +71,7 @@ test("removes starter-only preview infrastructure", async () => {
   assert.doesNotMatch(page, /_sites-preview|SkeletonPreview|codex-preview/);
   assert.doesNotMatch(layout, /Starter Project|codex-preview/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
+  assert.match(proofBonsai, /<a className="field-notes-link" href="\/field-notes">/);
+  assert.doesNotMatch(proofBonsai, /import Link from "next\/link"/);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
 });

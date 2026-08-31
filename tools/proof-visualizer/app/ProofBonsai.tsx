@@ -1,7 +1,6 @@
 "use client";
 
 import dagre from "@dagrejs/dagre";
-import Link from "next/link";
 import {
   Background,
   BackgroundVariant,
@@ -77,6 +76,8 @@ const nodeTypes = { bonsai: BonsaiNode };
 
 type MapScope = "neighborhood" | "all";
 
+type LayoutPoint = { x: number; y: number };
+
 function edgeTreatment(relation: string) {
   const lower = relation.toLowerCase();
   if (lower.includes("refutation") || lower.includes("insufficient")) {
@@ -91,10 +92,121 @@ function edgeTreatment(relation: string) {
   return { stroke: "#6d5639", dash: undefined };
 }
 
+function primaryBranchIds(sourceNodes: FrontierNode[], sourceEdges: FrontierEdge[]) {
+  const nodeIds = new Set(sourceNodes.map((node) => node.id));
+  const indegree = new Map(sourceNodes.map((node) => [node.id, 0]));
+  const outgoing = new Map(sourceNodes.map((node) => [node.id, [] as FrontierEdge[]]));
+
+  for (const edge of sourceEdges) {
+    if (!nodeIds.has(edge.source) || !nodeIds.has(edge.target)) continue;
+    indegree.set(edge.target, (indegree.get(edge.target) ?? 0) + 1);
+    outgoing.get(edge.source)?.push(edge);
+  }
+  for (const edges of outgoing.values()) {
+    edges.sort(
+      (left, right) =>
+        left.target.localeCompare(right.target) || left.id.localeCompare(right.id),
+    );
+  }
+
+  const roots = sourceNodes
+    .filter((node) => (indegree.get(node.id) ?? 0) === 0)
+    .map((node) => node.id)
+    .sort((left, right) => {
+      if (left === "G0") return -1;
+      if (right === "G0") return 1;
+      return left.localeCompare(right);
+    });
+  const starts = [...roots, ...sourceNodes.map((node) => node.id).sort()];
+  const visited = new Set<string>();
+  const primary = new Set<string>();
+
+  for (const start of starts) {
+    if (visited.has(start)) continue;
+    visited.add(start);
+    const queue = [start];
+    for (let index = 0; index < queue.length; index += 1) {
+      for (const edge of outgoing.get(queue[index]) ?? []) {
+        if (visited.has(edge.target)) continue;
+        visited.add(edge.target);
+        primary.add(edge.id);
+        queue.push(edge.target);
+      }
+    }
+  }
+
+  return primary;
+}
+
+function canopyProfile(progress: number) {
+  if (progress <= 0.55) return 0.55 + (progress / 0.55) * 0.45;
+  return 1 - ((progress - 0.55) / 0.45) * 0.44;
+}
+
+function shapeBonsaiCanopy(rawPoints: Map<string, LayoutPoint>) {
+  const rows = new Map<number, Array<{ id: string; point: LayoutPoint }>>();
+  for (const [id, point] of rawPoints) {
+    const rank = Math.round(point.y);
+    const row = rows.get(rank) ?? [];
+    row.push({ id, point });
+    rows.set(rank, row);
+  }
+
+  const orderedRows = [...rows.entries()].sort(([left], [right]) => right - left);
+  const rootRowIndex = orderedRows.findIndex(([, row]) =>
+    row.some(({ id }) => id === "G0"),
+  );
+  const canopyRows = orderedRows.flatMap(([rank, row], index) => {
+    if (index !== rootRowIndex) return [[rank, row] as const];
+    const rootCompanions = row.filter(({ id }) => id !== "G0");
+    return rootCompanions.length ? [[rank, rootCompanions] as const] : [];
+  });
+  const largestRow = Math.max(1, ...canopyRows.map(([, row]) => row.length));
+  const maximumCanopyWidth = (largestRow - 1) * (NODE_WIDTH + 38);
+  const canopyBase = 1_080;
+  const canopyHeight = Math.max(
+    2_800,
+    Math.max(0, canopyRows.length - 1) * (NODE_HEIGHT + 36),
+  );
+  const shaped = new Map<string, LayoutPoint>();
+
+  canopyRows.forEach(([, unsortedRow], rowIndex) => {
+    const row = [...unsortedRow].sort(
+      (left, right) => left.point.x - right.point.x || left.id.localeCompare(right.id),
+    );
+    const progress = canopyRows.length <= 1 ? 0 : rowIndex / (canopyRows.length - 1);
+    const minimumWidth = Math.max(0, row.length - 1) * (NODE_WIDTH + 34);
+    const maximumWidth = Math.max(0, row.length - 1) * (NODE_WIDTH + 420);
+    const profiledWidth = maximumCanopyWidth * canopyProfile(progress);
+    const width =
+      row.length <= 1
+        ? 0
+        : Math.min(maximumWidth, Math.max(minimumWidth, profiledWidth));
+    const centreBend =
+      Math.sin(progress * Math.PI * 1.35) * 620 -
+      Math.sin(progress * Math.PI * 2.4) * 210;
+    const rowY = -canopyBase - progress * canopyHeight;
+
+    row.forEach(({ id }, nodeIndex) => {
+      const normalized =
+        row.length <= 1 ? 0 : nodeIndex / (row.length - 1) - 0.5;
+      const horizontal = normalized * width;
+      shaped.set(id, {
+        x: centreBend + horizontal,
+        y: rowY - Math.pow(Math.abs(normalized) * 2, 1.5) * 34,
+      });
+    });
+  });
+
+  shaped.set("G0", { x: 0, y: 0 });
+  return shaped;
+}
+
 function layoutGraph(
   sourceNodes: FrontierNode[],
   sourceEdges: FrontierEdge[],
   selectedId: string,
+  mapScope: MapScope,
 ) {
   const graph = new dagre.graphlib.Graph().setDefaultEdgeLabel(() => ({}));
   graph.setGraph({
@@ -111,8 +223,18 @@ function layoutGraph(
   for (const edge of sourceEdges) graph.setEdge(edge.source, edge.target);
   dagre.layout(graph);
 
+  const rawPoints = new Map<string, LayoutPoint>(
+    sourceNodes.map((node) => {
+      const point = graph.node(node.id) ?? { x: 0, y: 0 };
+      return [node.id, { x: point.x, y: point.y }];
+    }),
+  );
+  const layoutPoints =
+    mapScope === "all" ? shapeBonsaiCanopy(rawPoints) : rawPoints;
+  const primaryBranches = primaryBranchIds(sourceNodes, sourceEdges);
+
   const nodes: BonsaiFlowNode[] = sourceNodes.map((frontier) => {
-    const point = graph.node(frontier.id) ?? { x: 0, y: 0 };
+    const point = layoutPoints.get(frontier.id) ?? { x: 0, y: 0 };
     return {
       id: frontier.id,
       type: "bonsai",
@@ -132,21 +254,28 @@ function layoutGraph(
 
   const edges: Edge[] = sourceEdges.map((edge) => {
     const treatment = edgeTreatment(edge.relation);
+    const isPrimary = primaryBranches.has(edge.id);
+    const isSelectedBranch = edge.source === selectedId || edge.target === selectedId;
+    const wholeMap = mapScope === "all";
+    const emphasized = !wholeMap || isPrimary || isSelectedBranch;
     return {
       ...edge,
-      type: "smoothstep",
-      label: edge.relation,
+      type: wholeMap ? "default" : "smoothstep",
+      label: wholeMap ? undefined : edge.relation,
       markerEnd: {
         type: MarkerType.ArrowClosed,
         color: treatment.stroke,
-        width: 13,
-        height: 13,
+        width: wholeMap ? 9 : 13,
+        height: wholeMap ? 9 : 13,
       },
       style: {
         stroke: treatment.stroke,
-        strokeWidth: 2.2,
+        strokeWidth: wholeMap ? (isSelectedBranch ? 3.1 : isPrimary ? 1.65 : 0.55) : 2.2,
         strokeDasharray: treatment.dash,
+        opacity: emphasized ? (isSelectedBranch ? 1 : 0.74) : 0.14,
+        vectorEffect: wholeMap ? "non-scaling-stroke" : undefined,
       },
+      zIndex: isSelectedBranch ? 3 : isPrimary ? 2 : 1,
       labelStyle: { fill: "#aa9c85", fontSize: 10, fontWeight: 650 },
       labelBgStyle: { fill: "#141812", fillOpacity: 0.9 },
       labelBgPadding: [5, 3],
@@ -271,7 +400,11 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
   const visibleNodes = useMemo(() => {
     return data.nodes.filter((node) => {
       const scopeMatch = mapScope === "all" || neighborhoodIds.has(node.id);
-      const toneMatch = tone === "all" || node.tone === tone || node.id === selected.id;
+      const toneMatch =
+        tone === "all" ||
+        node.tone === tone ||
+        node.id === selected.id ||
+        (mapScope === "all" && node.id === "G0");
       return scopeMatch && toneMatch;
     });
   }, [data.nodes, mapScope, neighborhoodIds, selected.id, tone]);
@@ -288,8 +421,8 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
     [data.edges, visibleIds],
   );
   const flow = useMemo(
-    () => layoutGraph(visibleNodes, visibleEdges, selectedId),
-    [selectedId, visibleEdges, visibleNodes],
+    () => layoutGraph(visibleNodes, visibleEdges, selectedId, mapScope),
+    [mapScope, selectedId, visibleEdges, visibleNodes],
   );
 
   const selectNode = useCallback(
@@ -378,10 +511,10 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
           </p>
         </div>
         <div className="header-actions">
-          <Link className="field-notes-link" href="/field-notes">
+          <a className="field-notes-link" href="/field-notes">
             <span>Field notes</span>
             Public agent log →
-          </Link>
+          </a>
           <div className="global-status" aria-label={`Global status ${data.globalStatus}`}>
             <span className="pulse" aria-hidden="true" />
             Global conjecture <strong>{data.globalStatus}</strong>
@@ -491,7 +624,7 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
                   aria-pressed={mapScope === "all"}
                   onClick={() => setMapScope("all")}
                 >
-                  Whole map
+                  Bonsai tree
                 </button>
               </div>
               <div className="view-count" aria-live="polite">
@@ -510,12 +643,12 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
               <strong>
                 {mapScope === "neighborhood"
                   ? `${selected.id} · one-edge neighborhood`
-                  : "Whole proof topology"}
+                  : `Bonsai canopy · ${visibleNodes.length} nodes`}
               </strong>
               <span>
                 {mapScope === "neighborhood"
                   ? "Select a connected node to walk the proof."
-                  : "Search to jump somewhere, or zoom in to inspect a branch."}
+                  : "Thicker limbs are a navigation scaffold, not stronger evidence. Select a node, then explore nearby."}
               </span>
             </div>
             <ReactFlow
@@ -624,6 +757,15 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
           </div>
 
           <div className="inspector-actions">
+            {mapScope === "all" && (
+              <button
+                type="button"
+                className="explore-nearby"
+                onClick={() => setMapScope("neighborhood")}
+              >
+                Explore {selected.id} nearby
+              </button>
+            )}
             <button type="button" onClick={focusSelected}>
               Locate on map
             </button>

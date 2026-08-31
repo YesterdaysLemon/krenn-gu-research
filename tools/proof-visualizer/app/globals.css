@@ -452,6 +452,10 @@ h1 {
     radial-gradient(ellipse at 50% 101%, rgba(116, 91, 59, 0.16), transparent 34%);
 }
 
+.react-flow__edge-path {
+  transition: opacity 160ms ease, stroke-width 160ms ease;
+}
+
 .map-instructions {
   position: absolute;
   z-index: 5;
@@ -729,6 +733,12 @@ h1 {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.64rem;
   cursor: pointer;
+}
+
+.inspector-actions .explore-nearby {
+  grid-column: 1 / -1;
+  border-color: rgba(169, 196, 154, 0.28);
+  background: rgba(117, 163, 106, 0.07);
 }
 
 .inspector-actions button:hover,
