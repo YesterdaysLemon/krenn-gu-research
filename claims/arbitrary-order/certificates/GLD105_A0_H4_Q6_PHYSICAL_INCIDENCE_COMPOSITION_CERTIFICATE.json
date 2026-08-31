@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "certificate_id": "GLD105-A0-H4-Q6-physical-incidence-parent-composition",
-  "status": "candidate_exact_scoped_characteristic_zero_composition",
+  "status": "proved_exact_scoped_characteristic_zero_composition",
   "global_conjecture": "UNRESOLVED",
   "mathematical_scope": {
     "field": "C",
@@ -107,12 +107,15 @@
   },
   "external_consolidation": {
     "required_before_promotion": true,
-    "candidate_commit": null,
-    "candidate_tree": null,
-    "request_event_id": null,
-    "receipts": {},
-    "status": "pending",
-    "frontier_update_allowed": false,
-    "theorem_ledger_update_allowed": false
+    "candidate_commit": "e3ee8629856a5d24ca18d2f1197ac11a3dc2c18e",
+    "candidate_tree": "f0b3d9f1ffdd92738ad20efc37b49a424ade76c7",
+    "request_event_id": "kgc_01M1C11C0928AZS8DQ25B1Y8V8",
+    "receipts": {
+      "Juniper": "kgc_01M1C12WAXQYFG2SPBT3ZMBYD1",
+      "Mycelium": "kgc_01M1C17H0G9E9DY99JR24Y2HWH"
+    },
+    "status": "accepted_2_of_2",
+    "frontier_update_allowed": true,
+    "theorem_ledger_update_allowed": true
   }
 }

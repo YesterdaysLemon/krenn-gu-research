@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent no-repository-import audit of candidate GLD105.
+"""Independent no-repository-import audit of proved GLD105.
 
 This audit imports neither the GLD105 primary nor any repository verifier.  It
 uses an independently frozen source-pin manifest, checks the four theorem
@@ -32,7 +32,7 @@ GLD104_CERTIFICATE = BASE / "certificates" / (
 )
 
 EXPECTED_CERTIFICATE_LF_SHA256 = (
-    "6816d2ae686ae841664a92a761c6e4df484103e66b16d183e8a372c0f2b0361f"
+    "61fc3adc4288e6a31e5e332e4c4cb36436b1de0e453b208c4ba9690355d116cf"
 )
 EXPECTED_SOURCE_PINS = {
     "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_P8_NONZERO_OFFSET_CLOSURE_THEOREM.md": "a7ab76be0ccd3b65631464c683178156180329755ea0563cc135a7a51798526f",
@@ -103,7 +103,7 @@ def validate_frozen_inputs(payload: dict[str, Any]) -> None:
         require(lf_sha256(path) == expected, f"source drift: {relative}")
 
 
-def validate_candidate_status(payload: dict[str, Any]) -> None:
+def validate_promoted_status(payload: dict[str, Any]) -> None:
     require(payload.get("schema_version") == 1, "schema")
     require(
         payload.get("certificate_id")
@@ -112,7 +112,7 @@ def validate_candidate_status(payload: dict[str, Any]) -> None:
     )
     require(
         payload.get("status")
-        == "candidate_exact_scoped_characteristic_zero_composition",
+        == "proved_exact_scoped_characteristic_zero_composition",
         "status",
     )
     require(payload.get("global_conjecture") == "UNRESOLVED", "global")
@@ -121,13 +121,16 @@ def validate_candidate_status(payload: dict[str, Any]) -> None:
         external
         == {
             "required_before_promotion": True,
-            "candidate_commit": None,
-            "candidate_tree": None,
-            "request_event_id": None,
-            "receipts": {},
-            "status": "pending",
-            "frontier_update_allowed": False,
-            "theorem_ledger_update_allowed": False,
+            "candidate_commit": "e3ee8629856a5d24ca18d2f1197ac11a3dc2c18e",
+            "candidate_tree": "f0b3d9f1ffdd92738ad20efc37b49a424ade76c7",
+            "request_event_id": "kgc_01M1C11C0928AZS8DQ25B1Y8V8",
+            "receipts": {
+                "Juniper": "kgc_01M1C12WAXQYFG2SPBT3ZMBYD1",
+                "Mycelium": "kgc_01M1C17H0G9E9DY99JR24Y2HWH",
+            },
+            "status": "accepted_2_of_2",
+            "frontier_update_allowed": True,
+            "theorem_ledger_update_allowed": True,
         },
         "external gate",
     )
@@ -270,13 +273,13 @@ def check() -> dict[str, Any]:
     started = time.monotonic()
     payload = load_json(CERTIFICATE)
     validate_frozen_inputs(payload)
-    validate_candidate_status(payload)
+    validate_promoted_status(payload)
     markers = validate_interfaces_independently()
     polynomials = validate_h2_notation_without_sympy(payload)
     outcomes = validate_implication_truth_table(payload)
     imports = validate_primary_independence_boundary()
     return {
-        "status": "independent_candidate_GLD105_composition_audit_pass",
+        "status": "independent_proved_GLD105_composition_audit_pass",
         "global_conjecture": "UNRESOLVED",
         "source_pins_checked": len(EXPECTED_SOURCE_PINS),
         "interface_marker_counts": markers,
@@ -286,8 +289,8 @@ def check() -> dict[str, Any]:
         "case_outcomes": outcomes,
         "primary_imports": imports,
         "repository_verifiers_imported_or_executed": 0,
-        "external_consolidation": "pending",
-        "frontier_or_ledger_promotion_allowed": False,
+        "external_consolidation": "accepted_2_of_2",
+        "frontier_or_ledger_promotion_allowed": True,
         "elapsed_seconds": round(time.monotonic() - started, 3),
     }
 

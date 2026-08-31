@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the candidate GLD105 physical-incidence parent composition.
+"""Verify the proved GLD105 physical-incidence parent composition.
 
 The mathematical proof is the exact two-case composition recorded in the
 owner theorem.  This checker pins every upstream proof carrier, validates the
@@ -30,7 +30,7 @@ GLD104_CERTIFICATE = BASE / "certificates" / (
 )
 
 EXPECTED_CERTIFICATE_LF_SHA256 = (
-    "6816d2ae686ae841664a92a761c6e4df484103e66b16d183e8a372c0f2b0361f"
+    "61fc3adc4288e6a31e5e332e4c4cb36436b1de0e453b208c4ba9690355d116cf"
 )
 EXPECTED_SOURCE_PIN_COUNT = 19
 
@@ -78,8 +78,8 @@ def validate_certificate(payload: dict[str, Any]) -> None:
     )
     require(
         payload.get("status")
-        == "candidate_exact_scoped_characteristic_zero_composition",
-        "candidate status",
+        == "proved_exact_scoped_characteristic_zero_composition",
+        "proved scoped status",
     )
     require(payload.get("global_conjecture") == "UNRESOLVED", "global status")
 
@@ -130,14 +130,32 @@ def validate_certificate(payload: dict[str, Any]) -> None:
 
     external = payload.get("external_consolidation", {})
     require(external.get("required_before_promotion") is True, "audit gate")
-    require(external.get("status") == "pending", "candidate audit status")
-    require(external.get("candidate_commit") is None, "candidate commit unset")
-    require(external.get("candidate_tree") is None, "candidate tree unset")
-    require(external.get("request_event_id") is None, "request unset")
-    require(external.get("receipts") == {}, "receipts unset")
-    require(external.get("frontier_update_allowed") is False, "frontier gate")
+    require(external.get("status") == "accepted_2_of_2", "audit acceptance")
     require(
-        external.get("theorem_ledger_update_allowed") is False,
+        external.get("candidate_commit")
+        == "e3ee8629856a5d24ca18d2f1197ac11a3dc2c18e",
+        "candidate commit",
+    )
+    require(
+        external.get("candidate_tree")
+        == "f0b3d9f1ffdd92738ad20efc37b49a424ade76c7",
+        "candidate tree",
+    )
+    require(
+        external.get("request_event_id") == "kgc_01M1C11C0928AZS8DQ25B1Y8V8",
+        "audit request",
+    )
+    require(
+        external.get("receipts")
+        == {
+            "Juniper": "kgc_01M1C12WAXQYFG2SPBT3ZMBYD1",
+            "Mycelium": "kgc_01M1C17H0G9E9DY99JR24Y2HWH",
+        },
+        "audit receipts",
+    )
+    require(external.get("frontier_update_allowed") is True, "frontier gate")
+    require(
+        external.get("theorem_ledger_update_allowed") is True,
         "ledger gate",
     )
     require(len(payload.get("proof_topology", [])) == 8, "proof topology")
@@ -287,7 +305,7 @@ def check() -> dict[str, Any]:
     notation = validate_notation_fences(payload)
     cases = validate_exhaustive_composition(payload)
     return {
-        "status": "candidate_GLD105_parent_composition_verified",
+        "status": "proved_GLD105_parent_composition_verified",
         "global_conjecture": "UNRESOLVED",
         "field": "C",
         "scope": "normalized a=0 H4/Q6 physical incidence on D(Omega*Delta)",
@@ -295,8 +313,8 @@ def check() -> dict[str, Any]:
         "upstream_interfaces": sorted(interfaces),
         "notation_fences": notation,
         "exhaustive_cases": cases,
-        "external_consolidation": "pending",
-        "frontier_or_ledger_promotion_allowed": False,
+        "external_consolidation": "accepted_2_of_2",
+        "frontier_or_ledger_promotion_allowed": True,
         "elapsed_seconds": round(time.monotonic() - started, 3),
     }
 

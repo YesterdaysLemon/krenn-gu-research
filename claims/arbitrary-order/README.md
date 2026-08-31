@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD104 equal-leaf checkpoint
+## GLD83--GLD105 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -182,6 +182,21 @@ in the forward direction.  The result is over `C` and does not prove P6,
 exclude the endpoint, establish physical incidence emptiness, extend to
 arbitrary `a` or full E31, cover another chart/component/source branch, or
 resolve the global conjecture, which remains **UNRESOLVED**.
+
+[`GLD105`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_PHYSICAL_INCIDENCE_EXCLUSION_THEOREM.md)
+composes that `a=0` offset closure with the exact physical-incidence bridge
+and endpoint theorems.  On the normalized GLD88/F88 equal-leaf H4 chart over
+`C`, the incidence equations, `rank(A)<=6`, `a=Q6=0`, and
+`Omega*Delta!=0` are incompatible.  On `H2deg!=0`, GLD75/GLD86 give full
+syndrome rank at most six, GLD104 forces `B_offset=C_offset=0`, and GLD95
+excludes the resulting physical F88 endpoint.  On `H2deg=0`, GLD99 supplies
+the physical exclusion directly for arbitrary `a`.  This is exhaustive case
+composition, not cancellation of `H2deg`; GLD86's differently named
+collision divisor is `p-s=L1/(p+q-1)`.  The theorem does not prove P6, remove
+`Omega=0` or `Delta=0`, extend to arbitrary `a` or the full `E31=0` wall,
+cover H4/Q6 points outside the written F88-offset chart, compute the GLD83
+Fitting pullback, cover other charts/components/source branches, or resolve
+the global conjecture, which remains **UNRESOLVED**.
 
 The [`GLD98-membership-pilot`](explore_four_root_torus_star_equal_leaf_h4_q6_modular_membership_census.py)
 is an **exploratory instrument, not a theorem node**.  It independently

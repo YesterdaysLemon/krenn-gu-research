@@ -7218,6 +7218,36 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Four-root torus-star equal-leaf H4 Q6 a=0 physical-incidence exclusion (GLD105)",
+      "document": "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_PHYSICAL_INCIDENCE_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "f418e23cd22db565",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact pointwise characteristic-zero statement over C on the normalized scale-fixed equal-leaf H4 GLD88/F88 offset chart with a=0, Q6=0, and Omega*Delta nonzero",
+        "the physical equal-leaf incidence equations vanish and rank(A)<=6, where A is the GLD86 center coefficient matrix and the scale-fixed compatible center has C_center[8]=1",
+        "the GLD75/GLD86 bridge is used only forward: physical incidence plus rank(A)<=6 expresses the ninth syndrome column through the first eight and implies full GLD71 syndrome rank at most six",
+        "the proof splits exhaustively on H2deg=2p^2-2p+1; on D(H2deg), GLD104 forces the affine offsets B_offset=C_offset=0 from full syndrome rank at most six",
+        "zero offsets identify the written F88 endpoint at the same a,p,q; GLD95 excludes only the fully qualified physical low-rank incidence B_incidence intersect V(I_7(A)) intersect F88 intersect V(Q6) intersect D(Omega*Delta), not the algebraic F88 Q6 locus by itself",
+        "on H2deg=0, GLD99 already excludes the physical incidence on D(Omega*Delta) for arbitrary a, hence at a=0; the two branches remove H2deg by case exhaustion rather than cancellation",
+        "H2deg is distinct from GLD86's collision divisor p-s=L1/(p+q-1), whose factors are controlled by D(Delta); B_incidence/C_center are distinct from the scalar offsets B_offset/C_offset",
+        "the composition certificate pins 19 upstream evidence files by LF-normalized SHA256; immutable candidate commit e3ee8629856a5d24ca18d2f1197ac11a3dc2c18e and tree f0b3d9f1ffdd92738ad20efc37b49a424ade76c7 received 2/2 fresh-detached external consolidation under Commons request kgc_01M1C11C0928AZS8DQ25B1Y8V8",
+        "P6, Omega=0, Delta=0, arbitrary a, the full E31=0 wall, arbitrary H4/Q6 points outside the written F88-offset chart, the GLD83 Fitting pullback, other pivots/charts/gauges/components/source branches, source integrability, graph lifting, global gluing, other roots/orders, and global Krenn-Gu remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_physical_incidence_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_physical_incidence_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_PHYSICAL_INCIDENCE_EXCLUSION_REVIEW_2026-08-31.md",
+      "expected_runtime": "under one second each for the pin/interface composition primary and independent standard-library polynomial audit on the reference host",
+      "external_binaries": [],
+      "note": "GLD105 proves only that the normalized a=0 H4/Q6 physical-incidence locus on D(Omega*Delta) is empty, by composing the GLD75/GLD86 rank bridge, GLD104 on H2deg!=0, the fully qualified GLD95 endpoint, and GLD99 on H2deg=0. P6, arbitrary a/full E31, Delta and Omega boundaries, wider chart/component/source/Fitting/integrability/gluing obligations, other roots/orders, and the global Krenn-Gu conjecture remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

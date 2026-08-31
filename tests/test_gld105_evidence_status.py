@@ -1,4 +1,4 @@
-"""Candidate-status and integrity tests for the GLD105 composition package."""
+"""Evidence-status and integrity tests for the proved GLD105 composition."""
 
 from __future__ import annotations
 
@@ -38,7 +38,7 @@ LEDGER = ROOT / "catalog" / "theorem-ledger.json"
 README = BASE / "README.md"
 
 EXPECTED_CERTIFICATE_LF_SHA256 = (
-    "6816d2ae686ae841664a92a761c6e4df484103e66b16d183e8a372c0f2b0361f"
+    "61fc3adc4288e6a31e5e332e4c4cb36436b1de0e453b208c4ba9690355d116cf"
 )
 
 
@@ -46,12 +46,12 @@ def lf_sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
 
 
-class GLD105CandidatePackageTests(unittest.TestCase):
+class GLD105EvidenceStatusTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.payload = json.loads(CERTIFICATE.read_text(encoding="utf-8"))
 
-    def test_certificate_is_pinned_candidate_not_live(self) -> None:
+    def test_certificate_is_pinned_and_externally_accepted(self) -> None:
         self.assertEqual(lf_sha256(CERTIFICATE), EXPECTED_CERTIFICATE_LF_SHA256)
         self.assertEqual(self.payload["schema_version"], 1)
         self.assertEqual(
@@ -60,20 +60,23 @@ class GLD105CandidatePackageTests(unittest.TestCase):
         )
         self.assertEqual(
             self.payload["status"],
-            "candidate_exact_scoped_characteristic_zero_composition",
+            "proved_exact_scoped_characteristic_zero_composition",
         )
         self.assertEqual(self.payload["global_conjecture"], "UNRESOLVED")
         self.assertEqual(
             self.payload["external_consolidation"],
             {
                 "required_before_promotion": True,
-                "candidate_commit": None,
-                "candidate_tree": None,
-                "request_event_id": None,
-                "receipts": {},
-                "status": "pending",
-                "frontier_update_allowed": False,
-                "theorem_ledger_update_allowed": False,
+                "candidate_commit": "e3ee8629856a5d24ca18d2f1197ac11a3dc2c18e",
+                "candidate_tree": "f0b3d9f1ffdd92738ad20efc37b49a424ade76c7",
+                "request_event_id": "kgc_01M1C11C0928AZS8DQ25B1Y8V8",
+                "receipts": {
+                    "Juniper": "kgc_01M1C12WAXQYFG2SPBT3ZMBYD1",
+                    "Mycelium": "kgc_01M1C17H0G9E9DY99JR24Y2HWH",
+                },
+                "status": "accepted_2_of_2",
+                "frontier_update_allowed": True,
+                "theorem_ledger_update_allowed": True,
             },
         )
 
@@ -120,9 +123,19 @@ class GLD105CandidatePackageTests(unittest.TestCase):
         owner = OWNER.read_text(encoding="utf-8")
         review = REVIEW.read_text(encoding="utf-8")
         status = owner.split("## Status", 1)[1].split("##", 1)[0]
-        self.assertIn("Candidate exact scoped", status)
-        self.assertNotIn("Proved exact scoped", status)
-        self.assertRegex(review, re.compile(r"not yet for\s+live promotion"))
+        self.assertIn("Proved exact scoped", status)
+        self.assertNotRegex(status, re.compile(r"\b(candidate|pending)\b", re.I))
+        self.assertIn(
+            "Verdict: PASS for the exact scoped GLD105 physical-incidence composition",
+            review,
+        )
+        for event_id in (
+            "kgc_01M1C11C0928AZS8DQ25B1Y8V8",
+            "kgc_01M1C12WAXQYFG2SPBT3ZMBYD1",
+            "kgc_01M1C17H0G9E9DY99JR24Y2HWH",
+        ):
+            self.assertIn(event_id, owner)
+            self.assertIn(event_id, review)
         for text in (owner, review):
             self.assertIn("UNRESOLVED", text)
             self.assertIn("D(Omega Delta)", text)
@@ -135,15 +148,25 @@ class GLD105CandidatePackageTests(unittest.TestCase):
             self.assertIn("Fitting", text)
             self.assertIn("global", text.lower())
 
-    def test_candidate_is_absent_from_live_surfaces(self) -> None:
+    def test_live_surfaces_record_only_the_scoped_theorem(self) -> None:
         frontier = FRONTIER.read_text(encoding="utf-8")
         readme = README.read_text(encoding="utf-8")
         ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
-        self.assertNotIn('GLD105["', frontier)
-        self.assertNotIn("| `GLD105` |", frontier)
-        self.assertNotIn("[`GLD105`]", readme)
+        self.assertIn('GLD105["Equal-leaf H4 Q6 a=0 physical incidence', frontier)
+        self.assertIn("GLD104 -->|H2deg-open offset closure", frontier)
+        self.assertIn("| `GLD105` |", frontier)
+        self.assertIn("global status remains **UNRESOLVED**", frontier)
+        self.assertIn("[`GLD105`]", readme)
         entries = [entry for entry in ledger["entries"] if "(GLD105)" in entry["name"]]
-        self.assertEqual(entries, [])
+        self.assertEqual(len(entries), 1)
+        entry = entries[0]
+        self.assertEqual(entry["status"], "verified")
+        self.assertEqual(entry["document"], OWNER.relative_to(ROOT).as_posix())
+        self.assertEqual(entry["document_sha256_16"], "f418e23cd22db565")
+        self.assertEqual(entry["primary_verifier"], PRIMARY.relative_to(ROOT).as_posix())
+        self.assertEqual(entry["independent_audit"], AUDIT.relative_to(ROOT).as_posix())
+        self.assertEqual(entry["review"], REVIEW.relative_to(ROOT).as_posix())
+        self.assertIn("UNRESOLVED", entry["note"])
 
     def test_audit_imports_no_repository_verifier(self) -> None:
         for path in (PRIMARY, AUDIT):
@@ -172,7 +195,7 @@ class GLD105CandidatePackageTests(unittest.TestCase):
         audit_source = AUDIT.read_text(encoding="utf-8")
         self.assertIn("validate_h2_notation_without_sympy", audit_source)
 
-    def test_candidate_files_have_no_machine_or_run_dependency(self) -> None:
+    def test_theorem_files_have_no_machine_or_run_dependency(self) -> None:
         for path in (CERTIFICATE, PRIMARY, AUDIT, OWNER, REVIEW):
             text = path.read_text(encoding="utf-8")
             with self.subTest(path=path.name):

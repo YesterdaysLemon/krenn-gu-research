@@ -2,17 +2,16 @@
 
 ## Verdict
 
-**Candidate-review verdict: PASS for freezing and external audit, not yet for
-live promotion.**  The proposed GLD105 statement is a valid exact parent
-composition if and only if the frozen source pins and all four upstream
-interfaces remain exact.  The candidate must stay absent from the live
-frontier, theorem ledger, and claim README until independent review accepts an
-immutable commit.  The global Krenn--Gu conjecture remains **UNRESOLVED**.
+**Verdict: PASS for the exact scoped GLD105 physical-incidence composition.**
+The statement is a valid exact parent composition because the frozen source
+pins and all four upstream interfaces remain exact.  Juniper and Mycelium
+accepted the immutable candidate from fresh detached checkouts before this
+promotion.  The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
 ## Exact statement reviewed
 
 Over `C`, on the normalized scale-fixed equal-leaf H4 GLD88/F88 offset chart,
-the candidate states only
+the theorem states only
 
 ```text
 B_incidence intersect V(I_7(A)) intersect H4 intersect V(a,Q6)
@@ -103,7 +102,7 @@ No.  GLD86's leaf-collision divisor is `p-s`.  On this H4 chart,
 p-s = L1/d0 = L1/(p+q-1).
 ```
 
-Both `L1` and `p+q-1` are factors controlled by `D(Delta)`.  The candidate
+Both `L1` and `p+q-1` are factors controlled by `D(Delta)`.  The composition
 certificate and both checkers keep the two polynomials under different names.
 
 ### 6. Does the GLD99 arbitrary-a theorem promote GLD105 to arbitrary a?
@@ -141,10 +140,14 @@ would not be sufficient if any one of those theorem interfaces were merely
 candidate, generic-only where pointwise use is required, or hash-drifting.
 The checkers fail closed in each of those cases.
 
-## Promotion gate
+## External consolidation
 
-The candidate must be frozen at an immutable commit and tree.  At least one
-fresh-detached external audit must check the exact source pins, status fields,
-rank direction, F88 endpoint qualifiers, H2deg case exhaustion, notation
-fence, and all nonclaims.  Until such a receipt is recorded, the certificate
-status remains candidate and live frontier/ledger updates remain forbidden.
+The immutable candidate commit `e3ee8629856a5d24ca18d2f1197ac11a3dc2c18e`
+and tree `f0b3d9f1ffdd92738ad20efc37b49a424ade76c7` received the required
+fresh-detached review under Commons request `kgc_01M1C11C0928AZS8DQ25B1Y8V8`.
+Juniper accepted it at `kgc_01M1C12WAXQYFG2SPBT3ZMBYD1`; Mycelium accepted
+it at `kgc_01M1C17H0G9E9DY99JR24Y2HWH`.  Both auditors checked the exact
+commit/tree and source pins, ran both checkers and the nine focused tests, and
+accepted the rank direction, F88 endpoint qualifiers, H2deg case exhaustion,
+notation fence, and all nonclaims.  The receipts justify only this scoped
+promotion; global status remains **UNRESOLVED**.

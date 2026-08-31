@@ -2,10 +2,11 @@
 
 ## Status and exact scope
 
-**Candidate exact scoped characteristic-zero parent composition (`GLD105`).**
-The proof below composes four already proved exact results, but this package is
-not live evidence until an immutable candidate receives the required external
-audit.  The global Krenn--Gu conjecture remains **UNRESOLVED**.
+**Proved exact scoped characteristic-zero parent composition (`GLD105`).**
+The proof below composes four already proved exact results.  Juniper and
+Mycelium accepted immutable pre-promotion commit `e3ee8629` from fresh
+detached checkouts, giving the required `2/2` external consolidation.  The
+global Krenn--Gu conjecture remains **UNRESOLVED**.
 
 Work over `C` in the normalized, scale-fixed equal-leaf `H4` chart written in
 the GLD88/F88 offset coordinates
@@ -45,7 +46,7 @@ offset `B_offset`.  Let `C_center` be the vectorization of the physical
 offset `C_offset`.  Let `A` be the GLD86 center coefficient matrix and let
 `M(G)` be the full fixed `37 x 9` GLD71 syndrome.
 
-The candidate conclusion is exactly
+The theorem conclusion is exactly
 
 ```text
 B_incidence intersect V(I_7(A)) intersect H4 intersect V(a,Q6)
@@ -134,7 +135,7 @@ does not infer arbitrary-`a` GLD105 from the `a=0` theorem; it uses the wider
 GLD99 leaf only in the `H2deg=0` branch.
 
 Equations (3)--(5) exhaust the two cases and prove the displayed GLD105
-statement, conditional only on acceptance of this exact composition package.
+statement.
 
 ## 3. Certificate and verification boundary
 
@@ -143,7 +144,7 @@ audit, review, evidence-test, and GLD75 carrier files by LF-normalized
 SHA-256.  It also pins the accepted GLD104 promotion commit and its exact
 promotion receipts.
 
-The primary GLD105 checker verifies those pins, the candidate promotion gate,
+The primary GLD105 checker verifies those pins, the accepted promotion gate,
 the four upstream interface statements, the incidence/rank direction, the
 `H2deg`/collision-divisor distinction, and the exhaustive two-case proof
 topology.  It intentionally does not rerun the expensive algebra already
@@ -174,6 +175,15 @@ GLD105 does not prove or assert:
 - another root number or graph order; or
 - a proof or refutation of the global Krenn--Gu conjecture.
 
-The global status remains **UNRESOLVED**.  No frontier, theorem-ledger, or
-README promotion is permitted until a frozen candidate commit receives the
-required independent external audit.
+The immutable candidate commit and tree were
+
+```text
+e3ee8629856a5d24ca18d2f1197ac11a3dc2c18e
+f0b3d9f1ffdd92738ad20efc37b49a424ade76c7.
+```
+
+Commons request `kgc_01M1C11C0928AZS8DQ25B1Y8V8` received exact scoped
+acceptances from Juniper (`kgc_01M1C12WAXQYFG2SPBT3ZMBYD1`) and Mycelium
+(`kgc_01M1C17H0G9E9DY99JR24Y2HWH`).  These are external consolidation
+receipts for this scoped theorem, not evidence for any wider or global
+conclusion.  The global status remains **UNRESOLVED**.
