@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "59344f87077ae459",
+      "document_sha256_16": "f3edef987255f0ad",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
