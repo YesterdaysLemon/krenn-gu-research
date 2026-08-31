@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the candidate GLD100 B=0 C-open composition corollary."""
+"""Verify the proved GLD106 B=0 C-open composition corollary."""
 
 from __future__ import annotations
 
@@ -34,7 +34,7 @@ GLD99_OWNER = BASE / (
 )
 
 EXPECTED_CERTIFICATE_LF_SHA256 = (
-    "c4a2ba5389e428de8b8b961e19ca6449b52d15266a2a7f3418892d5969744394"
+    "cb482133a56922695030ca850caa1135b480be8a93e23331fe8316e26741f377"
 )
 EXPECTED_SOURCE_PIN_COUNT = 9
 
@@ -82,8 +82,8 @@ def validate_certificate(payload: dict[str, Any]) -> None:
     )
     require(
         payload.get("status")
-        == "candidate_exact_scoped_characteristic_zero_composition",
-        "candidate status",
+        == "proved_exact_scoped_characteristic_zero_composition",
+        "proved scoped status",
     )
     require(payload.get("global_conjecture") == "UNRESOLVED", "global status")
 
@@ -115,13 +115,37 @@ def validate_certificate(payload: dict[str, Any]) -> None:
 
     external = payload.get("external_consolidation", {})
     require(external.get("required_before_promotion") is True, "external gate required")
-    require(external.get("candidate_commit") is None, "candidate commit unset")
-    require(external.get("candidate_tree") is None, "candidate tree unset")
-    require(external.get("request_event_id") is None, "request unset")
-    require(external.get("receipts") == {}, "receipts unset")
-    require(external.get("status") == "pending", "external gate pending")
-    require(external.get("frontier_update_allowed") is False, "frontier gate")
-    require(external.get("theorem_ledger_update_allowed") is False, "ledger gate")
+    require(
+        external.get("candidate_commit")
+        == "8001f3435702d642ccb86e10893000379cca7ae5",
+        "candidate commit",
+    )
+    require(
+        external.get("candidate_tree")
+        == "8b4b38f92c143aa557e039661ab7ecf046539181",
+        "candidate tree",
+    )
+    require(external.get("candidate_diff_bytes") == 43128, "candidate diff bytes")
+    require(
+        external.get("candidate_diff_sha256")
+        == "b8b33767bd74677b4e09a3a78bdaece657e90a5dbcb681452ae0ff3ca3c5f915",
+        "candidate diff hash",
+    )
+    require(
+        external.get("request_event_id") == "kgc_01M1C3T5Y83KSKVKG22HK0TCAH",
+        "audit request",
+    )
+    require(
+        external.get("receipts")
+        == {
+            "Juniper": "kgc_01M1C3VG98735EV4JM8TEVE02V",
+            "Kestrel": "kgc_01M1C468KR8XX1C8XC0EMEXPM3",
+        },
+        "audit receipts",
+    )
+    require(external.get("status") == "accepted_2_of_2", "external gate accepted")
+    require(external.get("frontier_update_allowed") is True, "frontier gate")
+    require(external.get("theorem_ledger_update_allowed") is True, "ledger gate")
 
 
 def validate_source_pins(payload: dict[str, Any]) -> dict[str, str]:
@@ -225,7 +249,7 @@ def check() -> dict[str, Any]:
     core = validate_no_e31_core()
     cases = validate_case_logic(payload)
     return {
-        "status": "candidate_GLD100_B0_Copen_corollary_verified",
+        "status": "proved_GLD106_B0_Copen_corollary_verified",
         "global_conjecture": "UNRESOLVED",
         "field": "C",
         "scope": "normalized arbitrary-a B_offset=0 C_offset-open rank exclusion on D(Delta)",
@@ -234,15 +258,15 @@ def check() -> dict[str, Any]:
         "E31_core_mentions": 0,
         "core_functions_checked": {key: len(value) for key, value in core.items()},
         "exhaustive_cases": cases,
-        "external_consolidation": "pending",
-        "frontier_or_ledger_promotion_allowed": False,
+        "external_consolidation": "accepted_2_of_2",
+        "frontier_or_ledger_promotion_allowed": True,
         "elapsed_seconds": round(time.monotonic() - started, 3),
     }
 
 
 def main() -> None:
     result = check()
-    print("GLD100 B=0 C-open composition verifier: PASS")
+    print("GLD106 B=0 C-open composition verifier: PASS")
     print(json.dumps(result, indent=2, sort_keys=True))
 
 

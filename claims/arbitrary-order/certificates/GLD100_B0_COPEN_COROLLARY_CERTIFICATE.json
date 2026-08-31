@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "certificate_id": "GLD100-B0-Copen-arbitrary-a-corollary",
-  "status": "candidate_exact_scoped_characteristic_zero_composition",
+  "status": "proved_exact_scoped_characteristic_zero_composition",
   "global_conjecture": "UNRESOLVED",
   "mathematical_scope": {
     "field": "C",
@@ -80,12 +80,17 @@
   },
   "external_consolidation": {
     "required_before_promotion": true,
-    "candidate_commit": null,
-    "candidate_tree": null,
-    "request_event_id": null,
-    "receipts": {},
-    "status": "pending",
-    "frontier_update_allowed": false,
-    "theorem_ledger_update_allowed": false
+    "candidate_commit": "8001f3435702d642ccb86e10893000379cca7ae5",
+    "candidate_tree": "8b4b38f92c143aa557e039661ab7ecf046539181",
+    "candidate_diff_bytes": 43128,
+    "candidate_diff_sha256": "b8b33767bd74677b4e09a3a78bdaece657e90a5dbcb681452ae0ff3ca3c5f915",
+    "request_event_id": "kgc_01M1C3T5Y83KSKVKG22HK0TCAH",
+    "receipts": {
+      "Juniper": "kgc_01M1C3VG98735EV4JM8TEVE02V",
+      "Kestrel": "kgc_01M1C468KR8XX1C8XC0EMEXPM3"
+    },
+    "status": "accepted_2_of_2",
+    "frontier_update_allowed": true,
+    "theorem_ledger_update_allowed": true
   }
 }

@@ -1,12 +1,13 @@
-# Four-root torus-star equal-leaf H4/Q6 B=0 C-open offset exclusion corollary
+# Four-root torus-star equal-leaf H4/Q6 B=0 C-open offset exclusion corollary (GLD106)
 
 ## Status and exact scope
 
-**Candidate exact scoped characteristic-zero corollary of GLD96, GLD100,
-and GLD99.**  This package isolates a consequence already proved inside the
-accepted GLD100 argument; it does not add a new elimination computation.  It
-is not live theorem evidence until an immutable candidate receives external
-audit.  The global Krenn--Gu conjecture remains **UNRESOLVED**.
+**Proved exact scoped characteristic-zero corollary (`GLD106`) of GLD96,
+GLD100, and GLD99.**  This package isolates a consequence already proved
+inside the accepted GLD100 argument; it does not add a new elimination
+computation.  Juniper and Kestrel accepted the immutable pre-promotion
+candidate from fresh isolated exports, giving the required `2/2` external
+consolidation.  The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
 Work over `C` on the normalized, scale-fixed GLD88/F88 equal-leaf H4 offset
 chart
@@ -169,6 +170,17 @@ This corollary does not prove or assert:
   or
 - a proof or refutation of the global Krenn--Gu conjecture.
 
-The global status remains **UNRESOLVED**.  No frontier, theorem-ledger, or
-README promotion is permitted until the frozen candidate package receives
-the required external audit.
+The immutable candidate commit and tree were
+
+```text
+8001f3435702d642ccb86e10893000379cca7ae5
+8b4b38f92c143aa557e039661ab7ecf046539181.
+```
+
+Its six-file `43,128`-byte diff has SHA-256
+`b8b33767bd74677b4e09a3a78bdaece657e90a5dbcb681452ae0ff3ca3c5f915`.
+Commons request `kgc_01M1C3T5Y83KSKVKG22HK0TCAH` received exact scoped
+acceptances from Juniper (`kgc_01M1C3VG98735EV4JM8TEVE02V`) and Kestrel
+(`kgc_01M1C468KR8XX1C8XC0EMEXPM3`).  These receipts justify only this scoped
+corollary, not any endpoint, remaining wall, boundary, wider-chart, or global
+conclusion.  The global status remains **UNRESOLVED**.

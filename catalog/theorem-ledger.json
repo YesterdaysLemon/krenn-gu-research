@@ -7248,6 +7248,35 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Four-root torus-star equal-leaf H4 Q6 B=0 C-open offset exclusion corollary (GLD106)",
+      "document": "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_B0_COPEN_OFFSET_EXCLUSION_COROLLARY.md",
+      "document_sha256_16": "12ea2a4ad4d06f5b",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact pointwise characteristic-zero statement over C on the normalized scale-fixed GLD88/F88 equal-leaf H4 offset chart with arbitrary a, B_offset=0, C_offset nonzero, Q6=0, Delta nonzero, and full GLD71 syndrome rank at most six",
+        "rank at most six is used only forward to make the four actual GLD96 bordered seven-minors T0 through T3 vanish; no selected-minor converse or generation of the full rank ideal is asserted",
+        "GLD96 supplies the exact cleared residual form Ttilde_i=D_i*T_i=f_i(B_offset)+C_offset*g_i(B_offset), with f_i(0)=0 from the 111 GLD88 common-kernel identities and clearing factors reversible on D(H2deg*Delta)",
+        "on B_offset=0 and D(C_offset*H2deg*Delta), the four residual equations force the primitive GLD100 gamma0 through gamma3 to vanish",
+        "the GLD100 post-B=0 algebra uses no E31 premise: its exact necessary eight-factor pair-resultant cover is followed by pointwise Delta exclusions, gamma gcds, and direct D0 or D2 seven-minor closures on every retained fibre",
+        "the proof removes H2deg by the exhaustive cases H2deg nonzero and H2deg=0; GLD99 supplies the latter offset closure on D(Delta) for arbitrary a, so no boundary factor is cancelled",
+        "the composition certificate pins nine GLD96/GLD100/GLD99 owner, verifier, audit, and review files by LF-normalized SHA256; immutable candidate commit 8001f3435702d642ccb86e10893000379cca7ae5 and tree 8b4b38f92c143aa557e039661ab7ecf046539181 received 2/2 fresh-isolated external consolidation under Commons request kgc_01M1C3T5Y83KSKVKG22HK0TCAH",
+        "the remaining D(B_offset) E31 wall, physical endpoint, Delta=0, Omega=0, arbitrary H4/Q6 outside F88, the GLD83 Fitting pullback, other pivots/charts/gauges/components/source branches, source integrability, graph lifting, global gluing, other roots/orders, and global Krenn-Gu remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_b0_copen_offset_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_b0_copen_offset_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_B0_COPEN_OFFSET_EXCLUSION_REVIEW_2026-08-31.md",
+      "expected_runtime": "under one second each for the source-pin/interface primary and no-repository-import composition audit on the reference host",
+      "external_binaries": [],
+      "note": "GLD106 proves only that V(B_offset,Q6) intersect D(C_offset*Delta) intersect {rank M(G)<=6} is empty over C on the normalized GLD88/F88 equal-leaf H4 offset chart for arbitrary a. It composes the E31-free post-B=0 GLD96/GLD100 residual and fibre closure with GLD99 on H2deg=0. The D(B_offset) E31 wall, physical endpoint, Delta and Omega boundaries, outside-F88 and Fitting/wider-source obligations, other roots/orders, global gluing, and the global Krenn-Gu conjecture remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

@@ -1,11 +1,12 @@
-# GLD100 B=0 C-open corollary hostile review
+# GLD106 B=0 C-open corollary hostile review
 
 ## Verdict
 
-**Candidate-review verdict: PASS for freezing and external audit, not yet for
-live promotion.**  The proposed statement is a direct exact consequence of
-the accepted GLD96, GLD100, and GLD99 proof interfaces.  It isolates no new
-CAS output and changes no upstream theorem.  The global Krenn--Gu conjecture
+**Verdict: PASS for the exact scoped GLD106 B=0 C-open corollary.**  The
+statement is a direct exact consequence of the accepted GLD96, GLD100, and
+GLD99 proof interfaces.  It isolates no new CAS output and changes no upstream
+theorem.  Juniper and Kestrel accepted the immutable candidate from fresh
+isolated exports before this promotion.  The global Krenn--Gu conjecture
 remains **UNRESOLVED**.
 
 ## Exact statement reviewed
@@ -88,7 +89,7 @@ V(E31,Q6) intersect D(B_offset*H2deg*Delta)
 That remaining `D(B_offset)` locus is not closed here.  Generic coprimality,
 modular scouting, or a support-only degree-620 cover does not close it.
 
-## Evidence and promotion gate
+## Evidence and external consolidation
 
 The package pins nine upstream theorem/verifier/audit/review files by
 LF-normalized SHA-256.  Its primary checker validates the exact interface and
@@ -98,11 +99,17 @@ checks the complete GLD100 owner sections between the pair-resultant cover and
 proof route, the GLD96 residual identity, the GLD99 arbitrary-`a` statement,
 and the two-case implication.
 
-Before live promotion, an immutable commit and tree require fresh-detached
-external audits of the exact source pins, scope, rank direction, reversible
-opens, H2deg exhaustion, no-E31 dependency, and all nonclaims.  Until then,
-the certificate remains candidate and no frontier, theorem-ledger, or README
-entry is allowed.
+The immutable candidate commit `8001f3435702d642ccb86e10893000379cca7ae5`
+and tree `8b4b38f92c143aa557e039661ab7ecf046539181` received the required
+fresh-isolated review under Commons request `kgc_01M1C3T5Y83KSKVKG22HK0TCAH`.
+Juniper accepted it at `kgc_01M1C3VG98735EV4JM8TEVE02V`; Kestrel accepted it
+at `kgc_01M1C468KR8XX1C8XC0EMEXPM3`.  The latter independently reproduced the
+six-file `43,128`-byte diff SHA-256
+`b8b33767bd74677b4e09a3a78bdaece657e90a5dbcb681452ae0ff3ca3c5f915`.
+Both reviewers checked the exact source pins, scope, rank direction,
+reversible opens, H2deg exhaustion, no-E31 dependency, executable checks, and
+all nonclaims.  These receipts justify only this scoped promotion; global
+status remains **UNRESOLVED**.
 
 ## Retained nonclaims
 

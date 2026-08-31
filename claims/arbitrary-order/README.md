@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD105 equal-leaf checkpoint
+## GLD83--GLD106 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -197,6 +197,27 @@ collision divisor is `p-s=L1/(p+q-1)`.  The theorem does not prove P6, remove
 cover H4/Q6 points outside the written F88-offset chart, compute the GLD83
 Fitting pullback, cover other charts/components/source branches, or resolve
 the global conjecture, which remains **UNRESOLVED**.
+
+[`GLD106`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_B0_COPEN_OFFSET_EXCLUSION_COROLLARY.md)
+extracts the E31-free `B_offset=0` consequence already present in the exact
+GLD96/GLD100 residual argument and composes it with GLD99.  Over `C`, on the
+normalized GLD88/F88 equal-leaf H4 offset chart with arbitrary `a`,
+
+```text
+V(B_offset,Q6) intersect D(C_offset*Delta)
+  intersect {rank M(G)<=6} = empty.
+```
+
+On `H2deg!=0`, rank at most six makes the four actual GLD96 seven-minors
+vanish; at `B_offset=0`, the common-kernel identities and
+`C_offset!=0` force all four primitive gamma coefficients to vanish, which
+the E31-free GLD100 pair/fibre closure excludes.  GLD99 handles `H2deg=0` for
+arbitrary `a`.  The split is exhaustive, uses selected minors only in the
+forward direction, and does not cancel a boundary factor.  Thus future work
+on the normalized E31 wall may restrict the nonzero-offset algebraic branch to
+`D(B_offset*H2deg*Delta)`.  That remaining D(B) branch, the physical endpoint,
+`Delta=0`, `Omega=0`, outside-F88, Fitting, wider-source, and global
+obligations remain open; the global conjecture remains **UNRESOLVED**.
 
 The [`GLD98-membership-pilot`](explore_four_root_torus_star_equal_leaf_h4_q6_modular_membership_census.py)
 is an **exploratory instrument, not a theorem node**.  It independently

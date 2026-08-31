@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent no-repository-import audit of the GLD100 C-open corollary."""
+"""Independent no-repository-import audit of the proved GLD106 corollary."""
 
 from __future__ import annotations
 
@@ -31,7 +31,7 @@ PRIMARY = BASE / (
 )
 
 EXPECTED_CERTIFICATE_LF_SHA256 = (
-    "c4a2ba5389e428de8b8b961e19ca6449b52d15266a2a7f3418892d5969744394"
+    "cb482133a56922695030ca850caa1135b480be8a93e23331fe8316e26741f377"
 )
 EXPECTED_SOURCE_PINS = {
     "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GENERIC_RESULTANT_EXCLUSION_THEOREM.md": "2d989620d82554197ce7f85d603269122d58dfe07c36a9ab46121a2261aabcff",
@@ -64,11 +64,30 @@ def load_payload() -> dict[str, Any]:
     payload = json.loads(CERTIFICATE.read_text(encoding="utf-8"))
     require(payload.get("certificate_id") == "GLD100-B0-Copen-arbitrary-a-corollary", "id")
     require(
-        payload.get("status") == "candidate_exact_scoped_characteristic_zero_composition",
-        "candidate status",
+        payload.get("status") == "proved_exact_scoped_characteristic_zero_composition",
+        "proved scoped status",
     )
     require(payload.get("global_conjecture") == "UNRESOLVED", "global status")
     require(payload.get("source_pins_lf_sha256") == EXPECTED_SOURCE_PINS, "frozen manifest")
+    require(
+        payload.get("external_consolidation")
+        == {
+            "required_before_promotion": True,
+            "candidate_commit": "8001f3435702d642ccb86e10893000379cca7ae5",
+            "candidate_tree": "8b4b38f92c143aa557e039661ab7ecf046539181",
+            "candidate_diff_bytes": 43128,
+            "candidate_diff_sha256": "b8b33767bd74677b4e09a3a78bdaece657e90a5dbcb681452ae0ff3ca3c5f915",
+            "request_event_id": "kgc_01M1C3T5Y83KSKVKG22HK0TCAH",
+            "receipts": {
+                "Juniper": "kgc_01M1C3VG98735EV4JM8TEVE02V",
+                "Kestrel": "kgc_01M1C468KR8XX1C8XC0EMEXPM3",
+            },
+            "status": "accepted_2_of_2",
+            "frontier_update_allowed": True,
+            "theorem_ledger_update_allowed": True,
+        },
+        "external gate",
+    )
     return payload
 
 
@@ -165,7 +184,7 @@ def check() -> dict[str, Any]:
     cases = audit_case_exhaustion(payload)
     primary_imports = validate_primary_independence_boundary()
     return {
-        "status": "independent_candidate_GLD100_B0_Copen_corollary_audit_pass",
+        "status": "independent_proved_GLD106_B0_Copen_corollary_audit_pass",
         "global_conjecture": "UNRESOLVED",
         "field": "C",
         "source_pins_checked": len(EXPECTED_SOURCE_PINS),
@@ -174,14 +193,14 @@ def check() -> dict[str, Any]:
         "primary_imports": primary_imports,
         "repository_verifiers_imported_or_executed": 0,
         "E31_wall_D_B_closed": False,
-        "frontier_or_ledger_promotion_allowed": False,
+        "frontier_or_ledger_promotion_allowed": True,
         "elapsed_seconds": round(time.monotonic() - started, 3),
     }
 
 
 def main() -> None:
     result = check()
-    print("Independent GLD100 B=0 C-open composition audit: PASS")
+    print("Independent GLD106 B=0 C-open composition audit: PASS")
     print(json.dumps(result, indent=2, sort_keys=True))
 
 

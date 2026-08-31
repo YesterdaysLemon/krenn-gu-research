@@ -1,4 +1,4 @@
-"""Candidate-status and integrity tests for the GLD100 C-open corollary."""
+"""Evidence-status and integrity tests for the proved GLD106 corollary."""
 
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ LEDGER = ROOT / "catalog" / "theorem-ledger.json"
 README = BASE / "README.md"
 
 EXPECTED_CERTIFICATE_LF_SHA256 = (
-    "c4a2ba5389e428de8b8b961e19ca6449b52d15266a2a7f3418892d5969744394"
+    "cb482133a56922695030ca850caa1135b480be8a93e23331fe8316e26741f377"
 )
 
 
@@ -41,12 +41,12 @@ def lf_sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
 
 
-class GLD100B0CopenCandidateTests(unittest.TestCase):
+class GLD106EvidenceStatusTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.payload = json.loads(CERTIFICATE.read_text(encoding="utf-8"))
 
-    def test_certificate_is_pinned_candidate_not_live(self) -> None:
+    def test_certificate_is_pinned_and_externally_accepted(self) -> None:
         self.assertEqual(lf_sha256(CERTIFICATE), EXPECTED_CERTIFICATE_LF_SHA256)
         self.assertEqual(self.payload["schema_version"], 1)
         self.assertEqual(
@@ -55,20 +55,27 @@ class GLD100B0CopenCandidateTests(unittest.TestCase):
         )
         self.assertEqual(
             self.payload["status"],
-            "candidate_exact_scoped_characteristic_zero_composition",
+            "proved_exact_scoped_characteristic_zero_composition",
         )
         self.assertEqual(self.payload["global_conjecture"], "UNRESOLVED")
         self.assertEqual(
             self.payload["external_consolidation"],
             {
                 "required_before_promotion": True,
-                "candidate_commit": None,
-                "candidate_tree": None,
-                "request_event_id": None,
-                "receipts": {},
-                "status": "pending",
-                "frontier_update_allowed": False,
-                "theorem_ledger_update_allowed": False,
+                "candidate_commit": "8001f3435702d642ccb86e10893000379cca7ae5",
+                "candidate_tree": "8b4b38f92c143aa557e039661ab7ecf046539181",
+                "candidate_diff_bytes": 43128,
+                "candidate_diff_sha256": (
+                    "b8b33767bd74677b4e09a3a78bdaece657e90a5dbcb681452ae0ff3ca3c5f915"
+                ),
+                "request_event_id": "kgc_01M1C3T5Y83KSKVKG22HK0TCAH",
+                "receipts": {
+                    "Juniper": "kgc_01M1C3VG98735EV4JM8TEVE02V",
+                    "Kestrel": "kgc_01M1C468KR8XX1C8XC0EMEXPM3",
+                },
+                "status": "accepted_2_of_2",
+                "frontier_update_allowed": True,
+                "theorem_ledger_update_allowed": True,
             },
         )
 
@@ -113,18 +120,37 @@ class GLD100B0CopenCandidateTests(unittest.TestCase):
             self.assertIn("Omega=0", text)
             self.assertIn("Fitting", text)
             self.assertIn("global", text.lower())
-        self.assertIn("Candidate exact scoped", owner)
-        self.assertRegex(review, re.compile(r"not yet for\s+live promotion", re.I))
+        self.assertIn("Proved exact scoped", owner)
+        self.assertIn("Verdict: PASS for the exact scoped GLD106", review)
         self.assertIn("No `E31` hypothesis occurs", owner)
+        for event_id in (
+            "kgc_01M1C3T5Y83KSKVKG22HK0TCAH",
+            "kgc_01M1C3VG98735EV4JM8TEVE02V",
+            "kgc_01M1C468KR8XX1C8XC0EMEXPM3",
+        ):
+            self.assertIn(event_id, owner)
+            self.assertIn(event_id, review)
 
-    def test_candidate_is_absent_from_live_surfaces(self) -> None:
+    def test_live_surfaces_record_only_the_scoped_theorem(self) -> None:
         frontier = FRONTIER.read_text(encoding="utf-8")
         readme = README.read_text(encoding="utf-8")
         ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
-        token = "GLD100-B0-Copen-arbitrary-a-corollary"
-        self.assertNotIn(token, frontier)
-        self.assertNotIn(token, readme)
-        self.assertFalse(any(token in entry.get("name", "") for entry in ledger["entries"]))
+        self.assertIn('GLD106["Equal-leaf H4 Q6 B=0 C-open', frontier)
+        self.assertIn("GLD100 -->|B=0 residual gamma/fibre closure", frontier)
+        self.assertIn("| `GLD106` |", frontier)
+        self.assertIn("global status remains **UNRESOLVED**", frontier)
+        self.assertIn("[`GLD106`]", readme)
+        entries = [entry for entry in ledger["entries"] if "(GLD106)" in entry["name"]]
+        self.assertEqual(len(entries), 1)
+        entry = entries[0]
+        self.assertEqual(entry["status"], "verified")
+        self.assertEqual(entry["document"], OWNER.relative_to(ROOT).as_posix())
+        self.assertEqual(entry["document_sha256_16"], "12ea2a4ad4d06f5b")
+        self.assertEqual(entry["document_sha256_16"], lf_sha256(OWNER)[:16])
+        self.assertEqual(entry["primary_verifier"], PRIMARY.relative_to(ROOT).as_posix())
+        self.assertEqual(entry["independent_audit"], AUDIT.relative_to(ROOT).as_posix())
+        self.assertEqual(entry["review"], REVIEW.relative_to(ROOT).as_posix())
+        self.assertIn("UNRESOLVED", entry["note"])
 
     def test_independent_audit_imports_no_repository_verifier(self) -> None:
         source = AUDIT.read_text(encoding="utf-8")
@@ -148,7 +174,7 @@ class GLD100B0CopenCandidateTests(unittest.TestCase):
         self.assertNotIn("load_module", calls)
         self.assertIn("audit_owner_dependency_boundary", source)
 
-    def test_candidate_files_have_no_machine_or_run_dependency(self) -> None:
+    def test_theorem_files_have_no_machine_or_run_dependency(self) -> None:
         for path in (CERTIFICATE, OWNER, PRIMARY, AUDIT, REVIEW):
             text = path.read_text(encoding="utf-8")
             with self.subTest(path=path.name):
@@ -158,8 +184,8 @@ class GLD100B0CopenCandidateTests(unittest.TestCase):
 
     def test_primary_and_independent_audit_execute(self) -> None:
         cases = (
-            (PRIMARY, "GLD100 B=0 C-open composition verifier: PASS"),
-            (AUDIT, "Independent GLD100 B=0 C-open composition audit: PASS"),
+            (PRIMARY, "GLD106 B=0 C-open composition verifier: PASS"),
+            (AUDIT, "Independent GLD106 B=0 C-open composition audit: PASS"),
         )
         for script, marker in cases:
             with self.subTest(script=script.name):
