@@ -1,0 +1,632 @@
+{
+  "schema_version": 1,
+  "certificate_id": "GLD101-a0-generic-C-open-selected-minor-rank-cover",
+  "status": "scoped_exact_selected_necessary_minor_leaf_certificate",
+  "global_conjecture": "UNRESOLVED",
+  "mathematical_scope": {
+    "branch": "normalized a=0 equal-leaf H4 chart with Q6=0",
+    "locus": "B=0 and C!=0",
+    "open": "D(H2*Delta), including every GLD88 chart denominator encoded in Delta",
+    "parameter": "arbitrary p over an algebraically closed field of characteristic zero",
+    "selected_necessary_minors": [
+      "T0",
+      "T1",
+      "T2",
+      "T3",
+      "Y1",
+      "X3"
+    ],
+    "bridge": "rank(M)<=6 makes each selected seven-minor vanish; on B=0 each selected minor is exactly C times the recorded coefficient, and C!=0 makes its primitive numerator vanish because its rational denominator is a unit on D(H2*Delta)",
+    "conclusion": "the six selected-minor numerator equations have no common point with Q6=0 on B=0, C!=0, D(H2*Delta)",
+    "base_change": "all reconstructed identities and rank-cover calculations are exact over QQ, hence base-change to any algebraically closed characteristic-zero field",
+    "nonclaims": [
+      "no converse from the six selected minors to syndrome rank",
+      "no claim on B!=0, C=0, arbitrary a, endpoints, or physical incidence",
+      "no P8 parent theorem, full E31 wall closure, or live-frontier promotion",
+      "no global Krenn-Gu resolution"
+    ]
+  },
+  "source_pins": {
+    "GLD71": {
+      "path": "claims/arbitrary-order/verify_four_root_torus_star_punctured_syndrome_and_eisenstein_norm_gate.py",
+      "lf_sha256": "e0204ec4495bb3f86252c18d77e3493dd6d1b0e3011e33866a2a0b2462922d5e"
+    },
+    "GLD88": {
+      "path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_generic_rank_six_common_row_kernel_exclusion.py",
+      "lf_sha256": "4ba10801ea64fbb170d7949a7030d64da6c1fd707bb894d8c1372947668d8199"
+    },
+    "GLD101_owner": {
+      "path": "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_SIX_SELECTOR_NORM_COVER_REDUCTION.md",
+      "lf_sha256": "fe9e705f2fa9cde61c71daeb19abea241545a6c45611c15e6dd03b62ea6d3f45"
+    },
+    "GLD101_canonical_verifier": {
+      "path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_six_selector_norm_cover.py",
+      "lf_sha256": "c36d618651b92621627961d3004128f39cb43e522a76256c74b1141baf9d1a3c"
+    },
+    "generic_C_open_Singular_source": {
+      "path": "claims/arbitrary-order/certificates/GLD101_A0_GENERIC_COPEN_UNIT_SCREEN.singular.txt",
+      "lf_sha256": "c514d842532f99cde4488cca048c551f39e43ed5cdf2c5ce6a54dcd7aa704850"
+    }
+  },
+  "support_digest": "c53d2c7912d87b5f46c39ec6fc64d1aaa6ab7839ad69f3bbfb6f39375b6ed1b0",
+  "selector_definitions": {
+    "T0": {
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        28
+      ],
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "B_zero_offset_terms": [
+        [
+          0,
+          1
+        ]
+      ],
+      "C_coefficient_numerator": {
+        "sha256": "4af9d72d3940e512dd824279619e8fa5a258518a5e022b199cf681a624388571",
+        "term_count": 104,
+        "total_degree": 29
+      },
+      "C_coefficient_denominator": {
+        "expression": "4*(p**2 - p + 1)**3*(2*p**2 - 2*p + 1)**5",
+        "factors": [
+          {
+            "name": "H2",
+            "factor": "p**2 - p + 1/2",
+            "exponent": 5
+          },
+          {
+            "name": "P",
+            "factor": "p**2 - p + 1",
+            "exponent": 3
+          }
+        ],
+        "unit_on_D(H2*Delta)": true
+      }
+    },
+    "T1": {
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        32
+      ],
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        2
+      ],
+      "B_zero_offset_terms": [
+        [
+          0,
+          1
+        ]
+      ],
+      "C_coefficient_numerator": {
+        "sha256": "c7095eabccb4ace202042630b267186921e3673c7d51bcfa1ddbb5d51740c950",
+        "term_count": 124,
+        "total_degree": 34
+      },
+      "C_coefficient_denominator": {
+        "expression": "16*(p**2 - p + 1)**5*(2*p**2 - 2*p + 1)**5",
+        "factors": [
+          {
+            "name": "H2",
+            "factor": "p**2 - p + 1/2",
+            "exponent": 5
+          },
+          {
+            "name": "P",
+            "factor": "p**2 - p + 1",
+            "exponent": 5
+          }
+        ],
+        "unit_on_D(H2*Delta)": true
+      }
+    },
+    "T2": {
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        32
+      ],
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        5
+      ],
+      "B_zero_offset_terms": [
+        [
+          0,
+          1
+        ]
+      ],
+      "C_coefficient_numerator": {
+        "sha256": "cf95372382d85a74cad34ac8e873d666e42d2b68e7c6d5c7aa87a8a282ae6fba",
+        "term_count": 116,
+        "total_degree": 31
+      },
+      "C_coefficient_denominator": {
+        "expression": "16*(p**2 - p + 1)**5*(2*p**2 - 2*p + 1)**5",
+        "factors": [
+          {
+            "name": "H2",
+            "factor": "p**2 - p + 1/2",
+            "exponent": 5
+          },
+          {
+            "name": "P",
+            "factor": "p**2 - p + 1",
+            "exponent": 5
+          }
+        ],
+        "unit_on_D(H2*Delta)": true
+      }
+    },
+    "T3": {
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        33
+      ],
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "B_zero_offset_terms": [
+        [
+          0,
+          1
+        ]
+      ],
+      "C_coefficient_numerator": {
+        "sha256": "2e96c1f7a3f8719f0e3aa835ac82d58edd72a23ead0ada965cc16f5e4bdcd288",
+        "term_count": 104,
+        "total_degree": 29
+      },
+      "C_coefficient_denominator": {
+        "expression": "(p**2 - p + 1)**3*(2*p**2 - 2*p + 1)**5",
+        "factors": [
+          {
+            "name": "H2",
+            "factor": "p**2 - p + 1/2",
+            "exponent": 5
+          },
+          {
+            "name": "P",
+            "factor": "p**2 - p + 1",
+            "exponent": 3
+          }
+        ],
+        "unit_on_D(H2*Delta)": true
+      }
+    },
+    "Y1": {
+      "rows": [
+        0,
+        1,
+        17,
+        28,
+        31,
+        32,
+        33
+      ],
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "B_zero_offset_terms": [
+        [
+          0,
+          1
+        ]
+      ],
+      "C_coefficient_numerator": {
+        "sha256": "27ac33d4331e6aea40e7cfbd27691b38d1b67b04d805b8a2eb9cde9423c47503",
+        "term_count": 113,
+        "total_degree": 31
+      },
+      "C_coefficient_denominator": {
+        "expression": "4*(p**2 - p + 1)**5*(2*p**2 - 2*p + 1)**5",
+        "factors": [
+          {
+            "name": "H2",
+            "factor": "p**2 - p + 1/2",
+            "exponent": 5
+          },
+          {
+            "name": "P",
+            "factor": "p**2 - p + 1",
+            "exponent": 5
+          }
+        ],
+        "unit_on_D(H2*Delta)": true
+      }
+    },
+    "X3": {
+      "rows": [
+        0,
+        1,
+        17,
+        28,
+        31,
+        32,
+        33
+      ],
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "B_zero_offset_terms": [
+        [
+          0,
+          1
+        ]
+      ],
+      "C_coefficient_numerator": {
+        "sha256": "ca9a77820378852e8144c3c058c3857b9953a7b8b2dba04dfe41a273b13e4456",
+        "term_count": 128,
+        "total_degree": 34
+      },
+      "C_coefficient_denominator": {
+        "expression": "4*(p**2 - p + 1)**5*(2*p**2 - 2*p + 1)**5",
+        "factors": [
+          {
+            "name": "H2",
+            "factor": "p**2 - p + 1/2",
+            "exponent": 5
+          },
+          {
+            "name": "P",
+            "factor": "p**2 - p + 1",
+            "exponent": 5
+          }
+        ],
+        "unit_on_D(H2*Delta)": true
+      }
+    }
+  },
+  "equations": {
+    "T0": {
+      "sha256": "4af9d72d3940e512dd824279619e8fa5a258518a5e022b199cf681a624388571",
+      "term_count": 104,
+      "total_degree": 29
+    },
+    "T1": {
+      "sha256": "c7095eabccb4ace202042630b267186921e3673c7d51bcfa1ddbb5d51740c950",
+      "term_count": 124,
+      "total_degree": 34
+    },
+    "T2": {
+      "sha256": "cf95372382d85a74cad34ac8e873d666e42d2b68e7c6d5c7aa87a8a282ae6fba",
+      "term_count": 116,
+      "total_degree": 31
+    },
+    "T3": {
+      "sha256": "2e96c1f7a3f8719f0e3aa835ac82d58edd72a23ead0ada965cc16f5e4bdcd288",
+      "term_count": 104,
+      "total_degree": 29
+    },
+    "Y1": {
+      "sha256": "27ac33d4331e6aea40e7cfbd27691b38d1b67b04d805b8a2eb9cde9423c47503",
+      "term_count": 113,
+      "total_degree": 31
+    },
+    "X3": {
+      "sha256": "ca9a77820378852e8144c3c058c3857b9953a7b8b2dba04dfe41a273b13e4456",
+      "term_count": 128,
+      "total_degree": 34
+    }
+  },
+  "rank_cover": {
+    "coefficient_matrix_shape": [
+      6,
+      4
+    ],
+    "coefficient_order": [
+      "q^3",
+      "q^2",
+      "q",
+      "1"
+    ],
+    "maximal_minors": [
+      {
+        "selectors": [
+          "T0",
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "sha256": "03b10ce5ce7bc4f54b16e7aa48bc7d57d8407645b0859a50347a0c5aeb551fce",
+        "term_count": 94,
+        "total_degree": 110
+      },
+      {
+        "selectors": [
+          "T0",
+          "T1",
+          "T2",
+          "Y1"
+        ],
+        "sha256": "7c22f12f60341404e839287bd6bd2b7eb2c76a48d0fd6e8b36d89734574caae5",
+        "term_count": 98,
+        "total_degree": 113
+      },
+      {
+        "selectors": [
+          "T0",
+          "T1",
+          "T2",
+          "X3"
+        ],
+        "sha256": "9600712092926049fe354e0699ab223782b0a176ebe52649bc1634ac32a19bb4",
+        "term_count": 99,
+        "total_degree": 114
+      },
+      {
+        "selectors": [
+          "T0",
+          "T1",
+          "T3",
+          "Y1"
+        ],
+        "sha256": "5ce22095c9574d1169a10dc2cfa2887bbee029f97827703fca28e807f17a0419",
+        "term_count": 91,
+        "total_degree": 109
+      },
+      {
+        "selectors": [
+          "T0",
+          "T1",
+          "T3",
+          "X3"
+        ],
+        "sha256": "abb17cf80021bdf4d4ef1fc000ad1f4c2aecec0bc5aa06588b71c690427f3638",
+        "term_count": 92,
+        "total_degree": 110
+      },
+      {
+        "selectors": [
+          "T0",
+          "T1",
+          "Y1",
+          "X3"
+        ],
+        "sha256": "e42c9b05d7c4e576037082573e5e722ecc1231c18c8fb72b316692bff9de2b1f",
+        "term_count": 96,
+        "total_degree": 113
+      },
+      {
+        "selectors": [
+          "T0",
+          "T2",
+          "T3",
+          "Y1"
+        ],
+        "sha256": "3827206e5387e79b94658722d257499b66a4f6046dde7bc4f1c339dec65ddfae",
+        "term_count": 92,
+        "total_degree": 107
+      },
+      {
+        "selectors": [
+          "T0",
+          "T2",
+          "T3",
+          "X3"
+        ],
+        "sha256": "c5f3edeeb6e8790e5f07ec0a25e8b6486a39fb0fe5fc01705190a15fbf7b32ef",
+        "term_count": 95,
+        "total_degree": 110
+      },
+      {
+        "selectors": [
+          "T0",
+          "T2",
+          "Y1",
+          "X3"
+        ],
+        "sha256": "1e71ca9f5764ddcbe0dbf79520ab01a0bdfaf6cb2aa0751738813ac3a18213ec",
+        "term_count": 99,
+        "total_degree": 113
+      },
+      {
+        "selectors": [
+          "T0",
+          "T3",
+          "Y1",
+          "X3"
+        ],
+        "sha256": "6cb43b4d1aba64388898c640334ea19d27fb8f37ba015fca68fe46223b63fb25",
+        "term_count": 91,
+        "total_degree": 109
+      },
+      {
+        "selectors": [
+          "T1",
+          "T2",
+          "T3",
+          "Y1"
+        ],
+        "sha256": "78fc8c5c2efd2ac4d4e521676bf88806078abe3b3ef4e519c725beb4a01f5d60",
+        "term_count": 98,
+        "total_degree": 113
+      },
+      {
+        "selectors": [
+          "T1",
+          "T2",
+          "T3",
+          "X3"
+        ],
+        "sha256": "12e280bb43fbf755e9fcb52e1b0af0726d803f607c519ca33e9639a695780cb0",
+        "term_count": 99,
+        "total_degree": 114
+      },
+      {
+        "selectors": [
+          "T1",
+          "T2",
+          "Y1",
+          "X3"
+        ],
+        "sha256": "2baf3dff2090f9678e8f25dd012fad8ad0e68f2e31a02543b38ed56b0273e18f",
+        "term_count": 101,
+        "total_degree": 115
+      },
+      {
+        "selectors": [
+          "T1",
+          "T3",
+          "Y1",
+          "X3"
+        ],
+        "sha256": "4a67a672c5a34b427a418f43fc37c1f9d7d630eecd6b1f63d65b6c615448cf7d",
+        "term_count": 96,
+        "total_degree": 113
+      },
+      {
+        "selectors": [
+          "T2",
+          "T3",
+          "Y1",
+          "X3"
+        ],
+        "sha256": "adf5d1b892beab23f65c3ec30ec3efe4bf9d08daca3b10ca181a39d68a3f1afc",
+        "term_count": 99,
+        "total_degree": 113
+      }
+    ],
+    "maximal_minors_combined_sha256": "f4c75e12e83b6e757fd111d6fbf15210f7bc8e10a3dfb141d512819241e5947d",
+    "maximal_minor_gcd": {
+      "sha256": "2f88bb22b454d88576e1485df46ac5642b0672c2879671400a958956d83068b1",
+      "term_count": 59,
+      "total_degree": 73,
+      "expression": "16384*p**73 - 475136*p**72 + 6914048*p**71 - 67174400*p**70 + 489271296*p**69 - 2844495872*p**68 + 13725491200*p**67 - 56439746560*p**66 + 201535312896*p**65 - 633653167104*p**64 + 1772596832256*p**63 - 4446632097792*p**62 + 10060714278656*p**61 - 20613234782464*p**60 + 38334509198848*p**59 - 64739279787264*p**58 + 99102843650752*p**57 - 136799609606336*p**56 + 168416649414528*p**55 - 180728577688064*p**54 + 160149828948496*p**53 - 98120577675312*p**52 - 3505834713824*p**51 + 129776620469296*p**50 - 254772052400292*p**49 + 348694375726516*p**48 - 387561120744008*p**47 + 361547279332904*p**46 - 278343936097467*p**45 + 160107192261101*p**44 - 35492588509030*p**43 - 69670665204203*p**42 + 139325076017994*p**41 - 169578712987459*p**40 + 166653870646529*p**39 - 142243433072612*p**38 + 108638606874236*p**37 - 75358413907668*p**36 + 47864475971804*p**35 - 27965008274532*p**34 + 15065564249894*p**33 - 7491022514890*p**32 + 3437364181280*p**31 - 1454090878802*p**30 + 566027603928*p**29 - 202214711882*p**28 + 66068670334*p**27 - 19653862372*p**26 + 5293451288*p**25 - 1281828536*p**24 + 276632220*p**23 - 52613852*p**22 + 8692021*p**21 - 1223371*p**20 + 142806*p**19 - 13291*p**18 + 926*p**17 - 43*p**16 + p**15",
+      "factorization": "p^15*(p-1)^6*(p+1)^2*(p^2-p+1)^11*(2*p^2-2*p+1)^14"
+    },
+    "generic_fibre_argument": "off the displayed gcd factors some 4x4 maximal minor is nonzero, so the six cubics span QQ[p]-specialized polynomials of degree at most three and cannot have a common q zero",
+    "localization_exclusions": {
+      "p^2-p+1": "P is a factor of Delta",
+      "2*p^2-2*p+1": "this is H2"
+    },
+    "special_fibres": {
+      "-1": {
+        "common_q_gcd": {
+          "sha256": "1bfec7fc76fa47bb43554e878891e86ca2ad8955568ee2b5e5c68fc2d66f303f",
+          "term_count": 1,
+          "total_degree": 0,
+          "expression": "1"
+        },
+        "gcd_Q6_Delta": {
+          "sha256": "1bfec7fc76fa47bb43554e878891e86ca2ad8955568ee2b5e5c68fc2d66f303f",
+          "term_count": 1,
+          "total_degree": 0,
+          "expression": "1"
+        },
+        "disposition": "no common q root"
+      },
+      "0": {
+        "common_q_gcd": {
+          "sha256": "c5b9df29d2ba4402fe8fb424f4f90b3887b057b720e42963a0d6545356382d2f",
+          "term_count": 1,
+          "total_degree": 2,
+          "expression": "q**2"
+        },
+        "gcd_Q6_Delta": {
+          "sha256": "c5b9df29d2ba4402fe8fb424f4f90b3887b057b720e42963a0d6545356382d2f",
+          "term_count": 1,
+          "total_degree": 2,
+          "expression": "q**2"
+        },
+        "disposition": "every common Q6 root lies in Delta=0"
+      },
+      "1": {
+        "common_q_gcd": {
+          "sha256": "e197a53e6058038555fff42c7b04e24501086dcdc2cec069bd672160af7d8c1d",
+          "term_count": 3,
+          "total_degree": 2,
+          "expression": "q**2 - 2*q + 1"
+        },
+        "gcd_Q6_Delta": {
+          "sha256": "e197a53e6058038555fff42c7b04e24501086dcdc2cec069bd672160af7d8c1d",
+          "term_count": 3,
+          "total_degree": 2,
+          "expression": "q**2 - 2*q + 1"
+        },
+        "disposition": "every common Q6 root lies in Delta=0"
+      }
+    },
+    "no_common_zero_on_D(H2*Delta)": true
+  },
+  "provenance": {
+    "tracked_Singular_source_role": "durable exact coefficient disclosure; its archived Singular process and transcript are not required by this certificate",
+    "load_bearing_evidence": "canonical syndrome-minor reconstruction, exact source equality, all 15 maximal minor records, their gcd, and the p=-1,0,1 fibre gcds",
+    "failed_lineage": [
+      {
+        "versions": [
+          "generic-copen-cross-audit-v1",
+          "generic-copen-cross-audit-v2"
+        ],
+        "status": "failed_non_evidence",
+        "reason": "their archived process-identity checks were not portable or sound"
+      },
+      {
+        "version": "generic-copen-cross-audit-v3",
+        "status": "accepted_historical_scoped_audit",
+        "role": "source provenance only; this package replaces transcript dependence with the exact rank cover"
+      }
+    ]
+  },
+  "reproducible_commands": [
+    "python claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_generic_c_open.py",
+    "python claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_generic_c_open.py",
+    "python -m unittest -v tests.test_gld101_generic_copen_portable_leaf"
+  ]
+}
