@@ -342,7 +342,7 @@ class GLD101EvidenceStatusTests(unittest.TestCase):
 
         for path, expected in EVIDENCE_SHA256.items():
             with self.subTest(path=path.name):
-                self.assertEqual(sha256_bytes(path.read_bytes()), expected)
+                self.assertEqual(lf_sha256(path), expected)
 
     def test_clean_clone_defaults_are_non_strict_about_ignored_replays(self) -> None:
         primary = load_module(PRIMARY, "gld101_primary_defaults_test")

@@ -119,6 +119,7 @@ FAST_VERIFIERS = [
     "claims/arbitrary-order/verify_fourth_order_permanent_subrank.py",
     "claims/arbitrary-order/verify_exact_three_blocker_permanent_rank.py",
     "claims/arbitrary-order/verify_support_three_p5_contraction_subrank.py",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_e31_gaussian_controls.py",
 ]
 
 SCRIPT_REF = re.compile(
