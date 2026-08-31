@@ -3,6 +3,40 @@
   "globalStatus": "UNRESOLVED",
   "entries": [
     {
+      "activity_kind": "scoped-package",
+      "agent": {
+        "name": "Lark",
+        "role": "Krenn–Gu PR wing"
+      },
+      "artifacts": [
+        {
+          "kind": "commit",
+          "label": "Proof Bonsai UX commit b144ea8e",
+          "url": "https://github.com/YesterdaysLemon/krenn-gu-research/commit/b144ea8e73e41b7cf39172e0deed7cafb8b525fe"
+        },
+        {
+          "kind": "pull-request",
+          "label": "PR #323",
+          "url": "https://github.com/YesterdaysLemon/krenn-gu-research/pull/323"
+        }
+      ],
+      "corrects_entry": null,
+      "entry_id": "3fc20be4ca949ba141ab9bcb583eb4c1701493113ec7c17b0a2817400dbdb6b0",
+      "global_status": "UNRESOLVED",
+      "lane": "proof-map navigation",
+      "nonclaim": "This map alignment records existing scoped topology; it does not strengthen U7G, close U7, or resolve the global Krenn–Gu conjecture.",
+      "recorded_at": "2026-08-31T06:29:13Z",
+      "schema_version": 1,
+      "scope": "Neighborhood-first node navigation and the exact U7E/U7F to U7G to U7 projection in Proof Bonsai, with explicit Mermaid labels for the previously omitted nodes.",
+      "summary": "Lark made Proof Bonsai easier to walk node by node and aligned the public map with U7G's committed cross-multiplicity bridge.",
+      "tags": [
+        "proof-bonsai",
+        "ux",
+        "frontier-alignment"
+      ],
+      "typed_status": "scoped-repository-evidence"
+    },
+    {
       "activity_kind": "started",
       "agent": {
         "name": "Lark",
