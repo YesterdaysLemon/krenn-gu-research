@@ -2,24 +2,20 @@
 
 ## Verdict
 
-**DRAFT/PENDING — not PASS.**
+**PASS -- GLD103 exact scoped theorem.**
 
-GLD103 has a precise, scoped empty-set target, but this review cannot return
-PASS until both a tracked primary and a tracked independent audit actually
-land and replay from a clean clone. The motivating primary, factor-cover run,
-quotient-gcd computation, and arithmetic audit are currently research-run
-material rather than durable tracked proof evidence. A successful local run
-or a matching report is not enough to change that verdict. The global
+The tracked primary, independent audit, full certificate, and exact
+comparison-only reconciliation all replayed successfully from a detached
+clean checkout of commit `02ca1921c00deecbec1fd9c2b3dd378f381ce67e`.
+The durable replay-provenance record pins every repaired 64-hex source and
+comparison digest, the tracked certificate, and all three clean-run manifests and logs. The
+comparison helper is neither a runtime dependency nor primary acceptance
+evidence. This PASS certifies only the exact branch stated below. The global
 Krenn--Gu conjecture remains **UNRESOLVED**.
-
-PASS is reserved for the state in which the checklist below is closed by the
-clean-clone primary-plus-audit package, with exact outputs and hashes
-reconciled. Until then this document records the adversarial obligations and
-the reasons for withholding promotion.
 
 ## 1. Proposition under review
 
-The proposed theorem is over an algebraically closed field of characteristic
+The theorem is over an algebraically closed field of characteristic
 zero, on the normalized GLD88/F88 equal-leaf H4 chart with symbolic
 arbitrary a. It assumes
 
@@ -43,25 +39,25 @@ branches, an endpoint theorem, or a physical/global Krenn--Gu resolution.
 
 | check | PASS condition | current status |
 | --- | --- | --- |
-| Exact chart reconstruction | Clean-clone primary rebuilds the normalized GLD88/F88 chart, Q6, H2, Delta, and all five actual minors from pinned parents. | PENDING |
-| Field and quantifiers | The proof is exact over QQ, extends to every algebraically closed characteristic-zero field, keeps symbolic arbitrary a, and introduces no specialization or hidden inversion. | PENDING |
-| Open-set audit | Every denominator is shown nonzero on D(B*H2*Delta); no conclusion is drawn on Delta=0 or H2=0. | PENDING |
-| Clearing gate | The package records ClearingGate=P^23*H2^45 and proves the open-set equality because P|Delta, H2 is already inverted, and integer contents are characteristic-zero units. | PENDING |
-| Rank bridge | The primary proves only rank M<=6 => vanishing of the selected actual minors. No selected-minor or coefficient-minor converse is used. | PENDING |
-| Affine-C identity | For every selected minor, exact parameter-only clearing gives A_i=F_i+C*G_i with F_i=B*f_i; this is checked entrywise, not inferred from a sample. No B-coefficient is rescaled independently. A later single whole-P_i rational-content division is allowed only when its uniform unit and exact reconstruction are recorded. | PENDING |
-| Ratio equations | On D(B), the primary records H_i=f_i+t*G_i for t=C/B and uses the ratio only in that B-open. | PENDING |
-| Gamma identity | The package verifies K_ij=F_i*G_j-F_j*G_i=B*Gamma_ij and uses it only in the forward direction. | PENDING |
-| Exhaustive coefficient split | The five open pivot patches and their all-zero complement are explicitly exhaustive; the all-zero equations are not confused with C=0. | PENDING |
-| Coefficient/Fitting reduction | On the all-zero leaf, P0=F_T0/B, P1=G_T0, ..., P5=G_X3 are quadratic in B, and the nonzero vector (1,B,B^2) forces all 20 maximal row minors; the cover uses the necessary subset D012,D013,D014,D015,D023,D123. | PENDING |
-| Exact factor cover | The six selected coefficient determinants have exact squarefree support p, p-1, P, H2, p^2+1, R4, R8, C4, F4, p^2-2*p+2, and F40.  Raw cover degree/multiplicities and every clearing scalar are reported separately and reconciled between the native and source-normalized representations. | PENDING |
-| p and p-1 fibres | The required GLD102 nonzero-offset fibre certificates are present, correctly scoped, and do not import a selected-minor converse. | PENDING |
-| Boundary factors | P is removed only because P|Delta; H2 is removed only because D(H2) is declared. | PENDING |
-| Determinant-fibre leaves | C4, R8, p^2+1, and R4 each have an exact determinant-fibre Macaulay identity with its localizer and a checker that validates the identity. | PENDING |
-| Direct all-zero-branch leaves | F4 and p^2-2*p+2 each have an exact localized Macaulay contradiction in `<Q6,P0,...,P5,z*B*Delta-1>`; this is not the GLD83 physical Fitting ideal and neither leaf is replaced by a rank converse. | PENDING |
-| Degree-40 leaf | F40 has an exact quotient-gcd relation and a nonzero multiplication norm. The full primary replay explicitly sets `GLD103_FACTOR_MATRIX_INVERSE=1` and `GLD103_FACTOR_NO_FINAL_INVERSE=1`, and its certificate must record effective value `1` with each environment-variable name as the source. A modular timeout or modular rank census is recorded as neutral, not as proof. | PENDING |
-| Independent audit | The audit differs in derivation, representation, or checker, and its independence boundary is stated: arithmetic/factor-cover independence is not independent reconstruction of the graph model or rank bridge. | PENDING |
-| Clean-clone replay | Both tracked artifacts land, run from a clean clone, and reproduce the exact source identities, factor support, fibre certificates, quotient-gcd relation, and hashes. | PENDING |
-| Scope fences | No claim is made for pivot branches, B=0, E31, Delta=0, H2=0, other charts/components/sources/roots/orders, physical incidence, or global resolution. | PENDING |
+| Exact chart reconstruction | Clean-clone primary rebuilds the normalized GLD88/F88 chart, Q6, H2, Delta, and all five actual minors from pinned parents. | PASS |
+| Field and quantifiers | The proof is exact over QQ, extends to every algebraically closed characteristic-zero field, keeps symbolic arbitrary a, and introduces no specialization or hidden inversion. | PASS |
+| Open-set audit | Every denominator is shown nonzero on D(B*H2*Delta); no conclusion is drawn on Delta=0 or H2=0. | PASS |
+| Clearing gate | The package records ClearingGate=P^23*H2^45 and proves the open-set equality because P|Delta, H2 is already inverted, and integer contents are characteristic-zero units. | PASS |
+| Rank bridge | The primary proves only the one-way implication rank M<=6 => vanishing of the selected actual minors. No selected-minor or coefficient-minor converse is used. | PASS |
+| Affine-C identity | For every selected minor, exact parameter-only clearing gives A_i=F_i+C*G_i with F_i=B*f_i; this is checked entrywise, not inferred from a sample. No B-coefficient is rescaled independently. A later single whole-P_i rational-content division is allowed only when its uniform unit and exact reconstruction are recorded. | PASS |
+| Ratio equations | On D(B), the primary records H_i=f_i+t*G_i for t=C/B and uses the ratio only in that B-open. | PASS |
+| Gamma identity | The package verifies K_ij=F_i*G_j-F_j*G_i=B*Gamma_ij and uses it only in the forward direction. | PASS |
+| Exhaustive coefficient split | The five open pivot patches and their all-zero complement are explicitly exhaustive; the all-zero equations are not confused with C=0. | PASS |
+| Coefficient/Fitting reduction | On the all-zero leaf, P0=F_T0/B, P1=G_T0, ..., P5=G_X3 are quadratic in B, and the nonzero vector (1,B,B^2) forces all 20 maximal row minors; the cover uses the necessary subset D012,D013,D014,D015,D023,D123. | PASS |
+| Exact factor cover | The six selected coefficient determinants have exact squarefree support p, p-1, P, H2, p^2+1, R4, R8, C4, F4, p^2-2*p+2, and F40. Raw cover degree/multiplicities and every clearing scalar are reported separately and reconciled between the native and source-normalized representations. | PASS |
+| p and p-1 fibres | The required GLD102 nonzero-offset fibre certificates are present, correctly scoped, and do not import a selected-minor converse. | PASS |
+| Boundary factors | P is removed only because P|Delta; H2 is removed only because D(H2) is declared. | PASS |
+| Determinant-fibre leaves | C4, R8, p^2+1, and R4 each have an exact determinant-fibre Macaulay identity with its localizer and a checker that validates the identity. | PASS |
+| Direct all-zero-branch leaves | F4 and p^2-2*p+2 each have an exact localized Macaulay contradiction in `<Q6,P0,...,P5,z*B*Delta-1>`; this is not the GLD83 physical Fitting ideal and neither leaf is replaced by a rank converse. | PASS |
+| Degree-40 leaf | F40 has an exact quotient-gcd relation and a nonzero multiplication norm. The full primary replay explicitly sets `GLD103_FACTOR_MATRIX_INVERSE=1` and `GLD103_FACTOR_NO_FINAL_INVERSE=1`, and its certificate records effective value `1` with each environment-variable name as the source. The modular timeout remains neutral. | PASS |
+| Independent audit | The audit differs in derivation, representation, and checker, and states that arithmetic/factor-cover independence is not independent reconstruction of the graph model or rank bridge. | PASS |
+| Clean-clone replay | The primary, independent audit, and comparison-only helper ran from the same detached clean candidate commit and reproduced the exact source identities, factor support, fibre certificates, quotient-gcd relation, and hashes recorded in the replay provenance. | PASS |
+| Scope fences | No claim is made for pivot branches, B=0, E31, Delta=0, H2=0, other charts/components/sources/roots/orders, physical incidence, or global resolution. | PASS |
 
 ## 3. Specific failure modes checked
 
@@ -125,10 +121,10 @@ verdict. The timeout is neutral: it neither supports nor refutes the exact
 F40 route. The only acceptable closure there is the exact quotient-gcd
 identity together with the nonzero norm and a clean-clone replay.
 
-## 4. Required evidence before changing the verdict
+## 4. Evidence supporting the verdict
 
-The following evidence must be present in tracked files and executable from a
-clean clone:
+The following evidence is present in tracked files and was replayed from a
+detached clean checkout:
 
 1. a primary verifier that reconstructs the normalized chart, the five
    actual minors, the affine-C decomposition, the B-divisibility, the
@@ -141,19 +137,26 @@ clean clone:
 5. exact direct all-zero-branch localized Macaulay certificates for F4 and
    p^2-2*p+2;
 6. the exact F40 quotient-gcd relation and nonzero norm;
-   the bounded full-replay provenance and certificate must record explicit
+   the bounded full-replay provenance and certificate record explicit
    `GLD103_FACTOR_MATRIX_INVERSE=1` and
    `GLD103_FACTOR_NO_FINAL_INVERSE=1`, rather than relying on defaults;
 7. a reconciliation showing that every localizer, factor, source identity,
    and hash is the same object in the primary and audit;
-8. a negative-scope report preserving all nonclaims in this document.
+8. this negative-scope report preserving all nonclaims in the theorem.
 
-Until all eight items land and replay, the review verdict is DRAFT/PENDING.
+The replay record is
+[`GLD103_ALL_ZERO_COEFFICIENT_BRANCH_REPLAY_PROVENANCE.json`](../../claims/arbitrary-order/certificates/GLD103_ALL_ZERO_COEFFICIENT_BRANCH_REPLAY_PROVENANCE.json).
+It pins clean runs `gld103-allhash-clean-primary-20260831-v1`,
+`gld103-allhash-clean-audit-20260831-v1`, and
+`gld103-allhash-clean-compare-20260831-v1`, including their bounded-run
+manifests and logs. All three succeeded at the same repaired candidate
+commit. The helper's exact comparison log is byte-identical to the earlier
+designated comparison replay, but remains outside primary acceptance.
 
 ## 5. Final scope and status
 
-Even a future PASS would certify only the GLD103 all-zero coefficient leaf on
-the normalized arbitrary-a chart and the open D(B*H2*Delta). It would not
+This PASS certifies only the GLD103 all-zero coefficient leaf on
+the normalized arbitrary-a chart and the open D(B*H2*Delta). It does not
 certify pivot branches, the B=0 endpoint, the E31 wall/equation, Delta=0,
 H2=0, other charts/components/sources/roots/orders, physical incidence, or a
 global Krenn--Gu resolution. No review outcome here changes the global

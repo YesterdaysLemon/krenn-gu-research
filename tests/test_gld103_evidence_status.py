@@ -16,6 +16,7 @@ PRIMARY = BASE / "verify_four_root_torus_star_equal_leaf_h4_q6_all_zero_coeffici
 AUDIT = BASE / "audit_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py"
 HELPER = BASE / "_gld103_all_zero_exact.py"
 CERTIFICATE = BASE / "certificates" / "GLD103_ALL_ZERO_COEFFICIENT_BRANCH_CERTIFICATE.json"
+REPLAY = BASE / "certificates" / "GLD103_ALL_ZERO_COEFFICIENT_BRANCH_REPLAY_PROVENANCE.json"
 REVIEW = ROOT / "docs" / "audits" / (
     "FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_ALL_ZERO_COEFFICIENT_BRANCH_EXCLUSION_"
     "REVIEW_2026-08-31.md"
@@ -25,12 +26,14 @@ ROOT_README = ROOT / "README.md"
 README = BASE / "README.md"
 LEDGER = ROOT / "catalog" / "theorem-ledger.json"
 
-PRIMARY_SHA256 = "778ac116e39dd27b6affdd6c38f83b3e5f1c7ce434b192e35570399e6e217862"
+PRIMARY_SHA256 = "c87feeb983f6f14a8d6c3c9c3bf788d113d655a4efdce206b98994cf2395d916"
 AUDIT_SHA256 = "7fa82c67b4322dcc75a59b17cb41d24851b417593962d15070a75130dc2fe79d"
 HELPER_SHA256 = "06ca97b8b38136659b8a57279b66959a28130f1ef75ff0dd5bc367ce990f2f23"
 CERTIFICATE_PAYLOAD_SHA256 = (
-    "f05de343d8c65b953215e3e193104b280fc3d17bdace518534d8b3bd63cad039"
+    "f85feebddb4601e107f1728e52261a60c3f5ebb65d121eb0f29376e3409efc97"
 )
+CERTIFICATE_FILE_SHA256 = "7bbcf82508673262f5e5a493ccc7aae8949cc155ea49f0e472fb0cc4baa93236"
+REPLAY_CANDIDATE_COMMIT = "02ca1921c00deecbec1fd9c2b3dd378f381ce67e"
 F40_FACTOR_SHA256 = "83f6ac7c7e4011a85960b57f145918d910c94fb9ef61b2f27741f91ef69efe2f"
 F40_RELATION_SHA256 = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 Q6_SREPR_SHA256 = "2ed58764e7c50c8e1510a93b32d2515a9297c03dfe297fed8d9abe5f8e9d71a7"
@@ -86,6 +89,17 @@ def staged_index_hash(path: Path) -> str:
     return sha256_bytes(blob)[:16]
 
 
+def commit_blob_hash(commit: str, path: Path) -> str:
+    relative = path.relative_to(ROOT).as_posix()
+    blob = subprocess.run(
+        ["git", "show", f"{commit}:{relative}"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+    ).stdout
+    return sha256_bytes(blob)
+
+
 def section(text: str, heading: str) -> str:
     match = re.search(
         rf"^## {re.escape(heading)}\s*$([\s\S]*?)(?=^## |\Z)",
@@ -109,6 +123,128 @@ def imported_modules(path: Path) -> set[str]:
 
 
 class GLD103EvidenceStatusTests(unittest.TestCase):
+    def test_repaired_same_commit_replay_provenance_is_complete(self) -> None:
+        self.assertTrue(REPLAY.is_file(), f"missing GLD103 replay provenance: {REPLAY}")
+        replay = json.loads(read(REPLAY))
+        self.assertEqual(replay["schema_version"], 1)
+        self.assertEqual(replay["claim_id"], "GLD103")
+        self.assertEqual(replay["artifact_role"], "durable_exact_replay_provenance")
+        self.assertEqual(replay["replay_candidate_commit"], REPLAY_CANDIDATE_COMMIT)
+        self.assertEqual(replay["global_conjecture"], "UNRESOLVED")
+
+        subprocess.run(
+            ["git", "cat-file", "-e", f"{REPLAY_CANDIDATE_COMMIT}^{{commit}}"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+        )
+        source_records = {
+            "primary": (PRIMARY, PRIMARY_SHA256),
+            "independent_audit": (AUDIT, AUDIT_SHA256),
+            "comparison_helper": (HELPER, HELPER_SHA256),
+        }
+        for name, (path, expected) in source_records.items():
+            record = replay["sources"][name]
+            with self.subTest(source=name):
+                self.assertEqual(record["path"], path.relative_to(ROOT).as_posix())
+                self.assertEqual(record["lf_sha256"], expected)
+                self.assertEqual(commit_blob_hash(REPLAY_CANDIDATE_COMMIT, path), expected)
+
+        tracked = replay["tracked_certificate"]
+        self.assertEqual(tracked["path"], CERTIFICATE.relative_to(ROOT).as_posix())
+        self.assertEqual(tracked["file_sha256"], CERTIFICATE_FILE_SHA256)
+        self.assertEqual(sha256_file(CERTIFICATE), CERTIFICATE_FILE_SHA256)
+        self.assertEqual(tracked["payload_sha256"], CERTIFICATE_PAYLOAD_SHA256)
+        self.assertIs(tracked["replay_complete"], True)
+        self.assertIs(tracked["embedded_comparison_is_acceptance_dependency"], False)
+
+        repaired = replay["repaired_candidate_run"]["primary_v10"]
+        self.assertEqual(repaired["run_id"], "gld103-primary-full-20260831-allhashfix-v10")
+        self.assertEqual(repaired["status"], "succeeded")
+        self.assertEqual(repaired["child_exit_code"], 0)
+        self.assertEqual(repaired["runner_exit_code"], 0)
+        self.assertEqual(repaired["certificate_file_sha256"], CERTIFICATE_FILE_SHA256)
+        self.assertEqual(repaired["certificate_payload_sha256"], CERTIFICATE_PAYLOAD_SHA256)
+
+        clean = replay["final_clean_checkout"]
+        self.assertEqual(clean["commit"], REPLAY_CANDIDATE_COMMIT)
+        expected_clean_runs = {
+            "primary": (
+                "gld103-allhash-clean-primary-20260831-v1",
+                "8a37d0b0d5ba45481d8e446dd22d7bd55bb2131eefb1373afcc2085598ebc304",
+                "2fcf7960192dc5302c8a6c5d725bf12c2e7ea01e8b490f6864c93dfb82dd3c42",
+            ),
+            "independent_audit": (
+                "gld103-allhash-clean-audit-20260831-v1",
+                "615fac6fdc6b4132c7078c1900d1ed095aeed26c864a1b0c7f1f016fc91035d1",
+                "c620430f66bebf4429df46fb821d2a210fd60c94980be66677aa0fd36a795c44",
+            ),
+            "comparison": (
+                "gld103-allhash-clean-compare-20260831-v1",
+                "433d13986e8ca3eec1cf3d5588cd2c8e157c4f552530897f09e4b0bbc6d3fa39",
+                "d647ef5a1964b6f8fd8f71d74f639990ec61bcc0e6c4a025eaf88eeeaf2b8a82",
+            ),
+        }
+        for name, (run_id, run_json, run_log) in expected_clean_runs.items():
+            record = clean[name]
+            with self.subTest(clean_run=name):
+                self.assertEqual(record["run_id"], run_id)
+                self.assertEqual(record["status"], "succeeded")
+                self.assertEqual(record["child_exit_code"], 0)
+                self.assertEqual(record["runner_exit_code"], 0)
+                self.assertEqual(record["run_json_sha256"], run_json)
+                self.assertEqual(record["run_log_sha256"], run_log)
+
+        self.assertNotEqual(
+            clean["primary"]["canonical_source_sha256"],
+            clean["primary"]["raw_source_sha256"],
+        )
+        self.assertEqual(clean["primary"]["canonical_source_sha256"], PRIMARY_SHA256)
+        self.assertEqual(clean["independent_audit"]["canonical_source_sha256"], AUDIT_SHA256)
+        self.assertEqual(clean["comparison"]["helper_lf_sha256"], HELPER_SHA256)
+        self.assertEqual(
+            clean["comparison"]["run_log_sha256"],
+            replay["superseded_lineage"]["comparison_v5"]["run_log_sha256"],
+        )
+        self.assertIs(clean["comparison"]["used_for_primary_acceptance"], False)
+        self.assertIn("not an independent graph-model", replay["sources"]["independent_audit"]["independence_boundary"])
+
+        reconciliation = replay["clean_certificate_reconciliation"]
+        self.assertEqual(
+            reconciliation["changed_scalar_fields"],
+            [
+                "certificate_payload_sha256",
+                "elapsed_seconds",
+                "p0_p1_gld102.elapsed_seconds",
+                "verifier_raw_sha256",
+            ],
+        )
+        self.assertIs(reconciliation["mathematical_payload_fields_unchanged"], True)
+        promotion = replay["promotion_adjudication"]
+        for key in (
+            "same_commit_clean_primary_full_replay_passed",
+            "same_commit_clean_independent_full_audit_passed",
+            "same_commit_clean_exact_comparison_passed",
+            "one_way_scope_preserved",
+            "scope_promotable_as_exact_scoped_theorem",
+        ):
+            self.assertIs(promotion[key], True)
+        self.assertIs(promotion["global_status_change_authorized"], False)
+
+        def assert_hash_fields(value: object) -> None:
+            if isinstance(value, dict):
+                for key, item in value.items():
+                    if key.endswith("sha256"):
+                        self.assertIsInstance(item, str)
+                        assert isinstance(item, str)
+                        self.assertRegex(item, re.compile(r"^[0-9a-f]{64}$"))
+                    assert_hash_fields(item)
+            elif isinstance(value, list):
+                for item in value:
+                    assert_hash_fields(item)
+
+        assert_hash_fields(replay)
+
     def test_owner_and_review_are_promoted_at_the_exact_scoped_status(self) -> None:
         owner = read(OWNER)
         status = section(owner, "Status and exact scope")
@@ -247,6 +383,15 @@ class GLD103EvidenceStatusTests(unittest.TestCase):
 
     def test_source_and_audit_hashes_are_current_and_audit_is_independent(self) -> None:
         payload = json.loads(read(CERTIFICATE))
+        # GLD103 stores many exact comparison digests in source constants and
+        # in the emitted certificate.  A prior metadata-only defect duplicated
+        # or omitted one hexadecimal nibble, so reject every hash-shaped
+        # literal that is not a full SHA-256 digest.
+        for path in (PRIMARY, CERTIFICATE):
+            for value in re.findall(r'"([0-9a-fA-F]{50,80})"', read(path)):
+                with self.subTest(hash_width_path=path.name, value=value):
+                    self.assertEqual(len(value), 64)
+
         manifest = payload["source_manifest"]
         self.assertEqual(set(manifest), set(SOURCE_PINS))
         for name, (relative, expected_raw, expected_lf) in SOURCE_PINS.items():

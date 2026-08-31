@@ -2,11 +2,10 @@
 
 ## Status and exact scope
 
-**Scoped theorem candidate GLD103 (characteristic zero; DRAFT/PENDING
-publication).** The statement below is the exact target claim. Its current
-repository status is not proved: the primary and independent audit must first
-be tracked and replayed from a clean clone. The global Krenn--Gu conjecture
-remains **UNRESOLVED**.
+**Proved exact scoped characteristic-zero theorem (GLD103).** The tracked
+primary, independent audit, and clean-checkout replay prove the all-zero
+coefficient branch below on `D(B*H2*Delta)` for symbolic arbitrary `a`.
+The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
 Let k be an algebraically closed field of characteristic zero. Use the
 normalized GLD88/F88 equal-leaf H4 chart
@@ -197,7 +196,6 @@ GLD103 does not claim any of the following:
   determinants to rank M<=6;
 * physical incidence or a global resolution of the Krenn--Gu conjecture.
 
-The current status is therefore a scoped candidate theorem with a precise
-empty-set target. Promotion requires the tracked exact primary, an
-independent audit, clean-clone replay, and an adversarial reconciliation of
-all eleven factor leaves.
+The tracked exact primary, independent audit, clean-checkout replay, and
+adversarial review establish only this scoped empty-set theorem.  They do not
+change any nonclaim above or the global **UNRESOLVED** status.

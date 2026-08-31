@@ -144,6 +144,19 @@ ideals are unit.  Thus rank at most six forces `B=C=0` on those two fibres.
 This is not an exclusion of the `B=C=0` endpoint and does not extend by itself to
 arbitrary `p`, physical incidence, or global resolution.
 
+[`GLD103`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_ALL_ZERO_COEFFICIENT_BRANCH_EXCLUSION_THEOREM.md)
+is an exact scoped characteristic-zero exclusion of the all-zero selected
+coefficient leaf on the normalized GLD88/F88 H4/Q6 chart, for arbitrary
+symbolic `a` on `D(B*H2*Delta)`.  Its exact eleven-factor necessary cover
+uses GLD102 for `p=0,1`, direct determinant and localized Macaulay leaves,
+the corrected `66/80` `p^2-2*p+2` membership, and an exact quotient-gcd plus
+nonzero multiplication norm for the degree-40 `F40` leaf.  The bridge is
+one-way only.  The five pivot branches, `B=0`, `E31`, `Delta=0`, `H2=0`,
+other charts/components/sources/roots/orders, physical incidence, and global
+resolution remain open.  The
+[`GLD103 hostile review`](docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_ALL_ZERO_COEFFICIENT_BRANCH_EXCLUSION_REVIEW_2026-08-31.md)
+passes only this scoped theorem; the global status remains **UNRESOLVED**.
+
 The newest zero-anchor, root-order-three, all-six-rigid source-integrability
 line is `GLS61`--`GLS80`.  `GLS66` closes the exactly-two-deficient branch;
 `GLS67`--`GLS69` localize the surviving three-, four-, five-, and
