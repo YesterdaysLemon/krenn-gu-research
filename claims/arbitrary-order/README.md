@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD101 equal-leaf checkpoint
+## GLD83--GLD102 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -159,6 +159,16 @@ result is not arbitrary in `a` and does not close the full `E31=0` wall,
 the wider physical and global obligations.  The
 [hostile review](../../docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_SIX_SELECTOR_NORM_COVER_REDUCTION_REVIEW_2026-08-30.md)
 passes the owner theorem without changing any of those boundaries.
+
+[`GLD102`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P01_NONZERO_OFFSET_EXCLUSION_THEOREM.md)
+closes the `p=0` and `p=1` nonzero-offset fibres on the normalized GLD88/F88
+chart for arbitrary symbolic `a` on `D(Delta)`.  The affine offset locus is
+covered exhaustively by `D(B)` and `V(B) intersect D(C)`.  Exact unit ideals
+close both `C`-open charts and the `p=1` `B`-open chart; the two selected-zero
+survivors at `p=0` have explicit nonzero direct seven-minors and hence rank at
+least seven.  Therefore rank at most six forces `B=C=0` on these fibres.  The
+endpoint itself, arbitrary `p`, physical incidence, wider charts, and the
+global conjecture remain open.
 
 The [`GLD98-membership-pilot`](explore_four_root_torus_star_equal_leaf_h4_q6_modular_membership_census.py)
 is an **exploratory instrument, not a theorem node**.  It independently

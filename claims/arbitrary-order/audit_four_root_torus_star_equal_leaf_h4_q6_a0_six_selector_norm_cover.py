@@ -148,7 +148,7 @@ def load_gld71():
 def load_certificate_payload() -> dict[str, object]:
     if not CERTIFICATE_PAYLOAD.exists():
         raise AssertionError(f"missing tracked certificate payload: {CERTIFICATE_PAYLOAD}")
-    digest = sha256_bytes(CERTIFICATE_PAYLOAD.read_bytes())
+    digest = lf_sha256(CERTIFICATE_PAYLOAD)
     if digest != EXPECTED_CERTIFICATE_PAYLOAD_SHA256:
         raise AssertionError(f"certificate payload pin mismatch: {digest}")
     payload = json.loads(CERTIFICATE_PAYLOAD.read_text(encoding="utf-8"))
