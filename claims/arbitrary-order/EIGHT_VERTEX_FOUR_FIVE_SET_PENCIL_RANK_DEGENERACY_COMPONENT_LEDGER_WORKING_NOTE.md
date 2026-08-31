@@ -499,69 +499,106 @@ line normals.  This explicit supersession is part of the evidence boundary.
 
 ## 8. Current reproducible evidence and review gates
 
-The current exploratory artifacts are intentionally ignored under
-`.research-runs`; their hashes identify the exact material under review:
+The accepted inputs and all verifier implementations are now tracked.  The
+generated outputs remain under `.research-runs`, as required for reproducible
+solver output, and are pinned below by SHA-256.
 
 ```text
-kestrel_s3_near_frontier_q22_v1.json
-  SHA-256 d5b821a47f8164f56e1254e9400ff1875bab650ce5e64be3a0e191129bed541a
+tracked q<=22 input
+  balanced_m3_full_sensor_q22_near_frontier_input_v1.json
+  d5b821a47f8164f56e1254e9400ff1875bab650ce5e64be3a0e191129bed541a
 
-kestrel_s3_near_frontier_q23_v1.json
-  SHA-256 3873e085aeb37eff6f9f539bb99433ea05f7f7d414a69758e550644ec37edf75
-
-kestrel_extract_s3_near_frontier_v1.py
-  SHA-256 0cf3c84036f06aeb87e4d12edd6984539fec0cc5e00f8c8f29440035b80626ed
-
-kestrel_s3_q23_ruling_zero_certificate_v1.py
-  SHA-256 164d77e8730ebd5a86f5d5b71accb6b6b533115146aff33f273b4109f3030452
-
-kestrel_s3_q23_ruling_zero_certificate_v1.json
-  SHA-256 9372d1c1103db490241dbe035e87a6c5a8f470342d16ab65a0a8d583009035e4
-  ordered failure-ledger SHA-256
-  41c3c107ff93d247b1d8ae2575395bbaff43b274cf7ee94c7cb707d034e30b3d
-
-independent read-only q=23 reconstruction
-  base commit 638fe92914bd54c84230d9c4c87c39dbfcf0af09
-  accepted census Git blob afbd804bf334cca1f3d38f6551022018c904db6a
-  canonical ordered q=23-record SHA-256
-  608a32c7f8386d193fc2b438576318d9366d59e05c11f22171500b63b9cab926
-
-kestrel_s3_circuit_explained_ledger_v6_mixed_ruling_aware.json
-  SHA-256 bd72d00690bd414ffe63267f317256fe77c6fac1a77393515221a5acce3d098e
-
-kestrel_s3_plane_crossratio_screen_v1.py
-  SHA-256 596689e797d9109994127d66032c5e1bafa02cdcdc300bc602aeb2e29c74173c
-
-kestrel_s3_crossratio_dominance_v1.py
-  SHA-256 502c623be22ea039a4add9db32ec2da66d35f523aa91fccab0b8a076b2dcf665
-
-kestrel_s3_q20_parent_probe_v1.py
-  SHA-256 9ac3b5938ebbbebaafb2eef22e451cf42bb7ddca02d36d74a717363f8188d395
+tracked primary implementations
+  extract_eight_vertex_four_five_set_pencil_near_frontier.py
+  66558a73b5ef28c102463d8f14ffdeffd3e39f73ea204aa5ba1f1aa3f7ccd43f
+  verify_eight_vertex_four_five_set_pencil_rank_degeneracy_charge.py
+  e51a8ed941cc2d21cbea25fc39e3819f7f26651f10054c83faae459a72b65444
+  verify_eight_vertex_four_five_set_pencil_rank_degeneracy_component_ledger.py
+  65df96ce8f07625c84189467d6572be7779606732e245ad8f38c52b5e46cdfa7
+  verify_eight_vertex_four_five_set_pencil_q23_ruling_zero.py
+  57b08cc566e152baad8cedd3ef86583248590bc18cff3b5297b763571d20c6c1
+  verify_eight_vertex_four_five_set_pencil_rank_degeneracy_b_all_fixtures.py
+  61ea586b60f651d7b2d6b1352ca8efc2dfc494b2fc2722a05097b1680a1b84d8
 ```
 
-Before promotion, the following are mandatory:
+The final primary exact-rational component replay processed all `547`
+records in `228.701` seconds.  Its output SHA-256 is
+`9818ef61d56f8faba5cc05f8b00d5e8b71573cf44780973a627d279c42199a2b`,
+and its bounded `run.json` SHA-256 is
+`de62a569755a59e3460aabaf3558b2529fe9c5bb8fe07ca8227f5cf213049798`.
+It asserts all `6,429` explained rank-drop cells, zero ruling cells, zero
+threats, the histogram `20:5,21:73,22:469`, nine equality strata in records
+`8,36,50,142,431`, and structural-projection SHA-256
+`d5c0ac3c054a4b6fd6fa3cb940ecb9733a29d0aec10d1f648f121083e01074df`.
+Every event rank in this replay has an exact rational specialization attaining
+the exact circuit upper bound.
 
-1. a hostile proof audit of the minimal-circuit, coordinate-incidence,
-   cross-ratio-dominance, subset-incidence, and global-charge lemmas;
-2. an independent reconstruction of the current nine-stratum/seven-orbit
-   `q<=22` ledger (the `8,832/32/18/0` `q=23` chain has passed a separate
-   read-only reconstruction);
-3. a no-import reconstruction of every dense-component fixture and its
-   boundary evaluations/minors;
-4. promotion of any accepted verifier/certificate out of `.research-runs`,
-   with stable hashes and ordinary repository validation;
-5. a live-frontier update only if the candidate result is accepted; and
-6. a separate treatment of seventy-pencil compatibility, remaining target
-   equations, and witness exclusion.
+The tracked extractor freshly regenerated all `9,429` records through
+`q=23` in `206.444` seconds.  The exact-status output SHA-256 is
+`f72c0c678b14ac480265a5d6cab3f0ed3f09b798aa15c7b4a27b12d9a8505b80`;
+its bounded `run.json` SHA-256 is
+`9d7a302aed6d82b5d7172e97e5e0800568c4265993fb139235cbf677899007a6`.
+The earlier exploratory-status raw file with SHA-256
+`3873e085aeb37eff6f9f539bb99433ea05f7f7d414a69758e550644ec37edf75`
+is superseded.  Parsed comparison showed that the two files differ only in
+the top-level status value; all `9,429` records are identical.  In particular,
+the canonical ordered `q=23`-record SHA-256 remains
+`608a32c7f8386d193fc2b438576318d9366d59e05c11f22171500b63b9cab926`.
+
+The hardened q=23 zero certificate pins both of those fresh hashes.  Its
+output SHA-256 is
+`40e4637f8747139b93925c620dc46c2e450c7212b23aeb3400a86db937b61d05`;
+its bounded `run.json` SHA-256 is
+`60809062ff7f069476d769dec103fc7be6173311edd45c9ca030c8d2c6c80d2a`.
+The ordered failure-ledger SHA-256 remains
+`41c3c107ff93d247b1d8ae2575395bbaff43b274cf7ee94c7cb707d034e30b3d`.
+
+The integer charge and exact primary `B_all` fixture replays also passed.
+Their bounded `run.json` SHA-256 values are respectively
+`6a1e4ca4c1dabbcf51c8f46a7f68834b91ba937330d313a694ad5e0d009273ca`
+and
+`ee441de8e035e0453918b7fb21ec1f5d3af9e4dad42e6148f06175bbd3729889`.
+
+The independent evidence package is documented in the
+[q<=22 reconstruction audit](../../docs/audits/BALANCED_M3_FULL_SENSOR_Q22_INDEPENDENT_RECONSTRUCTION_AUDIT_2026-08-30.md).
+Its no-import finite-field reconstruction script has SHA-256
+`f3bbf3d257081a2b071755102414119423c6762b05cdbd94698c691b6b449bbf`;
+it independently extracts and asserts the nine strata and their seven
+declared symmetry orbits.  Its bounded `run.json` SHA-256 is
+`2acab9640e3abeb8c208291b6e3385af015e0ab6b25b0cefef9aed1bd4bf1875`.
+The separate no-import characteristic-zero fixture/B_all script has SHA-256
+`c7e8e424dea2a4a2f1fc7f5e2fd531b70d5a386648ca668a1005d43103ca65c8`,
+and its bounded `run.json` SHA-256 is
+`8ad8efe7c8797aba7e40f9676f63e0694b082c7040f7d7c4288eb532ff39e662`.
+The first audit is independent finite-field evidence, not a second
+characteristic-zero proof.  The second shares the stated mathematical fixture
+recipe but imports no primary implementation.
+
+The evidence-promotion, independent-reconstruction, and exact-fixture gates
+are therefore closed for this candidate package.  Before theorem promotion,
+two requirements remain:
+
+1. a final hostile proof audit of one immutable candidate commit, covering
+   the minimal-circuit, coordinate-incidence, cross-ratio-dominance,
+   subset-incidence, global-charge, and component-to-`B_all` arguments; and
+2. if that audit passes, the theorem/ledger/frontier promotion and the full
+   index-complete repository validation required by `AGENTS.md`.
+
+Even after those gates close, seventy-pencil compatibility, the remaining
+target equations, and witness exclusion require separate work.
 
 Until those gates close, the precise status is:
 
 ```text
-rank-degeneracy envelope (1):                CANDIDATE
-q<=22 event screen:                          EXPLORATORY EXACT FINITE EVIDENCE
-q=23 complementary-ruling elimination:       EXPLORATORY EXACT; FILTER AUDIT PASSED
-seven equality-component orbits:              CANDIDATE EXHAUSTIVE LEDGER
-B_all properness on seven sources:            CANDIDATE, FIXTURES VERIFIED
+rank-degeneracy envelope (1):                CANDIDATE; FINAL HOSTILE AUDIT PENDING
+q<=22 event ledger:                          PRIMARY EXACT Q REPLAY PASSED;
+                                              INDEPENDENT FINITE-FIELD AUDIT PASSED
+q=23 complementary-ruling elimination:       EXACT FILTER CERTIFICATE PASSED;
+                                              INDEPENDENT RECORD AUDIT PASSED
+seven equality-component orbits:             CANDIDATE EXHAUSTIVE LEDGER;
+                                              INDEPENDENT EXTRACTION PASSED
+B_all properness on seven sources:            PRIMARY AND INDEPENDENT EXACT
+                                              FIXTURE AUDITS PASSED
 fixed-pencil B_all codimension >=9:           CANDIDATE PARENT-LEVEL RESULT
 seventy-pencil compatibility:                 OPEN
 eight-vertex witness exclusion:               OPEN

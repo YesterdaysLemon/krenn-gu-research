@@ -22,7 +22,10 @@ from itertools import combinations, permutations
 from pathlib import Path
 
 
-EXPECTED_INPUT_SHA256 = "3873E085AEB37EFF6F9F539BB99433EA05F7F7D414A69758E550644EC37EDF75"
+EXPECTED_INPUT_SHA256 = "F72C0C678B14AC480265A5D6CAB3F0ED3F09B798AA15C7B4A27B12D9A8505B80"
+EXPECTED_Q23_RECORDS_SHA256 = (
+    "608A32C7F8386D193FC2B438576318D9366D59E05C11F22171500B63B9CAB926"
+)
 EXPECTED_HISTOGRAM = {"20": 2, "21": 39, "22": 506, "23": 8882}
 EXPECTED_FIRST_FAILURE_COUNTS = {
     "two_complementary_211_partitions": 8832,
@@ -182,9 +185,13 @@ def main() -> None:
     input_sha256 = sha256_bytes(input_bytes)
     assert input_sha256 == EXPECTED_INPUT_SHA256
     data = json.loads(input_bytes)
+    assert data["status"] == "exact_s3ccd_near_frontier_extract"
     assert data["global_conjecture"] == "UNRESOLVED"
     assert data["threshold"] == 23
     assert data["near_frontier_histogram"] == EXPECTED_HISTOGRAM
+    q23_records = [record for record in data["records"] if int(record["q"]) == 23]
+    q23_records_sha256 = sha256_bytes(canonical_json(q23_records))
+    assert q23_records_sha256 == EXPECTED_Q23_RECORDS_SHA256
 
     ledger = []
     stage_counts: Counter[str] = Counter()
@@ -232,6 +239,7 @@ def main() -> None:
         "status": "exact_q23_complementary_ruling_zero_certificate",
         "global_conjecture": "UNRESOLVED",
         "input_sha256": input_sha256,
+        "q23_records_sha256": q23_records_sha256,
         "condition_order": list(CONDITIONS),
         "q23_record_count": q23_ordinal,
         "first_failure_counts": dict(stage_counts),

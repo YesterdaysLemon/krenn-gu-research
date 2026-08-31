@@ -193,8 +193,8 @@ its `run.json` has SHA-256
 All four processes exited before this audit package was finalized.  Other
 workers observed on the host were not stopped or modified.
 
-The existing parent package remains the owner of the analytic claim:
-[`BALANCED_M3_FULL_SENSOR_PARENT_GATE_FAILURE_FINITE_COVER_THEOREM.md`](../../claims/arbitrary-order/BALANCED_M3_FULL_SENSOR_PARENT_GATE_FAILURE_FINITE_COVER_THEOREM.md).
+The candidate parent package remains the owner of the analytic claim:
+[`EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_RANK_DEGENERACY_COMPONENT_LEDGER_WORKING_NOTE.md`](../../claims/arbitrary-order/EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_RANK_DEGENERACY_COMPONENT_LEDGER_WORKING_NOTE.md).
 This report adds no theorem-ledger or frontier entry because it is an
 evidence-only audit and leaves the live mathematical frontier unchanged.
 
