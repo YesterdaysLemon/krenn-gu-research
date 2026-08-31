@@ -27,27 +27,48 @@ Let `k` be an algebraically closed field of characteristic zero.  On the
 normalized GLD88 H4 chart, specialize `a=0`.  Let
 
 ```text
-Q6, T0, T1, T2, T3, Y1, X3 in k[p,q,B,C]
+Q6, T0, T1, T2, T3, D0, Y0, Y1, X3 in k[p,q,B,C]
 ```
 
-denote the tracked Q6 equation and the six selected seven-minors used by
-GLD101.  The parent proposition under attack is
+denote the tracked Q6 equation and denominator-cleared numerators of eight
+actual seven-minors.  On `D(Delta)` each numerator vanishes exactly when its
+raw rational minor vanishes.  The corrected parent proposition under attack
+is
 
 ```text
-Q6=T0=T1=T2=T3=Y1=X3=0
+Q6=T0=T1=T2=T3=D0=Y0=Y1=X3=0
 and H2*Delta != 0
-    => B=C=0.                                      (P)
+    => B=C=0.                                      (P8)
 ```
 
-The quantifiers in (P) range over all `p,q,B,C` in this one normalized chart.
+The quantifiers in (P8) range over all `p,q,B,C` in this one normalized chart.
+Every leaf identity is an exact polynomial identity over `QQ` after clearing
+only denominators proved nonzero on `D(H2*Delta)`.  Tensoring those identities
+with any algebraically closed characteristic-zero `k` preserves the unit and
+contradiction certificates, so the coefficient-field computations used below
+base-change to the stated field without a pointwise sampling inference.
 The intended upstream use is one-way: complete syndrome rank at most six
-forces every selected seven-minor to vanish, so (P) would force the two chart
-offsets to vanish.  No converse from the six selected minors to complete
+forces all eight actual seven-minors to vanish, so (P8) would force the two
+chart offsets to vanish.  No converse from the selected minors to complete
 syndrome rank is needed or claimed.
+
+The first version of this attempt stated the six-selector implication
+
+```text
+Q6=T0=T1=T2=T3=Y1=X3=0 => B=C=0.                 (P6)
+```
+
+The adversarial parent audit found that the R110 multiplier identity uses
+`D0` and `Y0` with nonzero multipliers.  It therefore proves the R110 leaf of
+(P8), or directly of a rank-at-most-six parent, but does not prove (P6).
+This is a load-bearing implication repair: (P6) remains unproved because the
+separate compact-kernel probe was inconclusive.  Enlarging to (P8) is enough
+because the six GLD101 norm-cover selectors are a subset of these eight, and
+the upstream rank hypothesis forces all eight.
 
 The intended downstream consumer is the existing GLD95 endpoint theorem,
 but only after the separate physical incidence bridge supplies its hypotheses.
-Thus even a proof of (P) would be a scoped algebraic offset closure, not a
+Thus even a proof of (P8) would be a scoped algebraic offset closure, not a
 physical empty-set theorem.
 
 ## 2. Exhaustive open cover and GLD101 support supply
@@ -81,7 +102,8 @@ R8  = 64*p^8-256*p^7+580*p^6-844*p^5
 
 and `R110` is the pinned degree-110 primitive factor in the GLD101
 certificate.  The `P` support lies on `Delta=0`, and the `H2` support lies
-outside the declared `D(H2)` open.  Therefore a proof of (P) reduces exactly
+outside the declared `D(H2)` open.  Since the six GLD101 selectors are a
+subset of the eight hypotheses in (P8), a proof of (P8) reduces exactly
 to:
 
 1. the `p=0` and `p=1` fibres;
@@ -97,7 +119,19 @@ sampling.
 ## 3. Sibling mechanisms being synthesized
 
 This attempt combines more than the conclusions of nearby factor checks.
-Three mechanisms are relevant.
+The following factor and chart mechanisms are relevant.
+
+### 3.0 The p=0,1 base fibres at a=0
+
+GLD102 is stated upstream as a rank-at-most-six theorem, but its two offset
+chart calculations use only the displayed six-selector subsystem, which is a
+subset of (P8).  This is enough for the present parent: on `p=1` the
+six-selector B-open locus is empty, while on `p=0` its only two B-open
+survivors have `a=1`, hence are absent after this parent's `a=0`
+specialization.  The C-open six-coefficient ideals are unit for both fibres.
+Thus this use does not import GLD102's full-rank conclusion backwards from
+selected minors; it records the exact a=0 selected-minor sub-implication that
+the parent needs.
 
 ### 3.1 Uniform C-open coefficient obstruction
 
@@ -155,7 +189,7 @@ Five B-open selector equations are linear in the six monomial coordinates
 ```
 
 Let `M` be their `5 x 6` coefficient matrix and `K` its signed cofactor
-kernel.  The exact candidate identities are
+kernel.  The exact identities are
 
 ```text
 M*K=0,
@@ -173,13 +207,42 @@ x3*x2-x1*x4=0.                                    (6)
 
 Rank five makes it a scalar multiple of `K`.  Equations (5)--(6) force
 `L=0`, hence `K2=0`, contradicting the second coordinate one.  This is a
-compact exact obstruction if its independent equation and gcd audit passes.
+compact exact obstruction.  The independent audit regenerated the five
+tracked-parent equations without importing the candidate implementation,
+proved exact rowwise unit equivalence in `QQ[p,q]/(R8,Q6)`, replayed all
+cofactor and gcd identities, and checked the monomial-vector inference.
+Two preliminary comparison attempts that used the wrong `Q6` normalization
+or an overly strong single-unit-pivot condition remain quarantined
+non-evidence.
 
 This kernel argument explains why the R8 full six-selector unit screen can
 be replaced by a small human-auditable certificate.  It also identifies the
 structural parent mechanism to seek on R110: a low-row coefficient matrix,
 an exact cofactor kernel, and a monomial-semigroup relation, rather than a
 sequence of opaque factor-specific Gröbner searches.
+
+### 3.4 R110 eight-minor q-substitution certificate
+
+The accepted R110 B-open certificate is an exact identity in the ideal
+
+```text
+<Q6, R110, T0, T1, T2, T3, D0, Y0, Y1, X3, z*B-1>.
+```
+
+Its replay uses nonzero multipliers of `D0` and `Y0`, so this is deliberately
+an eight-actual-minor certificate for (P8), not a six-selector certificate
+for (P6).  A no-import audit first regenerated the nine coefficient tables
+from tracked GLD71/GLD88 data, checked the degree-548 norm and the
+multiplicity-one R110 factor, all coefficient-field/Delta/linear-relation
+gates, and only then reconstructed and replayed the B identity.  The generic
+C-open certificate already removes the other offset chart for arbitrary `p`;
+the separately accepted R110 C-open replay is corroborative rather than
+load-bearing for (P8).
+
+An exploratory attempt to replace this with the R8-style five-row
+six-selector cofactor kernel passed the R110 root gates but became
+inconclusive during the first degree-110 cofactor calculation.  It supplies
+neither a proof nor a counterexample to (P6).
 
 ## 4. Hostile controls and known no-go boundaries
 
@@ -196,14 +259,14 @@ The synthesis has been tested against the following failure modes.
    treated through exact coefficient fields or all conjugate roots.  The
    `p=-i` conjugate of the Gaussian identity is not omitted.
 4. **No Delta/H2 promotion.**  A factor supported on `Delta=0` or `H2=0`
-   is outside (P), not closed by an open-chart calculation.
+   is outside (P8), not closed by an open-chart calculation.
 5. **No endpoint promotion.**  All B-open and C-open arguments stop at
    `B=C=0`; the endpoint is a separate GLD95/physical-incidence obligation.
 6. **No arbitrary-a promotion.**  Except for the already proved GLD102
    `p=0,1` fibres, the present factor work is specialized to `a=0`.
 7. **No timeout evidence.**  Interrupted subset probes and unsuccessful
    audit versions are retained as failed or inconclusive runs and are not
-   inputs to (P).
+   inputs to (P8).
 8. **No modular promotion.**  Modular screens may guide selector choice but
    do not discharge any item in the exact factor cover.
 
@@ -217,26 +280,29 @@ At this checkpoint:
 
 ```text
 C-open, arbitrary p on D(H2*Delta): independently accepted;
-p=0,1 nonzero-offset fibres:          proved in GLD102;
+p=0,1 a=0 selected-minor subcase:     supplied by GLD102;
 p^2+1 B-open:                         independently accepted;
 R4 B-open:                            independently accepted;
-R8 B-open cofactor-kernel:            exact candidate, independent audit pending;
-R110 B-open/C-open q-substitution:     exact candidate, independent audit pending.
+R8 B-open cofactor-kernel:            independently accepted;
+R110 P8 B-open q-substitution:         independently accepted;
+R110 C-open q-substitution:            independently accepted, corroborative;
+R110 six-selector compact probe:       inconclusive non-evidence.
 ```
 
-Consequently (P) is **not yet promoted to a theorem**.  The load-bearing next
-work is precisely the independent R8 kernel audit and an algorithmically
-independent R110 audit from the tracked GLD71/GLD88 parents.  If either audit
-fails, the discrepancy is a new explicit parent obstruction.  If both pass,
-the factor cover above supplies a direct proof of (P), after which the result
-requires adversarial consolidation before any GLD103/frontier promotion.
+The factor cover now supplies the claimed implication (P8), but (P8) is
+**not yet promoted to a theorem**.  The load-bearing next work is to package
+the accepted leaf identities and independent receipts into a clean-clone,
+path-portable certificate/audit seam, then complete adversarial consolidation.
+The original six-selector proposition (P6) remains open: the compact R110
+probe was inconclusive and the accepted R110 identity proves only the larger
+eight-minor system.
 
 ## 6. Proof-topology delta
 
 The live frontier is unchanged by this attempt.  No new theorem edge is
-recorded because two residual factor leaves are still candidates pending
-independent audit.  The proposed future delta, conditional on those audits
-and consolidation, would be
+recorded until the accepted P8 composition is independently consolidated and
+made clean-clone reproducible.  The proposed future delta, conditional on
+that packaging and consolidation, would be
 
 ```text
 GLD101
