@@ -234,7 +234,7 @@ SOURCE_PINS = {
     },
     "GLD102": {
         "path": GLD102,
-        "sha256": "742aaccfb1e4b7cab194d8d20add3d5e7b5448a367180d01b398be306317eea",
+        "sha256": "742aaccfb1e4b7cab194d8d20addd3d5e7b5448a367180d01b398be306317eea",
         "lf_sha256": "c78130ad8ed5a639ffc7683ef21ae2b578312d6c7475820689a996dbc13bbd8e",
     },
 }
@@ -349,7 +349,7 @@ PHYSICAL_CROSS_IMPLEMENTATION_COMPARISON = {
             "localizer": {
                 "exact_equal": True,
                 "scalar_primary_over_audit_in_K": "1",
-                "canonical_hash": "35bf7cb2dfa9dcdd168f35e370dd9c09c7b9be0ad36b8adde146297d64bb90b68",
+                "canonical_hash": "35bf7cb2dfa9dcdd168f35e370dd9c09c7b9be0ad36b8ade146297d64bb90b68",
             },
             "row_space": {
                 "primary": {
@@ -362,7 +362,7 @@ PHYSICAL_CROSS_IMPLEMENTATION_COMPARISON = {
                 "audit": {
                     "rank": 68, "rank_with_target": 68, "target_in_span": True,
                     "row_count": 88, "columns": 80,
-                    "row_matrix_sha256": "971db2dbc64e60e3e1a6937dd24496d5100935bc19c565299ba5447641719676e",
+                    "row_matrix_sha256": "971db2dbc64e60e3e1a6937dd24496d5100935bc19c56529ba5447641719676e",
                 },
                 "same_rank_and_membership": True,
                 "equal_by_nonzero_generator_units": True,

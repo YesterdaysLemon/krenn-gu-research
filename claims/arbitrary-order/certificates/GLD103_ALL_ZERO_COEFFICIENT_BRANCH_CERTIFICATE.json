@@ -84,7 +84,7 @@
   "branch": "all-zero selected coefficient branch, generic symbolic a",
   "bridge_reconstruction_mode": "exact",
   "certificate_payload_definition": "sha256 of canonical JSON payload before certificate_payload_sha256 is added",
-  "certificate_payload_sha256": "f05de343d8c65b953215e3e193104b280fc3d17bdace518534d8b3bd63cad039",
+  "certificate_payload_sha256": "f85feebddb4601e107f1728e52261a60c3f5ebb65d121eb0f29376e3409efc97",
   "chart_denominator_provenance": {
     "H2_is_q6_leading_coefficient": true,
     "P_divides_Delta": true,
@@ -299,7 +299,7 @@
             "979ac31e56859489840f194dbaea3e27eb4c5ae48af3b16f48d90c8c2587d080"
           ],
           "localizer": {
-            "canonical_hash": "35bf7cb2dfa9dcdd168f35e370dd9c09c7b9be0ad36b8adde146297d64bb90b68",
+            "canonical_hash": "35bf7cb2dfa9dcdd168f35e370dd9c09c7b9be0ad36b8ade146297d64bb90b68",
             "exact_equal": true,
             "scalar_primary_over_audit_in_K": "1"
           },
@@ -317,7 +317,7 @@
               "rank": 68,
               "rank_with_target": 68,
               "row_count": 88,
-              "row_matrix_sha256": "971db2dbc64e60e3e1a6937dd24496d5100935bc19c565299ba5447641719676e",
+              "row_matrix_sha256": "971db2dbc64e60e3e1a6937dd24496d5100935bc19c56529ba5447641719676e",
               "target_in_span": true
             },
             "equal_by_nonzero_generator_units": true,
@@ -445,7 +445,7 @@
     "runtime_dependency": false,
     "used_for_primary_acceptance": false
   },
-  "elapsed_seconds": 629.761,
+  "elapsed_seconds": 584.026,
   "evidence_boundary": {
     "E31_equation_imposed": false,
     "E31_inverted": false,
@@ -2539,7 +2539,7 @@
   "p0_p1_gld102": {
     "called_tracked_check": true,
     "claim_id": "GLD102",
-    "elapsed_seconds": 19.618,
+    "elapsed_seconds": 17.918,
     "global_conjecture": "UNRESOLVED",
     "status": "proved_exact_scoped_p01_nonzero_offset_exclusion"
   },
@@ -2914,6 +2914,6 @@
   "status": "exact_scoped_theorem_certificate",
   "verifier_hash_semantics": "verifier_sha256 is the LF-normalized tracked-source digest; verifier_raw_sha256 records checkout bytes",
   "verifier_path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
-  "verifier_raw_sha256": "778ac116e39dd27b6affdd6c38f83b3e5f1c7ce434b192e35570399e6e217862",
-  "verifier_sha256": "778ac116e39dd27b6affdd6c38f83b3e5f1c7ce434b192e35570399e6e217862"
+  "verifier_raw_sha256": "c87feeb983f6f14a8d6c3c9c3bf788d113d655a4efdce206b98994cf2395d916",
+  "verifier_sha256": "c87feeb983f6f14a8d6c3c9c3bf788d113d655a4efdce206b98994cf2395d916"
 }
