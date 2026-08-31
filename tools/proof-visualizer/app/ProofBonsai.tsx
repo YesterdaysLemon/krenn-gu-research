@@ -43,6 +43,8 @@ const POT_HEIGHT = 82;
 const POT_NODE_ID = "__proof_bonsai_pot__";
 const REDUCED_MOTION_QUERY = "(prefers-reduced-motion: reduce)";
 const PHYSICS_FRAME_MS = 1000 / 60;
+const PHYSICS_PAINT_MS = 64;
+const POSITION_EPSILON_SQUARED = 0.12 ** 2;
 
 function subscribeToReducedMotion(onStoreChange: () => void) {
   if (typeof window === "undefined") return () => undefined;
@@ -119,6 +121,8 @@ type LivingBody = {
   restY: number;
   velocityX: number;
   velocityY: number;
+  forceX: number;
+  forceY: number;
   width: number;
   height: number;
   depth: number;
@@ -177,6 +181,9 @@ function createLivingPhysics(
     const seed = stringSeed(`living:${restNode.id}`);
     const canopyWeight = Math.min(1.75, 0.55 + Math.max(0, depth) * 0.09);
     const windPhase = seededUnit(seed, 7) * Math.PI * 2;
+    const catchesBreeze =
+      !fixed && seededUnit(seed, 5) > (depth >= 3 ? 0.8 : 0.9);
+    const breezeStrength = catchesBreeze ? impulseStrength : 0;
 
     bodies.set(restNode.id, {
       id: restNode.id,
@@ -186,10 +193,12 @@ function createLivingPhysics(
       restY: restNode.position.y + height / 2,
       velocityX: fixed
         ? 0
-        : impulseStrength * canopyWeight * (3.2 + Math.sin(windPhase) * 1.35),
+        : breezeStrength * canopyWeight * (3.2 + Math.sin(windPhase) * 1.35),
       velocityY: fixed
         ? 0
-        : impulseStrength * canopyWeight * Math.cos(windPhase * 1.7) * 1.15,
+        : breezeStrength * canopyWeight * Math.cos(windPhase * 1.7) * 1.15,
+      forceX: 0,
+      forceY: 0,
       width,
       height,
       depth,
@@ -220,12 +229,11 @@ function createLivingPhysics(
 }
 
 function syncDraggedBodies(physics: LivingPhysics, nodes: BonsaiGraphNode[]) {
-  const nodesById = new Map(nodes.map((node) => [node.id, node]));
   let draggedBodies = 0;
 
-  for (const body of physics.bodies.values()) {
-    const node = nodesById.get(body.id);
-    if (!node || body.fixed) continue;
+  for (const node of nodes) {
+    const body = physics.bodies.get(node.id);
+    if (!body || body.fixed) continue;
     const nextX = node.position.x + body.width / 2;
     const nextY = node.position.y + body.height / 2;
 
@@ -256,15 +264,12 @@ function advanceLivingPhysics(
   draggedBodies: number,
 ) {
   const delta = Math.min(1.8, Math.max(0.35, elapsedMilliseconds / PHYSICS_FRAME_MS));
-  const forces = new Map<string, { x: number; y: number }>();
 
   for (const body of physics.bodies.values()) {
     const rootStrength = body.id === "G0" ? 0.022 : 0;
     const anchorStrength = rootStrength || 0.0036 / (1 + Math.max(0, body.depth) * 0.035);
-    forces.set(body.id, {
-      x: (body.restX - body.x) * anchorStrength,
-      y: (body.restY - body.y) * anchorStrength * 1.08,
-    });
+    body.forceX = (body.restX - body.x) * anchorStrength;
+    body.forceY = (body.restY - body.y) * anchorStrength * 1.08;
   }
 
   for (const spring of physics.springs) {
@@ -279,16 +284,10 @@ function advanceLivingPhysics(
     const force = (distance - spring.length) * spring.stiffness + relativeVelocity * 0.034;
     const forceX = force * directionX;
     const forceY = force * directionY;
-    const sourceForce = forces.get(spring.source.id);
-    const targetForce = forces.get(spring.target.id);
-    if (sourceForce) {
-      sourceForce.x += forceX;
-      sourceForce.y += forceY;
-    }
-    if (targetForce) {
-      targetForce.x -= forceX;
-      targetForce.y -= forceY;
-    }
+    spring.source.forceX += forceX;
+    spring.source.forceY += forceY;
+    spring.target.forceX -= forceX;
+    spring.target.forceY -= forceY;
   }
 
   let maximumSpeed = 0;
@@ -304,9 +303,8 @@ function advanceLivingPhysics(
       continue;
     }
     if (!body.dragging) {
-      const force = forces.get(body.id) ?? { x: 0, y: 0 };
-      body.velocityX = (body.velocityX + (force.x / body.mass) * delta) * damping;
-      body.velocityY = (body.velocityY + (force.y / body.mass) * delta) * damping;
+      body.velocityX = (body.velocityX + (body.forceX / body.mass) * delta) * damping;
+      body.velocityY = (body.velocityY + (body.forceY / body.mass) * delta) * damping;
       const speed = Math.hypot(body.velocityX, body.velocityY);
       if (speed > 18) {
         body.velocityX = (body.velocityX / speed) * 18;
@@ -341,27 +339,34 @@ function advanceLivingPhysics(
     physics.quietFrames = 0;
   }
 
-  return (
-    physics.quietFrames > 22 ||
-    (draggedBodies === 0 && physics.elapsed > 8500)
-  );
+  return physics.quietFrames > 14 || (draggedBodies === 0 && physics.elapsed > 5200);
 }
 
 function applyLivingPositions(
   nodes: BonsaiGraphNode[],
   physics: LivingPhysics,
 ) {
-  return nodes.map((node) => {
+  let nextNodes: BonsaiGraphNode[] | null = null;
+
+  nodes.forEach((node, index) => {
     const body = physics.bodies.get(node.id);
-    if (!body || node.dragging) return node;
-    return {
+    if (!body || node.dragging) return;
+    const nextX = body.x - body.width / 2;
+    const nextY = body.y - body.height / 2;
+    const movementSquared =
+      (nextX - node.position.x) ** 2 + (nextY - node.position.y) ** 2;
+    if (movementSquared < POSITION_EPSILON_SQUARED) return;
+    if (!nextNodes) nextNodes = [...nodes];
+    nextNodes[index] = {
       ...node,
       position: {
-        x: body.x - body.width / 2,
-        y: body.y - body.height / 2,
+        x: nextX,
+        y: nextY,
       },
     };
   });
+
+  return nextNodes ?? nodes;
 }
 
 function BonsaiNode({ data, selected }: NodeProps<BonsaiFlowNode>) {
@@ -921,7 +926,7 @@ function layoutGraph(
         seed,
         primary: isPrimary,
         selected: isSelectedBranch,
-        sprout: wholeMap && isPrimary && (isSelectedBranch || seed % 5 === 0),
+        sprout: wholeMap && isPrimary && (isSelectedBranch || seed % 11 === 0),
         showLabel: !wholeMap,
         trunk: false,
       },
@@ -1015,7 +1020,7 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
   const canvasRef = useRef<HTMLElement>(null);
   const inspectorRef = useRef<HTMLElement>(null);
   const previousView = useRef({ mapScope, tone, layoutEpoch });
-  const pendingImpulse = useRef(0.34);
+  const pendingImpulse = useRef(0);
 
   const nodesById = useMemo(
     () => new Map(data.nodes.map((node) => [node.id, node])),
@@ -1171,7 +1176,7 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
     pendingImpulse.current = 0;
     let animationFrame = 0;
     let previousTimestamp = performance.now();
-    let previousPaint = previousTimestamp - 34;
+    let previousPaint = previousTimestamp - PHYSICS_PAINT_MS;
     let cancelled = false;
 
     const tick = (timestamp: number) => {
@@ -1181,15 +1186,16 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
       const draggedBodies = syncDraggedBodies(physics, latestGraphNodes.current);
       const settled = advanceLivingPhysics(physics, elapsed, draggedBodies);
 
-      if (timestamp - previousPaint >= 32 || settled) {
+      if (timestamp - previousPaint >= PHYSICS_PAINT_MS || settled) {
         previousPaint = timestamp;
-        setGraphState((current) => ({
-          key: layoutKey,
-          nodes: applyLivingPositions(
+        setGraphState((current) => {
+          const nodes = applyLivingPositions(
             current.key === layoutKey ? current.nodes : restFlow.nodes,
             physics,
-          ),
-        }));
+          );
+          if (current.key === layoutKey && nodes === current.nodes) return current;
+          return { key: layoutKey, nodes };
+        });
       }
 
       if (!settled) animationFrame = window.requestAnimationFrame(tick);

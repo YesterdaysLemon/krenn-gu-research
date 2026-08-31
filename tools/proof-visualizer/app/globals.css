@@ -624,8 +624,13 @@ h1 {
     var(--sprout-delay, 0s) infinite alternate;
 }
 
-.graph-stage.is-living .living-branch__light {
+.graph-stage.is-living .living-branch.is-selected .living-branch__light,
+.graph-stage.is-living .living-branch.is-trunk .living-branch__light {
   animation: branch-light 6.8s ease-in-out infinite;
+}
+
+.graph-stage.is-living .react-flow__node:not(.dragging) {
+  transition: transform 72ms linear;
 }
 
 .graph-stage.is-living .react-flow__node.dragging .bonsai-node {
