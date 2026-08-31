@@ -2,6 +2,7 @@
 
 import dagre from "@dagrejs/dagre";
 import {
+  applyNodeChanges,
   Background,
   BackgroundVariant,
   Controls,
@@ -62,7 +63,6 @@ const toneCopy: Record<
 
 type BonsaiNodeData = {
   frontier: FrontierNode;
-  selected: boolean;
   depth: number;
   seed: number;
 };
@@ -105,8 +105,8 @@ function seededUnit(seed: number, shift = 0) {
   return ((seed >>> shift) & 1023) / 1023;
 }
 
-function BonsaiNode({ data }: NodeProps<BonsaiFlowNode>) {
-  const { frontier, selected, seed } = data;
+function BonsaiNode({ data, selected }: NodeProps<BonsaiFlowNode>) {
+  const { frontier, seed } = data;
   const growthStyle = {
     "--growth-turn": `${(seededUnit(seed, 4) - 0.5) * 24}deg`,
     "--growth-scale": `${0.9 + seededUnit(seed, 14) * 0.2}`,
@@ -582,7 +582,6 @@ function layoutGraph(
       },
       data: {
         frontier,
-        selected: frontier.id === selectedId,
         depth: forest.depthById.get(frontier.id) ?? 0,
         seed: stringSeed(frontier.id),
       },
@@ -731,10 +730,10 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
   const [mapScope, setMapScope] = useState<MapScope>("neighborhood");
   const [flowInstance, setFlowInstance] = useState<ReactFlowInstance | null>(null);
   const [layoutEpoch, setLayoutEpoch] = useState(0);
-  const [manualLayout, setManualLayout] = useState<{
+  const [graphState, setGraphState] = useState<{
     key: string;
-    positions: Record<string, LayoutPoint>;
-  }>({ key: "", positions: {} });
+    nodes: BonsaiGraphNode[];
+  }>({ key: "", nodes: [] });
   const [copyState, setCopyState] = useState<"idle" | "copied" | "failed">("idle");
   const [hashReady, setHashReady] = useState(false);
   const canvasRef = useRef<HTMLElement>(null);
@@ -836,37 +835,19 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
   const layoutKey = `${mapScope}:${tone}:${
     mapScope === "neighborhood" ? selectedId : "canopy"
   }:${layoutEpoch}`;
-  const graphNodes = useMemo(() => {
-    if (manualLayout.key !== layoutKey) return flow.nodes;
-    return flow.nodes.map((node) => {
-      const position = manualLayout.positions[node.id];
-      return position ? { ...node, position } : node;
-    });
-  }, [flow.nodes, layoutKey, manualLayout]);
+  const graphNodes = graphState.key === layoutKey ? graphState.nodes : flow.nodes;
 
   const trackNodeGrowth = useCallback(
     (changes: NodeChange<BonsaiGraphNode>[]) => {
-      const positionChanges = changes.filter(
-        (change) =>
-          change.type === "position" &&
-          change.id !== POT_NODE_ID &&
-          Boolean(change.position),
-      );
-      if (!positionChanges.length) return;
-      setManualLayout((current) => ({
+      setGraphState((current) => ({
         key: layoutKey,
-        positions: positionChanges.reduce<Record<string, LayoutPoint>>(
-          (positions, change) => {
-            if (change.type === "position" && change.position) {
-              positions[change.id] = change.position;
-            }
-            return positions;
-          },
-          { ...(current.key === layoutKey ? current.positions : {}) },
+        nodes: applyNodeChanges(
+          changes,
+          current.key === layoutKey ? current.nodes : flow.nodes,
         ),
       }));
     },
-    [layoutKey],
+    [flow.nodes, layoutKey],
   );
 
   const selectNode = useCallback(
