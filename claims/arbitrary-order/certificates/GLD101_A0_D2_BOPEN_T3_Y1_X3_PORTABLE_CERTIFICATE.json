@@ -1,0 +1,406 @@
+{
+  "certificate_id": "GLD101-A0-D2-B-open-T3-Y1-X3-portable-unit-leaf",
+  "evidence_lineage": {
+    "accepted_scoped_evidence": [
+      {
+        "commons_event_id": "kgc_01M1AYPVMMWDFDB38NKAWVT4B6",
+        "role": "six-selector p^2+1 B-open lift and Gaussian H2 norm gate"
+      },
+      {
+        "commons_event_id": "kgc_01M1B3VKGFHJ0ECEXY0Q69YPR6",
+        "role": "compact T3-Y1-X3 direct-matrix unit lift"
+      },
+      {
+        "commons_event_id": "kgc_01M1B6A2NMQCHFNHHX4R63HQXX",
+        "role": "independent rational-minor quotient cross-audit v5"
+      }
+    ],
+    "historical_receipts": {
+      "bounded_run_child_exit_code": 0,
+      "bounded_run_elapsed_seconds": 219.939,
+      "bounded_run_record_sha256": "afb8bf5c8fbedc2c2e983457799fdab3d9231a39833cceb694fe17fc4160eeae",
+      "bounded_run_runner_exit_code": 0,
+      "bounded_transcript_sha256": "01012f7546bfdf81ffe57778428304c6e89dc9380604bf8fbc8b50b0e65a8231",
+      "compact_source_sha256": "58530b32e87ff5a4198478c375755ed0452a4c6351ee234872796155c2dd4199",
+      "cross_audit_v5_sha256": "4be53dccc5f9384514f8e8293163335fa8d6d94bfa3cb9b499255f7fc4e918c4",
+      "direct_generator_sha256": "cf69baff69290c7314c30363c1e8e79706c564f39e4c3a9c2ca52347930b1127",
+      "runtime_dependency": false,
+      "transcript_checker_sha256": "a77ae9a65281c31b92eb2cc910078f035bcd143f6496609732b75a789ebedd79"
+    },
+    "quarantined_non_evidence": [
+      {
+        "disposition": "invalid_non_evidence",
+        "item": "cross-audit comparators v1-v4",
+        "reason": "they compared a cleared numerator with a rational coefficient without the required denominator inverse modulo Q6"
+      },
+      {
+        "disposition": "corroborative_only",
+        "item": "historical transcript checker",
+        "reason": "it validates hashes and multiplication-back markers but does not independently derive the six equations"
+      },
+      {
+        "disposition": "superseded_nonportable_evidence",
+        "item": "machine-local large lift transcript",
+        "reason": "the portable package regenerates the small source and requires a fresh bounded replay; no large transcript is tracked"
+      }
+    ]
+  },
+  "gaussian_quotient": {
+    "coefficient_field": "QQ(i), i^2+1=0",
+    "delta_mod_q6_p_i": "-4789*q^3 - 902*i*q^3 + 8387*q^2 - 7059*i*q^2 - 426*q + 9407*i*q - 2547 - 2071*i",
+    "delta_unit_mod_q6": true,
+    "h2_definition": "2*p^2-2*p+1",
+    "h2_gaussian_norm": 5,
+    "h2_p_i": "-1-2*i",
+    "p_minus_i_transport": "coefficientwise conjugation of rational parent equations",
+    "q6_p_i": "-q^4 - 2*i*q^4 + 5*q^3 + 3*i*q^3 - 8*q^2 + 5*q - 3*i*q - 1 + 2*i",
+    "q6_squarefree_degree": 4,
+    "variables": [
+      "q",
+      "B",
+      "t",
+      "z"
+    ]
+  },
+  "global_conjecture": "UNRESOLVED",
+  "independence": {
+    "audit_method": "AST-parse pinned literal GLD71 rows; locally transcribe pinned GLD88 H4 chart; rebuild six direct determinants with no repository import",
+    "external_runtime_inputs": [],
+    "large_artifacts_committed": false,
+    "primary_runtime_input": "tracked canonical JSON certificate only",
+    "solver_runtime_required_for_lightweight_checks": false
+  },
+  "mathematical_scope": {
+    "actual_selected_minors": [
+      "T0",
+      "T1",
+      "T2",
+      "T3",
+      "Y1",
+      "X3"
+    ],
+    "bridge": "rank(M)<=6 makes all six actual minors vanish; on B!=0 write C=B*t and cancel their common B factor",
+    "compact_unit_core": [
+      "T3",
+      "Y1",
+      "X3"
+    ],
+    "factor": "p^2+1=0",
+    "load_bearing_branch": "p=i; p=-i follows coefficientwise by conjugation",
+    "nonclaims": [
+      "no selector converse from the six selected minors to full syndrome rank",
+      "no claim on B=0 and no C-open coverage",
+      "no endpoint or physical-incidence conclusion",
+      "no P6 theorem and no P8 theorem",
+      "no arbitrary-a or wider-chart conclusion",
+      "no full-E31 closure and no global Krenn-Gu resolution"
+    ],
+    "normalization": "a=0",
+    "open": "D(B*H2*Delta)",
+    "variety": "V(Q6)"
+  },
+  "portable_inputs": {
+    "canonical_sources": {
+      "GLD101_norm_cover": {
+        "lf_sha256": "c36d618651b92621627961d3004128f39cb43e522a76256c74b1141baf9d1a3c",
+        "path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_six_selector_norm_cover.py"
+      },
+      "GLD102_no_import_audit": {
+        "lf_sha256": "3d976c4e9470a4c5acece6052acd275b96dc257b82cc197183375825ec6082ec",
+        "path": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_p01_nonzero_offset_exclusion.py"
+      },
+      "GLD71_sparse_relations": {
+        "lf_sha256": "e0204ec4495bb3f86252c18d77e3493dd6d1b0e3011e33866a2a0b2462922d5e",
+        "path": "claims/arbitrary-order/verify_four_root_torus_star_punctured_syndrome_and_eisenstein_norm_gate.py"
+      },
+      "GLD88_H4_chart": {
+        "lf_sha256": "4ba10801ea64fbb170d7949a7030d64da6c1fd707bb894d8c1372947668d8199",
+        "path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_generic_rank_six_common_row_kernel_exclusion.py"
+      }
+    },
+    "selected_support_digest": "f2670c9393287eae16dce1bc8aa41e4b0c421645833ad29619a6d7b6fd94ac07"
+  },
+  "reproducible_commands": [
+    "python claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_d2_bopen_portable.py",
+    "python claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_d2_bopen_portable.py",
+    "python claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_d2_bopen_portable.py --emit-singular <temporary-path>"
+  ],
+  "schema_version": 1,
+  "selected_minor_equations": {
+    "T0": {
+      "cleared_denominator_factors": [
+        [
+          "q - 1 + I",
+          3
+        ],
+        [
+          "q**2 + q*(-2/5 + 6*I/5) - 4/5 - 3*I/5",
+          1
+        ]
+      ],
+      "degrees": {
+        "B": 2,
+        "q": 3,
+        "t": 1
+      },
+      "direct_rational_sha256": "fa1faeaad96f51ef156b39df706a2206ab6ea9fbfbc1e6f4b273a40e42d3cc02",
+      "scaled_sha256": "e1cafe2645cfb49c51d5ba523fddc9118138699bfae247b53c12080d0e2a0b37",
+      "singular_polynomial": "269393580*B^2*q^3*t + 174218440*i*B^2*q^3*t - 566002640*B^2*q^2*t + 329805480*i*B^2*q^2*t + 46353720*B^2*q*t - 673289540*i*B^2*q*t + 258067840*B^2*t + 177078120*i*B^2*t + 262232666*B*q^3*t - 157981462*i*B*q^3*t - 40824240*B*q^3 - 32788320*i*B*q^3 - 137385878*B*q^2*t + 741476046*i*B*q^2*t + 193518420*B*q^2 + 51735060*i*B*q^2 - 399233706*B*q*t - 624441758*i*B*q*t - 212465160*B*q + 54084120*i*B*q + 297824418*B*t + 48759674*i*B*t + 59770980*B - 73030860*i*B + 117524053*q^3*t - 266795771*i*q^3*t - 7654705*q^3 - 76553065*i*q^3 + 357365551*q^2*t + 583705343*i*q^2*t + 98351015*q^2 + 75680895*i*q^2 - 666462623*q*t - 116628239*i*q*t - 81853845*q + 30640415*i*q + 207198019*t - 200281333*i*t - 8842465 - 29768245*i",
+      "terms": 20
+    },
+    "T1": {
+      "cleared_denominator_factors": [
+        [
+          "q - 1 + I",
+          2
+        ],
+        [
+          "q**2 + q*(-2/5 + 6*I/5) - 4/5 - 3*I/5",
+          2
+        ]
+      ],
+      "degrees": {
+        "B": 2,
+        "q": 3,
+        "t": 1
+      },
+      "direct_rational_sha256": "8d26e9332c85153b5c0d6341f2122900c7338547d9198425d24e53b50b1f6e7f",
+      "scaled_sha256": "e3e186a5502cead705c11875bfb5b6a4e60ae9534fa786d3b62ef670362446ed",
+      "singular_polynomial": "1700656110*B^2*q^3*t - 2937243270*i*B^2*q^3*t - 1083243600*B^2*q^3 + 2916928950*i*B^2*q^3 + 2827439370*B^2*q^2*t + 6933215910*i*B^2*q^2*t - 1314308700*B^2*q^2 - 7348097850*i*B^2*q^2 - 6823412010*B^2*q*t - 2053557930*i*B^2*q*t + 4866571350*B^2*q + 4774764300*i*B^2*q + 2295316530*B^2*t - 1942414710*i*B^2*t - 2469019050*B^2 - 343595400*i*B^2 - 761886652*B*q^3*t - 3745944336*i*B*q^3*t - 660518230*B*q^3 + 1197624110*i*B*q^3 + 8929908316*B*q^2*t + 3928206488*i*B*q^2*t - 2433986410*B*q^2 - 1698579630*i*B*q^2 - 9307482968*B*q*t + 4122627676*i*B*q*t + 3325566930*B*q - 1825612510*i*B*q + 1139461304*B*t - 4304889828*i*B*t - 231062290*B + 2326568030*i*B - 2404964061*q^3*t - 2500085898*i*q^3*t + 739943235*q^3 + 1673749980*i*q^3 + 8024459913*q^2*t - 1403125416*i*q^2*t - 4038479505*q^2 - 618142590*i*q^2 - 4121248599*q*t + 7022621268*i*q*t + 2982872115*q - 2680393680*i*q - 1498247253*t - 3119409954*i*t + 315664155 + 1624786290*i",
+      "terms": 24
+    },
+    "T2": {
+      "cleared_denominator_factors": [
+        [
+          "q - 1 + I",
+          3
+        ],
+        [
+          "q**2 + q*(-2/5 + 6*I/5) - 4/5 - 3*I/5",
+          2
+        ]
+      ],
+      "degrees": {
+        "B": 2,
+        "q": 3,
+        "t": 1
+      },
+      "direct_rational_sha256": "2c0ba77aefd11f3886ada971e0a14a7125c4a8d40e36d20718ef5785125ff4d2",
+      "scaled_sha256": "15cb9e9050e5fbb6f9d85fa86039295c96024a36b775a105127f5860772354a5",
+      "singular_polynomial": "-25115102790*B^2*q^3*t + 6702564030*i*B^2*q^3*t - 16905115950*B^2*q^3 - 14435709600*i*B^2*q^3 + 20621393070*B^2*q^2*t - 52938294990*i*B^2*q^2*t + 49854818850*B^2*q^2 + 3707469300*i*B^2*q^2 + 25614337890*B^2*q*t + 46686772770*i*B^2*q*t - 38247672300*B^2*q + 24847702350*i*B^2*q - 21120628170*B^2*t - 451041810*i*B^2*t + 5297969400*B^2 - 14119462050*i*B^2 - 19722674976*B*q^3*t - 22831436868*i*B*q^3*t + 3613758350*B*q^3 - 13459988450*i*B*q^3 + 68702983608*B*q^2*t - 8501694156*i*B*q^2*t + 17497734450*B*q^2 + 21153048850*i*B*q^2 - 36783915084*B*q*t + 58067940288*i*B*q*t - 24214232350*B*q + 1911568950*i*B*q - 12196393548*B*t - 26734809264*i*B*t + 3102739550*B - 9604629350*i*B + 13476666087*q^3*t - 23468525334*i*q^3*t + 7209720225*q^3 + 1226512800*i*q^3 + 27167628204*q^2*t + 57627749997*i*q^2*t - 13042273050*q^2 + 11954335725*i*q^2 - 61326852867*q*t - 16983455706*i*q*t - 138575475*q - 17786888550*i*q + 20682558576*t - 17175768957*i*t + 5971128300 + 4606040025*i",
+      "terms": 24
+    },
+    "T3": {
+      "cleared_denominator_factors": [
+        [
+          "q - 1 + I",
+          2
+        ],
+        [
+          "q**2 + q*(-2/5 + 6*I/5) - 4/5 - 3*I/5",
+          1
+        ]
+      ],
+      "degrees": {
+        "B": 2,
+        "q": 3,
+        "t": 1
+      },
+      "direct_rational_sha256": "26b002aaa93de30dea3925ecda3d517af330688e2ca51296e64c2a0b49833560",
+      "scaled_sha256": "4a91c9c5597a3c6c69005c1085bf8157457de69a422a2b6967989fc10115d663",
+      "singular_polynomial": "-26954835*B^2*q^3*t + 72470595*i*B^2*q^3*t - 71816445*B^2*q^2*t - 132228885*i*B^2*q^2*t + 129230985*B^2*q*t + 24082605*i*B^2*q*t - 32803455*B^2*t + 38019435*i*B^2*t + 20672916*B*q^3*t + 69486788*i*B*q^3*t - 31364100*B*q^3 + 4703700*i*B*q^3 - 181764128*B*q^2*t - 53713704*i*B*q^2*t + 64492800*B*q^2 - 18564600*i*B*q^2 + 175366044*B*q*t - 98002508*i*B*q*t - 50631900*B*q + 32943300*i*B*q - 17399832*B*t + 91604424*i*B*t + 17503200*B - 19082400*i*B + 33103461*q^3*t + 46324473*i*q^3*t + 18398649*q^3 - 22227243*i*q^3 - 127420113*q^2*t + 616191*i*q^2*t - 20614767*q^2 + 48756969*i*q^2 + 85166949*q*t - 90245343*i*q*t + 3460041*q - 41598087*i*q + 9149703*t + 52679679*i*t - 1243923 + 15068361*i",
+      "terms": 20
+    },
+    "X3": {
+      "cleared_denominator_factors": [
+        [
+          "q - 1 + I",
+          3
+        ],
+        [
+          "q**2 + q*(-2/5 + 6*I/5) - 4/5 - 3*I/5",
+          2
+        ]
+      ],
+      "degrees": {
+        "B": 2,
+        "q": 3,
+        "t": 1
+      },
+      "direct_rational_sha256": "ad3c0d56db6fb7a16b7144e5e58530f00b9e26058d9c3f70abb79cade2f38f47",
+      "scaled_sha256": "b6c2e74ded6c6a584a5e0940506099847d5f2c0a820bc661519cfcdfbf862ada",
+      "singular_polynomial": "-160661403975*B^2*q^3*t + 191398679700*i*B^2*q^3*t + 83817161625*B^2*q^3 - 117107322000*i*B^2*q^3 - 129793663200*B^2*q^2*t - 557179563225*i*B^2*q^2*t + 48985641375*B^2*q^2 + 386278269750*i*B^2*q^2 + 488982749850*B^2*q*t + 260132699175*i*B^2*q*t - 288127292250*B^2*q - 262996951125*i*B^2*q - 202922213925*B^2*t + 108577871850*i*B^2*t + 156789333000*B^2 - 4709152875*i*B^2 + 115888204570*B*q^3*t + 323547637010*i*B*q^3*t + 159763300150*B*q^3 - 112388408550*i*B*q^3 - 832965096310*B*q^2*t - 201647390330*i*B*q^2*t - 41456814950*B*q^2 + 335845852150*i*B*q^2 + 738408599630*B*q*t - 506640438910*i*B*q*t - 178094378650*B*q - 173594054450*i*B*q - 26214520390*B*t + 395482379730*i*B*t + 65647268450*B - 47910264150*i*B + 194526503937*q^3*t + 142786814091*i*q^3*t - 61553414385*q^3 - 49737110055*i*q^3 - 523730451471*q^2*t + 163563032097*i*q^2*t + 217201931205*q^2 - 52279894935*i*q^2 + 217380605283*q*t - 483977917131*i*q*t - 123973988715*q + 199139349255*i*q + 114753029751*t + 186417133443*i*t - 25815153105 - 97122344265*i",
+      "terms": 24
+    },
+    "Y1": {
+      "cleared_denominator_factors": [
+        [
+          "q - 1 + I",
+          3
+        ],
+        [
+          "q**2 + q*(-2/5 + 6*I/5) - 4/5 - 3*I/5",
+          2
+        ]
+      ],
+      "degrees": {
+        "B": 2,
+        "q": 3,
+        "t": 1
+      },
+      "direct_rational_sha256": "51a91c2162c481bede46c596ea72a5d33e07323acd59c08fd1ced76b9f71ba2f",
+      "scaled_sha256": "b584a5d57bc2f0bcec40906e65585c18217acc41e1b28ed15557aa3236a568c9",
+      "singular_polynomial": "-11008646760*B^2*q^3*t - 49737786555*i*B^2*q^3*t + 6948979200*B^2*q^3 - 14485917525*i*B^2*q^3 + 110470565205*B^2*q^2*t + 54088013940*i*B^2*q^2*t + 28107675150*B^2*q^2 + 52792763325*i*B^2*q^2 - 115260245715*B^2*q*t + 42297732630*i*B^2*q*t - 68318817825*B^2*q - 23741968350*i*B^2*q + 16384264770*B^2*t - 47526866265*i*B^2*t + 33555132225*B^2 - 14857846200*i*B^2 + 48315020104*B*q^3*t - 47697153928*i*B*q^3*t + 34782489070*B*q^3 - 6864329490*i*B*q^3 + 14205806468*B*q^2*t + 153802495324*i*B*q^2*t - 63234847310*B*q^2 + 79719479170*i*B*q^2 - 116404897864*B*q*t - 92453543752*i*B*q*t - 440614870*B*q - 108171837410*i*B*q + 56618446292*B*t - 15214297644*i*B*t + 30064848110*B + 34926062730*i*B + 48042030333*q^3*t + 8015442519*i*q^3*t + 13316047515*q^3 + 27227886645*i*q^3 - 77951079939*q^2*t + 76211890773*i*q^2*t - 66227421495*q^2 - 24186391035*i*q^2 - 6276253353*q*t - 106706877879*i*q*t + 61428113385*q - 25795295445*i*q + 39114990459*t + 21893607087*i*t - 7344864405 + 22753799835*i",
+      "terms": 24
+    }
+  },
+  "selector_definitions": {
+    "T0": {
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        28
+      ]
+    },
+    "T1": {
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        2
+      ],
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        32
+      ]
+    },
+    "T2": {
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        5
+      ],
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        32
+      ]
+    },
+    "T3": {
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        33
+      ]
+    },
+    "X3": {
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "rows": [
+        0,
+        1,
+        17,
+        28,
+        31,
+        32,
+        33
+      ]
+    },
+    "Y1": {
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "rows": [
+        0,
+        1,
+        17,
+        28,
+        31,
+        32,
+        33
+      ]
+    }
+  },
+  "singular_unit_lift": {
+    "fresh_bounded_replay_required": true,
+    "historical_expected_runtime": {
+      "basis_size": 1,
+      "identity_sum_minus_one": 0,
+      "lift_matrix_check": "_[1,1]=0",
+      "nonzero_multipliers": 5,
+      "unit_column": 1
+    },
+    "ideal": "Q6,H_T3,H_Y1,H_X3,z*B*Delta-1",
+    "large_solver_transcript_committed": false,
+    "required_terminal_markers": [
+      "matrix(I)*T-matrix(L);",
+      "simplify(identity-1,2);",
+      "CERTIFICATE_EXACT 1",
+      "RUN_COMPLETE 1"
+    ],
+    "solver_source_committed": false,
+    "source_line_count": 66,
+    "source_sha256": "58530b32e87ff5a4198478c375755ed0452a4c6351ee234872796155c2dd4199",
+    "unit_core": [
+      "T3",
+      "Y1",
+      "X3"
+    ]
+  },
+  "status": "scoped_exact_selected_minor_unit_leaf"
+}
