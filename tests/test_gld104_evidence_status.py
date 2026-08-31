@@ -1,4 +1,4 @@
-"""Integrity tests for the frozen-candidate GLD104 P8 composition."""
+"""Evidence-status and integrity tests for the proved GLD104 composition."""
 
 from __future__ import annotations
 
@@ -35,9 +35,14 @@ REVIEW = ROOT / "docs" / "audits" / (
 )
 FRONTIER = ROOT / "docs" / "current-frontier.md"
 LEDGER = ROOT / "catalog" / "theorem-ledger.json"
+README = BASE / "README.md"
+PARENT_ATTEMPT = ROOT / "docs" / "audits" / (
+    "FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_"
+    "RESIDUAL_FACTOR_PARENT_ATTEMPT_2026-08-30.md"
+)
 
 EXPECTED_CERTIFICATE_LF_SHA256 = (
-    "85dde2dae9eceb29edf301bf234c01a6ac00761c40458d812afc3707486ba00e"
+    "7a68ae95177c50f96725849ca73f01fba5eba18a121e4500acf5d22a6dc282e5"
 )
 EXPECTED_SELECTOR_DETERMINANT_SHA256 = (
     "c8b675268458576454cf3eeab5fe38c4ef468a2113c94febfd471c0cfc6d6431"
@@ -51,13 +56,13 @@ def lf_sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
 
 
-class GLD104CandidatePackageTests(unittest.TestCase):
+class GLD104EvidenceStatusTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.raw = CERTIFICATE.read_bytes()
         cls.payload = json.loads(cls.raw.decode("utf-8"))
 
-    def test_certificate_pin_scope_and_external_gate(self) -> None:
+    def test_certificate_pin_scope_and_external_acceptance(self) -> None:
         self.assertEqual(lf_sha256(CERTIFICATE), EXPECTED_CERTIFICATE_LF_SHA256)
         self.assertEqual(self.payload["schema_version"], 1)
         self.assertEqual(
@@ -66,16 +71,23 @@ class GLD104CandidatePackageTests(unittest.TestCase):
         )
         self.assertEqual(
             self.payload["status"],
-            "candidate_exact_scoped_composition_pending_external_audit",
+            "proved_exact_scoped_characteristic_zero_composition",
         )
         self.assertEqual(self.payload["global_conjecture"], "UNRESOLVED")
         self.assertEqual(
             self.payload["external_consolidation"],
             {
+                "candidate_commit": "75da0298a535888e7a84257b7bfd6a556a3267b2",
+                "candidate_tree": "86fae29848c52c7ccd3236c84e156aedb3f02b78",
                 "required_before_promotion": True,
-                "status": "pending",
-                "frontier_update_allowed": False,
-                "theorem_ledger_update_allowed": False,
+                "request_event_id": "kgc_01M1BXKGZ8F86B6XWK1J6Q3DMF",
+                "receipts": {
+                    "Juniper": "kgc_01M1BXV18D8NZQ22BDEXDXJWTP",
+                    "Mycelium": "kgc_01M1BYMJPC3VD2N7ENK20RXE3B",
+                },
+                "status": "accepted_2_of_2",
+                "frontier_update_allowed": True,
+                "theorem_ledger_update_allowed": True,
             },
         )
 
@@ -147,18 +159,23 @@ class GLD104CandidatePackageTests(unittest.TestCase):
         self.assertIn("restricted_assignment", source)
         self.assertIn("audit_selected_minor_norm_bridge_source", source)
 
-    def test_candidate_documents_preserve_status_and_nonclaims(self) -> None:
+    def test_theorem_documents_preserve_status_and_nonclaims(self) -> None:
         owner = OWNER.read_text(encoding="utf-8")
         review = REVIEW.read_text(encoding="utf-8")
-        self.assertIn("Candidate exact scoped", owner)
-        self.assertRegex(owner, re.compile(r"pending\s+external adversarial consolidation"))
-        self.assertIn("Internal verdict: PASS for freezing an immutable candidate", review)
-        self.assertRegex(
+        status = owner.split("## Status", 1)[1].split("##", 1)[0]
+        self.assertIn("Proved exact scoped characteristic-zero", status)
+        self.assertNotRegex(status, re.compile(r"\b(candidate|pending)\b", re.I))
+        self.assertIn(
+            "Verdict: PASS for the exact scoped GLD104 P8 composition",
             review,
-            re.compile(
-                r"external\s+fresh-detached adversarial consolidation remains required"
-            ),
         )
+        for event_id in (
+            "kgc_01M1BXKGZ8F86B6XWK1J6Q3DMF",
+            "kgc_01M1BXV18D8NZQ22BDEXDXJWTP",
+            "kgc_01M1BYMJPC3VD2N7ENK20RXE3B",
+        ):
+            self.assertIn(event_id, owner)
+            self.assertIn(event_id, review)
         for text in (owner, review):
             self.assertIn("UNRESOLVED", text)
             self.assertRegex(text, re.compile(r"\bP6\b"))
@@ -166,11 +183,33 @@ class GLD104CandidatePackageTests(unittest.TestCase):
             self.assertRegex(text, re.compile(r"full.{0,8}E31", re.I))
             self.assertIn("global", text.lower())
 
-    def test_candidate_is_not_prematurely_promoted(self) -> None:
-        self.assertNotIn("GLD104", FRONTIER.read_text(encoding="utf-8"))
-        self.assertNotIn("GLD104", LEDGER.read_text(encoding="utf-8"))
+    def test_live_surfaces_record_only_the_scoped_theorem(self) -> None:
+        frontier = FRONTIER.read_text(encoding="utf-8")
+        self.assertIn('GLD104["Equal-leaf H4 Q6 a=0 P8', frontier)
+        self.assertIn("GLD101 -->|eight-factor P8 composition", frontier)
+        self.assertIn("| `GLD104` |", frontier)
+        self.assertIn("global status remains **UNRESOLVED**", frontier)
 
-    def test_candidate_files_have_no_machine_or_run_dependency(self) -> None:
+        ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
+        entries = [entry for entry in ledger["entries"] if "(GLD104)" in entry["name"]]
+        self.assertEqual(len(entries), 1)
+        entry = entries[0]
+        self.assertEqual(entry["status"], "verified")
+        self.assertEqual(entry["document"], OWNER.relative_to(ROOT).as_posix())
+        self.assertEqual(entry["primary_verifier"], PRIMARY.relative_to(ROOT).as_posix())
+        self.assertEqual(entry["independent_audit"], AUDIT.relative_to(ROOT).as_posix())
+        self.assertEqual(entry["review"], REVIEW.relative_to(ROOT).as_posix())
+        self.assertIn("UNRESOLVED", entry["note"])
+
+        readme = README.read_text(encoding="utf-8")
+        parent = PARENT_ATTEMPT.read_text(encoding="utf-8")
+        self.assertIn("[`GLD104`]", readme)
+        self.assertRegex(
+            parent,
+            re.compile(r"received accepted\s+`2/2`\s+external consolidation"),
+        )
+
+    def test_theorem_files_have_no_machine_or_run_dependency(self) -> None:
         for path in (CERTIFICATE, PRIMARY, AUDIT, OWNER, REVIEW):
             text = path.read_text(encoding="utf-8")
             with self.subTest(path=path.name):
@@ -180,8 +219,8 @@ class GLD104CandidatePackageTests(unittest.TestCase):
 
     def test_primary_and_independent_audit_execute(self) -> None:
         cases = (
-            (PRIMARY, "GLD104 candidate P8/nonzero-offset composition verifier: PASS"),
-            (AUDIT, "Independent GLD104 candidate composition audit: PASS"),
+            (PRIMARY, "GLD104 P8/nonzero-offset composition verifier: PASS"),
+            (AUDIT, "Independent GLD104 composition audit: PASS"),
         )
         for script, marker in cases:
             with self.subTest(script=script.name):

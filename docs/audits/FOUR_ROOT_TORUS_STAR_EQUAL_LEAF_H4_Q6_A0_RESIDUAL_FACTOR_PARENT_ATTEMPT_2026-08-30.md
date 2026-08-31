@@ -289,27 +289,33 @@ R110 C-open q-substitution:            independently accepted, corroborative;
 R110 six-selector compact probe:       inconclusive non-evidence.
 ```
 
-The factor cover now supplies the claimed implication (P8), but (P8) is
-**not yet promoted to a theorem**.  The load-bearing next work is to package
-the accepted leaf identities and independent receipts into a clean-clone,
-path-portable certificate/audit seam, then complete adversarial consolidation.
+The factor cover supplies the claimed implication (P8).  The path-portable
+GLD104 package was frozen at immutable commit
+`75da0298a535888e7a84257b7bfd6a556a3267b2`, tree
+`86fae29848c52c7ccd3236c84e156aedb3f02b78`, and received accepted `2/2`
+external consolidation under Commons request
+`kgc_01M1BXKGZ8F86B6XWK1J6Q3DMF`: Juniper receipt
+`kgc_01M1BXV18D8NZQ22BDEXDXJWTP` and Mycelium receipt
+`kgc_01M1BYMJPC3VD2N7ENK20RXE3B`.  The promotion records (P8) as the proved
+exact scoped GLD104 theorem.
+
 The original six-selector proposition (P6) remains open: the compact R110
 probe was inconclusive and the accepted R110 identity proves only the larger
-eight-minor system.
+eight-minor system.  This does not weaken the intended rank consumer, because
+rank at most six supplies all eight P8 actual-minor equations in the forward
+direction.
 
 ## 6. Proof-topology delta
 
-The live frontier is unchanged by this attempt.  No new theorem edge is
-recorded until the accepted P8 composition is independently consolidated and
-made clean-clone reproducible.  The proposed future delta, conditional on
-that packaging and consolidation, would be
+The accepted P8 composition changes the live frontier by the scoped edge
 
 ```text
-GLD101
-  -> complete a=0 nonzero-offset closure on D(H2*Delta)
+GLD101 + accepted portable factor leaves
+  -> GLD104 complete a=0 P8 nonzero-offset closure on D(H2*Delta)
   -> B=C=0 endpoint / physical-incidence and wider E31 obligations remain.
 ```
 
-That conditional edge would close only the normalized `a=0` nonzero-offset
-part of the GLD101 factor cover.  It would not change the `UNRESOLVED` global
-status.
+That edge closes only the normalized `a=0` P8 nonzero-offset part of the
+GLD101 factor cover.  It does not prove P6, close the endpoint, or change the
+`UNRESOLVED` global status.  The prospective promotion commit is to be frozen
+and independently reviewed as an exact diff before GLD104 is treated as live.

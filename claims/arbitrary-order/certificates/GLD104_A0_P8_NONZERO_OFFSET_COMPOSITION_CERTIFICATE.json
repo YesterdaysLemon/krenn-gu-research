@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "certificate_id": "GLD104-A0-P8-nonzero-offset-composition",
-  "status": "candidate_exact_scoped_composition_pending_external_audit",
+  "status": "proved_exact_scoped_characteristic_zero_composition",
   "global_conjecture": "UNRESOLVED",
   "mathematical_scope": {
     "field": "complex numbers; all load-bearing identities are exact over QQ",
@@ -261,9 +261,16 @@
     "Every support case is therefore impossible at a nonzero offset, proving the P8 implication; rank(M)<=6 supplies P8 only in the forward direction."
   ],
   "external_consolidation": {
+    "candidate_commit": "75da0298a535888e7a84257b7bfd6a556a3267b2",
+    "candidate_tree": "86fae29848c52c7ccd3236c84e156aedb3f02b78",
     "required_before_promotion": true,
-    "status": "pending",
-    "frontier_update_allowed": false,
-    "theorem_ledger_update_allowed": false
+    "request_event_id": "kgc_01M1BXKGZ8F86B6XWK1J6Q3DMF",
+    "receipts": {
+      "Juniper": "kgc_01M1BXV18D8NZQ22BDEXDXJWTP",
+      "Mycelium": "kgc_01M1BYMJPC3VD2N7ENK20RXE3B"
+    },
+    "status": "accepted_2_of_2",
+    "frontier_update_allowed": true,
+    "theorem_ledger_update_allowed": true
   }
 }

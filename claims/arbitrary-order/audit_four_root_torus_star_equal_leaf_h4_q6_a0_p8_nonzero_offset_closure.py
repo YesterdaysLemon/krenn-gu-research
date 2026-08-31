@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent static/semantic audit of the candidate GLD104 composition.
+"""Independent static/semantic audit of the proved GLD104 composition.
 
 The audit imports neither the GLD104 primary nor any repository verifier.  It
 hash-pins every child package, reads the tracked JSON evidence directly,
@@ -28,7 +28,7 @@ CERTIFICATE = BASE / "certificates" / (
     "GLD104_A0_P8_NONZERO_OFFSET_COMPOSITION_CERTIFICATE.json"
 )
 EXPECTED_CERTIFICATE_LF_SHA256 = (
-    "85dde2dae9eceb29edf301bf234c01a6ac00761c40458d812afc3707486ba00e"
+    "7a68ae95177c50f96725849ca73f01fba5eba18a121e4500acf5d22a6dc282e5"
 )
 SIX = ("T0", "T1", "T2", "T3", "Y1", "X3")
 P8 = ("T0", "T1", "T2", "T3", "D0", "Y0", "Y1", "X3")
@@ -239,14 +239,29 @@ def audit() -> dict[str, Any]:
     started = time.monotonic()
     require(lf_sha256(CERTIFICATE) == EXPECTED_CERTIFICATE_LF_SHA256, "certificate hash")
     payload = json.loads(CERTIFICATE.read_text(encoding="utf-8"))
-    require(payload["status"] == "candidate_exact_scoped_composition_pending_external_audit", "candidate status")
+    require(
+        payload["status"]
+        == "proved_exact_scoped_characteristic_zero_composition",
+        "theorem status",
+    )
     require(payload["global_conjecture"] == "UNRESOLVED", "global status")
-    require(payload["external_consolidation"] == {
-        "required_before_promotion": True,
-        "status": "pending",
-        "frontier_update_allowed": False,
-        "theorem_ledger_update_allowed": False,
-    }, "promotion gate")
+    require(
+        payload["external_consolidation"]
+        == {
+            "candidate_commit": "75da0298a535888e7a84257b7bfd6a556a3267b2",
+            "candidate_tree": "86fae29848c52c7ccd3236c84e156aedb3f02b78",
+            "required_before_promotion": True,
+            "request_event_id": "kgc_01M1BXKGZ8F86B6XWK1J6Q3DMF",
+            "receipts": {
+                "Juniper": "kgc_01M1BXV18D8NZQ22BDEXDXJWTP",
+                "Mycelium": "kgc_01M1BYMJPC3VD2N7ENK20RXE3B",
+            },
+            "status": "accepted_2_of_2",
+            "frontier_update_allowed": True,
+            "theorem_ledger_update_allowed": True,
+        },
+        "promotion gate",
+    )
     require(
         re.search(
             r"[A-Za-z]:[\\/]", CERTIFICATE.read_text(encoding="utf-8")
@@ -325,7 +340,7 @@ def audit() -> dict[str, Any]:
     require(len(payload["proof_topology"]) == 7, "proof topology")
 
     return {
-        "status": "independent_candidate_GLD104_composition_audit_passed",
+        "status": "independent_proved_GLD104_composition_audit_passed",
         "global_conjecture": "UNRESOLVED",
         "repository_verifier_imports": 0,
         "source_pins_checked": len(EXPECTED_SOURCE_PINS),
@@ -334,14 +349,14 @@ def audit() -> dict[str, Any]:
         "p8_surface": list(P8),
         "gld102_selected_subcase": p01,
         "selected_minor_norm_bridge": selector_bridge,
-        "external_consolidation": "still pending",
+        "external_consolidation": "accepted_2_of_2",
         "elapsed_seconds": round(time.monotonic() - started, 3),
     }
 
 
 def main() -> None:
     result = audit()
-    print("Independent GLD104 candidate composition audit: PASS")
+    print("Independent GLD104 composition audit: PASS")
     print(json.dumps(result, indent=2, sort_keys=True))
 
 

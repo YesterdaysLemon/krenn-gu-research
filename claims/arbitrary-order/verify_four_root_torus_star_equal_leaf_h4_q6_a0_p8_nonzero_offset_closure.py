@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the candidate GLD104 P8/nonzero-offset composition.
+"""Verify the proved GLD104 P8/nonzero-offset composition.
 
 This checker does not redo the expensive child arithmetic.  It validates the
 portable, independently audited leaf seam and then checks the exact logical
@@ -38,7 +38,7 @@ GLD101_PRIMARY = BASE / (
 )
 
 EXPECTED_CERTIFICATE_LF_SHA256 = (
-    "85dde2dae9eceb29edf301bf234c01a6ac00761c40458d812afc3707486ba00e"
+    "7a68ae95177c50f96725849ca73f01fba5eba18a121e4500acf5d22a6dc282e5"
 )
 EXPECTED_SUPPORT_LABELS = (
     "p-1",
@@ -120,7 +120,7 @@ def validate_source_pins(payload: dict[str, Any]) -> dict[str, str]:
     return actual
 
 
-def validate_candidate_contract(payload: dict[str, Any]) -> None:
+def validate_theorem_contract(payload: dict[str, Any]) -> None:
     require(payload.get("schema_version") == 1, "schema version")
     require(
         payload.get("certificate_id")
@@ -129,15 +129,38 @@ def validate_candidate_contract(payload: dict[str, Any]) -> None:
     )
     require(
         payload.get("status")
-        == "candidate_exact_scoped_composition_pending_external_audit",
-        "candidate status",
+        == "proved_exact_scoped_characteristic_zero_composition",
+        "theorem status",
     )
     require(payload.get("global_conjecture") == "UNRESOLVED", "global status")
     external = payload.get("external_consolidation", {})
     require(external.get("required_before_promotion") is True, "external audit gate")
-    require(external.get("status") == "pending", "external audit pending")
-    require(external.get("frontier_update_allowed") is False, "frontier gate")
-    require(external.get("theorem_ledger_update_allowed") is False, "ledger gate")
+    require(external.get("status") == "accepted_2_of_2", "external audit status")
+    require(
+        external.get("candidate_commit")
+        == "75da0298a535888e7a84257b7bfd6a556a3267b2",
+        "candidate commit",
+    )
+    require(
+        external.get("candidate_tree")
+        == "86fae29848c52c7ccd3236c84e156aedb3f02b78",
+        "candidate tree",
+    )
+    require(
+        external.get("request_event_id")
+        == "kgc_01M1BXKGZ8F86B6XWK1J6Q3DMF",
+        "external audit request",
+    )
+    require(
+        external.get("receipts")
+        == {
+            "Juniper": "kgc_01M1BXV18D8NZQ22BDEXDXJWTP",
+            "Mycelium": "kgc_01M1BYMJPC3VD2N7ENK20RXE3B",
+        },
+        "external audit receipts",
+    )
+    require(external.get("frontier_update_allowed") is True, "frontier gate")
+    require(external.get("theorem_ledger_update_allowed") is True, "ledger gate")
 
     scope = payload.get("mathematical_scope", {})
     require(scope.get("assumptions") == ["a=0", "Q6(p,q)=0", "H2(p)*Delta(p,q)!=0"], "scope assumptions")
@@ -343,7 +366,7 @@ def check() -> dict[str, Any]:
     started = time.monotonic()
     require(lf_sha256(CERTIFICATE) == EXPECTED_CERTIFICATE_LF_SHA256, "certificate pin")
     payload = load_json(CERTIFICATE)
-    validate_candidate_contract(payload)
+    validate_theorem_contract(payload)
     pins = validate_source_pins(payload)
     children = {name: load_json(path) for name, path in CHILD_CERTIFICATES.items()}
     dispositions = validate_factor_support(payload, children)
@@ -359,7 +382,7 @@ def check() -> dict[str, Any]:
 
     require(len(payload.get("proof_topology", [])) == 7, "proof-topology steps")
     return {
-        "status": "candidate_GLD104_composition_seam_verified",
+        "status": "proved_GLD104_composition_seam_verified",
         "global_conjecture": "UNRESOLVED",
         "p8_selected_minor_implication": True,
         "rank_corollary_direction_only": True,
@@ -369,14 +392,14 @@ def check() -> dict[str, Any]:
         "gld102_selected_subcase": p01,
         "selected_minor_norm_bridge": selector_bridge,
         "source_pins_checked": len(pins),
-        "external_consolidation": "pending",
+        "external_consolidation": "accepted_2_of_2",
         "elapsed_seconds": round(time.monotonic() - started, 3),
     }
 
 
 def main() -> None:
     result = check()
-    print("GLD104 candidate P8/nonzero-offset composition verifier: PASS")
+    print("GLD104 P8/nonzero-offset composition verifier: PASS")
     print(json.dumps(result, indent=2, sort_keys=True))
 
 

@@ -1,16 +1,17 @@
-# Four-root torus-star equal-leaf H4 Q6 a=0 P8 nonzero-offset closure (candidate GLD104)
+# Four-root torus-star equal-leaf H4 Q6 a=0 P8 nonzero-offset closure (GLD104)
 
 ## Status
 
-**Candidate exact scoped characteristic-zero composition (`GLD104`), pending
-external adversarial consolidation.**
+**Proved exact scoped characteristic-zero selected-minor composition
+(`GLD104`).**
 
-The candidate package passes its exact primary and a separate no-primary-import
-composition audit, but it is deliberately not yet promoted in the theorem
-ledger or live frontier.  The global Krenn--Gu conjecture remains
-**UNRESOLVED**.
+The exact primary and a separate no-primary-import composition audit pass.
+Juniper and Mycelium then accepted immutable pre-promotion commit `75da0298`
+from fresh detached checkouts, giving the required `2/2` external
+consolidation.
+The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
-## 1. Exact candidate statement
+## 1. Exact theorem statement
 
 Work pointwise over the complex numbers on the normalized GLD88/F88
 equal-leaf H4 offset chart `U88`.  Set `a=0` and retain
@@ -31,7 +32,7 @@ be the denominator-cleared numerators of the eight displayed actual ordered
 seven-minors of the complete GLD71 syndrome.  On `D(Delta)`, each numerator
 vanishes exactly when its corresponding rational minor vanishes.
 
-The selected-minor proposition under external review is
+The proved selected-minor proposition is
 
 ```text
 Q6=T0=T1=T2=T3=D0=Y0=Y1=X3=0
@@ -51,8 +52,8 @@ No converse from the eight selected minors to complete syndrome rank is used
 or claimed.
 
 The field is stated as `C` to match the committed GLD101 pointwise theorem.
-Although the identities are computed over `Q`, this candidate does not use
-that observation to silently strengthen the field quantifier.
+Although the identities are computed over `Q`, this theorem does not use that
+observation to silently strengthen the field quantifier.
 
 ## 2. The eight actual minors
 
@@ -100,7 +101,7 @@ supported on the ordered offset monomials
 m = (C, B, B*C, B^2, B^2*C, B^3)^T.
 ```
 
-Write the six equations as `K(p,q)m=0`.  The candidate primary freshly
+Write the six equations as `K(p,q)m=0`.  The primary freshly
 reconstructs all six actual seven-minors from the pinned GLD71/GLD88 data,
 rejects every constant or off-list offset monomial, rebuilds `K`, and obtains
 the exact selector determinant signature
@@ -170,14 +171,13 @@ supports are removed only by the written open conditions.  In particular,
 this composition does not claim a theorem on either boundary.
 
 Combining Sections 4.1 and 4.2 contradicts every nonzero-offset P8 point,
-which proves (P8) conditionally on successful external consolidation.  The
-rank corollary then follows only in the direction
+which proves (P8).  The rank corollary then follows only in the direction
 
 ```text
 rank M(G)<=6 => every actual seven-minor vanishes => P8 => B=C=0.
 ```
 
-## 5. Candidate certificate and audit boundary
+## 5. Certificate and audit boundary
 
 The tracked composition certificate pins 29 load-bearing child files by
 LF-normalized SHA256, including the GLD101 and GLD102 theorem/checker/audit
@@ -186,7 +186,7 @@ pins the exact eight-factor signatures, the offset cover, the P8 selector
 surface, and the factor dispositions.
 
 The primary verifier performs the fresh actual-minor/determinant replay in
-Section 3 and checks the complete composition seam.  Its bounded candidate
+Section 3 and checks the complete composition seam.  Its bounded pre-freeze
 run succeeded in 81.702 script seconds.  The independent composition audit
 imports no repository verifier, checks the 29 source pins and child JSON
 directly, reconstructs every factor signature, validates the offset-cover
@@ -204,17 +204,23 @@ Windows host, isolated mode cannot see the installed user-site SymPy.  The
 audit's zero-repository-import boundary is enforced by its AST and focused
 tests rather than by a command that does not run in the recorded environment.
 
-Before this package can be promoted, an external fresh-detached adversarial
-audit must accept the immutable candidate commit.  Until then:
+The immutable candidate commit and tree were
 
-- the live frontier is unchanged;
-- the theorem ledger is unchanged;
-- this document remains a candidate; and
-- the global conjecture remains **UNRESOLVED**.
+```text
+75da0298a535888e7a84257b7bfd6a556a3267b2
+86fae29848c52c7ccd3236c84e156aedb3f02b78.
+```
+
+Commons request `kgc_01M1BXKGZ8F86B6XWK1J6Q3DMF` received exact scoped
+acceptances from Juniper (`kgc_01M1BXV18D8NZQ22BDEXDXJWTP`) and Mycelium
+(`kgc_01M1BYMJPC3VD2N7ENK20RXE3B`).  Mycelium additionally replayed the
+primary and all ten focused tests from a Git-free clean export.  These are
+external consolidation receipts for this scoped theorem, not evidence for a
+wider or global conclusion.
 
 ## 6. Nonclaims and remaining obligations
 
-This candidate does not prove or assert:
+This theorem does not prove or assert:
 
 - `P6`, because the R110 certificate uses `D0` and `Y0` with nonzero
   multipliers;

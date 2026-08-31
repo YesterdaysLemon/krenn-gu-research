@@ -7189,6 +7189,35 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Four-root torus-star equal-leaf H4 Q6 a=0 P8 nonzero-offset closure (GLD104)",
+      "document": "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_P8_NONZERO_OFFSET_CLOSURE_THEOREM.md",
+      "document_sha256_16": "a7ab76be0ccd3b65",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero pointwise statement over C on the normalized scale-fixed equal-leaf H4 GLD88/F88 offset chart with a=0, Q6=0, and H2*Delta nonzero; identities are computed over QQ without silently strengthening the stated field quantifier",
+        "the selected-minor proposition P8 uses the eight actual ordered GLD71 seven-minors T0,T1,T2,T3,D0,Y0,Y1,X3 and concludes B=C=0; D0 and Y0 are load-bearing on R110, so the six-selector proposition P6 remains unproved",
+        "after Q6 reduction the six GLD101 actual equations have support on (C,B,BC,B^2,B^2C,B^3); a nonzero offset makes this monomial vector nonzero, so equation vanishing forces the coefficient determinant with signature c8b675268458576454cf3eeab5fe38c4ef468a2113c94febfd471c0cfc6d6431 to vanish",
+        "the nonzero-offset locus is exhausted by D(B) and V(B) intersect D(C); C=B*t with common-B cancellation is reversible on the first chart and common-C cancellation is reversible on the second",
+        "the exact GLD101 necessary support is (p-1)*p*(p^2+1)*P*H2*R4*R8*R110; p=0,1 are closed by the a=0 GLD102 selected-minor subcases, p^2+1, R4, R8 and R110 by exact portable B-open leaves, P because it divides Delta, and H2 by the declared open",
+        "the composition certificate pins 29 child evidence files by LF-normalized SHA256; immutable candidate commit 75da0298a535888e7a84257b7bfd6a556a3267b2 and tree 86fae29848c52c7ccd3236c84e156aedb3f02b78 received 2/2 fresh-detached external consolidation under Commons request kgc_01M1BXKGZ8F86B6XWK1J6Q3DMF",
+        "complete syndrome rank at most six makes every actual seven-minor vanish and therefore supplies P8 only in the forward direction; no selected-minor converse is used or claimed",
+        "P6, the B=C=0 endpoint, physical incidence and Omega boundary, arbitrary a and full E31, Delta=0, H2=0, other pivots/charts/gauges/components/source branches, the GLD83 Fitting pullback, source integrability, graph lifting, global gluing, other roots/orders, and global Krenn-Gu remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_p8_nonzero_offset_closure.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_p8_nonzero_offset_closure.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_P8_NONZERO_OFFSET_CLOSURE_REVIEW_2026-08-31.md",
+      "expected_runtime": "about 90 seconds for the source-recomputed primary and under one second for the no-repository-verifier-import composition audit on the reference host",
+      "external_binaries": [],
+      "note": "GLD104 proves that on the normalized GLD88/F88 H4/Q6 chart over C, at a=0 and on D(H2*Delta), the eight actual-minor equations P8 force B=C=0. Complete syndrome rank at most six supplies P8 only in the forward direction. P6, the endpoint, physical incidence, arbitrary a/full E31, Delta and H2 boundaries, wider chart/component/source/Fitting/integrability/gluing obligations, other roots/orders, and the global Krenn-Gu conjecture remain UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

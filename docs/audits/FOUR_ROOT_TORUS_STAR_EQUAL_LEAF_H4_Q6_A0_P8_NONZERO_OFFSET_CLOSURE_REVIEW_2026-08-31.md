@@ -1,9 +1,8 @@
 # GLD104 a=0 P8 nonzero-offset composition hostile review
 
-## Candidate verdict
+## Verdict
 
-**Internal verdict: PASS for freezing an immutable candidate; external
-fresh-detached adversarial consolidation remains required.**
+**Verdict: PASS for the exact scoped GLD104 P8 composition.**
 
 The reviewed package gives an exact composition for the selected-minor
 proposition
@@ -15,9 +14,9 @@ H2*Delta != 0  =>  B=C=0.                         (P8)
 
 It also gives the one-way corollary with `rank M(G)<=6`, because complete
 syndrome rank at most six makes all eight actual seven-minors vanish.  The
-candidate is deliberately absent from the theorem ledger and live frontier
-until an external audit accepts the frozen commit.  The global Krenn--Gu
-conjecture remains **UNRESOLVED**.
+immutable candidate received exact fresh-detached acceptances from Juniper
+and Mycelium before this promotion.  The global Krenn--Gu conjecture remains
+**UNRESOLVED**.
 
 ## 1. Exact scope audited
 
@@ -44,7 +43,7 @@ The most dangerous composition gap was that GLD101's public headline is
 rank-scoped, whereas P8 is a selected-minor proposition.  Merely citing the
 headline would not justify feeding P8 into its norm factorization.
 
-The candidate primary closes that gap directly.  It reconstructs the six
+The primary closes that gap directly.  It reconstructs the six
 actual minors from the hash-pinned GLD71 and GLD88 sources, reduces their
 coefficients modulo `Q6`, rejects constant terms and every offset monomial
 outside
@@ -136,15 +135,22 @@ rebuilds factor signatures and the offset-cover truth table, extracts the
 two GLD102 constants through a restricted AST, and separately checks the
 GLD101 coefficient-matrix source contract.
 
-This internal review establishes eligibility for a frozen candidate, not
-independent consolidation.  Promotion requires at least one external reviewer
-to check the exact committed tree from a fresh detached checkout.  A failed
-source pin, selector mismatch, unhandled factor, selected/rank direction
-error, or widened field/scope is a stop condition.
+External consolidation used immutable commit
+`75da0298a535888e7a84257b7bfd6a556a3267b2` and tree
+`86fae29848c52c7ccd3236c84e156aedb3f02b78`.  Commons request
+`kgc_01M1BXKGZ8F86B6XWK1J6Q3DMF` received Juniper receipt
+`kgc_01M1BXV18D8NZQ22BDEXDXJWTP` and Mycelium receipt
+`kgc_01M1BYMJPC3VD2N7ENK20RXE3B`, reaching `2/2`.  Mycelium also executed
+the exact primary and ten focused tests from a Git-free clean export.
+
+The prospective promotion commit must itself receive independent exact-diff
+review before GLD104 is treated as live.  A failed source pin, selector
+mismatch, unhandled factor, selected/rank direction error, or widened
+field/scope is a stop condition.
 
 ## 7. Required nonclaims
 
-The candidate does not prove:
+The theorem does not prove:
 
 - P6;
 - exclusion or inadmissibility of the endpoint `B=C=0`;
@@ -155,5 +161,5 @@ The candidate does not prove:
 - another root number, order, component, or a global exhaustive cover; or
 - the global Krenn--Gu conjecture.
 
-Subject to those fences, the package passes internal hostile review as an
-immutable **candidate**.  It is not yet a promoted theorem.
+Subject to those fences and the accepted external consolidation, the exact
+scoped GLD104 theorem passes hostile review.

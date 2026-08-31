@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD102 equal-leaf checkpoint
+## GLD83--GLD104 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -169,6 +169,19 @@ survivors at `p=0` have explicit nonzero direct seven-minors and hence rank at
 least seven.  Therefore rank at most six forces `B=C=0` on these fibres.  The
 endpoint itself, arbitrary `p`, physical incidence, wider charts, and the
 global conjecture remain open.
+
+[`GLD104`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_P8_NONZERO_OFFSET_CLOSURE_THEOREM.md)
+completes the normalized `a=0` P8 nonzero-offset composition on
+`V(Q6) intersect D(H2*Delta)`.  The six GLD101 actual selectors first imply
+the exact selector determinant at every nonzero offset; the resulting eight
+norm supports are exhausted by the GLD102 `p=0,1` subcases, the arbitrary-p
+C-open unit, and the exact `p^2+1`, `R4`, `R8`, and `R110` B-open leaves.
+Thus the eight actual-minor equations `T0,T1,T2,T3,D0,Y0,Y1,X3` force
+`B=C=0`, and complete syndrome rank at most six supplies those equations only
+in the forward direction.  The result is over `C` and does not prove P6,
+exclude the endpoint, establish physical incidence emptiness, extend to
+arbitrary `a` or full E31, cover another chart/component/source branch, or
+resolve the global conjecture, which remains **UNRESOLVED**.
 
 The [`GLD98-membership-pilot`](explore_four_root_torus_star_equal_leaf_h4_q6_modular_membership_census.py)
 is an **exploratory instrument, not a theorem node**.  It independently
