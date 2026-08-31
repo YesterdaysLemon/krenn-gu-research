@@ -22,6 +22,7 @@ test("parses the canonical node key and typed-edge table", async () => {
   });
 
   assert.equal(data.globalStatus, "UNRESOLVED");
+  assert.match(frontier, /```mermaid\s+flowchart BT\b/);
   assert.ok(data.nodes.length > 40);
   assert.ok(data.edges.length > 40);
   assert.deepEqual(data.health, {

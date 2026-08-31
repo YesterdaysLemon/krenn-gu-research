@@ -1,0 +1,2 @@
+# Generated projections must stay byte-stable on Windows.
+*.json text eol=lf

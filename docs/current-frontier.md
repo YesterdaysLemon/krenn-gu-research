@@ -44,10 +44,12 @@ glues that leaf from every hypothetical global witness.
 
 Arrows are typed. A `boundary` arrow names a surviving obligation; it is not a
 proof of the target. A `specialization` arrow applies only under the owner's
-hypotheses.
+hypotheses. The Mermaid view grows upward from `G0` to make the maintained map
+read like a bonsai; that visual orientation changes no edge direction, status,
+scope, or proof weight.
 
 ```mermaid
-flowchart TD
+flowchart BT
   G0["Hypothetical complex witness<br/>global conjecture UNRESOLVED"]
 
   S1["Balanced complete-deck sensor<br/>PROVED reduction"]
