@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "certificate_id": "GLD104-A0-P8-nonzero-offset-composition",
+  "status": "candidate_exact_scoped_composition_pending_external_audit",
+  "global_conjecture": "UNRESOLVED",
+  "mathematical_scope": {
+    "field": "complex numbers; all load-bearing identities are exact over QQ",
+    "chart": "normalized GLD88/F88 equal-leaf H4 offset chart U88",
+    "assumptions": [
+      "a=0",
+      "Q6(p,q)=0",
+      "H2(p)*Delta(p,q)!=0"
+    ],
+    "p8_selected_minor_implication": "Q6=T0=T1=T2=T3=D0=Y0=Y1=X3=0 and H2*Delta!=0 imply B=C=0",
+    "rank_corollary": "a=0, Q6=0, H2*Delta!=0 and rank(M(G))<=6 imply B=C=0",
+    "rank_bridge_direction_only": "rank(M(G))<=6 makes every actual seven-minor vanish, hence supplies P8; no selected-minor converse is used",
+    "nonclaims": [
+      "the six-selector proposition P6 remains unproved because the R110 leaf uses D0 and Y0",
+      "the endpoint B=C=0 is not excluded",
+      "no physical-incidence or Omega-open empty-set theorem is asserted",
+      "no arbitrary-a or full-E31 closure is asserted",
+      "no Delta=0 or H2=0 boundary is closed",
+      "no other chart, component, source branch, root, or order is covered",
+      "no Fitting, source-integrability, graph-lifting, or global-gluing conclusion is asserted",
+      "the global Krenn-Gu conjecture remains UNRESOLVED"
+    ]
+  },
+  "selector_sets": {
+    "six_selector": [
+      "T0",
+      "T1",
+      "T2",
+      "T3",
+      "Y1",
+      "X3"
+    ],
+    "p8": [
+      "T0",
+      "T1",
+      "T2",
+      "T3",
+      "D0",
+      "Y0",
+      "Y1",
+      "X3"
+    ],
+    "relation": "the six GLD101 selectors are a strict subset of P8; D0 and Y0 are load-bearing only on R110"
+  },
+  "offset_cover": {
+    "sets": [
+      "D(B)",
+      "V(B) intersect D(C)"
+    ],
+    "exhaustive_for": "(B,C)!=(0,0)",
+    "B_open_parameterization": "C=B*t followed by reversible cancellation of the common B factor",
+    "C_open_handler": "generic_C_open",
+    "C_open_parameterization": "B=0, C!=0 followed by reversible cancellation of the common C factor"
+  },
+  "norm_support": [
+    {
+      "label": "p-1",
+      "degree": 1,
+      "exponent": 36,
+      "sha256": "fba95ee7da505d8883744a06a8933df8d8d7c4ac2cca316e4990626e92a17fed",
+      "disposition": "closed_by_GLD102_p1"
+    },
+    {
+      "label": "p",
+      "degree": 1,
+      "exponent": 98,
+      "sha256": "148de9c5a7a44d19e56cd9ae1a554bf67847afb0c58f6e12fa29ac7ddfca9940",
+      "disposition": "closed_by_GLD102_p0"
+    },
+    {
+      "label": "p^2+1",
+      "degree": 2,
+      "exponent": 2,
+      "sha256": "fae3e839d66db547d5697d6fa1a88aa81dfecd3e360d46204801b3b420f3d40b",
+      "disposition": "closed_by_d2_B_open_and_conjugation"
+    },
+    {
+      "label": "P",
+      "degree": 2,
+      "exponent": 43,
+      "sha256": "ace5cff9ef6fef5a8a62e0a4bd98c3482a066949f3970663a5e446dae97247ca",
+      "disposition": "excluded_because_P_divides_Delta"
+    },
+    {
+      "label": "H2",
+      "degree": 2,
+      "exponent": 99,
+      "sha256": "eeba65c990e66c56329c3f9ddd1b7623f5b84b11683828352e0cd96b0a928bf9",
+      "disposition": "excluded_by_declared_D(H2)_open"
+    },
+    {
+      "label": "R4",
+      "degree": 4,
+      "exponent": 2,
+      "sha256": "59d876136007e0f768ece9df63d326ef21471d26d69a676013fb0eedab51c9eb",
+      "disposition": "closed_by_R4_B_open_resultant_leaf"
+    },
+    {
+      "label": "R8",
+      "degree": 8,
+      "exponent": 1,
+      "sha256": "19e8048b6aa1a654dd24c889b7c6aea895c31bb5bba60e3a038dbcbc961ad06d",
+      "disposition": "closed_by_R8_B_open_five_row_kernel_leaf"
+    },
+    {
+      "label": "R110",
+      "degree": 110,
+      "exponent": 1,
+      "sha256": "1ae5a3e502f686d484b757db27d6f70b3ff535792edb65ceb40c2bd455410016",
+      "disposition": "closed_by_R110_P8_B_open_eight_minor_leaf"
+    }
+  ],
+  "child_evidence": {
+    "GLD101_norm_cover": {
+      "certificate_id": "GLD101-A0-six-selector-norm-cover",
+      "role": "necessary eight-factor p-support on the nonzero-offset locus",
+      "selected_minors": [
+        "T0",
+        "T1",
+        "T2",
+        "T3",
+        "Y1",
+        "X3"
+      ]
+    },
+    "GLD102_p01": {
+      "claim_id": "GLD102",
+      "role": "p=0 and p=1 nonzero-offset closure; at a=0 its B-open selected-minor subcase also supplies the P8 composition",
+      "scope": "p in {0,1}, arbitrary a, Q6=0, D(Delta)"
+    },
+    "generic_C_open": {
+      "certificate_id": "GLD101-a0-generic-C-open-selected-minor-rank-cover",
+      "role": "eliminates V(B) intersect D(C) for arbitrary p",
+      "selected_minors": [
+        "T0",
+        "T1",
+        "T2",
+        "T3",
+        "Y1",
+        "X3"
+      ]
+    },
+    "d2_B_open": {
+      "certificate_id": "GLD101-A0-D2-B-open-T3-Y1-X3-portable-unit-leaf",
+      "role": "eliminates p^2+1 on D(B); p=-i follows coefficientwise from p=i by conjugation",
+      "selected_minors": [
+        "T3",
+        "Y1",
+        "X3"
+      ]
+    },
+    "R4_B_open": {
+      "certificate_id": "GLD101-a0-R4-B-open-T3-Y1-X3-resultant-unit",
+      "role": "eliminates R4 on D(B) through an exact multiplication determinant",
+      "selected_minors": [
+        "T3",
+        "Y1",
+        "X3"
+      ]
+    },
+    "R8_B_open": {
+      "certificate_id": "GLD101-R8-B-open-five-row-kernel",
+      "role": "eliminates R8 on D(B) through the five-row cofactor-kernel obstruction",
+      "selected_minors": [
+        "T1",
+        "T2",
+        "T3",
+        "Y1",
+        "X3"
+      ]
+    },
+    "R110_B_open": {
+      "certificate_id": "GLD101-A0-R110-P8-B-open-portable-unit-leaf",
+      "role": "eliminates R110 on D(B) using all eight P8 actual minors after the GLD101 q-root relation",
+      "selected_minors": [
+        "T0",
+        "T1",
+        "T2",
+        "T3",
+        "D0",
+        "Y0",
+        "Y1",
+        "X3"
+      ]
+    }
+  },
+  "source_pins_lf_sha256": {
+    "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_SIX_SELECTOR_NORM_COVER_REDUCTION.md": "fe9e705f2fa9cde61c71daeb19abea241545a6c45611c15e6dd03b62ea6d3f45",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_six_selector_norm_cover.py": "c36d618651b92621627961d3004128f39cb43e522a76256c74b1141baf9d1a3c",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_six_selector_norm_cover.py": "59eafc274d40057b042acb2a11d5e20857e0637ececda12c02e55874f4117bed",
+    "claims/arbitrary-order/certificates/GLD101_A0_NORM_COVER_CERTIFICATE.json": "9213a50f96bf6bffa7a8f8fefbd8cca99317f00a1b1863b19e83d1330f79518e",
+    "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_SIX_SELECTOR_NORM_COVER_REDUCTION_REVIEW_2026-08-30.md": "7e57f63c9cffd913010d260890b896cd33e27e8979370f695b77c1802e9bb3e3",
+    "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P01_NONZERO_OFFSET_EXCLUSION_THEOREM.md": "9dcb659a5b7a45e40b1947d1fb8f76e9caef8afeb587ad07d7b08dbdb0be254f",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_p01_nonzero_offset_exclusion.py": "c78130ad8ed5a639ffc7683ef21ae2b578312d6c7475820689a996dbc13bbd8e",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_p01_nonzero_offset_exclusion.py": "3d976c4e9470a4c5acece6052acd275b96dc257b82cc197183375825ec6082ec",
+    "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P01_NONZERO_OFFSET_EXCLUSION_REVIEW_2026-08-30.md": "4753a90174490a9deddc4e9bb2bf5c5641fe2dd3b0315fb9d29677a2ffea1cd3",
+    "claims/arbitrary-order/certificates/GLD101_A0_GENERIC_COPEN_PORTABLE_CERTIFICATE.json": "1f84c1d30c1c8403be477b5def91144f687cc08a4ed5406dffb3866cf6996afb",
+    "claims/arbitrary-order/certificates/GLD101_A0_GENERIC_COPEN_UNIT_SCREEN.singular.txt": "c514d842532f99cde4488cca048c551f39e43ed5cdf2c5ce6a54dcd7aa704850",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_generic_c_open.py": "d4244b2cc288a06a919d1dfd75a7f344b8bd4aa190312f7f14a0727d27bcc5de",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_generic_c_open.py": "9ed2d3451864c969982a041831893bc5e88be12adf52496a76f595bc52e6c590",
+    "docs/audits/GLD101_A0_GENERIC_COPEN_PORTABLE_LEAF_PACKAGE_2026-08-31.md": "1c85908095e1819cc79551c01d6921d385936ea3de6b3e9356955357a5e40d49",
+    "claims/arbitrary-order/certificates/GLD101_A0_D2_BOPEN_T3_Y1_X3_PORTABLE_CERTIFICATE.json": "e4d0c5a07a930d8c4305a897e613b73185d48df885f9907f0e67a41fc593338c",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_d2_bopen_portable.py": "8e580e15ec7d63ed259bbfc65c42f6289dc296f1a0e7d5eb809d9c1aa6364b36",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_d2_bopen_portable.py": "6ea764f005eef2fdb3b1f7d771d93a38de23e39ab0b5c9a501d68971ad79e911",
+    "docs/audits/GLD101_A0_D2_BOPEN_T3_Y1_X3_PORTABLE_LEAF_PACKAGE_2026-08-31.md": "ecffccd2f0396b73842b2e97212d2013d928e9ce9fba039ddf1ebb27edb51a7f",
+    "claims/arbitrary-order/certificates/GLD101_A0_R4_B_OPEN_RESULTANT_CERTIFICATE.json": "1961eed09059a7434002c610f89eb4e0ebc195398fbd026b0a4a7ddf778cc36e",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_r4_b_open_resultant.py": "7b7b0cdb559046b5c5ebac43a545bdf20e037843400e3a2b6287c2e018dd43c4",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_r4_b_open_resultant.py": "217fd2feda4f0676175b82b63d4d4717889a090cce169e8a9cd2294fc2efab9b",
+    "docs/audits/GLD101_A0_R4_B_OPEN_RESULTANT_PORTABLE_LEAF_2026-08-31.md": "a0ee9a4badbc07a2884c5371a765b14f9271fcb7e995eac14db8756760084b01",
+    "claims/arbitrary-order/certificates/GLD101_R8_B_OPEN_FIVE_ROW_KERNEL_CERTIFICATE.json": "df96337e0de80cd1236fde1f366490afa7a06f28845475b03cc5c31eeba8af7c",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_r8_b_open_five_row_kernel.py": "a4055f0cf660b75c521069774aee7763ba661d32c8432f93381792cd9587dacf",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_r8_b_open_five_row_kernel.py": "8deab312f90774ab8793716c033ecf39adddcba1fca7f1e8fd243220b41470ad",
+    "claims/arbitrary-order/certificates/GLD101_A0_R110_P8_BOPEN_PORTABLE_CERTIFICATE.json": "bdf84e09be8e4d7f76a0d05b050957acd2ef9b95d1e55a6fafe3f9d465c1c32b",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_r110_p8_bopen_portable.py": "090a8e9914eb8830d363c7d27cc4efb6d783bc90515001323e3891ae88c28035",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_r110_p8_bopen_portable.py": "c10e40fb644efa3f91d309c4372ba7b0a22fc8d5a131f2c8f0481139819d5f04",
+    "docs/audits/GLD101_A0_R110_P8_BOPEN_PORTABLE_LEAF_PACKAGE_2026-08-31.md": "fb56cbffb407201a80cce6d32116bfd0feb408c32defdbb0784f7d54e5fb4e09"
+  },
+  "provenance": {
+    "origin_main_base": "dd2ec67e5af7a90625df59ffc7eb659bbee47b75",
+    "original_leaf_commits": {
+      "R8": "13c9e3599dc27de8bce042389c569b56fcd67289",
+      "R110": "53624a11ca7960a784aa5507f588b8315641af75",
+      "generic_C_open": "fdbc3fbc85b47393da0a4d590173eddfde55d85b",
+      "R4": "43d4806c89993844cfdc471c0db7df17ea1920b0",
+      "d2": "819a72b955ba4b89d73e5ed839330eca307d3a0c"
+    },
+    "integrated_cherry_pick_commits": {
+      "R8": "fbb90a10d2e2911360e3883ced48373e48cbe615",
+      "R110": "f486459bd5d20e3a95a23d86968c5865352879d7",
+      "generic_C_open": "acead24bb2b7ff7242b35e74401c7f9424859f2d",
+      "R4": "3cd95aa93513b187531678e79a37a4d1995d14a8",
+      "d2": "4b1888fd582fbe0a2bc56bbd19f847e66d2e5385"
+    },
+    "coordination_receipts_are_nonload_bearing": true,
+    "coordination_requests": {
+      "GLD102": "kgc_01M1B176P1EEDG7CYJCKXJPY2M",
+      "R8": "kgc_01M1BN15EVEZFJMPEH044F63M2",
+      "R110": "kgc_01M1BHTPYK0HEG4S332DB8PAPF",
+      "generic_C_open": "kgc_01M1BRXREG5YP4QG8WRYXFYKJK",
+      "R4": "kgc_01M1BSFMY7R6MJ21GH1VE337X7",
+      "d2": "kgc_01M1BRDCY2DX6SSW3EKV57AAYB"
+    },
+    "integrated_focused_suite": {
+      "tests": 35,
+      "elapsed_seconds": 438.119,
+      "bounded_run_status": "succeeded",
+      "commons_process_release": "kgc_01M1BW4AWGKB8RKNTRJ4FF7J7Q"
+    }
+  },
+  "proof_topology": [
+    "Assume a nonzero-offset P8 point on Q6=0 and D(H2*Delta).",
+    "The six GLD101 selectors are among P8, so the exact GLD101 determinant/norm bridge forces one of the eight norm-support factors.",
+    "If B=0 then C!=0 and the arbitrary-p generic C-open certificate is contradictory.",
+    "If B!=0 then C=B*t and common-B cancellation is reversible.",
+    "The p and p-1 supports are closed at a=0 by the exact GLD102 selected-minor subcases; p^2+1, R4, R8, and R110 are closed by their respective B-open leaves.",
+    "The P support lies on Delta=0 and the H2 support lies outside D(H2), so neither is silently claimed closed.",
+    "Every support case is therefore impossible at a nonzero offset, proving the P8 implication; rank(M)<=6 supplies P8 only in the forward direction."
+  ],
+  "external_consolidation": {
+    "required_before_promotion": true,
+    "status": "pending",
+    "frontier_update_allowed": false,
+    "theorem_ledger_update_allowed": false
+  }
+}
