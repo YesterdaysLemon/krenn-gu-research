@@ -39,6 +39,7 @@ test("server-renders the proof bonsai shell and scientific boundary", async () =
   assert.match(html, /Established at the node/);
   assert.match(html, /open, partial, conditional, or unresolved boundary/);
   assert.match(html, /refuted or retired/);
+  assert.match(html, /href="https:\/\/alirezaafshan\.com"[^>]*>Portfolio<\/a>/i);
   assert.doesNotMatch(html, developmentPreviewMeta);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/);
 });
