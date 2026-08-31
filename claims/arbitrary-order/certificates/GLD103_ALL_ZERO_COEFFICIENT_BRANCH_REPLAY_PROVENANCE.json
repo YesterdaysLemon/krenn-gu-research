@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "claim_id": "GLD103",
+  "artifact_role": "durable_exact_replay_provenance",
+  "replay_candidate_commit": "02ca1921c00deecbec1fd9c2b3dd378f381ce67e",
+  "recorded_date": "2026-08-31",
+  "global_conjecture": "UNRESOLVED",
+  "scope": {
+    "field": "characteristic zero, then algebraic closure",
+    "chart": "normalized GLD88/F88 equal-leaf H4/Q6 chart",
+    "parameter_a": "symbolic/arbitrary",
+    "open": "D(B*H2*Delta)",
+    "branch": "G_T0=G_T1=G_T2=G_Y1=G_X3=0",
+    "rank_bridge": "rank(M)<=6 implies selected actual seven-minors vanish; one-way only",
+    "E31": "neither imposed nor inverted",
+    "physical_incidence": "not claimed",
+    "global_resolution": false
+  },
+  "sources": {
+    "primary": {
+      "path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
+      "lf_sha256": "c87feeb983f6f14a8d6c3c9c3bf788d113d655a4efdce206b98994cf2395d916",
+      "candidate_checkout_raw_sha256": "c87feeb983f6f14a8d6c3c9c3bf788d113d655a4efdce206b98994cf2395d916",
+      "clean_checkout_raw_sha256": "856e75cdb2f1854360abd2baa2be6038d27deb37a950636280d6fd4a5cd13e29",
+      "hash_semantics": "lf_sha256 is canonical across checkout line endings; raw hashes record checkout bytes"
+    },
+    "independent_audit": {
+      "path": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
+      "lf_sha256": "7fa82c67b4322dcc75a59b17cb41d24851b417593962d15070a75130dc2fe79d",
+      "candidate_checkout_raw_sha256": "7fa82c67b4322dcc75a59b17cb41d24851b417593962d15070a75130dc2fe79d",
+      "clean_checkout_raw_sha256": "e47a76bc8d1e14c96d6868682007996ae0920dd40c83cc8c2c0746c6bd936ec2",
+      "does_not_import_primary_or_comparison_helper": true,
+      "independence_boundary": "independent exact arithmetic, factor-cover, and fibre-closure derivation; not an independent graph-model or rank-bridge derivation"
+    },
+    "comparison_helper": {
+      "path": "claims/arbitrary-order/_gld103_all_zero_exact.py",
+      "lf_sha256": "06ca97b8b38136659b8a57279b66959a28130f1ef75ff0dd5bc367ce990f2f23",
+      "candidate_checkout_raw_sha256": "06ca97b8b38136659b8a57279b66959a28130f1ef75ff0dd5bc367ce990f2f23",
+      "clean_checkout_raw_sha256": "3c7bc2dacffcc16c370ebea581b8e7724caf3e61d633e0dacf62147e6227c116",
+      "used_for_primary_acceptance": false,
+      "runtime_dependency": false
+    }
+  },
+  "tracked_certificate": {
+    "path": "claims/arbitrary-order/certificates/GLD103_ALL_ZERO_COEFFICIENT_BRANCH_CERTIFICATE.json",
+    "file_sha256": "7bbcf82508673262f5e5a493ccc7aae8949cc155ea49f0e472fb0cc4baa93236",
+    "payload_sha256": "f85feebddb4601e107f1728e52261a60c3f5ebb65d121eb0f29376e3409efc97",
+    "status": "exact_scoped_theorem_certificate",
+    "runtime_mode": "full",
+    "replay_complete": true,
+    "mathematical_status": "scoped_necessary_condition_only",
+    "embedded_comparison_is_acceptance_dependency": false
+  },
+  "repaired_candidate_run": {
+    "primary_v10": {
+      "run_id": "gld103-primary-full-20260831-allhashfix-v10",
+      "status": "succeeded",
+      "child_exit_code": 0,
+      "runner_exit_code": 0,
+      "elapsed_seconds": 586.642,
+      "run_json_sha256": "25d6fb0551e030cb2d1cfd47474674aa601e1471d0edc6fd38d767f809ab6cf0",
+      "run_log_sha256": "41a94dccc3f871fd48f657fbb105b8f7d4c219908a399af838dfc9d6927dcd67",
+      "source_lf_sha256": "c87feeb983f6f14a8d6c3c9c3bf788d113d655a4efdce206b98994cf2395d916",
+      "certificate_file_sha256": "7bbcf82508673262f5e5a493ccc7aae8949cc155ea49f0e472fb0cc4baa93236",
+      "certificate_payload_sha256": "f85feebddb4601e107f1728e52261a60c3f5ebb65d121eb0f29376e3409efc97",
+      "invocation_environment": {
+        "GLD103_FACTOR_MATRIX_INVERSE": "1",
+        "GLD103_FACTOR_NO_FINAL_INVERSE": "1"
+      }
+    }
+  },
+  "final_clean_checkout": {
+    "commit": "02ca1921c00deecbec1fd9c2b3dd378f381ce67e",
+    "state_before_runs": "detached clean checkout of the repaired candidate commit",
+    "primary": {
+      "run_id": "gld103-allhash-clean-primary-20260831-v1",
+      "command": "python claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
+      "status": "succeeded",
+      "child_exit_code": 0,
+      "runner_exit_code": 0,
+      "elapsed_seconds": 673.133,
+      "timeout_seconds": 1800,
+      "memory_mb": 12000,
+      "run_json_sha256": "8a37d0b0d5ba45481d8e446dd22d7bd55bb2131eefb1373afcc2085598ebc304",
+      "run_log_sha256": "2fcf7960192dc5302c8a6c5d725bf12c2e7ea01e8b490f6864c93dfb82dd3c42",
+      "canonical_source_sha256": "c87feeb983f6f14a8d6c3c9c3bf788d113d655a4efdce206b98994cf2395d916",
+      "raw_source_sha256": "856e75cdb2f1854360abd2baa2be6038d27deb37a950636280d6fd4a5cd13e29",
+      "generated_certificate_file_sha256": "a7ca6193738fcaf7e91ef149fd664a256a33349be954fb09a6971431c056f674",
+      "generated_certificate_payload_sha256": "27de490aaa2cbbdab5261dc96aa8eff5e1efe397e69e4d2430f05fc2b54dcd6c",
+      "result_status": "exact_scoped_theorem_certificate",
+      "runtime_mode": "full",
+      "global_conjecture": "UNRESOLVED"
+    },
+    "independent_audit": {
+      "run_id": "gld103-allhash-clean-audit-20260831-v1",
+      "command": "python claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
+      "status": "succeeded",
+      "child_exit_code": 0,
+      "runner_exit_code": 0,
+      "elapsed_seconds": 1247.576,
+      "timeout_seconds": 1800,
+      "memory_mb": 12000,
+      "run_json_sha256": "615fac6fdc6b4132c7078c1900d1ed095aeed26c864a1b0c7f1f016fc91035d1",
+      "run_log_sha256": "c620430f66bebf4429df46fb821d2a210fd60c94980be66677aa0fd36a795c44",
+      "canonical_source_sha256": "7fa82c67b4322dcc75a59b17cb41d24851b417593962d15070a75130dc2fe79d",
+      "raw_source_sha256": "e47a76bc8d1e14c96d6868682007996ae0920dd40c83cc8c2c0746c6bd936ec2",
+      "result_status": "verified_exact_independent_GLD103_audit",
+      "global_conjecture": "UNRESOLVED"
+    },
+    "comparison": {
+      "run_id": "gld103-allhash-clean-compare-20260831-v1",
+      "command": "python claims/arbitrary-order/_gld103_all_zero_exact.py",
+      "status": "succeeded",
+      "child_exit_code": 0,
+      "runner_exit_code": 0,
+      "elapsed_seconds": 247.24,
+      "timeout_seconds": 900,
+      "memory_mb": 12000,
+      "run_json_sha256": "433d13986e8ca3eec1cf3d5588cd2c8e157c4f552530897f09e4b0bbc6d3fa39",
+      "run_log_sha256": "d647ef5a1964b6f8fd8f71d74f639990ec61bcc0e6c4a025eaf88eeeaf2b8a82",
+      "helper_lf_sha256": "06ca97b8b38136659b8a57279b66959a28130f1ef75ff0dd5bc367ce990f2f23",
+      "helper_raw_sha256": "3c7bc2dacffcc16c370ebea581b8e7724caf3e61d633e0dacf62147e6227c116",
+      "D145_expression_equal": true,
+      "all_generators_unit_related": true,
+      "F4_rank": "68/80",
+      "p2_minus_2p_plus_2_rank": "66/80",
+      "log_byte_identical_to_comparison_v5": true,
+      "used_for_primary_acceptance": false
+    }
+  },
+  "clean_certificate_reconciliation": {
+    "tracked_certificate_file_sha256": "7bbcf82508673262f5e5a493ccc7aae8949cc155ea49f0e472fb0cc4baa93236",
+    "tracked_payload_sha256": "f85feebddb4601e107f1728e52261a60c3f5ebb65d121eb0f29376e3409efc97",
+    "clean_generated_certificate_file_sha256": "a7ca6193738fcaf7e91ef149fd664a256a33349be954fb09a6971431c056f674",
+    "clean_generated_payload_sha256": "27de490aaa2cbbdab5261dc96aa8eff5e1efe397e69e4d2430f05fc2b54dcd6c",
+    "changed_scalar_fields": [
+      "certificate_payload_sha256",
+      "elapsed_seconds",
+      "p0_p1_gld102.elapsed_seconds",
+      "verifier_raw_sha256"
+    ],
+    "mathematical_payload_fields_unchanged": true,
+    "reason": "Two elapsed timings are run-specific and verifier_raw_sha256 records CRLF checkout bytes; the canonical LF source hash and every mathematical result are unchanged."
+  },
+  "superseded_lineage": {
+    "helper_hash_defect": {
+      "affected_commit": "9706962569849713c61552d2ca88d18c393c1e58",
+      "classification": "metadata-only comparison-helper provenance defect",
+      "description": "The old embedded helper digest had 65 hexadecimal characters because of one duplicated f. The helper was comparison-only, not imported by the primary, not used for acceptance, and not a runtime dependency.",
+      "mathematical_acceptance_affected": false
+    },
+    "remaining_hash_width_defect": {
+      "affected_commit": "4965f50382d2ee7870ee9fc7531b9a8030053caa",
+      "classification": "metadata-only source and comparison digest width defects",
+      "description": "The GLD102 raw-source pin omitted one d while its independently checked LF pin was correct; the F4 localizer and independent row-matrix comparison digests each duplicated one hexadecimal nibble. The exact comparison log retained the correct 64-hex values. No mathematical identity, rank, factor cover, or acceptance dependency changed.",
+      "repaired_commit": "02ca1921c00deecbec1fd9c2b3dd378f381ce67e",
+      "mathematical_acceptance_affected": false
+    },
+    "primary_v8": {
+      "run_id": "gld103-primary-full-20260831-final-v8-lfhash",
+      "status": "succeeded",
+      "run_json_sha256": "27cb3956f27a31c7bfe102fe76b30c606b5e47bbdb87ef30f30f4cc09e99e44f",
+      "run_log_sha256": "1bbbd3a62f56b8c39eb495ad809292c51a569e61fd2e0fdf21fdf46f56fac816",
+      "classification": "superseded pre-repair provenance lineage"
+    },
+    "primary_v9": {
+      "run_id": "gld103-primary-full-20260831-helperhashfix-v9",
+      "status": "succeeded",
+      "run_json_sha256": "70fb3c243cdf48c573d216d20eced7b61c56ae1cb2f0cd9602ce56c45f71ba6f",
+      "run_log_sha256": "fce0a970f2533c9fb0a34f8e1817def2c130fb156192d945a3d04d2ddf69108d",
+      "certificate_file_sha256": "f35e2122dcce89cf17b7c9ff7c79793200fb19a7f5cc409262c5c624ced5fbef",
+      "certificate_payload_sha256": "f05de343d8c65b953215e3e193104b280fc3d17bdace518534d8b3bd63cad039",
+      "classification": "superseded by the all-hash-width repair and v10 replay"
+    },
+    "helperhash_clean_replay": {
+      "commit": "4965f50382d2ee7870ee9fc7531b9a8030053caa",
+      "primary_run_id": "gld103-helperhash-clean-primary-20260831-v1",
+      "primary_run_json_sha256": "922fbfd7d958fd8e31b1b10f75aebccddc4f8bf9e6bbc05e7800e68652c84245",
+      "primary_run_log_sha256": "b52869266f03bd404e65d65ce595a46fbac171afe4d6997bfd0fb9ea8a09039f",
+      "audit_run_id": "gld103-helperhash-clean-audit-20260831-v1",
+      "audit_run_json_sha256": "162a3c6728ac3830250de60042084f810a5e13cf90ac7995c82bc8f7b8259a56",
+      "audit_run_log_sha256": "19a428ea8e6f9933abd7a32b146b656f4e482463e66feeadf50b87ff6e600ef9",
+      "comparison_run_id": "gld103-helperhash-clean-compare-20260831-v1",
+      "comparison_run_json_sha256": "4b698a320daf519c5043cc0ac11b3d98baa2e3bff35efb2dc78af35cb907c39a",
+      "comparison_run_log_sha256": "d647ef5a1964b6f8fd8f71d74f639990ec61bcc0e6c4a025eaf88eeeaf2b8a82",
+      "classification": "superseded same-commit replay lineage"
+    },
+    "independent_audit_final_d": {
+      "run_id": "gld103-final-20260831-d",
+      "status": "succeeded",
+      "run_json_sha256": "be39c4a7453e5f9d358e4328244e2605a2fa5b53070a527332a42545dce80f73",
+      "run_log_sha256": "067a4555c7923132d37b4e8db99dfebad061af8d137fcce157c45248b5c82aa8",
+      "classification": "superseded by repaired same-commit clean audit"
+    },
+    "comparison_v5": {
+      "run_id": "gld103-primary-audit-physical-compare-20260831-v5-final",
+      "status": "succeeded",
+      "run_json_sha256": "abd404960ddbd1e64ffe121928426953e055d32ac2ddd253d496d7f114a5f63a",
+      "run_log_sha256": "d647ef5a1964b6f8fd8f71d74f639990ec61bcc0e6c4a025eaf88eeeaf2b8a82",
+      "D145_expression_equal": true,
+      "D145_term_count": 1565,
+      "D145_terms_sha256": "8c27545c0499b89126745aa258b1dc576653ec2587625e30f9e0c8ae3068c084",
+      "F4_rank": "68/80",
+      "p2_minus_2p_plus_2_rank": "66/80",
+      "used_for_primary_acceptance": false,
+      "evidence_role": "exact comparison-only reconciliation"
+    },
+    "embedded_comparison_v4": {
+      "run_id": "gld103-primary-audit-physical-compare-20260831-v4",
+      "run_json_sha256": "c83a785fc98d3e3d5bc85ea5fea7ac448817fb49cfb7e98a28a7cb7108efe2f0",
+      "run_log_sha256": "d647ef5a1964b6f8fd8f71d74f639990ec61bcc0e6c4a025eaf88eeeaf2b8a82",
+      "status": "verified_comparison_only_replay",
+      "used_for_primary_acceptance": false,
+      "runtime_dependency": false
+    }
+  },
+  "promotion_adjudication": {
+    "same_commit_clean_primary_full_replay_passed": true,
+    "same_commit_clean_independent_full_audit_passed": true,
+    "same_commit_clean_exact_comparison_passed": true,
+    "comparison_is_not_primary_acceptance": true,
+    "arithmetic_independence_claimed": false,
+    "one_way_scope_preserved": true,
+    "scope_promotable_as_exact_scoped_theorem": true,
+    "global_status_change_authorized": false,
+    "global_conjecture": "UNRESOLVED"
+  }
+}

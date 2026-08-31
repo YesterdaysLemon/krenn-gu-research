@@ -18,7 +18,7 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
-## GLD83--GLD102 equal-leaf checkpoint
+## GLD83--GLD103 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
 defines the intrinsic quadratic ideal `I_Pl` without dividing by the old
@@ -169,6 +169,20 @@ survivors at `p=0` have explicit nonzero direct seven-minors and hence rank at
 least seven.  Therefore rank at most six forces `B=C=0` on these fibres.  The
 endpoint itself, arbitrary `p`, physical incidence, wider charts, and the
 global conjecture remain open.
+
+[`GLD103`](FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_ALL_ZERO_COEFFICIENT_BRANCH_EXCLUSION_THEOREM.md)
+proves the exact characteristic-zero exclusion of the all-zero selected
+coefficient leaf on the normalized arbitrary-`a` H4/Q6 chart over
+`D(B*H2*Delta)`.  The one-way rank-to-minor reduction gives an exact
+eleven-factor necessary cover.  GLD102 supplies `p=0,1`; determinant-fibre
+and direct localized Macaulay identities close the remaining low-degree
+leaves, including the corrected `66/80` `p^2-2*p+2` membership; and an exact
+quotient-gcd relation with nonzero multiplication norm closes the degree-40
+`F40` leaf.  The
+[hostile review](../../docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_ALL_ZERO_COEFFICIENT_BRANCH_EXCLUSION_REVIEW_2026-08-31.md)
+passes only this branch.  Pivot branches, `B=0`, `E31`, `Delta=0`, `H2=0`,
+other charts/components/sources/roots/orders, physical incidence, and global
+resolution remain open; the global conjecture is still **UNRESOLVED**.
 
 The [`GLD98-membership-pilot`](explore_four_root_torus_star_equal_leaf_h4_q6_modular_membership_census.py)
 is an **exploratory instrument, not a theorem node**.  It independently
