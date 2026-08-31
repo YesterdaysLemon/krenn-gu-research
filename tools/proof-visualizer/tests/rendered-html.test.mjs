@@ -77,6 +77,11 @@ test("removes starter-only preview infrastructure", async () => {
   assert.match(proofBonsai, /panOnDrag=\{\[0, 1, 2\]\}/);
   assert.match(proofBonsai, /type: "bonsaiPot"/);
   assert.match(proofBonsai, /type: "livingBranch"/);
+  assert.match(proofBonsai, /function createLivingPhysics/);
+  assert.match(proofBonsai, /if \(!edge\.data\?\.primary\) return \[\]/);
+  assert.match(proofBonsai, /aria-label="Bonsai motion"/);
+  assert.match(proofBonsai, /prefers-reduced-motion: reduce/);
+  assert.match(proofBonsai, />\s*Breeze\s*<\/button>/);
   assert.doesNotMatch(proofBonsai, /className="bonsai-pot"/);
   assert.doesNotMatch(proofBonsai, /import Link from "next\/link"/);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));

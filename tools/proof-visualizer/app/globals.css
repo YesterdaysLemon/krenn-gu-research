@@ -264,6 +264,7 @@ h1 {
 
 .canvas-toolbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
@@ -275,7 +276,9 @@ h1 {
 .search-shell {
   position: relative;
   z-index: 20;
-  width: min(560px, 58%);
+  flex: 1 1 360px;
+  width: auto;
+  max-width: 560px;
 }
 
 .search-box {
@@ -396,6 +399,8 @@ h1 {
 
 .toolbar-cluster {
   display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
   gap: 12px;
@@ -430,6 +435,93 @@ h1 {
 .map-mode button:focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 2px;
+}
+
+.motion-controls {
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid rgba(216, 201, 169, 0.12);
+  border-radius: 9px;
+  background: #0d100c;
+}
+
+.motion-controls button {
+  min-height: 32px;
+  padding: 5px 8px;
+  border: 0;
+  background: transparent;
+  color: #777064;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.motion-controls button + button {
+  border-left: 1px solid rgba(216, 201, 169, 0.1);
+}
+
+.motion-controls button:hover:not(:disabled),
+.motion-controls button:focus-visible {
+  background: rgba(117, 163, 106, 0.09);
+  color: var(--moss-bright);
+  outline: none;
+}
+
+.motion-controls button:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--focus);
+}
+
+.motion-controls button:disabled {
+  color: #4f4b43;
+  cursor: not-allowed;
+}
+
+.motion-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.motion-toggle[aria-pressed="true"] {
+  background: rgba(117, 163, 106, 0.13);
+  color: var(--moss-bright);
+}
+
+.motion-signal {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  width: 13px;
+  height: 11px;
+}
+
+.motion-signal i {
+  display: block;
+  width: 2px;
+  height: 6px;
+  border-radius: 2px 2px 0 0;
+  background: currentColor;
+  transform-origin: bottom;
+}
+
+.motion-signal i:nth-child(2) {
+  height: 10px;
+}
+
+.motion-signal i:nth-child(3) {
+  height: 7px;
+}
+
+.motion-toggle[aria-pressed="true"] .motion-signal i {
+  animation: motion-signal 1.25s ease-in-out infinite alternate;
+}
+
+.motion-toggle[aria-pressed="true"] .motion-signal i:nth-child(2) {
+  animation-delay: -0.62s;
+}
+
+.motion-toggle[aria-pressed="true"] .motion-signal i:nth-child(3) {
+  animation-delay: -0.94s;
 }
 
 .view-count {
@@ -522,8 +614,60 @@ h1 {
   stroke-width: 0.8;
 }
 
+.living-branch__sprout-leaves {
+  transform-box: fill-box;
+  transform-origin: 0 0;
+}
+
+.graph-stage.is-living .living-branch__sprout-leaves {
+  animation: sprout-sway var(--sprout-duration, 5.5s) ease-in-out
+    var(--sprout-delay, 0s) infinite alternate;
+}
+
+.graph-stage.is-living .living-branch__light {
+  animation: branch-light 6.8s ease-in-out infinite;
+}
+
+.graph-stage.is-living .react-flow__node.dragging .bonsai-node {
+  border-color: rgba(173, 205, 157, 0.72);
+  box-shadow: 0 0 0 5px rgba(117, 163, 106, 0.1), 0 18px 38px rgba(0, 0, 0, 0.42);
+}
+
 .living-branch.is-selected .living-branch__sprout path {
   fill: #8db77d;
+}
+
+@keyframes motion-signal {
+  from {
+    transform: scaleY(0.46);
+    opacity: 0.52;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes sprout-sway {
+  from {
+    transform: rotate(0deg) scale(0.97);
+  }
+  to {
+    transform: rotate(var(--sprout-turn, 4deg)) scale(1.03);
+  }
+}
+
+@keyframes branch-light {
+  0%,
+  100% {
+    opacity: 0.46;
+  }
+  48% {
+    opacity: 0.92;
+  }
+  62% {
+    opacity: 0.62;
+  }
 }
 
 .living-branch-label {
@@ -1419,6 +1563,11 @@ h1 {
     width: 100%;
   }
 
+  .search-shell {
+    flex: 0 0 auto;
+    max-width: none;
+  }
+
   .toolbar-cluster {
     align-items: stretch;
     flex-direction: column;
@@ -1428,6 +1577,15 @@ h1 {
   .map-mode {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .motion-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .motion-toggle {
+    justify-content: center;
   }
 
   .map-mode button {

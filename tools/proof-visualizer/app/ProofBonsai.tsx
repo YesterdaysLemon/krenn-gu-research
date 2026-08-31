@@ -17,6 +17,7 @@ import {
   type Node,
   type NodeChange,
   type NodeProps,
+  type OnNodeDrag,
   type ReactFlowInstance,
 } from "@xyflow/react";
 import {
@@ -25,6 +26,7 @@ import {
   useMemo,
   useRef,
   useState,
+  useSyncExternalStore,
   type CSSProperties,
 } from "react";
 import type {
@@ -39,6 +41,23 @@ const NODE_HEIGHT = 88;
 const POT_WIDTH = 154;
 const POT_HEIGHT = 82;
 const POT_NODE_ID = "__proof_bonsai_pot__";
+const REDUCED_MOTION_QUERY = "(prefers-reduced-motion: reduce)";
+const PHYSICS_FRAME_MS = 1000 / 60;
+
+function subscribeToReducedMotion(onStoreChange: () => void) {
+  if (typeof window === "undefined") return () => undefined;
+  const media = window.matchMedia(REDUCED_MOTION_QUERY);
+  media.addEventListener("change", onStoreChange);
+  return () => media.removeEventListener("change", onStoreChange);
+}
+
+function getReducedMotionSnapshot() {
+  return typeof window === "undefined" || window.matchMedia(REDUCED_MOTION_QUERY).matches;
+}
+
+function getReducedMotionServerSnapshot() {
+  return true;
+}
 
 const toneCopy: Record<
   BonsaiTone,
@@ -92,6 +111,36 @@ type LivingBranchData = {
 
 type LivingBranchEdge = Edge<LivingBranchData, "livingBranch">;
 
+type LivingBody = {
+  id: string;
+  x: number;
+  y: number;
+  restX: number;
+  restY: number;
+  velocityX: number;
+  velocityY: number;
+  width: number;
+  height: number;
+  depth: number;
+  mass: number;
+  fixed: boolean;
+  dragging: boolean;
+};
+
+type LivingSpring = {
+  source: LivingBody;
+  target: LivingBody;
+  length: number;
+  stiffness: number;
+};
+
+type LivingPhysics = {
+  bodies: Map<string, LivingBody>;
+  springs: LivingSpring[];
+  quietFrames: number;
+  elapsed: number;
+};
+
 function stringSeed(value: string) {
   let hash = 2166136261;
   for (let index = 0; index < value.length; index += 1) {
@@ -103,6 +152,216 @@ function stringSeed(value: string) {
 
 function seededUnit(seed: number, shift = 0) {
   return ((seed >>> shift) & 1023) / 1023;
+}
+
+function nodeDimensions(node: BonsaiGraphNode) {
+  return node.id === POT_NODE_ID
+    ? { width: POT_WIDTH, height: POT_HEIGHT }
+    : { width: NODE_WIDTH, height: NODE_HEIGHT };
+}
+
+function createLivingPhysics(
+  restNodes: BonsaiGraphNode[],
+  currentNodes: BonsaiGraphNode[],
+  edges: LivingBranchEdge[],
+  impulseStrength: number,
+): LivingPhysics {
+  const currentById = new Map(currentNodes.map((node) => [node.id, node]));
+  const bodies = new Map<string, LivingBody>();
+
+  for (const restNode of restNodes) {
+    const currentNode = currentById.get(restNode.id) ?? restNode;
+    const { width, height } = nodeDimensions(restNode);
+    const depth = restNode.type === "bonsai" ? restNode.data.depth : -1;
+    const fixed = restNode.id === POT_NODE_ID;
+    const seed = stringSeed(`living:${restNode.id}`);
+    const canopyWeight = Math.min(1.75, 0.55 + Math.max(0, depth) * 0.09);
+    const windPhase = seededUnit(seed, 7) * Math.PI * 2;
+
+    bodies.set(restNode.id, {
+      id: restNode.id,
+      x: currentNode.position.x + width / 2,
+      y: currentNode.position.y + height / 2,
+      restX: restNode.position.x + width / 2,
+      restY: restNode.position.y + height / 2,
+      velocityX: fixed
+        ? 0
+        : impulseStrength * canopyWeight * (3.2 + Math.sin(windPhase) * 1.35),
+      velocityY: fixed
+        ? 0
+        : impulseStrength * canopyWeight * Math.cos(windPhase * 1.7) * 1.15,
+      width,
+      height,
+      depth,
+      mass: 1.02 + Math.max(0, 5 - depth) * 0.11,
+      fixed,
+      dragging: Boolean(currentNode.dragging),
+    });
+  }
+
+  const springs = edges.flatMap((edge) => {
+    if (!edge.data?.primary) return [];
+    const source = bodies.get(edge.source);
+    const target = bodies.get(edge.target);
+    if (!source || !target) return [];
+    return [
+      {
+        source,
+        target,
+        length: Math.max(1, Math.hypot(target.restX - source.restX, target.restY - source.restY)),
+        stiffness: edge.data.trunk
+          ? 0.048
+          : Math.max(0.016, 0.028 - Math.max(0, source.depth) * 0.00075),
+      },
+    ];
+  });
+
+  return { bodies, springs, quietFrames: 0, elapsed: 0 };
+}
+
+function syncDraggedBodies(physics: LivingPhysics, nodes: BonsaiGraphNode[]) {
+  const nodesById = new Map(nodes.map((node) => [node.id, node]));
+  let draggedBodies = 0;
+
+  for (const body of physics.bodies.values()) {
+    const node = nodesById.get(body.id);
+    if (!node || body.fixed) continue;
+    const nextX = node.position.x + body.width / 2;
+    const nextY = node.position.y + body.height / 2;
+
+    if (node.dragging) {
+      const movementX = nextX - body.x;
+      const movementY = nextY - body.y;
+      body.velocityX = body.velocityX * 0.28 + movementX * 0.34;
+      body.velocityY = body.velocityY * 0.28 + movementY * 0.34;
+      body.x = nextX;
+      body.y = nextY;
+      body.dragging = true;
+      draggedBodies += 1;
+    } else if (body.dragging) {
+      body.velocityX = body.velocityX * 0.56 + (nextX - body.x) * 0.32;
+      body.velocityY = body.velocityY * 0.56 + (nextY - body.y) * 0.32;
+      body.x = nextX;
+      body.y = nextY;
+      body.dragging = false;
+    }
+  }
+
+  return draggedBodies;
+}
+
+function advanceLivingPhysics(
+  physics: LivingPhysics,
+  elapsedMilliseconds: number,
+  draggedBodies: number,
+) {
+  const delta = Math.min(1.8, Math.max(0.35, elapsedMilliseconds / PHYSICS_FRAME_MS));
+  const forces = new Map<string, { x: number; y: number }>();
+
+  for (const body of physics.bodies.values()) {
+    const rootStrength = body.id === "G0" ? 0.022 : 0;
+    const anchorStrength = rootStrength || 0.0036 / (1 + Math.max(0, body.depth) * 0.035);
+    forces.set(body.id, {
+      x: (body.restX - body.x) * anchorStrength,
+      y: (body.restY - body.y) * anchorStrength * 1.08,
+    });
+  }
+
+  for (const spring of physics.springs) {
+    const offsetX = spring.target.x - spring.source.x;
+    const offsetY = spring.target.y - spring.source.y;
+    const distance = Math.max(0.001, Math.hypot(offsetX, offsetY));
+    const directionX = offsetX / distance;
+    const directionY = offsetY / distance;
+    const relativeVelocity =
+      (spring.target.velocityX - spring.source.velocityX) * directionX +
+      (spring.target.velocityY - spring.source.velocityY) * directionY;
+    const force = (distance - spring.length) * spring.stiffness + relativeVelocity * 0.034;
+    const forceX = force * directionX;
+    const forceY = force * directionY;
+    const sourceForce = forces.get(spring.source.id);
+    const targetForce = forces.get(spring.target.id);
+    if (sourceForce) {
+      sourceForce.x += forceX;
+      sourceForce.y += forceY;
+    }
+    if (targetForce) {
+      targetForce.x -= forceX;
+      targetForce.y -= forceY;
+    }
+  }
+
+  let maximumSpeed = 0;
+  let maximumDisplacement = 0;
+  const damping = Math.pow(0.895, delta);
+
+  for (const body of physics.bodies.values()) {
+    if (body.fixed) {
+      body.x = body.restX;
+      body.y = body.restY;
+      body.velocityX = 0;
+      body.velocityY = 0;
+      continue;
+    }
+    if (!body.dragging) {
+      const force = forces.get(body.id) ?? { x: 0, y: 0 };
+      body.velocityX = (body.velocityX + (force.x / body.mass) * delta) * damping;
+      body.velocityY = (body.velocityY + (force.y / body.mass) * delta) * damping;
+      const speed = Math.hypot(body.velocityX, body.velocityY);
+      if (speed > 18) {
+        body.velocityX = (body.velocityX / speed) * 18;
+        body.velocityY = (body.velocityY / speed) * 18;
+      }
+      body.x += body.velocityX * delta;
+      body.y += body.velocityY * delta;
+
+      const displacementX = body.x - body.restX;
+      const displacementY = body.y - body.restY;
+      const displacement = Math.hypot(displacementX, displacementY);
+      const maximumReach = body.id === "G0" ? 58 : Math.min(210, 88 + body.depth * 8);
+      if (displacement > maximumReach) {
+        body.x = body.restX + (displacementX / displacement) * maximumReach;
+        body.y = body.restY + (displacementY / displacement) * maximumReach;
+        body.velocityX *= 0.48;
+        body.velocityY *= 0.48;
+      }
+    }
+
+    maximumSpeed = Math.max(maximumSpeed, Math.hypot(body.velocityX, body.velocityY));
+    maximumDisplacement = Math.max(
+      maximumDisplacement,
+      Math.hypot(body.x - body.restX, body.y - body.restY),
+    );
+  }
+
+  physics.elapsed += elapsedMilliseconds;
+  if (draggedBodies === 0 && maximumSpeed < 0.035 && maximumDisplacement < 0.75) {
+    physics.quietFrames += 1;
+  } else {
+    physics.quietFrames = 0;
+  }
+
+  return (
+    physics.quietFrames > 22 ||
+    (draggedBodies === 0 && physics.elapsed > 8500)
+  );
+}
+
+function applyLivingPositions(
+  nodes: BonsaiGraphNode[],
+  physics: LivingPhysics,
+) {
+  return nodes.map((node) => {
+    const body = physics.bodies.get(node.id);
+    if (!body || node.dragging) return node;
+    return {
+      ...node,
+      position: {
+        x: body.x - body.width / 2,
+        y: body.y - body.height / 2,
+      },
+    };
+  });
 }
 
 function BonsaiNode({ data, selected }: NodeProps<BonsaiFlowNode>) {
@@ -257,6 +516,11 @@ function LivingBranch({
   const angle = (Math.atan2(tangent.y, tangent.x) * 180) / Math.PI;
   const leafDirection = data.seed % 2 === 0 ? 1 : -1;
   const leafScale = 0.72 + seededUnit(data.seed, 12) * 0.4;
+  const sproutStyle = {
+    "--sprout-duration": `${4.2 + seededUnit(data.seed, 6) * 3.4}s`,
+    "--sprout-delay": `${-seededUnit(data.seed, 17) * 5.8}s`,
+    "--sprout-turn": `${leafDirection * (2.5 + seededUnit(data.seed, 3) * 3.5)}deg`,
+  } as CSSProperties;
 
   return (
     <>
@@ -296,14 +560,16 @@ function LivingBranch({
             className="living-branch__sprout"
             transform={`translate(${sproutPoint.x} ${sproutPoint.y}) rotate(${angle}) scale(${leafScale})`}
           >
-            <path
-              d="M 0 0 C 5 -12 17 -13 24 -4 C 17 5 7 7 0 0 Z"
-              transform={`rotate(${leafDirection * 48})`}
-            />
-            <path
-              d="M 0 0 C 5 -10 14 -11 20 -3 C 14 5 6 6 0 0 Z"
-              transform={`rotate(${-leafDirection * 42}) scale(.82)`}
-            />
+            <g className="living-branch__sprout-leaves" style={sproutStyle}>
+              <path
+                d="M 0 0 C 5 -12 17 -13 24 -4 C 17 5 7 7 0 0 Z"
+                transform={`rotate(${leafDirection * 48})`}
+              />
+              <path
+                d="M 0 0 C 5 -10 14 -11 20 -3 C 14 5 6 6 0 0 Z"
+                transform={`rotate(${-leafDirection * 42}) scale(.82)`}
+              />
+            </g>
           </g>
         )}
       </g>
@@ -728,17 +994,28 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
   const [tone, setTone] = useState<"all" | BonsaiTone>("all");
   const [query, setQuery] = useState("");
   const [mapScope, setMapScope] = useState<MapScope>("neighborhood");
-  const [flowInstance, setFlowInstance] = useState<ReactFlowInstance | null>(null);
+  const [flowInstance, setFlowInstance] = useState<
+    ReactFlowInstance<BonsaiGraphNode, LivingBranchEdge> | null
+  >(null);
   const [layoutEpoch, setLayoutEpoch] = useState(0);
   const [graphState, setGraphState] = useState<{
     key: string;
     nodes: BonsaiGraphNode[];
   }>({ key: "", nodes: [] });
+  const [motionPreference, setMotionPreference] = useState<boolean | null>(null);
+  const [physicsEpoch, setPhysicsEpoch] = useState(0);
   const [copyState, setCopyState] = useState<"idle" | "copied" | "failed">("idle");
   const [hashReady, setHashReady] = useState(false);
+  const prefersReducedMotion = useSyncExternalStore(
+    subscribeToReducedMotion,
+    getReducedMotionSnapshot,
+    getReducedMotionServerSnapshot,
+  );
+  const motionEnabled = motionPreference ?? !prefersReducedMotion;
   const canvasRef = useRef<HTMLElement>(null);
   const inspectorRef = useRef<HTMLElement>(null);
   const previousView = useRef({ mapScope, tone, layoutEpoch });
+  const pendingImpulse = useRef(0.34);
 
   const nodesById = useMemo(
     () => new Map(data.nodes.map((node) => [node.id, node])),
@@ -836,6 +1113,13 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
     mapScope === "neighborhood" ? selectedId : "canopy"
   }:${layoutEpoch}`;
   const graphNodes = graphState.key === layoutKey ? graphState.nodes : flow.nodes;
+  const latestFlow = useRef(flow);
+  const latestGraphNodes = useRef(graphNodes);
+
+  useEffect(() => {
+    latestFlow.current = flow;
+    latestGraphNodes.current = graphNodes;
+  }, [flow, graphNodes]);
 
   const trackNodeGrowth = useCallback(
     (changes: NodeChange<BonsaiGraphNode>[]) => {
@@ -849,6 +1133,74 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
     },
     [flow.nodes, layoutKey],
   );
+
+  const wakeBonsai = useCallback((impulseStrength = 0) => {
+    pendingImpulse.current = Math.max(pendingImpulse.current, impulseStrength);
+    setPhysicsEpoch((value) => value + 1);
+  }, []);
+
+  const toggleBonsaiMotion = useCallback(() => {
+    const nextMotion = !motionEnabled;
+    setMotionPreference(nextMotion);
+    if (nextMotion) {
+      pendingImpulse.current = Math.max(pendingImpulse.current, 0.32);
+      setPhysicsEpoch((value) => value + 1);
+    }
+  }, [motionEnabled]);
+
+  const regrowBonsai = useCallback(() => {
+    pendingImpulse.current = Math.max(pendingImpulse.current, motionEnabled ? 0.24 : 0);
+    setLayoutEpoch((value) => value + 1);
+  }, [motionEnabled]);
+
+  const wakeOnNodeDrag = useCallback<OnNodeDrag<BonsaiGraphNode>>(() => {
+    if (motionEnabled && mapScope === "all") wakeBonsai();
+  }, [mapScope, motionEnabled, wakeBonsai]);
+
+  useEffect(() => {
+    if (mapScope !== "all" || !motionEnabled) return;
+    const restFlow = latestFlow.current;
+    if (restFlow.nodes.length === 0) return;
+
+    const physics = createLivingPhysics(
+      restFlow.nodes,
+      latestGraphNodes.current,
+      restFlow.edges,
+      pendingImpulse.current,
+    );
+    pendingImpulse.current = 0;
+    let animationFrame = 0;
+    let previousTimestamp = performance.now();
+    let previousPaint = previousTimestamp - 34;
+    let cancelled = false;
+
+    const tick = (timestamp: number) => {
+      if (cancelled) return;
+      const elapsed = Math.min(48, Math.max(1, timestamp - previousTimestamp));
+      previousTimestamp = timestamp;
+      const draggedBodies = syncDraggedBodies(physics, latestGraphNodes.current);
+      const settled = advanceLivingPhysics(physics, elapsed, draggedBodies);
+
+      if (timestamp - previousPaint >= 32 || settled) {
+        previousPaint = timestamp;
+        setGraphState((current) => ({
+          key: layoutKey,
+          nodes: applyLivingPositions(
+            current.key === layoutKey ? current.nodes : restFlow.nodes,
+            physics,
+          ),
+        }));
+      }
+
+      if (!settled) animationFrame = window.requestAnimationFrame(tick);
+    };
+
+    animationFrame = window.requestAnimationFrame(tick);
+    return () => {
+      cancelled = true;
+      window.cancelAnimationFrame(animationFrame);
+    };
+  }, [layoutKey, mapScope, motionEnabled, physicsEpoch]);
 
   const selectNode = useCallback(
     (
@@ -1057,10 +1409,40 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
                   Bonsai tree
                 </button>
               </div>
+              {mapScope === "all" && (
+                <div className="motion-controls" role="group" aria-label="Bonsai motion">
+                  <button
+                    type="button"
+                    className="motion-toggle"
+                    aria-pressed={motionEnabled}
+                    onClick={toggleBonsaiMotion}
+                    title={
+                      prefersReducedMotion && motionPreference === null
+                        ? "Motion is resting because reduced motion is preferred"
+                        : "Toggle the spring response and ambient leaf movement"
+                    }
+                  >
+                    <span className="motion-signal" aria-hidden="true">
+                      <i />
+                      <i />
+                      <i />
+                    </span>
+                    {motionEnabled ? "Living" : "Still"}
+                  </button>
+                  <button
+                    type="button"
+                    className="breeze-button"
+                    onClick={() => wakeBonsai(1)}
+                    disabled={!motionEnabled}
+                  >
+                    Breeze
+                  </button>
+                </div>
+              )}
               <div className="view-count" aria-live="polite">
                 Showing {visibleNodes.length} of {data.nodes.length}
                 {mapScope === "all" && (
-                  <button type="button" onClick={() => setLayoutEpoch((value) => value + 1)}>
+                  <button type="button" onClick={regrowBonsai}>
                     Regrow layout
                   </button>
                 )}
@@ -1073,26 +1455,29 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
             </div>
           </div>
 
-          <div className="graph-stage">
+          <div className={`graph-stage${motionEnabled && mapScope === "all" ? " is-living" : ""}`}>
             <div className="map-instructions" aria-live="polite">
               <strong>
                 {mapScope === "neighborhood"
                   ? `${selected.id} · one-edge neighborhood`
-                  : `Bonsai canopy · ${visibleNodes.length} nodes`}
+                  : `Bonsai canopy · ${visibleNodes.length} nodes · ${motionEnabled ? "springs awake" : "branches resting"}`}
               </strong>
               <span>
                 {mapScope === "neighborhood"
                   ? "Wheel to zoom · drag the canvas to pan · select a connected node to walk the proof."
-                  : "Wheel to zoom · drag the canvas with any mouse button to pan · drag a node and its living branches follow. Thicker limbs are navigation, not stronger evidence."}
+                  : motionEnabled
+                    ? "Wheel to zoom · any-button drag pans · drag a node to bend its lineage · Breeze sends a ripple through primary branches."
+                    : "Wheel to zoom · any-button drag pans · node positions stay where you place them until motion wakes or the layout regrows."}
               </span>
             </div>
-            <ReactFlow
+            <ReactFlow<BonsaiGraphNode, LivingBranchEdge>
               nodes={graphNodes}
               edges={flow.edges}
               nodeTypes={nodeTypes}
               edgeTypes={edgeTypes}
               onInit={setFlowInstance}
               onNodesChange={trackNodeGrowth}
+              onNodeDragStart={wakeOnNodeDrag}
               onNodeClick={(_, node) =>
                 selectNode(node.id, {
                   keepMapScope: mapScope === "all",
