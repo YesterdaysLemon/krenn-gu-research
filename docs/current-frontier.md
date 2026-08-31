@@ -75,6 +75,10 @@ flowchart TD
   S2AD["m=3 transverse rank six<br/>BETA-ZERO / RANK-TWO BOUNDARY"]
   S2AE["m=3 transverse rank six<br/>ALIGNED RANK-TWO EXCLUDED"]
   S2AF["m=3 common-three-space<br/>ALL JOINT RANK SIX EXCLUDED"]
+  S2AG["m=3 joint rank five<br/>DERIVATIVE / TORUS LOCALIZED; BOUNDARY PROFILES OPEN"]
+  S2AH["m=3 rank-five support-two (2,2)<br/>DOUBLE-MONOMIAL CELL EXCLUDED"]
+  S2AI["m=3 rank-five support-two (2,2)<br/>COMPLETE PROFILE EXCLUDED"]
+  S2AJ["m=3 rank-five support-two mixed rows<br/>(3,2) / (2,3) EXCLUDED"]
   S2AK["m=3 rank-five support-two<br/>ALL INVOLVED ROW PROFILES EXCLUDED"]
   S2AL["m=3 rank-five support-one<br/>HIGHER INVOLVED ROW RANKS EXCLUDED"]
   S2AM["m=3 rank-five transverse two-root<br/>ALL SUPPORT PROFILES EXCLUDED"]
@@ -180,6 +184,14 @@ flowchart TD
   U7B["Cofactor-active cross core<br/>DEEPER / TRANSPORT / PURE CANCEL proved"]
   U7C["Gauge-invariant phase holonomy / pure cofactor flow<br/>PROVED reduction"]
   U7D["Complete pure-target moment-compatible odd holonomy<br/>PROVED sharpness, NOT a witness"]
+  U7E["Complete same-multidegree fibre lattice<br/>EXACT REDUCTION / BINOMIAL PARITY DICHOTOMY"]
+  U7F["Binomial-core quotient<br/>TORSION SHEETS / FREE RANK 0 OR 1 DECIDED"]
+  U7G["Cross-multiplicity global target lattice<br/>EXACT DICHOTOMY; UNIT FORCING OPEN"]
+  U7H["Minimal pure-cofactor core<br/>MATCHING-COVERED CYCLE / BRANCHING SPLIT"]
+  U7I["Minimal pure-cofactor ports<br/>FAN / THETA / AGGREGATE REDUCTION"]
+  U7J["Aggregate active-cycle defects<br/>EXACT FACTORISATION / SPLIT-FIBRE SHARPNESS"]
+  U7K["Aggregate extra-matching attachment<br/>EXACT ROUTING; UNIT FORCING OPEN"]
+  U7L["Diagonal aggregate shore product<br/>PRIMITIVE EXCHANGE / SHARPNESS"]
   U7["Exclude pure-shore cancellation or active holonomy<br/>OPEN"]
   U8["Proper flag propagation<br/>OPEN"]
   D1["Deeper blocker branch<br/>OPEN"]
@@ -328,6 +340,9 @@ flowchart TD
   GLD97["Equal-leaf H4 Q6 p=2 fibre<br/>PROVED six-minor offset closure"]
   GLD99["Equal-leaf H4 Q6 H2 degree-drop<br/>PROVED six-minor offset exclusion"]
   GLD100["Equal-leaf H4 Q6 normalized g0 gate<br/>PROVED on D(E31*Delta) via exact eight-factor fibre cover"]
+  GLD101["Equal-leaf H4 Q6 a=0 norm cover<br/>PROVED degree-548 eight-factor support reduction"]
+  GLD102["Equal-leaf H4 Q6 p=0,1 fibres<br/>PROVED arbitrary-a nonzero-offset exclusion"]
+  GLD103["Equal-leaf H4 Q6 all-zero coefficient leaf<br/>PROVED arbitrary-a exclusion on D(B*H2*Delta)"]
   GLD91["Rank-eight two-leaf Fitting slice<br/>PROVED exact slice exclusion"]
   GLD92["Equal-leaf H4 Q6 dense boundary<br/>PROVED two-minor cover inside GLD88 family"]
   GLD19["Response-map-zero support<br/>PROVED five-row detector / opposite annihilation"]
@@ -592,6 +607,12 @@ flowchart TD
   U7C -->|boundary| U7
   U7C -. stronger sharpness .-> U7D
   U7D -->|remaining mixed equations| U7
+  U7C -->|exact lattice reduction| U7E
+  U7D -. fixed-template specialization .-> U7E
+  U7E -->|exact aggregate quotient| U7F
+  U7E -->|cross-multidegree lattice extension| U7G
+  U7F -->|global residual-quotient extension| U7G
+  U7G -->|cross-multiplicity unit forcing open| U7
   U7B -->|deeper exit| D1
   U1C -. moment-gauge compatibility .-> U7C
   U1C -. compatible sharpness .-> U7D
@@ -799,6 +820,9 @@ flowchart TD
   GLD96 -->|H2=Q6=0 degree-drop six-minor closure on D(Delta), no R31/E31/g0 localization| GLD99
   GLD96 -->|E31-open B=0 plus exact eight-factor pair-resultant cover removes normalized g0 on D(E31*H2*Delta)| GLD100
   GLD99 -->|H2=0 B=C=0 handoff combines with the GLD100 H2-open route| GLD100
+  GLD88 -->|a=0 specialization on D(H2*Delta); exact six-selector norm cover| GLD101
+  GLD101 -->|p=0,1 supports; two-chart arbitrary-a selected-minor closure with rank-seven survivor checks| GLD102
+  GLD102 -->|p=0,1 leaves used inside GLD103's exact eleven-factor all-zero coefficient cover| GLD103
   GLD85 -->|exact Q(i) two-leaf residual elimination and fibre boundary cover| GLD91
   GLD90 -->|exact two-minor Q6 boundary cover inside GLD88 family| GLD92
   GLD18 -->|response-map-zero support refinement| GLD19
@@ -882,6 +906,9 @@ flowchart TD
   GLD97 -->|outside the combined normalized E31-open route, pulled-back Fitting, other charts/components/source branches open| GL
   GLD99 -->|Omega=0 / arbitrary H4 Q6 outside F88 / Delta=0 / pulled-back Fitting / other charts/components/source branches open| GL
   GLD100 -->|E31=0 / Delta=0 / Omega=0 physical boundary / outside normalized F88-offset chart / Fitting / other charts, components, sources, roots, orders, and global gluing open| GL
+  GLD101 -->|a=0 p^2+1 / R4 / R8 / R110 supports, full E31, physical and global obligations open| GL
+  GLD102 -->|B=C=0 endpoint / arbitrary p / Delta boundary / physical, wider-chart, Fitting and global obligations open| GL
+  GLD103 -->|five pivot patches / B=0 / E31, Delta and H2 walls / other charts, components, sources, physical and global obligations open| GL
   GLD19 -->|map-zero forcing / sparse support / permanent open| GL
   GLD20 -->|F-empty / pure-absorption / legal-row exclusion open| GL
   GLD21 -->|proper-secondary / other h!=0 cells open| GL
@@ -1145,6 +1172,9 @@ flowchart TD
 | `GLD97` | On the complete normalized p=2 H4/Q6 fibre over `D(Omega Delta_2)`, retain symbolic `a` and arbitrary leaf offsets `B,C`.  After adjoining `Q2`, the four GLD96 bordered seven-minors together with two direct seven-minors give the exact ideal `(Q2,T0,T1,T2,T3,D0,D2)=(Q2/5,B,C)` in `Q[B,C,q,a]`.  Full syndrome rank at most six therefore forces `B=C=0` without inverting `R31`, `E31`, or `g0`; the GLD75/GLD86 bridge and GLD95 exclude the resulting incidence.  This is a proved p=2 parent-level fibre closure, not arbitrary `p`, a pulled-back Fitting theorem, other-chart/component/source coverage, or global resolution. | [H4 Q6 p=2 six-minor offset exclusion](../claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md), [hostile review](audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P2_SIX_MINOR_OFFSET_EXCLUSION_REVIEW_2026-08-29.md) |
 | `GLD99` | On the normalized GLD88/F88 offset chart over `H2=Q6=0` and `D(Delta)`, both `Q(i)` quadratic branches are recomputed with symbolic `a`.  Six exact selected seven-minors, all of total `BC` degree `3` (with genuine `C^2` terms in `D0,D2`), have a `158 x 144` coefficient system of rank `140`; adjoining either target retains rank `140` and gives exact memberships forcing `B=C=0`.  This is a proved characteristic-zero H2 degree-drop offset exclusion without `R31`, `E31`, or `g0` localization; GLD100 supplies the complementary `H2`-open g0 removal, so the two results combine on normalized `D(E31*Delta)`.  It is not arbitrary H4/Q6 closure, `Delta=0`, the Fitting pullback, other charts/components/source branches, or global resolution.  GLD95 remains the separate F88 endpoint. | [H2 degree-drop six-minor offset exclusion](../claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_H2_DEGREE_DROP_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md), [hostile review](audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_H2_DEGREE_DROP_SIX_MINOR_OFFSET_EXCLUSION_REVIEW_2026-08-29.md) |
 | `GLD100` | On the normalized GLD88/F88 offset chart, GLD96 first forces `B=0` on `D(E31*H2*Delta)` without inverting `R31`.  The source-recomputed primitive gamma coefficients have an exact necessary pair-resultant cover with radical `p(p-1)(p^2+1)(p^2-2p+2)P H2 A4 C4`; the `p,p-1,P` factors are `Delta`-boundary, `H2` is handed to GLD99, and exact quotient-field gamma/direct-minor checks close the remaining quadratic and quartic fibres, forcing `C=0`.  Thus the normalized `g0` gate is removed on the `H2`-open.  Combining GLD99 gives the normalized `D(E31*Delta)` route; through the `C_8=1` incidence bridge, GLD95 excludes the resulting F88 endpoint on `D(Omega)`.  This is a proved exact scoped characteristic-zero parent synthesis, not arbitrary H4 Q6 closure, the GLD83 Fitting pullback, `E31=0`, `Delta=0`, `Omega=0`, other charts/components/source branches, other roots/orders, or global resolution. | [H4 Q6 normalized g0 gate removal](../claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_G0_GATE_REMOVAL_THEOREM.md), [hostile review](audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_G0_GATE_REMOVAL_REVIEW_2026-08-29.md) |
+| `GLD101` | On the normalized GLD88/F88 equal-leaf H4 chart with `a=0`, `V(Q6)`, and `D(H2*Delta)`, every rank-at-most-six point with `(B,C)!=(0,0)` lies in the radical support `V((p-1)*p*(p^2+1)*P*H2*R4*R8*R110)` of the exact primitive degree-548 six-selector norm.  This is a proved exact scoped characteristic-zero norm-cover reduction and a one-way necessary cover only: it does not force `B=C=0`, close any factor, provide a converse, or yield physical emptiness.  The `H2=0` and `Delta=0` boundaries, arbitrary `a` and the full `E31=0` wall, other charts/components/source branches, and the wider physical/global obligations remain open. | [A0 six-selector norm-cover reduction](../claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_SIX_SELECTOR_NORM_COVER_REDUCTION.md), [hostile review](audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_SIX_SELECTOR_NORM_COVER_REDUCTION_REVIEW_2026-08-30.md) |
+| `GLD102` | On the normalized GLD88/F88 H4/Q6 offset chart in characteristic zero, for `p=0` or `p=1`, arbitrary `a`, and `D(Delta)`, complete syndrome rank at most six forces `B=C=0`.  The nonzero-offset cover is exhausted by `D(B)` and `V(B) intersect D(C)`: the two C-open ideals are unit; the p=1 B-open sixth selector is coprime to the two-point first-five residual; and the p=0 B-open residual has two conjugate selected-zero points, both excluded by an exact nonzero direct seven-minor of the complete syndrome.  This closes the p=0,1 nonzero-offset supports in the GLD101 a=0 cover, but does not exclude the F88 endpoint, prove physical incidence emptiness, extend to arbitrary p/full E31, or affect the UNRESOLVED global status. | [p=0,1 nonzero-offset exclusion](../claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P01_NONZERO_OFFSET_EXCLUSION_THEOREM.md), [hostile review](audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P01_NONZERO_OFFSET_EXCLUSION_REVIEW_2026-08-30.md) |
+| `GLD103` | On the normalized GLD88/F88 H4/Q6 chart in characteristic zero, for arbitrary symbolic `a` and on `D(B*H2*Delta)`, the rank-at-most-six all-zero selected coefficient branch `G_T0=G_T1=G_T2=G_Y1=G_X3=0` is empty.  The one-way rank-to-minor bridge yields six necessary coefficient determinants with exact eleven-factor support.  GLD102 closes `p=0,1`; `P` and `H2` lie outside the open; exact determinant/localized Macaulay leaves close `p^2+1,R4,R8,C4,F4,p^2-2p+2` (the latter at corrected rank `66/80`); and an exact quotient-gcd relation plus nonzero multiplication norm closes `F40`.  No converse, E31 condition, endpoint, physical-incidence, or global conclusion is claimed; pivot patches, `B=0`, E31, Delta/H2 walls, other charts/components/sources/roots/orders, and global resolution remain open. | [all-zero coefficient branch exclusion](../claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_ALL_ZERO_COEFFICIENT_BRANCH_EXCLUSION_THEOREM.md), [hostile review](audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_ALL_ZERO_COEFFICIENT_BRANCH_EXCLUSION_REVIEW_2026-08-31.md) |
 | `GLD91` | On the same named `R_8` chart, restrict to the exact two-leaf slice `x9=1, x10=x11=x12=0, x13=t, x14=u, x8=0`.  Correcting an earlier omitted-Gaussian-offset exploratory frame calculation, exact `Q(i)` Groebner/resultant data give a degree-10 elimination and degree-11 resultant: six linear fibres plus a squarefree degree-five `Q5` component.  The five `Q5` points and two linear fibres have `mu_R=0`; three further linear fibres have nonzero `mu_R` but zero centre-frame determinant; the sole Schur/frame-open fibre is `(t,u)=(-2/3,0)`, the GLD85 point.  Its audited full intrinsic rank-45 minor therefore gives `V(I_Pl) ∩ D(mu_R Omega)` empty on this two-leaf slice.  This is a finite-slice characteristic-zero exclusion, not unitness of the full six-leaf pullback, a cover of other charts/ranks/components, or global resolution. | [Rank-eight two-leaf slice Fitting exclusion](../claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_THEOREM.md), [hostile review](audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_EIGHT_TWO_LEAF_SLICE_FITTING_EXCLUSION_REVIEW_2026-08-27.md) |
 | `GLD19` | On the literal all-seven response-map-zero stratum, the six pair maps make every raw `B_e,K_e` block diagonal and the four-port map makes both `C(B)` and `X(B,K)` pure, for arbitrary residual scalar `h`.  Twelve ordered `2+2` rows on each complement have an exhaustive support classification.  Five fixed scalar rows per complement detect any two three-full selected pair blocks, so every projective pair package lies on the intersection of all three complementary support divisors.  The common physical shore factorization strengthens this: one three-full selected edge forces the opposite raw pair response `B_f=K_f=0`, hence three-full edges form an intersecting `K_4` family.  This is a **proved response-map-zero support classification, five-row detector, and opposite-annihilation boundary**, not proof that `R_S=0`, a selector construction, exclusion of the sparse-support branch, witness integration, or permanent extraction. | [Response-map-zero support classification](../claims/arbitrary-order/FIXED_Q_FULLY_RESPONSE_INVISIBLE_TWELVE_ROW_COMPLEMENTARY_SUPPORT_DIVISOR_THEOREM.md), [hostile review](audits/FIXED_Q_RESPONSE_MAP_ZERO_COMPLEMENTARY_SUPPORT_REVIEW_2026-08-17.md) |
 | `GLD20` | On the `GLD19` map-zero locus, the six diagonal corrected blocks come from four common two-dimensional shores.  Globally at most two corrected colours occur.  A one-colour support graph is any nonempty labelled four-vertex graph except `P_4`; a two-colour support is exactly two clique graphs.  There are `517` corrected-channel support types and `467715` compatible labelled raw support patterns.  The edges whose raw `B/K` support union is all three colours form one of the five intersecting `K_4` families; each forces its opposite raw pair response to zero and, on a full witness, forces that opposite `GLD15` pure target quotient rank to zero.  Maximal stars and triangles therefore reduce to three simultaneous complementary pure-absorption targets.  This is a **proved global physical-channel atlas and full-witness pure-absorption reduction**, not exclusion of the `254995`-pattern `F=empty` cell, the star/triangle cells, legal operator supply, witness integration, or permanent extraction. | [Global map-zero physical support](../claims/arbitrary-order/FIXED_Q_RESPONSE_MAP_ZERO_GLOBAL_PHYSICAL_CHANNEL_SUPPORT_AND_COMPLEMENTARY_PURE_ABSORPTION_THEOREM.md), [hostile review](audits/FIXED_Q_RESPONSE_MAP_ZERO_GLOBAL_PHYSICAL_CHANNEL_SUPPORT_REVIEW_2026-08-18.md) |
@@ -1429,8 +1459,8 @@ flowchart TD
 | `U7C` + complete target block | exact lattice reduction | `U7E` | Every normalized fibre lies in the within-fibre difference group algebra. Faithful Laurent extension preserves units and holonomy elimination; singleton and all-binomial blocks are decided exactly by unit/parity alternatives. |
 | `U7D` | fixed-template specialization | `U7E` | The complete `(4,4,0)` block lands in the universal singleton branch because it contains ten singleton monomials. Its three-binomial subsystem is parity-consistent and gives only `(H+1)`, while the singleton enlarges the complete block to `(1)`. |
 | `U7E` + parity-consistent active binomial cycle | exact aggregate quotient | `U7F` | Untwisting the selected core gives `C[L/L_B]`; finite Fourier sheets and Laurent gcds completely decide residual ideals in quotient free ranks zero and one. |
-| `U7E` | boundary obligation | `U7` | The universal reduction does not force a singleton, odd relation, or fully binomial active cycle from response data. Aggregate cycle fibres remain outside the selected binomial-core quotient. |
-| `U7F` | boundary obligation | `U7` | The quotient theorem does not force free rank at most one or kill every low-rank sheet; free rank at least two remains multivariate. A continuation must close one of those exact residuals, couple another multidegree, or enter the pure/deeper topology. |
+| `U7E`, `U7F` | cross-multiplicity global-target-lattice refinement | `U7G` | The same-multidegree lattice descent and residual quotient combine in one exact support-difference algebra across arbitrary target multidegrees; rank-zero/rank-one sheet criteria extend globally, but no unit ideal is forced. |
+| `U7G` | boundary obligation | `U7` | The global lattice interface does not force useful cross-lattice overlap, quotient free rank at most one, or annihilation of every quotient sheet; aggregate active-cycle fibres and deeper exits remain open. |
 | `U7B` | boundary obligation | `D1` | Any selected square or hexagon may enter the existing deeper-blocker alternative. |
 | `U1C` + `U7C` | compatible normal forms | `U7`, `D1` | Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits. |
 | `U2` | boundary obligation | `U8` | Full flags have consequences, but proper nonempty flag sets remain. |
@@ -1526,6 +1556,11 @@ flowchart TD
 | `GLD97` | arbitrary p, Fitting, and remaining chart/component/source cover | `GL` | Replace the timed-out generic-p brute-force elimination by a smaller exact resultant, interpolation, or explicit membership cover; separately compute the GLD83 pullback and retain every other global obligation. |
 | `GLD99` | arbitrary H4 Q6 outside F88, Delta=0, Fitting, and remaining chart/component/source cover | `GL` | Cover the unnormalized/outside-F88 H4/Q6 locus, the Delta boundary, the GLD83 Fitting pullback, and all remaining charts, components, source branches, profiles, roots, orders and global resolution. |
 | `GLD100` | normalized H4 Q6 rank-at-most-six locus on `D(E31*Delta)` after GLD96/GLD99 | `GL` | The exact eight-factor pair-resultant cover and strict quadratic/quartic fibre closures remove `g0` and force `B=C=0`; GLD99 supplies the `H2=0` handoff, and GLD95 excludes the F88 endpoint through the `C_8=1` bridge on `D(Omega)`.  Retain `E31=0`, `Delta=0`, the physical `Omega=0` boundary, arbitrary H4 Q6 outside the normalized F88-offset chart, the GLD83 Fitting pullback, other charts/components/source branches, other roots/orders, and global gluing. |
+| `GLD88` | a=0 specialization of the normalized equal-leaf H4/Q6 chart | `GLD101` | Retain `D(H2*Delta)`.  Six actual seven-minors and the Q6 quotient yield the exact degree-548 norm and its eight-factor necessary p-support; this is a one-way norm-cover reduction, not factor closure, offset exclusion, or physical emptiness. |
+| `GLD101` | p=0 and p=1 norm supports on the nonzero-offset locus | `GLD102` | Use the exhaustive `D(B)` / `V(B) intersect D(C)` cover with arbitrary `a`; close both C-open ideals, eliminate the p=1 B-open residual with T3, and exclude the two p=0 selected-zero survivors by direct rank-seven witnesses. |
+| `GLD102` | p=0,1 leaves entering the arbitrary-a all-zero selected coefficient branch | `GLD103` | GLD103 combines the GLD102 `p=0,1` leaves with its exact eleven-factor coefficient cover, direct determinant/localized Macaulay fibres, the corrected `66/80` membership, and the `F40` quotient-gcd/nonzero-norm relation.  Use only the one-way rank-to-minor implication. |
+| `GLD102` | remaining a=0 norm-support and full-E31 obligation | `GL` | Close the retained p^2+1, R4, R8, and R110 nonzero-offset supports with tracked exact identities; `P=0` and `H2=0` are outside GLD101's declared open.  Separately address the `B=C=0` endpoint, full `E31=0` wall, physical incidence, and wider chart/source/global coverage. |
+| `GLD103` | remaining normalized and global obligations | `GL` | Close the five pivot coefficient patches and `B=0` branch, then the E31, Delta, and H2 walls with their exact scopes; retain the F88 physical-incidence handoff, other charts/components/source branches, roots/orders, and global gluing. |
 | `GLD85` | named rank-eight chart full intrinsic Fitting specialization | `GLD91` | The pinned point proves only that the full intrinsic pullback is nonzero/proper.  The exact two-leaf residual slice now supplies the next finite fibre-classification edge. |
 | `GLD91` | completed two-leaf rank-eight Fitting-slice exclusion | `GL` | The corrected characteristic-zero slice has exactly one Schur/frame-open residual fibre, the GLD85 point, so the full intrinsic residual is empty on this two-leaf slice.  Full six-leaf rank-eight unitness/residual coverage, other charts, rank-seven/lower branches, components, source branches, and global resolution remain open. |
 | `GLS19` | four-root seven-target common-line gate | `GLD16` | Useful top shadows for all six pair targets and the four-port target give legal nonzero pure-`Z` rows with one common direction.  GLD16 has effective scalar `a=h`; its proved `h=0` and `h!=0` branches both contradict a witness only under the unchanged three-colour activity gate. |
@@ -1697,6 +1732,11 @@ flowchart TD
 | `GLD96` | normalized g0 exceptional branch on `D(E31*H2*Delta)` | `GLD100` | Use GLD96's E31-open `B=0` implication, then prove the source-recomputed eight-factor pair-resultant cover and strict quadratic/quartic fibre closures forcing `C=0`; this is a parent-level synthesis rather than a third sibling theorem. |
 | `GLD97` | arbitrary-p H4/Q6 and global Fitting/component/source-cover obligation | `GL` | Use a smaller exact generic-p certificate than the timed-out quotient Groebner probe, compute the GLD83 Fitting pullback, and retain all other components, gauges, source branches, profiles, roots, orders and global resolution. |
 | `GLD99` | normalized H2=Q6=0 handoff on D(Delta) | `GLD100` | Combine GLD99's exact H2=0 offset closure with the GLD100 H2-open g0 removal to obtain the normalized `D(E31*Delta)` route, retaining the `C_8=1` bridge and GLD95 endpoint. |
+| `GLD88` | normalized equal-leaf H4/Q6 chart specialized to `a=0` | `GLD101` | Retaining `D(H2*Delta)`, the exact degree-548 six-selector norm gives an eight-factor necessary p-support.  This is independent of the GLD100 E31-open implication and supplies no factor closure, `B=C=0`, physical emptiness, arbitrary-a, or full-E31 conclusion. |
+| `GLD101` | completed p=0,1 nonzero-offset factor handoff | `GLD102` | GLD102 closes both supports for arbitrary `a` by exact two-chart ideals, including direct full-syndrome rank-seven witnesses for the two p=0 selected-minor survivors. |
+| `GLD102` | completed p=0,1 leaf handoff into the all-zero coefficient branch | `GLD103` | GLD103 combines those two fibres with its exact eleven-factor cover, corrected direct memberships, and the degree-40 quotient-gcd/nonzero-norm leaf to exclude the all-zero branch on `D(B*H2*Delta)` for arbitrary `a`. |
+| `GLD102` | remaining a=0 factor-support and E31-wall obligation | `GL` | Prove tracked closures for p^2+1, R4, R8, and R110, then address the `B=C=0` endpoint, `E31=0`/full-`a`, and physical, wider-chart, source, and global coverage. |
+| `GLD103` | remaining pivot, endpoint, wall, and global obligations | `GL` | The five pivot patches, `B=0`, E31, Delta/H2 boundaries, other charts/components/sources/roots/orders, physical incidence, and global gluing remain open; the global conjecture is UNRESOLVED. |
 | `GLD100` | completed normalized E31-open parent synthesis | `GL` | The exact pair-resultant eight-factor cover and strict fibre closures force `B=C=0` on `D(E31*H2*Delta)`; GLD99 supplies `H2=0`, and GLD95 excludes the F88 incidence on `D(Omega)` through `C_8=1`.  Retain `E31=0`, `Delta=0`, `Omega=0` physical, arbitrary H4 Q6 outside the normalized F88-offset chart, the GLD83 Fitting pullback, other charts/components/source branches, roots, orders, and global resolution. |
 | `GLD19` | remaining response-map-zero witness-locus obligation | `GL` | Force or exclude the literal all-seven `R_S=0` stratum, force a nonzero legal pair package there, or use the full mixed witness equations to exclude its intersecting/sparse-support locus.  A pure selected line is weaker than map zero, and the support classification supplies neither selector attachment nor a permanent bridge. |
 | `GLD20` | remaining global map-zero support obligation | `GL` | Exclude the `F=empty` cell or the one-to-three complementary pure-target-absorption cells with genuinely uncontracted mixed coefficients, or force a nonzero legal complete-nuisance operator row.  The finite support atlas is exhaustive for response windows but is neither a witness enumeration nor a permanent bridge. |
@@ -3359,6 +3399,38 @@ branch. They are not an instruction to begin all of them at once.
    `Omega=0`, arbitrary H4 Q6 points outside the normalized F88-offset chart,
    the GLD83 Fitting pullback, other charts/components/source branches, other
    roots/orders, and global resolution remain open.
+
+   GLD101 is a separate `a=0` continuation on the normalized GLD88/F88
+   equal-leaf H4 chart.  On `V(a,Q6) intersect D(H2*Delta)`, the six actual
+   selected seven-minors vanish at every syndrome rank-at-most-six point.
+   If `(B,C)!=(0,0)`, their exact Q6 coefficient matrix has a nontrivial
+   kernel, so the primitive degree-548 six-selector norm `N6` vanishes.  Its
+   radical support is the exact eight-factor locus
+   `(p-1)*p*(p^2+1)*P*H2*R4*R8*R110`; hence GLD101 supplies only a necessary
+   p-support cover.  It does not close any factor or force `B=C=0`, and no
+   selector/norm converse or physical empty-set statement follows.  The
+   argument is not arbitrary in `a` and does not close the full `E31=0` wall;
+   `H2=0`, `Delta=0`, the outside-F88 chart, the Fitting pullback, and all
+   other source/chart/global obligations remain open.
+
+   GLD102 closes the `p=0` and `p=1` nonzero-offset fibres for arbitrary
+   symbolic `a` on `D(Delta)`.  Its exhaustive `D(B)` / `V(B) intersect D(C)`
+   cover uses actual seven-minors; the two `p=0` selected-zero survivors are
+   rejected by direct full-syndrome rank-seven witnesses.  This supplies the
+   two linear support leaves used by GLD103, but does not close arbitrary `p`,
+   the endpoint, physical incidence, or the global conjecture.
+
+   GLD103 then excludes the all-zero selected coefficient branch on
+   `D(B*H2*Delta)` for arbitrary symbolic `a`.  The one-way rank-to-minor
+   bridge gives six necessary coefficient determinants whose exact radical
+   support has eleven factors.  GLD102 handles `p,p-1`; `P,H2` lie outside
+   the open; direct determinant and localized Macaulay certificates close the
+   remaining low-degree fibres, including the corrected `66/80` membership;
+   and an exact quotient-gcd relation with nonzero multiplication norm closes
+   `F40`.  This is not a converse or a physical/global result.  The five pivot
+   patches, `B=0`, E31, Delta/H2 walls, other charts/components/sources,
+   roots/orders, and global gluing remain open, so the global status stays
+   **UNRESOLVED**.
 
    GLD91 makes the next finite slice exact without promoting it to a
    full-chart statement.  On the same `R_8` chart, impose

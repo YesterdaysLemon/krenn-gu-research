@@ -24,11 +24,34 @@ test("parses the canonical node key and typed-edge table", async () => {
   assert.equal(data.globalStatus, "UNRESOLVED");
   assert.ok(data.nodes.length > 40);
   assert.ok(data.edges.length > 40);
-  assert.equal(data.health.unknownEdgeNodeIds.length, 0);
+  assert.deepEqual(data.health, {
+    missingFromMermaid: [],
+    missingFromNodeKey: [],
+    unknownEdgeNodeIds: [],
+    unlinkedNodeIds: [],
+  });
   assert.equal(data.nodes.find((node) => node.id === "U5")?.tone, "pruned");
   assert.equal(data.nodes.find((node) => node.id === "U7")?.tone, "growing");
   assert.equal(data.nodes.find((node) => node.id === "S1")?.tone, "established");
   assert.ok(data.nodes.some((node) => node.id === "U7G"));
+  assert.deepEqual(
+    data.edges
+      .filter((edge) => edge.target === "U7G")
+      .map((edge) => [edge.source, edge.relation])
+      .sort(),
+    [
+      ["U7E", "cross-multiplicity global-target-lattice refinement"],
+      ["U7F", "cross-multiplicity global-target-lattice refinement"],
+    ],
+  );
+  assert.ok(
+    data.edges.some(
+      (edge) =>
+        edge.source === "U7G" &&
+        edge.target === "U7" &&
+        edge.relation === "boundary obligation",
+    ),
+  );
   for (const edge of data.edges) {
     assert.ok(data.nodes.some((node) => node.id === edge.source));
     assert.ok(data.nodes.some((node) => node.id === edge.target));
