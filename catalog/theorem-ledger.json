@@ -7159,6 +7159,36 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Four-root torus-star equal-leaf H4 Q6 p=0,1 nonzero-offset exclusion (GLD102)",
+      "document": "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P01_NONZERO_OFFSET_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "9dcb659a5b7a45e4",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero statement on the normalized scale-fixed equal-leaf H4 GLD88/F88 offset chart, restricted to p=0 or p=1, Q6=0, arbitrary a, and D(Delta)",
+        "the affine offsets are b=b88+B and c=c88+C; every nonzero offset lies in the exhaustive union D(B) or V(B) intersect D(C)",
+        "rank M(G)<=6 forces the six named actual GLD71 seven-by-seven minors T0,T1,T2,T3,Y1,X3 to vanish; only this forward implication is used and the six selectors are not claimed to characterize the full rank ideal",
+        "on D(B), C=B*t and division by B are reversible; every cleared denominator is a Delta factor and the exact ideal retains z*B*Delta-1",
+        "at p=0 the B-open selected ideal has exactly two conjugate points; at both all six selectors vanish but the direct complete-syndrome minor on rows (0,1,2,17,25,28,32) and columns (0,1,2,3,4,5,6) is (-29952 plus or minus 28416i)/289, so rank is at least seven",
+        "at p=1 the first-five B-open basis has quadratic 64z^2+1 and T3 remainder -2048z/13-384/13, which are coprime, so the six-selector locus is empty",
+        "on V(B) intersect D(C), each selected minor is C times its coefficient and both exact ideals <Q6,six coefficients,z*Delta-1> are unit",
+        "the primary uses pinned canonical GLD71/GLD88 constructors and sparse pre-specialization determinants; the independent audit imports no project verifier, copies immutable supports and chart formulae, specializes first, and uses direct exact matrix determinants; both agree on 24 equation hashes, bases, units, and rank witnesses",
+        "the B=C=0 endpoint, physical incidence, Delta=0, arbitrary p, full E31, other charts/gauges/components/source branches, Fitting/source-integrability/global gluing, and the global Krenn-Gu conjecture remain outside scope"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_p01_nonzero_offset_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_p01_nonzero_offset_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P01_NONZERO_OFFSET_EXCLUSION_REVIEW_2026-08-30.md",
+      "expected_runtime": "about 25 seconds for the canonical sparse primary and about one minute for the no-import direct-matrix audit on the reference host",
+      "external_binaries": [],
+      "note": "GLD102 proves that on the normalized GLD88 H4/Q6 chart, for p=0 or p=1 and arbitrary a on D(Delta), rank at most six forces B=C=0. It closes the p=0 and p=1 nonzero-offset supports in the GLD101 a=0 cover, but does not exclude the B=C=0 endpoint, prove physical incidence emptiness, extend to arbitrary p/full E31 or other charts, or resolve the global conjecture, which remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
