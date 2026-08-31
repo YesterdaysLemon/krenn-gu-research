@@ -75,6 +75,10 @@ flowchart TD
   S2AD["m=3 transverse rank six<br/>BETA-ZERO / RANK-TWO BOUNDARY"]
   S2AE["m=3 transverse rank six<br/>ALIGNED RANK-TWO EXCLUDED"]
   S2AF["m=3 common-three-space<br/>ALL JOINT RANK SIX EXCLUDED"]
+  S2AG["m=3 joint rank five<br/>DERIVATIVE / TORUS LOCALIZED; BOUNDARY PROFILES OPEN"]
+  S2AH["m=3 rank-five support-two (2,2)<br/>DOUBLE-MONOMIAL CELL EXCLUDED"]
+  S2AI["m=3 rank-five support-two (2,2)<br/>COMPLETE PROFILE EXCLUDED"]
+  S2AJ["m=3 rank-five support-two mixed rows<br/>(3,2) / (2,3) EXCLUDED"]
   S2AK["m=3 rank-five support-two<br/>ALL INVOLVED ROW PROFILES EXCLUDED"]
   S2AL["m=3 rank-five support-one<br/>HIGHER INVOLVED ROW RANKS EXCLUDED"]
   S2AM["m=3 rank-five transverse two-root<br/>ALL SUPPORT PROFILES EXCLUDED"]
@@ -180,6 +184,14 @@ flowchart TD
   U7B["Cofactor-active cross core<br/>DEEPER / TRANSPORT / PURE CANCEL proved"]
   U7C["Gauge-invariant phase holonomy / pure cofactor flow<br/>PROVED reduction"]
   U7D["Complete pure-target moment-compatible odd holonomy<br/>PROVED sharpness, NOT a witness"]
+  U7E["Complete same-multidegree fibre lattice<br/>EXACT REDUCTION / BINOMIAL PARITY DICHOTOMY"]
+  U7F["Binomial-core quotient<br/>TORSION SHEETS / FREE RANK 0 OR 1 DECIDED"]
+  U7G["Cross-multiplicity global target lattice<br/>EXACT DICHOTOMY; UNIT FORCING OPEN"]
+  U7H["Minimal pure-cofactor core<br/>MATCHING-COVERED CYCLE / BRANCHING SPLIT"]
+  U7I["Minimal pure-cofactor ports<br/>FAN / THETA / AGGREGATE REDUCTION"]
+  U7J["Aggregate active-cycle defects<br/>EXACT FACTORISATION / SPLIT-FIBRE SHARPNESS"]
+  U7K["Aggregate extra-matching attachment<br/>EXACT ROUTING; UNIT FORCING OPEN"]
+  U7L["Diagonal aggregate shore product<br/>PRIMITIVE EXCHANGE / SHARPNESS"]
   U7["Exclude pure-shore cancellation or active holonomy<br/>OPEN"]
   U8["Proper flag propagation<br/>OPEN"]
   D1["Deeper blocker branch<br/>OPEN"]
@@ -593,6 +605,12 @@ flowchart TD
   U7C -->|boundary| U7
   U7C -. stronger sharpness .-> U7D
   U7D -->|remaining mixed equations| U7
+  U7C -->|exact lattice reduction| U7E
+  U7D -. fixed-template specialization .-> U7E
+  U7E -->|exact aggregate quotient| U7F
+  U7E -->|cross-multidegree lattice extension| U7G
+  U7F -->|global residual-quotient extension| U7G
+  U7G -->|cross-multiplicity unit forcing open| U7
   U7B -->|deeper exit| D1
   U1C -. moment-gauge compatibility .-> U7C
   U1C -. compatible sharpness .-> U7D
@@ -1433,8 +1451,8 @@ flowchart TD
 | `U7C` + complete target block | exact lattice reduction | `U7E` | Every normalized fibre lies in the within-fibre difference group algebra. Faithful Laurent extension preserves units and holonomy elimination; singleton and all-binomial blocks are decided exactly by unit/parity alternatives. |
 | `U7D` | fixed-template specialization | `U7E` | The complete `(4,4,0)` block lands in the universal singleton branch because it contains ten singleton monomials. Its three-binomial subsystem is parity-consistent and gives only `(H+1)`, while the singleton enlarges the complete block to `(1)`. |
 | `U7E` + parity-consistent active binomial cycle | exact aggregate quotient | `U7F` | Untwisting the selected core gives `C[L/L_B]`; finite Fourier sheets and Laurent gcds completely decide residual ideals in quotient free ranks zero and one. |
-| `U7E` | boundary obligation | `U7` | The universal reduction does not force a singleton, odd relation, or fully binomial active cycle from response data. Aggregate cycle fibres remain outside the selected binomial-core quotient. |
-| `U7F` | boundary obligation | `U7` | The quotient theorem does not force free rank at most one or kill every low-rank sheet; free rank at least two remains multivariate. A continuation must close one of those exact residuals, couple another multidegree, or enter the pure/deeper topology. |
+| `U7E`, `U7F` | cross-multiplicity global-target-lattice refinement | `U7G` | The same-multidegree lattice descent and residual quotient combine in one exact support-difference algebra across arbitrary target multidegrees; rank-zero/rank-one sheet criteria extend globally, but no unit ideal is forced. |
+| `U7G` | boundary obligation | `U7` | The global lattice interface does not force useful cross-lattice overlap, quotient free rank at most one, or annihilation of every quotient sheet; aggregate active-cycle fibres and deeper exits remain open. |
 | `U7B` | boundary obligation | `D1` | Any selected square or hexagon may enter the existing deeper-blocker alternative. |
 | `U1C` + `U7C` | compatible normal forms | `U7`, `D1` | Moment gauge leaves the active-cycle Laurent monomial invariant and multiplies every cofactor-flow edge on one pure residual by a common nonzero scalar. Magnitude balance and the phase normal forms therefore hold simultaneously, but neither closes the deeper or phase exits. |
 | `U2` | boundary obligation | `U8` | Full flags have consequences, but proper nonempty flag sets remain. |

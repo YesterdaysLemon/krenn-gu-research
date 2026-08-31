@@ -39,6 +39,11 @@ test("server-renders the proof bonsai shell and scientific boundary", async () =
   assert.match(html, /Established at the node/);
   assert.match(html, /open, partial, conditional, or unresolved boundary/);
   assert.match(html, /refuted or retired/);
+  assert.match(html, /Nearby/);
+  assert.match(html, /Whole map/);
+  assert.match(html, /one-edge neighborhood/);
+  assert.match(html, /Copy node link/);
+  assert.match(html, /Source topology aligned/);
   assert.doesNotMatch(html, developmentPreviewMeta);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/);
 });

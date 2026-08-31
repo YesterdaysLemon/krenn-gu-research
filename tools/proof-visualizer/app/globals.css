@@ -264,7 +264,7 @@ h1 {
 
 .canvas-toolbar {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
   min-height: 58px;
@@ -272,11 +272,17 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
+.search-shell {
+  position: relative;
+  z-index: 20;
+  width: min(560px, 58%);
+}
+
 .search-box {
   display: flex;
   align-items: center;
   gap: 9px;
-  width: min(520px, 70%);
+  width: 100%;
   padding: 8px 11px;
   border: 1px solid rgba(216, 201, 169, 0.13);
   border-radius: 10px;
@@ -310,6 +316,122 @@ h1 {
   cursor: pointer;
 }
 
+.search-results {
+  position: absolute;
+  top: calc(100% + 7px);
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  border: 1px solid rgba(216, 201, 169, 0.2);
+  border-radius: 12px;
+  background: rgba(13, 16, 12, 0.98);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.48);
+}
+
+.search-results > button {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 22px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 12px;
+  border: 0;
+  border-bottom: 1px solid rgba(216, 201, 169, 0.08);
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.search-results > button:last-of-type {
+  border-bottom: 0;
+}
+
+.search-results > button:hover,
+.search-results > button:focus-visible {
+  background: rgba(117, 163, 106, 0.09);
+  outline: none;
+}
+
+.search-results .botanical-mark {
+  transform: scale(0.72);
+}
+
+.search-result-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.search-result-copy strong,
+.search-results small {
+  color: var(--moss-bright);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+}
+
+.search-result-copy span {
+  overflow: hidden;
+  color: #d8d0c2;
+  font-family: Iowan Old Style, Baskerville, Georgia, serif;
+  font-size: 0.82rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-results small {
+  color: #777064;
+  text-transform: uppercase;
+}
+
+.search-results p {
+  margin: 0;
+  padding: 13px;
+  color: #8b8376;
+  font-size: 0.74rem;
+  line-height: 1.4;
+}
+
+.toolbar-cluster {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  min-height: 36px;
+}
+
+.map-mode {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid rgba(216, 201, 169, 0.12);
+  border-radius: 9px;
+  background: #0d100c;
+}
+
+.map-mode button {
+  padding: 6px 9px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #7c7569;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.62rem;
+  cursor: pointer;
+}
+
+.map-mode button[aria-pressed="true"] {
+  background: rgba(117, 163, 106, 0.13);
+  color: var(--moss-bright);
+  box-shadow: inset 0 0 0 1px rgba(117, 163, 106, 0.18);
+}
+
+.map-mode button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
 .view-count {
   color: #777064;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -328,6 +450,34 @@ h1 {
   background:
     linear-gradient(90deg, transparent 49.92%, rgba(124, 98, 68, 0.08) 50%, transparent 50.08%),
     radial-gradient(ellipse at 50% 101%, rgba(116, 91, 59, 0.16), transparent 34%);
+}
+
+.map-instructions {
+  position: absolute;
+  z-index: 5;
+  top: 12px;
+  left: 14px;
+  display: flex;
+  max-width: min(360px, calc(100% - 28px));
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid rgba(216, 201, 169, 0.11);
+  border-radius: 9px;
+  background: rgba(13, 16, 12, 0.88);
+  color: #827a6e;
+  font-size: 0.67rem;
+  line-height: 1.35;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+}
+
+.map-instructions strong {
+  color: #c9bea9;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .bonsai-pot {
@@ -360,6 +510,7 @@ h1 {
 .react-flow__node {
   border: 0;
   background: transparent;
+  cursor: pointer;
 }
 
 .bonsai-node {
@@ -382,6 +533,11 @@ h1 {
   box-shadow: 0 0 0 3px rgba(215, 197, 155, 0.11), 0 13px 30px rgba(0, 0, 0, 0.34);
   outline: none;
   transform: translateY(-2px);
+}
+
+.react-flow__node:hover .bonsai-node {
+  border-color: rgba(215, 197, 155, 0.42);
+  box-shadow: 0 13px 30px rgba(0, 0, 0, 0.34);
 }
 
 .bonsai-node--established {
@@ -550,6 +706,38 @@ h1 {
 
 .inspector-heading .botanical-mark {
   margin-top: 5px;
+}
+
+.back-to-map {
+  display: none;
+}
+
+.inspector-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.inspector-actions button,
+.back-to-map {
+  padding: 8px 9px;
+  border: 1px solid rgba(212, 202, 179, 0.13);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--moss-bright);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.64rem;
+  cursor: pointer;
+}
+
+.inspector-actions button:hover,
+.inspector-actions button:focus-visible,
+.back-to-map:hover,
+.back-to-map:focus-visible {
+  border-color: rgba(169, 196, 154, 0.38);
+  background: rgba(117, 163, 106, 0.08);
+  outline: none;
 }
 
 .inspector-heading p {
@@ -1039,6 +1227,12 @@ h1 {
 
   .inspector {
     max-height: none;
+    scroll-margin-top: 12px;
+  }
+
+  .back-to-map {
+    display: inline-flex;
+    margin-bottom: 14px;
   }
 }
 
@@ -1083,8 +1277,43 @@ h1 {
     gap: 8px;
   }
 
+  .search-shell,
   .search-box {
     width: 100%;
+  }
+
+  .toolbar-cluster {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .map-mode {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .map-mode button {
+    min-height: 34px;
+  }
+
+  .view-count {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search-results small {
+    display: none;
+  }
+
+  .search-results > button {
+    grid-template-columns: 22px minmax(0, 1fr);
+  }
+
+  .map-instructions {
+    right: 12px;
+    left: 12px;
+    max-width: none;
   }
 
   .graph-stage {
@@ -1098,6 +1327,10 @@ h1 {
 
   .maintenance-note {
     font-size: 0.65rem;
+  }
+
+  .inspector-actions {
+    grid-template-columns: 1fr;
   }
 
   .field-notes-page {

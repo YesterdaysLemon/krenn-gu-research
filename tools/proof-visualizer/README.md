@@ -48,6 +48,13 @@ The exact repository status is always shown beside the projection. Green never
 means that the global conjecture is solved, and ledger evidence never silently
 strengthens a node's mathematical status.
 
+The map opens on the selected node's one-edge neighborhood so labels and
+branches remain readable. Search jumps directly to a node, selections are
+shareable through `#node=...` links, and **Whole map** provides the global
+overview without making it the first navigation surface. On narrow screens,
+selecting a node brings its inspector into view and the inspector provides a
+return path to the map.
+
 The parser also reports topology maintenance findings instead of inventing
 relationships when the Mermaid block, node key, and typed-edge table differ.
 
