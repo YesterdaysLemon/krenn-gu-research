@@ -12,6 +12,11 @@ global statement.
 maintained map of the live proof topology, open leaves, and refuted routes.
 Owning theorem documents remain authoritative for mathematical statements.
 
+For the next coordinated research run, use the dated
+[`resolution-first ecology brief`](docs/strategy/resolution-first-ecology-run-2026-08-31.md).
+It sets research priorities and launch roles; it is not a mathematical-status
+authority and must be refreshed against `origin/main` before use.
+
 For an interactive projection of that map, run
 [`tools/proof-visualizer`](tools/proof-visualizer/README.md). Its bonsai colours
 are navigation aids; the exact node text and owning claims remain authoritative.
