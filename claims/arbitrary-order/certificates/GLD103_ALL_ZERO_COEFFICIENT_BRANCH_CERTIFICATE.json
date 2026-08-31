@@ -1,0 +1,2917 @@
+{
+  "P_checks": {
+    "F_T0_equals_B_times_P0": true,
+    "coefficient_vector": [
+      "1",
+      "B",
+      "B^2"
+    ],
+    "definitions": [
+      "P0=F_T0/B",
+      "P1=G_T0",
+      "P2=G_T1",
+      "P3=G_T2",
+      "P4=G_Y1",
+      "P5=G_X3"
+    ],
+    "quadratic_B_coefficient_rows": 6,
+    "records": {
+      "P0": {
+        "B_degree": 1,
+        "C_degree": 0,
+        "canonical_sha256": "98266b22124f6ca09753b67c32b2cd94c1fe9f92f0829fcf703a776fcd02182b",
+        "term_count": 2
+      },
+      "P1": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "778433c19c9263afad8f2c526d40b3a61c9284bf49c6cf42380a03220757c2d4",
+        "term_count": 3
+      },
+      "P2": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "210e05e2a91178cb4d31ba70e35950a5594c040a2353c99f4fea8fe2cde039d5",
+        "term_count": 3
+      },
+      "P3": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "d67b3fa669362000bc30d43596b1b6890e7dc6761000fbc490beaafcdbb771f4",
+        "term_count": 3
+      },
+      "P4": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "a9aa165fb12ced5c0153bd4aa4815d6469b64342a56e540c5a7a9e6005f84e2d",
+        "term_count": 3
+      },
+      "P5": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "58bc9c826d28db4dcb2cfd7b67d35f2a3e03220856da49b06f3b34f29baba499",
+        "term_count": 3
+      }
+    }
+  },
+  "affine_C_checks": {
+    "T0": {
+      "F_at_B0": true,
+      "identity": "A_i=F_i+C*G_i",
+      "identity_checked": true
+    },
+    "T1": {
+      "F_at_B0": true,
+      "identity": "A_i=F_i+C*G_i",
+      "identity_checked": true
+    },
+    "T2": {
+      "F_at_B0": true,
+      "identity": "A_i=F_i+C*G_i",
+      "identity_checked": true
+    },
+    "X3": {
+      "F_at_B0": true,
+      "identity": "A_i=F_i+C*G_i",
+      "identity_checked": true
+    },
+    "Y1": {
+      "F_at_B0": true,
+      "identity": "A_i=F_i+C*G_i",
+      "identity_checked": true
+    }
+  },
+  "branch": "all-zero selected coefficient branch, generic symbolic a",
+  "bridge_reconstruction_mode": "exact",
+  "certificate_payload_definition": "sha256 of canonical JSON payload before certificate_payload_sha256 is added",
+  "certificate_payload_sha256": "d387a0c990a9576736cb9a34f1bfc5d792a1581275696217e8a2e1394885d140",
+  "chart_denominator_provenance": {
+    "H2_is_q6_leading_coefficient": true,
+    "P_divides_Delta": true,
+    "all_supported": true,
+    "calls_checked": 1576,
+    "delta_expression": "4*p**8*q**3 - 6*p**8*q**2 + p**8 + 10*p**7*q**4 - 36*p**7*q**3 + 24*p**7*q**2 + 10*p**7*q - 6*p**7 - 35*p**6*q**4 + 80*p**6*q**3 - 15*p**6*q**2 - 44*p**6*q + 14*p**6 - 10*p**5*q**6 + 30*p**5*q**5 + 30*p**5*q**4 - 84*p**5*q**3 - 27*p**5*q**2 + 75*p**5*q - 17*p**5 - 4*p**4*q**7 + 39*p**4*q**6 - 72*p**4*q**5 - 30*p**4*q**4 + 81*p**4*q**3 + 48*p**4*q**2 - 71*p**4*q + 12*p**4 + 8*p**3*q**7 - 53*p**3*q**6 + 69*p**3*q**5 + 45*p**3*q**4 - 69*p**3*q**3 - 33*p**3*q**2 + 37*p**3*q - 4*p**3 - 9*p**2*q**7 + 44*p**2*q**6 - 33*p**2*q**5 - 60*p**2*q**4 + 65*p**2*q**3 - 3*p**2*q**2 - 6*p**2*q + 5*p*q**7 - 15*p*q**6 - 9*p*q**5 + 50*p*q**4 - 36*p*q**3 + 6*p*q**2 - q**7 + q**6 + 6*q**5 - 10*q**4 + 4*q**3",
+    "observations": [
+      {
+        "P_divides_Delta_checked": true,
+        "canonical_sha256": "043e78c4828967d5c35b38059be376b07ac0151021ff9c2d6f4e5c23eaac95f4",
+        "count": 9,
+        "delta_factor_support_checked": true,
+        "denominator": "(p + q - 1)**2*(2*p*q**2 - 2*p*q - p - q**2 - 2*q + 2)",
+        "factorization": [
+          {
+            "exponent": 1,
+            "factor": "p*q**2 - p*q - p/2 - q**2/2 - q + 1"
+          },
+          {
+            "exponent": 2,
+            "factor": "p + q - 1"
+          }
+        ],
+        "q6_leading_H2_support_checked": true,
+        "support_basis": "Delta factors plus Q6 leading H2",
+        "supported": true
+      },
+      {
+        "P_divides_Delta_checked": true,
+        "canonical_sha256": "208e916942de23833f1fb3e16c320cf9101458bd079885eda261c160677ed36c",
+        "count": 23,
+        "delta_factor_support_checked": true,
+        "denominator": "(p + q - 1)**2",
+        "factorization": [
+          {
+            "exponent": 2,
+            "factor": "p + q - 1"
+          }
+        ],
+        "q6_leading_H2_support_checked": true,
+        "support_basis": "Delta factors plus Q6 leading H2",
+        "supported": true
+      },
+      {
+        "P_divides_Delta_checked": true,
+        "canonical_sha256": "33d6a6448ff41324491401aff6197a67e72e43b972981c2b6133eda9ddf33046",
+        "count": 14,
+        "delta_factor_support_checked": true,
+        "denominator": "(p + q - 1)**3*(2*p*q**2 - 2*p*q - p - q**2 - 2*q + 2)",
+        "factorization": [
+          {
+            "exponent": 1,
+            "factor": "p*q**2 - p*q - p/2 - q**2/2 - q + 1"
+          },
+          {
+            "exponent": 3,
+            "factor": "p + q - 1"
+          }
+        ],
+        "q6_leading_H2_support_checked": true,
+        "support_basis": "Delta factors plus Q6 leading H2",
+        "supported": true
+      },
+      {
+        "P_divides_Delta_checked": true,
+        "canonical_sha256": "6d6314875b5e8869e231ab19ab84efdd92ccfb50d7fd8875c25a1970acb1d6b5",
+        "count": 10,
+        "delta_factor_support_checked": true,
+        "denominator": "p + q - 1",
+        "factorization": [
+          {
+            "exponent": 1,
+            "factor": "p + q - 1"
+          }
+        ],
+        "q6_leading_H2_support_checked": true,
+        "support_basis": "Delta factors plus Q6 leading H2",
+        "supported": true
+      },
+      {
+        "P_divides_Delta_checked": true,
+        "canonical_sha256": "6fb0082a9b2b3091b56dd66e16bb2675672274f6ad17e044a391a8b0e0eed2b4",
+        "count": 1,
+        "delta_factor_support_checked": true,
+        "denominator": "(p + q - 1)*(2*p*q**2 - 2*p*q - p - q**2 - 2*q + 2)",
+        "factorization": [
+          {
+            "exponent": 1,
+            "factor": "p + q - 1"
+          },
+          {
+            "exponent": 1,
+            "factor": "p*q**2 - p*q - p/2 - q**2/2 - q + 1"
+          }
+        ],
+        "q6_leading_H2_support_checked": true,
+        "support_basis": "Delta factors plus Q6 leading H2",
+        "supported": true
+      },
+      {
+        "P_divides_Delta_checked": true,
+        "canonical_sha256": "c81a6112caf324a1d2e00acaf31fb700598e68761d8f86636bc78151e5537129",
+        "count": 3,
+        "delta_factor_support_checked": true,
+        "denominator": "(p + q - 1)**3",
+        "factorization": [
+          {
+            "exponent": 3,
+            "factor": "p + q - 1"
+          }
+        ],
+        "q6_leading_H2_support_checked": true,
+        "support_basis": "Delta factors plus Q6 leading H2",
+        "supported": true
+      },
+      {
+        "P_divides_Delta_checked": true,
+        "canonical_sha256": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+        "count": 1492,
+        "delta_factor_support_checked": true,
+        "denominator": "1",
+        "factorization": [],
+        "q6_leading_H2_support_checked": true,
+        "support_basis": "Delta factors plus Q6 leading H2",
+        "supported": true
+      },
+      {
+        "P_divides_Delta_checked": true,
+        "canonical_sha256": "e34effe247cf93a325463dde41638ae06c2408cfcd4b4389abe41cd4bb04057e",
+        "count": 24,
+        "delta_factor_support_checked": true,
+        "denominator": "(p**2 - p + 1)*(2*p*q**2 - 2*p*q - p - q**2 - 2*q + 2)",
+        "factorization": [
+          {
+            "exponent": 1,
+            "factor": "p*q**2 - p*q - p/2 - q**2/2 - q + 1"
+          },
+          {
+            "exponent": 1,
+            "factor": "p**2 - p + 1"
+          }
+        ],
+        "q6_leading_H2_support_checked": true,
+        "support_basis": "Delta factors plus Q6 leading H2",
+        "supported": true
+      }
+    ],
+    "unique_denominators": 8
+  },
+  "claim_id": "GLD103",
+  "clearing_gate": {
+    "P_divides_Delta_checked": true,
+    "declared_equality_checked": true,
+    "declared_expression": "35184372088832*p**136 - 2392537302040576*p**135 + 81750888548401152*p**134 - 1870559549916708864*p**133 + 32229007978672422912*p**132 - 445820950039171694592*p**131 + 5155450769377496924160*p**130 - 51243258443561441427456*p**129 + 446757864284344226414592*p**128 - 3469506801815132533948416*p**127 + 24293011393305792894468096*p**126 - 154863009646052909588152320*p**125 + 906039032098236323246112768*p**124 - 4897641605562048792930287616*p**123 + 24599821182549266507872862208*p**122 - 115370366877677982888681799680*p**121 + 507345269593119080892654944256*p**120 - 2099706565842630002771855671296*p**119 + 8204777515115324657696361152512*p**118 - 30358197020800342569695414583296*p**117 + 106634773227777264662998664871936*p**116 - 356396230925525462547730393989120*p**115 + 1135736345670837672504803834462208*p**114 - 3457365707376052806072961037500416*p**113 + 10071058547775513111670641244766208*p**112 - 28115135404468329985924516276076544*p**111 + 75327943467189902008502045846274048*p**110 - 193948957501849961898968420429332480*p**109 + 480455580861024831717500103415562240*p**108 - 1146388567685850557810582563376332800*p**107 + 2637333590562770204487352278174400512*p**106 - 5855469735290876695361427412296400896*p**105 + 12557432888276304883567242125500219392*p**104 - 26033605951005715788152881159323254784*p**103 + 52214280401177790719042697929951281152*p**102 - 101384216821091446291860312552030339072*p**101 + 190704672484275045050275499051445125120*p**100 - 347717880485442956679578488681346891776*p**99 + 614914316235949344547090678666632364032*p**98 - 1055249085875364015711665359311901556736*p**97 + 1758182600230540554023303643820040650752*p**96 - 2845400201998810789149722377582886780928*p**95 + 4474884302954463260010106236491576377344*p**94 - 6841570250018345364322150076987178221568*p**93 + 10172560682776692589607766699096957517824*p**92 - 14714975275889035387242248553369463422976*p**91 + 20715128486453947757188359773623100112896*p**90 - 28388935721831891592090572079170882371584*p**89 + 37885190377399900208818127258520637145088*p**88 - 49245397206702291924156321009280361693184*p**87 + 62365786819780213041673351454261828911104*p**86 - 76968457508370166264940343840073863659520*p**85 + 92588787817105900038163223325847031119872*p**84 - 108584988170254018494223825199424753106944*p**83 + 124172863195763877109795308223146782359552*p**82 - 138484870110468518629407775876516227842048*p**81 + 150648079570613862989464933996219637956608*p**80 - 159871607330735136391359418037312686129152*p**79 + 165531440048872755089834716988523490443264*p**78 - 167240045607104962889278003625854000300032*p**77 + 164890011960985056710611118911813348491264*p**76 - 158664926475923339256862561451845068128256*p**75 + 149016015010874765314449644004588525846528*p**74 - 136608613097058677454885223209598127702016*p**73 + 122247200587238045660343462340842089914368*p**72 - 106790591466940080128178026877817484771328*p**71 + 91069472394075048608123826204741667860480*p**70 - 75816894103437428167797775918326438088704*p**69 + 61619072783768427933203967945929331683328*p**68 - 48889780565413644393625718977732207570944*p**67 + 37867587377911114433596934421154625525760*p**66 - 28632004639258736679110948256331392473088*p**65 + 21132626085758368859120908659372463318528*p**64 - 15224773207652832722706708189022774870016*p**63 + 10705744806524706509994397213744480597248*p**62 - 7347161683487285629642963877791851989760*p**61 + 4920642021308890211370350299295998849536*p**60 - 3215740307920540262079518319454016430336*p**59 + 2050451010033062048153982238430414625792*p**58 - 1275480377999524997060795349563055818496*p**57 + 773918501394706390733001914465481763296*p**56 - 457982693930489257602042612432335303040*p**55 + 264280225198732586299798365732760635408*p**54 - 148684346461280447842418353725255814896*p**53 + 81539425820206152140826643327287478128*p**52 - 43579484883113953105426791928684724304*p**51 + 22694045047291780866680074698231600408*p**50 - 11512065634407154454905724924772881400*p**49 + 5687151012410692238817472044957657570*p**48 - 2735376954394724188962839181394432560*p**47 + 1280539613630491778295789849790270007*p**46 - 583292037413856578885629957788160201*p**45 + 258434727115115706702338395048888632*p**44 - 111335168714565247722442881193413819*p**43 + 46619233952785307036497979271830307*p**42 - 18965871311058838806521889714342042*p**41 + 7493200686335477708973653862646125*p**40 - 2873746031263291129330488550322931*p**39 + 1069306265626910868128158092501237*p**38 - 385834026951019869652590887587376*p**37 + 134927434416892187242756430121031*p**36 - 45702653606461438373370925248405*p**35 + 14984636321149655329998762212118*p**34 - 4752449132729509783262399742621*p**33 + 1456924403184368799096535618653*p**32 - 431383641210321158991777508770*p**31 + 123262563744818102278864676211*p**30 - 33958291761193737829005209931*p**29 + 9011219303348931768818319282*p**28 - 2300842593664287448930560351*p**27 + 564626650503439988431681101*p**26 - 133005994426398055652935020*p**25 + 30035483466000949570897353*p**24 - 6492591773746575531640341*p**23 + 1341311954430552281827503*p**22 - 264369760959702488767908*p**21 + 49617026171252952275985*p**20 - 8848443534704153939999*p**19 + 1495893386004123548398*p**18 - 239109208461979744779*p**17 + 36031473380965443711*p**16 - 5101817347583196546*p**15 + 676238086230623649*p**14 - 83550361712784093*p**13 + 9574776252808434*p**12 - 1011916846663029*p**11 + 97961428369915*p**10 - 8616745016792*p**9 + 681923839839*p**8 - 47965986387*p**7 + 2952542307*p**6 - 155838210*p**5 + 6858711*p**4 - 241707*p**3 + 6396*p**2 - 113*p + 1",
+    "gate_is_redundant_on_declared_open": true,
+    "gate_not_added_to_scope": true,
+    "selected_scalar_product": "16384*(p**2 - p + 1)**23*(2*p**2 - 2*p + 1)**25",
+    "selected_scalar_product_equality_checked": true
+  },
+  "comparison_provenance": {
+    "D145_current_representation": {
+      "audit_denominator": "8*p**6 - 24*p**5 + 36*p**4 - 32*p**3 + 18*p**2 - 6*p + 1",
+      "audit_q6_srepr_sha256": "2ed58764e7c50c8e1510a93b32d2515a9297c03dfe297fed8d9abe5f8e9d71a7",
+      "audit_rational_content": 23887872,
+      "audit_term_count": 1565,
+      "audit_terms_sha256": "8c27545c0499b89126745aa258b1dc576653ec2587625e30f9e0c8ae3068c084",
+      "audit_verifier_path": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
+      "audit_verifier_sha256": "7fa82c67b4322dcc75a59b17cb41d24851b417593962d15070a75130dc2fe79d",
+      "comparison_run_id": "gld103-primary-audit-physical-compare-20260831-v4",
+      "comparison_run_json_sha256": "c83a785fc98d3e3d5bc85ea5fea7ac448817fb49cfb7e98a28a7cb7108efe2f0",
+      "comparison_run_log_sha256": "d647ef5a1964b6f8fd8f71d74f639990ec61bcc0e6c4a025eaf88eeeaf2b8a82",
+      "expression_equal": true,
+      "primary_denominator": "(2*p**2 - 2*p + 1)**3",
+      "primary_q6_srepr_sha256": "2ed58764e7c50c8e1510a93b32d2515a9297c03dfe297fed8d9abe5f8e9d71a7",
+      "primary_rational_content": 23887872,
+      "primary_term_count": 1565,
+      "primary_terms_sha256": "8c27545c0499b89126745aa258b1dc576653ec2587625e30f9e0c8ae3068c084",
+      "ratio": "1",
+      "raw_term_maps_equal": true,
+      "runtime_dependency": false,
+      "scope": "current Q6-reduced D145 expression only",
+      "status": "verified_comparison_only_replay",
+      "used_for_primary_acceptance": false
+    },
+    "physical_generators": {
+      "all_generators_unit_related": true,
+      "all_localizers_exact": true,
+      "audit_verifier_path": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
+      "audit_verifier_sha256": "7fa82c67b4322dcc75a59b17cb41d24851b417593962d15070a75130dc2fe79d",
+      "comparison_helper_path": "claims/arbitrary-order/_gld103_all_zero_exact.py",
+      "comparison_helper_sha256": "06ca97b8b38136659b8a57279b66959a28130f1eff75ff0dd5bc367ce990f2f23",
+      "comparison_run_id": "gld103-primary-audit-physical-compare-20260831-v4",
+      "comparison_run_json_sha256": "c83a785fc98d3e3d5bc85ea5fea7ac448817fb49cfb7e98a28a7cb7108efe2f0",
+      "comparison_run_log_sha256": "d647ef5a1964b6f8fd8f71d74f639990ec61bcc0e6c4a025eaf88eeeaf2b8a82",
+      "factors": {
+        "F4": {
+          "audit_generator_hashes": [
+            "03ffc744233ae5f3733fdcdade4336128a2ddf2b54d3bf91c0ddcddea83c2c7f",
+            "76fcab5b758216061402ba7d3ed484782a27f0a12843306d94732a171457383b",
+            "d7b89ad2f8ca91dbf9cb30bc4c9dae05f4f2150b260f1b1d1e007c07fff014ea",
+            "7543a61b7e3d611c2a992e925e30c9b14bad3ad2ea4e3f0adafe52930f770459",
+            "c684c7bf703060024be08ff5dffd1fd779ef87c23b9ec298a24057c79af4c15a",
+            "df31cc63ff6c57885cf2e2f2c382602895b7efd659e61b7d885d9de56df8a85f"
+          ],
+          "canonical_generator_equality_after_rescaling": true,
+          "canonical_generator_hashes_after_rescaling": [
+            "91bb880a7c806a9530508b46f970201c993a5d2e55d94f5ccb0b865b220af50f",
+            "3be9729fc30124e21413163461db4631dfb566ba26fa5f07a4d4c336f51bb935",
+            "1d86ba5ab6d22429018ddd4e1da85d6da531ce40a703ec86a6eefc70fdd3d5e9",
+            "61bf787484bd67d7c7df6cf31335c531a51f264c61e12efe92bc09f659efd1d0",
+            "67e95f6e77b879db49ae016f8c0d308e08e6594375a30d9250c51207704397cc",
+            "979ac31e56859489840f194dbaea3e27eb4c5ae48af3b16f48d90c8c2587d080"
+          ],
+          "localizer": {
+            "canonical_hash": "35bf7cb2dfa9dcdd168f35e370dd9c09c7b9be0ad36b8adde146297d64bb90b68",
+            "exact_equal": true,
+            "scalar_primary_over_audit_in_K": "1"
+          },
+          "primary_generator_hashes": [
+            "3821d7f4e75f9786c7c3eb2fc28b72b582a522d4dd0b8fe28820f9a0619b8fd9",
+            "bcf4118f34bb0704703b054dbcec4ce835dcd03c42b69ceb1a197dcda0f2561d",
+            "e0da33b9554293fe6e19bdc4b1b8f0df7f01c5c5a59cb428b1fe17d5001dd30a",
+            "38749993723394bce14ce0fa23b67645842f6670fe851abebc010021d8a2128a",
+            "2b0270a242bf1c704c4af0be6308d853a4ba969d10327d7e8b7f9dcb51393b29",
+            "376300723f963ef39ed8bda2a345a8ffde133011779cfeed4084cec404b367dd"
+          ],
+          "row_space": {
+            "audit": {
+              "columns": 80,
+              "rank": 68,
+              "rank_with_target": 68,
+              "row_count": 88,
+              "row_matrix_sha256": "971db2dbc64e60e3e1a6937dd24496d5100935bc19c565299ba5447641719676e",
+              "target_in_span": true
+            },
+            "equal_by_nonzero_generator_units": true,
+            "primary": {
+              "columns": 80,
+              "input_matrix_sha256": "639cde33ae4867787bdc40aa9e7a0f457a3b842252b576c738a39032d9acd41b",
+              "rank": 68,
+              "rank_with_target": 68,
+              "row_count": 88,
+              "rref_matrix_sha256": "f3ed48348abb2ec530e6926d15051cb632ba62b8da118e2744f6992356748f78",
+              "target_in_span": true,
+              "target_residual_sha256": "a8eddbe4f43b8592ca210a10320c3f5f74549f80f5930096d559bde63fc5c2d7"
+            },
+            "same_rank_and_membership": true
+          },
+          "scalar_nonzero_on_factor": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "scalar_primary_over_audit_in_K": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "1/3",
+            "1/9",
+            "1/9"
+          ]
+        },
+        "p2_minus_2p_plus_2": {
+          "audit_generator_hashes": [
+            "1ae98ea89cc268bd7850f2d79dbc089360fe15bbb9e55d6df7ca71450983de98",
+            "8289f5af7d515d2a48aaad6ca6dd2b019a44f14212daf1d67ea07ab1cf50820a",
+            "592bbc041457ee625a26a854772dd831c1c3f4c19f5a8b9d509025fa844a8650",
+            "f334ee8187bb1e0ac6d445a3a2e5fe092f0ff4432be52372597378660ef410a1",
+            "4650c8d51594fb38c466984675a43ee1bbdd4fc5996359ea6e37f2dd48015e41",
+            "9d1ffab1ac750a49f8ec52b41a92853333eebf6806f7796214404b6d84d70a58"
+          ],
+          "canonical_generator_equality_after_rescaling": true,
+          "canonical_generator_hashes_after_rescaling": [
+            "c8936f3651ed5ce795df21419823376ac0717803c82cb3be9abfbf89da8f9702",
+            "ce9ae98f752eeaaba33ce08d48cce02d27dcaf71f75ff5dc2ec9b7b0c3c13aee",
+            "0cc9323aeb930db5cc9207e166b97649dbe55d55e2101dc548fa0ebccb479ae1",
+            "1a2186d5865cd01844b2135e3e70d9e08cbd879a5237b7b1441fed5b4c77adb5",
+            "a1dfced9f549aa414ea6f430128afe85f38a2a00e624c6342111e27104a7a88e",
+            "89c0857abb2913e6aecdd627071ac6cd31287e9833b660928ac7f93e05316fad"
+          ],
+          "localizer": {
+            "canonical_hash": "7b576e525fbfc6edbc3164a191afaecd91c91eeb5aabcedb31b17c5a837cd5a8",
+            "exact_equal": true,
+            "scalar_primary_over_audit_in_K": "1"
+          },
+          "primary_generator_hashes": [
+            "234838069b225e7c516cf5570e4f98735078197df1848ac8457139e36ff7992d",
+            "6e511cf67b235983f11d5af449a22e83148817160338d1ad4ceff7914be7a8cb",
+            "6a579bd095893c190112bc97e9bd442d99796d49b97c37bdef43e8379ae95d1a",
+            "dcadb087fc3d72b43c93fd2d17265ae2bce30bc3163bc2f6f1b2329cf89308bb",
+            "eb4e765c62ce6ead9588ede416b8787aa8d49360b3c9ebfdf9b53bd287bf4abc",
+            "3f503dd495a6900642485a218987048f5640b965de6b18e2deec4902129e0005"
+          ],
+          "row_space": {
+            "audit": {
+              "columns": 80,
+              "rank": 66,
+              "rank_with_target": 66,
+              "row_count": 88,
+              "row_matrix_sha256": "42d54b81ed26df0fa0d447d3dec9a216be22b091ee58af43c477248f5360359a",
+              "target_in_span": true
+            },
+            "equal_by_nonzero_generator_units": true,
+            "primary": {
+              "columns": 80,
+              "input_matrix_sha256": "3008cbc453780c56a70b422620807e6809b17ec845a57e4aae4f29ea1f2b473b",
+              "rank": 66,
+              "rank_with_target": 66,
+              "row_count": 88,
+              "rref_matrix_sha256": "cd44467e2baccc1a91e76193ab465fbf9324d5da550b948a8ab8d7f274ecce0a",
+              "target_in_span": true,
+              "target_residual_sha256": "a8eddbe4f43b8592ca210a10320c3f5f74549f80f5930096d559bde63fc5c2d7"
+            },
+            "same_rank_and_membership": true
+          },
+          "scalar_nonzero_on_factor": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "scalar_primary_over_audit_in_K": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "1/3",
+            "1/9",
+            "1/9"
+          ]
+        }
+      },
+      "q_basis": [
+        "1",
+        "q",
+        "q^2",
+        "q^3"
+      ],
+      "q_shift_count": 4,
+      "runtime_dependency": false,
+      "scope": "six whole-P_i generators and exact z*B*Delta-1 localizer at F4 and p^2-2p+2",
+      "status": "verified_comparison_only_replay",
+      "superseded_invalid_attempts": [
+        {
+          "evidence_accepted": false,
+          "original_run_record_status": "stale_running_record",
+          "reason": "the first helper mapped p-coefficients as q powers; its partial output is not comparison evidence",
+          "run_id": "gld103-primary-audit-physical-compare-20260831-v1",
+          "status": "aborted_invalid_helper"
+        }
+      ],
+      "used_for_primary_acceptance": false
+    },
+    "runtime_dependency": false,
+    "used_for_primary_acceptance": false
+  },
+  "elapsed_seconds": 586.092,
+  "evidence_boundary": {
+    "E31_equation_imposed": false,
+    "E31_inverted": false,
+    "arithmetic_independence": "not claimed",
+    "global_resolution": false,
+    "implementation_switch_boundary": "factor-field matrix inversion and no-final-inverse flags are arithmetic implementation controls only; they do not impose or invert any separate equation or locus",
+    "physical_incidence_emptiness": false,
+    "rank_to_minor_direction": "one-way necessary implication only"
+  },
+  "exact_arithmetic": {
+    "arithmetic": "python-flint fmpz_mpoly exact resultants/gcd/factorization",
+    "authoritative_representation": "tracked_native_resultant_gcd",
+    "factor_count": 11,
+    "factor_support_match": true,
+    "factors": [
+      {
+        "canonical_sha256": "28c8f50e4d8165d3b48e457a9655c4980724f4dde076033ca32644f075075faa",
+        "degree_p": 1,
+        "exponent": 46,
+        "name": "p_minus_1"
+      },
+      {
+        "canonical_sha256": "d6ba91123900ae1c32b9d1a98f4a35f0a81925e8cfd89e2d6dd3860f67bd72e5",
+        "degree_p": 1,
+        "exponent": 96,
+        "name": "p"
+      },
+      {
+        "canonical_sha256": "36a1ac13481dcdf5cc4ce686b1d2564adf8b0490fc6a6445bf6ac1c6688c5f0b",
+        "degree_p": 2,
+        "exponent": 124,
+        "name": "P"
+      },
+      {
+        "canonical_sha256": "7da089ba36ab1e3053027cabc6f1c8d31ded91da9b4528a46155bd3ab982ce29",
+        "degree_p": 2,
+        "exponent": 49,
+        "name": "H2"
+      },
+      {
+        "canonical_sha256": "a61c065c5b0eff634335775cd4bfe12001f8c087e2713f2b7d5b15f69c647eef",
+        "degree_p": 2,
+        "exponent": 2,
+        "name": "p2_plus_1"
+      },
+      {
+        "canonical_sha256": "be7b4e701fdcc4b1a51d1cc5189f9a37f903bdabe67a03c7784d35c79a7f47fd",
+        "degree_p": 2,
+        "exponent": 10,
+        "name": "p2_minus_2p_plus_2"
+      },
+      {
+        "canonical_sha256": "12a74b37b95d7ca1581fed18c4c9af1f6c8a14079a6a3f9dc5ca490e63251e6f",
+        "degree_p": 4,
+        "exponent": 2,
+        "name": "F4"
+      },
+      {
+        "canonical_sha256": "39f7904a1ad30b30b6778ca648f28857f6d8bc2084e066dc71bf786e84c9b4ab",
+        "degree_p": 4,
+        "exponent": 2,
+        "name": "C4"
+      },
+      {
+        "canonical_sha256": "e475480c70aebf84a26e2274da594b45a637b68f3fef07bfb1019b0ca25eb418",
+        "degree_p": 4,
+        "exponent": 2,
+        "name": "R4"
+      },
+      {
+        "canonical_sha256": "16d41bdd05de271433c4db9525988c26a3f1a3857267ea7b2ba2e8fef224ea10",
+        "degree_p": 8,
+        "exponent": 1,
+        "name": "R8"
+      },
+      {
+        "canonical_sha256": "83f6ac7c7e4011a85960b57f145918d910c94fb9ef61b2f27741f91ef69efe2f",
+        "degree_p": 40,
+        "exponent": 2,
+        "name": "F40"
+      }
+    ],
+    "final_canonical_sha256": "5e30fcd68d5dfb5e8f1485ad5a23981b6c57bac0a9cb7cbbb57e755f8c144bca",
+    "final_degree_p": 624,
+    "inputs": {
+      "D012": {
+        "denominator": "(2*p**2 - 2*p + 1)**2",
+        "integer_denominator": 1,
+        "quotient_denominator_provenance": {
+          "P_divides_Delta_checked": true,
+          "denominator": "(2*p**2 - 2*p + 1)**2",
+          "factorization": [
+            {
+              "exponent": 2,
+              "factor": "p**2 - p + 1/2"
+            }
+          ],
+          "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+          "supported": true
+        },
+        "rational_content": 442368,
+        "term_count": 1788,
+        "terms_sha256": "67d9ead9e25546d41cf56af9b6a73d88d28b10553ee99fbfa94a5fd58d759f85",
+        "variables": [
+          "p",
+          "a",
+          "q"
+        ]
+      },
+      "D013": {
+        "denominator": "(2*p**2 - 2*p + 1)**2",
+        "integer_denominator": 1,
+        "quotient_denominator_provenance": {
+          "P_divides_Delta_checked": true,
+          "denominator": "(2*p**2 - 2*p + 1)**2",
+          "factorization": [
+            {
+              "exponent": 2,
+              "factor": "p**2 - p + 1/2"
+            }
+          ],
+          "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+          "supported": true
+        },
+        "rational_content": 442368,
+        "term_count": 1805,
+        "terms_sha256": "d45946bc9469aa002bf2896902bd403e54d5714e3b7ce07d6396a4497b112b7e",
+        "variables": [
+          "p",
+          "a",
+          "q"
+        ]
+      },
+      "D014": {
+        "denominator": "(2*p**2 - 2*p + 1)**2",
+        "integer_denominator": 1,
+        "quotient_denominator_provenance": {
+          "P_divides_Delta_checked": true,
+          "denominator": "(2*p**2 - 2*p + 1)**2",
+          "factorization": [
+            {
+              "exponent": 2,
+              "factor": "p**2 - p + 1/2"
+            }
+          ],
+          "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+          "supported": true
+        },
+        "rational_content": 663552,
+        "term_count": 1444,
+        "terms_sha256": "e9d084aa810d3ad1f3d5e3a2eaa13213089e2f66dbe05dc1bb371de398ced6ef",
+        "variables": [
+          "p",
+          "a",
+          "q"
+        ]
+      },
+      "D015": {
+        "denominator": "(2*p**2 - 2*p + 1)**2",
+        "integer_denominator": 1,
+        "quotient_denominator_provenance": {
+          "P_divides_Delta_checked": true,
+          "denominator": "(2*p**2 - 2*p + 1)**2",
+          "factorization": [
+            {
+              "exponent": 2,
+              "factor": "p**2 - p + 1/2"
+            }
+          ],
+          "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+          "supported": true
+        },
+        "rational_content": 663552,
+        "term_count": 1438,
+        "terms_sha256": "eda36a8b1efca8fa50b2a35f73a6d25c0f0f9986259b26b1e4a07081686b00aa",
+        "variables": [
+          "p",
+          "a",
+          "q"
+        ]
+      },
+      "D023": {
+        "denominator": "(2*p**2 - 2*p + 1)**2",
+        "integer_denominator": 1,
+        "quotient_denominator_provenance": {
+          "P_divides_Delta_checked": true,
+          "denominator": "(2*p**2 - 2*p + 1)**2",
+          "factorization": [
+            {
+              "exponent": 2,
+              "factor": "p**2 - p + 1/2"
+            }
+          ],
+          "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+          "supported": true
+        },
+        "rational_content": 2654208,
+        "term_count": 2286,
+        "terms_sha256": "e322391533a25dc9e6aeb806cb55d35b3a1f81fd7aaa9036cbe45ce9a08d70e5",
+        "variables": [
+          "p",
+          "a",
+          "q"
+        ]
+      },
+      "D123": {
+        "denominator": "(2*p**2 - 2*p + 1)**3",
+        "integer_denominator": 1,
+        "quotient_denominator_provenance": {
+          "P_divides_Delta_checked": true,
+          "denominator": "(2*p**2 - 2*p + 1)**3",
+          "factorization": [
+            {
+              "exponent": 3,
+              "factor": "p**2 - p + 1/2"
+            }
+          ],
+          "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+          "supported": true
+        },
+        "rational_content": 884736,
+        "term_count": 2340,
+        "terms_sha256": "214e526e775e3ca020090947670d3456ec087a1d1d6fb256c0dfe36eafed68e5",
+        "variables": [
+          "p",
+          "a",
+          "q"
+        ]
+      },
+      "Q6": {
+        "denominator": "1",
+        "integer_denominator": 1,
+        "quotient_denominator_provenance": {
+          "P_divides_Delta_checked": true,
+          "denominator": "1",
+          "factorization": [],
+          "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+          "supported": true
+        },
+        "rational_content": 1,
+        "term_count": 19,
+        "terms_sha256": "6a8ca06d924cc7ee1a6f5287e69b2caf9d1e52f2922635b23b2f959114a9ae4a",
+        "variables": [
+          "p",
+          "a",
+          "q"
+        ]
+      }
+    },
+    "localization_normalization": {
+      "exact_division_checked": true,
+      "factor": "H2",
+      "raw_reconstruction_checked": true,
+      "reason": "q-quotient relation denominators; H2 is already outside the declared open",
+      "removed_exponent": 2
+    },
+    "multiplicity_degree_p": 624,
+    "normalized_exponents_by_factor": {
+      "C4": 2,
+      "F4": 2,
+      "F40": 2,
+      "H2": 47,
+      "P": 124,
+      "R4": 2,
+      "R8": 1,
+      "p": 96,
+      "p2_minus_2p_plus_2": 10,
+      "p2_plus_1": 2,
+      "p_minus_1": 46
+    },
+    "normalized_h2_exponent": 47,
+    "normalized_multiplicity_degree_p": 620,
+    "normalized_open_cover_canonical_sha256": "bf3723b1e2fafa637d370bb545d96e95022683dbf102faef4a728e0ccd299dfe",
+    "normalized_open_cover_degree_p": 620,
+    "normalized_open_cover_factors": [
+      {
+        "canonical_sha256": "28c8f50e4d8165d3b48e457a9655c4980724f4dde076033ca32644f075075faa",
+        "degree_p": 1,
+        "exponent": 46,
+        "name": "p_minus_1"
+      },
+      {
+        "canonical_sha256": "d6ba91123900ae1c32b9d1a98f4a35f0a81925e8cfd89e2d6dd3860f67bd72e5",
+        "degree_p": 1,
+        "exponent": 96,
+        "name": "p"
+      },
+      {
+        "canonical_sha256": "36a1ac13481dcdf5cc4ce686b1d2564adf8b0490fc6a6445bf6ac1c6688c5f0b",
+        "degree_p": 2,
+        "exponent": 124,
+        "name": "P"
+      },
+      {
+        "canonical_sha256": "7da089ba36ab1e3053027cabc6f1c8d31ded91da9b4528a46155bd3ab982ce29",
+        "degree_p": 2,
+        "exponent": 47,
+        "name": "H2"
+      },
+      {
+        "canonical_sha256": "a61c065c5b0eff634335775cd4bfe12001f8c087e2713f2b7d5b15f69c647eef",
+        "degree_p": 2,
+        "exponent": 2,
+        "name": "p2_plus_1"
+      },
+      {
+        "canonical_sha256": "be7b4e701fdcc4b1a51d1cc5189f9a37f903bdabe67a03c7784d35c79a7f47fd",
+        "degree_p": 2,
+        "exponent": 10,
+        "name": "p2_minus_2p_plus_2"
+      },
+      {
+        "canonical_sha256": "12a74b37b95d7ca1581fed18c4c9af1f6c8a14079a6a3f9dc5ca490e63251e6f",
+        "degree_p": 4,
+        "exponent": 2,
+        "name": "F4"
+      },
+      {
+        "canonical_sha256": "39f7904a1ad30b30b6778ca648f28857f6d8bc2084e066dc71bf786e84c9b4ab",
+        "degree_p": 4,
+        "exponent": 2,
+        "name": "C4"
+      },
+      {
+        "canonical_sha256": "e475480c70aebf84a26e2274da594b45a637b68f3fef07bfb1019b0ca25eb418",
+        "degree_p": 4,
+        "exponent": 2,
+        "name": "R4"
+      },
+      {
+        "canonical_sha256": "16d41bdd05de271433c4db9525988c26a3f1a3857267ea7b2ba2e8fef224ea10",
+        "degree_p": 8,
+        "exponent": 1,
+        "name": "R8"
+      },
+      {
+        "canonical_sha256": "83f6ac7c7e4011a85960b57f145918d910c94fb9ef61b2f27741f91ef69efe2f",
+        "degree_p": 40,
+        "exponent": 2,
+        "name": "F40"
+      }
+    ],
+    "open_invariance": {
+      "declared_open": "D(B*H2*Delta)",
+      "reason": "H2 is inverted by the normalized Q6 chart and already excluded by the declared open",
+      "removed_factor": "H2^2",
+      "squarefree_support_preserved": true
+    },
+    "pair_covers": {
+      "D013": {
+        "a_resultant_degree_p": 2568,
+        "cover_canonical_sha256": "2c849c99e72bb233c2a6eb4da4ea7606b77435f903b4305b0a0d888cfae919a2",
+        "cover_degree_p": 2838,
+        "q_gcd_degree_p": 270
+      },
+      "D014": {
+        "a_resultant_degree_p": 2044,
+        "cover_canonical_sha256": "c893b0f5e1fc0b5344cc25fd456bdbfbb105e01dfb891ccb1dd640c238086bc4",
+        "cover_degree_p": 2322,
+        "q_gcd_degree_p": 278
+      },
+      "D015": {
+        "a_resultant_degree_p": 1960,
+        "cover_canonical_sha256": "db04619674f11a118db0351371dfb88cbc0c8d06682a1e0cfa97093e708f19ad",
+        "cover_degree_p": 2242,
+        "q_gcd_degree_p": 282
+      },
+      "D023": {
+        "a_resultant_degree_p": 2988,
+        "cover_canonical_sha256": "6b421d65a5b404c8bf84bc40ac3319de232c2008ed1e22e08e8470899a3fe0c0",
+        "cover_degree_p": 3262,
+        "q_gcd_degree_p": 274
+      },
+      "D123": {
+        "a_resultant_degree_p": 3192,
+        "cover_canonical_sha256": "27e9e81cb03969505a9a55c96e4c4dc3fe683edaa341790c1fb87f0ebbf1c14f",
+        "cover_degree_p": 3464,
+        "q_gcd_degree_p": 272
+      }
+    },
+    "python_flint_version": "0.9.0",
+    "q6": {
+      "canonical_sha256": "9c480f2438544bcece9d72de317928742c76379bea3ad26eb77232860648161b",
+      "term_count": 19
+    },
+    "q_resultants": {
+      "D012": {
+        "canonical_sha256": "117d7537374811c70c6388a9ba8fbd80d79d7704ff1f7c6433b0b845ffb040d4",
+        "degree_a": 16,
+        "degree_p": 358,
+        "term_count": 5093
+      },
+      "D013": {
+        "canonical_sha256": "95bd8b511f51892b1a2057fc78dd1c6e621eaef941f1523d3c1a48e8b28fd66b",
+        "degree_a": 16,
+        "degree_p": 358,
+        "term_count": 5300
+      },
+      "D014": {
+        "canonical_sha256": "a1f682353e94844faf4b69a362b6ebea2887616328fd00143dee6a381237e2e9",
+        "degree_a": 12,
+        "degree_p": 356,
+        "term_count": 3977
+      },
+      "D015": {
+        "canonical_sha256": "83930a1065fd7459752e497b70120a1a9f8671011c86176178f06928ca5c4cef",
+        "degree_a": 12,
+        "degree_p": 360,
+        "term_count": 3949
+      },
+      "D023": {
+        "canonical_sha256": "9c41bb434b01bec0c0be72bd33ad350766fb911eeffb36289fc755bbf7ffee4a",
+        "degree_a": 20,
+        "degree_p": 376,
+        "term_count": 6957
+      },
+      "D123": {
+        "canonical_sha256": "5614033e7847339b420c0a04afefadd51eb518626e50bdeaab1858706f1242dc",
+        "degree_a": 20,
+        "degree_p": 384,
+        "term_count": 7125
+      }
+    },
+    "raw_cover_localization_equivalent": true,
+    "raw_exponents_by_factor": {
+      "C4": 2,
+      "F4": 2,
+      "F40": 2,
+      "H2": 49,
+      "P": 124,
+      "R4": 2,
+      "R8": 1,
+      "p": 96,
+      "p2_minus_2p_plus_2": 10,
+      "p2_plus_1": 2,
+      "p_minus_1": 46
+    },
+    "raw_factor_count": 11,
+    "raw_factors": [
+      {
+        "canonical_sha256": "28c8f50e4d8165d3b48e457a9655c4980724f4dde076033ca32644f075075faa",
+        "degree_p": 1,
+        "exponent": 46,
+        "name": "p_minus_1"
+      },
+      {
+        "canonical_sha256": "d6ba91123900ae1c32b9d1a98f4a35f0a81925e8cfd89e2d6dd3860f67bd72e5",
+        "degree_p": 1,
+        "exponent": 96,
+        "name": "p"
+      },
+      {
+        "canonical_sha256": "36a1ac13481dcdf5cc4ce686b1d2564adf8b0490fc6a6445bf6ac1c6688c5f0b",
+        "degree_p": 2,
+        "exponent": 124,
+        "name": "P"
+      },
+      {
+        "canonical_sha256": "7da089ba36ab1e3053027cabc6f1c8d31ded91da9b4528a46155bd3ab982ce29",
+        "degree_p": 2,
+        "exponent": 49,
+        "name": "H2"
+      },
+      {
+        "canonical_sha256": "a61c065c5b0eff634335775cd4bfe12001f8c087e2713f2b7d5b15f69c647eef",
+        "degree_p": 2,
+        "exponent": 2,
+        "name": "p2_plus_1"
+      },
+      {
+        "canonical_sha256": "be7b4e701fdcc4b1a51d1cc5189f9a37f903bdabe67a03c7784d35c79a7f47fd",
+        "degree_p": 2,
+        "exponent": 10,
+        "name": "p2_minus_2p_plus_2"
+      },
+      {
+        "canonical_sha256": "12a74b37b95d7ca1581fed18c4c9af1f6c8a14079a6a3f9dc5ca490e63251e6f",
+        "degree_p": 4,
+        "exponent": 2,
+        "name": "F4"
+      },
+      {
+        "canonical_sha256": "39f7904a1ad30b30b6778ca648f28857f6d8bc2084e066dc71bf786e84c9b4ab",
+        "degree_p": 4,
+        "exponent": 2,
+        "name": "C4"
+      },
+      {
+        "canonical_sha256": "e475480c70aebf84a26e2274da594b45a637b68f3fef07bfb1019b0ca25eb418",
+        "degree_p": 4,
+        "exponent": 2,
+        "name": "R4"
+      },
+      {
+        "canonical_sha256": "16d41bdd05de271433c4db9525988c26a3f1a3857267ea7b2ba2e8fef224ea10",
+        "degree_p": 8,
+        "exponent": 1,
+        "name": "R8"
+      },
+      {
+        "canonical_sha256": "83f6ac7c7e4011a85960b57f145918d910c94fb9ef61b2f27741f91ef69efe2f",
+        "degree_p": 40,
+        "exponent": 2,
+        "name": "F40"
+      }
+    ],
+    "raw_final_canonical_sha256": "5e30fcd68d5dfb5e8f1485ad5a23981b6c57bac0a9cb7cbbb57e755f8c144bca",
+    "raw_final_degree_p": 624,
+    "raw_h2_exponent": 49,
+    "raw_squarefree_support_degree_p": 70,
+    "ring": "Z[p,a,q] lex; q-resultant variable index 2, a-resultant variable index 1",
+    "squarefree_support_degree_p": 70,
+    "squarefree_support_match": true,
+    "status": "verified_exact_necessary_p_cover",
+    "support_factor_degrees": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4,
+      4,
+      8,
+      40
+    ],
+    "support_only_comparison": true
+  },
+  "exact_arithmetic_plan": {
+    "cover_degree_p": 624,
+    "degree_note": "The tracked native resultant/gcd cover has degree 624; exact division by H2^2, already invertible/outside D(B*H2*Delta), reports a degree-620 open-chart representative but is not used as the authoritative cover degree.",
+    "factor_count": 11,
+    "factors": {
+      "C4": "8p^4-16p^3+12p^2-4p+5",
+      "F4": "5p^4-4p^3+12p^2-16p+8",
+      "F40": "degree-40 primitive factor pinned by descending coefficient tuple in verifier",
+      "H2": "2p^2-2p+1",
+      "P": "p^2-p+1",
+      "R4": "5p^4-16p^3+30p^2-16p+5",
+      "R8": "64p^8-256p^7+580p^6-844p^5+946p^4-784p^3+388p^2-94p+13",
+      "p": "p",
+      "p2_minus_2p_plus_2": "p^2-2p+2",
+      "p2_plus_1": "p^2+1",
+      "p_minus_1": "p-1"
+    },
+    "fibre_only_determinants": {
+      "D134": [
+        1,
+        3,
+        4
+      ],
+      "D145": [
+        1,
+        4,
+        5
+      ]
+    },
+    "normalized_open_cover_degree_p": 620,
+    "raw_source_cover_degree_p": 624,
+    "selected_cover_determinants": {
+      "D012": [
+        0,
+        1,
+        2
+      ],
+      "D013": [
+        0,
+        1,
+        3
+      ],
+      "D014": [
+        0,
+        1,
+        4
+      ],
+      "D015": [
+        0,
+        1,
+        5
+      ],
+      "D023": [
+        0,
+        2,
+        3
+      ],
+      "D123": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "gates": {
+    "B": "B!=0",
+    "Delta": "Delta!=0",
+    "H2": "H2!=0 and Q6 q-leading coefficient",
+    "P": "P divides Delta and is outside the open"
+  },
+  "global_conjecture": "UNRESOLVED",
+  "implication": {
+    "converse_used": false,
+    "direction": "one-way",
+    "premises": [
+      "Q6=0",
+      "symbolic-a GLD88 chart point",
+      "rank(M(G))<=6",
+      "G_T0=G_T1=G_T2=G_Y1=G_X3=0",
+      "B!=0"
+    ],
+    "rank_to_minor_is_not_reversed": true,
+    "steps": [
+      "rank(M(G))<=6 implies every selected actual 7x7 minor A_i vanishes",
+      "all G_i=0 makes A_T0=F_T0",
+      "F_T0=B*P0 and B!=0 imply P0=0",
+      "P0=P1=...=P5=0 gives K*(1,B,B^2)^T=0",
+      "the first coordinate is 1, so the kernel vector is nonzero",
+      "each selected 3x3 coefficient determinant vanishes"
+    ]
+  },
+  "local_fibre_closures": {
+    "closures": {
+      "C4": {
+        "a_degree_of_c": 0,
+        "a_gcd_degree": 0,
+        "c_sha256": "1feb63717cb1c4465c6af007bd9aeb0e4eda861b0fce62706bf1389de7809660",
+        "euclidean_steps": 5,
+        "factor": "8*p**4 - 16*p**3 + 12*p**2 - 4*p + 5",
+        "four_by_four_multiplication_norm": true,
+        "generators": [
+          "D134",
+          "D012"
+        ],
+        "ideal": "<Q6,D134,D012>",
+        "input_metadata": {
+          "D012": {
+            "denominator": "(2*p**2 - 2*p + 1)**2",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**2",
+              "factorization": [
+                {
+                  "exponent": 2,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 442368,
+            "term_count": 1788,
+            "terms_sha256": "67d9ead9e25546d41cf56af9b6a73d88d28b10553ee99fbfa94a5fd58d759f85",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "D134": {
+            "denominator": "(2*p**2 - 2*p + 1)**3",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**3",
+              "factorization": [
+                {
+                  "exponent": 3,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 2654208,
+            "term_count": 1932,
+            "terms_sha256": "4952ef547e8b1dc1a37761838308acf5f3b90bfd6df83162d279c5b850b93c17",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          }
+        },
+        "method": "exact quotient-Euclid pair gcd in A[a]",
+        "norm_degree_p": 3,
+        "norm_nonzero": true,
+        "q_degree_of_c": 3,
+        "quotient_input": {
+          "factor_modulus_sha256": "c66bfcbdd6053ae8c643b93bfe491f34e4d49696f5385674a30d86845d17546f",
+          "q6_reduced_coefficients_sha256": "932fbb452800003cbc56ca5ab058c4926187a9c19de8f1e07fbb46c63387d3d1",
+          "q6_relation_sha256": "f6d10f1d801be29b8e387ced41fa4043a8eaf58dfdcd6b5beb9e2b1613e2a532",
+          "q6_term_count": 19,
+          "q6_terms_sha256": "6a8ca06d924cc7ee1a6f5287e69b2caf9d1e52f2922635b23b2f959114a9ae4a",
+          "q_basis_dimension": 4
+        },
+        "relation_checked": true,
+        "relation_residual_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "u012_sha256": "9cb9577539afa3cebae2d4c950c418d17111f4096dae5b727ee457bb1a41a03e",
+        "u134_sha256": "b31a08a76f9b46a379c37193222177f06af891d3006293e670b4d1162a45a525",
+        "unit": true,
+        "unnormalized_constant_c": true
+      },
+      "F4": {
+        "bound": 3,
+        "factor": "5*p**4 - 4*p**3 + 12*p**2 - 16*p + 8",
+        "generators": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "z*B*Delta-1"
+        ],
+        "ideal": "<P0,P1,P2,P3,P4,P5,z*B*Delta-1>",
+        "input_metadata": {
+          "Delta": {
+            "denominator": "1",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "1",
+              "factorization": [],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 1,
+            "term_count": 54,
+            "terms_sha256": "f58fb7c5aa168379a237c206eb7138d027a835b6b9afc2f6b2f3a5c1de5c183f",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "P": [
+            {
+              "P_index": 0,
+              "denominator": "1",
+              "factor": "F4",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 3,
+              "source_expression_srepr_sha256": "840ac133f50ab0494eae9408e2ad320dbb089a859a38534abf4e7f0697a3bf14",
+              "term_count": 518,
+              "terms_sha256": "6c57901cb56be11edda1e6602ed8e0fdb348a56e8a8fa14ef398c04fa9e4136c",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            },
+            {
+              "P_index": 1,
+              "denominator": "1",
+              "factor": "F4",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 3,
+              "source_expression_srepr_sha256": "4a8ab1a3860fef495d80b972ad6b1510d486d61f0a2c73f7bafe595bd28a9371",
+              "term_count": 612,
+              "terms_sha256": "3811663075d090b026dbddb638887448cca0ca88f65ef55e5a6cda2efaf778a4",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            },
+            {
+              "P_index": 2,
+              "denominator": "1",
+              "factor": "F4",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 3,
+              "source_expression_srepr_sha256": "008e5f47dd0ceea159c74d5af2d0f7107b17c3e99ac022b0f3fd3ee38553afef",
+              "term_count": 1067,
+              "terms_sha256": "c3a08523449d3ffed2c67ee5e7103707dacf5b42644a21037f6c5b38393fc710",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            },
+            {
+              "P_index": 3,
+              "denominator": "1",
+              "factor": "F4",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 3,
+              "source_expression_srepr_sha256": "56ecda15210b6d1a8efd1dcd081125ed694ce085d62deb041c76a9f13ab21ad7",
+              "term_count": 1042,
+              "terms_sha256": "cd3bcff06d144918cceb26652762215e761cf701fb510ee74c8ea37fce8ccaff",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            },
+            {
+              "P_index": 4,
+              "denominator": "1",
+              "factor": "F4",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 9,
+              "source_expression_srepr_sha256": "05a56b660c50b74c2c249240b529b20a556b2862d6ae17c3288b966be143ddc9",
+              "term_count": 685,
+              "terms_sha256": "5de5511249d23402f290c5e17740ff3e993fcbf13012087c579bb6f5c667d4f9",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            },
+            {
+              "P_index": 5,
+              "denominator": "1",
+              "factor": "F4",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 9,
+              "source_expression_srepr_sha256": "f51241b219245da6d198d5e49cd2f52f0af11236bf4d8cb9b7ede07845c21b4b",
+              "term_count": 718,
+              "terms_sha256": "7528e70f7a964bc28abb52528cd31479e9c6dcd6189a531aaf35c60a9ca3a8f2",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            }
+          ],
+          "localizer": {
+            "constant_term_checked": true,
+            "delta_sha256": "a7c64e0e86c869c58fb9a65bf04cdd6efab149b781c54ba9ad2052f8bde6e3e0",
+            "monomials": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1
+              ]
+            ],
+            "polynomial_sha256": "4db905effd2fabe4dde1cfca6b4882a48cd20e85db9277950ee02362b07b2d34",
+            "zBDelta_term_checked": true
+          }
+        },
+        "matrix": {
+          "bound": 3,
+          "columns": 80,
+          "generator_sha256": [
+            "3821d7f4e75f9786c7c3eb2fc28b72b582a522d4dd0b8fe28820f9a0619b8fd9",
+            "bcf4118f34bb0704703b054dbcec4ce835dcd03c42b69ceb1a197dcda0f2561d",
+            "e0da33b9554293fe6e19bdc4b1b8f0df7f01c5c5a59cb428b1fe17d5001dd30a",
+            "38749993723394bce14ce0fa23b67645842f6670fe851abebc010021d8a2128a",
+            "2b0270a242bf1c704c4af0be6308d853a4ba969d10327d7e8b7f9dcb51393b29",
+            "376300723f963ef39ed8bda2a345a8ffde133011779cfeed4084cec404b367dd",
+            "4db905effd2fabe4dde1cfca6b4882a48cd20e85db9277950ee02362b07b2d34"
+          ],
+          "input_matrix_sha256": "639cde33ae4867787bdc40aa9e7a0f457a3b842252b576c738a39032d9acd41b",
+          "monomial_count": 20,
+          "q_basis_multiplier_count": 4,
+          "q_basis_multiplier_sha256": [
+            "9e52a49158733ab95d5061037bf9d3ebbed5a1a0d486ea5e00a98b69040ecfab",
+            "ec70ef347cfe865351d6060c51a2c586018370da12ff3399ea8c136ff6f742a5",
+            "1845b59ecff28c7d9102fc99891cad878545d2298a274c73557c1499dff0ce9b",
+            "c6202370d4cc2ddc01edfd3e37ade2bd18764d23ce0720ea8ccab1b00aca6828"
+          ],
+          "quotient_input": {
+            "factor_modulus_sha256": "fe35ff912706cda4e5878407ae17e9860d6ca8177b54465bdf2512cca4984569",
+            "q6_reduced_coefficients_sha256": "b4b945fd1f9b2de2744cbeb16e6e3ce5d95b9d4063a6c67c89d0b6befe2ae765",
+            "q6_relation_sha256": "8a104bf1ee28008e90ef45e11ff9274edb9a5d5defb7d5e6ccffd91c1c8cb055",
+            "q6_term_count": 19,
+            "q6_terms_sha256": "6a8ca06d924cc7ee1a6f5287e69b2caf9d1e52f2922635b23b2f959114a9ae4a",
+            "q_basis_dimension": 4
+          },
+          "rank": 68,
+          "rank_with_target": 68,
+          "row_count": 88,
+          "rref_matrix_sha256": "f3ed48348abb2ec530e6926d15051cb632ba62b8da118e2744f6992356748f78",
+          "rref_pivots": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79
+          ],
+          "target_in_span": true,
+          "target_residual_sha256": "a8eddbe4f43b8592ca210a10320c3f5f74549f80f5930096d559bde63fc5c2d7",
+          "target_residual_zero": true,
+          "target_sha256": "42a374eb68994992964bf723c03a2d2421ad410fd0707c80123139e0ce944ebb"
+        },
+        "method": "exact sparse total-degree Macaulay over A[a,B,z]",
+        "unit": true
+      },
+      "F40": {
+        "a_degree_of_c": 0,
+        "a_gcd_degree": 0,
+        "c_sha256": "3520d8f66285b1b498a16bf6dba59c316ce906f135775a94714378decfd0d7dd",
+        "euclidean_steps": 4,
+        "factor": "7424*p**40 - 161536*p**39 + 1836800*p**38 - 14454272*p**37 + 88040000*p**36 - 439964928*p**35 + 1867353392*p**34 - 6884518384*p**33 + 22398599716*p**32 - 65072430404*p**31 + 170375836211*p**30 - 405009960715*p**29 + 879376810077*p**28 - 1752467492937*p**27 + 3218063082751*p**26 - 5462157661436*p**25 + 8590438351195*p**24 - 12541353394198*p**23 + 17018386499813*p**22 - 21483026442413*p**21 + 25236982384561*p**20 - 27587608118151*p**19 + 28047919243155*p**18 - 26495326489138*p**17 + 23220609127349*p**16 - 18842006278252*p**15 + 14118028970848*p**14 - 9735354310506*p**13 + 6152381134918*p**12 - 3545007905402*p**11 + 1850774728870*p**10 - 868862487040*p**9 + 363420905896*p**8 - 133926993072*p**7 + 42888299184*p**6 - 11728177920*p**5 + 2675395584*p**4 - 492086016*p**3 + 69030144*p**2 - 6635520*p + 331776",
+        "factor_field_matrix_inverse": 1,
+        "factor_irreducible_checked": true,
+        "factor_no_final_inverse": 1,
+        "factor_primitive_checked": true,
+        "four_by_four_multiplication_norm": true,
+        "gcd_factor_H2_checked": true,
+        "identity": "u134*D134 + u145*D145 = c; Norm_A/K(c) != 0",
+        "implementation_switch_sources": {
+          "matrix_inverse": "caller-derived",
+          "no_final_inverse": "GLD103_FACTOR_NO_FINAL_INVERSE"
+        },
+        "input_metadata": {
+          "D134": {
+            "denominator": "(2*p**2 - 2*p + 1)**3",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**3",
+              "factorization": [
+                {
+                  "exponent": 3,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 2654208,
+            "term_count": 1932,
+            "terms_sha256": "4952ef547e8b1dc1a37761838308acf5f3b90bfd6df83162d279c5b850b93c17",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "D145": {
+            "denominator": "(2*p**2 - 2*p + 1)**3",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**3",
+              "factorization": [
+                {
+                  "exponent": 3,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 23887872,
+            "term_count": 1565,
+            "terms_sha256": "8c27545c0499b89126745aa258b1dc576653ec2587625e30f9e0c8ae3068c084",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "D145_representation_reconciliation": {
+            "authoritative": true,
+            "comparison_reason": "the historical counts are recorded for lineage only; this verifier does not import or compare either historical representation",
+            "denominator": "(2*p**2 - 2*p + 1)**3",
+            "exact_expression_equality_to_historical_reference": "not_checked",
+            "historical_counts_status": "unverified historical metadata only",
+            "historical_counts_used_as_authoritative_pin": false,
+            "historical_reference_term_count": 3444,
+            "historical_stale_D012_diagnostic_term_count": 3944,
+            "independent_current_comparison": {
+              "audit_denominator": "8*p**6 - 24*p**5 + 36*p**4 - 32*p**3 + 18*p**2 - 6*p + 1",
+              "audit_q6_srepr_sha256": "2ed58764e7c50c8e1510a93b32d2515a9297c03dfe297fed8d9abe5f8e9d71a7",
+              "audit_rational_content": 23887872,
+              "audit_term_count": 1565,
+              "audit_terms_sha256": "8c27545c0499b89126745aa258b1dc576653ec2587625e30f9e0c8ae3068c084",
+              "audit_verifier_path": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
+              "audit_verifier_sha256": "7fa82c67b4322dcc75a59b17cb41d24851b417593962d15070a75130dc2fe79d",
+              "comparison_run_id": "gld103-primary-audit-physical-compare-20260831-v4",
+              "comparison_run_json_sha256": "c83a785fc98d3e3d5bc85ea5fea7ac448817fb49cfb7e98a28a7cb7108efe2f0",
+              "comparison_run_log_sha256": "d647ef5a1964b6f8fd8f71d74f639990ec61bcc0e6c4a025eaf88eeeaf2b8a82",
+              "expression_equal": true,
+              "primary_denominator": "(2*p**2 - 2*p + 1)**3",
+              "primary_q6_srepr_sha256": "2ed58764e7c50c8e1510a93b32d2515a9297c03dfe297fed8d9abe5f8e9d71a7",
+              "primary_rational_content": 23887872,
+              "primary_term_count": 1565,
+              "primary_terms_sha256": "8c27545c0499b89126745aa258b1dc576653ec2587625e30f9e0c8ae3068c084",
+              "ratio": "1",
+              "raw_term_maps_equal": true,
+              "runtime_dependency": false,
+              "scope": "current Q6-reduced D145 expression only",
+              "status": "verified_comparison_only_replay",
+              "used_for_primary_acceptance": false
+            },
+            "integer_denominator": 1,
+            "kind": "Q6-reduced Algebra.as_expr(D145), then cancel/primitive integerization",
+            "rational_content": 23887872,
+            "term_count": 1565,
+            "terms_sha256": "8c27545c0499b89126745aa258b1dc576653ec2587625e30f9e0c8ae3068c084"
+          },
+          "quotient": {
+            "factor_modulus_sha256": "5ea651d21863fba45b2c765c64cf39ec39e33e66a13087e9ea6dddebc80c6721",
+            "q6_reduced_coefficients_sha256": "ee7793279e6c414d0db98ee8afb4974cfbb503e4d39909147c2b22368987c49c",
+            "q6_relation_sha256": "83871ba0c56e546bf6f19a50f266ce29905091de7cafac02fe1fae9f27fb50e6",
+            "q6_term_count": 19,
+            "q6_terms_sha256": "6a8ca06d924cc7ee1a6f5287e69b2caf9d1e52f2922635b23b2f959114a9ae4a",
+            "q_basis_dimension": 4
+          }
+        },
+        "norm_degree_p": 39,
+        "norm_nonzero": true,
+        "q_degree_of_c": 3,
+        "relation_checked": true,
+        "relation_residual_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "route": "exact quotient-Euclid gcd of D134,D145",
+        "transient_multipliers_stored": false,
+        "u134_sha256": "489accffaa01ff958b198a9b75e120465a45843e5f4fcf850ef08918ba5dd6a2",
+        "u134_terms": 3,
+        "u145_sha256": "06128027fafada4c96ea797cde5af1293814642abf96629aecaa49b394f99909",
+        "u145_terms": 4,
+        "unnormalized_constant_c": true
+      },
+      "R4": {
+        "factor": "5*p**4 - 16*p**3 + 30*p**2 - 16*p + 5",
+        "generators": [
+          "D134",
+          "D012",
+          "D145"
+        ],
+        "ideal": "<Q6,D134,D012,D145>",
+        "input_metadata": {
+          "D012": {
+            "denominator": "(2*p**2 - 2*p + 1)**2",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**2",
+              "factorization": [
+                {
+                  "exponent": 2,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 442368,
+            "term_count": 1788,
+            "terms_sha256": "67d9ead9e25546d41cf56af9b6a73d88d28b10553ee99fbfa94a5fd58d759f85",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "D134": {
+            "denominator": "(2*p**2 - 2*p + 1)**3",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**3",
+              "factorization": [
+                {
+                  "exponent": 3,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 2654208,
+            "term_count": 1932,
+            "terms_sha256": "4952ef547e8b1dc1a37761838308acf5f3b90bfd6df83162d279c5b850b93c17",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "D145": {
+            "denominator": "(2*p**2 - 2*p + 1)**3",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**3",
+              "factorization": [
+                {
+                  "exponent": 3,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 23887872,
+            "term_count": 1565,
+            "terms_sha256": "8c27545c0499b89126745aa258b1dc576653ec2587625e30f9e0c8ae3068c084",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          }
+        },
+        "matrix": {
+          "bound": 5,
+          "columns": 24,
+          "generator_sha256": [
+            "2387ae6a00ba2a9f698614d749c904e2655e2b6d69efb1c162d37d1db70aefa2",
+            "cdd798ed8e11c2266b60c9c479ae417c7ce56979657afd82ab432192ded9e89b",
+            "97b25f9020d5d6d39cd89c29826d0a3aa6e1844f064f8e93fe371feaeae6954f"
+          ],
+          "input_matrix_sha256": "17ac68e5f89d8b72e5187b84dd31cd504d1c45ef44fae80a45681799ccfc1f59",
+          "q_basis_multiplier_count": 4,
+          "q_basis_multiplier_sha256": [
+            "9e52a49158733ab95d5061037bf9d3ebbed5a1a0d486ea5e00a98b69040ecfab",
+            "ec70ef347cfe865351d6060c51a2c586018370da12ff3399ea8c136ff6f742a5",
+            "1845b59ecff28c7d9102fc99891cad878545d2298a274c73557c1499dff0ce9b",
+            "c6202370d4cc2ddc01edfd3e37ade2bd18764d23ce0720ea8ccab1b00aca6828"
+          ],
+          "quotient_input": {
+            "factor_modulus_sha256": "5154f9e857490dfe72a17fb93567855976e2b1819ff17154c605c19ad617fd9d",
+            "q6_reduced_coefficients_sha256": "0a3fdf849b3a70162449081c1029ef0d5ba7c13f82b38a2575be3bc7a7520b00",
+            "q6_relation_sha256": "e40769168b7bacf65a7a4595f9b1e65e5ece282006b9de116030c9578f47098f",
+            "q6_term_count": 19,
+            "q6_terms_sha256": "6a8ca06d924cc7ee1a6f5287e69b2caf9d1e52f2922635b23b2f959114a9ae4a",
+            "q_basis_dimension": 4
+          },
+          "rank": 24,
+          "rank_with_target": 24,
+          "row_count": 28,
+          "rref_matrix_sha256": "bba4b690c71afb7ec22c08af3dc3c69e171463d141070fb56ba575e73a83abec",
+          "rref_pivots": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "target_in_span": true,
+          "target_residual_sha256": "3f43d08f3a7855b0955fc40fda629534a1c3af22eab5b818c1e878a221a8b21b",
+          "target_residual_zero": true,
+          "target_sha256": "28d4be9f8ed1adcac158a5a318623cb3666e1618eeecfdd03f8f517ccdfb81fd"
+        },
+        "method": "exact K-linear Macaulay membership in A[a]",
+        "unit": true
+      },
+      "R8": {
+        "factor": "64*p**8 - 256*p**7 + 580*p**6 - 844*p**5 + 946*p**4 - 784*p**3 + 388*p**2 - 94*p + 13",
+        "generators": [
+          "D134",
+          "D012",
+          "D013"
+        ],
+        "ideal": "<Q6,D134,D012,D013>",
+        "input_metadata": {
+          "D012": {
+            "denominator": "(2*p**2 - 2*p + 1)**2",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**2",
+              "factorization": [
+                {
+                  "exponent": 2,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 442368,
+            "term_count": 1788,
+            "terms_sha256": "67d9ead9e25546d41cf56af9b6a73d88d28b10553ee99fbfa94a5fd58d759f85",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "D013": {
+            "denominator": "(2*p**2 - 2*p + 1)**2",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**2",
+              "factorization": [
+                {
+                  "exponent": 2,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 442368,
+            "term_count": 1805,
+            "terms_sha256": "d45946bc9469aa002bf2896902bd403e54d5714e3b7ce07d6396a4497b112b7e",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "D134": {
+            "denominator": "(2*p**2 - 2*p + 1)**3",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**3",
+              "factorization": [
+                {
+                  "exponent": 3,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 2654208,
+            "term_count": 1932,
+            "terms_sha256": "4952ef547e8b1dc1a37761838308acf5f3b90bfd6df83162d279c5b850b93c17",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          }
+        },
+        "matrix": {
+          "bound": 7,
+          "columns": 32,
+          "generator_sha256": [
+            "948a1f46132452c0cdbb1d19d9d5a60d2332f0a392281c9cfb353f97ebd8325c",
+            "09e35a41cc2b90c7dc05e52561d193cf9dc8b1ba00a6e2d9b16a66f4b045512a",
+            "0d1e5e36dbf7829c8ea02e8ba5be01acf2e0e657cce4436419e6e1a38b57c337"
+          ],
+          "input_matrix_sha256": "c7b88eba3bc2d9d20923180f588f4bad7ec9ff6556253aae02c7070c4a6f44c4",
+          "q_basis_multiplier_count": 4,
+          "q_basis_multiplier_sha256": [
+            "9e52a49158733ab95d5061037bf9d3ebbed5a1a0d486ea5e00a98b69040ecfab",
+            "ec70ef347cfe865351d6060c51a2c586018370da12ff3399ea8c136ff6f742a5",
+            "1845b59ecff28c7d9102fc99891cad878545d2298a274c73557c1499dff0ce9b",
+            "c6202370d4cc2ddc01edfd3e37ade2bd18764d23ce0720ea8ccab1b00aca6828"
+          ],
+          "quotient_input": {
+            "factor_modulus_sha256": "fd121ef2563378f5a05a37b55247314aefe2a45dc25750da25305b7b35d5fcb0",
+            "q6_reduced_coefficients_sha256": "ee7793279e6c414d0db98ee8afb4974cfbb503e4d39909147c2b22368987c49c",
+            "q6_relation_sha256": "1ec7f5c3a70e511a97aff97b6d22b348e16870468202216381834647b6c4ea67",
+            "q6_term_count": 19,
+            "q6_terms_sha256": "6a8ca06d924cc7ee1a6f5287e69b2caf9d1e52f2922635b23b2f959114a9ae4a",
+            "q_basis_dimension": 4
+          },
+          "rank": 32,
+          "rank_with_target": 32,
+          "row_count": 48,
+          "rref_matrix_sha256": "f5746f0752d2532c0955fb03faab0b5e0a6a50b92897bfb25c76a495af2395fd",
+          "rref_pivots": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "target_in_span": true,
+          "target_residual_sha256": "98cde93a0bcf292b1d5345f04ab062fb424f6fae2fa2c0c84e1749d541692e45",
+          "target_residual_zero": true,
+          "target_sha256": "84fbb74006501fde51e21d1cb00ecf79f58478c75ceb2eb64ce6c814cd1ebc9c"
+        },
+        "method": "exact K-linear Macaulay membership in A[a]",
+        "unit": true
+      },
+      "p2_minus_2p_plus_2": {
+        "bound": 3,
+        "factor": "p**2 - 2*p + 2",
+        "generators": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "z*B*Delta-1"
+        ],
+        "ideal": "<P0,P1,P2,P3,P4,P5,z*B*Delta-1>",
+        "input_metadata": {
+          "Delta": {
+            "denominator": "1",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "1",
+              "factorization": [],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 1,
+            "term_count": 54,
+            "terms_sha256": "f58fb7c5aa168379a237c206eb7138d027a835b6b9afc2f6b2f3a5c1de5c183f",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "P": [
+            {
+              "P_index": 0,
+              "denominator": "1",
+              "factor": "p2_minus_2p_plus_2",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 3,
+              "source_expression_srepr_sha256": "840ac133f50ab0494eae9408e2ad320dbb089a859a38534abf4e7f0697a3bf14",
+              "term_count": 518,
+              "terms_sha256": "6c57901cb56be11edda1e6602ed8e0fdb348a56e8a8fa14ef398c04fa9e4136c",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            },
+            {
+              "P_index": 1,
+              "denominator": "1",
+              "factor": "p2_minus_2p_plus_2",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 3,
+              "source_expression_srepr_sha256": "4a8ab1a3860fef495d80b972ad6b1510d486d61f0a2c73f7bafe595bd28a9371",
+              "term_count": 612,
+              "terms_sha256": "3811663075d090b026dbddb638887448cca0ca88f65ef55e5a6cda2efaf778a4",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            },
+            {
+              "P_index": 2,
+              "denominator": "1",
+              "factor": "p2_minus_2p_plus_2",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 3,
+              "source_expression_srepr_sha256": "008e5f47dd0ceea159c74d5af2d0f7107b17c3e99ac022b0f3fd3ee38553afef",
+              "term_count": 1067,
+              "terms_sha256": "c3a08523449d3ffed2c67ee5e7103707dacf5b42644a21037f6c5b38393fc710",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            },
+            {
+              "P_index": 3,
+              "denominator": "1",
+              "factor": "p2_minus_2p_plus_2",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 3,
+              "source_expression_srepr_sha256": "56ecda15210b6d1a8efd1dcd081125ed694ce085d62deb041c76a9f13ab21ad7",
+              "term_count": 1042,
+              "terms_sha256": "cd3bcff06d144918cceb26652762215e761cf701fb510ee74c8ea37fce8ccaff",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            },
+            {
+              "P_index": 4,
+              "denominator": "1",
+              "factor": "p2_minus_2p_plus_2",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 9,
+              "source_expression_srepr_sha256": "05a56b660c50b74c2c249240b529b20a556b2862d6ae17c3288b966be143ddc9",
+              "term_count": 685,
+              "terms_sha256": "5de5511249d23402f290c5e17740ff3e993fcbf13012087c579bb6f5c667d4f9",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            },
+            {
+              "P_index": 5,
+              "denominator": "1",
+              "factor": "p2_minus_2p_plus_2",
+              "integer_denominator": 1,
+              "normalization_scope": "whole P_i(B)",
+              "quotient_denominator_nonzero_on_factor": true,
+              "quotient_denominator_provenance": {
+                "P_divides_Delta_checked": true,
+                "denominator": "1",
+                "factorization": [],
+                "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+                "supported": true
+              },
+              "rational_content": 9,
+              "source_expression_srepr_sha256": "f51241b219245da6d198d5e49cd2f52f0af11236bf4d8cb9b7ede07845c21b4b",
+              "term_count": 718,
+              "terms_sha256": "7528e70f7a964bc28abb52528cd31479e9c6dcd6189a531aaf35c60a9ca3a8f2",
+              "variables": [
+                "p",
+                "a",
+                "q",
+                "B"
+              ]
+            }
+          ],
+          "localizer": {
+            "constant_term_checked": true,
+            "delta_sha256": "c700383fef3eee70da079870b2612e995d3780eb2300cc21ae6aaae82cbb23fe",
+            "monomials": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1
+              ]
+            ],
+            "polynomial_sha256": "3e64b634490bb39bc7e4ff4dd9201dcc4f0b95411f4709bbc6cc794933c95c52",
+            "zBDelta_term_checked": true
+          }
+        },
+        "matrix": {
+          "bound": 3,
+          "columns": 80,
+          "generator_sha256": [
+            "234838069b225e7c516cf5570e4f98735078197df1848ac8457139e36ff7992d",
+            "6e511cf67b235983f11d5af449a22e83148817160338d1ad4ceff7914be7a8cb",
+            "6a579bd095893c190112bc97e9bd442d99796d49b97c37bdef43e8379ae95d1a",
+            "dcadb087fc3d72b43c93fd2d17265ae2bce30bc3163bc2f6f1b2329cf89308bb",
+            "eb4e765c62ce6ead9588ede416b8787aa8d49360b3c9ebfdf9b53bd287bf4abc",
+            "3f503dd495a6900642485a218987048f5640b965de6b18e2deec4902129e0005",
+            "3e64b634490bb39bc7e4ff4dd9201dcc4f0b95411f4709bbc6cc794933c95c52"
+          ],
+          "input_matrix_sha256": "3008cbc453780c56a70b422620807e6809b17ec845a57e4aae4f29ea1f2b473b",
+          "monomial_count": 20,
+          "q_basis_multiplier_count": 4,
+          "q_basis_multiplier_sha256": [
+            "9e52a49158733ab95d5061037bf9d3ebbed5a1a0d486ea5e00a98b69040ecfab",
+            "ec70ef347cfe865351d6060c51a2c586018370da12ff3399ea8c136ff6f742a5",
+            "1845b59ecff28c7d9102fc99891cad878545d2298a274c73557c1499dff0ce9b",
+            "c6202370d4cc2ddc01edfd3e37ade2bd18764d23ce0720ea8ccab1b00aca6828"
+          ],
+          "quotient_input": {
+            "factor_modulus_sha256": "35ef664f4ff1ae5d4010e73d6efe4ddaaa95104b814b7b5d51a4a3445154e831",
+            "q6_reduced_coefficients_sha256": "c5ee80b3b229155817d5a85d7909e7ff08f32be11fd0ff1f4345df3fc6f673a0",
+            "q6_relation_sha256": "cefaf4a476ce385f25ed3e199c988438a79dcde0eea31ea590aa7fbe18c56cd5",
+            "q6_term_count": 19,
+            "q6_terms_sha256": "6a8ca06d924cc7ee1a6f5287e69b2caf9d1e52f2922635b23b2f959114a9ae4a",
+            "q_basis_dimension": 4
+          },
+          "rank": 66,
+          "rank_with_target": 66,
+          "row_count": 88,
+          "rref_matrix_sha256": "cd44467e2baccc1a91e76193ab465fbf9324d5da550b948a8ab8d7f274ecce0a",
+          "rref_pivots": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            72,
+            73,
+            74,
+            75,
+            77,
+            78,
+            79
+          ],
+          "target_in_span": true,
+          "target_residual_sha256": "a8eddbe4f43b8592ca210a10320c3f5f74549f80f5930096d559bde63fc5c2d7",
+          "target_residual_zero": true,
+          "target_sha256": "42a374eb68994992964bf723c03a2d2421ad410fd0707c80123139e0ce944ebb"
+        },
+        "method": "exact sparse total-degree Macaulay over A[a,B,z]",
+        "unit": true
+      },
+      "p2_plus_1": {
+        "factor": "p**2 + 1",
+        "generators": [
+          "D134",
+          "D012",
+          "D145"
+        ],
+        "ideal": "<Q6,D134,D012,D145>",
+        "input_metadata": {
+          "D012": {
+            "denominator": "(2*p**2 - 2*p + 1)**2",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**2",
+              "factorization": [
+                {
+                  "exponent": 2,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 442368,
+            "term_count": 1788,
+            "terms_sha256": "67d9ead9e25546d41cf56af9b6a73d88d28b10553ee99fbfa94a5fd58d759f85",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "D134": {
+            "denominator": "(2*p**2 - 2*p + 1)**3",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**3",
+              "factorization": [
+                {
+                  "exponent": 3,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 2654208,
+            "term_count": 1932,
+            "terms_sha256": "4952ef547e8b1dc1a37761838308acf5f3b90bfd6df83162d279c5b850b93c17",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          },
+          "D145": {
+            "denominator": "(2*p**2 - 2*p + 1)**3",
+            "integer_denominator": 1,
+            "quotient_denominator_provenance": {
+              "P_divides_Delta_checked": true,
+              "denominator": "(2*p**2 - 2*p + 1)**3",
+              "factorization": [
+                {
+                  "exponent": 3,
+                  "factor": "p**2 - p + 1/2"
+                }
+              ],
+              "support_basis": "p-only quotient factors P/H2 (P divides Delta)",
+              "supported": true
+            },
+            "rational_content": 23887872,
+            "term_count": 1565,
+            "terms_sha256": "8c27545c0499b89126745aa258b1dc576653ec2587625e30f9e0c8ae3068c084",
+            "variables": [
+              "p",
+              "a",
+              "q"
+            ]
+          }
+        },
+        "matrix": {
+          "bound": 5,
+          "columns": 24,
+          "generator_sha256": [
+            "c9e8c878d6d8e1a14586eb7e95f2d1344f083b8177c60d31be65ec64f626d0c4",
+            "5e7979b743f546b1345f19bb5b5e5b9d1d16dee4cc3cdbe884d3c318c64fcbfd",
+            "430e6f2b1f0a7dce0fd1beed61f6f51e820633bfcd856f73c3f345c1a8414c23"
+          ],
+          "input_matrix_sha256": "21af208c871ac1a055727d70cbbb01d1d8cbb648631c798bc4377720438acb76",
+          "q_basis_multiplier_count": 4,
+          "q_basis_multiplier_sha256": [
+            "9e52a49158733ab95d5061037bf9d3ebbed5a1a0d486ea5e00a98b69040ecfab",
+            "ec70ef347cfe865351d6060c51a2c586018370da12ff3399ea8c136ff6f742a5",
+            "1845b59ecff28c7d9102fc99891cad878545d2298a274c73557c1499dff0ce9b",
+            "c6202370d4cc2ddc01edfd3e37ade2bd18764d23ce0720ea8ccab1b00aca6828"
+          ],
+          "quotient_input": {
+            "factor_modulus_sha256": "5e43af33f81649f7d56cfbcabd463a3cfadf6b3d637d2873ce6729c478d27b4b",
+            "q6_reduced_coefficients_sha256": "fe3026c0b0b362dcc49df346ff9ec7bf033bf4883bb8b750ab5224a381e2d3ce",
+            "q6_relation_sha256": "dc256a87663c33ed47cb984709ec6bf9a6e651bfb07d591a14240d2c96ee731a",
+            "q6_term_count": 19,
+            "q6_terms_sha256": "6a8ca06d924cc7ee1a6f5287e69b2caf9d1e52f2922635b23b2f959114a9ae4a",
+            "q_basis_dimension": 4
+          },
+          "rank": 24,
+          "rank_with_target": 24,
+          "row_count": 28,
+          "rref_matrix_sha256": "bba4b690c71afb7ec22c08af3dc3c69e171463d141070fb56ba575e73a83abec",
+          "rref_pivots": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "target_in_span": true,
+          "target_residual_sha256": "3f43d08f3a7855b0955fc40fda629534a1c3af22eab5b818c1e878a221a8b21b",
+          "target_residual_zero": true,
+          "target_sha256": "28d4be9f8ed1adcac158a5a318623cb3666e1618eeecfdd03f8f517ccdfb81fd"
+        },
+        "method": "exact K-linear Macaulay membership in A[a]",
+        "unit": true
+      }
+    },
+    "coefficient_ring": "characteristic-zero exact quotient A[a,B,z]",
+    "implementation_switch_sources": {
+      "matrix_inverse": "GLD103_FACTOR_MATRIX_INVERSE"
+    },
+    "localizer": "z*B*Delta-1",
+    "matrix_inverse_mode": true,
+    "outside_declared_open": {
+      "H2": "H2 is explicitly inverted by the Q6 q-leading coefficient and is outside the declared open",
+      "P": "P divides Delta and is therefore outside D(B*H2*Delta)"
+    },
+    "p0_p1": {
+      "B_nonzero_contradiction": true,
+      "method": "call tracked GLD102 check()",
+      "scope": "arbitrary a, p in {0,1}, D(Delta); rank<=6 implies B=C=0",
+      "tracked_source": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_p01_nonzero_offset_exclusion.py"
+    },
+    "requested_closures": [
+      "C4",
+      "F4",
+      "F40",
+      "R4",
+      "R8",
+      "p2_minus_2p_plus_2",
+      "p2_plus_1"
+    ],
+    "status": "verified_exact_local_fibre_closures"
+  },
+  "local_fibre_plan": {
+    "C4": "1 in <Q6,D134,D012>",
+    "F4": "sparse total-degree Macaulay bound 3 in A[a,B,z], rank 68/80",
+    "F40": "quotient-Euclid D134,D145; unnormalised c; nonzero 4x4 multiplication norm",
+    "R4": "K-linear Macaulay bound 5, rank 24/24, <D134,D012,D145>",
+    "R8": "K-linear Macaulay bound 7, rank 32/32, <D134,D012,D013>",
+    "p0_p1": "call tracked GLD102 check()",
+    "p2_minus_2p_plus_2": "sparse total-degree Macaulay bound 3 in A[a,B,z], rank 66/80",
+    "p2_plus_1": "K-linear Macaulay bound 5, rank 24/24, <D134,D012,D145>"
+  },
+  "manifest_status": "exact scoped theorem certificate",
+  "mathematical_status": "scoped_necessary_condition_only",
+  "minor_reconstruction": {
+    "T0": {
+      "clearing_scalar": "4*(p**2 - p + 1)**3*(2*p**2 - 2*p + 1)**5",
+      "entrywise_reconstructed": true,
+      "native_A_scaled": {
+        "B_degree": 2,
+        "C_degree": 1,
+        "canonical_sha256": "64f321bc1ada0df17f04f1d3a9d47663718af0855915b16e76fbd8742a0fb823",
+        "term_count": 5
+      },
+      "native_F_scaled": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "ff7b9f513f768414ee28d9773c845cfb20de68c30420a1f3334e10bec3965a66",
+        "term_count": 2
+      },
+      "native_G_scaled": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "778433c19c9263afad8f2c526d40b3a61c9284bf49c6cf42380a03220757c2d4",
+        "term_count": 3
+      },
+      "raw_term_count": 5
+    },
+    "T1": {
+      "clearing_scalar": "16*(p**2 - p + 1)**5*(2*p**2 - 2*p + 1)**5",
+      "entrywise_reconstructed": true,
+      "native_A_scaled": {
+        "B_degree": 3,
+        "C_degree": 1,
+        "canonical_sha256": "b8f76882a0b018a2fc7882ae637bb5cd33185a4be0ba478eccb2ee2836fd21a0",
+        "term_count": 6
+      },
+      "native_F_scaled": {
+        "B_degree": 3,
+        "C_degree": 0,
+        "canonical_sha256": "4bb18396598d9a4d2bf2ae78aa0af29213dc28953a736de0b51274c0aa1bfed4",
+        "term_count": 3
+      },
+      "native_G_scaled": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "210e05e2a91178cb4d31ba70e35950a5594c040a2353c99f4fea8fe2cde039d5",
+        "term_count": 3
+      },
+      "raw_term_count": 6
+    },
+    "T2": {
+      "clearing_scalar": "16*(p**2 - p + 1)**5*(2*p**2 - 2*p + 1)**5",
+      "entrywise_reconstructed": true,
+      "native_A_scaled": {
+        "B_degree": 3,
+        "C_degree": 1,
+        "canonical_sha256": "a2b6235b2f90df00b8a6a4f19675423bb63a2513ad99796d29f6c87c8a66214b",
+        "term_count": 6
+      },
+      "native_F_scaled": {
+        "B_degree": 3,
+        "C_degree": 0,
+        "canonical_sha256": "acd30d84d1b0a6f437cd0f87a6ce9c2fe9f3ca66c632541665b018f4148ddbd8",
+        "term_count": 3
+      },
+      "native_G_scaled": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "d67b3fa669362000bc30d43596b1b6890e7dc6761000fbc490beaafcdbb771f4",
+        "term_count": 3
+      },
+      "raw_term_count": 6
+    },
+    "X3": {
+      "clearing_scalar": "4*(p**2 - p + 1)**5*(2*p**2 - 2*p + 1)**5",
+      "entrywise_reconstructed": true,
+      "native_A_scaled": {
+        "B_degree": 3,
+        "C_degree": 1,
+        "canonical_sha256": "1145a949f07199b31563ab16537de8e3e267ad4b5f2a84834251926da809cfd4",
+        "term_count": 6
+      },
+      "native_F_scaled": {
+        "B_degree": 3,
+        "C_degree": 0,
+        "canonical_sha256": "31c8d55838cfd20907df4a01a4ba7b9eae72d7dd95cc48e649c1fca93dc3aedc",
+        "term_count": 3
+      },
+      "native_G_scaled": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "58bc9c826d28db4dcb2cfd7b67d35f2a3e03220856da49b06f3b34f29baba499",
+        "term_count": 3
+      },
+      "raw_term_count": 6
+    },
+    "Y1": {
+      "clearing_scalar": "4*(p**2 - p + 1)**5*(2*p**2 - 2*p + 1)**5",
+      "entrywise_reconstructed": true,
+      "native_A_scaled": {
+        "B_degree": 3,
+        "C_degree": 1,
+        "canonical_sha256": "850083e91d54d7808712d1003327626a6eb3308eeaf58c187d7a3908322430c2",
+        "term_count": 6
+      },
+      "native_F_scaled": {
+        "B_degree": 3,
+        "C_degree": 0,
+        "canonical_sha256": "b41b9a77497ad0ee1c05e57925bd3c8340b0d3612697588631d6af392f165620",
+        "term_count": 3
+      },
+      "native_G_scaled": {
+        "B_degree": 2,
+        "C_degree": 0,
+        "canonical_sha256": "a9aa165fb12ced5c0153bd4aa4815d6469b64342a56e540c5a7a9e6005f84e2d",
+        "term_count": 3
+      },
+      "raw_term_count": 6
+    }
+  },
+  "native_reconstruction": {
+    "all_column_count": 79,
+    "annihilator_basis_count": 44,
+    "chart": "GLD88 h4_family(p,q,a) with symbolic a",
+    "chart_denominators": {
+      "b": "(p**2 - p + 1)*(2*p*q**2 - 2*p*q - p - q**2 - 2*q + 2)",
+      "c": "(p + q - 1)*(2*p*q**2 - 2*p*q - p - q**2 - 2*q + 2)",
+      "rank": "2*p*q**2 - 2*p*q - p - q**2 - 2*q + 2",
+      "s": "p + q - 1"
+    },
+    "external_input_dependency": false,
+    "matrix_shape": [
+      37,
+      9
+    ],
+    "native_coefficient_matrix_crosscheck": true,
+    "punctured_row_count": 60,
+    "relation_count": 37,
+    "relation_matrix_rank": 37,
+    "relation_width": 81,
+    "source_basis": "tracked GLD70 -> GLD71 sparse annihilator -> GLD88 symbolic-a chart",
+    "support_digest": {
+      "all_rows": "22898fcc93f415be5488d22ecf2e74febb74cbd7997ef3c8d9dc2efc3545e324",
+      "selected_rows": "c53d2c7912d87b5f46c39ec6fc64d1aaa6ab7839ad69f3bbfb6f39375b6ed1b0"
+    }
+  },
+  "optional_source_manifest": {
+    "GLD96_explore_q6": {
+      "available": true,
+      "lf_sha256": "bd4e57c6cb4fb71a8a5c2b503980faacfd1f96994cc583d2d630780e3934ca25",
+      "path": "claims/arbitrary-order/explore_four_root_torus_star_equal_leaf_h4_q6_modular_membership_census.py",
+      "sha256": "00417d6dd6b27b1bc6cc51ccdf8d8536061abaa8fa9291befca06cb5bfd55cf1",
+      "used_for_exact_replay": false
+    }
+  },
+  "p0_p1_gld102": {
+    "called_tracked_check": true,
+    "claim_id": "GLD102",
+    "elapsed_seconds": 18.545,
+    "global_conjecture": "UNRESOLVED",
+    "status": "proved_exact_scoped_p01_nonzero_offset_exclusion"
+  },
+  "q6": {
+    "exploratory_crosscheck": {
+      "available": true,
+      "match_checked": true,
+      "source": "claims/arbitrary-order/explore_four_root_torus_star_equal_leaf_h4_q6_modular_membership_census.py",
+      "source_sha256": "00417d6dd6b27b1bc6cc51ccdf8d8536061abaa8fa9291befca06cb5bfd55cf1",
+      "used_for_exact_replay": false
+    },
+    "expression": "2*p**4*q**2 - 2*p**4*q + p**4 + 2*p**3*q**3 - 7*p**3*q**2 + 5*p**3*q - 2*p**3 + 2*p**2*q**4 - 7*p**2*q**3 + 12*p**2*q**2 - 7*p**2*q + 2*p**2 - 2*p*q**4 + 5*p*q**3 - 7*p*q**2 + 2*p*q + q**4 - 2*q**3 + 2*q**2",
+    "leading_coefficient": "2*p**2 - 2*p + 1",
+    "q_degree": 4,
+    "srepr_sha256": "2ed58764e7c50c8e1510a93b32d2515a9297c03dfe297fed8d9abe5f8e9d71a7"
+  },
+  "replay_complete": true,
+  "runtime_environment": {
+    "executable": "C:\\Users\\Yeste\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\python.exe",
+    "implementation_flags": {
+      "GLD103_FACTOR_MATRIX_INVERSE": {
+        "effective_value": 1,
+        "source": "GLD103_FACTOR_MATRIX_INVERSE"
+      },
+      "GLD103_FACTOR_NO_FINAL_INVERSE": {
+        "effective_value": 1,
+        "source": "GLD103_FACTOR_NO_FINAL_INVERSE"
+      }
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14",
+    "sympy": "1.14.0"
+  },
+  "runtime_mode": "full",
+  "schema_version": 1,
+  "scope": {
+    "characteristic": 0,
+    "chart": "normalized GLD88/F88 H4 Q6 chart",
+    "coefficient_equations": [
+      "G_T0=0",
+      "G_T1=0",
+      "G_T2=0",
+      "G_Y1=0",
+      "G_X3=0"
+    ],
+    "open": "D(B*H2*Delta)",
+    "parameter_a": "symbolic/arbitrary",
+    "rank_condition": "rank(M(G))<=6"
+  },
+  "selected_coefficient_determinants": {
+    "all_two_route_exact_matches": true,
+    "count": 6,
+    "fibre_records": {
+      "D134": {
+        "B_degree": 0,
+        "C_degree": 0,
+        "canonical_sha256": "710c55e15d052f2139236a6e12bf879901b5e61740c16cdc9db4861c47b4ee8b",
+        "row_triple": [
+          1,
+          3,
+          4
+        ],
+        "term_count": 1,
+        "two_route_exact_match": true
+      },
+      "D145": {
+        "B_degree": 0,
+        "C_degree": 0,
+        "canonical_sha256": "62ac3cc679101c2c0c5b7437a5dd3b2f370a4b4c746c856de8721760310ef7e6",
+        "row_triple": [
+          1,
+          4,
+          5
+        ],
+        "term_count": 1,
+        "two_route_exact_match": true
+      }
+    },
+    "fibre_row_triples": {
+      "D134": [
+        1,
+        3,
+        4
+      ],
+      "D145": [
+        1,
+        4,
+        5
+      ]
+    },
+    "records": {
+      "D012": {
+        "B_degree": 0,
+        "C_degree": 0,
+        "canonical_sha256": "6c36e2f0217ae35adae2da20d66ffd9776e18cf450cbc7422db73a504075b152",
+        "row_triple": [
+          0,
+          1,
+          2
+        ],
+        "term_count": 1,
+        "two_route_exact_match": true
+      },
+      "D013": {
+        "B_degree": 0,
+        "C_degree": 0,
+        "canonical_sha256": "a2877c956ae4c43c4cdb07838524f2bf10dd90558ef72a36f6d4b69defbba2e2",
+        "row_triple": [
+          0,
+          1,
+          3
+        ],
+        "term_count": 1,
+        "two_route_exact_match": true
+      },
+      "D014": {
+        "B_degree": 0,
+        "C_degree": 0,
+        "canonical_sha256": "49eb6535e9f193f0b5d6eb242c204d6172429aade98b5e0601f7ce973aa168bf",
+        "row_triple": [
+          0,
+          1,
+          4
+        ],
+        "term_count": 1,
+        "two_route_exact_match": true
+      },
+      "D015": {
+        "B_degree": 0,
+        "C_degree": 0,
+        "canonical_sha256": "07d4567f48f55a44aec62a348a21733a7e728619135c285f89a3d92e27c73b08",
+        "row_triple": [
+          0,
+          1,
+          5
+        ],
+        "term_count": 1,
+        "two_route_exact_match": true
+      },
+      "D023": {
+        "B_degree": 0,
+        "C_degree": 0,
+        "canonical_sha256": "71388460a24fa79952431bad72c82e422993c1b76ab3eae12b83a3683c83babb",
+        "row_triple": [
+          0,
+          2,
+          3
+        ],
+        "term_count": 1,
+        "two_route_exact_match": true
+      },
+      "D123": {
+        "B_degree": 0,
+        "C_degree": 0,
+        "canonical_sha256": "7ecf0a91e1d4864a3a7d361c151762358e9cf6120c730f2fc53e23674dd065e1",
+        "row_triple": [
+          1,
+          2,
+          3
+        ],
+        "term_count": 1,
+        "two_route_exact_match": true
+      },
+      "D134": {
+        "B_degree": 0,
+        "C_degree": 0,
+        "canonical_sha256": "710c55e15d052f2139236a6e12bf879901b5e61740c16cdc9db4861c47b4ee8b",
+        "row_triple": [
+          1,
+          3,
+          4
+        ],
+        "term_count": 1,
+        "two_route_exact_match": true
+      },
+      "D145": {
+        "B_degree": 0,
+        "C_degree": 0,
+        "canonical_sha256": "62ac3cc679101c2c0c5b7437a5dd3b2f370a4b4c746c856de8721760310ef7e6",
+        "row_triple": [
+          1,
+          4,
+          5
+        ],
+        "term_count": 1,
+        "two_route_exact_match": true
+      }
+    },
+    "row_triples": {
+      "D012": [
+        0,
+        1,
+        2
+      ],
+      "D013": [
+        0,
+        1,
+        3
+      ],
+      "D014": [
+        0,
+        1,
+        4
+      ],
+      "D015": [
+        0,
+        1,
+        5
+      ],
+      "D023": [
+        0,
+        2,
+        3
+      ],
+      "D123": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "selected_minor_numeric_crosscheck": {
+    "Q6_zero": true,
+    "all_match": true,
+    "determinants": {
+      "T0": "-192 - 4416*I",
+      "T1": "184320 - 76800*I",
+      "T2": "417792 - 617472*I",
+      "X3": "-223488 - 29952*I",
+      "Y1": "-343296 + 71424*I"
+    },
+    "nonzero_chart_gates": {
+      "Delta": "-16*I",
+      "H2": "1",
+      "b_denominator_factor": "1",
+      "h4_denominator": "I",
+      "rank_denominator": "-4*I"
+    },
+    "point": {
+      "B": "2",
+      "C": "3",
+      "a": "2",
+      "p": "1",
+      "q": "I"
+    }
+  },
+  "selected_minors": {
+    "T0": {
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        28
+      ]
+    },
+    "T1": {
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        2
+      ],
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        32
+      ]
+    },
+    "T2": {
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        5
+      ],
+      "rows": [
+        0,
+        1,
+        2,
+        17,
+        25,
+        31,
+        32
+      ]
+    },
+    "X3": {
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "rows": [
+        0,
+        1,
+        17,
+        28,
+        31,
+        32,
+        33
+      ]
+    },
+    "Y1": {
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "rows": [
+        0,
+        1,
+        17,
+        28,
+        31,
+        32,
+        33
+      ]
+    }
+  },
+  "source_basis": "tracked GLD70, GLD71, GLD88, literal Q6, and GLD102",
+  "source_manifest": {
+    "GLD102": {
+      "lf_sha256": "c78130ad8ed5a639ffc7683ef21ae2b578312d6c7475820689a996dbc13bbd8e",
+      "path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_p01_nonzero_offset_exclusion.py",
+      "sha256": "742aaccfb1e4b7cab194d8d20addd3d5e7b5448a367180d01b398be306317eea"
+    },
+    "GLD70": {
+      "lf_sha256": "1a967f71bc4a08995a9187557eccd0ce39ab0f65544652f99c538049c49251f2",
+      "path": "claims/arbitrary-order/verify_four_root_complete_q_layer_secant_boundary_trap_and_torus_star_compression.py",
+      "sha256": "a53433329023223f1f24e960a8b23c7c57baf87b9767c4b2acabc819b982918e"
+    },
+    "GLD71": {
+      "lf_sha256": "e0204ec4495bb3f86252c18d77e3493dd6d1b0e3011e33866a2a0b2462922d5e",
+      "path": "claims/arbitrary-order/verify_four_root_torus_star_punctured_syndrome_and_eisenstein_norm_gate.py",
+      "sha256": "3342809b22cc1e5ffe960e14068f81303a3bc0b597e21e2d29c05c10c605dc7d"
+    },
+    "GLD88": {
+      "lf_sha256": "4ba10801ea64fbb170d7949a7030d64da6c1fd707bb894d8c1372947668d8199",
+      "path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_generic_rank_six_common_row_kernel_exclusion.py",
+      "sha256": "70c46728c397d7a18fd999c27ca3d10232f9e3169ad508be7071c109be322752"
+    }
+  },
+  "status": "exact_scoped_theorem_certificate",
+  "verifier_path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
+  "verifier_sha256": "4deb4f47384c6d19db862041778df3e2a98faf3b6c8a24c1b5fcfb11f7bd489f"
+}
