@@ -243,6 +243,35 @@ the mathematical status of existing claims.
 The detailed proof-distance and PR reporting contract is in
 `docs/proof-obligation-architecture.md`.
 
+### Resolution-first ecology runs
+
+When the repository owner explicitly asks for a multi-agent resolution run,
+the unit of work is one global-facing parent implication, not one worker, one
+leaf, or one PR.  Before dispatching research workers, the coordinator must
+record the exact parent proposition, its upstream supply, one named downstream
+consumer, and what would prove or refute the route.
+
+During that run:
+
+- every research task must directly attack the parent implication, an exact
+  countermodel/no-go to it, or a sublemma already shown to be load-bearing for
+  it;
+- another local census, divisor, support profile, verifier rewrite, status
+  audit, visualization, or documentation pass is not a research objective
+  merely because it can be made rigorous;
+- one integration owner should package and publish accepted results after a
+  candidate mathematical delta exists; research workers need not each produce
+  a theorem package or PR; and
+- exact verification and independent review remain mandatory promotion gates,
+  but satisfying those gates is not itself proof progress.
+
+If the chosen parent cannot be proved, the preferred negative result is an
+exact obstruction that eliminates a proposed mechanism and leaves one
+strictly sharper next lemma.  A report whose only conclusion is that the
+global status remains unresolved does not count as success for a
+resolution-first run.  None of these priorities relaxes the scientific-status,
+evidence, or resolution-audit requirements above.
+
 ## 8. Software and verifier mode
 
 Prefer reproducible, portable tooling.
