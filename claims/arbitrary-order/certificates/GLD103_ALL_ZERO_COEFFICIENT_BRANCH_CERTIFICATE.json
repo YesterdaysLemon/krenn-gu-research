@@ -84,7 +84,7 @@
   "branch": "all-zero selected coefficient branch, generic symbolic a",
   "bridge_reconstruction_mode": "exact",
   "certificate_payload_definition": "sha256 of canonical JSON payload before certificate_payload_sha256 is added",
-  "certificate_payload_sha256": "4e85094914596d796779942fd04746fff7c51b99065243a9206e7399c7ce4c6f",
+  "certificate_payload_sha256": "f05de343d8c65b953215e3e193104b280fc3d17bdace518534d8b3bd63cad039",
   "chart_denominator_provenance": {
     "H2_is_q6_leading_coefficient": true,
     "P_divides_Delta": true,
@@ -275,7 +275,7 @@
       "audit_verifier_path": "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
       "audit_verifier_sha256": "7fa82c67b4322dcc75a59b17cb41d24851b417593962d15070a75130dc2fe79d",
       "comparison_helper_path": "claims/arbitrary-order/_gld103_all_zero_exact.py",
-      "comparison_helper_sha256": "06ca97b8b38136659b8a57279b66959a28130f1eff75ff0dd5bc367ce990f2f23",
+      "comparison_helper_sha256": "06ca97b8b38136659b8a57279b66959a28130f1ef75ff0dd5bc367ce990f2f23",
       "comparison_run_id": "gld103-primary-audit-physical-compare-20260831-v4",
       "comparison_run_json_sha256": "c83a785fc98d3e3d5bc85ea5fea7ac448817fb49cfb7e98a28a7cb7108efe2f0",
       "comparison_run_log_sha256": "d647ef5a1964b6f8fd8f71d74f639990ec61bcc0e6c4a025eaf88eeeaf2b8a82",
@@ -445,7 +445,7 @@
     "runtime_dependency": false,
     "used_for_primary_acceptance": false
   },
-  "elapsed_seconds": 588.604,
+  "elapsed_seconds": 629.761,
   "evidence_boundary": {
     "E31_equation_imposed": false,
     "E31_inverted": false,
@@ -2539,7 +2539,7 @@
   "p0_p1_gld102": {
     "called_tracked_check": true,
     "claim_id": "GLD102",
-    "elapsed_seconds": 19.061,
+    "elapsed_seconds": 19.618,
     "global_conjecture": "UNRESOLVED",
     "status": "proved_exact_scoped_p01_nonzero_offset_exclusion"
   },
@@ -2914,6 +2914,6 @@
   "status": "exact_scoped_theorem_certificate",
   "verifier_hash_semantics": "verifier_sha256 is the LF-normalized tracked-source digest; verifier_raw_sha256 records checkout bytes",
   "verifier_path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
-  "verifier_raw_sha256": "f968cc20e03df61c9ec22b5b81b17d922b3491286a5f808d760ae7205b97ba65",
-  "verifier_sha256": "f968cc20e03df61c9ec22b5b81b17d922b3491286a5f808d760ae7205b97ba65"
+  "verifier_raw_sha256": "778ac116e39dd27b6affdd6c38f83b3e5f1c7ce434b192e35570399e6e217862",
+  "verifier_sha256": "778ac116e39dd27b6affdd6c38f83b3e5f1c7ce434b192e35570399e6e217862"
 }

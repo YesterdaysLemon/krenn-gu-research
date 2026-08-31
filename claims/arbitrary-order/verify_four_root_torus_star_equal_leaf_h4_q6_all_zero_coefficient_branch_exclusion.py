@@ -301,7 +301,7 @@ PHYSICAL_CROSS_IMPLEMENTATION_COMPARISON = {
     "comparison_run_json_sha256": "c83a785fc98d3e3d5bc85ea5fea7ac448817fb49cfb7e98a28a7cb7108efe2f0",
     "comparison_run_log_sha256": "d647ef5a1964b6f8fd8f71d74f639990ec61bcc0e6c4a025eaf88eeeaf2b8a82",
     "comparison_helper_path": "claims/arbitrary-order/_gld103_all_zero_exact.py",
-    "comparison_helper_sha256": "06ca97b8b38136659b8a57279b66959a28130f1eff75ff0dd5bc367ce990f2f23",
+    "comparison_helper_sha256": "06ca97b8b38136659b8a57279b66959a28130f1ef75ff0dd5bc367ce990f2f23",
     "superseded_invalid_attempts": [
         {
             "run_id": "gld103-primary-audit-physical-compare-20260831-v1",

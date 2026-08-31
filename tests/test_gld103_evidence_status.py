@@ -14,6 +14,7 @@ BASE = ROOT / "claims" / "arbitrary-order"
 OWNER = BASE / "FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_ALL_ZERO_COEFFICIENT_BRANCH_EXCLUSION_THEOREM.md"
 PRIMARY = BASE / "verify_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py"
 AUDIT = BASE / "audit_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py"
+HELPER = BASE / "_gld103_all_zero_exact.py"
 CERTIFICATE = BASE / "certificates" / "GLD103_ALL_ZERO_COEFFICIENT_BRANCH_CERTIFICATE.json"
 REVIEW = ROOT / "docs" / "audits" / (
     "FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_ALL_ZERO_COEFFICIENT_BRANCH_EXCLUSION_"
@@ -24,10 +25,11 @@ ROOT_README = ROOT / "README.md"
 README = BASE / "README.md"
 LEDGER = ROOT / "catalog" / "theorem-ledger.json"
 
-PRIMARY_SHA256 = "f968cc20e03df61c9ec22b5b81b17d922b3491286a5f808d760ae7205b97ba65"
+PRIMARY_SHA256 = "778ac116e39dd27b6affdd6c38f83b3e5f1c7ce434b192e35570399e6e217862"
 AUDIT_SHA256 = "7fa82c67b4322dcc75a59b17cb41d24851b417593962d15070a75130dc2fe79d"
+HELPER_SHA256 = "06ca97b8b38136659b8a57279b66959a28130f1ef75ff0dd5bc367ce990f2f23"
 CERTIFICATE_PAYLOAD_SHA256 = (
-    "4e85094914596d796779942fd04746fff7c51b99065243a9206e7399c7ce4c6f"
+    "f05de343d8c65b953215e3e193104b280fc3d17bdace518534d8b3bd63cad039"
 )
 F40_FACTOR_SHA256 = "83f6ac7c7e4011a85960b57f145918d910c94fb9ef61b2f27741f91ef69efe2f"
 F40_RELATION_SHA256 = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
@@ -259,6 +261,16 @@ class GLD103EvidenceStatusTests(unittest.TestCase):
 
         self.assertEqual(sha256_file(AUDIT), AUDIT_SHA256)
         comparison = payload["comparison_provenance"]
+        self.assertEqual(len(HELPER_SHA256), 64)
+        self.assertEqual(sha256_file(HELPER, lf=True), HELPER_SHA256)
+        self.assertEqual(
+            comparison["physical_generators"]["comparison_helper_path"],
+            HELPER.relative_to(ROOT).as_posix(),
+        )
+        self.assertEqual(
+            comparison["physical_generators"]["comparison_helper_sha256"],
+            HELPER_SHA256,
+        )
         for record in (
             comparison["D145_current_representation"],
             comparison["physical_generators"],
