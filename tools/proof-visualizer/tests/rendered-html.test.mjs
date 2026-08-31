@@ -42,6 +42,7 @@ test("server-renders the proof bonsai shell and scientific boundary", async () =
   assert.match(html, /Nearby/);
   assert.match(html, /Bonsai tree/);
   assert.match(html, /one-edge neighborhood/);
+  assert.match(html, /Wheel to zoom/);
   assert.match(html, /Copy node link/);
   assert.match(html, /Source topology aligned/);
   assert.doesNotMatch(html, developmentPreviewMeta);
@@ -72,6 +73,11 @@ test("removes starter-only preview infrastructure", async () => {
   assert.doesNotMatch(layout, /Starter Project|codex-preview/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.match(proofBonsai, /<a className="field-notes-link" href="\/field-notes">/);
+  assert.match(proofBonsai, /zoomOnScroll/);
+  assert.match(proofBonsai, /panOnDrag=\{\[0, 1, 2\]\}/);
+  assert.match(proofBonsai, /type: "bonsaiPot"/);
+  assert.match(proofBonsai, /type: "livingBranch"/);
+  assert.doesNotMatch(proofBonsai, /className="bonsai-pot"/);
   assert.doesNotMatch(proofBonsai, /import Link from "next\/link"/);
   await assert.rejects(access(new URL("../app/_sites-preview", import.meta.url)));
 });
