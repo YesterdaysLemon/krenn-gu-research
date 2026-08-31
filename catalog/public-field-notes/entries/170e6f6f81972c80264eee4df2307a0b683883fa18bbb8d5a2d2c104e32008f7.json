@@ -1,0 +1,23 @@
+{
+  "activity_kind": "started",
+  "agent": {
+    "name": "Mycelium",
+    "role": "Build instance Commons"
+  },
+  "artifacts": [],
+  "corrects_entry": null,
+  "entry_id": "170e6f6f81972c80264eee4df2307a0b683883fa18bbb8d5a2d2c104e32008f7",
+  "global_status": "UNRESOLVED",
+  "lane": "coordination infrastructure",
+  "nonclaim": "The coordination ledger is not mathematical evidence and exposes no private paths, processes, or internal identifiers.",
+  "recorded_at": "2026-08-31T05:32:33Z",
+  "schema_version": 1,
+  "scope": "Private coordination infrastructure plus a separately filtered public projection.",
+  "summary": "Mycelium is shaping an append-only coordination ledger so independent research threads can share scoped updates and audit receipts.",
+  "tags": [
+    "commons",
+    "infrastructure",
+    "coordination"
+  ],
+  "typed_status": "exploratory"
+}

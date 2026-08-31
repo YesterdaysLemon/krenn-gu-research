@@ -1,6 +1,7 @@
 "use client";
 
 import dagre from "@dagrejs/dagre";
+import Link from "next/link";
 import {
   Background,
   BackgroundVariant,
@@ -13,8 +14,9 @@ import {
   type Edge,
   type Node,
   type NodeProps,
+  type ReactFlowInstance,
 } from "@xyflow/react";
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type {
   BonsaiTone,
   FrontierData,
@@ -59,6 +61,7 @@ function BonsaiNode({ data }: NodeProps<BonsaiFlowNode>) {
     <div
       className={`bonsai-node bonsai-node--${frontier.tone}${selected ? " is-selected" : ""}`}
       aria-label={`${frontier.id}: ${frontier.title}. ${toneCopy[frontier.tone].meaning}`}
+      title={`Inspect ${frontier.id}: ${frontier.title}`}
     >
       <Handle type="source" position={Position.Top} className="branch-handle" />
       <span className={`botanical-mark botanical-mark--${frontier.tone}`} aria-hidden="true" />
@@ -71,6 +74,8 @@ function BonsaiNode({ data }: NodeProps<BonsaiFlowNode>) {
   );
 }
 const nodeTypes = { bonsai: BonsaiNode };
+
+type MapScope = "neighborhood" | "all";
 
 function edgeTreatment(relation: string) {
   const lower = relation.toLowerCase();
@@ -190,6 +195,13 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
   const [selectedId, setSelectedId] = useState("G0");
   const [tone, setTone] = useState<"all" | BonsaiTone>("all");
   const [query, setQuery] = useState("");
+  const [mapScope, setMapScope] = useState<MapScope>("neighborhood");
+  const [flowInstance, setFlowInstance] = useState<ReactFlowInstance | null>(null);
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "failed">("idle");
+  const [hashReady, setHashReady] = useState(false);
+  const canvasRef = useRef<HTMLElement>(null);
+  const inspectorRef = useRef<HTMLElement>(null);
+  const previousView = useRef({ mapScope, tone });
 
   const nodesById = useMemo(
     () => new Map(data.nodes.map((node) => [node.id, node])),
@@ -197,18 +209,72 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
   );
   const selected = nodesById.get(selectedId) ?? data.nodes[0];
 
-  const visibleNodes = useMemo(() => {
+  useEffect(() => {
+    const selectFromHash = () => {
+      const id = new URLSearchParams(window.location.hash.slice(1)).get("node");
+      if (id && nodesById.has(id)) {
+        setSelectedId(id);
+        setCopyState("idle");
+      }
+    };
+    const timer = window.setTimeout(() => {
+      selectFromHash();
+      setHashReady(true);
+    }, 0);
+    window.addEventListener("hashchange", selectFromHash);
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("hashchange", selectFromHash);
+    };
+  }, [nodesById]);
+
+  useEffect(() => {
+    if (!hashReady) return;
+    const nextHash = `#node=${encodeURIComponent(selected.id)}`;
+    if (window.location.hash !== nextHash) {
+      window.history.replaceState(
+        null,
+        "",
+        `${window.location.pathname}${window.location.search}${nextHash}`,
+      );
+    }
+  }, [hashReady, selected.id]);
+
+  const searchResults = useMemo(() => {
     const needle = query.trim().toLowerCase();
+    if (!needle) return [];
+    const score = (node: FrontierNode) => {
+      const id = node.id.toLowerCase();
+      const title = node.title.toLowerCase();
+      if (id === needle) return 0;
+      if (id.startsWith(needle)) return 1;
+      if (title.startsWith(needle)) return 2;
+      return 3;
+    };
+    return data.nodes
+      .filter((node) =>
+        `${node.id} ${node.title} ${node.exactStatus}`.toLowerCase().includes(needle),
+      )
+      .sort((left, right) => score(left) - score(right) || left.id.localeCompare(right.id))
+      .slice(0, 8);
+  }, [data.nodes, query]);
+
+  const neighborhoodIds = useMemo(() => {
+    const ids = new Set([selected.id]);
+    for (const edge of data.edges) {
+      if (edge.source === selected.id) ids.add(edge.target);
+      if (edge.target === selected.id) ids.add(edge.source);
+    }
+    return ids;
+  }, [data.edges, selected.id]);
+
+  const visibleNodes = useMemo(() => {
     return data.nodes.filter((node) => {
-      const toneMatch = tone === "all" || node.tone === tone;
-      const queryMatch =
-        !needle ||
-        `${node.id} ${node.title} ${node.exactStatus}`
-          .toLowerCase()
-          .includes(needle);
-      return toneMatch && queryMatch;
+      const scopeMatch = mapScope === "all" || neighborhoodIds.has(node.id);
+      const toneMatch = tone === "all" || node.tone === tone || node.id === selected.id;
+      return scopeMatch && toneMatch;
     });
-  }, [data.nodes, query, tone]);
+  }, [data.nodes, mapScope, neighborhoodIds, selected.id, tone]);
 
   const visibleIds = useMemo(
     () => new Set(visibleNodes.map((node) => node.id)),
@@ -225,6 +291,73 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
     () => layoutGraph(visibleNodes, visibleEdges, selectedId),
     [selectedId, visibleEdges, visibleNodes],
   );
+
+  const selectNode = useCallback(
+    (
+      id: string,
+      { keepMapScope = false, revealInspector = false } = {},
+    ) => {
+      if (!nodesById.has(id)) return;
+      setSelectedId(id);
+      setCopyState("idle");
+      setQuery("");
+      if (!keepMapScope) setMapScope("neighborhood");
+      if (revealInspector && window.innerWidth <= 1080) {
+        window.setTimeout(() => {
+          inspectorRef.current?.scrollIntoView({
+            behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+              ? "auto"
+              : "smooth",
+            block: "start",
+          });
+        }, 120);
+      }
+    },
+    [nodesById],
+  );
+
+  useEffect(() => {
+    if (!flowInstance || flow.nodes.length === 0) return;
+    const prior = previousView.current;
+    const shouldFit =
+      mapScope === "neighborhood" ||
+      prior.mapScope !== mapScope ||
+      prior.tone !== tone;
+    previousView.current = { mapScope, tone };
+    if (!shouldFit) return;
+    const timer = window.setTimeout(() => {
+      void flowInstance.fitView({
+        nodes: flow.nodes,
+        padding: mapScope === "neighborhood" ? 0.24 : 0.06,
+        maxZoom: mapScope === "neighborhood" ? 0.95 : 0.22,
+        duration: 420,
+      });
+    }, 60);
+    return () => window.clearTimeout(timer);
+  }, [flow.nodes, flowInstance, mapScope, selectedId, tone]);
+
+  const focusSelected = useCallback(() => {
+    if (!flowInstance) return;
+    const selectedFlowNode = flow.nodes.find((node) => node.id === selected.id);
+    if (!selectedFlowNode) return;
+    void flowInstance.fitView({
+      nodes: [selectedFlowNode],
+      padding: 1.5,
+      maxZoom: 1.08,
+      duration: 380,
+    });
+  }, [flow.nodes, flowInstance, selected.id]);
+
+  const copyNodeLink = useCallback(async () => {
+    const url = `${window.location.origin}${window.location.pathname}${window.location.search}#node=${encodeURIComponent(selected.id)}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopyState("copied");
+      window.setTimeout(() => setCopyState("idle"), 1800);
+    } catch {
+      setCopyState("failed");
+    }
+  }, [selected.id]);
 
   const inbound = data.edges.filter((edge) => edge.target === selected.id);
   const outbound = data.edges.filter((edge) => edge.source === selected.id);
@@ -244,9 +377,15 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
             The Krenn–Gu programme, grown directly from its canonical frontier.
           </p>
         </div>
-        <div className="global-status" aria-label={`Global status ${data.globalStatus}`}>
-          <span className="pulse" aria-hidden="true" />
-          Global conjecture <strong>{data.globalStatus}</strong>
+        <div className="header-actions">
+          <Link className="field-notes-link" href="/field-notes">
+            <span>Field notes</span>
+            Public agent log →
+          </Link>
+          <div className="global-status" aria-label={`Global status ${data.globalStatus}`}>
+            <span className="pulse" aria-hidden="true" />
+            Global conjecture <strong>{data.globalStatus}</strong>
+          </div>
         </div>
       </header>
 
@@ -276,52 +415,133 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
       </section>
 
       <div className="workspace">
-        <section className="canvas-panel" aria-label="Interactive proof topology">
+        <section
+          className="canvas-panel"
+          aria-label="Interactive proof topology"
+          ref={canvasRef}
+        >
           <div className="canvas-toolbar">
-            <label className="search-box">
-              <span className="sr-only">Search proof nodes</span>
-              <span aria-hidden="true">⌕</span>
-              <input
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="Find a node, theorem, or obligation…"
-              />
-              {query && (
-                <button type="button" onClick={() => setQuery("")} aria-label="Clear search">
-                  ×
-                </button>
+            <div className="search-shell">
+              <label className="search-box">
+                <span className="sr-only">Search proof nodes</span>
+                <span aria-hidden="true">⌕</span>
+                <input
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Escape") setQuery("");
+                    if (event.key === "Enter" && searchResults[0]) {
+                      event.preventDefault();
+                      selectNode(searchResults[0].id, { revealInspector: true });
+                    }
+                  }}
+                  placeholder="Find a node, theorem, or obligation…"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-expanded={Boolean(query.trim())}
+                  aria-controls="proof-search-results"
+                />
+                {query && (
+                  <button type="button" onClick={() => setQuery("")} aria-label="Clear search">
+                    ×
+                  </button>
+                )}
+              </label>
+              {query.trim() && (
+                <div
+                  className="search-results"
+                  id="proof-search-results"
+                  aria-label="Matching proof nodes"
+                >
+                  {searchResults.length ? (
+                    searchResults.map((node) => (
+                      <button
+                        type="button"
+                        onClick={() => selectNode(node.id, { revealInspector: true })}
+                        key={node.id}
+                      >
+                        <span
+                          className={`botanical-mark botanical-mark--${node.tone}`}
+                          aria-hidden="true"
+                        />
+                        <span className="search-result-copy">
+                          <strong>{node.id}</strong>
+                          <span>{node.title}</span>
+                        </span>
+                        <small>{toneCopy[node.tone].singular}</small>
+                      </button>
+                    ))
+                  ) : (
+                    <p>No matching node. Try an ID such as U7G or a theorem phrase.</p>
+                  )}
+                </div>
               )}
-            </label>
-            <div className="view-count" aria-live="polite">
-              Showing {visibleNodes.length} of {data.nodes.length}
-              {(tone !== "all" || query) && (
+            </div>
+            <div className="toolbar-cluster">
+              <div className="map-mode" role="group" aria-label="Map scope">
                 <button
                   type="button"
-                  onClick={() => {
-                    setTone("all");
-                    setQuery("");
-                  }}
+                  aria-pressed={mapScope === "neighborhood"}
+                  onClick={() => setMapScope("neighborhood")}
                 >
-                  Reset
+                  Nearby
                 </button>
-              )}
+                <button
+                  type="button"
+                  aria-pressed={mapScope === "all"}
+                  onClick={() => setMapScope("all")}
+                >
+                  Whole map
+                </button>
+              </div>
+              <div className="view-count" aria-live="polite">
+                Showing {visibleNodes.length} of {data.nodes.length}
+                {tone !== "all" && (
+                  <button type="button" onClick={() => setTone("all")}>
+                    Reset status
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 
           <div className="graph-stage">
+            <div className="map-instructions" aria-live="polite">
+              <strong>
+                {mapScope === "neighborhood"
+                  ? `${selected.id} · one-edge neighborhood`
+                  : "Whole proof topology"}
+              </strong>
+              <span>
+                {mapScope === "neighborhood"
+                  ? "Select a connected node to walk the proof."
+                  : "Search to jump somewhere, or zoom in to inspect a branch."}
+              </span>
+            </div>
             <ReactFlow
               nodes={flow.nodes}
               edges={flow.edges}
               nodeTypes={nodeTypes}
-              onNodeClick={(_, node) => setSelectedId(node.id)}
+              onInit={setFlowInstance}
+              onNodeClick={(_, node) =>
+                selectNode(node.id, {
+                  keepMapScope: mapScope === "all",
+                  revealInspector: true,
+                })
+              }
               fitView
-              fitViewOptions={{ padding: 0.12, maxZoom: 0.86 }}
-              minZoom={0.12}
+              fitViewOptions={{
+                padding: mapScope === "neighborhood" ? 0.24 : 0.06,
+                maxZoom: mapScope === "neighborhood" ? 0.95 : 0.22,
+              }}
+              minZoom={0.025}
               maxZoom={1.8}
               nodesDraggable={false}
               nodesConnectable={false}
               elementsSelectable
-              panOnScroll
+              panOnScroll={false}
+              zoomOnScroll={false}
+              preventScrolling={false}
               zoomOnDoubleClick={false}
               onlyRenderVisibleElements
             >
@@ -355,28 +575,65 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
           <div className={`maintenance-note${maintenanceCount ? " has-findings" : ""}`}>
             <span aria-hidden="true">{maintenanceCount ? "△" : "✓"}</span>
             <p>
-              <strong>{maintenanceCount ? "Source maintenance visible" : "Source topology aligned"}</strong>
-              {data.health.missingFromMermaid.length > 0 && (
-                <> · {data.health.missingFromMermaid.join(", ")} absent from the Mermaid block</>
+              {maintenanceCount ? (
+                <>
+                  <strong>Source maintenance visible</strong>
+                  {data.health.missingFromMermaid.length > 0 && (
+                    <> · {data.health.missingFromMermaid.join(", ")} absent from the Mermaid block</>
+                  )}
+                  {data.health.missingFromNodeKey.length > 0 && (
+                    <> · {data.health.missingFromNodeKey.join(", ")} absent from the node key</>
+                  )}
+                  {data.health.unlinkedNodeIds.length > 0 && (
+                    <> · {data.health.unlinkedNodeIds.join(", ")} has no typed edge</>
+                  )}
+                  {data.health.unknownEdgeNodeIds.length > 0 && (
+                    <> · unknown edge references: {data.health.unknownEdgeNodeIds.join(", ")}</>
+                  )}
+                  . The bonsai never invents a missing relationship.
+                </>
+              ) : (
+                <>
+                  <strong>Source topology aligned</strong> · Mermaid labels, node key, and typed edges
+                  agree. The map preserves each node’s exact scope.
+                </>
               )}
-              {data.health.unlinkedNodeIds.length > 0 && (
-                <> · {data.health.unlinkedNodeIds.join(", ")} has no typed edge</>
-              )}
-              {data.health.unknownEdgeNodeIds.length > 0 && (
-                <> · unknown edge references: {data.health.unknownEdgeNodeIds.join(", ")}</>
-              )}
-              . The bonsai includes node-key entries and never invents missing relationships.
             </p>
           </div>
         </section>
 
-        <aside className="inspector" aria-label="Selected proof node">
+        <aside
+          className="inspector"
+          aria-label="Selected proof node"
+          id="node-inspector"
+          ref={inspectorRef}
+        >
+          <button
+            type="button"
+            className="back-to-map"
+            onClick={() => canvasRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
+          >
+            ← Back to map
+          </button>
           <div className="inspector-heading">
             <span className={`botanical-mark botanical-mark--${selected.tone}`} aria-hidden="true" />
             <div>
               <p>{toneCopy[selected.tone].singular} · {selected.id}</p>
               <h2>{selected.title}</h2>
             </div>
+          </div>
+
+          <div className="inspector-actions">
+            <button type="button" onClick={focusSelected}>
+              Locate on map
+            </button>
+            <button type="button" onClick={copyNodeLink} aria-live="polite">
+              {copyState === "copied"
+                ? "Link copied"
+                : copyState === "failed"
+                  ? "Copy failed"
+                  : "Copy node link"}
+            </button>
           </div>
 
           <div className={`scope-banner scope-banner--${selected.tone}`}>
@@ -431,13 +688,13 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
             title="Grows from"
             edges={inbound}
             nodesById={nodesById}
-            onSelect={setSelectedId}
+            onSelect={(id) => selectNode(id)}
           />
           <BranchList
             title="Branches toward"
             edges={outbound}
             nodesById={nodesById}
-            onSelect={setSelectedId}
+            onSelect={(id) => selectNode(id)}
           />
         </aside>
       </div>

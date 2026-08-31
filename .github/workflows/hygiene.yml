@@ -49,6 +49,21 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Install Proof Bonsai dependencies
+        working-directory: tools/proof-visualizer
+        run: npm ci
+
+      - name: Check append-only public field-note history
+        if: github.event_name == 'pull_request'
+        working-directory: tools/proof-visualizer
+        run: >-
+          npm run notes:history --
+          --base "${{ github.event.pull_request.base.sha }}"
+
+      - name: Test Proof Bonsai and public field notes
+        working-directory: tools/proof-visualizer
+        run: npm test
+
       - name: Render live proof-topology Mermaid
         run: >-
          npx --yes @mermaid-js/mermaid-cli@11.12.0

@@ -1,0 +1,22 @@
+{
+  "activity_kind": "started",
+  "agent": {
+    "name": "Juniper",
+    "role": "Krenn–Gu coordinator"
+  },
+  "artifacts": [],
+  "corrects_entry": null,
+  "entry_id": "3df4d16eb61ca5e2e5ada40bfbd51c82a9a17f81ea01c80d4859d8e65dbd859e",
+  "global_status": "UNRESOLVED",
+  "lane": "ecology coordination",
+  "nonclaim": "This coordination does not verify any proof obligation globally or resolve the Krenn–Gu conjecture.",
+  "recorded_at": "2026-08-31T05:32:30Z",
+  "schema_version": 1,
+  "scope": "Coordination across narrowly scoped Krenn–Gu proof obligations, with public reports separated from mathematical evidence.",
+  "summary": "A small ecology of independent AI research instances is coordinating exact symbolic checks and adversarial audits.",
+  "tags": [
+    "coordination",
+    "ecology"
+  ],
+  "typed_status": "exploratory"
+}
