@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "certificate_id": "GLD105-A0-H4-Q6-physical-incidence-parent-composition",
+  "status": "candidate_exact_scoped_characteristic_zero_composition",
+  "global_conjecture": "UNRESOLVED",
+  "mathematical_scope": {
+    "field": "C",
+    "chart": "normalized scale-fixed equal-leaf H4 GLD88/F88 offset chart",
+    "assumptions": [
+      "a=0",
+      "Q6(p,q)=0",
+      "Omega*Delta(p,q)!=0",
+      "equal-leaf incidence equations vanish",
+      "rank(A)<=6"
+    ],
+    "conclusion": "the normalized physical incidence is empty",
+    "set_statement": "B_incidence intersect V(I_7(A)) intersect V(a,Q6) intersect D(Omega*Delta) = empty",
+    "nonclaims": [
+      "P6 selected-minor closure",
+      "Omega=0 or Delta=0 boundaries",
+      "arbitrary a or the full E31=0 wall",
+      "arbitrary H4 Q6 points outside the written F88-offset chart",
+      "the GLD83 pulled-back Fitting ideal",
+      "other pivots, charts, gauges, components, or source branches",
+      "source integrability, target attachment, graph lifting, or global gluing",
+      "other roots or graph orders",
+      "global Krenn-Gu resolution"
+    ]
+  },
+  "notation_fences": {
+    "B_incidence": "the equal-leaf incidence ideal; not the scalar offset B",
+    "B_offset": "the GLD88 affine offset in b=b88+B",
+    "C_center": "the vectorized physical 3-by-3 center with C_center[8]=1; not the scalar offset C",
+    "C_offset": "the GLD88 affine offset in c=c88+C",
+    "H2deg": "2*p^2-2*p+1, the Q6 leading-coefficient/degree-drop polynomial",
+    "GLD86_H2_collision": "p-s=L1/(p+q-1), a different leaf-collision divisor already nonzero on D(Delta)",
+    "Delta": "(p-q)*(p+q-1)*(p^2-p+1)*L1*L2*e",
+    "Omega": "the retained physical frame, leaf, and center determinant gate"
+  },
+  "case_split": {
+    "polynomial": "H2deg=2*p^2-2*p+1",
+    "exhaustive_cases": [
+      "H2deg!=0",
+      "H2deg=0"
+    ],
+    "H2deg_open": {
+      "upstream_incidence_bridge": "GLD75/GLD86",
+      "rank_consequence": "B_incidence=0, rank(A)<=6, and C_center[8]=1 imply rank(M(G))<=6",
+      "offset_handler": "GLD104",
+      "offset_conclusion": "B_offset=C_offset=0",
+      "endpoint_handler": "GLD95",
+      "endpoint_conclusion": "the resulting physical low-rank incidence at the F88 point is excluded on D(Omega*Delta)"
+    },
+    "H2deg_zero": {
+      "handler": "GLD99",
+      "scope": "H2deg=Q6=0 on D(Omega*Delta), arbitrary a in the normalized F88-offset chart",
+      "conclusion": "the physical incidence is empty, hence also at a=0"
+    }
+  },
+  "dependency_roles": {
+    "GLD86": "exact incidence-to-full-syndrome rank bridge on the scale-fixed equal-leaf chart",
+    "GLD104": "H2deg-open a=0 rank-at-most-six implication forcing both affine offsets to zero",
+    "GLD95": "written-F88 Q6 endpoint exclusion on D(Omega*Delta), including direct H2deg treatment",
+    "GLD99": "complete H2deg=0 physical-incidence exclusion on D(Omega*Delta) for arbitrary a"
+  },
+  "source_pins_lf_sha256": {
+    "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_P8_NONZERO_OFFSET_CLOSURE_THEOREM.md": "a7ab76be0ccd3b65631464c683178156180329755ea0563cc135a7a51798526f",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_a0_p8_nonzero_offset_closure.py": "80a77326fd4a74aeda206796f922d013c22affcd64258960d9cb68b5cb6e8e22",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_a0_p8_nonzero_offset_closure.py": "3a26559327dc1dd633250ce9f4f896a80a0ac5550a5046fb63babef632eddbae",
+    "claims/arbitrary-order/certificates/GLD104_A0_P8_NONZERO_OFFSET_COMPOSITION_CERTIFICATE.json": "7a68ae95177c50f96725849ca73f01fba5eba18a121e4500acf5d22a6dc282e5",
+    "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_P8_NONZERO_OFFSET_CLOSURE_REVIEW_2026-08-31.md": "b279e1f07aa39278cf000ada4f96433628a68a4c4bcae7760bb440a094bbe158",
+    "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_H2_DEGREE_DROP_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md": "f5fd49a6ff039f128f83b89bc3a7019c201001c54ba33223b2ac71e3e2289708",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_h2_degree_drop_six_minor_offset_exclusion.py": "8626e875bc162e79a6abe5ddfffa2a3dcf7f09b21e4de8df25fe146d9f5a2347",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_h2_degree_drop_six_minor_offset_exclusion.py": "d41178a72731eff4d1d0eeb63d70224a58cea62b1f1336f0aa6d123120226e48",
+    "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_H2_DEGREE_DROP_SIX_MINOR_OFFSET_EXCLUSION_REVIEW_2026-08-29.md": "1bd76cb185ea4acc8a49c4f41bf18d1cf1b88c501e1b74bbb1d4de4362344a6d",
+    "tests/test_gld99_evidence_status.py": "38733a97e3257ed61ac542c0c798694c720e9b65274759558a63a8bb06f89d28",
+    "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_FINITE_COMMON_MINOR_EXCLUSION_THEOREM.md": "1c7074a3a6c6e740832f58c37757be8231f104fa8661c05476a516302e79e1c8",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_finite_common_minor_exclusion.py": "2eef9d94f251dce77b36f8d4dde479928d43087828583c3d59e52dae58c280a1",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_finite_common_minor_exclusion.py": "425ca5238bc86f566cfa370be78688d7232bf1a1da13358bb67a677c6db0778f",
+    "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_FINITE_COMMON_MINOR_EXCLUSION_REVIEW_2026-08-27.md": "e77ff35052b2ae6ccebcfea4aa0004d2764cf0d08c9f5d72f400be2f3913dba0",
+    "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_AT_MOST_SIX_SYNDROME_BOUNDARY_CONTAINMENT_THEOREM.md": "202c758ca9b7fcbf268f8ceefb425a0189cf3f7830a3a342d1546417fa103ff8",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_survivor_rank_at_most_six_syndrome_boundary_containment.py": "396b66f731f9d6ae67cc941fe77f57dfb09a9126c7231da4cd463264c4b9d991",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_survivor_rank_at_most_six_syndrome_boundary_containment.py": "313f4902c5ca699612491c807d8768c511b87c8957213756f0a0e152fc4d8799",
+    "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_SURVIVOR_RANK_AT_MOST_SIX_SYNDROME_BOUNDARY_CONTAINMENT_REVIEW_2026-08-27.md": "07f1b7f0df8fb3cb1949aa5bca577f6809c382f466fe3e5688c10d30aa753e6b",
+    "claims/arbitrary-order/four_root_torus_star_survivor_locus_symmetry_and_local_germ_certificates.json": "05a2540431023b7add3d3ae60189cac31ebd375609911cfdc66b8c4028346b57"
+  },
+  "proof_topology": [
+    "Assume a normalized a=0, Q6=0 physical incidence point on D(Omega*Delta) with rank(A)<=6.",
+    "The exact GLD75/GLD86 bridge, B_incidence=0, and C_center[8]=1 make the full GLD71 syndrome rank at most six.",
+    "Split on the polynomial H2deg=2*p^2-2*p+1; these two cases exhaust every complex point.",
+    "If H2deg!=0, GLD104 applies on D(H2deg*Delta) and forces B_offset=C_offset=0.",
+    "Zero offsets identify the written GLD88/F88 endpoint with the same a,p,q and Q6 values.",
+    "GLD95 excludes that endpoint on D(Omega*Delta), contradicting the assumed physical incidence point.",
+    "If H2deg=0, GLD99 directly excludes the physical incidence on D(Omega*Delta), for arbitrary a and hence at a=0.",
+    "Both exhaustive cases are impossible, proving only the normalized GLD105 physical-incidence statement; every listed wider obligation remains open."
+  ],
+  "provenance": {
+    "origin_main_base": "dd2ec67e5af7a90625df59ffc7eb659bbee47b75",
+    "accepted_GLD104_promotion_commit": "7587b2ffa1d1087b3229b5fc1086b3c4e8ae71ed",
+    "accepted_GLD104_promotion_tree": "6eb51ae8100668c5f7bb8b03e77462e410958b04",
+    "GLD104_promotion_request": "kgc_01M1BZFCT02WSZX77WQ225BM7M",
+    "GLD104_promotion_receipts": {
+      "Juniper": "kgc_01M1BZMMMZ9D8VSHY1SEPC1A2A",
+      "Mycelium": "kgc_01M1BZYXF8BQAC4ACE4HC6E07W"
+    },
+    "coordination_receipts_are_not_mathematical_dependencies": true
+  },
+  "external_consolidation": {
+    "required_before_promotion": true,
+    "candidate_commit": null,
+    "candidate_tree": null,
+    "request_event_id": null,
+    "receipts": {},
+    "status": "pending",
+    "frontier_update_allowed": false,
+    "theorem_ledger_update_allowed": false
+  }
+}
