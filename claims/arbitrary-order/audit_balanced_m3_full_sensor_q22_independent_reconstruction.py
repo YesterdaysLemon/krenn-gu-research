@@ -731,7 +731,7 @@ def vertex_record_projection(record: dict[str, object]) -> dict[str, object]:
     }
 
 
-def audit_declared_equality_symmetries(
+def audit_selected_equality_symmetries(
     data: dict[str, object], descriptors: list[dict[str, object]]
 ) -> dict[str, object]:
     swap_two_three = (0, 1, 3, 2)
@@ -755,13 +755,21 @@ def audit_declared_equality_symmetries(
         if item["record_index"] == 50 and item["c_rank"] == 2
     }
     assert record_50_one_lines == {(2,), (3,)}
-    declared_orbit_count = len(descriptors) - 2
-    assert len(descriptors) == 9 and declared_orbit_count == 7
+    candidate_declared_orbit_count = len(descriptors) - 2
+    assert len(descriptors) == 9 and candidate_declared_orbit_count == 7
     return {
         "record_8_to_36_vertex_permutation": swap_two_three,
         "record_50_one_line_vertex_permutation": swap_two_three,
         "equality_strata": len(descriptors),
-        "declared_orbits": declared_orbit_count,
+        "candidate_declared_orbits_from_selected_identifications": (
+            candidate_declared_orbit_count
+        ),
+        "full_symmetry_action_enumerated": False,
+        "scope": (
+            "checks the two displayed vertex-swap identifications only; does "
+            "not enumerate the full chart/common-vertex/colour symmetry action "
+            "or prove separation of the remaining candidate orbits"
+        ),
     }
 
 
@@ -960,7 +968,7 @@ def run(path: Path, progress: bool) -> dict[str, object]:
         equality_signature(descriptor) for descriptor in equality_components
     )
     assert equality_signatures == EXPECTED_EQUALITY_SIGNATURES
-    equality_symmetry_audit = audit_declared_equality_symmetries(
+    equality_symmetry_audit = audit_selected_equality_symmetries(
         data, equality_components
     )
     return {

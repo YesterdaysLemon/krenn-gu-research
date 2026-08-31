@@ -29,8 +29,8 @@ q=`20/21/22`; no derived Kestrel output or failure ledger is an input.
 
 The two durable, independently written scripts are:
 
-- [`audit_balanced_m3_full_sensor_q22_independent_reconstruction.py`](../../claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py), SHA-256 `f3bbf3d257081a2b071755102414119423c6762b05cdbd94698c691b6b449bbf`;
-- [`audit_balanced_m3_full_sensor_q20_exact_fixtures.py`](../../claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py), SHA-256 `c7e8e424dea2a4a2f1fc7f5e2fd531b70d5a386648ca668a1005d43103ca65c8`.
+- [`audit_balanced_m3_full_sensor_q22_independent_reconstruction.py`](../../claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py), SHA-256 `d6c4437f3acf4cc45d32f31bd403d3be4c12224d0513dbc1178310b8a2cd0347`;
+- [`audit_balanced_m3_full_sensor_q20_exact_fixtures.py`](../../claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py), SHA-256 `801846ae6e70e26812f0fad334dd9820c712d185e54e97881917a9c206f4ad4e`.
 
 The first imports only the standard library and NumPy, and no repository or
 Kestrel module.  The second imports only the standard library and SymPy, and
@@ -91,13 +91,13 @@ record  (Delta,c_rank)  edge-rank vector              description
 431     (9,2)           (1,1,2,1,2,2)
 ```
 
-Under the declared vertex symmetries, `8` and `36` form one orbit, the two
-single-line orientations in record `50` form one orbit, and the remaining
-five rows are singleton orbits: seven declared orbits in total.  These are
-finite ledger strata, not a claim that every rank-degenerate component is
-classified.  The script verifies both nontrivial orbit identifications by the
-explicit vertex swap `2 <-> 3`, rather than trusting a separately prepared
-orbit label.
+The script verifies two selected identifications by the explicit vertex swap
+`2 <-> 3`: records `8` and `36`, and the two single-line orientations in
+record `50`.  Applying only those displayed identifications leaves seven
+candidate classes among the nine strata.  The audit does **not** enumerate the
+full chart/common-vertex/colour symmetry action or independently prove that
+the remaining five rows are distinct orbits.  These are finite ledger strata,
+not a claim that every rank-degenerate component is classified.
 
 ### Corrected option census
 
@@ -166,7 +166,9 @@ For the diagonal-complete `m=4` B_all boundary, the audit symbolically
 constructs eight companion columns.  Seven non-all-cross columns are
 divisible by the common quadratic `Q=x^2+y^2+z^2`; an exact numeric
 specialization has sensor rank seven, so the column defect is one.  It
-recomputes rank seven for all 70 ordered balanced `4|4` cuts.  The direct
+recomputes rank seven for all 70 unordered four-root subsets, representing
+the complementary balanced `4|4` cuts; complementation supplies the mate
+orientation in this diagonal-complete construction.  The direct
 coefficient checks give pure coefficient `105`, mixed coefficient `15`, and
 ratio `1/7`; at `m=3` the threshold sensor rank is four.  This confirms the
 known diagonal-complete ambient B_all mechanism and its mixed-word failure;
@@ -178,18 +180,18 @@ witness equations.
 From the repository root, the bounded runs were:
 
 ```powershell
-python tools/research/run_bounded.py --run-id kestrel-s3-independent-q22-audit-review-v2 --timeout-seconds 240 --memory-mb 4096 --run-root .research-runs --cwd . -- python claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py
-python tools/research/run_bounded.py --run-id kestrel-s3-independent-exact-fixture-audit-v2 --timeout-seconds 60 --memory-mb 4096 --run-root .research-runs --cwd . -- python claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py
+python tools/research/run_bounded.py --run-id kestrel-s3-independent-q22-p2-scope-v3 --timeout-seconds 240 --memory-mb 4096 --run-root .research-runs --cwd . -- python claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py
+python tools/research/run_bounded.py --run-id kestrel-s3-independent-exact-fixture-p2-scope-v3 --timeout-seconds 60 --memory-mb 4096 --run-root .research-runs --cwd . -- python claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py
 python -m py_compile claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py
 python -m ruff check --output-format concise claims/arbitrary-order/audit_balanced_m3_full_sensor_q22_independent_reconstruction.py claims/arbitrary-order/audit_balanced_m3_full_sensor_q20_exact_fixtures.py
 ```
 
 Both bounded runs returned exit code zero and `PASS`.  The q<=22 run took
-113.205 seconds (runner PID 39308, child PID 4572); its `run.json` has
-SHA-256 `2acab9640e3abeb8c208291b6e3385af015e0ab6b25b0cefef9aed1bd4bf1875`.
-The exact fixture run took 4.037 seconds (runner PID 18776, child PID 36556);
+138.882 seconds (runner PID 5964, child PID 12524); its `run.json` has
+SHA-256 `aec192ea545a40bb218e9abcc5235fe355ac1b309140ca1a8087b2244461b7a4`.
+The exact fixture run took 4.293 seconds (runner PID 42768, child PID 38508);
 its `run.json` has SHA-256
-`8ad8efe7c8797aba7e40f9676f63e0694b082c7040f7d7c4288eb532ff39e662`.
+`3b5f5696184b0f8aaa43dff942b5b437c5ce1fdc5873c1902f3625e3d7149f2c`.
 All four processes exited before this audit package was finalized.  Other
 workers observed on the host were not stopped or modified.
 

@@ -4,6 +4,14 @@
 
 **Candidate parent-level argument under hostile review.  Not a theorem.**
 
+The
+[final hostile audit of immutable commit `4a531a3`](../../docs/audits/EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_RANK_DEGENERACY_FINAL_HOSTILE_AUDIT_4A531A3_2026-08-30.md)
+found no P0/P1 defect and passed the package as candidate evidence, but placed
+a **HOLD on theorem promotion**.  This revision corrects the audit's P2
+evidence-language findings.  It does not remove the HOLD: the geometric
+component exhaustion and source-irreducibility bridge remains a mathematical
+candidate, not a scheme-theoretically verified theorem.
+
 This note records a proposed completion of the rank-degeneracy obligation
 left open by the
 [four-`K5` support-Segre generic-rank census](EIGHT_VERTEX_FOUR_FIVE_SET_PENCIL_SUPPORT_SEGRE_GENERIC_RANK_CENSUS_THEOREM.md).
@@ -350,15 +358,16 @@ zero and creates no active ruling event.  The per-record certificate pins each
 record by its canonical SHA-256 digest and pins the ordered failure ledger by
 one aggregate digest.
 
-An independent read-only reconstruction did not read that zero-certificate
-script, output, or failure ledger.  Starting from the accepted census
-definitions and the pinned near-frontier input, it reproduced the chain as
-`8,419` wrong active-count failures plus `413` non-complementary-pair failures,
-then a synchronized-passive histogram `0:1, 1:31, 2:18`, followed by zero
-non-automatic survivors.  The eighteen terminal records split six each among
-active support-plane types `(3,5)`, `(6,5)`, and `(6,3)`; every active
-structural rank is exactly two.  The independent canonical digest of the
-ordered `8,882` `q=23` records is pinned in Section 8.
+An untracked read-only reviewer reconstruction did not read the primary
+zero-certificate script, output, or failure ledger.  It reproduced the chain
+as `8,419` wrong-active-count failures plus `413` non-complementary-pair
+failures, then a synchronized-passive histogram `0:1, 1:31, 2:18`, followed by
+zero non-automatic survivors.  The eighteen terminal records split six each
+among active support-plane types `(3,5)`, `(6,5)`, and `(6,3)`; every active
+structural rank was two.  This is historical review context only: no durable
+no-import `q=23` carrier is committed, and no independent-evidence gate is
+claimed for it.  The durable `q=23` evidence is the primary exact extractor,
+canonical record digest, and zero-certificate replay pinned in Section 8.
 
 Consequently, conditional on the charge lemma, generic `q>=23` remains at
 least `21`, and every equality or sub-`20` threat comes from the exactly `547`
@@ -562,27 +571,37 @@ and
 The independent evidence package is documented in the
 [q<=22 reconstruction audit](../../docs/audits/BALANCED_M3_FULL_SENSOR_Q22_INDEPENDENT_RECONSTRUCTION_AUDIT_2026-08-30.md).
 Its no-import finite-field reconstruction script has SHA-256
-`f3bbf3d257081a2b071755102414119423c6762b05cdbd94698c691b6b449bbf`;
-it independently extracts and asserts the nine strata and their seven
-declared symmetry orbits.  Its bounded `run.json` SHA-256 is
-`2acab9640e3abeb8c208291b6e3385af015e0ab6b25b0cefef9aed1bd4bf1875`.
+`d6c4437f3acf4cc45d32f31bd403d3be4c12224d0513dbc1178310b8a2cd0347`;
+it independently extracts and asserts the nine strata and verifies the two
+displayed vertex-swap identifications used in the candidate seven-orbit list.
+It explicitly does not enumerate the full chart/common-vertex/colour symmetry
+action or prove separation of the remaining candidate orbits.  Its bounded
+`run.json` SHA-256 is
+`aec192ea545a40bb218e9abcc5235fe355ac1b309140ca1a8087b2244461b7a4`.
 The separate no-import characteristic-zero fixture/B_all script has SHA-256
-`c7e8e424dea2a4a2f1fc7f5e2fd531b70d5a386648ca668a1005d43103ca65c8`,
+`801846ae6e70e26812f0fad334dd9820c712d185e54e97881917a9c206f4ad4e`,
 and its bounded `run.json` SHA-256 is
-`8ad8efe7c8797aba7e40f9676f63e0694b082c7040f7d7c4288eb532ff39e662`.
+`3b5f5696184b0f8aaa43dff942b5b437c5ce1fdc5873c1902f3625e3d7149f2c`.
 The first audit is independent finite-field evidence, not a second
 characteristic-zero proof.  The second shares the stated mathematical fixture
 recipe but imports no primary implementation.
 
-The evidence-promotion, independent-reconstruction, and exact-fixture gates
-are therefore closed for this candidate package.  Before theorem promotion,
-two requirements remain:
+The exact-replay, independent q<=22 reconstruction, and exact-fixture gates
+are closed only at candidate-evidence scope.  The final hostile audit passed
+that scope but held theorem promotion.  Before promotion, a later package must
+still supply or explicitly narrow all of the following and receive a new
+immutable-target audit:
 
-1. a final hostile proof audit of one immutable candidate commit, covering
-   the minimal-circuit, coordinate-incidence, cross-ratio-dominance,
-   subset-incidence, global-charge, and component-to-`B_all` arguments; and
-2. if that audit passes, the theorem/ledger/frontier promotion and the full
-   index-complete repository validation required by `AGENTS.md`.
+1. a theorem-grade geometric consolidation of the coordinate-incidence,
+   cross-ratio fibre-product, component exhaustion, and source-irreducibility
+   bridge used by the fixed-pencil codimension implication;
+2. either a durable no-import `q=23` carrier or an explicit acceptance that the
+   exact q=23 filter has primary evidence only;
+3. either a full symmetry-action/canonical-invariant audit or a theorem
+   statement that retains the nine labelled strata rather than claiming an
+   independently exhaustive seven-orbit quotient; and
+4. theorem/ledger/frontier promotion plus the full index-complete repository
+   validation required by `AGENTS.md` only after that new audit passes.
 
 Even after those gates close, seventy-pencil compatibility, the remaining
 target equations, and witness exclusion require separate work.
@@ -590,16 +609,17 @@ target equations, and witness exclusion require separate work.
 Until those gates close, the precise status is:
 
 ```text
-rank-degeneracy envelope (1):                CANDIDATE; FINAL HOSTILE AUDIT PENDING
+rank-degeneracy envelope (1):                CANDIDATE; HOSTILE AUDIT HOLD
 q<=22 event ledger:                          PRIMARY EXACT Q REPLAY PASSED;
                                               INDEPENDENT FINITE-FIELD AUDIT PASSED
-q=23 complementary-ruling elimination:       EXACT FILTER CERTIFICATE PASSED;
-                                              INDEPENDENT RECORD AUDIT PASSED
+q=23 complementary-ruling elimination:       PRIMARY EXACT FILTER PASSED;
+                                              NO DURABLE INDEPENDENT CARRIER
 seven equality-component orbits:             CANDIDATE EXHAUSTIVE LEDGER;
-                                              INDEPENDENT EXTRACTION PASSED
+                                              SELECTED-SWAP SPOT CHECKS ONLY
 B_all properness on seven sources:            PRIMARY AND INDEPENDENT EXACT
                                               FIXTURE AUDITS PASSED
-fixed-pencil B_all codimension >=9:           CANDIDATE PARENT-LEVEL RESULT
+fixed-pencil B_all codimension >=9:           CANDIDATE, CONDITIONAL ON GEOMETRIC
+                                              EXHAUSTION/IRREDUCIBILITY BRIDGE
 seventy-pencil compatibility:                 OPEN
 eight-vertex witness exclusion:               OPEN
 global Krenn--Gu conjecture:                  UNRESOLVED.

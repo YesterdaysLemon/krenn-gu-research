@@ -9,9 +9,10 @@ ruling fixture is a mechanism audit (active-active and active-structural), not
 a q<=22 survivor or a Krenn--Gu counterexample.
 
 The B_all calculation is intentionally scoped: it checks the exact m=4
-diagonal-complete family on all 70 ordered balanced 4|4 cuts and the symbolic
-quadratic divisibility behind the rank bound.  It does not classify arbitrary
-members of B_all or impose the full witness equations.
+diagonal-complete family on all 70 unordered four-root subsets, representing
+the complementary balanced 4|4 cuts, and the symbolic quadratic divisibility
+behind the rank bound.  It does not classify arbitrary members of B_all or
+impose the full witness equations.
 """
 
 from __future__ import annotations
@@ -540,7 +541,9 @@ def audit_b_all_diagonal_m4() -> dict[str, object]:
     for root_set in combinations(range(8), 4):
         # For the diagonal-complete graph, relabelling a cut gives the same
         # exact four-root companion formula.  Recompute its numeric rank for
-        # every ordered R|N cut rather than relying on one representative.
+        # every unordered root subset/complementary R|N cut rather than relying
+        # on one representative.  Complementation supplies the mate orientation
+        # in this diagonal-complete construction.
         nonroots = tuple(vertex for vertex in range(8) if vertex not in root_set)
         assert len(root_set) == len(nonroots) == 4
         _, cut_columns = companion_polynomials(
@@ -561,7 +564,7 @@ def audit_b_all_diagonal_m4() -> dict[str, object]:
         "quadratic_divisible_non_all_cross": divisible,
         "numeric_sensor_rank": numeric_rank,
         "column_rank_defect": len(symbolic_columns) - numeric_rank,
-        "ordered_balanced_cuts_checked": cuts_checked,
+        "unordered_complementary_balanced_cuts_checked": cuts_checked,
         "pure_coefficient": pure,
         "mixed_coefficient": mixed,
         "mixed_to_pure_ratio": "1/7",
