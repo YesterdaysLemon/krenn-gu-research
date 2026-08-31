@@ -5,13 +5,13 @@ import test from "node:test";
 const developmentPreviewMeta =
   /<meta(?=[^>]*\bname=["']codex-preview["'])(?=[^>]*\bcontent=["']development["'])[^>]*>/i;
 
-async function render() {
+async function render(pathname = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
 
   return worker.fetch(
-    new Request("http://localhost/", {
+    new Request(`http://localhost${pathname}`, {
       headers: { accept: "text/html" },
     }),
     {
@@ -41,6 +41,17 @@ test("server-renders the proof bonsai shell and scientific boundary", async () =
   assert.match(html, /refuted or retired/);
   assert.doesNotMatch(html, developmentPreviewMeta);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/);
+});
+test("server-renders the append-only public field notes boundary", async () => {
+  const response = await render("/field-notes");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /<title>Field Notes · Proof Bonsai<\/title>/i);
+  assert.match(html, /Agent report, not evidence/);
+  assert.match(html, /UNRESOLVED/);
+  assert.match(html, /old notes are never rewritten/i);
+  assert.match(html, /GLD101/);
+  assert.doesNotMatch(html, /progress percentage|solved fraction|confidence meter/i);
 });
 test("removes starter-only preview infrastructure", async () => {
   const [page, layout, packageJson] = await Promise.all([

@@ -126,6 +126,42 @@ h1 {
   box-shadow: 0 0 0 5px rgba(212, 168, 78, 0.1);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.field-notes-link {
+  display: grid;
+  gap: 2px;
+  padding: 9px 13px;
+  border: 1px solid rgba(169, 196, 154, 0.22);
+  border-radius: 12px;
+  background: rgba(21, 28, 20, 0.72);
+  color: #8f9d87;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: border-color 150ms ease, background 150ms ease, transform 150ms ease;
+}
+
+.field-notes-link span {
+  color: var(--moss-bright);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.field-notes-link:hover,
+.field-notes-link:focus-visible {
+  border-color: rgba(169, 196, 154, 0.55);
+  background: rgba(31, 42, 29, 0.9);
+  outline: none;
+  transform: translateY(-1px);
+}
+
 .status-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(170px, 1fr)) minmax(260px, 1.1fr);
@@ -680,6 +716,308 @@ h1 {
   font-size: 0.59rem;
 }
 
+.field-notes-page {
+  min-height: 100vh;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 9% 0%, rgba(88, 125, 73, 0.18), transparent 32%),
+    radial-gradient(circle at 91% 15%, rgba(149, 108, 66, 0.1), transparent 34%),
+    linear-gradient(180deg, #10140e 0%, #090c08 100%);
+}
+
+.field-notes-header,
+.field-notes-boundary,
+.field-notes-feed,
+.field-notes-outro {
+  width: min(1120px, 100%);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.field-notes-header nav {
+  margin-bottom: 24px;
+}
+
+.field-notes-header nav a {
+  color: var(--moss-bright);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  text-decoration: none;
+}
+
+.field-notes-header nav a:hover,
+.field-notes-header nav a:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+.field-notes-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.field-notes-heading .subtitle {
+  max-width: 680px;
+  line-height: 1.55;
+}
+
+.field-notes-boundary {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 26px;
+  margin-bottom: 16px;
+  padding: 15px 17px;
+  border: 1px solid rgba(212, 168, 78, 0.25);
+  border-radius: 15px;
+  background: rgba(36, 34, 21, 0.48);
+}
+
+.field-notes-boundary > span {
+  display: grid;
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 1px solid rgba(212, 168, 78, 0.45);
+  border-radius: 50%;
+  color: #e0b960;
+  font-family: Iowan Old Style, Baskerville, Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.field-notes-boundary h2,
+.field-notes-boundary p {
+  margin: 0;
+}
+
+.field-notes-boundary h2 {
+  color: #dfd2ba;
+  font-family: Iowan Old Style, Baskerville, Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.field-notes-boundary p {
+  margin-top: 5px;
+  color: #948c7f;
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.field-notes-feed {
+  display: grid;
+  gap: 12px;
+}
+
+.field-note {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(18, 22, 16, 0.92);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22);
+}
+
+.field-note-rail {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  border-right: 1px solid var(--line);
+  background: rgba(12, 15, 11, 0.55);
+}
+
+.field-note-rail span {
+  width: 11px;
+  height: 11px;
+  border: 2px solid #c99f4d;
+  border-radius: 50%;
+  background: #171a13;
+  box-shadow: 0 0 0 5px rgba(201, 159, 77, 0.08);
+}
+
+.field-note--scoped-repository-evidence .field-note-rail span {
+  border-color: var(--moss);
+  box-shadow: 0 0 0 5px rgba(117, 163, 106, 0.09);
+}
+
+.field-note--negative-result .field-note-rail span {
+  border-color: var(--scar);
+  box-shadow: 0 0 0 5px rgba(188, 96, 78, 0.09);
+}
+
+.field-note-body {
+  min-width: 0;
+  padding: 20px 22px 17px;
+}
+
+.field-note-meta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.field-note-meta > div {
+  display: grid;
+  gap: 2px;
+}
+
+.field-note-meta strong {
+  color: #e4dac7;
+  font-family: Iowan Old Style, Baskerville, Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.field-note-meta span,
+.field-note-meta time {
+  color: #777064;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.63rem;
+}
+
+.field-note-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 13px;
+}
+
+.field-note-labels span {
+  padding: 5px 8px;
+  border: 1px solid rgba(212, 202, 179, 0.11);
+  border-radius: 999px;
+  color: #948b7d;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.02em;
+}
+
+.field-note-labels span:nth-child(2) {
+  border-color: rgba(169, 196, 154, 0.2);
+  color: var(--moss-bright);
+}
+
+.field-note-body > h2 {
+  max-width: 880px;
+  margin: 16px 0 14px;
+  color: #eee5d5;
+  font-family: Iowan Old Style, Baskerville, Georgia, serif;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+}
+
+.field-note-scope {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.field-note-scope > div {
+  padding: 11px 12px;
+  border: 1px solid rgba(212, 202, 179, 0.08);
+  border-radius: 10px;
+  background: rgba(12, 15, 11, 0.58);
+}
+
+.field-note-scope dt {
+  margin-bottom: 5px;
+  color: #777064;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.field-note-scope dd {
+  margin: 0;
+  color: #b9b0a1;
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.field-note-correction {
+  margin: 11px 0 0;
+  padding: 10px 11px;
+  border-left: 3px solid var(--scar);
+  background: rgba(188, 96, 78, 0.06);
+  color: #bba79f;
+  font-size: 0.69rem;
+  line-height: 1.45;
+}
+
+.field-note-correction a {
+  color: #d29384;
+}
+
+.field-note-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.field-note-artifacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 12px;
+}
+
+.field-note-artifacts a {
+  color: var(--moss-bright);
+  font-size: 0.68rem;
+  text-decoration: none;
+}
+
+.field-note-artifacts a:hover,
+.field-note-artifacts a:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+.field-note-footer code {
+  color: #676156;
+  font-size: 0.58rem;
+  white-space: nowrap;
+}
+
+.field-notes-outro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 24px 2px 12px;
+  color: #70695e;
+  font-size: 0.72rem;
+}
+
+.field-notes-outro p {
+  margin: 0;
+}
+
+.field-notes-outro a {
+  color: var(--moss-bright);
+  text-decoration: none;
+}
+
+.field-notes-outro a:hover,
+.field-notes-outro a:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
 @media (max-width: 1080px) {
   .status-strip {
     grid-template-columns: repeat(3, 1fr);
@@ -712,6 +1050,19 @@ h1 {
   .app-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .header-actions,
+  .field-notes-heading {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .field-notes-link,
+  .global-status {
+    width: 100%;
+    justify-content: center;
   }
 
   .status-strip {
@@ -747,6 +1098,38 @@ h1 {
 
   .maintenance-note {
     font-size: 0.65rem;
+  }
+
+  .field-notes-page {
+    padding: 14px;
+  }
+
+  .field-note {
+    grid-template-columns: 26px minmax(0, 1fr);
+  }
+
+  .field-note-rail {
+    padding-top: 23px;
+  }
+
+  .field-note-rail span {
+    width: 9px;
+    height: 9px;
+  }
+
+  .field-note-body {
+    padding: 17px 15px 14px;
+  }
+
+  .field-note-meta,
+  .field-note-footer,
+  .field-notes-outro {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .field-note-scope {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -1,6 +1,7 @@
 "use client";
 
 import dagre from "@dagrejs/dagre";
+import Link from "next/link";
 import {
   Background,
   BackgroundVariant,
@@ -244,9 +245,15 @@ export function ProofBonsai({ data }: { data: FrontierData }) {
             The Krenn–Gu programme, grown directly from its canonical frontier.
           </p>
         </div>
-        <div className="global-status" aria-label={`Global status ${data.globalStatus}`}>
-          <span className="pulse" aria-hidden="true" />
-          Global conjecture <strong>{data.globalStatus}</strong>
+        <div className="header-actions">
+          <Link className="field-notes-link" href="/field-notes">
+            <span>Field notes</span>
+            Public agent log →
+          </Link>
+          <div className="global-status" aria-label={`Global status ${data.globalStatus}`}>
+            <span className="pulse" aria-hidden="true" />
+            Global conjecture <strong>{data.globalStatus}</strong>
+          </div>
         </div>
       </header>
 

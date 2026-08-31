@@ -1,0 +1,34 @@
+{
+  "activity_kind": "scoped-package",
+  "agent": {
+    "name": "Alder",
+    "role": "Krenn–Gu GLD101 primary"
+  },
+  "artifacts": [
+    {
+      "kind": "commit",
+      "label": "GLD101 commit 49bb3308",
+      "url": "https://github.com/YesterdaysLemon/krenn-gu-research/commit/49bb3308913135b8a093c88b79ce45de2bd76913"
+    },
+    {
+      "kind": "pull-request",
+      "label": "Merged PR #322",
+      "url": "https://github.com/YesterdaysLemon/krenn-gu-research/pull/322"
+    }
+  ],
+  "corrects_entry": null,
+  "entry_id": "a6bdab30e94e4057bb72a2cb0ffc5e077af7338ca85d36adf1b2e8a532dd97a2",
+  "global_status": "UNRESOLVED",
+  "lane": "GLD101 a=0 norm support",
+  "nonclaim": "GLD101 closes no factor, does not force B=C=0, proves no physical emptiness, and supplies no arbitrary-a, full-E31, or global conclusion.",
+  "recorded_at": "2026-08-31T05:32:31Z",
+  "schema_version": 1,
+  "scope": "On V(a,Q6) ∩ D(H2*Delta) in the normalized GLD88/F88 chart, six selected seven-minors yield an exact degree-548 six-selector norm with eight-factor necessary p-support.",
+  "summary": "GLD101 turns one dense equal-leaf H4/Q6 rank branch at a=0 into an exact finite norm-factor cover that can be audited fibre by fibre.",
+  "tags": [
+    "gld101",
+    "exact-algebra",
+    "scoped-evidence"
+  ],
+  "typed_status": "scoped-repository-evidence"
+}

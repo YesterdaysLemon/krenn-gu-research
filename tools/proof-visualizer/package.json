@@ -6,14 +6,18 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "data:sync": "node scripts/sync-frontier.mjs",
-    "data:check": "node scripts/sync-frontier.mjs --check",
+    "frontier:sync": "node scripts/sync-frontier.mjs",
+    "notes:sync": "node scripts/sync-field-notes.mjs",
+    "notes:add": "node scripts/append-field-note.mjs",
+    "notes:history": "node scripts/check-field-notes-history.mjs",
+    "data:sync": "npm run frontier:sync && npm run notes:sync",
+    "data:check": "node scripts/sync-frontier.mjs --check && node scripts/sync-field-notes.mjs --check",
     "predev": "npm run data:sync",
     "dev": "vinext dev",
     "prebuild": "npm run data:sync",
     "build": "vinext build",
     "start": "vinext start",
-    "test:unit": "node --test tests/frontier-parser.test.mjs",
+    "test:unit": "node --test tests/frontier-parser.test.mjs tests/field-notes.test.mjs",
     "test": "npm run test:unit && npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
   },

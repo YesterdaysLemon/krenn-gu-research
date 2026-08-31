@@ -8,9 +8,31 @@ mathematical status. It reads:
 - `docs/current-frontier.md` for the canonical node key and typed-edge table;
 - `catalog/theorem-ledger.json` for separate verifier/audit metadata.
 
+The `/field-notes` addendum is deliberately separate from that evidence view.
+It projects immutable, public-safe activity notes from
+`catalog/public-field-notes/entries/`. A field note says what an agent worked
+on and what it does **not** establish; it never updates the frontier or theorem
+ledger by implication.
+
 `npm run data:sync` writes a deterministic snapshot to
-`app/data/frontier.generated.json`. Development and production builds run this
-sync automatically.
+`app/data/frontier.generated.json` and `app/data/field-notes.generated.json`.
+Development and production builds run this sync automatically.
+
+## Append a public field note
+
+Prepare a JSON draft that follows
+[`catalog/public-field-notes/README.md`](../../catalog/public-field-notes/README.md),
+then run:
+
+```bash
+npm run notes:add -- --input /path/to/public-note-draft.json
+npm run data:sync
+```
+
+The command creates one content-addressed file and refuses to overwrite an
+existing entry. Corrections and withdrawals are new entries linked through
+`corrects_entry`; editing or deleting old entries violates the public-log
+contract.
 
 ## Display projection
 
