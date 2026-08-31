@@ -84,7 +84,7 @@
   "branch": "all-zero selected coefficient branch, generic symbolic a",
   "bridge_reconstruction_mode": "exact",
   "certificate_payload_definition": "sha256 of canonical JSON payload before certificate_payload_sha256 is added",
-  "certificate_payload_sha256": "d387a0c990a9576736cb9a34f1bfc5d792a1581275696217e8a2e1394885d140",
+  "certificate_payload_sha256": "4e85094914596d796779942fd04746fff7c51b99065243a9206e7399c7ce4c6f",
   "chart_denominator_provenance": {
     "H2_is_q6_leading_coefficient": true,
     "P_divides_Delta": true,
@@ -445,7 +445,7 @@
     "runtime_dependency": false,
     "used_for_primary_acceptance": false
   },
-  "elapsed_seconds": 586.092,
+  "elapsed_seconds": 588.604,
   "evidence_boundary": {
     "E31_equation_imposed": false,
     "E31_inverted": false,
@@ -2539,7 +2539,7 @@
   "p0_p1_gld102": {
     "called_tracked_check": true,
     "claim_id": "GLD102",
-    "elapsed_seconds": 18.545,
+    "elapsed_seconds": 19.061,
     "global_conjecture": "UNRESOLVED",
     "status": "proved_exact_scoped_p01_nonzero_offset_exclusion"
   },
@@ -2912,6 +2912,8 @@
     }
   },
   "status": "exact_scoped_theorem_certificate",
+  "verifier_hash_semantics": "verifier_sha256 is the LF-normalized tracked-source digest; verifier_raw_sha256 records checkout bytes",
   "verifier_path": "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_all_zero_coefficient_branch_exclusion.py",
-  "verifier_sha256": "4deb4f47384c6d19db862041778df3e2a98faf3b6c8a24c1b5fcfb11f7bd489f"
+  "verifier_raw_sha256": "f968cc20e03df61c9ec22b5b81b17d922b3491286a5f808d760ae7205b97ba65",
+  "verifier_sha256": "f968cc20e03df61c9ec22b5b81b17d922b3491286a5f808d760ae7205b97ba65"
 }

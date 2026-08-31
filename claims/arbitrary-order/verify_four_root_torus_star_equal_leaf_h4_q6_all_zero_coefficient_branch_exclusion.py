@@ -1307,7 +1307,12 @@ def _json_safe(value: Any) -> Any:
 def write_certificate(payload: dict[str, Any], output: Path) -> dict[str, Any]:
     payload = _json_safe(payload)
     payload["verifier_path"] = Path(__file__).resolve().relative_to(ROOT).as_posix()
-    payload["verifier_sha256"] = sha256_file(Path(__file__).resolve())
+    payload["verifier_sha256"] = lf_sha256(Path(__file__).resolve())
+    payload["verifier_raw_sha256"] = sha256_file(Path(__file__).resolve())
+    payload["verifier_hash_semantics"] = (
+        "verifier_sha256 is the LF-normalized tracked-source digest; "
+        "verifier_raw_sha256 records checkout bytes"
+    )
     payload["runtime_environment"] = {
         "python": platform.python_version(),
         "sympy": sp.__version__,
@@ -1343,6 +1348,7 @@ def write_certificate(payload: dict[str, Any], output: Path) -> dict[str, Any]:
         "certificate_payload_sha256": payload["certificate_payload_sha256"],
         "verifier_path": payload["verifier_path"],
         "verifier_sha256": payload["verifier_sha256"],
+        "verifier_raw_sha256": payload["verifier_raw_sha256"],
     }
 
 
