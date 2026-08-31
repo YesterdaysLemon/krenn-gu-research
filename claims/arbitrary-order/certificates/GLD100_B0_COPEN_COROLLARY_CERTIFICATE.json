@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "certificate_id": "GLD100-B0-Copen-arbitrary-a-corollary",
+  "status": "candidate_exact_scoped_characteristic_zero_composition",
+  "global_conjecture": "UNRESOLVED",
+  "mathematical_scope": {
+    "field": "C",
+    "chart": "normalized scale-fixed GLD88/F88 equal-leaf H4 offset chart",
+    "set_statement": "V(B_offset,Q6) intersect D(C_offset*Delta) intersect {rank M(G)<=6} = empty",
+    "assumptions": [
+      "B_offset=0",
+      "C_offset!=0",
+      "Q6=0",
+      "Delta!=0",
+      "complete GLD71 syndrome rank at most six",
+      "a is arbitrary"
+    ],
+    "downstream_reduction": "the new E31 wall computation may be restricted to V(E31,Q6) intersect D(B_offset*H2deg*Delta) intersect {rank M(G)<=6}",
+    "explicit_nonclaims": [
+      "no closure of the remaining D(B_offset) E31 wall",
+      "no pointwise inference from a generic resultant or support-only cover",
+      "no selected-minor converse",
+      "no Delta=0 or Omega=0 conclusion",
+      "no outside-F88, Fitting, wider-source, integrability, lifting, gluing, other-root, other-order, or global conclusion"
+    ]
+  },
+  "notation_fences": {
+    "B_offset": "the affine leaf offset b-b88, not the physical incidence equations",
+    "C_offset": "the affine leaf offset c-c88, not the incidence-center vector",
+    "H2deg": "2*p^2-2*p+1, the Q6 degree-drop polynomial",
+    "E31": "not assumed; GLD100 uses it only upstream to force B_offset=0 from a general point"
+  },
+  "case_split": {
+    "polynomial": "H2deg=2*p^2-2*p+1",
+    "exhaustive_cases": [
+      "H2deg!=0",
+      "H2deg=0"
+    ],
+    "H2deg_open": {
+      "handler": "GLD96 residual decomposition plus the GLD100 gamma/pair/fibre closure",
+      "premise": "B_offset=0, C_offset!=0, Q6=0, rank M(G)<=6, H2deg*Delta!=0",
+      "conclusion": "impossible",
+      "E31_required": false
+    },
+    "H2deg_zero": {
+      "handler": "GLD99 arbitrary-a degree-drop offset closure",
+      "premise": "B_offset=0, C_offset!=0, H2deg=Q6=0, Delta!=0, rank M(G)<=6",
+      "conclusion": "impossible because GLD99 forces B_offset=C_offset=0"
+    }
+  },
+  "dependency_roles": {
+    "GLD96": "Ttilde_i=D_i*T_i=f_i(B_offset)+C_offset*g_i(B_offset), with reversible clearing on D(H2deg*Delta) and f_i(0)=0",
+    "GLD100": "exact common-gamma necessary cover and pointwise closure of every retained H2deg-open fibre at B_offset=0",
+    "GLD99": "exact arbitrary-a H2deg=0 rank-to-zero-offset implication"
+  },
+  "proof_topology": [
+    "rank M(G)<=6 implies the four actual GLD96 seven-minors and their reversibly cleared Ttilde_i forms vanish",
+    "B_offset=0 and the 111 common-kernel identities give f_i(0)=0",
+    "C_offset!=0 therefore forces g_i(0)=0 for all four residuals",
+    "on D(H2deg*Delta), reversible GLD100 clearing identifies these with gamma0=gamma1=gamma2=gamma3=0",
+    "the exact GLD100 necessary factor cover and all pointwise fibre closures contradict the H2deg-open case without E31",
+    "GLD99 contradicts the H2deg-zero case for arbitrary a",
+    "the exhaustive H2deg split proves the C-open empty-set statement"
+  ],
+  "source_pins_lf_sha256": {
+    "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_R31_GENERIC_RESULTANT_EXCLUSION_THEOREM.md": "2d989620d82554197ce7f85d603269122d58dfe07c36a9ab46121a2261aabcff",
+    "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_G0_GATE_REMOVAL_THEOREM.md": "0c893a4d96a980d2b9845d55a5e5dfbf9b901da5dda267424aae470be39887df",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_g0_gate_removal.py": "415b6963b37b6e2e8c15bc9b0e08f4206bff164e9e563a12d5fa06ec44cbd028",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_g0_gate_removal.py": "ac1420548ea7de8ea4130b083f47c06e61cd1dd3c4e66bdffd65325563b8c4dc",
+    "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_G0_GATE_REMOVAL_REVIEW_2026-08-29.md": "9818e17e28cbf16e7d6b3012f648da6de4add5827ad6fc676f59127a4b49db4a",
+    "claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_H2_DEGREE_DROP_SIX_MINOR_OFFSET_EXCLUSION_THEOREM.md": "f5fd49a6ff039f128f83b89bc3a7019c201001c54ba33223b2ac71e3e2289708",
+    "claims/arbitrary-order/verify_four_root_torus_star_equal_leaf_h4_q6_h2_degree_drop_six_minor_offset_exclusion.py": "8626e875bc162e79a6abe5ddfffa2a3dcf7f09b21e4de8df25fe146d9f5a2347",
+    "claims/arbitrary-order/audit_four_root_torus_star_equal_leaf_h4_q6_h2_degree_drop_six_minor_offset_exclusion.py": "d41178a72731eff4d1d0eeb63d70224a58cea62b1f1336f0aa6d123120226e48",
+    "docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_H2_DEGREE_DROP_SIX_MINOR_OFFSET_EXCLUSION_REVIEW_2026-08-29.md": "1bd76cb185ea4acc8a49c4f41bf18d1cf1b88c501e1b74bbb1d4de4362344a6d"
+  },
+  "provenance": {
+    "base_commit": "3cc2a6801e7cb99b583ac27b0ea5aecad8f0b1c2",
+    "commons_dependency_finding": "kgc_01M1C2X2V0H31GFRW1VDY0156Z",
+    "coordination_records_are_not_mathematical_dependencies": true
+  },
+  "external_consolidation": {
+    "required_before_promotion": true,
+    "candidate_commit": null,
+    "candidate_tree": null,
+    "request_event_id": null,
+    "receipts": {},
+    "status": "pending",
+    "frontier_update_allowed": false,
+    "theorem_ledger_update_allowed": false
+  }
+}
