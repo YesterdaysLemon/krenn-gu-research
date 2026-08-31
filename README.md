@@ -135,6 +135,15 @@ branches, and all wider physical/global obligations remain open.  The
 [`GLD101 hostile review`](docs/audits/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_A0_SIX_SELECTOR_NORM_COVER_REDUCTION_REVIEW_2026-08-30.md)
 passes this exact scoped claim, and the global status remains **UNRESOLVED**.
 
+[`GLD102`](claims/arbitrary-order/FOUR_ROOT_TORUS_STAR_EQUAL_LEAF_H4_Q6_P01_NONZERO_OFFSET_EXCLUSION_THEOREM.md)
+closes the `p=0` and `p=1` nonzero-offset fibres on the same normalized
+chart for arbitrary `a` on `D(Delta)`.  The exhaustive `D(B)` /
+`V(B) intersect D(C)` cover uses actual seven-minors; selected-zero survivors
+at `p=0` are rejected by direct rank-seven witnesses, while the other chart
+ideals are unit.  Thus rank at most six forces `B=C=0` on those two fibres.
+This is not an exclusion of the `B=C=0` endpoint and does not extend by itself to
+arbitrary `p`, physical incidence, or global resolution.
+
 The newest zero-anchor, root-order-three, all-six-rigid source-integrability
 line is `GLS61`--`GLS80`.  `GLS66` closes the exactly-two-deficient branch;
 `GLS67`--`GLS69` localize the surviving three-, four-, five-, and
