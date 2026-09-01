@@ -13,9 +13,12 @@ maintained map of the live proof topology, open leaves, and refuted routes.
 Owning theorem documents remain authoritative for mathematical statements.
 
 For the next coordinated research run, use the dated
+[`fibre-exact targets brief`](docs/strategy/fibre-exact-targets-2026-09-01.md),
+which builds on the earlier
 [`resolution-first ecology brief`](docs/strategy/resolution-first-ecology-run-2026-08-31.md).
-It sets research priorities and launch roles; it is not a mathematical-status
-authority and must be refreshed against `origin/main` before use.
+Both set research priorities and launch roles; neither is a
+mathematical-status authority, and both must be refreshed against
+`origin/main` before use.
 
 For an interactive projection of that map, run
 [`tools/proof-visualizer`](tools/proof-visualizer/README.md). Its bonsai colours
