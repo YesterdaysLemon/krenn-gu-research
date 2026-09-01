@@ -4057,4 +4057,22 @@ Authoritative migration records:
 - [Stage 27 execution report](../../docs/architecture/layout-migration-stage27-report.md); and
 - [frozen Stage 27 batch](../../catalog/batches/high-order-symbolic-forest-stage27.json).
 
+## GHZ closure and the matching-polytope face criterion
+
+The [GHZ closure theorem](GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_THEOREM.md)
+proves that for every even `n >= 4` the ternary GHZ tensor lies in the
+Euclidean, hence Zariski, closure of the image of `W -> T_W`.  The limiting
+families are monochromatic matrix units `eps^(nu(e)) e_c e_c^T` on a cubic
+three-edge-coloured graph whose colour classes form a face of the
+perfect-matching polytope; the face condition is exactly an integer
+potential with `nu(M_c)=0` and `nu(M)>=1` on every extra perfect matching,
+and iterated truncation of `K_4` supplies such graphs at every order.  The
+consequence is a route no-go: no identity or Euclidean-closed condition on
+`T_W` alone can separate the target, so every proof must derive structure of
+`W` from the exact fibre `T_W = Delta`.  It is not a witness, does not
+approximate one in any bounded gauge, and leaves the global status
+**UNRESOLVED**.  Primary verifier and independent audit:
+`verify_ghz_closure_matching_polytope_face_asymptotic_realizability.py`,
+`audit_ghz_closure_matching_polytope_face_asymptotic_realizability.py`.
+
 The global Krenn-Gu conjecture remains **UNRESOLVED**.
