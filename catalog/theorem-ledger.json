@@ -7225,7 +7225,7 @@
     {
       "name": "GHZ closure: matching-polytope face criterion and asymptotic realizability at every even order",
       "document": "claims/arbitrary-order/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_THEOREM.md",
-      "document_sha256_16": "ae54e2ef84bbe47e",
+      "document_sha256_16": "b3f2d5dd28d6bb1a",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact statement over C about the Euclidean and Zariski closure of the image of W -> T_W for d=3 and every even n>=4; it says nothing about the image itself",

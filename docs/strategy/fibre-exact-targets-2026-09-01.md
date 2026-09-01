@@ -95,16 +95,37 @@ haf( Z^0_ij t_i t_j + Z^1_ij s_i s_j + Z^2_ij ) = prod_v t_v + prod_v s_v + 1
 has no solution.  This is the Krenn–Gu conjecture restricted to blocks that
 are diagonal, i.e. to monochromatic edges with arbitrary complex weights.
 
-**Why this parent.**  It is where all `BR1` limit families live, so it is the
-sharpest place where exactness must bite.  It generalizes Bogdanov's theorem
-(positive weights) to complex weights and would be publishable on its own.
-It is exactly the repository's simultaneous balanced all-bridge branch, so
-upstream supply already exists: active-deck exclusivity, the cubic and
-degree-four exclusions (`Delta(D) >= 5`), the universal zero-layer theorem,
-and the all-degree trichotomy with a bipartite matching-covered least core.
-Its downstream consumer is the general problem: a proof shows every witness
-has a bichromatic entry, which feeds the killer and deeper-blocker structure
-of Parent C.
+**Why this parent, and its honest scope.**  It is where all `BR1` limit
+families live, so it is the sharpest place where exactness must bite.  It
+generalizes Bogdanov's theorem (positive weights) to complex weights and
+would be publishable on its own.  Its formal downstream consequence is thin:
+a proof shows only that every witness has at least one bichromatic entry.
+Its value is mechanistic, namely whatever exact invariant of hafnian
+cancellation defeats the all-diagonal case is the first candidate for the
+general fibre.  Until a bridge from "some bichromatic block exists" into an
+accepted global consumer is proved, Parent A is a **scoped branch sprint**,
+not a resolution-first parent in the sense of the 2026-08-31 brief.
+
+**Relation to the all-bridge lane (correction).**  An earlier draft called
+this parent "exactly" the simultaneous balanced all-bridge branch.  That is
+wrong.  The all-bridge normal form (`A1`--`A3`) has three off-diagonal
+singleton killers per vertex with normal types `f(c) != c`; the all-diagonal
+case has no bichromatic entry at all and lies outside that normal form.  What
+transfers is exactly what depends only on the inherited identities
+`haf(Z^c[V]) = 1` and `haf(Z^c[A]) haf(Z^d[V-A]) = 0`, which hold verbatim in
+the all-diagonal case because every mixed word factorizes:
+
+- active-deck exclusivity (Laplace plus the two-part identity) transfers;
+- the cubic saturated-diagonal exclusion transfers and simplifies, since the
+  Bogdanov rainbow word is then a single nonzero monomial with no zero-layer
+  potential needed;
+- the degree-four exclusion, the resulting `Delta(D) >= 5`, and the
+  all-degree trichotomy with bipartite least core do **not** transfer
+  verbatim: their proofs use the normal-type bit flips (every saturated
+  colour-`c` edge flips the two other bits) to make active cycles even and to
+  place Hamiltonian-chord endpoints in opposite classes.  Recovering an
+  evenness statement for active colour-`c` cycles in the all-diagonal case is
+  the first concrete lemma this sprint should settle or refute.
 
 **Upstream.**
 [`UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM`](../../claims/arbitrary-order/UNIVERSAL_SATURATED_DIAGONAL_ZERO_LAYER_THEOREM.md),
@@ -149,6 +170,10 @@ bichromatic entries.  The `BR1` families at `n = 8` (truncated prism, 12
 edges) lie inside the excluded region, so the remaining work is exactly the
 region where cancellation, not suppression, must be excluded.
 
+This is not a mere engineering exercise: the excluded region is where
+suppression suffices, and the open dense region with many bichromatic entries
+may need exact-cancellation tooling beyond the current support/Laurent chain.
+
 **Success.**  A fail-closed, independently replayed certificate chain and a
 finite theorem document with the same status discipline as
 [`SIX_VERTEX_CERTIFICATE`](../../claims/finite/n06/SIX_VERTEX_CERTIFICATE.md).
@@ -190,8 +215,9 @@ that is not required by a merged mathematical delta.
 > Run a fibre-exact Krenn–Gu ecology from fresh `origin/main`.  Read
 > `AGENTS.md`, `docs/current-frontier.md` (node `BR1` first), and this dated
 > brief.  Protect every active worktree and process.  The single primary
-> parent is weighted Bogdanov: exclude all-diagonal complex witnesses at every
-> even `n >= 6`, stated as the polynomial identity
+> target is weighted Bogdanov, run as a scoped branch sprint unless and until
+> a bridge into an accepted global consumer is proved: exclude all-diagonal
+> complex witnesses at every even `n >= 6`, stated as the polynomial identity
 > `haf(Z^0 t t^T + Z^1 s s^T + Z^2) = prod t + prod s + 1`.  Assign workers by
 > method: support-family combinatorics, exact polynomial-identity
 > specializations, active-edge induction, and exact adversarial search with a
