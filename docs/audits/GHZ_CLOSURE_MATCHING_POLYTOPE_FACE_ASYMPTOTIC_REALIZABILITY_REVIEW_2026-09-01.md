@@ -109,3 +109,24 @@ The frontier gains one node `BR1` with a dashed boundary edge from `G0` and
 a boundary edge to the gluing node `GL`, one node-key row, two typed-edge
 rows, and one refuted-route row.  No existing node, edge, status, or scope
 changes.  The global status remains **UNRESOLVED**.
+
+## 7. Post-review correction (later on 2026-09-01)
+
+An external review by a second agent (OpenAI Codex, "Sol") of the merged
+package raised two points, both accepted.
+
+1. Corollary D as first written claimed that every continuous loss with
+   `L(0)=0` is attained only along unbounded weights.  That needs the loss to
+   be faithful (`L(X)=0` only for `X=0`); a non-faithful loss can vanish at a
+   bounded non-witness.  The corollary and its proof now carry that
+   hypothesis.  The closure theorem itself is unaffected.
+2. The companion strategy brief described the all-diagonal target as
+   "exactly" the repository's simultaneous balanced all-bridge branch.  It is
+   not: that normal form has off-diagonal singleton killers, while the
+   all-diagonal case has no bichromatic entry.  The brief now states which
+   all-bridge results transfer (those using only the inherited identities) and
+   which do not (those using normal-type bit flips), and scopes the target as
+   a branch sprint.
+
+This section is a record of the correction, not a second independent audit of
+the theorem; the independence disclosure above still applies.

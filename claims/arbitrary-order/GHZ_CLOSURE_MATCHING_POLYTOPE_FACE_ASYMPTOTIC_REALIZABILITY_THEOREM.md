@@ -89,12 +89,16 @@ bounds on flattening ranks, slice ranks, border ranks, or on any other
 lower-semicontinuous invariant of `T_W`, and every identity in the ideal of
 the hafnian image, are automatically satisfied by `Delta_n`.
 
-**Corollary D (numerical searches).**  For every even `n >= 4` the infimum
-over `W` of every continuous loss `L(T_W - Delta_n)` with `L(0)=0` is zero,
-attained only in the limit of unbounded weights when `n >= 6` (conditionally
-on the conjecture; unconditionally at `n = 6` by the six-vertex exclusion).
-A cost tending to zero is therefore not evidence for a witness unless the
-weights stay bounded in some vertex gauge.
+**Corollary D (numerical searches).**  For every even `n >= 4` and every
+continuous loss `L` on `(C^3)^(tensor n)` with `L(0)=0`, the infimum over `W`
+of `L(T_W - Delta_n)` is zero.  If moreover `L` is faithful, meaning
+`L(X)=0` only for `X=0` (for example any norm), then for `n >= 6` that
+infimum is attained only in the limit of unbounded weights: unconditionally at
+`n = 6` by the six-vertex exclusion, and conditionally on the conjecture for
+`n >= 8`.  A cost tending to zero is therefore not evidence for a witness
+unless the weights stay bounded in some vertex gauge.  (The faithfulness
+hypothesis was added after an external review noted that a non-faithful loss
+can vanish at a bounded non-witness.)
 
 ## Proof
 
@@ -190,10 +194,12 @@ contributes `eps^3` to one mixed word.
 
 Corollary C is the continuity statement already used in Theorem A.  For
 Corollary D, `L(T_(W(eps)) - Delta_n) -> L(0) = 0` along the family of
-Theorem B.  If a bounded sequence of witnesses in some vertex gauge had
-cost tending to zero, a convergent subsequence would give an exact witness
-by continuity of `Phi_n`; at `n = 6` this contradicts the six-vertex
-exclusion, and at general `n >= 6` it contradicts the conjecture.
+Theorem B, which gives the infimum.  For the second statement let `L` be
+faithful and let `W_k` be a sequence, bounded in some vertex gauge, with
+`L(T_(W_k) - Delta_n) -> 0`.  A convergent subsequence has a limit `W*` with
+`L(T_(W*) - Delta_n) = 0` by continuity of `Phi_n` and `L`, hence
+`T_(W*) = Delta_n` by faithfulness; at `n = 6` this contradicts the
+six-vertex exclusion, and at general `n >= 6` it contradicts the conjecture.
 
 ## Consequences for the programme
 
