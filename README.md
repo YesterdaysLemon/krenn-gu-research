@@ -174,6 +174,20 @@ arbitrary-root transport, and global gluing remain open.  The
 [`GLS66`--`GLS69` evidence-status reconciliation](docs/audits/GLS66_GLS69_EVIDENCE_STATUS_RECONCILIATION_2026-08-29.md)
 records the owner/review/frontier alignment without changing those scopes.
 
+The [GHZ closure theorem](claims/arbitrary-order/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_THEOREM.md)
+is a structural no-go for a whole class of routes rather than a step toward
+either truth value.  For every even `n >= 4` the ternary GHZ tensor is a
+Euclidean limit of matching tensors whose blocks are monochromatic matrix
+units on a cubic three-edge-coloured graph whose three colour classes form a
+face of the perfect-matching polytope; iterated truncation of `K_4` gives such
+a graph at every order, the triangular prism at `n=6`.  Hence no polynomial
+identity, rank bound, or other condition closed under limits of `T_W` alone
+can exclude a witness, and an unconstrained numerical cost tending to zero
+along unbounded weights is not evidence for one.  Every valid proof must use
+the exact fibre `T_W = Delta`, as the killer, anchor, and Wick identities
+already do.  This is not a witness, not an exclusion, and the global status
+remains **UNRESOLVED**.
+
 The [`catalog/theorem-ledger.json`](catalog/theorem-ledger.json) is a partial
 claim/evidence index. Its empty `dependencies` arrays mean “not recorded,” not
 “no dependencies”; it is not the proof DAG.

@@ -394,8 +394,11 @@ flowchart BT
   BO1["Uniform bounded-window certification<br/>REFUTED on ambient decks / responses"]
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
+  BR1["GHZ tensor lies in the CLOSURE of the hafnian image<br/>PROVED for every even n; tensor-level separation REFUTED"]
 
   G0 -->|universal reduction| S1
+  G0 -. limit family only .-> BR1
+  BR1 -->|every route must use the exact fibre T_W = Delta| GL
   S1 -->|exact gate refinement| S2E
   S2E -->|finite-jet refinement| S2J
   S2J -->|target-column refinement| S2K
@@ -925,6 +928,7 @@ flowchart BT
 | ID | Live node and exact status | Owning theorem or programme document |
 |---|---|---|
 | `G0` | Original global conjecture: **UNRESOLVED** | [Problem statement](../README.md#the-conjecture) |
+| `BR1` | For every even `n >= 4` the ternary GHZ tensor is a Euclidean limit of matching tensors `T_(W(eps))` whose blocks are monochromatic matrix units on a cubic three-edge-coloured graph whose colour classes form a face of the perfect-matching polytope (iterated truncation of `K_4`; the prism at `n=6`).  Hence no polynomial identity or Euclidean-closed condition on `T_W` alone can exclude a witness, and unconstrained numerical costs tend to zero along unbounded weights: **proved closure theorem / route no-go**, not a witness and not an exclusion | [GHZ closure / matching-polytope face theorem](../claims/arbitrary-order/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_THEOREM.md), [self-review](audits/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_REVIEW_2026-09-01.md) |
 | `S1` | Balanced complete even deck and full-sensor/rank-drop dichotomy: **proved reduction** | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
 | `S2E` | On a full sensor, target residuals plus empty normalization, prime-divisor regularity of only the pair components, and one symmetric Euler--hafnian recurrence per higher even subset are **necessary and sufficient** for same-graph globalization | [Cramer--Euler pair-pole gate](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md) |
 | `S2J` | For each Cramer pair component, prime-divisor regularity is equivalent to finitely many nonendpoint first stresses and endpoint Hessian stresses; in ternary dimension there are `3m+6` polynomial identities per pair, and the physical block is reconstructed uniquely: **proved exact refinement** | [Pair-pole differential flatness](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_POLE_DIFFERENTIAL_FLATNESS_THEOREM.md) |
@@ -1270,6 +1274,8 @@ flowchart BT
 | Source | Relationship | Target | Exact meaning |
 |---|---|---|---|
 | `G0` | reduction | `S1` | Every hypothetical ternary witness has a balanced-sensor dichotomy. |
+| `G0` | boundary | `BR1` | `Delta_n` is in the closure of `Im(Phi_n)` for every even `n`; the limiting families are matrix-unit cubic graphs with unbounded weights, not witnesses. |
+| `BR1` | boundary | `GL` | Any global proof must derive structure of `W` from the exact equation `T_W = Delta_n`; conditions closed under limits of `T_W` cannot separate the target. |
 | `S1` | exact refinement | `S2E` | The unique rational full-sensor lift has an exact Cramer target, normalization, pair-pole, and Euler--hafnian gate. |
 | `S2E` | exact finite-jet refinement | `S2J` | Prime-divisor regularity of each Cramer pair is equivalent to explicit nonendpoint first stresses and endpoint Hessian stresses; no factorization of the Cramer minor is needed. |
 | `S2J` | exact target-column refinement | `S2K` | Every cleared pair jet is an adjugate image and one selected-column replacement determinant; under target consistency, its vanishing is the corresponding full-sensor column-span condition. |
@@ -3901,6 +3907,7 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 
 | Route | Exact finding | Owner |
 |---|---|---|
+| Any tensor-level invariant (polynomial identity in the ideal of the hafnian image, flattening/slice/border-rank bound, or other Euclidean-closed condition on `T_W` alone) separates the GHZ tensor from matching tensors | False for every even `n >= 4`: `Delta_n` is a limit of matrix-unit matching tensors along a cubic three-edge-coloured graph whose colour classes are a face of the perfect-matching polytope; iterated truncation of `K_4` gives such a graph at every order.  Proofs must use the exact fibre `T_W = Delta_n`. | [GHZ closure / matching-polytope face theorem](../claims/arbitrary-order/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_THEOREM.md) |
 | Automatic characteristic-zero to `F_2` reduction | Refuted as a general lemma; good reduction and prime-field residue are not forced | [Characteristic-two boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
 | Fixed surplus determines balanced-sensor rank | False: one fixed-layer fibre can contain deficient and full uncontracted shores | [Fixed-surplus nonobservability](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md) |
 | The first two-open equation always detects the affine gauge | False on a conditional tight `q=0` outside-star cell | [Two-open star invisibility](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md) |
