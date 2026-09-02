@@ -6,8 +6,10 @@ Independent of the primary in encoding and solver:
     matchings (exactly one present -> m), via python-sat's CardEnc;
   * rainbow clauses generated from set partitions rather than colour words;
   * solved with Glucose 4.1 instead of CaDiCaL.
-Also cross-checks the classical degree-four subcase by adding a maximum
-D-degree bound of four, which must be UNSAT as WB1 proves for every n.
+Also checks the maximum-D-degree-four restriction at n = 8.  This is a
+finite consequence of the unrestricted n = 8 result, not an all-order
+consequence of WB1: WB1's numerical witness argument does not transfer to
+the support abstraction through the one-way bridge.
 """
 
 from __future__ import annotations

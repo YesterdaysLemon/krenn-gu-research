@@ -73,9 +73,10 @@ ingredients makes (AP') satisfiable:
 
 So the exclusion at `n = 8` genuinely uses the interaction of Laplace
 accessibility, single-monomial forcing, and three-colour rainbow-freeness,
-exactly the three tools of the `WB1` proof; none suffices with the other two
-removed.  Adding the degree bound `Delta(D) <= 4` gives UNSAT quickly, in
-agreement with `WB1`.
+three support mechanisms also present in the `WB1` setting; none suffices
+with the other two removed.  Adding the degree bound `Delta(D) <= 4` also
+gives UNSAT at `n = 8`, as it must from the unrestricted finite theorem.
+That bounded finite run is not an all-order consequence of `WB1`.
 
 ## Conjecture (support-level weighted Bogdanov)
 
@@ -84,11 +85,18 @@ agreement with `WB1`.
 This is a purely combinatorial statement about three graphs and three set
 families; no weights appear.  By the bridge lemma it implies the all-diagonal
 case of the Krenn–Gu conjecture at every order, and hence that every witness
-has a bichromatic entry.  `WB1` proves it whenever `Delta(G_0 + G_1 + G_2) <= 4`
-at every order, and this theorem proves it at `n = 6, 8` for all degrees.  It
-replaces "all-diagonal degree five" as the sharpest open lemma in this
-branch: the degree-five question is subsumed, and the target has no algebra
-left in it.
+has a bichromatic entry.  This theorem proves it at `n = 6, 8` for all
+degrees.  `WB1` excludes actual weighted witnesses when
+`Delta(G_0 + G_1 + G_2) <= 4`, but its numerical score and noncancellation
+steps do not transfer through the one-way support bridge.
+
+The later [degree-four support reduction and common-perfect-matching
+exclusion](ALL_DIAGONAL_SUPPORT_LEVEL_MAXIMUM_DEGREE_FOUR_REDUCTION_AND_COMMON_PERFECT_MATCHING_EXCLUSION_THEOREM.md)
+(`WB3`) proves that an AP' model of maximum degree four has even path/cycle
+supports with a residual partial matching, and excludes the subcase where
+two supports share a perfect matching.  The remaining orientation/blocker
+dichotomy is open.  Thus AP' at maximum degree four, AP' at higher degree,
+and the all-order conjecture all remain unresolved.
 
 What a proof must overcome is visible in the sharpness table.  Two colours
 alone can satisfy every two-part condition (a Hamiltonian cycle does), so the

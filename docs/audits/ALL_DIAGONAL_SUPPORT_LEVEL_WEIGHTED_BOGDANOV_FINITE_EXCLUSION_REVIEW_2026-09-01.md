@@ -66,15 +66,19 @@ sound.
 - "Support-level" is not "trivial": the `n = 8` instance takes minutes and
   each relaxation is satisfiable.  The theorem does not claim a short human
   proof exists at `n = 8`; it claims no weights are needed.
-- The conjecture for all `n` is clearly labelled.  Its relation to `WB1`
-  (proved for `Delta(D) <= 4` at every order) and to this theorem (proved for
-  all degrees at `n <= 8`) is stated without overreach.
+- The conjecture for all `n` is clearly labelled.  `WB1` excludes actual
+  weighted witnesses at `Delta(D) <= 4`; it does not prove the weaker AP'
+  abstraction unsatisfiable there because its numerical score and
+  noncancellation steps are absent after the one-way bridge.  `WB3` now
+  records the valid support-only degree-four reduction and the remaining
+  open implication.
 - The `n = 8` result is new relative to the eight-vertex finite frontier,
   which covered sparse skeletons and singleton families.  The `n = 6` result
   is a re-derivation inside a narrower branch and is labelled as such.
 
 ## 4. Frontier consequence
 
-One node `WB2` below `WB1`, two edges, and a rewritten smallest-obligation
-item pointing at the support-level conjecture.  No existing node, edge,
-scope, or status changes.
+`WB2` is the finite theorem and owner of the all-order AP' conjecture, not a
+specialization of the weighted `WB1` proof.  The live frontier removes that
+unsupported edge and records `WB3` as an exact residual refinement.  The
+finite `n=6,8` status and global status do not change.
