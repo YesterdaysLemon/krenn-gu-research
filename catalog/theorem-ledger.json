@@ -7283,7 +7283,7 @@
     {
       "name": "All-diagonal weighted Bogdanov: support-level abstraction and finite exclusion at n = 6, 8 (WB2)",
       "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "c23eac18e77d59e2",
+      "document_sha256_16": "0c56da4cc416a4d8",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "finite computer-assisted exact exclusion for all-diagonal witnesses (every edge block diagonal) on n=6 and n=8 vertices, plus an exact reduction valid at every even n: every all-diagonal witness yields a support model (AP') consisting of the graphs supp(Z^c) and the families of even sets with nonzero principal hafnian, satisfying Laplace accessibility, support, single-matching forcing, V in S_c, and rainbow-freeness over ordered even partitions",
@@ -7292,6 +7292,7 @@
         "no DRAT or other proof trace is recorded: drat-trim is not on the reference host and the python-sat CaDiCaL binding exposes no proof output; this evidence gap is stated explicitly",
         "sharpness at n=8: dropping the three-part rainbow clauses, or forcing, or Laplace accessibility each makes the abstraction satisfiable, with decoded models recorded by the primary",
         "the n=6 statement is a re-derivation inside the all-diagonal branch of the already excluded six-vertex case; the n=8 all-diagonal exclusion is new relative to the eight-vertex finite frontier",
+        "WB1 excludes actual weighted witnesses at Delta(D)<=4 but does not prove AP' unsatisfiable there: its numerical Laplace-score and noncancellation steps are absent after the one-way witness-to-support bridge; WB3 records the valid support-only reduction and surviving gap",
         "the all-n unsatisfiability of (AP') is recorded as a conjecture, not a theorem; n>=10, every branch with a bichromatic entry, and the global conjecture remain open"
       ],
       "dependencies": [],
@@ -7302,7 +7303,34 @@
       "review": "docs/audits/ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_REVIEW_2026-09-01.md",
       "expected_runtime": "about six minutes for the primary (unrestricted n=8 CaDiCaL instance plus three relaxations) and about three minutes for the Glucose audit on the reference host",
       "external_binaries": [],
-      "note": "WB2 proves by two independent SAT encodings and solvers that the support abstraction (AP') of an all-diagonal witness has no model at n=6,8, hence no all-diagonal witness exists on eight vertices and the exclusion needs no weight values. Each of Laplace, forcing, and three-part rainbow-freeness is load-bearing at n=8. The all-n statement is a stated conjecture. No DRAT trace. Scoped to the all-diagonal branch; the global Krenn-Gu conjecture remains UNRESOLVED.",
+      "note": "WB2 proves by two independent SAT encodings and solvers that the support abstraction (AP') of an all-diagonal witness has no model at n=6,8, hence no all-diagonal witness exists on eight vertices and the exclusion needs no weight values. Each of Laplace, forcing, and three-part rainbow-freeness is load-bearing at n=8. The all-n statement is a stated conjecture. WB1's numerical degree-four witness proof does not transfer through the one-way bridge. No DRAT trace. Scoped to the all-diagonal branch; the global Krenn-Gu conjecture remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "AP-prime maximum-degree-four path-cycle reduction and common-perfect-matching exclusion (WB3)",
+      "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_MAXIMUM_DEGREE_FOUR_REDUCTION_AND_COMMON_PERFECT_MATCHING_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "6c845896a9c16378",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero-free combinatorial theorem about the AP' support abstraction at every even n>=6; it assumes only the graph/set-family axioms (a), Laplace accessibility (L), support (S), unique-perfect-matching forcing (F), and rainbow-freeness (H2)",
+        "under Delta(G_0 union G_1 union G_2)<=4, the top-active graphs are spanning and pairwise exclusive, the non-active union is a partial matching, every support graph has maximum degree at most two, and its components are even paths or even cycles",
+        "in any AP' model, two maximum-degree-two support graphs cannot share a perfect matching; the proof contracts that matching, uses capacitated Hall to select complementary shores avoiding all cycle blocks, applies symmetric-difference uniqueness, and contradicts the two-part case of H2 through forcing",
+        "the all-order proof is in the document; the primary exhausts all 2,601 ordered residual-matching pairs at n=6 and exact n=8,10,12 sharp controls, while the independently represented audit enumerates all ordered disjoint block-family pairs through six atoms using max flow",
+        "same-session review used two fresh research agents with different graph/Hall and block/network derivations plus coordinator integration; it is independent-agent adversarial review, not an external unrelated-author audit",
+        "AP' at maximum degree four is not closed: the remaining implication must turn either an unsatisfiable cycle-orientation 2-SAT instance or every satisfying assignment's cycle-blocker cover into a proper uniquely-matchable two-colour partition; higher degree, all-diagonal witnesses, bichromatic branches, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_all_diagonal_support_level_maximum_degree_four_reduction_and_common_perfect_matching_exclusion.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": "claims/arbitrary-order/audit_all_diagonal_support_level_maximum_degree_four_reduction_and_common_perfect_matching_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/ALL_DIAGONAL_SUPPORT_LEVEL_MAXIMUM_DEGREE_FOUR_REDUCTION_AND_COMMON_PERFECT_MATCHING_EXCLUSION_REVIEW_2026-09-01.md",
+      "expected_runtime": "under five seconds total for the exhaustive n=6 graph check, exact sharp controls, and abstract block-family max-flow audit on the reference host",
+      "external_binaries": [],
+      "note": "WB3 supplies the valid support-only part of the degree-four argument and excludes the shared-perfect-matching subcase at every order. It corrects an unsupported WB1-to-AP' inference but does not weaken WB1 on actual weighted witnesses. AP' at degree four and in full remains open; the global Krenn-Gu conjecture remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,

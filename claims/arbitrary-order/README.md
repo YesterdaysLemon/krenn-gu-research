@@ -4103,4 +4103,24 @@ The all-`n` statement is recorded as a conjecture.  No DRAT trace is
 available on the reference host; the gap is stated.  The global status is
 **UNRESOLVED**.
 
+## AP-prime maximum-degree-four reduction and common-matching exclusion
+
+The [degree-four support
+reduction](ALL_DIAGONAL_SUPPORT_LEVEL_MAXIMUM_DEGREE_FOUR_REDUCTION_AND_COMMON_PERFECT_MATCHING_EXCLUSION_THEOREM.md)
+proves at every even order that an AP' model with support-union maximum degree
+at most four consists of even path/cycle support graphs whose cross-colour
+overlap lies in one residual partial matching.  It also proves that no two
+maximum-degree-two support graphs in an AP' model can share a perfect
+matching, using a capacitated-Hall shore selector and unique-matching
+forcing.  The primary exhausts the common-matching construction at `n=6`
+and replays sharp controls; the independent audit enumerates abstract cycle
+block families through six matching atoms.
+
+This is `WB3`, an exact reduction and obstruction, not AP'
+maximum-degree-four unsatisfiability.  The surviving lemma must relate the
+2-SAT choice of cycle orientations to either a proper two-colour
+unique-matching partition or a three-colour cycle-avoiding perfect matching.
+`WB1` remains a separate, stronger theorem about actual weighted witnesses;
+its numerical noncancellation step does not transfer to AP'.
+
 The global Krenn-Gu conjecture remains **UNRESOLVED**.

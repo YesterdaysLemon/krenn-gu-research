@@ -181,6 +181,21 @@ purely combinatorial.  Adversarial work should look for a model of (AP') at
 weights must be consulted), and constructive work should turn the `n = 8`
 unsatisfiability into a human argument using the third colour.
 
+**Progress (fresh ecology, later on 2026-09-01).**  The claimed transfer of
+`WB1` to AP' at `Delta(D) <= 4` was too strong: `WB1` uses numerical
+Laplace scores and weight-level noncancellation absent from the support
+abstraction.  The support-only replacement
+([`WB3`](../../claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_MAXIMUM_DEGREE_FOUR_REDUCTION_AND_COMMON_PERFECT_MATCHING_EXCLUSION_THEOREM.md))
+proves that every degree-four AP' model reduces to even path/cycle supports
+with one residual partial matching, and proves at every order that two such
+supports cannot share a perfect matching.  The exact remaining implication
+is a dichotomy: either a proper two-colour partition has uniquely matchable
+induced shores, or some pairwise-disjoint choice of support matchings admits
+a nonmonochromatic perfect matching avoiding every complete selected cycle
+block.  Cycle choice is a 2-SAT problem and must be optimized jointly with
+the final matching; an exact twelve-vertex control refutes the fixed-choice
+version.  AP' at degree four and at all degrees remains open.
+
 ## Parent B (finite milestone): complete the eight-vertex exclusion
 
 Extend the six-vertex certificate chain to all of `n = 8`, `d = 3`, hence to

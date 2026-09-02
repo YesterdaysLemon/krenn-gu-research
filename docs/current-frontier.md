@@ -397,14 +397,16 @@ flowchart BT
   BR1["GHZ tensor lies in the CLOSURE of the hafnian image<br/>PROVED for every even n; tensor-level separation REFUTED"]
   WB1["All-diagonal (weighted Bogdanov) witnesses<br/>PROVED Delta(D) <= 4 EXCLUDED; even active cycles; Delta(D) >= 5 OPEN"]
   WB2["All-diagonal support abstraction (AP')<br/>UNSAT at n=6,8 (two solvers, no DRAT); all-n CONJECTURED"]
+  WB3["AP' maximum-degree-four reduction<br/>PROVED even path/cycle supports; shared-PM subcase EXCLUDED; orientation/blocker lemma OPEN"]
 
   G0 -->|universal reduction| S1
   G0 -. limit family only .-> BR1
   BR1 -->|every route must use the exact fibre T_W = Delta| GL
   BR1 -->|border-critical all-diagonal branch| WB1
   WB1 -->|all-diagonal Delta(D) >= 5 and general weighted Bogdanov open| GL
-  WB1 -->|all-degree finite specialization at n=6,8| WB2
   WB2 -->|support-level weighted Bogdanov for every even n open| GL
+  WB2 -->|maximum-degree-four residual refinement| WB3
+  WB3 -->|orientation/blocker dichotomy remains open| GL
   S1 -->|exact gate refinement| S2E
   S2E -->|finite-jet refinement| S2J
   S2J -->|target-column refinement| S2K
@@ -936,7 +938,8 @@ flowchart BT
 | `G0` | Original global conjecture: **UNRESOLVED** | [Problem statement](../README.md#the-conjecture) |
 | `BR1` | For every even `n >= 4` the ternary GHZ tensor is a Euclidean limit of matching tensors `T_(W(eps))` whose blocks are monochromatic matrix units on a cubic three-edge-coloured graph whose colour classes form a face of the perfect-matching polytope (iterated truncation of `K_4`; the prism at `n=6`).  Hence no polynomial identity or Euclidean-closed condition on `T_W` alone can exclude a witness, and unconstrained numerical costs tend to zero along unbounded weights: **proved closure theorem / route no-go**, not a witness and not an exclusion | [GHZ closure / matching-polytope face theorem](../claims/arbitrary-order/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_THEOREM.md), [self-review](audits/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_REVIEW_2026-09-01.md) |
 | `WB1` | In the all-diagonal branch (every block diagonal, so every mixed word factorizes as a product of colour hafnians), every active colour-`c` cycle is a connected component of `supp(Z^c)` and hence even when `Delta(D) <= 4`, and no all-diagonal witness has `Delta(D) <= 4`: a perfect matching inside each active graph, the perfect-plus-partial-matching noncancellation lemma, and Bogdanov's rainbow matching give a non-constant word with nonzero coefficient.  Uses no normal types, bit flips, or Hamiltonian chords.  **Proved exact exclusion**; `Delta(D) >= 5`, general weighted Bogdanov, and every bichromatic branch remain OPEN | [All-diagonal degree-four exclusion](../claims/arbitrary-order/ALL_DIAGONAL_WEIGHTED_BOGDANOV_MAXIMUM_DEGREE_FOUR_EXCLUSION_THEOREM.md), [self-review](audits/ALL_DIAGONAL_WEIGHTED_BOGDANOV_MAXIMUM_DEGREE_FOUR_EXCLUSION_REVIEW_2026-09-01.md) |
-| `WB2` | Every all-diagonal witness yields a support model (AP'): graphs `G_c=supp(Z^c)` and families `S_c` of nonzero principal hafnians satisfying Laplace accessibility, single-matching forcing, and rainbow-freeness.  (AP') has no model at `n=6` and `n=8` (CaDiCaL and Glucose through python-sat agree; no DRAT trace), so no all-diagonal witness exists on eight vertices and the exclusion is support-level.  Dropping any one of Laplace, forcing, or the three-part rainbow clauses is SAT at `n=8`.  **Proved finite exclusion / exact reduction**; the all-`n` unsatisfiability of (AP') is a stated CONJECTURE and the sharpest open lemma of the branch | [Support-level finite exclusion](../claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_THEOREM.md), [self-review](audits/ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_REVIEW_2026-09-01.md) |
+| `WB2` | Every all-diagonal witness yields a support model (AP'): graphs `G_c=supp(Z^c)` and families `S_c` of nonzero principal hafnians satisfying Laplace accessibility, single-matching forcing, and rainbow-freeness.  (AP') has no model at `n=6` and `n=8` (CaDiCaL and Glucose through python-sat agree; no DRAT trace), so no all-diagonal witness exists on eight vertices and the exclusion is support-level.  Dropping any one of Laplace, forcing, or the three-part rainbow clauses is SAT at `n=8`.  **Proved finite exclusion / exact reduction**; the all-`n` unsatisfiability of (AP') is a stated CONJECTURE.  WB1's numerical witness proof does not transfer through this one-way bridge; full all-`n` AP' remains OPEN | [Support-level finite exclusion](../claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_THEOREM.md), [self-review](audits/ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_REVIEW_2026-09-01.md) |
+| `WB3` | If an AP' model has `Delta(G_0 union G_1 union G_2) <= 4`, each support graph is a union of even paths and even cycles and every cross-colour overlap lies in one residual partial matching.  At any order, two maximum-degree-two support graphs cannot share a perfect matching: a capacitated-Hall selector produces complementary uniquely matchable shores and contradicts two-part H2.  **Proved exact reduction / obstruction**; AP' at degree four remains OPEN at the orientation/blocker dichotomy, as does full all-`n` AP' | [Degree-four support reduction and common-matching exclusion](../claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_MAXIMUM_DEGREE_FOUR_REDUCTION_AND_COMMON_PERFECT_MATCHING_EXCLUSION_THEOREM.md), [adversarial review](audits/ALL_DIAGONAL_SUPPORT_LEVEL_MAXIMUM_DEGREE_FOUR_REDUCTION_AND_COMMON_PERFECT_MATCHING_EXCLUSION_REVIEW_2026-09-01.md) |
 | `S1` | Balanced complete even deck and full-sensor/rank-drop dichotomy: **proved reduction** | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
 | `S2E` | On a full sensor, target residuals plus empty normalization, prime-divisor regularity of only the pair components, and one symmetric Euler--hafnian recurrence per higher even subset are **necessary and sufficient** for same-graph globalization | [Cramer--Euler pair-pole gate](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md) |
 | `S2J` | For each Cramer pair component, prime-divisor regularity is equivalent to finitely many nonendpoint first stresses and endpoint Hessian stresses; in ternary dimension there are `3m+6` polynomial identities per pair, and the physical block is reconstructed uniquely: **proved exact refinement** | [Pair-pole differential flatness](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_POLE_DIFFERENTIAL_FLATNESS_THEOREM.md) |
@@ -1286,7 +1289,7 @@ flowchart BT
 | `BR1` | boundary | `GL` | Any global proof must derive structure of `W` from the exact equation `T_W = Delta_n`; conditions closed under limits of `T_W` cannot separate the target. |
 | `BR1` | specialization | `WB1` | The limit families are all-diagonal and cubic; the all-diagonal branch is where exactness must first defeat suppression. |
 | `WB1` | boundary | `GL` | All-diagonal witnesses have `Delta(D) >= 5`; at degree five active graphs may have degree-three vertices and cycle vertices may carry a residual edge, so the noncancellation lemma no longer applies. |
-| `WB1` | specialization | `WB2` | At `n=6,8` the support abstraction is unsatisfiable for every degree, extending the degree-four exclusion to all degrees at those orders. |
+| `WB2` | residual refinement | `WB3` | On the maximum-degree-four locus, AP' reduces to even path/cycle supports with one residual partial matching; the shared-perfect-matching subcase is excluded, leaving the exact orientation/blocker dichotomy. |
 | `WB2` | boundary | `GL` | (AP') for every even `n` is open; its proof would show every witness has a bichromatic entry, with no weights involved. |
 | `S1` | exact refinement | `S2E` | The unique rational full-sensor lift has an exact Cramer target, normalization, pair-pole, and Euler--hafnian gate. |
 | `S2E` | exact finite-jet refinement | `S2J` | Prime-divisor regularity of each Cramer pair is equivalent to explicit nonendpoint first stresses and endpoint Hessian stresses; no factorization of the Cramer minor is needed. |
@@ -1855,6 +1858,7 @@ flowchart BT
 | `GLS80` | specialized or nonlinear active-`T_0` repair synchronization | `GL` | No universal scalar linear combination of the complete zero-target row family isolates `I_2500`.  Prove a nonlinear saturated coefficient-ideal consequence, an exhaustive source-coordinate/activity localization with a legal specialized relation, or an exact complete-source control.  Every pure/zero-triangle, five-deficient, three-/four-deficient, unique-nonrigid, attachment, anchor, arbitrary-root, and local-to-global obligation also remains separate. |
 | `GLS56` | unique-nonrigid old-probe exchange and overlap | `GLS59` | At zero anchor, kill every complete matching by the chosen old probe rather than by the nonrigid auxiliary label.  Uniformize the resulting pointwise pure shores on each old-probe space, overlap the two three-label stars among five rigid labels, and contract the resulting second deficient label together with the fully supported nonrigid kernel. |
 | `GLS59` | remaining unique-nonrigid mixed-equation/attachment successor | `GL` | Couple the mono/binary descents across all overlap labels and coordinate-plane kernel choices, or transport a forced pure probe block into one named promoted target quotient with nonzero response and complete nuisance survival.  One overlap and the accepted three-colour six-vertex theorem are insufficient.  Alternate receiver, synchronization, activity, anchors, arbitrary-root source coverage, all-rigid branches, and nonzero anchor remain separate. |
+| `WB3` | boundary | `GL` | AP' at maximum degree four is not closed: an unsatisfiable orientation 2-SAT instance or a blocker cover must still be converted into uniquely matchable shores, and higher support degree is untouched. |
 
 ## Smallest positive next obligations
 
@@ -3919,12 +3923,17 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
     all-diagonal branch is excluded by support data alone: the graphs
     `supp(Z^c)` and the families of nonzero principal hafnians, constrained
     only by Laplace accessibility, single-matching forcing, and three-colour
-    rainbow-freeness.  The open lemma is to prove that this abstraction (AP')
-    has no model at every even `n >= 6`.  It subsumes all-diagonal degree
-    five, contains no weights, and by the bridge lemma implies that every
-    witness has a bichromatic entry.  Two colours alone are satisfiable, so
-    the argument must use the third colour as Bogdanov did, with accessible
-    families in place of matching unions.
+    rainbow-freeness.  `WB3` gives the valid support-only
+    `Delta(D)<=4` reduction to even path/cycle supports with one residual
+    partial matching and excludes every pair of supports sharing a perfect
+    matching.  The next exact lemma on that locus is the dichotomy between a
+    proper two-colour uniquely-matchable partition and an existential choice
+    of pairwise-disjoint support matchings with a nonmonochromatic perfect
+    matching avoiding every full selected cycle block.  Fixed cycle choices
+    are insufficient; their 2-SAT orientations must be chosen jointly with
+    the final matching.  Beyond that locus the all-order AP' conjecture
+    remains open.  By the one-way bridge, closing it would imply that every
+    witness has a bichromatic entry.
 
 ## Refuted or insufficient proof routes
 
