@@ -7251,6 +7251,34 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "All-diagonal weighted Bogdanov: even active cycles and maximum-degree-four exclusion (WB1)",
+      "document": "claims/arbitrary-order/ALL_DIAGONAL_WEIGHTED_BOGDANOV_MAXIMUM_DEGREE_FOUR_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "0cbdfae028749767",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact characteristic-zero theorem for all-diagonal witnesses only: every edge block is diagonal, so every mixed word coefficient factorizes as the product of the three colour hafnians on the colour classes",
+        "hypotheses used: haf(Z^c[V]) = 1 for each colour and the factorized two- and three-part vanishing identities; no positivity, genericity, or support enumeration",
+        "Theorem 1: Laplace scores, active-edge exclusivity, minimum support degree three, and, under Delta(D) <= 4, every active colour-c cycle is a connected component of supp(Z^c) and hence even (component factorization and haf(Z^c[V]) = 1)",
+        "Theorem 2: no all-diagonal witness has Delta(D) <= 4; the proof selects a perfect matching inside each active graph, applies the perfect-plus-partial-matching noncancellation lemma, and uses Bogdanov's theorem (Chandran-Gajjala-Illickan MFCS 2024 Theorem 1.7, the repository's existing citation) to produce a rainbow word with nonzero coefficient",
+        "not the simultaneous balanced all-bridge branch: no normal types, bit flips, pairwise Hamiltonicity, or Hamiltonian-chord argument are used or available; the all-bridge Delta(D) >= 5 result is a separate theorem in a separate branch",
+        "Delta(D) >= 5 in the all-diagonal branch, the general weighted Bogdanov statement, every branch with a bichromatic entry, and the global conjecture remain open",
+        "the review is an adversarial self-review by the authoring agent and is recorded as such; the primary and audit scripts are bounded exact checks of the lemmas (factorization at n=6, noncancellation at n=6,8, odd components, degree patterns, and Bogdanov exhaustively at n=6,8), not the proof"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_all_diagonal_weighted_bogdanov_maximum_degree_four_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_all_diagonal_weighted_bogdanov_maximum_degree_four_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/ALL_DIAGONAL_WEIGHTED_BOGDANOV_MAXIMUM_DEGREE_FOUR_EXCLUSION_REVIEW_2026-09-01.md",
+      "expected_runtime": "under one minute for the exact primary and under one minute for the independent audit on the reference host",
+      "external_binaries": [],
+      "note": "WB1 proves that every all-diagonal (monochromatic-edge, complex-weight) witness has maximum support degree at least five, via even active cycles from component factorization and Bogdanov's rainbow matching. It settles the even-cycle lemma named in the fibre-exact targets brief. Scoped to the all-diagonal branch; the global Krenn-Gu conjecture remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

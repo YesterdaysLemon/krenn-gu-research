@@ -395,10 +395,13 @@ flowchart BT
   GL["Universal extraction, synchronization,<br/>and local-to-global gluing OPEN"]
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
   BR1["GHZ tensor lies in the CLOSURE of the hafnian image<br/>PROVED for every even n; tensor-level separation REFUTED"]
+  WB1["All-diagonal (weighted Bogdanov) witnesses<br/>PROVED Delta(D) <= 4 EXCLUDED; even active cycles; Delta(D) >= 5 OPEN"]
 
   G0 -->|universal reduction| S1
   G0 -. limit family only .-> BR1
   BR1 -->|every route must use the exact fibre T_W = Delta| GL
+  BR1 -->|border-critical all-diagonal branch| WB1
+  WB1 -->|all-diagonal Delta(D) >= 5 and general weighted Bogdanov open| GL
   S1 -->|exact gate refinement| S2E
   S2E -->|finite-jet refinement| S2J
   S2J -->|target-column refinement| S2K
@@ -929,6 +932,7 @@ flowchart BT
 |---|---|---|
 | `G0` | Original global conjecture: **UNRESOLVED** | [Problem statement](../README.md#the-conjecture) |
 | `BR1` | For every even `n >= 4` the ternary GHZ tensor is a Euclidean limit of matching tensors `T_(W(eps))` whose blocks are monochromatic matrix units on a cubic three-edge-coloured graph whose colour classes form a face of the perfect-matching polytope (iterated truncation of `K_4`; the prism at `n=6`).  Hence no polynomial identity or Euclidean-closed condition on `T_W` alone can exclude a witness, and unconstrained numerical costs tend to zero along unbounded weights: **proved closure theorem / route no-go**, not a witness and not an exclusion | [GHZ closure / matching-polytope face theorem](../claims/arbitrary-order/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_THEOREM.md), [self-review](audits/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_REVIEW_2026-09-01.md) |
+| `WB1` | In the all-diagonal branch (every block diagonal, so every mixed word factorizes as a product of colour hafnians), every active colour-`c` cycle is a connected component of `supp(Z^c)` and hence even when `Delta(D) <= 4`, and no all-diagonal witness has `Delta(D) <= 4`: a perfect matching inside each active graph, the perfect-plus-partial-matching noncancellation lemma, and Bogdanov's rainbow matching give a non-constant word with nonzero coefficient.  Uses no normal types, bit flips, or Hamiltonian chords.  **Proved exact exclusion**; `Delta(D) >= 5`, general weighted Bogdanov, and every bichromatic branch remain OPEN | [All-diagonal degree-four exclusion](../claims/arbitrary-order/ALL_DIAGONAL_WEIGHTED_BOGDANOV_MAXIMUM_DEGREE_FOUR_EXCLUSION_THEOREM.md), [self-review](audits/ALL_DIAGONAL_WEIGHTED_BOGDANOV_MAXIMUM_DEGREE_FOUR_EXCLUSION_REVIEW_2026-09-01.md) |
 | `S1` | Balanced complete even deck and full-sensor/rank-drop dichotomy: **proved reduction** | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
 | `S2E` | On a full sensor, target residuals plus empty normalization, prime-divisor regularity of only the pair components, and one symmetric Euler--hafnian recurrence per higher even subset are **necessary and sufficient** for same-graph globalization | [Cramer--Euler pair-pole gate](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md) |
 | `S2J` | For each Cramer pair component, prime-divisor regularity is equivalent to finitely many nonendpoint first stresses and endpoint Hessian stresses; in ternary dimension there are `3m+6` polynomial identities per pair, and the physical block is reconstructed uniquely: **proved exact refinement** | [Pair-pole differential flatness](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_POLE_DIFFERENTIAL_FLATNESS_THEOREM.md) |
@@ -1276,6 +1280,8 @@ flowchart BT
 | `G0` | reduction | `S1` | Every hypothetical ternary witness has a balanced-sensor dichotomy. |
 | `G0` | boundary | `BR1` | `Delta_n` is in the closure of `Im(Phi_n)` for every even `n`; the limiting families are matrix-unit cubic graphs with unbounded weights, not witnesses. |
 | `BR1` | boundary | `GL` | Any global proof must derive structure of `W` from the exact equation `T_W = Delta_n`; conditions closed under limits of `T_W` cannot separate the target. |
+| `BR1` | specialization | `WB1` | The limit families are all-diagonal and cubic; the all-diagonal branch is where exactness must first defeat suppression. |
+| `WB1` | boundary | `GL` | All-diagonal witnesses have `Delta(D) >= 5`; at degree five active graphs may have degree-three vertices and cycle vertices may carry a residual edge, so the noncancellation lemma no longer applies. |
 | `S1` | exact refinement | `S2E` | The unique rational full-sensor lift has an exact Cramer target, normalization, pair-pole, and Euler--hafnian gate. |
 | `S2E` | exact finite-jet refinement | `S2J` | Prime-divisor regularity of each Cramer pair is equivalent to explicit nonendpoint first stresses and endpoint Hessian stresses; no factorization of the Cramer minor is needed. |
 | `S2J` | exact target-column refinement | `S2K` | Every cleared pair jet is an adjugate image and one selected-column replacement determinant; under target consistency, its vanishing is the corresponding full-sensor column-span condition. |
@@ -3902,6 +3908,16 @@ remain open.
 Within the `r=1` route, the minimum-word cells `k=1`, `k=2`, and `k=3`
 remain distinct positive obligations. The port theorem packages their exact
 responses; it does not collapse them into the globally rigid `k=4` cell.
+
+11. **All-diagonal degree five.**  `WB1` excludes every all-diagonal witness
+    with `Delta(D) <= 4` using only Laplace, the two- and three-part
+    factorized identities, component factorization, the noncancellation
+    lemma, and Bogdanov's theorem.  At `Delta(D) = 5` an active graph may have
+    a degree-three vertex and a cycle vertex may carry one residual edge, so
+    `supp(Z^c)` need not be a perfect plus a partial matching.  The next exact
+    lemma is to exclude, or localize to a supported pure cancellation, every
+    all-diagonal witness with `Delta(D) = 5`; a full weighted Bogdanov theorem
+    would show every witness has a bichromatic entry.
 
 ## Refuted or insufficient proof routes
 
