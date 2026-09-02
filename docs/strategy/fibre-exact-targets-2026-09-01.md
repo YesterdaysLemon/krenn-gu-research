@@ -159,6 +159,16 @@ the all-diagonal case because every mixed word factorizes:
 that eliminates one of the mechanisms above across the whole parent and
 leaves one strictly sharper lemma.
 
+**Progress (later on 2026-09-01).**  The even-cycle lemma is settled:
+[`WB1`](../../claims/arbitrary-order/ALL_DIAGONAL_WEIGHTED_BOGDANOV_MAXIMUM_DEGREE_FOUR_EXCLUSION_THEOREM.md)
+proves that in the all-diagonal branch active colour-`c` cycles are
+components of `supp(Z^c)`, hence even, and that no all-diagonal witness has
+`Delta(D) <= 4`.  The proof needs no bit flips and no Hamiltonian-chord
+argument.  The sprint's first open lemma is now **all-diagonal degree five**:
+exclude, or localize to a supported pure cancellation, every all-diagonal
+witness with `Delta(D) = 5`, where an active graph may have a degree-three
+vertex and a cycle vertex may carry a residual edge.
+
 ## Parent B (finite milestone): complete the eight-vertex exclusion
 
 Extend the six-vertex certificate chain to all of `n = 8`, `d = 3`, hence to

@@ -4075,4 +4075,19 @@ approximate one in any bounded gauge, and leaves the global status
 `verify_ghz_closure_matching_polytope_face_asymptotic_realizability.py`,
 `audit_ghz_closure_matching_polytope_face_asymptotic_realizability.py`.
 
+## All-diagonal weighted Bogdanov: degree-four exclusion
+
+The [all-diagonal degree-four exclusion](ALL_DIAGONAL_WEIGHTED_BOGDANOV_MAXIMUM_DEGREE_FOUR_EXCLUSION_THEOREM.md)
+proves that when every block is diagonal (monochromatic edges with complex
+weights) no witness has maximum support degree at most four: active
+colour-`c` cycles are components of `supp(Z^c)` and hence even, each active
+graph contains a perfect matching, the perfect-plus-partial-matching
+noncancellation lemma applies, and Bogdanov's rainbow matching yields a
+non-constant word with nonzero coefficient.  It is a scoped exact theorem in
+the all-diagonal branch only; `Delta(D) >= 5` there, the general weighted
+Bogdanov statement, and every bichromatic branch remain open, and the global
+status is **UNRESOLVED**.  Scripts:
+`verify_all_diagonal_weighted_bogdanov_maximum_degree_four_exclusion.py`,
+`audit_all_diagonal_weighted_bogdanov_maximum_degree_four_exclusion.py`.
+
 The global Krenn-Gu conjecture remains **UNRESOLVED**.
