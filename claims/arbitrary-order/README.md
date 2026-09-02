@@ -4090,4 +4090,17 @@ status is **UNRESOLVED**.  Scripts:
 `verify_all_diagonal_weighted_bogdanov_maximum_degree_four_exclusion.py`,
 `audit_all_diagonal_weighted_bogdanov_maximum_degree_four_exclusion.py`.
 
+## All-diagonal support-level finite exclusion (n = 6, 8)
+
+The [support-level finite exclusion](ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_THEOREM.md)
+abstracts an all-diagonal witness to three graphs and three families of
+nonzero principal hafnians obeying Laplace accessibility, single-matching
+forcing, and rainbow-freeness, and shows by two independent SAT encodings and
+solvers that this abstraction has no model at `n = 6` or `n = 8`.  Hence no
+all-diagonal witness exists on eight vertices, and no weight values are
+needed for the exclusion.  Each single ingredient is load-bearing at `n = 8`.
+The all-`n` statement is recorded as a conjecture.  No DRAT trace is
+available on the reference host; the gap is stated.  The global status is
+**UNRESOLVED**.
+
 The global Krenn-Gu conjecture remains **UNRESOLVED**.

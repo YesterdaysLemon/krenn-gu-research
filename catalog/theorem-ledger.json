@@ -7279,6 +7279,34 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "All-diagonal weighted Bogdanov: support-level abstraction and finite exclusion at n = 6, 8 (WB2)",
+      "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "c23eac18e77d59e2",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "finite computer-assisted exact exclusion for all-diagonal witnesses (every edge block diagonal) on n=6 and n=8 vertices, plus an exact reduction valid at every even n: every all-diagonal witness yields a support model (AP') consisting of the graphs supp(Z^c) and the families of even sets with nonzero principal hafnian, satisfying Laplace accessibility, support, single-matching forcing, V in S_c, and rainbow-freeness over ordered even partitions",
+        "each clause family is a proved necessary condition (bridge lemma in the document); UNSAT of the abstraction therefore excludes all-diagonal witnesses, while a model of the abstraction would not by itself be a witness",
+        "the abstraction has no model at n=6 and n=8: CaDiCaL 1.5.3 (primary encoding) and Glucose 4.1 (independent encoding: no explicit support clause, cardinality-based forcing, partition-generated rainbow clauses) through the pinned python-sat both return UNSAT; the audit also confirms UNSAT at n=8 with the degree bound Delta(D)<=4",
+        "no DRAT or other proof trace is recorded: drat-trim is not on the reference host and the python-sat CaDiCaL binding exposes no proof output; this evidence gap is stated explicitly",
+        "sharpness at n=8: dropping the three-part rainbow clauses, or forcing, or Laplace accessibility each makes the abstraction satisfiable, with decoded models recorded by the primary",
+        "the n=6 statement is a re-derivation inside the all-diagonal branch of the already excluded six-vertex case; the n=8 all-diagonal exclusion is new relative to the eight-vertex finite frontier",
+        "the all-n unsatisfiability of (AP') is recorded as a conjecture, not a theorem; n>=10, every branch with a bichromatic entry, and the global conjecture remain open"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_all_diagonal_support_level_weighted_bogdanov_finite_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/audit_all_diagonal_support_level_weighted_bogdanov_finite_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_REVIEW_2026-09-01.md",
+      "expected_runtime": "about six minutes for the primary (unrestricted n=8 CaDiCaL instance plus three relaxations) and about three minutes for the Glucose audit on the reference host",
+      "external_binaries": [],
+      "note": "WB2 proves by two independent SAT encodings and solvers that the support abstraction (AP') of an all-diagonal witness has no model at n=6,8, hence no all-diagonal witness exists on eight vertices and the exclusion needs no weight values. Each of Laplace, forcing, and three-part rainbow-freeness is load-bearing at n=8. The all-n statement is a stated conjecture. No DRAT trace. Scoped to the all-diagonal branch; the global Krenn-Gu conjecture remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
