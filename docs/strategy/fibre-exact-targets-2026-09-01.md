@@ -169,6 +169,18 @@ exclude, or localize to a supported pure cancellation, every all-diagonal
 witness with `Delta(D) = 5`, where an active graph may have a degree-three
 vertex and a cycle vertex may carry a residual edge.
 
+**Progress (later still on 2026-09-01).**  Support-level SAT triage
+([`WB2`](../../claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_THEOREM.md))
+shows the all-diagonal branch is excluded at `n = 6` and `n = 8` for every
+degree using only Laplace accessibility, single-matching forcing, and
+rainbow-freeness, with no weight values.  Degree five is therefore subsumed.
+The sprint's target is now the **support-level weighted Bogdanov
+conjecture**: the abstraction (AP') has no model at any even `n >= 6`.  It is
+purely combinatorial.  Adversarial work should look for a model of (AP') at
+`n = 10` or `n = 12` (a model is not a witness; it would locate exactly where
+weights must be consulted), and constructive work should turn the `n = 8`
+unsatisfiability into a human argument using the third colour.
+
 ## Parent B (finite milestone): complete the eight-vertex exclusion
 
 Extend the six-vertex certificate chain to all of `n = 8`, `d = 3`, hence to
