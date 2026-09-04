@@ -12,6 +12,13 @@ exhaustive cover. The last uses a supplied, independently checked
 General incidence patterns and unrestricted eight-vertex witnesses remain
 open.
 
+The [invertible-root joint-kernel boundary](TWO_ROOT_JOINT_KERNEL_BOUNDARY_THEOREM.md)
+uses the full source to go beyond common-column incidences. At every
+invertible physical edge of an n=8/max-r=2 witness, some outsider must have
+joint kernel zero or a coordinate axis. Its proof supplies one actual binary
+common-column anchor per colour pair before using a mixed 2D/1D cofactor
+argument. The residual kernel types and lower-rank root edges remain open.
+
 The nine Stage 28 claim documents have distinct support and case-cover
 hypotheses:
 
