@@ -18,6 +18,18 @@ excludes 908 supports rather than all `binomial(104,4) = 4,598,126` supports.
 Arbitrary P7 and local-to-global synchronization remain **UNKNOWN**; the
 global Krenn-Gu conjecture remains **UNRESOLVED**.
 
+## Structural-gate closure obstruction
+
+The [pure-matching scaffold theorem](PURE_MATCHING_SCAFFOLD_STRUCTURAL_GATE_NO_GO_THEOREM.md)
+constructs arbitrarily large physical arrays satisfying pure normalization,
+killers, termwise root-annihilation tests, and every majority ideal-power
+condition. Generically their maximum torus root has size five and every
+exterior span at every maximum root is full, while a mixed coefficient is
+nonzero. These are nonwitness controls: the listed structural gates alone
+cannot supply bounded surplus or close the conjecture. The complete source
+equations remain load-bearing. See the
+[independent review](../../docs/audits/PURE_MATCHING_SCAFFOLD_STRUCTURAL_GATE_NO_GO_REVIEW_2026-09-04.md).
+
 ## GLD83--GLD103 equal-leaf checkpoint
 
 The [`GLD83` bordered-Pluecker/Fitting reduction](FOUR_ROOT_TORUS_STAR_SURVIVOR_BORDERED_PLUCKER_FITTING_OPEN_NONEXTENSION_THEOREM.md)
