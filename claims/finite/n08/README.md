@@ -19,6 +19,15 @@ joint kernel zero or a coordinate axis. Its proof supplies one actual binary
 common-column anchor per colour pair before using a mixed 2D/1D cofactor
 argument. The residual kernel types and lower-rank root edges remain open.
 
+The [six-diagonal-leg source reduction](TWO_ROOT_DIAGONAL_LEG_COMMON_PLANE_REDUCTION_THEOREM.md)
+handles paired invertible root stars with complementary diagonal unit legs.
+It forces three inactive image planes on at least one shore to coincide,
+and forces the outside hafnian to vanish when that shore is inactive and
+the opposite shore is fully open. The full corrected cofactor equations
+are retained. At maximum root cardinality two, adjacent degree-four
+vertices in the invertible-edge graph supply this root configuration.
+The resulting coincident-plane source system is still open.
+
 The nine Stage 28 claim documents have distinct support and case-cover
 hypotheses:
 
