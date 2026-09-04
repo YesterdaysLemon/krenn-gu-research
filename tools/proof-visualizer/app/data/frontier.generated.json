@@ -2975,29 +2975,36 @@
     },
     {
       "id": "N8R2C",
-      "title": "n=8 maximum r=2; root block rank at least2",
-      "diagramLabel": "n=8 maximum r=2; root block rank at least2 · COMMON-COORDINATE SOURCE EXCLUDED",
-      "exactStatus": "At n=8 and maximum torus-root cardinality two, the common-coordinate physical root-incidence class is excluded whenever the chosen root block has rank at least two. The full source forces two ports per colour; all same-pair channel ranks, zero individual legs, coordinate-kernel rank-two boundaries, and dependent cross channels are retained. Labelled four-hafnians, partner stresses, the complete dependent-channel graph cover, four-cycle exclusion, and a six-cycle contradiction prove a complete exclusion of this stated child. Other incidence types, rank-at-most-one root blocks, general r=2, and the high-surplus parent remain open.",
+      "title": "n=8 maximum r=2; all root-block ranks",
+      "diagramLabel": "n=8 maximum r=2; all root-block ranks · COMMON-COORDINATE SOURCE EXCLUDED",
+      "exactStatus": "At n=8 and maximum torus-root cardinality two, the common-coordinate physical root-incidence class is completely excluded, without a root-block rank hypothesis. Rank-at-least-two, both nonmonomial rank-one factor types, and the zero block are covered, retaining zero individual legs and all dependent-channel boundaries. The zero-block proof keeps the initially unobserved hafnian, closes an exhaustive orientation cover, and re-roots the final pure case into the accepted high-rank theorem before an independently reconstructed and checked Boolean certificate. The certificate has 6,860 binary branches and 6,861 conflict leaves. Other incidence types, general r=2, larger orders, and the high-surplus parent remain open.",
       "tone": "growing",
       "owners": [
         {
-          "label": "Two-root common-coordinate exclusion",
-          "href": "../claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_EXCLUSION_THEOREM.md",
-          "document": "claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_EXCLUSION_THEOREM.md",
+          "label": "Complete common-coordinate exclusion",
+          "href": "../claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_COMPLETION_THEOREM.md",
+          "document": "claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_COMPLETION_THEOREM.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/55f1c739b585a6c7239521a4a247290fc672bbe6/claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_EXCLUSION_THEOREM.md"
+          "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/55f1c739b585a6c7239521a4a247290fc672bbe6/claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_COMPLETION_THEOREM.md"
         },
         {
-          "label": "independent review",
-          "href": "audits/TWO_ROOT_COMMON_COORDINATE_EXCLUSION_REVIEW_2026-09-04.md",
-          "document": "docs/audits/TWO_ROOT_COMMON_COORDINATE_EXCLUSION_REVIEW_2026-09-04.md",
+          "label": "integration review",
+          "href": "audits/TWO_ROOT_COMMON_COORDINATE_COMPLETION_REVIEW_2026-09-04.md",
+          "document": "docs/audits/TWO_ROOT_COMMON_COORDINATE_COMPLETION_REVIEW_2026-09-04.md",
           "anchor": null,
-          "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/55f1c739b585a6c7239521a4a247290fc672bbe6/docs/audits/TWO_ROOT_COMMON_COORDINATE_EXCLUSION_REVIEW_2026-09-04.md"
+          "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/55f1c739b585a6c7239521a4a247290fc672bbe6/docs/audits/TWO_ROOT_COMMON_COORDINATE_COMPLETION_REVIEW_2026-09-04.md"
+        },
+        {
+          "label": "certificate review",
+          "href": "audits/TWO_ROOT_ZERO_SOURCE_CERTIFICATE_REVIEW_2026-09-04.md",
+          "document": "docs/audits/TWO_ROOT_ZERO_SOURCE_CERTIFICATE_REVIEW_2026-09-04.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/55f1c739b585a6c7239521a4a247290fc672bbe6/docs/audits/TWO_ROOT_ZERO_SOURCE_CERTIFICATE_REVIEW_2026-09-04.md"
         }
       ],
       "evidence": {
         "indexedDocuments": 0,
-        "linkedDocuments": 2,
+        "linkedDocuments": 3,
         "ledgerStatuses": [],
         "primaryVerifierCount": 0,
         "independentAuditCount": 0
@@ -11736,14 +11743,14 @@
       "source": "M1",
       "target": "N8R2C",
       "relation": "full-source finite specialization",
-      "note": "At n=8 and maximum r=2, retain common-coordinate physical root incidences and a root edge of rank at least two. The complete source labels three pure four-cofactors; nonlinear compatibility excludes this entire child, including rank-one channels, nonzero dependent channels, and four-cycle stress circulations."
+      "note": "At n=8 and maximum r=2, retain the common-coordinate physical-incidence hypothesis. Every root rank is excluded: exact source/cofactor arguments handle nonzero blocks and most zero-block orientations; the remaining pure orientation has a proved necessary-support bridge and independently accepted exact decision-tree certificate."
     },
     {
       "id": "N8R2C-GL-147",
       "source": "N8R2C",
       "target": "GL",
       "relation": "boundary obligation",
-      "note": "Maximum-root saturation does not force common-coordinate physical incidences or a root edge of rank at least two. Other r=2 branches, higher root orders, and arbitrary n are not excluded by this theorem."
+      "note": "Maximum-root saturation does not force common-coordinate physical incidences at a usable pair. Other r=2 incidence types, higher root orders, and arbitrary n are not excluded by this theorem. No root-rank residual remains inside the common-coordinate child."
     },
     {
       "id": "S1-O1-148",
