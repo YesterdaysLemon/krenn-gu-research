@@ -3937,9 +3937,18 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
 
 ## Refuted or insufficient proof routes
 
+The [pure-matching scaffold obstruction](../claims/arbitrary-order/PURE_MATCHING_SCAFFOLD_STRUCTURAL_GATE_NO_GO_THEOREM.md)
+now tests the root-annihilation and entangled majority-ideal mechanisms
+jointly, at arbitrary large orders. Their simultaneous validity does not
+force bounded maximal-root surplus. This is a mechanism exclusion with
+[independent review](audits/PURE_MATCHING_SCAFFOLD_STRUCTURAL_GATE_NO_GO_REVIEW_2026-09-04.md),
+not an exclusion of a hypothetical-witness branch: the complete nonzero
+source equations are absent from the control and remain essential.
+
 | Route | Exact finding | Owner |
 |---|---|---|
 | Any tensor-level invariant (polynomial identity in the ideal of the hafnian image, flattening/slice/border-rank bound, or other Euclidean-closed condition on `T_W` alone) separates the GHZ tensor from matching tensors | False for every even `n >= 4`: `Delta_n` is a limit of matrix-unit matching tensors along a cubic three-edge-coloured graph whose colour classes are a face of the perfect-matching polytope; iterated truncation of `K_4` gives such a graph at every order.  Proofs must use the exact fibre `T_W = Delta_n`. | [GHZ closure / matching-polytope face theorem](../claims/arbitrary-order/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_THEOREM.md) |
+| Pure amplitudes, killers, all termwise root-annihilation tests, the full majority ideal-power hierarchy, and maximal-root blocker incidence force bounded surplus or a contradiction | False jointly: for every `n=4k`, `k>=5`, private K4 colour matchings with generic hollow inter-block fillings have pure amplitudes one, literal majority ideal-power certificates, maximum torus root exactly five, and full exterior spans at every maximum root. Their surplus `n-10` is unbounded and an exhibited mixed coefficient is nonzero. These are physical nonwitness controls; the complete source identities are not asserted. | [Pure-matching scaffold structural-gate obstruction](../claims/arbitrary-order/PURE_MATCHING_SCAFFOLD_STRUCTURAL_GATE_NO_GO_THEOREM.md), [independent review](audits/PURE_MATCHING_SCAFFOLD_STRUCTURAL_GATE_NO_GO_REVIEW_2026-09-04.md) |
 | Automatic characteristic-zero to `F_2` reduction | Refuted as a general lemma; good reduction and prime-field residue are not forced | [Characteristic-two boundary](../claims/arbitrary-order/CHARACTERISTIC_TWO_CONTRACTION_LIFT_OBSTRUCTION.md) |
 | Fixed surplus determines balanced-sensor rank | False: one fixed-layer fibre can contain deficient and full uncontracted shores | [Fixed-surplus nonobservability](../claims/arbitrary-order/BALANCED_FIXED_SURPLUS_TRUNCATION_FIBRE_NONOBSERVABILITY_AND_TRANSVERSE_ABSORPTION_THEOREM.md) |
 | The first two-open equation always detects the affine gauge | False on a conditional tight `q=0` outside-star cell | [Two-open star invisibility](../claims/arbitrary-order/BALANCED_TWO_OPEN_ROOT_GAUGE_DETECTOR_AND_STAR_INVISIBILITY_BOUNDARY.md) |
