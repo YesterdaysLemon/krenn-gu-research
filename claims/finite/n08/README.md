@@ -1,5 +1,14 @@
 # Eight-vertex packages
 
+The [two-root common-coordinate exclusion](TWO_ROOT_COMMON_COORDINATE_EXCLUSION_THEOREM.md)
+is an analytic full-source theorem over C: maximum torus-root cardinality
+two, a chosen root edge of rank at least two, and common-coordinate physical
+incidences are incompatible with the GHZ target. It includes all same-pair
+channel ranks, dependent cross channels, and zero individual legs. Other
+incidence types and rank-at-most-one root edges
+remain outside its scope. See the
+[independent review](../../../docs/audits/TWO_ROOT_COMMON_COORDINATE_EXCLUSION_REVIEW_2026-09-04.md).
+
 The nine Stage 28 claim documents have distinct support and case-cover
 hypotheses:
 
