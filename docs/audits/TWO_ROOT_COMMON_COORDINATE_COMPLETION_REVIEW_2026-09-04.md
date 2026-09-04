@@ -10,7 +10,13 @@ Reviewed the three owning documents in the astra-r2-lowrank-20260904 integration
 | --- | --- |
 | claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_COMPLETION_THEOREM.md | da18dd803823f1767fefc9207db6c3b8f4624a9914ad2f785e503688b80beea9 |
 | claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_RANK_ONE_EXCLUSION.md | 155e848fb31b6be9045e12b2fe3f5f1cad1e0fed35730ce734759ec16bfb94c1 |
-| claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_ZERO_EXCLUSION.md | 0bb809cf69bdd23dff6ca60f722ea86e8bc26491ba6c6e65c8030e6d5efef02e |
+| claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_ZERO_EXCLUSION.md | 3e4829139d5e192e33ba91f1dad0487a06068530b55795f2ccf6a64e1cd25b9c |
+
+The zero-block document was reviewed with SHA256
+`0bb809cf69bdd23dff6ca60f722ea86e8bc26491ba6c6e65c8030e6d5efef02e`.
+Git normalized its single CRLF line ending to LF; bytewise comparison after
+that normalization exactly equals the committed blob pinned above. No
+mathematical text changed. The two other document hashes were unchanged.
 
 This is a final exact-text mathematical integration review following the independent rank-one and zero-block analytic audits. I read the full updated owning texts, the accepted certificate/package reviews' scope and acceptance statements, and the generator's physical vertex/word/anchor mapping. I did NOT rerun or independently recertify the decision-tree checker. Its accepted proof traversal is supplied by the separately named encoding/certificate and package reviewers and the coordinator's completed replay.
 
