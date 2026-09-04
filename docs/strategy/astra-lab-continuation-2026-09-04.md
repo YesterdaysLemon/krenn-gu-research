@@ -1,7 +1,9 @@
 # Astra research laboratory continuation, 2026-09-04
 
 Status: active coordinated research. Global Krenn--Gu status **UNRESOLVED**.
-Integration base: `b905f38038e8087c2fb0c67841af90c16b899218`.
+Initial integration base: `b905f38038e8087c2fb0c67841af90c16b899218`.
+The low-rank completion starts from merged
+`73955ca0673d1c0ee41e016d7c9b0020704d3b49`.
 The owner explicitly authorized continued research until resolution,
 Astra-only low/medium/high agents, and reviewed PR creation and merges.
 
@@ -63,7 +65,8 @@ The initial scaffold obstruction was merged as
 [PR 339](https://github.com/YesterdaysLemon/krenn-gu-research/pull/339)
 after local and CI validation. It is not a global exclusion.
 
-The next accepted mathematical result, extended before publication, is the
+The next accepted mathematical result, merged as
+[PR 340](https://github.com/YesterdaysLemon/krenn-gu-research/pull/340), is the
 [eight-vertex common-coordinate source exclusion](../../claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_EXCLUSION_THEOREM.md),
 with [fresh independent consolidation](../audits/TWO_ROOT_COMMON_COORDINATE_EXCLUSION_REVIEW_2026-09-04.md).
 The source supplies three separately labelled pure four-cofactors, allowing
@@ -74,18 +77,25 @@ every root block of rank at least two, including coordinate-kernel
 boundaries and dependent-channel four-cycles. No generic
 parameter assumption or computational UNSAT assertion is used.
 
-This is load-bearing for the declared parent because n=8, maximum r=2
-is one of its higher-surplus branches. It does not establish that the
-incidence hypothesis is exhaustive. The active next implications are:
+The [completion theorem](../../claims/finite/n08/TWO_ROOT_COMMON_COORDINATE_COMPLETION_THEOREM.md)
+then removes the entire root-rank boundary within that same child. Both
+nonmonomial rank-one factor types have analytic exclusions. For Q=0, the
+proof retains the initially unobserved inactive hafnian and gives an
+exhaustive orientation cover. Its last pure-(3,3) branch re-roots through
+the already accepted high-rank theorem, then maps to a finite necessary
+support instance. Independent reconstruction and a separate exact checker
+accept the supplied certificate's 6,860 binary branches and 6,861 conflict
+leaves. No native UNSAT result or failed runtime is treated as a proof.
 
-- On the n=8 maximum-r=2 branch with a physical edge of rank at least two, use the
-  full source to force common-coordinate incidence or directly exclude the
-  remaining common-plane and unrestricted-opposite-leg types.
-- On the remaining low-rank root-edge branch, rank-at-most-one root edges
-  must still be handled. Rank-two root edges are now covered by the theorem
-  when the physical incidences are common-coordinate; other incidences
-  remain open. Use the full source to force a larger torus-root set or a
-  contradiction.
+This is load-bearing for the declared parent because n=8, maximum r=2
+is one of its higher-surplus branches. The complete common-coordinate
+child is now excluded, with no root-rank hypothesis. It does not establish
+that the incidence hypothesis is exhaustive. The active next implications are:
+
+- On the n=8 maximum-r=2 branch, use the full source to supply a pair with
+  common-coordinate physical incidences, allowing re-rooting, or directly
+  exclude the remaining incidence types. There is no need to force a
+  particular root rank inside the now-closed common-coordinate child.
 - The r=1 complete matrix-unit branch and arbitrary-order high-surplus
   branches remain part of the parent, not consequences of this finite leaf.
 

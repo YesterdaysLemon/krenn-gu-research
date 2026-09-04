@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scope": "Pure orientation (3,3) branch of the eight-vertex common-coordinate maximum-two-root source with zero root block",
+  "instance": {
+    "variables": 2394,
+    "clauses": 11394,
+    "byte_format": "ASCII DIMACS with explicit CRLF line endings",
+    "sha256": "4415ea3d243603910729098d104240ca2d6fd2fa1d2843098e3131b4088ac1ac",
+    "generator": "generate_instance.py"
+  },
+  "certificate": {
+    "path": "certificate.json",
+    "format": "dpll-binary-up-v1",
+    "sha256": "d73b746cbf5bafdcb1ac6e2af9bcac65475e5d7d1595f82cabca25bc8556c1fd",
+    "branches": 6860,
+    "leaves": 6861,
+    "maximum_decision_depth": 48,
+    "checker": "check_certificate.py"
+  },
+  "evidence": {
+    "computation": "exact Boolean and arbitrary-precision integer arithmetic",
+    "independent_encoding_reconstruction": "arithmetic variable IDs and recursive matching enumeration",
+    "independent_certificate_check": "functional residual-clause bit masks and batch unit propagation",
+    "producer": "separate watched-literal DPLL search; not trusted by the checker",
+    "formalization": "not formalized in Lean",
+    "global_status": "UNRESOLVED"
+  }
+}
