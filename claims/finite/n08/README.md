@@ -1,5 +1,13 @@
 # Eight-vertex packages
 
+The [maximum-root-one exclusion](EIGHT_VERTEX_MATRIX_UNIT_EXCLUSION_THEOREM.md)
+rules out every complete nonzero ternary matrix-unit source at order eight, with
+arbitrary complex weights and endpoint colours. Its complete eighteen-case
+scaffold cover, 39 exact algebraic cuts, and eighteen independently checked
+UNSAT certificates are supplied in the [replay package](r1-source-certificate/README.md).
+Every hypothetical ternary eight-vertex witness therefore has maximum root size at
+least two. This is not an arbitrary eight-vertex or arbitrary-order exclusion.
+
 The [complete two-root common-coordinate exclusion](TWO_ROOT_COMMON_COORDINATE_COMPLETION_THEOREM.md)
 rules out the full GHZ source over C at maximum torus-root cardinality two
 when both physical root incidences at every outside port share a coordinate
