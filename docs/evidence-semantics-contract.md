@@ -276,12 +276,16 @@ and zero new debt.  At activation the tracked root contained exactly seven
 justified files and nine justified top-level directories.
 
 The reviewed 2026-08-11 workflow-policy change added `.agents` for committed
-repository-scoped agent workflow configuration.  The current exact allowlist
-therefore contains seven files and ten directories.
+repository-scoped agent workflow configuration.  The 2026-09-05 owner-requested
+Codex configuration change adds `.codex` for the reviewed project
+`config.toml`; other local files in that directory remain ignored.  The exact
+allowlist therefore contains seven files and eleven directories.  Project
+configuration is applied only by Codex clients that trust the repository;
+this policy does not grant trust or change approval or sandbox settings.
 
 `python check_hygiene.py` now rejects every tracked top-level path outside that
 exact allowlist on every run; there is no warning-only environment bypass.  The
-17-entry hard limit also bounds allowlist capacity, but exact paths remain the
+18-entry hard limit also bounds allowlist capacity, but exact paths remain the
 authoritative policy.  The frozen manifest's moved-only projection remains 15
 because `AGENTS.md` postdates the 2,363-path inventory.  Its sole
 `review_required` row, for `check_hygiene.py`, is historical filename-classifier

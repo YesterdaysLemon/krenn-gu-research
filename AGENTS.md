@@ -341,7 +341,7 @@ The no-new-debt ratchet and exact end-state allowlist are defined in
 resolves ambiguous ownership, or changes scientific status.
 
 Phase R3 exact end-state enforcement is active.  The tracked root is
-limited to the seven files and ten directories explicitly justified
+limited to the seven files and eleven directories explicitly justified
 by `check_hygiene.py`; every nonallowlisted top-level path fails the
 ordinary local and CI hygiene command.  Expanding that allowlist is a
 reviewed policy change, not an environment-variable override.

@@ -1,0 +1,18 @@
+# Project defaults for future trusted Krenn-Gu tasks.
+# This configuration does not authorize or restart research.
+model_context_window = 272000
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+# Leave model_auto_compact_token_limit unset so the model default applies.
+
+[agents]
+max_concurrent_threads_per_session = 6
+default_subagent_model = "gpt-6-astra"
+default_subagent_reasoning_effort = "high"
+# When research is authorized, start with two high proof researchers, one high
+# independent critic, and one medium computational worker. Reserve the other
+# two subagent slots for necessary specialists or independent checking.
+# Select medium explicitly for mechanical replay and packaging workers.
+
+[features.context_management]
+experimental_mode = true
