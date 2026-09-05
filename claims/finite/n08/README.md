@@ -26,7 +26,16 @@ and forces the outside hafnian to vanish when that shore is inactive and
 the opposite shore is fully open. The full corrected cofactor equations
 are retained. At maximum root cardinality two, adjacent degree-four
 vertices in the invertible-edge graph supply this root configuration.
-The resulting coincident-plane source system is still open.
+For arbitrary outside blocks its coincident-plane source system remains open.
+
+The [complete diagonal-leg source exclusion](TWO_ROOT_DIAGONAL_LEG_SOURCE_EXCLUSION_THEOREM.md)
+closes the configuration when the six physical AA/BB edges are nonzero
+matrix units. One uniform cofactor contradiction joins the exhaustive
+three-, two-, and one-coordinate normal cases, retaining all opposite
+plane configurations and all AB-normal terms. At maximum root cardinality
+two, invertible two-edge paths supply the required units. Consequently
+the invertible-edge graph has no adjacent degree-four vertices. Other
+eight-vertex configurations and the global conjecture remain open.
 
 The nine Stage 28 claim documents have distinct support and case-cover
 hypotheses:
