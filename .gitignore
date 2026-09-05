@@ -2,6 +2,10 @@
 __pycache__/
 *.pyc
 
+# Only the reviewed project defaults belong in the local Codex directory.
+/.codex/*
+!/.codex/config.toml
+
 # Scratch space (kept on disk for reference, never committed)
 tmp/
 .claude/

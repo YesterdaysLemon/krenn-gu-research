@@ -38,7 +38,7 @@ Checks:
   5. no machine-specific checkout paths, vendored-env prefixes, or
      unguarded sys.path injections;
   8. root layout against the active Phase-R3 exact justified allowlist
-     and 17-entry hard limit (every nonallowlisted root path fails);
+     and 18-entry hard limit (every nonallowlisted root path fails);
   9. manifest-aware stale-path enforcement (executed old paths must not
      reappear outside provenance);
   10. executed-batch provenance (every moved entry names a batch file
@@ -639,6 +639,7 @@ ROOT_FILE_JUSTIFICATIONS = {
     "requirements.txt": "project dependencies",
 }
 ROOT_DIR_JUSTIFICATIONS = {
+    ".codex": "committed Codex project defaults; local runtime files stay ignored",
     ".agents": "committed repository-scoped agent workflow configuration",
     ".github": "repository automation configuration",
     "catalog": "machine-readable repository catalogs",
@@ -652,7 +653,7 @@ ROOT_DIR_JUSTIFICATIONS = {
 }
 ALLOWED_ROOT_FILES = set(ROOT_FILE_JUSTIFICATIONS)
 ALLOWED_ROOT_DIRS = set(ROOT_DIR_JUSTIFICATIONS)
-ROOT_COUNT_TARGET = 17
+ROOT_COUNT_TARGET = 18
 ROOT_UNIVERSE_BASELINE_COUNT = 2363
 ROOT_UNIVERSE_BASELINE_SHA256 = (
     "2f4f1af23a89fa3ca56fe2114676c6324385aa1dbd7e5b6ddf35863511edd76c"
