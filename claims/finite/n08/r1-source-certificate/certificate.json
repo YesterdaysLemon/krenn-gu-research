@@ -1,0 +1,2436 @@
+{
+  "schema_version": 1,
+  "scope": "n=8 complete nonzero matrix-unit supports with arbitrary complex nonzero weights; not global resolution",
+  "n": 8,
+  "colours": 3,
+  "fixed_matching": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "cover_counts": {
+    "all_perfect_matchings": 105,
+    "m2_count_per_m1_distribution": {
+      "31": 48,
+      "33": 12
+    },
+    "matchings_disjoint_from_fixed_m0": 60,
+    "orbit_size_distribution": {
+      "12": 1,
+      "48": 7,
+      "96": 6,
+      "192": 3,
+      "384": 1
+    },
+    "ordered_disjoint_m1_m2_pairs_for_fixed_m0": 1884,
+    "ordered_three_disjoint_matchings_without_fixing_m0": 197820,
+    "representative_count": 18,
+    "stabilizer_group_order": 384
+  },
+  "symmetry": "Only vertex stabilizer of the fixed colour-0 matching; no colour permutations",
+  "cnf_format": "DIMACS ASCII with explicit CRLF line endings, no comments; order pinned",
+  "matching_order": "Pair least remaining vertex with each remaining mate in ascending order, recursively",
+  "proof_format": "Text DRAT, stored as lossless gzip; raw and compressed bytes pinned",
+  "checker": {
+    "repository": "https://github.com/marijnheule/drat-trim",
+    "commit": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+    "source_lf_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee",
+    "executed_binary_sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a",
+    "acceptance": "exit code zero and exact output line s VERIFIED for every case"
+  },
+  "discovery_artifact_hashes": {
+    "lab-r1-scaffold-cover.json": "608408587cfadaafd4e746a0f601d8353a64e4bf16fb9cbdebd27a85bac384c7",
+    "lab-r1-cegar-results.json": "56c48349478e901c742357452fd792e4f97263aa813a31fdaa108a8662073320",
+    "lab-r1-drat-manifest.json": "9d6f00e836f6be788de177b68f92d777be5d7301c72a122d7e7d514b3e0cfdf3",
+    "lab-r1-drat-audit.json": "2e4226deea754216acb1d6c57b2750d4479e927b2857ad021cb2bdcb7988d9ed"
+  },
+  "cases": [
+    {
+      "id": "r1-scaffold-000",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      ],
+      "orbit_size": 12,
+      "stabilizer_size": 32,
+      "cores": [],
+      "cnf": {
+        "sha256": "f59ebd415deead3a80e39886ac75dcf7298996f9325640ce6f83c8ac81adcbc6",
+        "bytes": 836245,
+        "variables": 2739,
+        "clauses": 55049
+      },
+      "proof": {
+        "file": "proofs/case-000.drat.gz",
+        "sha256": "6594580b141267be3a76d02f8ff5e837007c00a3aff83ecf85ae787c704e6acf",
+        "bytes": 326791,
+        "compressed_sha256": "2bc046675d96b6eeea099c5f3b230d6f7459c0fa8f5afdbfb5f30cb909ae2946",
+        "compressed_bytes": 85312
+      }
+    },
+    {
+      "id": "r1-scaffold-001",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      ],
+      "orbit_size": 96,
+      "stabilizer_size": 4,
+      "cores": [],
+      "cnf": {
+        "sha256": "deecd9fe0b1e0dd40fb3d817659ef8ba8d8ef9c915cb566908a96220eacccadb",
+        "bytes": 803772,
+        "variables": 2655,
+        "clauses": 52921
+      },
+      "proof": {
+        "file": "proofs/case-001.drat.gz",
+        "sha256": "b0e1f03aebdfeb2dc2045e6e508c621128ce3daae0496de57a9d3c01cd5768c3",
+        "bytes": 284478,
+        "compressed_sha256": "b9239a451c6428b2abe09a73afd6755fcf5abb7edafaca40f6b601e118593aad",
+        "compressed_bytes": 71755
+      }
+    },
+    {
+      "id": "r1-scaffold-002",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      ],
+      "orbit_size": 48,
+      "stabilizer_size": 8,
+      "cores": [
+        {
+          "words": [
+            "00001111",
+            "00021012",
+            "02001012"
+          ],
+          "pairs": [
+            [
+              1,
+              31
+            ],
+            [
+              8,
+              62
+            ],
+            [
+              43,
+              72
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00011110",
+            "00211121"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00011110",
+            "02001210"
+          ],
+          "pairs": [
+            [
+              1,
+              31
+            ],
+            [
+              13,
+              91
+            ],
+            [
+              38,
+              99
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00220022",
+            "00220220",
+            "00221212"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              13
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00121112",
+            "00121121"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00220022",
+            "00221212",
+            "00221221"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              8,
+              13
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        }
+      ],
+      "cnf": {
+        "sha256": "d0c83f977187025393423f7ed9bdfe4d1c8903749f124316a2a5277ca8efe03e",
+        "bytes": 859635,
+        "variables": 3096,
+        "clauses": 56508
+      },
+      "proof": {
+        "file": "proofs/case-002.drat.gz",
+        "sha256": "597bff1c265449ec5b0bdbab76e90b32c8aec64527784a1c1921f19d376935f1",
+        "bytes": 137315,
+        "compressed_sha256": "b4a258460af993c53908b91ab1c1e06cd7f342cbc6013c50eb9b794aefa541f5",
+        "compressed_bytes": 36241
+      }
+    },
+    {
+      "id": "r1-scaffold-003",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      ],
+      "orbit_size": 48,
+      "stabilizer_size": 8,
+      "cores": [
+        {
+          "words": [
+            "00220022",
+            "00220220",
+            "00221212"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              13
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00220022",
+            "00221212",
+            "00221221"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              8,
+              13
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00121112",
+            "00121121"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00011101",
+            "00211112"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              12,
+              13
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        }
+      ],
+      "cnf": {
+        "sha256": "6c0e4cc3815e76e35950cdf1df130c5cb554cb29be732d429d303f7ccb1eb6f7",
+        "bytes": 841394,
+        "variables": 2983,
+        "clauses": 55346
+      },
+      "proof": {
+        "file": "proofs/case-003.drat.gz",
+        "sha256": "fd258f66f4a144984e9ae91d47e1873f8988218b6102216d74a843a7070e20e5",
+        "bytes": 149863,
+        "compressed_sha256": "024d22877c799701a6e4e269ff7d870777ce7bbc32497d2b69fd1369a4b54bb3",
+        "compressed_bytes": 38588
+      }
+    },
+    {
+      "id": "r1-scaffold-004",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      ],
+      "orbit_size": 48,
+      "stabilizer_size": 8,
+      "cores": [
+        {
+          "words": [
+            "00010001",
+            "00020012",
+            "01010011"
+          ],
+          "pairs": [
+            [
+              14,
+              92
+            ],
+            [
+              11,
+              77
+            ],
+            [
+              80,
+              95
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00010001",
+            "00110101",
+            "00120002"
+          ],
+          "pairs": [
+            [
+              12,
+              14
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              11
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00220022",
+            "00221212",
+            "00221221"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              8,
+              13
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00220022",
+            "00220220",
+            "00221212"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              13
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        }
+      ],
+      "cnf": {
+        "sha256": "3a9b325733e43a14158ac52808209da15ee66ab6692db26811ad50c9701c40de",
+        "bytes": 848779,
+        "variables": 3012,
+        "clauses": 55862
+      },
+      "proof": {
+        "file": "proofs/case-004.drat.gz",
+        "sha256": "66bea444ec5e28a8671506ee38250106f2ab9d22b40132a8414d15aae67aacdc",
+        "bytes": 650446,
+        "compressed_sha256": "03e6a8028ff87818927df0198e974227bad2d7e66cb78d925375dfb232062dff",
+        "compressed_bytes": 161793
+      }
+    },
+    {
+      "id": "r1-scaffold-005",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "orbit_size": 96,
+      "stabilizer_size": 4,
+      "cores": [
+        {
+          "words": [
+            "00010100",
+            "00110101",
+            "00120200"
+          ],
+          "pairs": [
+            [
+              6,
+              7
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              3,
+              10
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00220022",
+            "00220220",
+            "00221212"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              13
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00220022",
+            "00221212",
+            "00221221"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              8,
+              13
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        }
+      ],
+      "cnf": {
+        "sha256": "9191ad99ebb7b8fe518949a0ac82b4d2498573c4e237cfa73fb77b4bac96ef3f",
+        "bytes": 834079,
+        "variables": 2926,
+        "clauses": 54914
+      },
+      "proof": {
+        "file": "proofs/case-005.drat.gz",
+        "sha256": "8738b2b4c05c78a09e9f949081c6ff7de174b6e0a6264530971f4471db9acde2",
+        "bytes": 678176,
+        "compressed_sha256": "fc9a9d055e616b06768e762dec253cc616fdc2692d8764f306ca86a2e354d957",
+        "compressed_bytes": 176153
+      }
+    },
+    {
+      "id": "r1-scaffold-006",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "orbit_size": 48,
+      "stabilizer_size": 8,
+      "cores": [
+        {
+          "words": [
+            "00001111",
+            "00021012",
+            "02001012"
+          ],
+          "pairs": [
+            [
+              1,
+              31
+            ],
+            [
+              8,
+              62
+            ],
+            [
+              43,
+              72
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00220022",
+            "00220220",
+            "00221212"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              13
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00220022",
+            "00221212",
+            "00221221"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              8,
+              13
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00011011",
+            "02001012"
+          ],
+          "pairs": [
+            [
+              1,
+              31
+            ],
+            [
+              8,
+              62
+            ],
+            [
+              43,
+              72
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        }
+      ],
+      "cnf": {
+        "sha256": "784975cada93e4940e6278e46ba93e33e2e5aa81417850b2f260df4ca67bdd54",
+        "bytes": 838266,
+        "variables": 2963,
+        "clauses": 55184
+      },
+      "proof": {
+        "file": "proofs/case-006.drat.gz",
+        "sha256": "17ac396c10550261af1b50f3e19551b8d6902fa7baf9123df8dd0912a601a6a9",
+        "bytes": 388471,
+        "compressed_sha256": "389418054486626d3544021bb7130bf06ef9effbd985a2a98c9f18e9afdbc8fd",
+        "compressed_bytes": 103568
+      }
+    },
+    {
+      "id": "r1-scaffold-007",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      ],
+      "orbit_size": 96,
+      "stabilizer_size": 4,
+      "cores": [],
+      "cnf": {
+        "sha256": "25c6d025a5dc9aed2a5b5363debc008ffaf9cb5ab5bb88b50f7049ceba258066",
+        "bytes": 803678,
+        "variables": 2655,
+        "clauses": 52921
+      },
+      "proof": {
+        "file": "proofs/case-007.drat.gz",
+        "sha256": "c76444672be44d1b7f104a73b099cc0a8562013f00431a2c877cf3e042ce6f2b",
+        "bytes": 159395,
+        "compressed_sha256": "97ab0751e594c0afc5cb9cc99a6c473d9cab4241691920540a7dca966cdc3ca9",
+        "compressed_bytes": 41219
+      }
+    },
+    {
+      "id": "r1-scaffold-008",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            7
+          ]
+        ]
+      ],
+      "orbit_size": 96,
+      "stabilizer_size": 4,
+      "cores": [],
+      "cnf": {
+        "sha256": "4653fda0c62aba91aa8c52608eefe80478aefdafaade2a8bde40f498546e2a54",
+        "bytes": 804031,
+        "variables": 2655,
+        "clauses": 52921
+      },
+      "proof": {
+        "file": "proofs/case-008.drat.gz",
+        "sha256": "bcb63e44ea4cd1aa5d669466e25ad541396c42542ec960da680ae4047607f64c",
+        "bytes": 140710,
+        "compressed_sha256": "b4440704a97c3f7411fbac0f585d61e5e0266c5bba17726a2fc802b9731d82f0",
+        "compressed_bytes": 36447
+      }
+    },
+    {
+      "id": "r1-scaffold-009",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "orbit_size": 192,
+      "stabilizer_size": 2,
+      "cores": [],
+      "cnf": {
+        "sha256": "b08515a943e2f7f439298beddd7a6cf44b9a6db4c971d981bc51e15de43aef0c",
+        "bytes": 805591,
+        "variables": 2682,
+        "clauses": 53029
+      },
+      "proof": {
+        "file": "proofs/case-009.drat.gz",
+        "sha256": "e1a889f602419281eee3b2e9083ed7b26573f838a1a990b7c295fd312c681c4f",
+        "bytes": 451818,
+        "compressed_sha256": "9a42c30910a9a93a1e5dc2316a303f6c801033fbcda33ad662aef978b392cb14",
+        "compressed_bytes": 117282
+      }
+    },
+    {
+      "id": "r1-scaffold-010",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            7
+          ]
+        ]
+      ],
+      "orbit_size": 192,
+      "stabilizer_size": 2,
+      "cores": [],
+      "cnf": {
+        "sha256": "6792c87839ce5e107c53a8e8c1c0944a3c4fef6c5bd4e157fdab62d7c41bf29a",
+        "bytes": 805543,
+        "variables": 2682,
+        "clauses": 53029
+      },
+      "proof": {
+        "file": "proofs/case-010.drat.gz",
+        "sha256": "2e0bd4505b6b6206da5b08f5f4ffc3b4d73694360173010d99c9ef2eeecb0f76",
+        "bytes": 816213,
+        "compressed_sha256": "30a75bec7c2c390ce08a50c125ac513caccdeff15baf795ea2b19f882e45d6d9",
+        "compressed_bytes": 198194
+      }
+    },
+    {
+      "id": "r1-scaffold-011",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      ],
+      "orbit_size": 192,
+      "stabilizer_size": 2,
+      "cores": [],
+      "cnf": {
+        "sha256": "b24283c4e7f9aea89e7faca627af35fbd55b6e8f6c2cc2133fcee99f9de4b144",
+        "bytes": 805074,
+        "variables": 2682,
+        "clauses": 53029
+      },
+      "proof": {
+        "file": "proofs/case-011.drat.gz",
+        "sha256": "fe73585a6ed97f092faed4028c8bb40fdf515556e80292554046e2d70a82737d",
+        "bytes": 348472,
+        "compressed_sha256": "b78170bfb22f385917a55b1ddba86b9afe88b767afd692393c45029a219d3402",
+        "compressed_bytes": 90358
+      }
+    },
+    {
+      "id": "r1-scaffold-012",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "orbit_size": 384,
+      "stabilizer_size": 1,
+      "cores": [],
+      "cnf": {
+        "sha256": "be6917ad3d18537b13ca33ad8d75c1ec95dacf67669601168cac52d2f4988672",
+        "bytes": 808991,
+        "variables": 2721,
+        "clauses": 53309
+      },
+      "proof": {
+        "file": "proofs/case-012.drat.gz",
+        "sha256": "9b43762e9acb3d0ae08e83170750445ac0b07c173ea335a76471f3ada7bf476e",
+        "bytes": 548465,
+        "compressed_sha256": "6548e63331a29f02c350b55a733af8d9bfc36ebc43eca4a64de52ea8e06e100c",
+        "compressed_bytes": 138989
+      }
+    },
+    {
+      "id": "r1-scaffold-013",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      ],
+      "orbit_size": 48,
+      "stabilizer_size": 8,
+      "cores": [
+        {
+          "words": [
+            "00002121",
+            "00010111",
+            "01000111"
+          ],
+          "pairs": [
+            [
+              1,
+              31
+            ],
+            [
+              4,
+              46
+            ],
+            [
+              39,
+              54
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00002121",
+            "00010111",
+            "02000121"
+          ],
+          "pairs": [
+            [
+              1,
+              31
+            ],
+            [
+              4,
+              46
+            ],
+            [
+              39,
+              54
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00210012",
+            "00211111",
+            "00211122"
+          ],
+          "pairs": [
+            [
+              11,
+              14
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              12
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00002121",
+            "00112111",
+            "00112122"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              8
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        }
+      ],
+      "cnf": {
+        "sha256": "81644dcd2748700c222d4edc180d26852295b82a203eba26a4a0fce003274294",
+        "bytes": 849911,
+        "variables": 3019,
+        "clauses": 55905
+      },
+      "proof": {
+        "file": "proofs/case-013.drat.gz",
+        "sha256": "6878bc958bb22e5757c0651e24a8094eb6f5505f8b5f7036a05cb309599145ad",
+        "bytes": 1037990,
+        "compressed_sha256": "e00b59b529e60558bbf68193ec45c100a7d36d90399e5cfcbe3f4442dfd8f209",
+        "compressed_bytes": 263389
+      }
+    },
+    {
+      "id": "r1-scaffold-014",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "orbit_size": 96,
+      "stabilizer_size": 4,
+      "cores": [
+        {
+          "words": [
+            "00002121",
+            "00010111",
+            "02000121"
+          ],
+          "pairs": [
+            [
+              1,
+              31
+            ],
+            [
+              4,
+              46
+            ],
+            [
+              39,
+              54
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00010111",
+            "02000121"
+          ],
+          "pairs": [
+            [
+              1,
+              31
+            ],
+            [
+              4,
+              46
+            ],
+            [
+              39,
+              54
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00002121",
+            "00112111",
+            "00112122"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              8
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        }
+      ],
+      "cnf": {
+        "sha256": "9a03feb143ba8cd2e00ca517021ee54111b1318ffb0c3272dc55e323a8a8d6d4",
+        "bytes": 831743,
+        "variables": 2908,
+        "clauses": 54764
+      },
+      "proof": {
+        "file": "proofs/case-014.drat.gz",
+        "sha256": "395583f045b86cdd879d8d6b853c240006f1b9aaf39098afe6c903c9fe924b83",
+        "bytes": 533567,
+        "compressed_sha256": "8177a4655be16e5bbb76c252f51f721abf15886333a7335c7becadfbbc8cd8db",
+        "compressed_bytes": 134737
+      }
+    },
+    {
+      "id": "r1-scaffold-015",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "orbit_size": 48,
+      "stabilizer_size": 8,
+      "cores": [
+        {
+          "words": [
+            "00000121",
+            "00000202",
+            "00020222"
+          ],
+          "pairs": [
+            [
+              1,
+              9
+            ],
+            [
+              2,
+              12
+            ],
+            [
+              10,
+              13
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00121211",
+            "00122111"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              10,
+              13
+            ],
+            [
+              9,
+              12
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00011011",
+            "00212111"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00000202",
+            "00002101",
+            "02002202"
+          ],
+          "pairs": [
+            [
+              2,
+              69
+            ],
+            [
+              1,
+              54
+            ],
+            [
+              57,
+              72
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "cnf": {
+        "sha256": "5d6a3f546dca5c7b5f5a3aa99d5151f1dffe4c6144e88fd875460d75a5a4a3ec",
+        "bytes": 851226,
+        "variables": 3034,
+        "clauses": 56044
+      },
+      "proof": {
+        "file": "proofs/case-015.drat.gz",
+        "sha256": "2ee06691c25b606c584b45ef007210aca9bf4e506bb40f94fd950a3368914510",
+        "bytes": 160481,
+        "compressed_sha256": "a26d2c1c6225ce8e3c5abb08bbe570d5dca281a01649de8ee1ff682d609df623",
+        "compressed_bytes": 38212
+      }
+    },
+    {
+      "id": "r1-scaffold-016",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "orbit_size": 96,
+      "stabilizer_size": 4,
+      "cores": [
+        {
+          "words": [
+            "00001111",
+            "00121211",
+            "00122111"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              10,
+              13
+            ],
+            [
+              9,
+              12
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00000202",
+            "00002101",
+            "02002202"
+          ],
+          "pairs": [
+            [
+              2,
+              69
+            ],
+            [
+              1,
+              54
+            ],
+            [
+              57,
+              72
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00010111",
+            "00211211"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        }
+      ],
+      "cnf": {
+        "sha256": "ed90af787b463d430fbc21fe494d76a3b764cd6ccdb7ab51d596f0fd3c850e98",
+        "bytes": 836507,
+        "variables": 2948,
+        "clauses": 55094
+      },
+      "proof": {
+        "file": "proofs/case-016.drat.gz",
+        "sha256": "2cc1c378bcdcf69090fc77a41a87b6a8f6b79aa367fadc062d52f68618fb93b1",
+        "bytes": 373956,
+        "compressed_sha256": "7694b4021fa720b68033acc700450a9f6f3eb05281547ee003aa5afa4d0b98e0",
+        "compressed_bytes": 98372
+      }
+    },
+    {
+      "id": "r1-scaffold-017",
+      "matchings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "orbit_size": 48,
+      "stabilizer_size": 8,
+      "cores": [
+        {
+          "words": [
+            "00001111",
+            "00121211",
+            "00122111"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              10,
+              13
+            ],
+            [
+              9,
+              12
+            ]
+          ],
+          "signs": [
+            1,
+            1,
+            -1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00010111",
+            "00211211"
+          ],
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00002121",
+            "00010111",
+            "02000121"
+          ],
+          "pairs": [
+            [
+              1,
+              31
+            ],
+            [
+              4,
+              46
+            ],
+            [
+              39,
+              54
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "words": [
+            "00001111",
+            "00010111",
+            "02000121"
+          ],
+          "pairs": [
+            [
+              1,
+              31
+            ],
+            [
+              4,
+              46
+            ],
+            [
+              39,
+              54
+            ]
+          ],
+          "signs": [
+            1,
+            -1,
+            1
+          ]
+        }
+      ],
+      "cnf": {
+        "sha256": "536a5f9900d7c1cd41d36e0d458e02f894cbe5d87f308c1891c01b9e1e11f86d",
+        "bytes": 835140,
+        "variables": 2935,
+        "clauses": 54968
+      },
+      "proof": {
+        "file": "proofs/case-017.drat.gz",
+        "sha256": "3c3bfa3db1010d0f23bc3e1f4ddce61a8cf4d69f9379b001ddcb3ff7821e0af6",
+        "bytes": 816880,
+        "compressed_sha256": "303cfa6b3d9366c10e683cd312b23b3f5ff431725ab8e01e1a40b39cbe7cfc8c",
+        "compressed_bytes": 209343
+      }
+    }
+  ]
+}
