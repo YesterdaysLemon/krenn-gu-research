@@ -1,0 +1,207 @@
+{
+  "schema": "recursive-hafnian-rzp-drat-v1",
+  "status": "experimental_checked_sat_evidence_not_promoted_theorem",
+  "scope": "Exact CNF and binary DRAT identities for the exhaustive n=10 RZP matching-pair cover only. The witness bridge, symmetry cover, and mathematical interpretation are separate review obligations.",
+  "base_commit": "dc4e7c9ef97e3d4d0d47e1d3403e61d66a498ddc",
+  "proof_format": "binary DRAT",
+  "artifact_policy": "Proof and CNF bytes are retained locally under tmp and are not committed by this experimental change.",
+  "generator": {
+    "program": "tools/explore/probe_recursive_hafnian_support.py",
+    "native_solver": "CaDiCaL 1.7.3",
+    "native_solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e"
+  },
+  "checker": {
+    "program": "drat-trim",
+    "source_directory_label": "drat-trim-v05.22.2023",
+    "sha256": "a48ebed7b4b6b373d3ddbeb3368dae7622a9e17bab7fe6eb751ab996757f9fbe"
+  },
+  "replay": {
+    "program": "tools/explore/replay_recursive_hafnian_drat.py",
+    "expected_case_count": 13,
+    "expected_result": "s VERIFIED for every case"
+  },
+  "cases": [
+    {
+      "id": "top-5",
+      "cover_role": "top-level matching-pair cycle type (5)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-cycle-5.cnf",
+        "bytes": 2504545,
+        "sha256": "98f013336a427ee0899df85423636ab30b6d609036c2bd6ee162dec3009c1a51"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-cycle-5.drat",
+        "bytes": 43770465,
+        "sha256": "57d53f63b1c3e9d624b8b3f72141e44b0a613b6bfc88da85da6068b02d5315c6"
+      }
+    },
+    {
+      "id": "top-4p1",
+      "cover_role": "top-level matching-pair cycle type (4,1)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-cycle-4p1.cnf",
+        "bytes": 2504545,
+        "sha256": "fea7a8c38cf6cda17f2b2f8401ff3b2f07fbb78a10ce8cf02c241823e26ebaaf"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-cycle-4p1.drat",
+        "bytes": 67256043,
+        "sha256": "e0272d5d44abbb5a18733c4ade07a36c8f17b41b8cdcec935e0070389b7a962f"
+      }
+    },
+    {
+      "id": "top-3p2",
+      "cover_role": "top-level matching-pair cycle type (3,2)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-cycle-3p2.cnf",
+        "bytes": 2504545,
+        "sha256": "cbb234db12571733f31d4e7d850a6de5c8eb437fc2f23d08db22d822078f11f4"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-cycle-3p2.drat",
+        "bytes": 62350413,
+        "sha256": "1ffab97c2e498932a8f6c6767fb7b4f2747b893bfe0d908af22a01aa4a70d4ae"
+      }
+    },
+    {
+      "id": "top-3p1p1",
+      "cover_role": "top-level matching-pair cycle type (3,1,1)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-cycle-3p1p1.cnf",
+        "bytes": 2504545,
+        "sha256": "62e1e301ba306c48ed1006314eb086c2d41209f53d08764b690a58e8f0915707"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-cycle-3p1p1.drat",
+        "bytes": 49463606,
+        "sha256": "cfc92629b56e7920b1b308ae6d3762fb8b98f933fcf033edfc8fb26548c8629b"
+      }
+    },
+    {
+      "id": "top-2p2p1",
+      "cover_role": "top-level matching-pair cycle type (2,2,1)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-cycle-2p2p1.cnf",
+        "bytes": 2504545,
+        "sha256": "3d55f6971600e1127f7d9a3ee875df0f5252b1d95a15579b7925d48f9e6798a6"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-cycle-2p2p1.drat",
+        "bytes": 90891862,
+        "sha256": "97b0ff669f3554f7824ff69786ac430d72edb7c09ccf1ebb21133960bfc6fe72"
+      }
+    },
+    {
+      "id": "top-2p1p1p1",
+      "cover_role": "top-level matching-pair cycle type (2,1,1,1)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-cycle-2p1p1p1.cnf",
+        "bytes": 2504545,
+        "sha256": "fd17a9f60cf91fe6fed3c4494d83f502a4653f380beb1d9e708e2bf28b3bdfab"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-cycle-2p1p1p1.drat",
+        "bytes": 112412340,
+        "sha256": "c6bb571b188ed657a1366350e804782b40bb358614e6b900c85f71fc47c150b6"
+      }
+    },
+    {
+      "id": "shared-third-5",
+      "cover_role": "shared top-level case, colour-2 cycle type (5)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-shared-third-5.cnf",
+        "bytes": 2504579,
+        "sha256": "4bd5a1523e20a04ff9a932e5eacaac648bfc13a93e845fce5da36ecf9df6ed64"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-shared-third-5.drat",
+        "bytes": 9539398,
+        "sha256": "57532359895771407817fb7660a5f71f3751101cb0252ecf6c7b10683cff45bf"
+      }
+    },
+    {
+      "id": "shared-third-4p1",
+      "cover_role": "shared top-level case, colour-2 cycle type (4,1)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-shared-third-4p1.cnf",
+        "bytes": 2504579,
+        "sha256": "b793b358378e03785448d172a1061bbafc4ea6625bb18d3fa4c9ef9eb812a100"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-shared-third-4p1.drat",
+        "bytes": 5735742,
+        "sha256": "135e32691871f23f2f3279937dea49c0a1e17e7c932f62ded6c8ec6f91f8a362"
+      }
+    },
+    {
+      "id": "shared-third-3p2",
+      "cover_role": "shared top-level case, colour-2 cycle type (3,2)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-shared-third-3p2.cnf",
+        "bytes": 2504579,
+        "sha256": "288e2ad88a9c7c330b9bc2aa479315477b15f6d8ae41e0d4894779e1a65415f4"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-shared-third-3p2.drat",
+        "bytes": 13059670,
+        "sha256": "6413dca8ce97249098466e91e3b5fd6b4d46b1cb0cfa00404c9a03a43d407845"
+      }
+    },
+    {
+      "id": "shared-third-3p1p1",
+      "cover_role": "shared top-level case, colour-2 cycle type (3,1,1)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-shared-third-3p1p1.cnf",
+        "bytes": 2504579,
+        "sha256": "fc3a91c6353450db1a29172282ba571014fb341bdfec2fe84168592635ffdb1e"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-shared-third-3p1p1.drat",
+        "bytes": 6372410,
+        "sha256": "7bd58355910337fdb12b0e20ad852fe3519d8b61328df8327d8f3a0721275915"
+      }
+    },
+    {
+      "id": "shared-third-2p2p1",
+      "cover_role": "shared top-level case, colour-2 cycle type (2,2,1)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-shared-third-2p2p1.cnf",
+        "bytes": 2504579,
+        "sha256": "5b118928ed615e5f7f1638289efb3f41859f720b99aaa7ebb9daf26ec1cbef78"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-shared-third-2p2p1.drat",
+        "bytes": 5949161,
+        "sha256": "f8c72ad6cab2554e04a306dbfcad6ae459d47b6f845981572d4bd3db29db09b1"
+      }
+    },
+    {
+      "id": "shared-third-2p1p1p1",
+      "cover_role": "shared top-level case, colour-2 cycle type (2,1,1,1)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-shared-third-2p1p1p1.cnf",
+        "bytes": 2504579,
+        "sha256": "b66eb6fc4ed1cf9e596287e58395ca7d6a0012de6c74223c79f2e84284b507ec"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-shared-third-2p1p1p1.drat",
+        "bytes": 10980922,
+        "sha256": "7153e692693b8ab5913c1d0b6d5d160608d39ecad1f2cf894993d19a11ab0750"
+      }
+    },
+    {
+      "id": "shared-third-shared",
+      "cover_role": "shared top-level case, colour-2 cycle type (1,1,1,1,1)",
+      "cnf": {
+        "file": "recursive-hafnian-n10-shared-third-shared.cnf",
+        "bytes": 2504579,
+        "sha256": "7283b812a038ca9a3440322f5e3f156595a3309b03e01ec108e9b7b4ff80c168"
+      },
+      "proof": {
+        "file": "recursive-hafnian-n10-shared-third-shared.drat",
+        "bytes": 18833715,
+        "sha256": "ce8036e07e901cb04939ad11b5d6f72f35ae67c1e18b4e060befc062b2a62a67"
+      }
+    }
+  ]
+}
