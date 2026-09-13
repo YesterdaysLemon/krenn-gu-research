@@ -1,5 +1,10 @@
 # From full-word cancellation to forced subcoefficient circuits
 
+The user stopped this run at 06:32 UTC on September 13. See the
+[final handoff](cancellation-consistency-handoff-2026-09-13.md) for the third
+physical cut, failed parent-coverage controls, and the newer two-sum row-space
+derivation. None is promoted to a full eight-vertex or global exclusion.
+
 Global Krenn--Gu status: **UNRESOLVED**. This note continues the
 [full-model parent attempt](full-model-recursive-cancellation-attempt-2026-09-13.md).
 It records reusable conditional mechanisms and scoped diagnostics, not an

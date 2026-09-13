@@ -1,8 +1,12 @@
 # Cancellation-consistency continuation
 
+**Stopped by the user at 06:32 UTC on September 13.** The final
+[wind-down handoff](cancellation-consistency-handoff-2026-09-13.md) supersedes
+the earlier persistence instructions and records the newest results and limits.
+
 ## Scope and stop rule
 
-This is an active research journal, not a resolution claim. The global
+This is a research journal, not a resolution claim. The global
 Krenn--Gu conjecture remains **UNRESOLVED**. The active checkout is
 `codex/recursive-cancellation-consistency-20260912`, starting from local
 checkpoint `acbe244771c378a3101a91bfc620d1268fd53356` on upstream

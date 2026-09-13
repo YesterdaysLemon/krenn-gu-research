@@ -70,6 +70,15 @@ class SourceQuotientCoreTests(unittest.TestCase):
             with self.assertRaises(ValueError, msg=mutation):
                 replay_source_quotient_core(self.instance, changed)
 
+    def test_third_source_projects_with_one_plain_rup_step(self):
+        packet = json.loads((HERE / "fixtures" / "recursive_source_quotient_n8_third_core.json").read_text())
+        result = replay_source_quotient_core(self.instance, packet)
+        self.assertEqual(result["physical_guard_count"], 32)
+        self.assertEqual(result["base_recursive_clauses"], 157)
+        self.assertEqual(result["core_clauses"], 190)
+        self.assertEqual(result["rup_additions"], 1)
+        self.assertFalse(result["killers_or_ratio_clauses"])
+
 
 if __name__ == "__main__":
     unittest.main()
