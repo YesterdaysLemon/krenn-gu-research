@@ -311,3 +311,25 @@ returned UNSAT without solver branching. This is bounded diagnostic evidence,
 not an exhaustive exclusion. There is still no full RZP survivor on which the
 binomial loop has been load-bearing. The conditional longer-path obstruction
 and its occurrence requirement are stated separately in the linked note.
+
+## Full-model source-cancellation checkpoint, 04:22 UTC
+
+The live core usage meter reached 5% used at 03:59 UTC and remained 5% at 04:20
+UTC. The user-directed 80% wind-down threshold has not been reached. The global
+goal remains active; no reset credit has been consumed. Remote main was checked
+again and remains at the same base commit; this work is local and unpublished.
+
+The separate full-model n8 parent diagnostic now has two source-coupled
+mechanisms beyond the first full-word quotient cuts: complete coloured
+four-fibre ratio components, and lifted sparse circuits among original subset
+Laplace identities. A deterministic test suggested by Fable derives three
+forced four-coefficient zeros from one physical support, yielding a 24-step,
+three-binomial certificate and a 57-literal physical support cut. Details and
+evidence boundaries are in
+[the source-cancellation mechanism note](source-cancellation-mechanisms-2026-09-13.md).
+
+This is not an eight-vertex exclusion. It is a successful source-level test of
+the cancellation-consistency regime, with the global occurrence theorem still
+open. Fable found no blocker in the earlier full-word encoder/quotient delta;
+the newest three implementations postdate that review and are not represented
+as independently reviewed.
