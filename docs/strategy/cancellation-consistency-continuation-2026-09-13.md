@@ -333,3 +333,25 @@ the cancellation-consistency regime, with the global occurrence theorem still
 open. Fable found no blocker in the earlier full-word encoder/quotient delta;
 the newest three implementations postdate that review and are not represented
 as independently reviewed.
+
+## Checkpoint continuation, 05:16 UTC
+
+Live core usage first reached 6% at 04:32 UTC and is now **7% used** at
+05:16:44 UTC. The only reported core window is still weekly; the 80% wind-down
+threshold is not reached. No new task, publication, or reset-credit action was
+taken. The exact-resolution goal remains active.
+
+The original 136-entry support can escape the first recursive circuit by
+changing cofactor supports. A larger-sum recursive quotient then supplies a
+seven-binomial transport contradiction. Its one learned clause closes the
+fixed physical support even without ratio constraints. A checked native DRAT
+trace and a separate 264-clause/three-RUP-addition core replay lift this to a
+54-literal physical support cut. The compact core is preserved as a regression
+certificate with a replay path that does not require a SAT executable.
+
+The [mechanism note](source-cancellation-mechanisms-2026-09-13.md) records the
+proof bridge, its exact scope, and negative balance/linear-algebra controls.
+This is still a conditional source-support exclusion, not an exhaustive n8
+cover or a uniform occurrence theorem. The live frontier is unchanged for
+that reason. The newly implemented quotient/core deltas postdate Fable's third
+review, and that earlier review is not attributed to them.

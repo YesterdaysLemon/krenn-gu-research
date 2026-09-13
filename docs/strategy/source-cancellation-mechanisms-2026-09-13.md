@@ -199,3 +199,146 @@ these tests and requires genuinely larger cancellation equations. A catalogue
 of successful cuts does not answer that occurrence question. Global resolution
 still requires a proved exhaustive implication or an exact counterexample and
 the repository's dedicated resolution audit.
+
+## Larger recursive sums, and a checked physical-support cut
+
+The next experiment found an important escape from the five-equation circuit:
+the same 136-entry physical support admits a different Boolean cofactor
+assignment passing the recursive circuit search. It also passes the full-word
+quotient test. Thus the earlier circuit did not by itself exclude that support.
+
+The [recursive quotient extension](../../src/krenn_gu/recursive_tensor_quotient.py)
+now transports binomial equalities through **all** recursive cancellation sums.
+Write each zero/two-term or nonzero/one-term original Laplace equation as
+X^r=(-1)^b, using the nonzero physical entries and nonzero subset coefficients
+as shared variables X. A larger Laplace equation has the form
+
+```text
+sum_j a_j X^m_j = 0,
+```
+
+where the result coefficient, when nonzero, appears as one term with a minus
+sign. If m_i-m_j is an integer combination of the binomial rows, their monomials
+are equal up to the transported sign. Partition all terms by these checked
+relations. If exactly one group's signed coefficient sum remains nonzero, the
+equation is impossible on the complex torus. No choice of independent local
+hafnians is made: each relation and target sum is an original source identity.
+
+Discovery uses only exponent pivots +1 and -1, so each eliminated variable is
+an exact signed Laurent monomial. It never divides an exponent by a nonunit or
+chooses roots. Nonunit residual relations are reported and left unused; absence
+of an obstruction is not a realization claim or a complete lattice verdict.
+The standalone certificate checker does not run this elimination: it rederives
+the complete original fibres, adds integer exponent rows, checks signs and the
+full term partition, and recomputes every guard. Actual integer-source and n4
+GHZ controls are retained, and malformed transport/partition tests are rejected.
+
+On the second cofactor assignment of the 136-entry support, 21,050 selected
+original binomial rows have 16,008 unit pivots and no residual nonunit rows.
+Their binomial system has no discovered sign contradiction. Nevertheless seven
+of those equations imply
+
+```text
+h((0,3,5,7); (0,0,2,1)) = W_07(0,1) W_35(0,2).
+```
+
+The complete four-coefficient equation on this support is
+
+```text
+h((0,3,5,7); (0,0,2,1))
+ = W_05(0,2) W_37(0,1) + W_07(0,1) W_35(0,2),
+```
+
+with both displayed products nonzero. Hence a nonzero product would have to
+vanish. The resulting **52-literal recursive cut** uses four full-word, two
+six-vertex and one four-vertex binomial relations, plus this target four-fibre.
+It guards every result and every product support in all eight expansions.
+
+Adding this cut makes the **fixed physical support** UNSAT even with the ratio
+clauses removed. The native CaDiCaL 1.7.3 binary DRAT proof was checked by the
+previously pinned drat-trim build. The checker reported `s VERIFIED`, with zero
+RAT lemmas in its core. Backward-mode warnings about ignored unit deletions do
+not supply the acceptance criterion; the exact success line and exit code do.
+The 86,551,013-byte CNF has SHA-256
+`40d3fe92b7dd719639b5bba51ce5136b22be4996809af0e564749d0b1911387f`;
+the 2,282,566-byte proof has SHA-256
+`0e8513081ea6631f2a256e5e7b8964bf800042f6eb5424fcaebaae6d6a6288f9`.
+
+More usefully, the proof trims to 264 premises and three RUP additions. A
+[small separate replay](../../src/krenn_gu/source_quotient_core.py) checks:
+
+- 209 premises belong to the regenerated recursive/target encoder;
+- 54 premises are explicit physical-entry support units;
+- the remaining premise is the independently replayed algebraic clause;
+- each of the three additions is justified by plain unit propagation after
+  negating that addition, and the last addition is the empty clause.
+
+No killer, root-symmetry, or ratio clause is used. This gives a **54-literal
+physical-entry cut**, valid for actual eight-vertex witnesses, not merely the
+chosen cofactor assignment. The compact
+[regression certificate](../../tests/fixtures/recursive_source_quotient_n8_core.json)
+is tracked; it is a conditional support exclusion, not raw solver status and
+not an exhaustive eight-vertex cover. Its coefficient template describes the
+conditional algebraic clause only; it is explicitly not a physical witness or
+a model of the whole recursive CNF.
+
+Replay without a SAT executable:
+
+```powershell
+python tools/explore/replay_recursive_source_quotient_core.py tests/fixtures/recursive_source_quotient_n8_core.json
+python -m unittest -v tests.test_recursive_tensor_quotient tests.test_source_quotient_core
+```
+
+Simple source peeling alone does not supply all the algebraic guards: two
+six-coefficient nonzero facts remain undecided. The RUP bridge, rather than an
+unproved promotion of those facts, is what lifts this conditional algebra to
+the physical support. These later implementations have local exact replay and
+controls, but have not yet received a separate external-model review.
+
+## Negative controls on further shortcuts
+
+The 136-entry support also passes a strict colour-slot balance test. For every
+active entry an exact perfect matching in the bipartite double cover was found;
+summing those covers gives positive integral entry multiplicities with load
+272 at every one of the 24 colour slots. This is incidence balance only, not
+physical amplitudes or phases. The existing matrix-unit diagonal-torus balance
+theorem explains the candidate normal-form idea; no new balance theorem is
+promoted, and no entry of this support is removed by that diagnostic.
+
+A six-vertex, 51-entry Boolean survivor passes the implemented ratio, recursive
+binomial, full-word quotient, and recursive unit-quotient tests. It is not a
+weight witness. An exact localized polynomial scout excludes it: 15 independent
+colour-slot gauge columns can be set to one, leaving 36 nonzero variables.
+This general diagonal gauge preserves the mixed zero equations, though it may
+rescale the pure coefficients; no target-preserving gauge claim is used.
+Thirty mixed-word equations lead to 1=0 through a 740-node arithmetic DAG.
+A separate SymPy-polynomial replay reconstructs the source hafnians by a
+last-vertex recurrence and verifies all additions, monomial multiplications and
+exact divisions. The scout and DAG remain ignored local artifacts at
+`tmp/full-n6-laurent-spair-scout.json` and
+`tmp/replay_laurent_polynomial_dag.py`; they are not a six-vertex case cover.
+
+The analogous eight-vertex polynomial scout hit its 240-second limit, so its
+outcome is UNKNOWN. An earlier exact linear-equation scout on that support had
+112 variables after a 24-column gauge, 6,558 distinct cubic/quartic equations,
+and no initially linear equation; it did not perform a full ideal elimination.
+These limitations motivate the cheaper shared-coefficient quotient test above,
+not an inference that a surviving support has actual weights.
+
+## Bounded global feedback and the remaining projection gap
+
+A global n8 run seeded with the checked 54-literal cut and all implemented
+four-fibre ratio closure clauses completed eight iterations in 116.581 seconds.
+Each candidate assignment was checked against every current clause. All eight
+had the **same** 134-entry physical support (the serialized first-252-literal
+assignment hash is `ddd9d53f6edf24bca717c062dbde723a5c73d109339ef2d2470aef420571b738`).
+The recursive circuit cuts changed its cofactor assignments, not its physical
+support. The result is ITERATION_LIMIT, not UNSAT or a surviving weight model.
+
+A separate exact finite orbit check tested all 8!*3!=241,920 vertex/global-colour
+relabelings of the 54-literal physical cut. None excludes this 134-entry support.
+This is a diagnostic limit on that one certified support pattern, not on the
+underlying quotient mechanism or the full conjecture. The sharper obligation
+is now to project source-coupled cofactor contradictions back to physical
+support efficiently, or derive a uniform occurrence theorem. Merely appending
+another long sequence of cofactor-assignment cuts does not settle it.
