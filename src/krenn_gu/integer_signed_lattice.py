@@ -113,6 +113,11 @@ class IntegerSignedLattice:
             % 2
             for vector in self.kernel_basis
         )
+        self._quotient_signs = tuple(
+            sum(self.sign_bits[row] * int(self._right[row, index])
+                for row in range(self.generators)) % 2
+            for index in range(self.rank)
+        )
 
     def coordinates(self, vector: Sequence[int]) -> list[int] | None:
         """Return one integer generator representation, or ``None``."""
@@ -167,3 +172,28 @@ class IntegerSignedLattice:
             )
         )
         return -1 if parity % 2 else 1
+
+    def signed_quotient_signature(self, vector: Sequence[int]) -> tuple[tuple[int, ...], int]:
+        """Return a row-lattice coset key and a sign relative to its normal form.
+
+        Equal keys mean the difference belongs to the INTEGER row lattice, not
+        merely its rational span. Relative signs reproduce transported_sign.
+        Torsion residues are retained, so x^2=-1 does not become x=+/-1.
+        """
+        if self.has_inconsistent_kernel:
+            raise ValueError("an inconsistent signed lattice has no quotient sign")
+        raw = tuple(map(int, vector))
+        if len(raw) != self.width:
+            raise ValueError("target vector has the wrong width")
+        transformed = [sum(raw[column] * coefficient for column, coefficient in row)
+                       for row in self._left_sparse]
+        residues = []
+        parity = 0
+        for index in range(self.rank):
+            diagonal = int(self._smith[index, index])
+            residue = transformed[index] % abs(diagonal)
+            residues.append(residue)
+            quotient = (transformed[index] - residue) // diagonal
+            parity += quotient * self._quotient_signs[index]
+        key = tuple(residues + transformed[self.rank:])
+        return key, -1 if parity % 2 else 1
