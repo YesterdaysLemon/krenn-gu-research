@@ -293,3 +293,21 @@ At this checkpoint the focused suite has 30 passing tests, and the migration
 and existing integer-lattice suites have 205 passing tests. The complete
 candidate-index hygiene and link-rewrite gates pass. The new source and
 proof material remains local; the full conjecture is unresolved.
+
+## General binomial loop beyond four-fibres
+
+[The recursive binomial module](recursive-laplace-binomial-circuits-2026-09-13.md)
+now extracts complete zero/two-term and nonzero/one-term Laplace fibres,
+checks their integer exponent lattice, replays a contradictory integer
+dependency, and emits a cut guarded by every term of each used expansion.
+A local eight-vertex theta pattern passes RZP and complete four-fibre
+consistency but is excluded by a nine-relation integer certificate and one
+40-literal guarded cut. An actual integer-weight specialization on the same
+graph escapes the cut when the formerly forced third zero is allowed to
+be nonzero. This tests the general loop without claiming a global survivor.
+
+Twenty sampled fourteen-vertex four-cycle-free cubic support triples all
+returned UNSAT without solver branching. This is bounded diagnostic evidence,
+not an exhaustive exclusion. There is still no full RZP survivor on which the
+binomial loop has been load-bearing. The conditional longer-path obstruction
+and its occurrence requirement are stated separately in the linked note.
