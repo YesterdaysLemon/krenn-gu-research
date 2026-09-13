@@ -4115,6 +4115,17 @@ The all-`n` statement is recorded as a conjecture.  No DRAT trace is
 available on the reference host; the gap is stated.  The global status is
 **UNRESOLVED**.
 
+The later
+[`ten-vertex recursive-hafnian exclusion`](../finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md)
+uses a strictly stronger necessary model at `n=10`: all principal-hafnian
+support variables are shared across their complete Laplace expansions, and a
+zero result may not have exactly one nonzero term. Thirteen matching-normalized
+CNFs form an exhaustive checked binary-DRAT cover, independently reconstructed
+byte-for-byte by a no-import audit. Hence no complex all-diagonal witness
+exists at `n=10`. This does **not** extend WB2's AP' unsatisfiability beyond
+`n=6,8` and supplies no all-order occurrence theorem; every bichromatic branch
+and the global conjecture remain open.
+
 ## AP-prime maximum-degree-four reduction and common-matching exclusion
 
 The [degree-four support

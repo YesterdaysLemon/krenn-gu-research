@@ -1,13 +1,15 @@
 """Small RUP cores lifting guarded recursive algebra to physical support cuts.
 
-No solver, Smith form, or unit-pivot elimination is used in replay. The only
-premises are regenerated recursive/target clauses, one separately replayed
-algebraic clause, and the displayed physical support units. Killers and ratio
-clauses are deliberately not admitted as implicit premises.
+No solver, Smith form, quotient discovery, or row-space discovery is used in
+replay.  The only premises are regenerated recursive/target clauses, one
+separately replayed typed algebraic clause, and displayed physical support
+units.  Killers and ratio clauses are deliberately not admitted as implicit
+premises.
 """
 
 from __future__ import annotations
 
+from krenn_gu.recursive_tensor_row_space import replay_recursive_row_space
 from krenn_gu.recursive_tensor_quotient import RecursiveTensorQuotient, _read_origin
 
 
@@ -36,9 +38,120 @@ def _canonical(clause):
     return tuple(sorted(set(clause)))
 
 
+def source_algebra_origins(certificate):
+    """Return every complete Laplace fibre needed by a typed certificate."""
+
+    kind = certificate.get("kind")
+    if kind == "recursive_quotient_singleton":
+        items = [certificate["target"], *certificate["relations"]]
+    elif kind == "binomial_kernel":
+        items = certificate["equations"]
+    elif certificate.get("schema") == "recursive-laurent-row-space-v1":
+        items = [*certificate["relations"]]
+        items.extend(
+            node["origin"]
+            for node in certificate["dag"]
+            if node.get("kind") == "source"
+        )
+    else:
+        raise ValueError("unsupported algebraic certificate kind")
+    return tuple(_read_origin(item) for item in items)
+
+
+def replay_guarded_algebraic_clause(instance, model, certificate):
+    """Replay one supported certificate and return only its checked clause."""
+
+    kind = certificate.get("kind")
+    if kind in ("recursive_quotient_singleton", "binomial_kernel"):
+        if not RecursiveTensorQuotient(instance).verify_certificate(model, certificate):
+            raise ValueError("original-source quotient/binomial clause failed replay")
+        status = "EXACT_RECURSIVE_QUOTIENT_REPLAY_PASS"
+        clause = certificate["cut"]
+        certificate_kind = kind
+    elif certificate.get("schema") == "recursive-laurent-row-space-v1":
+        result = replay_recursive_row_space(instance, model, certificate)
+        status = result["status"]
+        clause = result["cut"]
+        certificate_kind = "recursive_laurent_row_space"
+    else:
+        raise ValueError("unsupported algebraic certificate kind")
+    if any(type(literal) is not int or literal == 0 for literal in clause):
+        raise ValueError("algebraic clause contains an invalid literal")
+    return {
+        "status": status,
+        "certificate_kind": certificate_kind,
+        "clause": _canonical(clause),
+    }
+
+
+def unit_propagation_core(clauses):
+    """Extract the reason closure of a plain unit-propagation conflict.
+
+    The returned clauses occur in their original order.  ``None`` means that
+    unit propagation reaches a fixed point rather than a contradiction.
+    This is a packaging helper; :func:`rup_conflict` remains the independent
+    replay boundary used for accepted packets.
+    """
+
+    clauses = [tuple(clause) for clause in clauses]
+    assigned = {}
+    reasons = {}
+    conflict = None
+    while conflict is None:
+        changed = False
+        for index, clause in enumerate(clauses):
+            satisfied = False
+            remaining = []
+            for literal in set(clause):
+                value = assigned.get(abs(literal))
+                if value is None:
+                    remaining.append(literal)
+                elif value == (literal > 0):
+                    satisfied = True
+                    break
+            if satisfied:
+                continue
+            if not remaining:
+                conflict = index
+                break
+            if len(remaining) != 1:
+                continue
+            literal = remaining[0]
+            variable, value = abs(literal), literal > 0
+            if variable in assigned:
+                if assigned[variable] != value:
+                    conflict = index
+                    break
+                continue
+            assigned[variable] = value
+            reasons[variable] = index
+            changed = True
+        if conflict is None and not changed:
+            return None
+
+    selected = set()
+
+    def include(index):
+        if index in selected:
+            return
+        selected.add(index)
+        for literal in clauses[index]:
+            variable = abs(literal)
+            value = assigned.get(variable)
+            if value is not None and value != (literal > 0):
+                include(reasons[variable])
+
+    include(conflict)
+    return [clauses[index] for index in sorted(selected)]
+
+
 def replay_source_quotient_core(instance, packet):
     """Replay against a freshly regenerated base instance supplied by the caller."""
-    if packet["schema"] != "recursive-source-quotient-core-v1" or type(packet["n"]) is not int:
+    schema = packet["schema"]
+    if schema not in (
+        "recursive-source-quotient-core-v1",
+        "recursive-source-algebra-core-v2",
+    ) or type(packet["n"]) is not int:
         raise ValueError("wrong source-core schema or order")
     if instance.n != packet["n"] or instance.clause_counts["target"] != 3 ** instance.n:
         raise ValueError("core requires the stated full target")
@@ -64,21 +177,31 @@ def replay_source_quotient_core(instance, packet):
             raise ValueError("invalid coefficient template")
         seen.add(variable)
         values[variable] = bool(bit)
-    algebra = packet["quotient_certificate"]
-    if algebra["kind"] != "recursive_quotient_singleton":
-        raise ValueError("core format requires a recursive quotient certificate")
-    origins = [_read_origin(algebra["target"]), *(_read_origin(item) for item in algebra["relations"])]
+    if schema == "recursive-source-quotient-core-v1":
+        algebra = packet["quotient_certificate"]
+        if algebra.get("kind") != "recursive_quotient_singleton":
+            raise ValueError("legacy core requires a recursive quotient certificate")
+    else:
+        algebra = packet["algebra_certificate"]
+    origins = source_algebra_origins(algebra)
+    required_coefficients = set()
     for origin in origins:
         state = origin.vertices, origin.word
+        required_coefficients.add(instance.coefficients[state])
         for other in origin.vertices:
             if other == origin.vertex:
                 continue
             edge = tuple(sorted((origin.vertex, other)))
             first, second = instance.product_factors(state, edge)
+            if first in coefficient_ids:
+                required_coefficients.add(first)
+            if second in coefficient_ids:
+                required_coefficients.add(second)
             values[instance.products[(state, edge)]] = values[first] and values[second]
+    if seen != required_coefficients:
+        raise ValueError("coefficient template must exactly cover certificate fibres")
     template = [v if bit else -v for v, bit in values.items()]
-    if not RecursiveTensorQuotient(instance).verify_certificate(template, algebra):
-        raise ValueError("original-source algebraic clause failed replay")
+    algebra_result = replay_guarded_algebraic_clause(instance, template, algebra)
 
     core = [tuple(clause) for clause in packet["core_clauses"]]
     proof = [tuple(clause) for clause in packet["rup_additions"]]
@@ -87,7 +210,7 @@ def replay_source_quotient_core(instance, packet):
     for clause in (*core, *proof):
         if any(type(v) is not int or v == 0 or abs(v) > instance.cnf.nv for v in clause):
             raise ValueError("invalid core literal")
-    source_cut = _canonical(algebra["cut"])
+    source_cut = algebra_result["clause"]
     guards, remaining = set(), set()
     algebra_uses = 0
     for clause in core:
@@ -115,7 +238,9 @@ def replay_source_quotient_core(instance, packet):
     cut = tuple(sorted((-v for v in guards), key=lambda v: (abs(v), v)))
     if any(type(v) is not int for v in packet["physical_cut"]) or cut != tuple(packet["physical_cut"]):
         raise ValueError("physical cut differs from the checked premises")
-    return {"status": "EXACT_SOURCE_CORE_REPLAY_PASS", "physical_cut": cut,
+    return {"status": "EXACT_SOURCE_CORE_REPLAY_PASS",
+            "algebra_certificate_kind": algebra_result["certificate_kind"],
+            "algebra_replay_status": algebra_result["status"], "physical_cut": cut,
             "physical_guard_count": len(cut), "core_clauses": len(core),
             "base_recursive_clauses": base_clauses, "rup_additions": len(proof),
             "killers_or_ratio_clauses": False}

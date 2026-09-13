@@ -7,6 +7,7 @@ import json
 import sys as _bootstrap_sys
 import unittest
 from pathlib import Path as _BootstrapPath
+from unittest.mock import patch
 
 for _bootstrap_parent in _BootstrapPath(__file__).resolve().parents:
     if (_bootstrap_parent / "src" / "krenn_gu" / "bootstrap.py").is_file():
@@ -20,7 +21,11 @@ from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
 REPO_ROOT, HERE = _bootstrap_repository(__file__)
 
 from krenn_gu.recursive_tensor_support import build_recursive_tensor_support_cnf  # noqa: E402
-from krenn_gu.source_quotient_core import replay_source_quotient_core, rup_conflict  # noqa: E402
+from krenn_gu.source_quotient_core import (  # noqa: E402
+    replay_source_quotient_core,
+    rup_conflict,
+    unit_propagation_core,
+)
 
 
 class SourceQuotientCoreTests(unittest.TestCase):
@@ -36,6 +41,9 @@ class SourceQuotientCoreTests(unittest.TestCase):
         self.assertTrue(rup_conflict([(1,), (-1,)]))
         self.assertTrue(rup_conflict([(1,), (-1, 2), (-2,)]))
         self.assertFalse(rup_conflict([(1, 2), (-1, -2)]))
+        self.assertIsNone(unit_propagation_core([(1, 2), (-1, -2)]))
+        core = unit_propagation_core([(1,), (-1, 2), (-2,), (8, 9)])
+        self.assertEqual(core, [(1,), (-1, 2), (-2,)])
 
     def test_source_algebra_and_264_clause_core_replay(self):
         result = replay_source_quotient_core(self.instance, self.packet)
@@ -78,6 +86,58 @@ class SourceQuotientCoreTests(unittest.TestCase):
         self.assertEqual(result["core_clauses"], 190)
         self.assertEqual(result["rup_additions"], 1)
         self.assertFalse(result["killers_or_ratio_clauses"])
+
+    def test_row_space_clause_projects_through_the_typed_boundary(self):
+        instance = build_recursive_tensor_support_cnf(
+            6,
+            column_killers=False,
+            fix_root_killers=False,
+        )
+        packet = json.loads(
+            (HERE / "fixtures" / "recursive_row_space_n6_source_core.json").read_text()
+        )
+        with patch(
+            "krenn_gu.recursive_tensor_quotient.UnitSignedQuotient",
+            side_effect=AssertionError("row-space discovery called during replay"),
+        ):
+            result = replay_source_quotient_core(instance, packet)
+        self.assertEqual(result["algebra_certificate_kind"], "recursive_laurent_row_space")
+        self.assertEqual(result["physical_guard_count"], 43)
+        self.assertEqual(result["base_recursive_clauses"], 102)
+        self.assertEqual(result["core_clauses"], 146)
+        self.assertEqual(result["rup_additions"], 1)
+
+        for mutation in ("certificate_kind", "missing_coefficient", "extra_coefficient"):
+            changed = copy.deepcopy(packet)
+            if mutation == "certificate_kind":
+                changed["algebra_certificate"]["schema"] = "caller-verified-v0"
+            elif mutation == "missing_coefficient":
+                changed["coefficient_support"].pop()
+            else:
+                used = {row[0] for row in changed["coefficient_support"]}
+                extra = next(
+                    variable
+                    for variable in instance.coefficients.values()
+                    if variable not in used
+                )
+                changed["coefficient_support"].append([extra, 0])
+            with self.subTest(mutation=mutation), self.assertRaises(ValueError):
+                replay_source_quotient_core(instance, changed)
+
+    def test_latest_136_entry_support_has_a_checked_27_literal_cut(self):
+        packet = json.loads(
+            (
+                HERE
+                / "fixtures"
+                / "recursive_source_quotient_n8_latest136_core.json"
+            ).read_text()
+        )
+        result = replay_source_quotient_core(self.instance, packet)
+        self.assertEqual(result["algebra_certificate_kind"], "recursive_quotient_singleton")
+        self.assertEqual(result["physical_guard_count"], 27)
+        self.assertEqual(result["base_recursive_clauses"], 107)
+        self.assertEqual(result["core_clauses"], 135)
+        self.assertEqual(result["rup_additions"], 1)
 
 
 if __name__ == "__main__":

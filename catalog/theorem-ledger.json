@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "0cf86012ec149216",
+      "document_sha256_16": "d6023628faa4becd",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -7305,6 +7305,35 @@
       "external_binaries": [],
       "note": "WB2 proves by two independent SAT encodings and solvers that the support abstraction (AP') of an all-diagonal witness has no model at n=6,8, hence no all-diagonal witness exists on eight vertices and the exclusion needs no weight values. Each of Laplace, forcing, and three-part rainbow-freeness is load-bearing at n=8. The all-n statement is a stated conjecture. WB1's numerical degree-four witness proof does not transfer through the one-way bridge. No DRAT trace. Scoped to the all-diagonal branch; the global Krenn-Gu conjecture remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Ten-vertex all-diagonal recursive-hafnian zero-pattern exclusion (RZP10)",
+      "document": "claims/finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md",
+      "document_sha256_16": "c48307f883a59edd",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "finite computer-assisted exact exclusion for all-diagonal ternary complex witnesses on exactly ten vertices",
+        "the written witness-to-zero-pattern bridge uses the recursive principal-hafnian support of each diagonal colour matrix; it does not assert that the weaker AP' abstraction is unsatisfiable at n=10",
+        "the 13 top-level cases form an exhaustive cover of all 945 perfect matchings: one reference matching and its 12 stabilizer-orbit representatives under vertex relabelling, with explicit transporters checked independently",
+        "each case is pinned by exact CNF and DRAT proof hashes and replays as s VERIFIED with a pinned drat-trim executable; three malformed-proof controls per case are rejected",
+        "the independent standard-library audit reconstructs the variable allocation, clauses, DIMACS bytes, matching cover, stabilizers, and transporters without importing the repository encoder or a SAT library",
+        "the theorem excludes neither bichromatic edge entries nor the full Krenn-Gu problem; no arbitrary-order conclusion is claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "tools/explore/replay_recursive_hafnian_drat.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/finite/n10/audit_recursive_hafnian_rzp_all_diagonal_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/strategy/krenn-gu-cancellation-review-guidance-2026-09-13.md",
+      "expected_runtime": "about ten minutes for the 13-case DRAT replay plus seconds for the independent standard-library audit on the reference host",
+      "external_binaries": [
+        "pinned drat-trim executable (SHA-256 a48ebed7b4b6b373d3ddbeb3368dae7622a9e17bab7fe6eb751ab996757f9fbe)"
+      ],
+      "note": "RZP10 turns the recursive-hafnian cancellation search into a finite theorem at n=10 through an explicit witness bridge, an independently checked 13-case matching cover, byte-pinned CNF/DRAT pairs, adversarial controls, and a portable replay bundle. It is strictly stronger than AP' at this order and says nothing about bichromatic witnesses, arbitrary even orders, or resolution of the global conjecture, which remains UNRESOLVED.",
+      "claim_package": "claims/finite/n10",
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []

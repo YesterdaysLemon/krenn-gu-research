@@ -1,5 +1,13 @@
 # Ten-vertex packages
 
+The September 13 cancellation-consistency sprint adds the
+[`ten-vertex all-diagonal recursive-hafnian exclusion`](TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md).
+It is a finite computer-assisted theorem backed by an exhaustive thirteen-case
+binary-DRAT cover and a separate no-import encoder/cover audit. It excludes
+complex all-diagonal witnesses at `n=10`; it does not exclude AP',
+bichromatic blocks, other orders, or the global conjecture. The large proof
+bundle remains outside ordinary Git history.
+
 The six Stage 28 claim documents are:
 
 - [`TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md`](TEN_VERTEX_BALANCED_ALL_BRIDGE_SET_TREE_OBSTRUCTION.md)

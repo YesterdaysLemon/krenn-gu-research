@@ -1,10 +1,13 @@
 {
   "schema": "recursive-hafnian-rzp-drat-v2",
-  "status": "experimental_checked_sat_evidence_not_promoted_theorem",
+  "status": "checked_certificate_evidence_for_scoped_finite_theorem",
   "scope": "Exact CNF and binary DRAT identities for the exhaustive n=10 RZP matching-pair cover only. The witness bridge, symmetry cover, and mathematical interpretation are separate review obligations.",
   "base_commit": "dc4e7c9ef97e3d4d0d47e1d3403e61d66a498ddc",
   "proof_format": "binary DRAT",
-  "artifact_policy": "Proof and CNF bytes are retained locally under tmp and are not committed by this experimental change.",
+  "artifact_policy": "Proof and CNF bytes remain outside ordinary Git history. The owning theorem records the exact portable-bundle identity and the tracked builder that packages all bytes, replay sources, audit sources, and the pinned checker executable/source.",
+  "owning_theorem": "claims/finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md",
+  "independent_audit": "claims/finite/n10/audit_recursive_hafnian_rzp_all_diagonal_exclusion.py",
+  "bundle_builder": "tools/explore/build_recursive_hafnian_bundle.py",
   "generator": {
     "program": "tools/explore/probe_recursive_hafnian_support.py",
     "native_solver": "CaDiCaL 1.7.3",
