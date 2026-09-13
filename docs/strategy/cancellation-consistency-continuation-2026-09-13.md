@@ -355,3 +355,18 @@ This is still a conditional source-support exclusion, not an exhaustive n8
 cover or a uniform occurrence theorem. The live frontier is unchanged for
 that reason. The newly implemented quotient/core deltas postdate Fable's third
 review, and that earlier review is not attributed to them.
+
+At checkpoint `e45d289d`, all 63 focused tests, all 205 migration/lattice tests,
+complete-index hygiene, and the no-change link pass were green. The next
+source-projection test produced a second replayed physical cut (38 literals),
+with only a 200-clause unit-propagation core. The full symmetry orbits of both
+physical cuts still leave a checked 135-entry Boolean support at n8. This
+negative parent-coverage test, not another catalogue of cofactor assignments,
+defines the current gap. The second compact core is retained as another
+regression fixture of the same mechanism.
+
+The additional Fable review of `e45d289d` timed out at its 12-minute CLI deadline
+on 2026-09-13 at 05:39 UTC and returned no review verdict. All owned research
+processes from that attempt and the full-orbit probe have exited. The live usage
+meter remained 7% used at 05:33 UTC; the global goal and 80% stop rule remain
+active. There has been no global-status promotion or publication.

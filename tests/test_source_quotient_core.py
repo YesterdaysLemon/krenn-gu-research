@@ -45,6 +45,15 @@ class SourceQuotientCoreTests(unittest.TestCase):
         self.assertEqual(result["rup_additions"], 3)
         self.assertFalse(result["killers_or_ratio_clauses"])
 
+    def test_second_source_projects_with_one_plain_rup_step(self):
+        packet = json.loads((HERE / "fixtures" / "recursive_source_quotient_n8_second_core.json").read_text())
+        result = replay_source_quotient_core(self.instance, packet)
+        self.assertEqual(result["physical_guard_count"], 38)
+        self.assertEqual(result["base_recursive_clauses"], 161)
+        self.assertEqual(result["core_clauses"], 200)
+        self.assertEqual(result["rup_additions"], 1)
+        self.assertFalse(result["killers_or_ratio_clauses"])
+
     def test_forged_premise_proof_and_scope_are_rejected(self):
         for mutation in ("premise", "false_empty", "physical_cut", "template", "schema"):
             changed = copy.deepcopy(self.packet)

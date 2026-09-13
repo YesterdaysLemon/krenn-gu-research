@@ -342,3 +342,45 @@ underlying quotient mechanism or the full conjecture. The sharper obligation
 is now to project source-coupled cofactor contradictions back to physical
 support efficiently, or derive a uniform occurrence theorem. Merely appending
 another long sequence of cofactor-assignment cuts does not settle it.
+
+### Projecting the next source, rather than counting more assignments
+
+Fixing that 134-entry support, retaining the eight already checked recursive
+cuts, and re-solving its cofactors gives one larger-sum quotient contradiction
+in 14.040 seconds. Nine original binomial relations force the **same target
+four-coefficient equality** displayed above, through different intermediate
+hafnians. Their guarded clause has 64 literals. A separate check then shows
+that this one new clause suffices: none of the preceding eight circuit cuts,
+the first physical cut, killers, or ratio clauses is needed to exclude the
+fixed source.
+
+The native DRAT proof passes replay. Its core has 161 recursive/target clauses,
+38 physical support units, and the one algebraic clause. Plain unit propagation
+already contradicts these 200 premises, so the separate source-core checker
+needs only the final empty-clause addition. The
+[second compact regression packet](../../tests/fixtures/recursive_source_quotient_n8_second_core.json)
+preserves that **38-literal physical cut**. Its original ignored packet has
+SHA-256 `37cac03c9a3176afe14efdc6e1d6b5d4d0e4514fa265184c8a05efdc3d75a2ae`.
+The CNF and native proof hashes are respectively
+`8edc0b4079a25c025ca10971f863ab23c81e638cb856e580b0a5072d2fb2803a`
+and `53dd986036c685810792fd160aab410f7a0723ce98ec3a4f5568c3262a6a7708`.
+
+This is a second test of the same projection mechanism, not a new theorem lane.
+To test its parent coverage directly, the next run added every vertex/global-
+colour relabeling of both physical cuts: 241,920 instances per cut, including
+possible duplicate clauses. The full recursive/killer/ratio-closure model then
+has 600,063 variables and 4,164,324 clauses. It remains SAT, with every clause
+checked, in 33.625 seconds. The new **135-entry** support and assignment are
+retained at `tmp/full-n8-two-source-cut-full-orbits/`. They are not weights.
+Thus even the full symmetry closure of these two source obstructions does not
+cover the eight-vertex parent. No such cover or global resolution is claimed.
+
+### Additional review attempt
+
+A single read-only Fable 5.1 audit of checkpoint `e45d289d` was attempted through
+OMP with a 12-minute CLI deadline and a 13-minute outer process bound. It exited
+after 721.127 seconds with `Deadline exceeded`, without a final review report.
+It supplies **no review verdict**. The three earlier completed Fable reports
+retain exactly their previously stated scopes; none is extended to the new
+quotient/core implementation by this failed attempt. The owned process exited,
+and the other user's older OMP processes were left untouched.
