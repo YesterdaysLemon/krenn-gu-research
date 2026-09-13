@@ -1,5 +1,5 @@
 {
-  "schema": "recursive-hafnian-rzp-drat-v1",
+  "schema": "recursive-hafnian-rzp-drat-v2",
   "status": "experimental_checked_sat_evidence_not_promoted_theorem",
   "scope": "Exact CNF and binary DRAT identities for the exhaustive n=10 RZP matching-pair cover only. The witness bridge, symmetry cover, and mathematical interpretation are separate review obligations.",
   "base_commit": "dc4e7c9ef97e3d4d0d47e1d3403e61d66a498ddc",
@@ -8,12 +8,27 @@
   "generator": {
     "program": "tools/explore/probe_recursive_hafnian_support.py",
     "native_solver": "CaDiCaL 1.7.3",
-    "native_solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e"
+    "native_solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+    "source": {
+      "file": "src/krenn_gu/recursive_hafnian_support.py",
+      "normalization": "CRLF to LF before hashing",
+      "bytes": 9131,
+      "sha256": "f831512763f1ab902ba01e17c0fd5f5c3d827273738a892136ee3f2ede23428e"
+    },
+    "python_sat_version": "1.9.dev7",
+    "dimacs_serialization": "ASCII, CRLF, final CRLF",
+    "source_commit": "acbe244771c378a3101a91bfc620d1268fd53356"
   },
   "checker": {
     "program": "drat-trim",
     "source_directory_label": "drat-trim-v05.22.2023",
-    "sha256": "a48ebed7b4b6b373d3ddbeb3368dae7622a9e17bab7fe6eb751ab996757f9fbe"
+    "sha256": "a48ebed7b4b6b373d3ddbeb3368dae7622a9e17bab7fe6eb751ab996757f9fbe",
+    "upstream_repository": "https://github.com/marijnheule/drat-trim",
+    "upstream_commit": "2e5e29cb0019d5cfd547d4208dca1b3ec290349f",
+    "source_sha256": "f7619bdc338bc8151b2f6bb87488052795c926b048d5040cf165742eb1ba9a26",
+    "makefile_sha256": "1f3c7128b1dd739723257edd95cc28a2ee747779ca01ae80ed9252f02ec5149d",
+    "build_command": "gcc drat-trim.c -std=c99 -O2 -o drat-trim",
+    "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
   },
   "replay": {
     "program": "tools/explore/replay_recursive_hafnian_drat.py",
@@ -33,6 +48,15 @@
         "file": "recursive-hafnian-n10-cycle-5.drat",
         "bytes": 43770465,
         "sha256": "57d53f63b1c3e9d624b8b3f72141e44b0a613b6bfc88da85da6068b02d5315c6"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          5
+        ],
+        "third_matching_cycle_type": null,
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -47,6 +71,16 @@
         "file": "recursive-hafnian-n10-cycle-4p1.drat",
         "bytes": 67256043,
         "sha256": "e0272d5d44abbb5a18733c4ade07a36c8f17b41b8cdcec935e0070389b7a962f"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          4,
+          1
+        ],
+        "third_matching_cycle_type": null,
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -61,6 +95,16 @@
         "file": "recursive-hafnian-n10-cycle-3p2.drat",
         "bytes": 62350413,
         "sha256": "1ffab97c2e498932a8f6c6767fb7b4f2747b893bfe0d908af22a01aa4a70d4ae"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          3,
+          2
+        ],
+        "third_matching_cycle_type": null,
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -75,6 +119,17 @@
         "file": "recursive-hafnian-n10-cycle-3p1p1.drat",
         "bytes": 49463606,
         "sha256": "cfc92629b56e7920b1b308ae6d3762fb8b98f933fcf033edfc8fb26548c8629b"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          3,
+          1,
+          1
+        ],
+        "third_matching_cycle_type": null,
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -89,6 +144,17 @@
         "file": "recursive-hafnian-n10-cycle-2p2p1.drat",
         "bytes": 90891862,
         "sha256": "97b0ff669f3554f7824ff69786ac430d72edb7c09ccf1ebb21133960bfc6fe72"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          2,
+          2,
+          1
+        ],
+        "third_matching_cycle_type": null,
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -103,6 +169,18 @@
         "file": "recursive-hafnian-n10-cycle-2p1p1p1.drat",
         "bytes": 112412340,
         "sha256": "c6bb571b188ed657a1366350e804782b40bb358614e6b900c85f71fc47c150b6"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "third_matching_cycle_type": null,
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -117,6 +195,21 @@
         "file": "recursive-hafnian-n10-shared-third-5.drat",
         "bytes": 9539398,
         "sha256": "57532359895771407817fb7660a5f71f3751101cb0252ecf6c7b10683cff45bf"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "third_matching_cycle_type": [
+          5
+        ],
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -131,6 +224,22 @@
         "file": "recursive-hafnian-n10-shared-third-4p1.drat",
         "bytes": 5735742,
         "sha256": "135e32691871f23f2f3279937dea49c0a1e17e7c932f62ded6c8ec6f91f8a362"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "third_matching_cycle_type": [
+          4,
+          1
+        ],
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -145,6 +254,22 @@
         "file": "recursive-hafnian-n10-shared-third-3p2.drat",
         "bytes": 13059670,
         "sha256": "6413dca8ce97249098466e91e3b5fd6b4d46b1cb0cfa00404c9a03a43d407845"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "third_matching_cycle_type": [
+          3,
+          2
+        ],
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -159,6 +284,23 @@
         "file": "recursive-hafnian-n10-shared-third-3p1p1.drat",
         "bytes": 6372410,
         "sha256": "7bd58355910337fdb12b0e20ad852fe3519d8b61328df8327d8f3a0721275915"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "third_matching_cycle_type": [
+          3,
+          1,
+          1
+        ],
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -173,6 +315,23 @@
         "file": "recursive-hafnian-n10-shared-third-2p2p1.drat",
         "bytes": 5949161,
         "sha256": "f8c72ad6cab2554e04a306dbfcad6ae459d47b6f845981572d4bd3db29db09b1"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "third_matching_cycle_type": [
+          2,
+          2,
+          1
+        ],
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -187,6 +346,24 @@
         "file": "recursive-hafnian-n10-shared-third-2p1p1p1.drat",
         "bytes": 10980922,
         "sha256": "7153e692693b8ab5913c1d0b6d5d160608d39ecad1f2cf894993d19a11ab0750"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "third_matching_cycle_type": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     },
     {
@@ -201,6 +378,25 @@
         "file": "recursive-hafnian-n10-shared-third-shared.drat",
         "bytes": 18833715,
         "sha256": "ce8036e07e901cb04939ad11b5d6f72f35ae67c1e18b4e060befc062b2a62a67"
+      },
+      "parameters": {
+        "n": 10,
+        "matching_cycle_type": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "third_matching_cycle_type": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "two_part_only": false,
+        "no_singleton_cancellation": false
       }
     }
   ]

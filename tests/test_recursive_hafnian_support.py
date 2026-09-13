@@ -3,7 +3,10 @@
 from __future__ import annotations
 
 import itertools
+import copy
+import json
 import sys as _bootstrap_sys
+import tempfile
 import unittest
 from pathlib import Path as _BootstrapPath
 
@@ -23,6 +26,11 @@ from pysat.solvers import Cadical195  # noqa: E402
 from krenn_gu.recursive_hafnian_support import (  # noqa: E402
     build_recursive_hafnian_support_cnf,
     canonical_matching_pair,
+)
+from tools.explore.replay_recursive_hafnian_drat import (  # noqa: E402
+    expected_cover,
+    regenerate_cnf,
+    validate_cover,
 )
 
 
@@ -71,6 +79,41 @@ def alternating_cycle_type(
         unvisited -= component
         parts.append(len(component) // 2)
     return tuple(sorted(parts, reverse=True))
+
+
+def stabilizer_map(first, second):
+    """Construct an explicit alternating-walk map, not just a cycle label.
+
+    Each walk traverses a first-matching edge and then a second-matching
+    edge.  Consecutive pairs therefore map to standard first-matching edges;
+    the links between them map to the canonical second matching.
+    """
+
+    partners = []
+    for matching in (first, second):
+        row = {}
+        for u, v in matching:
+            row[u], row[v] = v, u
+        partners.append(row)
+    unseen = set(partners[0])
+    walks = []
+    while unseen:
+        start = min(unseen)
+        current = start
+        walk = []
+        while True:
+            other = partners[0][current]
+            walk.extend((current, other))
+            unseen.difference_update((current, other))
+            current = partners[1][other]
+            if current == start:
+                break
+        walks.append(tuple(walk))
+    walks.sort(key=lambda walk: (-len(walk), walk))
+    return {
+        vertex: image
+        for image, vertex in enumerate(itertools.chain.from_iterable(walks))
+    }
 
 
 class RecursiveHafnianSupportTests(unittest.TestCase):
@@ -127,6 +170,63 @@ class RecursiveHafnianSupportTests(unittest.TestCase):
                 (1, 1, 1, 1, 1),
             },
         )
+
+    def test_stabilizer_maps_all_945_matchings_to_canonical_pairs(self) -> None:
+        first, _ = canonical_matching_pair(10, (5,))
+        count = 0
+        for second in perfect_matchings(tuple(range(10))):
+            permutation = stabilizer_map(first, second)
+            self.assertEqual(set(permutation), set(range(10)))
+            self.assertEqual(set(permutation.values()), set(range(10)))
+
+            def image(matching):
+                return tuple(sorted(
+                    tuple(sorted((permutation[u], permutation[v])))
+                    for u, v in matching
+                ))
+
+            cycle = alternating_cycle_type(first, second)
+            canonical_first, canonical_second = canonical_matching_pair(10, cycle)
+            self.assertEqual(image(first), canonical_first)
+            self.assertEqual(image(second), canonical_second)
+            # This same permutation fixes both selected matchings when the
+            # first two colours share M0, proving the third-colour subsplit.
+            count += 1
+        self.assertEqual(count, 945)
+
+    def test_replay_manifest_has_exact_typed_cover(self) -> None:
+        path = REPO_ROOT / "docs/strategy/recursive-cancellation-consistency-evidence-2026-09-12.json"
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        validate_cover(manifest["cases"])
+        expected = expected_cover()
+        self.assertEqual(len(expected), 13)
+        for mutation in ("missing", "duplicate", "wrong_branch", "weakened", "bad_type"):
+            cases = copy.deepcopy(manifest["cases"])
+            if mutation == "missing":
+                cases.pop()
+            elif mutation == "duplicate":
+                cases[-1] = cases[0]
+            elif mutation == "wrong_branch":
+                cases[0]["parameters"]["matching_cycle_type"] = [4, 1]
+            elif mutation == "weakened":
+                cases[0]["parameters"]["no_singleton_cancellation"] = True
+            else:
+                cases[0]["parameters"]["two_part_only"] = 0
+            with self.subTest(mutation=mutation), self.assertRaises(RuntimeError):
+                validate_cover(cases)
+
+    def test_replay_regenerates_frozen_top_five_bytes_portably(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            output = _BootstrapPath(temporary) / "regenerated.cnf"
+            result = regenerate_cnf(expected_cover()["top-5"], output)
+            self.assertEqual(result["variables"], 18678)
+            self.assertEqual(result["clauses"], 107908)
+            self.assertEqual(result["identity"], {
+                "bytes": 2504545,
+                "sha256": "98f013336a427ee0899df85423636ab30b6d609036c2bd6ee162dec3009c1a51",
+            })
+            raw = output.read_bytes()
+            self.assertEqual(raw.count(b"\n"), raw.count(b"\r\n"))
 
     def test_product_variable_is_a_full_equivalence(self) -> None:
         instance = build_recursive_hafnian_support_cnf(4)

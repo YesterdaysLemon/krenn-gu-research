@@ -141,7 +141,9 @@ The finite baselines and sharpness controls behaved as intended:
 | `n=8`, omit three-part rainbow clauses | SAT | CaDiCaL 1.9.5 via python-sat | 0.009 | `0d5ca0012a573e1f7f61941571f27632e69e7cc734ac37af8bf7d04f23d2b8b3` |
 
 The primary `n=10` encoding has 18,678 variables and 107,908 clauses in
-each conditioned case.  The exhaustive seven-case cover returned:
+each top-level conditioned case. The shared-third subcases add five units,
+giving 107,913 clauses with the same variables. The exhaustive seven-case
+top-level cover returned:
 
 | matching-pair cycle type | result | solver | seconds | DIMACS SHA-256 |
 | --- | --- | --- | ---: | --- |
@@ -199,14 +201,41 @@ wsl.exe -d Ubuntu -- python3 tools/explore/replay_recursive_hafnian_drat.py `
   --case-timeout-seconds 300
 ```
 
-The final reference invocation passed all three checker controls and all
-thirteen proof cases in 456.873 seconds.  Its untracked 23,892-byte receipt has
+The original reference invocation reported passing controls and all
+thirteen proof cases in 456.873 seconds. Its negative controls were later
+found to reject malformed binary input rather than an unjustified proof
+step; they are superseded by the semantic controls below. Its untracked
+23,892-byte receipt has
 SHA-256
 `2f282f67987eb105555007051ed74b5783dde8a0271935f52b02407355c74ff9`.
 The receipt records driver SHA-256
 `27d39e461cdb3ba37c9a8e165dd4d14e2f793d6ad7bbf2cd8f88f5c29438c8d3`
 and manifest SHA-256
 `21fe7f70b3e1028e53f457f46e3481da057444749654027d88951813c0411ed5`.
+
+On 2026-09-13 the strengthened v2 replay regenerated all thirteen original
+CNFs from pinned builder text and typed parameters, matched their exact
+bytes, and checked all thirteen proofs again. Its binary controls accepted
+the valid proof and semantically rejected both false empty steps, with no
+binary parser errors. Recompiling the pinned upstream checker source
+reproduced the original binary hash. This replay completed in 560.844 seconds.
+The receipt at `tmp/recursive-hafnian-rzp-replay-v2/replay.json` has 32,492
+bytes and SHA-256
+`3714e6bd534a2043d403834c43dcc0961ca9ba4ab7ca2b12b3e0eaa3e694f6e8`.
+It records driver hash
+`35a8b2cefc075770a51ca6f190c7a5b447328731431f894b12a2b2504d624c49`
+and manifest hash
+`be7188269e4e94d75ec9df5a09b133207e8dc2b3f55a58b6c5fbf7e373bacaba`.
+These receipt hashes identify raw checkout bytes; builder-source pinning
+explicitly normalizes CRLF to LF, whereas frozen CNF identity never does.
+The replay now requires python-sat 1.9.dev7 under Linux/WSL. Use a fresh
+output directory on each invocation. The constructive symmetry test also
+checks an explicit matching-stabilizer relabelling for all 945 matchings.
+
+Fable 5.1's read-only mathematical review found no blocking defect in the
+witness bridge, recursive clauses, or cover. It did not rerun the proofs.
+The v2 repairs and the new signed-ratio mechanism are documented in
+[the continuation journal](cancellation-consistency-continuation-2026-09-13.md).
 
 ## Current interpretation
 
@@ -219,7 +248,7 @@ RZP is the stronger necessary model.  It is not an all-order weighted Bogdanov
 theorem, and it changes neither the unrestricted eight-vertex frontier nor the
 global Krenn--Gu status.
 
-The next evidence gate is independent mathematical and implementation review,
-plus a deliberate decision about durable distribution of the roughly 500 MB
-proof payload.  Only after those steps should this move from an experimental
-strategy note into an owning finite claim.
+The independent review and local replay gates have now been exercised as
+described above. Durable distribution of the roughly 500 MB proof payload
+and final review of the repair delta remain before moving this experimental
+strategy note into an owning finite claim. No frontier promotion is made here.

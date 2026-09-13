@@ -36,6 +36,10 @@ from krenn_gu.recursive_hafnian_support import (  # noqa: E402
     RecursiveHafnianSupportInstance,
     build_recursive_hafnian_support_cnf,
 )
+from krenn_gu.recursive_hafnian_signed_cuts import (  # noqa: E402
+    add_common_neighbor_parity_cuts,
+    add_two_by_three_hafnian_cuts,
+)
 
 SOLVERS = {
     "cadical153": Cadical153,
@@ -101,6 +105,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--build-only", action="store_true")
     parser.add_argument("--two-part-only", action="store_true")
     parser.add_argument("--no-singleton-cancellation", action="store_true")
+    parser.add_argument("--signed-two-by-three", action="store_true")
+    parser.add_argument("--signed-common-neighbor", action="store_true")
     parser.add_argument(
         "--cycle-type",
         help="partition of n/2, e.g. 3+2; fixes one matching in colours 0 and 1",
@@ -135,6 +141,12 @@ def main() -> None:
         matching_cycle_type=cycle_type,
         third_matching_cycle_type=third_cycle_type,
     )
+    signed_cut_count = (
+        add_two_by_three_hafnian_cuts(instance) if args.signed_two_by_three else 0
+    )
+    ratio_cut_count = (
+        add_common_neighbor_parity_cuts(instance) if args.signed_common_neighbor else 0
+    )
     built_seconds = time.perf_counter() - started
 
     dimacs = args.dimacs
@@ -163,6 +175,8 @@ def main() -> None:
         "flags": {
             "two_part_only": args.two_part_only,
             "no_singleton_cancellation": args.no_singleton_cancellation,
+            "signed_two_by_three": args.signed_two_by_three,
+            "signed_common_neighbor": args.signed_common_neighbor,
             "matching_cycle_type": list(cycle_type) if cycle_type else None,
             "third_matching_cycle_type": (
                 list(third_cycle_type) if third_cycle_type else None
@@ -184,6 +198,8 @@ def main() -> None:
             "rainbow": instance.rainbow_clauses,
             "constant_words": 3,
             "matching_symmetry": instance.symmetry_clauses,
+            "signed_two_by_three": signed_cut_count,
+            "signed_common_neighbor": ratio_cut_count,
         },
         "build_seconds": round(built_seconds, 6),
         "solve_seconds": round(solve_seconds, 6),
