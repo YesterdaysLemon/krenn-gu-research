@@ -24,12 +24,62 @@ from pysat.solvers import Cadical195  # noqa: E402
 
 from krenn_gu.integer_signed_lattice import IntegerSignedLattice  # noqa: E402
 from krenn_gu.recursive_hafnian_signed_cuts import (  # noqa: E402
+    add_common_neighbor_closure_cuts,
     add_common_neighbor_parity_cuts,
     two_by_three_hafnian_cuts,
 )
 from krenn_gu.recursive_hafnian_support import (  # noqa: E402
     build_recursive_hafnian_support_cnf,
 )
+
+
+def ratio_patch_witness(states):
+    """Construct exact weights, or detect a graph obstruction, on K2,4.
+
+    States 0,1,2,3 mean (third support,hafnian support) = 00,01,10,11.
+    This independent graph algorithm does not import or emulate CNF clauses.
+    """
+
+    pairs = tuple(itertools.combinations(range(4), 2))
+    graph = {i: [] for i in range(4)}
+    for (i, j), state in zip(pairs, states, strict=True):
+        if state == 0:
+            graph[i].append(j)
+            graph[j].append(i)
+    component, parity = {}, {}
+    for start in range(4):
+        if start in component:
+            continue
+        component[start], parity[start] = start, 0
+        pending = [start]
+        while pending:
+            i = pending.pop()
+            for j in graph[i]:
+                if j in component:
+                    if parity[j] == parity[i]:
+                        return None
+                else:
+                    component[j], parity[j] = start, 1 - parity[i]
+                    pending.append(j)
+    for (i, j), state in zip(pairs, states, strict=True):
+        if state in (1, 2) and component[i] == component[j] and parity[i] != parity[j]:
+            return None
+    ratios = {i: (-1) ** parity[i] * 2 ** component[i] for i in range(4)}
+    weights = {(0, 1): 1}
+    weights.update({(0, i + 2): ratios[i] for i in range(4)})
+    weights.update({(1, i + 2): 1 for i in range(4)})
+    for (i, j), state in zip(pairs, states, strict=True):
+        cross_sum = ratios[i] + ratios[j]
+        if state < 2:
+            third = 0
+        elif state == 2:
+            third = -cross_sum
+        else:
+            third = 1 if cross_sum != -1 else 2
+        assert bool(third) == bool(state // 2)
+        assert bool(cross_sum + third) == bool(state % 2)
+        weights[(i + 2, j + 2)] = third
+    return weights
 
 
 class SignedHafnianCutTests(unittest.TestCase):
@@ -67,6 +117,7 @@ class SignedHafnianCutTests(unittest.TestCase):
                             fixed.append([literal if hafnian(tuple(sorted(subset))) else -literal])
                 original_count = len(instance.cnf.clauses)
                 add_common_neighbor_parity_cuts(instance)
+                add_common_neighbor_closure_cuts(instance)
                 parity = instance.cnf.clauses[original_count:]
                 with self.subTest(n=n, trial=trial), Cadical195(
                     bootstrap_with=[*local, *fixed, *parity]
@@ -111,6 +162,7 @@ class SignedHafnianCutTests(unittest.TestCase):
         self.assertTrue(any((literal > 0) == (abs(literal) in live) for literal in clause))
         unguarded = [literal for literal in clause if literal not in live or literal < 0]
         self.assertFalse(any((literal > 0) == (abs(literal) in live) for literal in unguarded))
+        self.assertEqual([1 * 1 + 1 * 1 + 1 * (-2) for _ in range(3)], [0, 0, 0])
 
     def test_local_rzp_accepts_patch_rejected_by_signed_cut(self):
         instance = build_recursive_hafnian_support_cnf(8)
@@ -157,6 +209,68 @@ class SignedHafnianCutTests(unittest.TestCase):
             self.assertTrue(solver.solve())
             solver.append_formula(parity)
             self.assertFalse(solver.solve())
+
+    def test_path_closure_transports_zero_and_live_third_term(self):
+        for third_is_live in (False, True):
+            instance = build_recursive_hafnian_support_cnf(6)
+            local_count = (instance.product_definition_clauses
+                           + instance.nonzero_accessibility_clauses
+                           + instance.singleton_cancellation_clauses)
+            local = instance.cnf.clauses[:local_count]
+            fixed = []
+            for edge in itertools.combinations(range(6), 2):
+                cross = len(set(edge) & {0, 1}) == 1 and len(set(edge) & {2, 3, 4, 5}) == 1
+                live = cross or (third_is_live and edge in ((0, 1), (2, 5)))
+                literal = instance.edge_variables[(0, edge)]
+                fixed.append([literal if live else -literal])
+            for i, j in itertools.combinations(range(2, 6), 2):
+                zero = (i, j) in ((2, 3), (3, 4), (4, 5))
+                if (i, j) == (2, 5):
+                    zero = third_is_live
+                literal = instance.hafnian_variables[(0, frozenset((0, 1, i, j)))]
+                fixed.append([-literal if zero else literal])
+            before = len(instance.cnf.clauses)
+            add_common_neighbor_parity_cuts(instance)
+            parity = instance.cnf.clauses[before:]
+            before = len(instance.cnf.clauses)
+            add_common_neighbor_closure_cuts(instance)
+            closure = instance.cnf.clauses[before:]
+            with self.subTest(third_is_live=third_is_live), Cadical195(
+                bootstrap_with=[*local, *fixed, *parity]
+            ) as solver:
+                self.assertTrue(solver.solve())
+                solver.append_formula(closure)
+                self.assertFalse(solver.solve())
+
+    def test_all_4096_fixed_pair_patterns_match_constructive_oracle(self):
+        instance = build_recursive_hafnian_support_cnf(6)
+        local_count = (instance.product_definition_clauses
+                       + instance.nonzero_accessibility_clauses
+                       + instance.singleton_cancellation_clauses)
+        local = instance.cnf.clauses[:local_count]
+        before = len(instance.cnf.clauses)
+        add_common_neighbor_parity_cuts(instance)
+        add_common_neighbor_closure_cuts(instance)
+        transport = instance.cnf.clauses[before:]
+        fixed = [instance.edge_variables[(0, (0, 1))]]
+        fixed.extend(instance.edge_variables[(0, (left, right))]
+                     for left in (0, 1) for right in range(2, 6))
+        counts = {False: 0, True: 0}
+        with Cadical195(bootstrap_with=[*local, *transport]) as solver:
+            for states in itertools.product(range(4), repeat=6):
+                weights = ratio_patch_witness(states)
+                assumptions = list(fixed)
+                for (i, j), state in zip(itertools.combinations(range(2, 6), 2), states, strict=True):
+                    edge = instance.edge_variables[(0, (i, j))]
+                    hafnian = instance.hafnian_variables[(0, frozenset((0, 1, i, j)))]
+                    assumptions.extend((edge if state // 2 else -edge,
+                                        hafnian if state % 2 else -hafnian))
+                expected = weights is not None
+                self.assertEqual(solver.solve(assumptions=assumptions), expected, states)
+                counts[expected] += 1
+        self.assertEqual(sum(counts.values()), 4096)
+        self.assertGreater(counts[False], 0)
+        self.assertGreater(counts[True], 0)
 
 
 if __name__ == "__main__":

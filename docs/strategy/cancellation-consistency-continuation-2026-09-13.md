@@ -23,6 +23,10 @@ time 1789832898. The value is coarse; no token-to-percentage conversion is
 assumed. No reset credits have been used. The rule is a stopping ceiling,
 not a target to consume unnecessary resources.
 
+At 02:56:05 UTC the live reported usage advanced to **4 percent used**.
+The weekly window and reset timestamp were unchanged; the second window
+remained unavailable. This confirms the reading updates during the run.
+
 ## Parent and immediate obligations
 
 The scientific parent remains exact weighted Bogdanov: exclude all-diagonal
@@ -131,7 +135,7 @@ mod-two exponent.
 
 ### Strictness controls, not global countermodels
 
-Six exact tests currently pass. They include direct integer evaluation of
+Six exact tests passed for the reviewed parity checkpoint. They include direct integer evaluation of
 5,184 weighted patches, the third-term escape, and 20 seeded actual integer
 matrix triples at n=6,8 whose exact hafnian supports extend to the parity
 encoding. There are also two local strictness tests:
@@ -155,11 +159,137 @@ signed step adds genuine information, including information beyond triangles.
 A 330-second, 8 GiB Glucose run testing n=12 RZP with the three selected
 support matchings coincident timed out after 330.046 seconds. Its result is
 **UNKNOWN**. This is one branch used to seek a survivor, not an exhaustive
-n=12 cover. A matched run with the common-neighbour condition is running;
-no solver-frontier improvement is presumed.
+n=12 cover. The matched common-neighbour run also timed out, after 330.034
+seconds, so its result is also **UNKNOWN**. No solver-frontier improvement
+was established.
 
 The unresolved mathematical question is whether the global two-/three-colour
 partition constraints force one of these ratio graphs to be non-bipartite,
 or force some more general incompatible cancellation circuit. Passing all
 ratio graphs would only direct attention to larger fibres and cross-patch
 integer consistency; it would not prove realizability.
+
+## Second Fable review and the closure repair
+
+The read-only Fable 5.1 review completed in 899.234 seconds and found no
+blocking defect in the parity lemma, guards, v2 replay, or stabilizer test.
+It reviewed the material checkpointed as
+`540cf9407b5a14048b9c8b9f3909f5bc2876dcb4`. It executed no code or proof replay.
+Its raw report remains local under `.research-runs/`; the 12,034-byte log has
+SHA-256 `cf60c5314d0c008744176719afdfbc67e9138e8240ce09b8663751f02a63cad9`.
+The raw model report is not committed or treated as proof.
+
+The most useful finding was missing path closure. A path of ratio-negation
+edges forces alternating ratios even when it contains no odd cycle. For
+example, on common neighbours 2,3,4,5, the three zero fibres along
+2-3-4-5 force r_2=-r_5. With a dead third term, declaring the endpoint fibre
+nonzero is impossible although the earlier parity graph was bipartite.
+
+The locally checked repair goes slightly further than that suggestion.
+Whenever the path forces r_i=-r_j, the cross sum vanishes and
+
+    h_c(abij) = Z^c_ab Z^c_ij,  hence  s_abij = b_(abij,ab).
+
+Thus a **live** third term forces a nonzero endpoint hafnian; it is not an
+unconditional escape after the cross sum has been proved zero. Two exact
+local controls, with dead and live third terms respectively, pass RZP plus
+the old parity clauses and fail the new closure clauses.
+
+### Complete zero-pattern condition for one fixed pair
+
+Restrict to common neighbours I and let s_ij denote the four-hafnian support
+and b_ij its third-term support. The possible pairs are:
+
+| b_ij | s_ij | required ratio relation |
+| --- | --- | --- |
+| 0 | 0 | r_i = -r_j |
+| 0 | 1 | r_i != -r_j |
+| 1 | 0 | r_i != -r_j |
+| 1 | 1 | no ratio condition |
+
+Form Q from the first row. The one-pair pattern is realizable over C exactly
+when Q is bipartite and no pair from the middle two rows joins opposite
+sides of one Q-component. Necessity follows from alternating ratios and the
+complete three-term four-hafnian identity. For sufficiency, choose a distinct
+nonzero base ratio, distinct up to sign, on every component and alternate
+it according to the bipartition. Choose all Z_bi=1 and Z_ai=r_i. If Z_ab is
+nonzero normalize it to 1; choose a live Z_ij to cancel the nonzero cross sum
+when s_ij=0, and otherwise choose it nonzero avoiding the one cancelling
+value. If Z_ab=0, every b_ij=0 and the right-right weights do not affect these
+fibres. This constructs the requested support pattern on this one patch.
+
+The new `--signed-ratio-closure` option includes parity and adds existential
+component-equivalence variables. Three clauses per neighbour triple enforce
+transitivity, zero/dead-third fibres put their endpoints in the same
+component, and connected opposite-parity endpoints force s_ij=b_ij.
+There are 3*C(n,2)*C(n-2,2) new component variables and
+3*C(n,2)*(3*C(n-2,3)+5*C(n-2,2)) closure clauses, besides parity.
+
+An independent constructive graph checker classifies all 4^6=4096 patterns
+on four common neighbours. For every accepted pattern it explicitly builds
+integer weights and checks the four-hafnians; the incremental SAT encoder
+agrees on every accepted and rejected pattern. The existing seeded actual
+matrix controls also pass with closure enabled. Eight signed-cut tests now
+pass. This establishes local completeness for a fixed pair's tested common-
+neighbour fibres, not simultaneous realizability across different pairs,
+larger subsets, or colours.
+
+Fable also suggested a source-dependent Gram formula for larger fibres.
+The formula is correct off the diagonal, but any resulting rank statement
+requires a **diagonal completion**: its Gram diagonal is not a principal
+hafnian coefficient supplied by the witness. No hollow-matrix rank claim
+or global consumer is assumed here.
+
+### Sharper occurrence question along an active pair
+
+If ab is active in colour d, exclusivity gives Z^c_ab=0 for c!=d. Inside the
+nonzero cofactor h_d(V-ab), let E_d^(ab) consist of ij with both Z^d_ij and
+h_d(V-abij) nonzero. Laplace gives this graph minimum degree at least one.
+For i,j that are also common colour-c neighbours of a,b, the two-part
+equation forces h_c(abij)=0. The third term is absent, so these are unguarded
+ratio-negation edges. An odd cycle in the **induced common-neighbour graph**
+would be impossible. An even-length path within that graph forces its
+endpoint colour-c four-hafnian nonzero and hence the complementary hafnians
+of both other colours zero. Paths leaving the common-neighbour set do not
+support this ratio argument.
+
+Proving that every hypothetical witness forces an odd cycle, or an
+inconsistent sequence of these cofactor implications, remains the actual
+occurrence obligation. Neither Fable nor the local checks prove it.
+
+## Source controls and a closed diagnostic family
+
+[The source-reduction controls](hafnian-source-reduction-countercontrols-2026-09-13.md)
+give actual integer matrices disproving three tempting unqualified premises:
+active edges need not have a perfect matching even in a bipartite source;
+nonzero principal-hafnian supports need not satisfy symmetric exchange;
+and naive rank-two pair contraction introduces extra matchings. The first
+two countercontrols extend to all orders by isolated unit-weight pairs.
+They are not three-colour witnesses.
+
+The dense-private fixed-support n=12 and n=14 probes both collapsed by unit
+propagation. [A four-vertex cofactor argument](four-vertex-cofactor-coverage-2026-09-13.md)
+now explains this at every order, for every triple of disjoint private
+matchings satisfying the stated dense-support hypotheses. Its local graph
+counting is exhaustively checked. The written proof is independent of the
+finite solver results but awaits separate review; it is not a general
+all-diagonal theorem or a frontier promotion. Further orders of that
+diagnostic family are unnecessary.
+
+The closure extension, source controls, and coverage proof were developed
+after Fable's reviewed checkpoint. Do not attribute independent review of
+those later changes to that report.
+
+The coverage argument also supplies 27*C(n,4) short clauses already implied
+by full RZP and the global partition axioms. They forbid a live (n-4)-cofactor
+when both other colour supports match its complementary four-set. The
+`--four-cofactor-coverage` option is a redundant proof shortcut, unlike the
+strict signed-ratio strengthening. The matched n=12 shared-branch probe with
+ratio closure and these shortcuts also timed out, after 330.028 seconds.
+All three bounded shared-branch variants therefore remain UNKNOWN. No
+further run on that branch is justified merely by extending its deadline.
+
+At this checkpoint the focused suite has 30 passing tests, and the migration
+and existing integer-lattice suites have 205 passing tests. The complete
+candidate-index hygiene and link-rewrite gates pass. The new source and
+proof material remains local; the full conjecture is unresolved.

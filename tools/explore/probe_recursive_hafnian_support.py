@@ -37,8 +37,12 @@ from krenn_gu.recursive_hafnian_support import (  # noqa: E402
     build_recursive_hafnian_support_cnf,
 )
 from krenn_gu.recursive_hafnian_signed_cuts import (  # noqa: E402
+    add_common_neighbor_closure_cuts,
     add_common_neighbor_parity_cuts,
     add_two_by_three_hafnian_cuts,
+)
+from krenn_gu.recursive_hafnian_cofactor_cuts import (  # noqa: E402
+    add_four_cofactor_coverage_cuts,
 )
 
 SOLVERS = {
@@ -107,6 +111,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--no-singleton-cancellation", action="store_true")
     parser.add_argument("--signed-two-by-three", action="store_true")
     parser.add_argument("--signed-common-neighbor", action="store_true")
+    parser.add_argument("--signed-ratio-closure", action="store_true")
+    parser.add_argument("--four-cofactor-coverage", action="store_true")
     parser.add_argument(
         "--cycle-type",
         help="partition of n/2, e.g. 3+2; fixes one matching in colours 0 and 1",
@@ -145,7 +151,16 @@ def main() -> None:
         add_two_by_three_hafnian_cuts(instance) if args.signed_two_by_three else 0
     )
     ratio_cut_count = (
-        add_common_neighbor_parity_cuts(instance) if args.signed_common_neighbor else 0
+        add_common_neighbor_parity_cuts(instance)
+        if args.signed_common_neighbor or args.signed_ratio_closure else 0
+    )
+    closure_cut_count = (
+        add_common_neighbor_closure_cuts(instance) if args.signed_ratio_closure else 0
+    )
+    if args.four_cofactor_coverage and (args.two_part_only or args.no_singleton_cancellation):
+        raise ValueError("four-cofactor coverage requires full RZP and all GHZ partitions")
+    cofactor_cut_count = (
+        add_four_cofactor_coverage_cuts(instance) if args.four_cofactor_coverage else 0
     )
     built_seconds = time.perf_counter() - started
 
@@ -177,6 +192,8 @@ def main() -> None:
             "no_singleton_cancellation": args.no_singleton_cancellation,
             "signed_two_by_three": args.signed_two_by_three,
             "signed_common_neighbor": args.signed_common_neighbor,
+            "signed_ratio_closure": args.signed_ratio_closure,
+            "four_cofactor_coverage": args.four_cofactor_coverage,
             "matching_cycle_type": list(cycle_type) if cycle_type else None,
             "third_matching_cycle_type": (
                 list(third_cycle_type) if third_cycle_type else None
@@ -200,6 +217,8 @@ def main() -> None:
             "matching_symmetry": instance.symmetry_clauses,
             "signed_two_by_three": signed_cut_count,
             "signed_common_neighbor": ratio_cut_count,
+            "signed_ratio_closure": closure_cut_count,
+            "four_cofactor_coverage": cofactor_cut_count,
         },
         "build_seconds": round(built_seconds, 6),
         "solve_seconds": round(solve_seconds, 6),

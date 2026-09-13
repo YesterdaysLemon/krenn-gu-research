@@ -84,3 +84,51 @@ def add_common_neighbor_parity_cuts(instance: RecursiveHafnianSupportInstance) -
                 instance.cnf.append([*guards, -parity[i], -parity[j]])
                 count += 2
     return count
+
+
+def add_common_neighbor_closure_cuts(instance: RecursiveHafnianSupportInstance) -> int:
+    """Add component closure, after ``add_common_neighbor_parity_cuts``.
+
+    Zero four-hafnians with dead third terms generate ratio-negation edges.
+    Within each resulting component, opposite parity means the cross sum is
+    zero, hence the hafnian support equals the third-term support, s=b.
+    This propagates both zero and nonzero hafnians, including live third terms.
+
+    Equivalence variables may merge components, but an actual matrix always
+    has a satisfying assignment using exactly the generated components.
+    The encoding is complete for one fixed pair's four-fibre zero pattern;
+    consistency of different pairs or larger hafnians is a separate question.
+    """
+
+    vertices = tuple(range(instance.n))
+    count = 0
+    for colour in range(3):
+        for a, b in combinations(vertices, 2):
+            outside = tuple(vertex for vertex in vertices if vertex not in (a, b))
+            parity = {i: instance.pool.id(("ratio-parity", colour, (a, b), i))
+                      for i in outside}
+            same = {(i, j): instance.pool.id(("ratio-component", colour, (a, b), i, j))
+                    for i, j in combinations(outside, 2)}
+            for i, j, k in combinations(outside, 3):
+                ij, ik, jk = same[(i, j)], same[(i, k)], same[(j, k)]
+                instance.cnf.extend(([-ij, -ik, jk], [-ij, -jk, ik], [-ik, -jk, ij]))
+                count += 3
+            for i, j in combinations(outside, 2):
+                subset = frozenset((a, b, i, j))
+                absent_cross = [
+                    -instance.edge_variables[(colour, tuple(sorted((left, right))))]
+                    for left in (a, b) for right in (i, j)
+                ]
+                result = instance.hafnian_variables[(colour, subset)]
+                third = instance.product_variables[(colour, subset, (a, b))]
+                connected = same[(i, j)]
+                # Every forced ratio-negation edge lies in one component.
+                instance.cnf.append([*absent_cross, result, third, connected])
+                # If connected and opposite, s <-> b.  Equality of the bits
+                # escapes these clauses; dead-third nonzero cross sums are
+                # already governed by the parity clauses.
+                for transport in ((-result, third), (result, -third)):
+                    for equal_bits in ((parity[i], -parity[j]), (-parity[i], parity[j])):
+                        instance.cnf.append([*absent_cross, -connected, *transport, *equal_bits])
+                count += 5
+    return count

@@ -27,6 +27,9 @@ from krenn_gu.recursive_hafnian_support import (  # noqa: E402
     build_recursive_hafnian_support_cnf,
     canonical_matching_pair,
 )
+from krenn_gu.recursive_hafnian_cofactor_cuts import (  # noqa: E402
+    add_four_cofactor_coverage_cuts,
+)
 from tools.explore.replay_recursive_hafnian_drat import (  # noqa: E402
     expected_cover,
     regenerate_cnf,
@@ -117,6 +120,24 @@ def stabilizer_map(first, second):
 
 
 class RecursiveHafnianSupportTests(unittest.TestCase):
+    def test_four_cofactor_cut_has_correct_colours_and_complement(self) -> None:
+        instance = build_recursive_hafnian_support_cnf(6)
+        before = len(instance.cnf.clauses)
+        self.assertEqual(add_four_cofactor_coverage_cuts(instance), 405)
+        self.assertEqual(instance.cnf.clauses[before], [
+            -instance.edge_variables[(0, (4, 5))],
+            -instance.edge_variables[(1, (0, 1))],
+            -instance.edge_variables[(1, (2, 3))],
+            -instance.edge_variables[(2, (0, 1))],
+            -instance.edge_variables[(2, (2, 3))],
+        ])
+
+    def test_four_cofactor_cut_does_not_exclude_order_four(self) -> None:
+        instance = build_recursive_hafnian_support_cnf(4)
+        before = len(instance.cnf.clauses)
+        self.assertEqual(add_four_cofactor_coverage_cuts(instance), 0)
+        self.assertEqual(len(instance.cnf.clauses), before)
+
     def test_canonical_cycle_type_pair(self) -> None:
         first, second = canonical_matching_pair(10, (3, 2))
         self.assertEqual(len(first), 5)
