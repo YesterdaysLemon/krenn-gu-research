@@ -128,3 +128,84 @@ small port size alone is not the next research objective. The external
 [formal-source methods inspection](../literature/SOURCE_COUPLED_FORMAL_PROOF_METHODS_2026-09-14.md)
 found no ready-made arbitrary-witness reduction; no external finite
 statement was imported into the present proof.
+
+## Continuation: test the missing resource-supply implication
+
+The previous goal turn is **progress**, with accepted mathematics in
+930f13ce and the matching map snapshot d274c45c. The worktree was clean
+when this continuation began. The full resolution goal is unchanged.
+
+The immediate candidate implication RCS is: for every common-star array
+over C in the exact support class above, the singleton and double-
+component target equations together with all physical sources through
+four minorities force its state graph to be a disjoint union of complete
+tripartite resources. A full CSQ4 array supplies this antecedent; the
+named downstream consumer is the complete-resource cycle exclusion (14)
+in the owning PSCS theorem. Proving RCS would therefore close CSQ4.
+
+RCS is not assumed true. An exact physical array satisfying its entire
+antecedent with a noncomplete state-resource component would refute this
+proposed implication, not CSQ4 or Krenn--Gu. Its remaining full component
+failure must then be exhibited, unless it triggers full-counterexample
+validation. Weighted equations, including the same-color double rows,
+must be preserved; a support-only example does not refute RCS.
+
+In parallel, test whether the final resource-cycle argument admits an
+arbitrary-witness input through the existing column-killer or maximal-root
+source theorems. The obligation is an explicit same-source bridge with
+its hypotheses proved from the full witness. Resemblance to a resource
+graph or a protected scaffold is insufficient. This guards against
+mistaking continued progress inside a construction family for a global
+reduction. No new finite port-size census is authorized as an objective.
+
+## RCS outcome and the weaker sufficient parent
+
+RCS is refuted by an exact Q(sqrt(3)) common-star array with 720 protected
+K4 components. The [owning countercontrol](../../claims/arbitrary-order/PROTECTED_SCAFFOLD_COMMON_STAR_RESOURCE_ALIGNMENT_NO_GO.md)
+gives all factors, a finite SL(2,F5) incidence realization, the exhaustive
+four-minority matching classification, exact local-to-global S2 semantics,
+and an independently reconstructed physical replay. It satisfies S1,
+both S2 families and all U4 sources. Its 120 state components each have
+18 states and 84 edges, so they are connected but not complete tripartite.
+The mixed fiber word has amplitude 2^(-360), ruling it out as a CSQ4 or
+Krenn--Gu counterexample. This eliminates the proposed implication, with
+its full weighted antecedent checked.
+
+The accepted positive synthesis is a weaker consumer, PSCS (15). For a
+single unordered pair {a,b}, suppose H_ab is a union of complete bicliques.
+S1 balances each block, and the no-unique-port lemma from S1/S2 makes
+its two part sizes at least two. A directed cycle of these **binary**
+resources gives a mixed a/b component word with a nonzero product of
+exact star factors. The third-color resource partitions need not align.
+This also excludes any array whose ports for just one unordered color
+pair all have size at most two; other port sizes are unrestricted.
+
+The exact replacement supply proposition is now:
+
+```
+BS: For every finite common-star array over C in the support class above,
+    S1 + both S2 families + every full U4 equation imply that for some
+    unordered color pair {a,b}, every connected component of H_ab is
+    complete bipartite.
+```
+
+BS is **open**. Its upstream supply is still a full CSQ4 array; its named
+downstream consumer is PSCS (15), so a proof would close CSQ4. The RCS
+countercontrol has the BS conclusion for all three pairs, despite the
+failure of tripartite alignment. Thus it tests and survives the revised
+route rather than refuting it. The parent attempt now attacks BS itself
+or an exact weighted countercontrol, using all shared matrix equations;
+another finite port-count census is not its objective.
+
+This is the proof-topology delta recorded at PSCS and PSRA in the live
+frontier. It refutes an unnecessarily strong supply mechanism and proves
+that a strictly weaker structural conclusion suffices. General CSQ4,
+arbitrary protected arrays and arbitrary-witness coverage remain open.
+
+The parallel arbitrary-witness investigation retained the actual two-open
+Wick cofactor identity already owned by the matrix-unit source theorem.
+It produced a scratch active-matching selection control and a conditional
+matching-union dichotomy. Neither has received the independent promotion
+audit in this checkpoint, and neither is imported as a new theorem or
+arbitrary-witness reduction here. They remain research leads outside the
+accepted PSCS/PSRA claims.

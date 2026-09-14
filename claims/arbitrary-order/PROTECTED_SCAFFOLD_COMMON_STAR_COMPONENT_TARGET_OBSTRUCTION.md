@@ -11,6 +11,9 @@ controls. No Lean formalization is supplied.
 The [two-port review](../../docs/audits/PROTECTED_SCAFFOLD_COMMON_STAR_TWO_PORT_REVIEW_2026-09-14.md)
 independently audits the shared-neighbor identity, the source-derived
 resource decomposition and the additional global-word contradiction.
+The [resource-alignment review](../../docs/audits/COMMON_STAR_RESOURCE_ALIGNMENT_REVIEW_2026-09-14.md)
+audits the later binary-resource extension (15). Earlier reviews pin the
+versions they actually inspected, rather than certifying subsequent edits.
 
 This result rejects a declared construction route for the
 [Q4 parent](../../docs/strategy/scaffold-q4-parent-attempt-2026-09-14.md):
@@ -23,6 +26,10 @@ does not prove Q4.
 More generally, the full component target excludes every common-star
 array whose state graph splits into complete tripartite resources; the
 two-port argument supplies this decomposition in a proved subfamily.
+In fact a complete bipartite decomposition for just one color pair is
+enough, without any alignment with the other color pairs. Consequently
+the full target is impossible if all ports for just one unordered color
+pair have size at most two, even with unbounded ports for the other pairs.
 The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
 The upstream physical arrays are the
@@ -459,6 +466,54 @@ The missing upstream statement is a source-derived decomposition for
 general larger ports; the theorem above proves it only when every port
 has at most two edges. No general decomposition is assumed.
 
+## One binary decomposition is enough
+
+Assume S1 and both types of S2, and fix just one unordered color pair,
+say {0,1}. Suppose the bipartite graph H_01 is a disjoint union of complete
+bicliques. These binary connected components will be the resources in this
+argument; the full tripartite graph H need not split into complete pieces.
+S1 ensures every state of colors 0,1 has a neighbor. Summing its actual
+q weights by rows and columns balances each biclique as K_(m_r,m_r).
+The no-singleton-port lemma, which uses S2 with all three colors, gives
+m_r>=2.
+
+A component's states (u,0) and (u,1) belong to different binary resources,
+since completeness would otherwise require a forbidden edge between them.
+Direct the arc for u from its color-0 resource to its color-1 resource.
+This gives a loopless balanced directed multigraph with indegree and
+outdegree m_r at resource r. Choose a simple directed cycle and change
+exactly its component arcs from baseline color 0 to color 1.
+
+At every resource on the cycle one color-0 state X is removed and one
+color-1 state Y is added. The selected compatible graph is a star with
+factor
+
+```
+1 + sum_(Z of color 0, Z!=X) q_ZY = -q_XY != 0.      (15)
+```
+
+No color-2 state is selected anywhere, so all gadgets involving that color
+are absent from this full source, regardless of their number or weights.
+Each physical component selects one state in one binary resource. Hence
+the selected graphs are disjoint, and their physical source factors over
+the stars. Off-cycle resources contribute one. The product in (15) is
+nonzero, while the word is mixed because its cycle has at most R edges
+and k=sum_r m_r>=2R. The full component target is therefore contradicted.
+
+This proves the **binary-resource consumer** for arbitrary complex factors.
+It strictly weakens the required structural hypothesis of (14). In
+particular, if the ports in just one unordered color pair all have size
+at most two, S1/S2 make them exactly two; the same-color S2 prohibition
+on one common neighbor makes H_01 a union of K_(2,2)'s. Equation (15)
+then excludes the full target, with the other color-pair degrees unbounded.
+
+The [exact alignment countercontrol](PROTECTED_SCAFFOLD_COMMON_STAR_RESOURCE_ALIGNMENT_NO_GO.md)
+satisfies S1, S2 and the entire physical U4 system. All its binary graphs
+are biclique unions, but their partitions do not align across three colors.
+Thus full tripartite alignment does not follow from those inputs; it is
+also unnecessary for this consumer. Whether the inputs force a biclique
+union for at least one color pair remains open.
+
 ## Exact control for the use of the additional global word
 
 The additional global row cannot be omitted. The portable
@@ -485,13 +540,16 @@ source 1/4. Thus this is neither a Q4 model nor a full GHZ witness.
 ## Remaining Q4 boundary
 
 Any common-star filling satisfying all component targets must have every
-port of size at least two and at least one port of size at least three.
+port of size at least two. In each of the three unordered color pairs,
+at least one port must have size at least three, and at least one connected
+binary support component must be noncomplete.
 Its state-graph edges must have coherent third-color triangles. These
 necessary conditions are not sufficient. The shared-neighbor identity
 (10) retains the interference terms which will be needed beyond the
-two-port resource decomposition. The complete-resource consumer (14)
-closes any larger-port branch for which that decomposition can actually
-be proved; it does not supply the decomposition itself.
+two-port resource decomposition. The weaker binary-resource consumer (15)
+closes any larger-port branch with a proved complete decomposition in at
+least one color pair. Its supply is open. Full tripartite alignment from
+S1, S2 and U4 is refuted by the exact countercontrol linked above.
 
 The exact parent attempt and its next obstruction are recorded in
 [the common-star Q4 parent](../../docs/strategy/common-star-q4-parent-attempt-2026-09-14.md).
