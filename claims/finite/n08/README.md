@@ -1,5 +1,11 @@
 # Eight-vertex packages
 
+The [complete protected-scaffold exclusion](EIGHT_VERTEX_PROTECTED_SCAFFOLD_EXCLUSION.md)
+now excludes every complex filling of the two unit K4 components with all 96
+hollow crossing entries free. A portable RUP certificate and independent
+source reconstruction prove this finite statement. Three exact Laurent
+families show why the tested proper subsystems do not suffice.
+
 The [two-edge surplus-shore theorem](EIGHT_VERTEX_TWO_EDGE_SURPLUS_SHORE_EXCLUSION.md)
 now excludes the original 134-entry projection using fifteen zeros and two
 nonzeros. Its four-source degree-six identity goes beyond the complete

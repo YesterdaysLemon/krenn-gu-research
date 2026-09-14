@@ -1,5 +1,15 @@
 # Arbitrary-order claim artifacts
 
+The [fixed minority-depth no-go theorem](PROTECTED_SCAFFOLD_FIXED_MINORITY_DEPTH_NO_GO.md)
+constructs exact rational nonwitnesses passing every full source equation
+through any prescribed fixed minority depth at a sufficiently large order.
+It rules out that uniform truncation route; the full conjecture stays open.
+
+The [protected-scaffold minority and resource theorem](PROTECTED_SCAFFOLD_MINORITY_CYCLE_AND_RESOURCE_BOUNDARY.md)
+characterizes the complete independent-minority subsystem and retains actual
+exterior matching-edge resources in general slices. An exact twelve-vertex
+control blocks literal two-component localization from that subsystem.
+
 The [two-slice shared-hafnian transfer obstruction](TWO_SLICE_SHARED_HAFNIAN_TRANSFER_OBSTRUCTION.md)
 gives a division-free conditional identity for every even n>=4. Two full colour
 slices must share the same induced hafnian; exploiting that coupling excludes

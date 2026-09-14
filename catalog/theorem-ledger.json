@@ -7466,6 +7466,84 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Complete eight-vertex protected-scaffold source exclusion (N8PS)",
+      "document": "claims/finite/n08/EIGHT_VERTEX_PROTECTED_SCAFFOLD_EXCLUSION.md",
+      "document_sha256_16": "bcb2c12151fd2000",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "C; exactly two protected unit K4 components; all 96 hollow crossing entries arbitrary, including zeros and exceptional fillings.",
+        "Every full physical source equation is expanded. Exact nonzero-monomial semantics imply one necessary CNF with33792variables and196806clauses; no SAT-to-weights converse is asserted.",
+        "Tracked1521originalclauses and108RUPadditions deriveempty. Matching-first primary and independent word-first reconstruction agree on coefficient-bearing equations and canonical CNF; independent propagation replays the proof with mutations.",
+        "Three exact six-parameter Laurent controls refute the named proper subsystems and explicitly fail full target words. Native solver discovery failures are recorded separately from accepted portable proof replay.",
+        "No reduction of arbitrary n8 witnesses to this family and no larger-order exclusion; global Krenn-Gu remains UNRESOLVED."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/finite/n08/verify_eight_vertex_scaffold_full_source_exclusion.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/finite/n08/audit_eight_vertex_scaffold_full_source_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": null,
+      "expected_runtime": "seconds for finite companion and portable certificate replays; universal statements use written proofs",
+      "external_binaries": [],
+      "note": "Finite exclusion of the entire declared parameter family, not merely a sampled support or weight grid. No Lean formalization.",
+      "claim_package": "claims/finite/n08",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Protected-scaffold minority cycles and exact exterior-resource boundary (PSMR)",
+      "document": "claims/arbitrary-order/PROTECTED_SCAFFOLD_MINORITY_CYCLE_AND_RESOURCE_BOUNDARY.md",
+      "document_sha256_16": "0f3efa43183f849f",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "C; n=4k,k>=1 protected K4 scaffold, internal Mc blocks exactlyEcc and every intercomponent block hollow.",
+        "For each fixed majority colour, all nonempty independent-minority equations vanish iff the physical directed graph contains no cycle whose vertices meet each majority matching edge at most once.",
+        "General component-union boundaries have the exact injection-labelled resource hafnian expansion. Exterior matching edges may each be consumed once; induced cofactors are actual source polynomials.",
+        "An exact n12 control satisfies46875indexed localized evaluations,46851distinctwords, while an exterior component changes a mixed amplitude from1to0; another full word explicitly fails.",
+        "Written matching bijections and shortest-cycle proof are independently reviewed. Finite integer checks are companion falsification tests, not the all-order proof; no larger-order scaffold exclusion."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_protected_scaffold_resource_control.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": "docs/audits/PROTECTED_SCAFFOLD_SOURCE_REVIEW_2026-09-14.md",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/PROTECTED_SCAFFOLD_SOURCE_REVIEW_2026-09-14.md",
+      "expected_runtime": "seconds for finite companion and portable certificate replays; universal statements use written proofs",
+      "external_binaries": [],
+      "note": "The homogeneous subsystem and literal-localization route are insufficient. Global Krenn-Gu remains UNRESOLVED; no Lean formalization.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "No fixed minority depth excludes the protected scaffold (PSFD)",
+      "document": "claims/arbitrary-order/PROTECTED_SCAFFOLD_FIXED_MINORITY_DEPTH_NO_GO.md",
+      "document_sha256_16": "77491d6251f66f8f",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "For every fixed integer r>=0 there exists some finite n=4k,k>=2 protected scaffold over C with entries0,+1,-1 satisfying every full source equation within rminorities of a constant word, but an explicit mixed full word has amplitude1.",
+        "The source and its order depend on r. This is not one source satisfying all depths, not a depth growing with order, and not a full GHZ counterexample.",
+        "Pair gadgets on labelled6regularbipartite component graphs of girth>r give exact forest-parity and component-target cancellation. A finite permutation group on truncated reduced words constructs arbitrary girth and preserves the explicit full-target failure.",
+        "The n248 base has62components,186labellededges,girth6 and744nonzero physical entries; it works through depth5 by the written proof. The finite verifier checks graph, allocations,pures,372one-minority-component words,fullfailure and small word balls; it does not enumerate all depth-five words.",
+        "Independent adversarial review checks the arbitrary-r proof and separates finite controls. The sharper Q4 parent retaining all global component-constant targets plus depth-four words remains open, as does arbitrary-source coverage."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_protected_scaffold_fixed_depth_control.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": "docs/audits/PROTECTED_SCAFFOLD_FIXED_DEPTH_REVIEW_2026-09-14.md",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/PROTECTED_SCAFFOLD_FIXED_DEPTH_REVIEW_2026-09-14.md",
+      "expected_runtime": "seconds for finite companion and portable certificate replays; universal statements use written proofs",
+      "external_binaries": [],
+      "note": "Constructive uniform mechanism no-go, with no external existence theorem or numerical premise. It eliminates fixed minority-depth scaffold exclusion, not the global Krenn-Gu conjecture; no Lean formalization.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
