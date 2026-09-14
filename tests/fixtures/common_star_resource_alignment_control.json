@@ -1,0 +1,31 @@
+{
+  "schema": "common-star-resource-alignment-control-v1",
+  "field": "Q(sqrt(3))",
+  "t": {"rational": "-1/2", "radical": "1/2"},
+  "r": {"rational": "2", "radical": "1"},
+  "base_a": [["1", "t", "1"], ["1", "1", "t"], ["t", "1", "1"]],
+  "pair_base_matrices": {"01": "A_transpose", "12": "A", "02": "identity"},
+  "index_copies": 3,
+  "component_clones": 2,
+  "group": "SL(2,F5)",
+  "group_prime": 5,
+  "translations": [
+    [[1, 0, 0, 1], [1, 1, 0, 1], [3, 2, 4, 3]],
+    [[1, 0, 0, 1], [2, 4, 4, 1], [4, 2, 1, 2]]
+  ],
+  "failure_colors_by_clone": [0, 2],
+  "expected": {
+    "resources": 120,
+    "components": 720,
+    "physical_vertices": 2880,
+    "gadgets": 10080,
+    "physical_component_triangles": 8640,
+    "state_components": 120,
+    "state_component_vertices": 18,
+    "state_component_edges": 84,
+    "complete_tripartite_edges_per_state_component": 108,
+    "full_failure_four_cycles": 360,
+    "full_failure_isolated_edges": 720,
+    "full_failure_denominator_power_of_two": 360
+  }
+}

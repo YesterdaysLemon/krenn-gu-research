@@ -2,6 +2,55 @@
   "schema_version": 1,
   "sources": [
     {
+      "citekey": "cambie-kang-2022-bipartite-correspondence-transversals",
+      "title": "Independent transversals in bipartite correspondence-covers",
+      "authors": ["Stijn Cambie", "Ross J. Kang"],
+      "year": 2022,
+      "identifiers": {"doi": "10.4153/S0008439521001004"},
+      "authoritative_url": "https://doi.org/10.4153/S0008439521001004",
+      "identity_verification": {
+        "source_url": "https://www.cambridge.org/core/journals/canadian-mathematical-bulletin/article/independent-transversals-in-bipartite-correspondencecovers/D3C2B75086C881FFA69E994A34BD8DC6",
+        "date": "2026-09-14"
+      },
+      "search_trail": ["2026-09-14: independent transversals maximum degree two parts size three; inspected publisher HTML Theorem 1.2 and Corollary 1.3."],
+      "relevance": "Scoped check of whether known correspondence-cover bounds settle the protected-scaffold Q4 label-graph route.",
+      "limitations": [
+        "Only the located statements and surrounding definitions were inspected, not the entire paper.",
+        "Theorem 1.2 conditions fail for part size 3, option degree 2 and component degree 6; Corollary 1.3 is asymptotic. Neither is imported into a proof.",
+        "Published online in 2021; journal volume 65 issue 4 is dated December 2022."
+      ],
+      "repository_usages": [{
+        "path": "docs/strategy/scaffold-q4-parent-attempt-2026-09-14.md",
+        "role": "background",
+        "inspection_level": "relevant_passage_inspected",
+        "source_locator": "Theorem 1.2 and Corollary 1.3, Introduction"
+      }]
+    },
+    {
+      "citekey": "haxell-wdowinski-2024-no-independent-transversals",
+      "title": "Constructing Graphs with No Independent Transversals",
+      "authors": ["Penny Haxell", "Ronen Wdowinski"],
+      "year": 2024,
+      "identifiers": {"doi": "10.37236/12429"},
+      "authoritative_url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p39",
+      "identity_verification": {
+        "source_url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p39",
+        "date": "2026-09-14"
+      },
+      "search_trail": ["2026-09-14: independent transversals maximum degree two parts size three; inspected publisher metadata, abstract, and remote PDF Introduction through Theorem 4."],
+      "relevance": "Identifies why maximum degree two and triple parts alone do not establish the special Q4 avoiding-colouring lemma.",
+      "limitations": [
+        "Theorem 4 and its introductory context were inspected, not its proof or the whole paper.",
+        "No correspondence to the special side-respecting port-labelled graph with three known constant transversals is asserted; no theorem is imported."
+      ],
+      "repository_usages": [{
+        "path": "docs/strategy/scaffold-q4-parent-attempt-2026-09-14.md",
+        "role": "background",
+        "inspection_level": "relevant_passage_inspected",
+        "source_locator": "Theorem 4 and preceding paragraph, page 3"
+      }]
+    },
+    {
       "citekey": "krenn-gu-zeilinger-2017-quantum-experiments",
       "title": "Quantum Experiments and Graphs: Multiparty States as coherent superpositions of Perfect Matchings",
       "authors": ["Mario Krenn", "Xuemei Gu", "Anton Zeilinger"],
@@ -529,6 +578,120 @@
           "role": "background",
           "inspection_level": "relevant_passage_inspected",
           "source_locator": "Theorem 1.4"
+        }
+      ]
+    },
+    {
+      "citekey": "gallagher-2026-krenn-gu-six-three-certificate",
+      "title": "A Lean proof of the Krenn-Gu (6,3) case",
+      "authors": [
+        "Alexis Gallagher"
+      ],
+      "year": 2026,
+      "identifiers": {},
+      "authoritative_url": "https://github.com/algal/krenn-gu-6x3-certificate/tree/c04696e515e0c02be140353fb52ea60c62e827b1",
+      "identity_verification": {
+        "source_url": "https://github.com/algal/krenn-gu-6x3-certificate/tree/c04696e515e0c02be140353fb52ea60c62e827b1",
+        "date": "2026-09-14"
+      },
+      "search_trail": [
+        "2026-09-14 bounded primary-source search for Krenn-Gu formal proofs and source-coupled methods"
+      ],
+      "relevance": "Comparison with the current same-source research program; no new imported theorem.",
+      "limitations": [
+        "Source inspection only; no local Lean build, LRAT replay or current axiom-closure check.",
+        "The finite source binding uses exactly six vertices; no arbitrary-order bridge is imported.",
+        "The release receipt names an older commit; the current tip was not revalidated here."
+      ],
+      "repository_usages": [
+        {
+          "path": "docs/literature/SOURCE_COUPLED_FORMAL_PROOF_METHODS_2026-09-14.md",
+          "role": "background",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "Pinned commit c04696e515e0c02be140353fb52ea60c62e827b1; README Statement/Proof architecture; Unrestricted.lean lines 201-222; OfficialBridge.lean; LaurentCertificate.lean lines 174-205; LocalPattern.lean; Contraction.lean; UniversalRules.lean full_column_anchored; VERIFY.md and VERIFICATION-RESULTS.md."
+        }
+      ]
+    },
+    {
+      "citekey": "tsoukalas-et-al-2026-alphaproof-nexus",
+      "title": "Advancing Mathematics Research with AI-Driven Formal Proof Search",
+      "authors": [
+        "George Tsoukalas",
+        "Anton Kovsharov",
+        "Sergey Shirobokov",
+        "Anja Surina",
+        "Moritz Firsching",
+        "Gergely Berczi",
+        "Francisco J. R. Ruiz",
+        "Arun Suggala",
+        "Adam Zsolt Wagner",
+        "Eric Wieser",
+        "Lei Yu",
+        "Aja Huang",
+        "Miklos Z. Horvath",
+        "Andrew Ferraiuolo",
+        "Henryk Michalewski",
+        "Edward Lockhart",
+        "Codrut Grosu",
+        "Thomas Hubert",
+        "Matej Balog",
+        "Pushmeet Kohli",
+        "Swarat Chaudhuri"
+      ],
+      "year": 2026,
+      "identifiers": {
+        "arxiv": "2605.22763"
+      },
+      "authoritative_url": "https://arxiv.org/abs/2605.22763",
+      "identity_verification": {
+        "source_url": "https://arxiv.org/abs/2605.22763",
+        "date": "2026-09-14"
+      },
+      "search_trail": [
+        "2026-09-14 bounded primary-source search for Krenn-Gu formal proofs and source-coupled methods"
+      ],
+      "relevance": "Comparison with the current same-source research program; no new imported theorem.",
+      "limitations": [
+        "Only the cited paragraph, reference and bibliographic metadata were inspected for this use.",
+        "Reference 38 is in preparation; its theorem statement and proof were not available in the inspected material.",
+        "Finite N=d reports are not a claim resolving the full Krenn-Gu conjecture."
+      ],
+      "repository_usages": [
+        {
+          "path": "docs/literature/SOURCE_COUPLED_FORMAL_PROOF_METHODS_2026-09-14.md",
+          "role": "background",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "Version 2 (8 June 2026), section 4 Quantum Optics paragraph and reference 38; https://arxiv.org/html/2605.22763v2."
+        }
+      ]
+    },
+    {
+      "citekey": "google-deepmind-2026-alphaproof-nexus-results",
+      "title": "AlphaProof Nexus Results",
+      "authors": [
+        "Google DeepMind"
+      ],
+      "year": 2026,
+      "identifiers": {},
+      "authoritative_url": "https://github.com/google-deepmind/alphaproof-nexus-results/tree/0647711a71183c1ea492ad60860776617ce1ea88",
+      "identity_verification": {
+        "source_url": "https://github.com/google-deepmind/alphaproof-nexus-results/tree/0647711a71183c1ea492ad60860776617ce1ea88",
+        "date": "2026-09-14"
+      },
+      "search_trail": [
+        "2026-09-14 bounded primary-source search for Krenn-Gu formal proofs and source-coupled methods"
+      ],
+      "relevance": "Comparison with the current same-source research program; no new imported theorem.",
+      "limitations": [
+        "The inspected Krenn-Gu no-go declarations contain sorry bodies and are not imported as proved results.",
+        "No local Lean build or axiom-closure check was run; other results and files are outside this scoped inspection."
+      ],
+      "repository_usages": [
+        {
+          "path": "docs/literature/SOURCE_COUPLED_FORMAL_PROOF_METHODS_2026-09-14.md",
+          "role": "background",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "Commit 0647711a71183c1ea492ad60860776617ce1ea88; README; APNOutputs/AICollaborator/QuantumOptics/MonochromaticQuantumGraph.lean lines 327-565 and no-go declaration bodies."
         }
       ]
     }

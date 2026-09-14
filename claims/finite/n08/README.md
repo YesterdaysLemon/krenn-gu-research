@@ -1,5 +1,33 @@
 # Eight-vertex packages
 
+The [complete protected-scaffold exclusion](EIGHT_VERTEX_PROTECTED_SCAFFOLD_EXCLUSION.md)
+now excludes every complex filling of the two unit K4 components with all 96
+hollow crossing entries free. A portable RUP certificate and independent
+source reconstruction prove this finite statement. Three exact Laurent
+families show why the tested proper subsystems do not suffice.
+
+The [two-edge surplus-shore theorem](EIGHT_VERTEX_TWO_EDGE_SURPLUS_SHORE_EXCLUSION.md)
+now excludes the original 134-entry projection using fifteen zeros and two
+nonzeros. Its four-source degree-six identity goes beyond the complete
+[degree-five module limitation](EIGHT_VERTEX_DEGREE_FIVE_SOURCE_MODULE_LIMITATION.md).
+A new Boolean support survives its full pattern orbits, and is excluded by the
+[shared-hafnian two-slice transfer](../../arbitrary-order/TWO_SLICE_SHARED_HAFNIAN_TRANSFER_OBSTRUCTION.md)
+with eighteen zeros and two nonzeros. Both are conditional physical families;
+unrestricted eight-vertex and all-order coverage remain open.
+
+The [134-entry physical boundary-quotient probe](EIGHT_VERTEX_PHYSICAL_BOUNDARY_QUOTIENT_134_LIMITATION.md)
+reconstructs an exact source consequence, exhausts its allowed relabellings on
+the preserved support, and transports every resulting live binomial through
+all complete mixed full-word fibres. It finds no support exclusion: the sole
+live relation identifies no matching monomials. This is a precise limitation
+of that mechanism, not a weighted witness or an unrestricted `n=8` result.
+
+The [25-literal physical-hafnian identity](EIGHT_VERTEX_25_LITERAL_PHYSICAL_HAFNIAN_IDENTITY.md)
+is a proved division-free conditional obstruction over every field. It
+strengthens one reviewed 27-literal cut by making two physical entries
+arbitrary. It does not cover the eight-vertex parent necessary model, provide
+a weight realization, or change the global status.
+
 The [maximum-root-one exclusion](EIGHT_VERTEX_MATRIX_UNIT_EXCLUSION_THEOREM.md)
 rules out every complete nonzero ternary matrix-unit source at order eight, with
 arbitrary complex weights and endpoint colours. Its complete eighteen-case

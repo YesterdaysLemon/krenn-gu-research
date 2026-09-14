@@ -1,0 +1,23 @@
+{
+  "schema": "eight-vertex-two-edge-surplus-shore-v1",
+  "n": 8,
+  "field": "any field",
+  "source_base_commit": "d645b93105517634cac54930ab8ce23fc5f16563",
+  "shore": [3, 4, 5, 6, 7],
+  "covering_edges": [[3, 5], [6, 7]],
+  "base_colour": 0,
+  "moving_vertices": [5, 7],
+  "alternate_colours": [2, 1],
+  "zero_entry_ids": [163, 181, 190, 191, 199, 201, 208, 217, 218, 226, 232, 235, 236, 241, 242],
+  "nonzero_entry_ids": [174, 245],
+  "target_monomial": [174, 245],
+  "sources": [
+    {"word": "00000201", "multiplier": [172, 244], "coefficient": -1},
+    {"word": "00000200", "multiplier": [172, 245], "coefficient": 1},
+    {"word": "00000001", "multiplier": [174, 244], "coefficient": 1},
+    {"word": "00000000", "multiplier": [174, 245], "coefficient": -1}
+  ],
+  "equation_convention": "P_word=T_W(word)-1 for pure words, T_W(word) otherwise",
+  "uses_boundary_relation": false,
+  "requires_nonzero_proper_cofactor": false
+}

@@ -1,5 +1,22 @@
 # Arbitrary-order claim artifacts
 
+The [fixed minority-depth no-go theorem](PROTECTED_SCAFFOLD_FIXED_MINORITY_DEPTH_NO_GO.md)
+constructs exact rational nonwitnesses passing every full source equation
+through any prescribed fixed minority depth at a sufficiently large order.
+It rules out that uniform truncation route; the full conjecture stays open.
+
+The [protected-scaffold minority and resource theorem](PROTECTED_SCAFFOLD_MINORITY_CYCLE_AND_RESOURCE_BOUNDARY.md)
+characterizes the complete independent-minority subsystem and retains actual
+exterior matching-edge resources in general slices. An exact twelve-vertex
+control blocks literal two-component localization from that subsystem.
+
+The [two-slice shared-hafnian transfer obstruction](TWO_SLICE_SHARED_HAFNIAN_TRANSFER_OBSTRUCTION.md)
+gives a division-free conditional identity for every even n>=4. Two full colour
+slices must share the same induced hafnian; exploiting that coupling excludes
+the stated 4(n-4)+2-zero/two-nonzero pattern. Its eight-vertex instance excludes
+the latest two-edge-orbit Boolean survivor. Guard occurrence and parent coverage
+remain open; this is not an all-order nonexistence theorem.
+
 This directory owns the 352 arbitrary-order files migrated in Stage 27:
 122 claim documents and 230 primary, audit, or other claim-owned scripts.
 Stage 33 added twelve directly owned arbitrary-order artifacts and preserved
@@ -4114,6 +4131,17 @@ needed for the exclusion.  Each single ingredient is load-bearing at `n = 8`.
 The all-`n` statement is recorded as a conjecture.  No DRAT trace is
 available on the reference host; the gap is stated.  The global status is
 **UNRESOLVED**.
+
+The later
+[`ten-vertex recursive-hafnian exclusion`](../finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md)
+uses a strictly stronger necessary model at `n=10`: all principal-hafnian
+support variables are shared across their complete Laplace expansions, and a
+zero result may not have exactly one nonzero term. Thirteen matching-normalized
+CNFs form an exhaustive checked binary-DRAT cover, independently reconstructed
+byte-for-byte by a no-import audit. Hence no complex all-diagonal witness
+exists at `n=10`. This does **not** extend WB2's AP' unsatisfiability beyond
+`n=6,8` and supplies no all-order occurrence theorem; every bichromatic branch
+and the global conjecture remain open.
 
 ## AP-prime maximum-degree-four reduction and common-matching exclusion
 

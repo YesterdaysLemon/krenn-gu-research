@@ -12,6 +12,11 @@ global statement.
 maintained map of the live proof topology, open leaves, and refuted routes.
 Owning theorem documents remain authoritative for mathematical statements.
 
+The [2026-09-14 review handoff](docs/strategy/source-coupled-resolution-review-2026-09-14.md)
+summarizes the published source-coupled cancellation chunk and its exact
+resource-supply obstructions. The research run is stopped at the owner's
+request; its proposed full binary-source parent remains open.
+
 For the next coordinated research run, use the dated
 [`fibre-exact targets brief`](docs/strategy/fibre-exact-targets-2026-09-01.md),
 which builds on the earlier
@@ -44,6 +49,13 @@ T_W = sum_(c=0)^(d-1) e_c tensor ... tensor e_c.
 The live symbolic programme is concentrated on the ternary case and on exact
 reductions that any hypothetical witness must satisfy. Scope and field
 qualifications are recorded in the owning claims and in the current frontier.
+
+The finite all-diagonal programme now has a checked ten-vertex result:
+[`RZP10`](claims/finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md)
+excludes complex all-diagonal witnesses at `n=10` through an exhaustive
+thirteen-branch recursive zero-pattern certificate cover. It does not exclude
+the weaker AP' abstraction at `n=10`, any bichromatic branch, or the global
+conjecture.
 
 ## Claim-family navigation
 

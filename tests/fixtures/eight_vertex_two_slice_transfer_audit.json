@@ -1,0 +1,1444 @@
+{
+  "fixture": "tests/fixtures/eight_vertex_two_slice_transfer.json",
+  "fixture_sha256": "da708cc86aac94371132a2e34b2fea7553191d838dcd3613aec9bfefb3b0aa6a",
+  "global_krenn_gu_status": "UNRESOLVED",
+  "patterns": [
+    {
+      "all_other_entries_are_free_indeterminates": true,
+      "degree_six_contributions": 96,
+      "degree_six_monomial_pairs": 48,
+      "exact_residual": {
+        "coefficient_l1": 0,
+        "distinct_monomials": 0,
+        "first_coefficient": null,
+        "first_monomial": null
+      },
+      "mutations": {
+        "dropped_pure_target": {
+          "coefficient_l1": 1,
+          "distinct_monomials": 1,
+          "first_coefficient": -1,
+          "first_monomial": [
+            46,
+            241
+          ]
+        },
+        "each_deleted_zero_guard": {
+          "106": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              12,
+              45,
+              106,
+              171,
+              241,
+              252
+            ]
+          },
+          "115": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              52,
+              115,
+              126,
+              216,
+              243
+            ]
+          },
+          "117": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              52,
+              117,
+              126,
+              216,
+              241
+            ]
+          },
+          "144": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              144,
+              171,
+              244,
+              252
+            ]
+          },
+          "151": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              151,
+              171,
+              241,
+              252
+            ]
+          },
+          "160": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              52,
+              81,
+              160,
+              216,
+              243
+            ]
+          },
+          "162": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              52,
+              81,
+              162,
+              216,
+              241
+            ]
+          },
+          "180": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              135,
+              180,
+              244,
+              252
+            ]
+          },
+          "187": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              135,
+              187,
+              241,
+              252
+            ]
+          },
+          "196": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              52,
+              72,
+              196,
+              216,
+              243
+            ]
+          },
+          "198": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              52,
+              72,
+              198,
+              216,
+              241
+            ]
+          },
+          "207": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              126,
+              207,
+              244,
+              252
+            ]
+          },
+          "214": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              126,
+              214,
+              241,
+              252
+            ]
+          },
+          "223": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              52,
+              72,
+              189,
+              223,
+              243
+            ]
+          },
+          "225": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              52,
+              72,
+              189,
+              225,
+              241
+            ]
+          },
+          "232": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              61,
+              72,
+              171,
+              232,
+              252
+            ]
+          },
+          "234": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              46,
+              61,
+              72,
+              171,
+              234,
+              243
+            ]
+          },
+          "99": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              12,
+              45,
+              99,
+              171,
+              244,
+              252
+            ]
+          }
+        },
+        "omitted_first_source": {
+          "coefficient_l1": 6,
+          "distinct_monomials": 6,
+          "first_coefficient": -1,
+          "first_monomial": [
+            39,
+            45,
+            72,
+            171,
+            246,
+            250
+          ]
+        },
+        "removed_nonzero_premises": {
+          "241": {
+            "identity_residual": {
+              "coefficient_l1": 0,
+              "distinct_monomials": 0,
+              "first_coefficient": null,
+              "first_monomial": null
+            },
+            "target_product_is_zero": true
+          },
+          "46": {
+            "identity_residual": {
+              "coefficient_l1": 0,
+              "distinct_monomials": 0,
+              "first_coefficient": null,
+              "first_monomial": null
+            },
+            "target_product_is_zero": true
+          }
+        },
+        "wrong_first_source_sign": {
+          "coefficient_l1": 12,
+          "distinct_monomials": 6,
+          "first_coefficient": -2,
+          "first_monomial": [
+            39,
+            45,
+            72,
+            171,
+            246,
+            250
+          ]
+        }
+      },
+      "name": "two_slice_z0_t0",
+      "nonzero_entry_ids": [
+        46,
+        241
+      ],
+      "rho_reduction_used": false,
+      "source_pair_histogram": {
+        "0,2": 3,
+        "0,7": 3,
+        "1,3": 3,
+        "1,6": 3,
+        "2,5": 3,
+        "3,4": 3,
+        "4,5": 15,
+        "6,7": 15
+      },
+      "source_term_counts": {
+        "02222200": 6,
+        "02222202": 6,
+        "02222220": 18,
+        "02222222": 18,
+        "22222200": 6,
+        "22222202": 6,
+        "22222220": 18,
+        "22222222": 18
+      },
+      "t": 0,
+      "target_monomial": [
+        46,
+        241
+      ],
+      "z": 0,
+      "zero_entry_ids": [
+        99,
+        106,
+        115,
+        117,
+        144,
+        151,
+        160,
+        162,
+        180,
+        187,
+        196,
+        198,
+        207,
+        214,
+        223,
+        225,
+        232,
+        234
+      ],
+      "zero_guard_inclusion_minimal_with_other_entries_free": true
+    },
+    {
+      "all_other_entries_are_free_indeterminates": true,
+      "degree_six_contributions": 96,
+      "degree_six_monomial_pairs": 48,
+      "exact_residual": {
+        "coefficient_l1": 0,
+        "distinct_monomials": 0,
+        "first_coefficient": null,
+        "first_monomial": null
+      },
+      "mutations": {
+        "dropped_pure_target": {
+          "coefficient_l1": 1,
+          "distinct_monomials": 1,
+          "first_coefficient": -1,
+          "first_monomial": [
+            47,
+            241
+          ]
+        },
+        "each_deleted_zero_guard": {
+          "107": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              12,
+              45,
+              107,
+              171,
+              241,
+              252
+            ]
+          },
+          "115": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              53,
+              115,
+              126,
+              216,
+              243
+            ]
+          },
+          "117": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              53,
+              117,
+              126,
+              216,
+              241
+            ]
+          },
+          "144": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              144,
+              171,
+              247,
+              252
+            ]
+          },
+          "152": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              152,
+              171,
+              241,
+              252
+            ]
+          },
+          "160": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              53,
+              81,
+              160,
+              216,
+              243
+            ]
+          },
+          "162": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              53,
+              81,
+              162,
+              216,
+              241
+            ]
+          },
+          "180": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              135,
+              180,
+              247,
+              252
+            ]
+          },
+          "188": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              135,
+              188,
+              241,
+              252
+            ]
+          },
+          "196": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              53,
+              72,
+              196,
+              216,
+              243
+            ]
+          },
+          "198": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              53,
+              72,
+              198,
+              216,
+              241
+            ]
+          },
+          "207": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              126,
+              207,
+              247,
+              252
+            ]
+          },
+          "215": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              126,
+              215,
+              241,
+              252
+            ]
+          },
+          "223": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              53,
+              72,
+              189,
+              223,
+              243
+            ]
+          },
+          "225": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              53,
+              72,
+              189,
+              225,
+              241
+            ]
+          },
+          "233": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              61,
+              72,
+              171,
+              233,
+              252
+            ]
+          },
+          "234": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              47,
+              61,
+              72,
+              171,
+              234,
+              243
+            ]
+          },
+          "99": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              12,
+              45,
+              99,
+              171,
+              247,
+              252
+            ]
+          }
+        },
+        "omitted_first_source": {
+          "coefficient_l1": 6,
+          "distinct_monomials": 6,
+          "first_coefficient": -1,
+          "first_monomial": [
+            39,
+            45,
+            72,
+            171,
+            249,
+            250
+          ]
+        },
+        "removed_nonzero_premises": {
+          "241": {
+            "identity_residual": {
+              "coefficient_l1": 0,
+              "distinct_monomials": 0,
+              "first_coefficient": null,
+              "first_monomial": null
+            },
+            "target_product_is_zero": true
+          },
+          "47": {
+            "identity_residual": {
+              "coefficient_l1": 0,
+              "distinct_monomials": 0,
+              "first_coefficient": null,
+              "first_monomial": null
+            },
+            "target_product_is_zero": true
+          }
+        },
+        "wrong_first_source_sign": {
+          "coefficient_l1": 12,
+          "distinct_monomials": 6,
+          "first_coefficient": -2,
+          "first_monomial": [
+            39,
+            45,
+            72,
+            171,
+            249,
+            250
+          ]
+        }
+      },
+      "name": "two_slice_z0_t1",
+      "nonzero_entry_ids": [
+        47,
+        241
+      ],
+      "rho_reduction_used": false,
+      "source_pair_histogram": {
+        "0,2": 3,
+        "0,7": 3,
+        "1,3": 3,
+        "1,6": 3,
+        "2,5": 3,
+        "3,4": 3,
+        "4,5": 15,
+        "6,7": 15
+      },
+      "source_term_counts": {
+        "02222210": 6,
+        "02222212": 6,
+        "02222220": 18,
+        "02222222": 18,
+        "22222210": 6,
+        "22222212": 6,
+        "22222220": 18,
+        "22222222": 18
+      },
+      "t": 1,
+      "target_monomial": [
+        47,
+        241
+      ],
+      "z": 0,
+      "zero_entry_ids": [
+        99,
+        107,
+        115,
+        117,
+        144,
+        152,
+        160,
+        162,
+        180,
+        188,
+        196,
+        198,
+        207,
+        215,
+        223,
+        225,
+        233,
+        234
+      ],
+      "zero_guard_inclusion_minimal_with_other_entries_free": true
+    },
+    {
+      "all_other_entries_are_free_indeterminates": true,
+      "degree_six_contributions": 96,
+      "degree_six_monomial_pairs": 48,
+      "exact_residual": {
+        "coefficient_l1": 0,
+        "distinct_monomials": 0,
+        "first_coefficient": null,
+        "first_monomial": null
+      },
+      "mutations": {
+        "dropped_pure_target": {
+          "coefficient_l1": 1,
+          "distinct_monomials": 1,
+          "first_coefficient": -1,
+          "first_monomial": [
+            46,
+            242
+          ]
+        },
+        "each_deleted_zero_guard": {
+          "106": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              12,
+              45,
+              106,
+              171,
+              242,
+              252
+            ]
+          },
+          "116": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              52,
+              116,
+              126,
+              216,
+              243
+            ]
+          },
+          "117": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              52,
+              117,
+              126,
+              216,
+              242
+            ]
+          },
+          "144": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              144,
+              171,
+              245,
+              252
+            ]
+          },
+          "151": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              151,
+              171,
+              242,
+              252
+            ]
+          },
+          "161": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              52,
+              81,
+              161,
+              216,
+              243
+            ]
+          },
+          "162": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              52,
+              81,
+              162,
+              216,
+              242
+            ]
+          },
+          "180": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              135,
+              180,
+              245,
+              252
+            ]
+          },
+          "187": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              135,
+              187,
+              242,
+              252
+            ]
+          },
+          "197": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              52,
+              72,
+              197,
+              216,
+              243
+            ]
+          },
+          "198": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              52,
+              72,
+              198,
+              216,
+              242
+            ]
+          },
+          "207": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              126,
+              207,
+              245,
+              252
+            ]
+          },
+          "214": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              126,
+              214,
+              242,
+              252
+            ]
+          },
+          "224": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              52,
+              72,
+              189,
+              224,
+              243
+            ]
+          },
+          "225": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              52,
+              72,
+              189,
+              225,
+              242
+            ]
+          },
+          "232": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              62,
+              72,
+              171,
+              232,
+              252
+            ]
+          },
+          "234": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              46,
+              62,
+              72,
+              171,
+              234,
+              243
+            ]
+          },
+          "99": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              12,
+              45,
+              99,
+              171,
+              245,
+              252
+            ]
+          }
+        },
+        "omitted_first_source": {
+          "coefficient_l1": 6,
+          "distinct_monomials": 6,
+          "first_coefficient": -1,
+          "first_monomial": [
+            39,
+            45,
+            72,
+            171,
+            246,
+            251
+          ]
+        },
+        "removed_nonzero_premises": {
+          "242": {
+            "identity_residual": {
+              "coefficient_l1": 0,
+              "distinct_monomials": 0,
+              "first_coefficient": null,
+              "first_monomial": null
+            },
+            "target_product_is_zero": true
+          },
+          "46": {
+            "identity_residual": {
+              "coefficient_l1": 0,
+              "distinct_monomials": 0,
+              "first_coefficient": null,
+              "first_monomial": null
+            },
+            "target_product_is_zero": true
+          }
+        },
+        "wrong_first_source_sign": {
+          "coefficient_l1": 12,
+          "distinct_monomials": 6,
+          "first_coefficient": -2,
+          "first_monomial": [
+            39,
+            45,
+            72,
+            171,
+            246,
+            251
+          ]
+        }
+      },
+      "name": "two_slice_z1_t0",
+      "nonzero_entry_ids": [
+        46,
+        242
+      ],
+      "rho_reduction_used": false,
+      "source_pair_histogram": {
+        "0,2": 3,
+        "0,7": 3,
+        "1,3": 3,
+        "1,6": 3,
+        "2,5": 3,
+        "3,4": 3,
+        "4,5": 15,
+        "6,7": 15
+      },
+      "source_term_counts": {
+        "02222201": 6,
+        "02222202": 6,
+        "02222221": 18,
+        "02222222": 18,
+        "22222201": 6,
+        "22222202": 6,
+        "22222221": 18,
+        "22222222": 18
+      },
+      "t": 0,
+      "target_monomial": [
+        46,
+        242
+      ],
+      "z": 1,
+      "zero_entry_ids": [
+        99,
+        106,
+        116,
+        117,
+        144,
+        151,
+        161,
+        162,
+        180,
+        187,
+        197,
+        198,
+        207,
+        214,
+        224,
+        225,
+        232,
+        234
+      ],
+      "zero_guard_inclusion_minimal_with_other_entries_free": true
+    },
+    {
+      "all_other_entries_are_free_indeterminates": true,
+      "degree_six_contributions": 96,
+      "degree_six_monomial_pairs": 48,
+      "exact_residual": {
+        "coefficient_l1": 0,
+        "distinct_monomials": 0,
+        "first_coefficient": null,
+        "first_monomial": null
+      },
+      "mutations": {
+        "dropped_pure_target": {
+          "coefficient_l1": 1,
+          "distinct_monomials": 1,
+          "first_coefficient": -1,
+          "first_monomial": [
+            47,
+            242
+          ]
+        },
+        "each_deleted_zero_guard": {
+          "107": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              12,
+              45,
+              107,
+              171,
+              242,
+              252
+            ]
+          },
+          "116": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              53,
+              116,
+              126,
+              216,
+              243
+            ]
+          },
+          "117": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              53,
+              117,
+              126,
+              216,
+              242
+            ]
+          },
+          "144": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              144,
+              171,
+              248,
+              252
+            ]
+          },
+          "152": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              152,
+              171,
+              242,
+              252
+            ]
+          },
+          "161": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              53,
+              81,
+              161,
+              216,
+              243
+            ]
+          },
+          "162": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              53,
+              81,
+              162,
+              216,
+              242
+            ]
+          },
+          "180": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              135,
+              180,
+              248,
+              252
+            ]
+          },
+          "188": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              135,
+              188,
+              242,
+              252
+            ]
+          },
+          "197": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              53,
+              72,
+              197,
+              216,
+              243
+            ]
+          },
+          "198": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              53,
+              72,
+              198,
+              216,
+              242
+            ]
+          },
+          "207": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              126,
+              207,
+              248,
+              252
+            ]
+          },
+          "215": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              3,
+              45,
+              126,
+              215,
+              242,
+              252
+            ]
+          },
+          "224": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              53,
+              72,
+              189,
+              224,
+              243
+            ]
+          },
+          "225": {
+            "coefficient_l1": 6,
+            "distinct_monomials": 6,
+            "first_coefficient": 1,
+            "first_monomial": [
+              39,
+              53,
+              72,
+              189,
+              225,
+              242
+            ]
+          },
+          "233": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": -1,
+            "first_monomial": [
+              39,
+              62,
+              72,
+              171,
+              233,
+              252
+            ]
+          },
+          "234": {
+            "coefficient_l1": 12,
+            "distinct_monomials": 12,
+            "first_coefficient": 1,
+            "first_monomial": [
+              47,
+              62,
+              72,
+              171,
+              234,
+              243
+            ]
+          },
+          "99": {
+            "coefficient_l1": 36,
+            "distinct_monomials": 36,
+            "first_coefficient": 1,
+            "first_monomial": [
+              12,
+              45,
+              99,
+              171,
+              248,
+              252
+            ]
+          }
+        },
+        "omitted_first_source": {
+          "coefficient_l1": 6,
+          "distinct_monomials": 6,
+          "first_coefficient": -1,
+          "first_monomial": [
+            39,
+            45,
+            72,
+            171,
+            249,
+            251
+          ]
+        },
+        "removed_nonzero_premises": {
+          "242": {
+            "identity_residual": {
+              "coefficient_l1": 0,
+              "distinct_monomials": 0,
+              "first_coefficient": null,
+              "first_monomial": null
+            },
+            "target_product_is_zero": true
+          },
+          "47": {
+            "identity_residual": {
+              "coefficient_l1": 0,
+              "distinct_monomials": 0,
+              "first_coefficient": null,
+              "first_monomial": null
+            },
+            "target_product_is_zero": true
+          }
+        },
+        "wrong_first_source_sign": {
+          "coefficient_l1": 12,
+          "distinct_monomials": 6,
+          "first_coefficient": -2,
+          "first_monomial": [
+            39,
+            45,
+            72,
+            171,
+            249,
+            251
+          ]
+        }
+      },
+      "name": "two_slice_z1_t1",
+      "nonzero_entry_ids": [
+        47,
+        242
+      ],
+      "rho_reduction_used": false,
+      "source_pair_histogram": {
+        "0,2": 3,
+        "0,7": 3,
+        "1,3": 3,
+        "1,6": 3,
+        "2,5": 3,
+        "3,4": 3,
+        "4,5": 15,
+        "6,7": 15
+      },
+      "source_term_counts": {
+        "02222211": 6,
+        "02222212": 6,
+        "02222221": 18,
+        "02222222": 18,
+        "22222211": 6,
+        "22222212": 6,
+        "22222221": 18,
+        "22222222": 18
+      },
+      "t": 1,
+      "target_monomial": [
+        47,
+        242
+      ],
+      "z": 1,
+      "zero_entry_ids": [
+        99,
+        107,
+        116,
+        117,
+        144,
+        152,
+        161,
+        162,
+        180,
+        188,
+        197,
+        198,
+        207,
+        215,
+        224,
+        225,
+        233,
+        234
+      ],
+      "zero_guard_inclusion_minimal_with_other_entries_free": true
+    }
+  ],
+  "perfect_matchings": {
+    "bitmask_recursive": 105,
+    "expected_seven_double_factorial": 105,
+    "permutation_quotient": 105
+  },
+  "proof_structure": "The 18 guards isolate the transfer between the first slice at vertex 6 colour t and the base slice at colour 2. Exact monomial pairing cancels all 96 degree-six contributions. The pure base row leaves the target product B_x*C_z, whose two factors are declared nonzero.",
+  "schema": "eight-vertex-two-slice-transfer-independent-audit-v1",
+  "scope": "four exact order-eight (z,t) two-slice transfer types",
+  "status": "PASS"
+}
