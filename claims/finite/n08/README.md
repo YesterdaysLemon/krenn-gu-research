@@ -1,5 +1,12 @@
 # Eight-vertex packages
 
+The [134-entry physical boundary-quotient probe](EIGHT_VERTEX_PHYSICAL_BOUNDARY_QUOTIENT_134_LIMITATION.md)
+reconstructs an exact source consequence, exhausts its allowed relabellings on
+the preserved support, and transports every resulting live binomial through
+all complete mixed full-word fibres. It finds no support exclusion: the sole
+live relation identifies no matching monomials. This is a precise limitation
+of that mechanism, not a weighted witness or an unrestricted `n=8` result.
+
 The [25-literal physical-hafnian identity](EIGHT_VERTEX_25_LITERAL_PHYSICAL_HAFNIAN_IDENTITY.md)
 is a proved division-free conditional obstruction over every field. It
 strengthens one reviewed 27-literal cut by making two physical entries
