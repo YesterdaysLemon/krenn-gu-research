@@ -2,6 +2,55 @@
   "schema_version": 1,
   "sources": [
     {
+      "citekey": "cambie-kang-2022-bipartite-correspondence-transversals",
+      "title": "Independent transversals in bipartite correspondence-covers",
+      "authors": ["Stijn Cambie", "Ross J. Kang"],
+      "year": 2022,
+      "identifiers": {"doi": "10.4153/S0008439521001004"},
+      "authoritative_url": "https://doi.org/10.4153/S0008439521001004",
+      "identity_verification": {
+        "source_url": "https://www.cambridge.org/core/journals/canadian-mathematical-bulletin/article/independent-transversals-in-bipartite-correspondencecovers/D3C2B75086C881FFA69E994A34BD8DC6",
+        "date": "2026-09-14"
+      },
+      "search_trail": ["2026-09-14: independent transversals maximum degree two parts size three; inspected publisher HTML Theorem 1.2 and Corollary 1.3."],
+      "relevance": "Scoped check of whether known correspondence-cover bounds settle the protected-scaffold Q4 label-graph route.",
+      "limitations": [
+        "Only the located statements and surrounding definitions were inspected, not the entire paper.",
+        "Theorem 1.2 conditions fail for part size 3, option degree 2 and component degree 6; Corollary 1.3 is asymptotic. Neither is imported into a proof.",
+        "Published online in 2021; journal volume 65 issue 4 is dated December 2022."
+      ],
+      "repository_usages": [{
+        "path": "docs/strategy/scaffold-q4-parent-attempt-2026-09-14.md",
+        "role": "background",
+        "inspection_level": "relevant_passage_inspected",
+        "source_locator": "Theorem 1.2 and Corollary 1.3, Introduction"
+      }]
+    },
+    {
+      "citekey": "haxell-wdowinski-2024-no-independent-transversals",
+      "title": "Constructing Graphs with No Independent Transversals",
+      "authors": ["Penny Haxell", "Ronen Wdowinski"],
+      "year": 2024,
+      "identifiers": {"doi": "10.37236/12429"},
+      "authoritative_url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p39",
+      "identity_verification": {
+        "source_url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p39",
+        "date": "2026-09-14"
+      },
+      "search_trail": ["2026-09-14: independent transversals maximum degree two parts size three; inspected publisher metadata, abstract, and remote PDF Introduction through Theorem 4."],
+      "relevance": "Identifies why maximum degree two and triple parts alone do not establish the special Q4 avoiding-colouring lemma.",
+      "limitations": [
+        "Theorem 4 and its introductory context were inspected, not its proof or the whole paper.",
+        "No correspondence to the special side-respecting port-labelled graph with three known constant transversals is asserted; no theorem is imported."
+      ],
+      "repository_usages": [{
+        "path": "docs/strategy/scaffold-q4-parent-attempt-2026-09-14.md",
+        "role": "background",
+        "inspection_level": "relevant_passage_inspected",
+        "source_locator": "Theorem 4 and preceding paragraph, page 3"
+      }]
+    },
+    {
       "citekey": "krenn-gu-zeilinger-2017-quantum-experiments",
       "title": "Quantum Experiments and Graphs: Multiparty States as coherent superpositions of Perfect Matchings",
       "authors": ["Mario Krenn", "Xuemei Gu", "Anton Zeilinger"],

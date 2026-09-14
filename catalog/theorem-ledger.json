@@ -7544,6 +7544,32 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Common-star source obstruction and required triangle/port resources (PSCS)",
+      "document": "claims/arbitrary-order/PROTECTED_SCAFFOLD_COMMON_STAR_COMPONENT_TARGET_OBSTRUCTION.md",
+      "document_sha256_16": "af7ca8b9262505fb",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "C; n=4k,k>=2 protected K4 components; simple component graph with one unequal endpoint-colour label per edge and exactly two nonzero common-centre/selected-leaf factors per gadget.",
+        "At any edge uv outside all triangles, the same physical source satisfies q_uv=F_uv-F_u F_v. Global component targets therefore require every nonzero gadget edge to lie in a triangle and exclude every triangle-free graph, at arbitrary degrees and weights.",
+        "Singleton component targets force each ordered endpoint port to be nonempty. For each oriented edge uv labelled(d,e), with third colour c, at least one of ports(u,d,e),(u,d,c),(v,e,c) must be repeated. Three unique ports force a mixed source of -1 or -2, so unique-port constructions are excluded even with triangles.",
+        "The general component source is a sum of products of two hafnians on the same subset. Its ordinary matching-partition specialization is used only on forests; exact cycle and triangle controls expose the difference.",
+        "Direct arbitrary-order proofs and independent adversarial review are supplied. Finite rational physical replays are companion checks; no general common-star or arbitrary protected-scaffold normal form is claimed."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_protected_scaffold_common_star_control.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": "claims/arbitrary-order/audit_protected_scaffold_common_star_control.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/PROTECTED_SCAFFOLD_COMMON_STAR_REVIEW_2026-09-14.md",
+      "expected_runtime": "seconds for exact finite controls; arbitrary-order statements use written proofs",
+      "external_binaries": [],
+      "note": "Closes two declared common-star Q4 construction mechanisms. Interacting triangles with repeated ports, the original two-pair allocation, Q4 and global Krenn-Gu remain open; no Lean formalization.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
