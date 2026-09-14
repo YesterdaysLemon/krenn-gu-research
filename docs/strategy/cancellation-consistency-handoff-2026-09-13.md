@@ -106,7 +106,8 @@ Each core uses one separately replayed algebraic clause. None relies on killer,
 ratio, root-canonicalization, or preceding learned clauses. Native DRAT replay
 and the separate small RUP checker both passed. The third packet is preserved
 at [recursive_source_quotient_n8_third_core.json](../../tests/fixtures/recursive_source_quotient_n8_third_core.json),
-SHA-256 `4d325e3ad2e1c8408ee72928a30c853da74918039817d338f316b4d143a62774`.
+SHA-256 `4d325e3ad2e1c8408ee72928a30c853da74918039817d338f316b4d143a62774`
+for the tracked LF bytes.
 Its native CNF/proof hashes are
 `f1bea07c1f9ca01976a67cef8d8e8f4a14c76096401b4760962ede0b1430b8d4`
 and `fd094b68ead5083b65b5f38979c28b4c219e1566319f3db5bccc2b59e1522879`.

@@ -7312,13 +7312,13 @@
     {
       "name": "Ten-vertex all-diagonal recursive-hafnian zero-pattern exclusion (RZP10)",
       "document": "claims/finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "c48307f883a59edd",
+      "document_sha256_16": "12b175bb324f1dc0",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "finite computer-assisted exact exclusion for all-diagonal ternary complex witnesses on exactly ten vertices",
         "the written witness-to-zero-pattern bridge uses the recursive principal-hafnian support of each diagonal colour matrix; it does not assert that the weaker AP' abstraction is unsatisfiable at n=10",
-        "the 13 top-level cases form an exhaustive cover of all 945 perfect matchings: one reference matching and its 12 stabilizer-orbit representatives under vertex relabelling, with explicit transporters checked independently",
-        "each case is pinned by exact CNF and DRAT proof hashes and replays as s VERIFIED with a pinned drat-trim executable; three malformed-proof controls per case are rejected",
+        "the 13 branches are six nonshared first-pair cycle types plus seven third-matching refinements of the shared first-pair branch; the underlying seven pair types cover all 945 perfect matchings, with explicit transporters checked independently",
+        "each case is pinned by exact CNF and DRAT proof hashes and replays as s VERIFIED with a pinned drat-trim executable; one valid-proof positive control and two semantic false-proof controls run once before the 13-case replay",
         "the independent standard-library audit reconstructs the variable allocation, clauses, DIMACS bytes, matching cover, stabilizers, and transporters without importing the repository encoder or a SAT library",
         "the theorem excludes neither bichromatic edge entries nor the full Krenn-Gu problem; no arbitrary-order conclusion is claimed"
       ],
@@ -7332,8 +7332,35 @@
       "external_binaries": [
         "pinned drat-trim executable (SHA-256 a48ebed7b4b6b373d3ddbeb3368dae7622a9e17bab7fe6eb751ab996757f9fbe)"
       ],
-      "note": "RZP10 turns the recursive-hafnian cancellation search into a finite theorem at n=10 through an explicit witness bridge, an independently checked 13-case matching cover, byte-pinned CNF/DRAT pairs, adversarial controls, and a portable replay bundle. It is strictly stronger than AP' at this order and says nothing about bichromatic witnesses, arbitrary even orders, or resolution of the global conjecture, which remains UNRESOLVED.",
+      "note": "RZP10 turns the recursive-hafnian cancellation search into a finite theorem at n=10 through an explicit witness bridge, an independently checked 13-case matching cover, byte-pinned CNF/DRAT pairs, adversarial controls, and a portable replay bundle. Its local recursive clauses imply the AP' clauses, but strict separation of the two complete globally constrained n=10 models has not been shown. It says nothing about bichromatic witnesses, arbitrary even orders, or resolution of the global conjecture, which remains UNRESOLVED.",
       "claim_package": "claims/finite/n10",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Eight-vertex 25-literal physical-hafnian identity (P25)",
+      "document": "claims/finite/n08/EIGHT_VERTEX_25_LITERAL_PHYSICAL_HAFNIAN_IDENTITY.md",
+      "document_sha256_16": "90f92f35ee94c206",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "conditional exact identity at n=8: eighteen named physical entries are zero and seven named physical entries are nonzero; every unspecified entry, including ids 172 and 244, is arbitrary",
+        "four named mixed full hafnians cannot all vanish because an integer polynomial combination equals the coefficient-one monomial g118^2*g121*g226*g247^2*g38*g55*g82^2",
+        "the proof uses no division, localization, nonzero cofactor, SAT abstraction, or quotient certificate, so the conditional identity is valid over every field",
+        "the tracked primary enumerates all 105 perfect matchings into sparse integer polynomials; the external review independently used recursive SymPy expansion and obtained the same four monomial counts and right side",
+        "the complete recursive, killer, and ratio-component n=8 Boolean parent remains SAT after all allowed images of this cut and three older physical cuts are forbidden; its 134-entry physical projection is not a weighted witness",
+        "no parent cover, all-order source-isolation occurrence, bichromatic exclusion, or global conclusion is claimed"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/finite/n08/verify_eight_vertex_25_literal_physical_identity.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "docs/audits/CANCELLATION_PHYSICAL_PRO6_REVIEW_FOLLOWUP_2026-09-13.md",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/CANCELLATION_PHYSICAL_PRO6_REVIEW_FOLLOWUP_2026-09-13.md",
+      "expected_runtime": "under one second for the exact identity replay on the reference host; about one minute for the separate cumulative parent SAT test",
+      "external_binaries": [],
+      "note": "P25 strengthens one reviewed 27-literal physical cut to 25 literals by making two entries arbitrary. It is a proved conditional identity, not a cover. The exact P8-25-occurrence implication is false in the current Boolean parent abstraction, which retains a checked 134-entry support but supplies no complex weights. SIP25 therefore needs an additional weighted source-isolation consequence or replacement; the global conjecture remains UNRESOLVED.",
+      "claim_package": "claims/finite/n08",
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []

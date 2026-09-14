@@ -129,9 +129,10 @@ python tools/explore/replay_recursive_hafnian_drat.py \
 ```
 
 Acceptance requires exact CNF regeneration, frozen input identities, an exact
-`s VERIFIED` result for every binary proof, stable bytes during checking, a
-valid-proof positive control, and two semantically rejected false-proof
-controls. Solver UNSAT without checked proof bytes is not accepted.
+`s VERIFIED` result for every binary proof, and stable bytes during checking.
+One valid-proof positive control and two semantically rejected false-proof
+controls run once before the thirteen-case loop. Solver UNSAT without checked
+proof bytes is not accepted.
 
 Independent no-import audit:
 

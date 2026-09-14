@@ -365,7 +365,9 @@ already contradicts these 200 premises, so the separate source-core checker
 needs only the final empty-clause addition. The
 [second compact regression packet](../../tests/fixtures/recursive_source_quotient_n8_second_core.json)
 preserves that **38-literal physical cut**. Its original ignored packet has
-SHA-256 `37cac03c9a3176afe14efdc6e1d6b5d4d0e4514fa265184c8a05efdc3d75a2ae`.
+SHA-256 `26b94b99cdc08213b8b645be432cc8476386261549ed82c017a3a03c4659b2dc`
+for the tracked LF bytes. A Windows checkout with CRLF conversion has SHA-256
+`37cac03c9a3176afe14efdc6e1d6b5d4d0e4514fa265184c8a05efdc3d75a2ae`.
 The CNF and native proof hashes are respectively
 `8edc0b4079a25c025ca10971f863ab23c81e638cb856e580b0a5072d2fb2803a`
 and `53dd986036c685810792fd160aab410f7a0723ce98ec3a4f5568c3262a6a7708`.

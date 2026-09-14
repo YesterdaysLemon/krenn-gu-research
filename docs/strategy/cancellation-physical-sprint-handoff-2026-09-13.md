@@ -15,9 +15,10 @@ bichromatic edge entries, or supply an arbitrary-order theorem.
 
 ## Evidence completed
 
-- Thirteen CNF/binary-DRAT pairs cover the chosen perfect-matching normal
-  forms exhaustively and replay `s VERIFIED` with the pinned checker. Each
-  case also passes one positive and two false-proof controls.
+- Thirteen CNF/binary-DRAT pairs cover six nonshared first-pair branches and
+  seven refinements of the shared first-pair branch, and replay `s VERIFIED`
+  with the pinned checker. One positive and two semantic false-proof controls
+  run once before the thirteen-case loop.
 - The independent standard-library audit reconstructs every CNF byte, all
   seven pair cycle types, and explicit transporters for all 945 perfect
   matchings. It imports neither the repository encoder nor a SAT library.
@@ -76,5 +77,17 @@ thirteen-case audit passes from the unpacked portable archive. Repository
 hygiene and migration-floor commands should be rerun from the index-complete
 candidate immediately before any later publication or PR.
 
-No research process launched by this sprint is left running. No remote push,
-PR, or publication was performed.
+No research process launched by this sprint is left running. The work was
+subsequently published to the review branch; the large proof bundle was not
+published and remains a separate owner-authorized action.
+
+## Review follow-up
+
+The external follow-up review of commit
+`575000924288ab9db68aea501ec91c303d3e9614` was executed in
+[`CANCELLATION_PHYSICAL_PRO6_REVIEW_FOLLOWUP_2026-09-13.md`](../audits/CANCELLATION_PHYSICAL_PRO6_REVIEW_FOLLOWUP_2026-09-13.md).
+It corrects the evidence wording above, hardens the independent audit, proves
+and replays a division-free 25-literal refinement, preserves the 134-entry
+survivor, and records the exact SAT refutation of the proposed support-only
+parent occurrence implication. None of those changes alters the global
+status.

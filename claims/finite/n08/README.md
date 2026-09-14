@@ -1,5 +1,11 @@
 # Eight-vertex packages
 
+The [25-literal physical-hafnian identity](EIGHT_VERTEX_25_LITERAL_PHYSICAL_HAFNIAN_IDENTITY.md)
+is a proved division-free conditional obstruction over every field. It
+strengthens one reviewed 27-literal cut by making two physical entries
+arbitrary. It does not cover the eight-vertex parent necessary model, provide
+a weight realization, or change the global status.
+
 The [maximum-root-one exclusion](EIGHT_VERTEX_MATRIX_UNIT_EXCLUSION_THEOREM.md)
 rules out every complete nonzero ternary matrix-unit source at order eight, with
 arbitrary complex weights and endpoint colours. Its complete eighteen-case

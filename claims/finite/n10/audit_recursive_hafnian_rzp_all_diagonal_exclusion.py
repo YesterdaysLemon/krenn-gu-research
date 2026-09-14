@@ -292,9 +292,26 @@ def audit_local_semantics():
 
 
 def audit_cover(case_specs):
+    require(type(case_specs) is list, "manifest cases must be a list")
     expected = expected_cases()
-    actual = {case["id"]: case["parameters"] for case in case_specs}
-    require(actual == expected, "manifest is not the exact 13-case cover")
+    ids = []
+    for index, case in enumerate(case_specs):
+        require(type(case) is dict, f"case {index} must be an object")
+        case_id = case.get("id")
+        require(type(case_id) is str, f"case {index} id must be a string")
+        require(type(case.get("parameters")) is dict, f"{case_id}: parameters must be an object")
+        ids.append(case_id)
+    require(len(ids) == len(set(ids)), "manifest contains a duplicate case id")
+    require(set(ids) == set(expected), "manifest is not the exact 13-case cover")
+    for case in case_specs:
+        case_id = case["id"]
+        # JSON serialization is intentional: unlike Python equality, it keeps
+        # JSON booleans distinct from the integers zero and one.
+        require(
+            json.dumps(case["parameters"], sort_keys=True)
+            == json.dumps(expected[case_id], sort_keys=True),
+            f"{case_id}: parameters do not implement the cover branch",
+        )
     fixed, _other = canonical_pair(10, (5,))
     observed = set()
     count = 0

@@ -26,13 +26,17 @@ from krenn_gu.bootstrap import bootstrap as _bootstrap_repository  # noqa: E402
 REPO_ROOT, HERE = _bootstrap_repository(__file__)
 
 from pysat.solvers import Cadical195  # noqa: E402
-from krenn_gu.recursive_tensor_support import build_recursive_tensor_support_cnf  # noqa: E402
 from krenn_gu.recursive_tensor_ratio_cuts import add_tensor_ratio_consistency  # noqa: E402
+from krenn_gu.recursive_tensor_support import build_recursive_tensor_support_cnf  # noqa: E402
+from krenn_gu.eight_vertex_physical_hafnian_identity import (  # noqa: E402
+    replay_eight_vertex_physical_hafnian_identity,
+)
 from krenn_gu.source_quotient_core import replay_source_quotient_core  # noqa: E402
 
 started = time.monotonic()
 parser = argparse.ArgumentParser()
-parser.add_argument('--packet', action='append', type=Path, required=True)
+parser.add_argument('--packet', action='append', type=Path, default=[])
+parser.add_argument('--physical-pattern', action='append', type=Path, default=[])
 parser.add_argument('--output-dir', type=Path, required=True)
 args = parser.parse_args()
 output = args.output_dir
@@ -40,14 +44,31 @@ if output.exists():
     raise ValueError("output directory must be new")
 output.mkdir(exist_ok=False)
 packets = args.packet
+patterns = args.physical_pattern
+if not packets and not patterns:
+    raise ValueError("at least one checked packet or physical pattern is required")
 unaugmented = build_recursive_tensor_support_cnf(8, column_killers=False, fix_root_killers=False)
 checked = [
-    replay_source_quotient_core(
-        unaugmented,
-        json.loads(path.read_text(encoding="utf-8")),
-    )
+    {
+        "kind": "source_core",
+        "path": str(path),
+        **replay_source_quotient_core(
+            unaugmented,
+            json.loads(path.read_text(encoding="utf-8")),
+        ),
+    }
     for path in packets
 ]
+checked.extend(
+    {
+        "kind": "physical_polynomial_identity",
+        "path": str(path),
+        **replay_eight_vertex_physical_hafnian_identity(
+            json.loads(path.read_text(encoding="utf-8"))
+        ),
+    }
+    for path in patterns
+)
 del unaugmented
 instance = build_recursive_tensor_support_cnf(8)
 ratio = add_tensor_ratio_consistency(instance, component_closure=True)
@@ -78,7 +99,11 @@ for result in checked:
     print('orbit', len(orbit_counts), 'cuts', count, 'source_literals', len(source),
           'seconds', time.monotonic()-started, flush=True)
 summary = {'n': 8, 'scope': 'full-source necessary model; no weight realization inference',
-           'verified_source_cuts': [len(result['physical_cut']) for result in checked],
+           'verified_physical_cuts': [
+               {'kind': result['kind'], 'path': result['path'],
+                'literals': len(result['physical_cut'])}
+               for result in checked
+           ],
            'orbit_counts_including_possible_duplicates': orbit_counts,
            'symmetries': 'all physical vertex permutations and one common colour permutation',
            'ratio_counts': ratio, 'variables': instance.cnf.nv,

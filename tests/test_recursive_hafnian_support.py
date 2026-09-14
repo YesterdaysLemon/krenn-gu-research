@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import itertools
 import copy
+import importlib.util
 import json
 import sys as _bootstrap_sys
 import tempfile
@@ -35,6 +36,20 @@ from tools.explore.replay_recursive_hafnian_drat import (  # noqa: E402
     regenerate_cnf,
     validate_cover,
 )
+
+
+_audit_path = (
+    REPO_ROOT
+    / "claims"
+    / "finite"
+    / "n10"
+    / "audit_recursive_hafnian_rzp_all_diagonal_exclusion.py"
+)
+_audit_spec = importlib.util.spec_from_file_location("rzp10_independent_audit", _audit_path)
+if _audit_spec is None or _audit_spec.loader is None:  # pragma: no cover
+    raise RuntimeError("cannot load the independent RZP10 audit")
+_audit_module = importlib.util.module_from_spec(_audit_spec)
+_audit_spec.loader.exec_module(_audit_module)
 
 
 def clause_value(clause: list[int], true_variables: set[int]) -> bool:
@@ -235,6 +250,21 @@ class RecursiveHafnianSupportTests(unittest.TestCase):
                 cases[0]["parameters"]["two_part_only"] = 0
             with self.subTest(mutation=mutation), self.assertRaises(RuntimeError):
                 validate_cover(cases)
+
+    def test_independent_audit_rejects_duplicate_ids_and_boolean_integers(self) -> None:
+        path = REPO_ROOT / "docs/strategy/recursive-cancellation-consistency-evidence-2026-09-12.json"
+        cases = json.loads(path.read_text(encoding="utf-8"))["cases"]
+        self.assertEqual(_audit_module.audit_cover(copy.deepcopy(cases))["perfect_matchings"], 945)
+
+        duplicate = copy.deepcopy(cases)
+        duplicate[-1]["id"] = duplicate[0]["id"]
+        with self.assertRaisesRegex(AssertionError, "duplicate case id"):
+            _audit_module.audit_cover(duplicate)
+
+        weak_type = copy.deepcopy(cases)
+        weak_type[0]["parameters"]["n"] = True
+        with self.assertRaisesRegex(AssertionError, "parameters do not implement"):
+            _audit_module.audit_cover(weak_type)
 
     def test_replay_regenerates_frozen_top_five_bytes_portably(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

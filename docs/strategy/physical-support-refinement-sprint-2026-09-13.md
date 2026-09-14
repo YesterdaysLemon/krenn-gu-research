@@ -115,6 +115,8 @@ assignment required.
 The promoted small packet
 [`recursive_source_quotient_n8_latest136_core.json`](../../tests/fixtures/recursive_source_quotient_n8_latest136_core.json)
 has SHA-256
+`8f9d6db69e05da80d4533780f7e71f55eb0c4f51b10a7e75e797ebb49fa56e8a`
+for the tracked LF bytes. A Windows checkout with CRLF conversion has SHA-256
 `3ef1365941080ea46ef9b03a77b375e9dfc28c9554e5638785abbb568fb5aa2d`.
 Its solver-free replay reports:
 
@@ -180,3 +182,59 @@ transport to force an incompatible cancellation system—or to produce a
 globally constrained Boolean countermodel showing that implication is still
 too weak. This sprint does not replace that occurrence theorem with more
 finite support counts.
+
+## Follow-up: 25-literal refinement and explicit parent test
+
+The follow-up review observed that physical entries 172 and 244 are not
+needed. The independent tracked matching-enumeration verifier proves the
+division-free identity in
+[`EIGHT_VERTEX_25_LITERAL_PHYSICAL_HAFNIAN_IDENTITY.md`](../../claims/finite/n08/EIGHT_VERTEX_25_LITERAL_PHYSICAL_HAFNIAN_IDENTITY.md).
+It retains all 18 zero assumptions but only seven of the nine nonzero
+assumptions. The original 27-literal source-core fixture remains unchanged as
+a regression and provenance record.
+
+The exact finite parent proposition tested next was:
+
+> **P8-25-occurrence.** Every model of the `n=8` recursive full-target,
+> column-killer, fixed-root-killer, and ratio-component necessary conditions
+> contains an allowed vertex/common-colour image of at least one of the first
+> three source-core physical patterns or the 25-literal identity pattern.
+
+Negating all images is precisely the cumulative four-cut SAT instance. The
+27-literal fourth pattern was replaced by the 25-literal pattern, while the
+54-, 38-, and 32-literal orbits were held fixed. The bounded run again built
+600,063 variables and 4,648,164 clauses and returned
+`SAT_ABSTRACTION_NOT_WEIGHTS` in 51.800 seconds; its complete assignment was
+checked against every clause. Thus **P8-25-occurrence is false in this exact
+Boolean parent abstraction**. This is an exact computational countermodel to
+that proposed implication, not a complex-weight counterexample.
+
+The solver returned the same 134-entry physical support as the prior
+27-literal run. Both full-model identities, both generation parameter sets,
+and the shared physical projection are preserved in
+[`recursive_physical_support_n8_four_cut_survivor_134.json`](../../tests/fixtures/recursive_physical_support_n8_four_cut_survivor_134.json).
+The large assignments remain ignored diagnostics.
+
+Across the 241,920 images of the 25-literal pattern, the survivor has minimum
+guard distance one, attained by exactly three images. The three closest
+placements avoid the identity respectively by setting required entry 226 to
+zero, or by keeping required-zero entry 122 or 97 nonzero. This identifies the
+support-level escape mechanism exactly; entries 172 and 244 are not the
+escape.
+
+The resulting all-order candidate is now explicit rather than merely the
+definition of `U_c`:
+
+> **Source-isolated 25-pattern candidate (SIP25).** In every hypothetical
+> all-diagonal witness, the supplied four-set families, recursive
+> accessibility, and signed-ratio transport produce an eight-port source
+> whose boundary terms isolate the four physical hafnians in the 25-literal
+> identity, up to a common nonzero complementary cofactor.
+
+SIP25 would make the conditional identity an all-order contradiction. The
+current Boolean necessary conditions do not even force its `n=8`
+support-occurrence specialization, as the checked survivor proves. A viable
+next lemma must therefore use an additional weighted/source-isolation
+consequence to close the three one-literal escape types, or replace SIP25 by a
+different occurrence statement. Merely adding more checked support cuts does
+not address that missing implication.
