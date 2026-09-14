@@ -2,6 +2,11 @@
 
 ## Review conclusion
 
+This record covers the initial owner snapshot pinned below. The later
+at-most-two-port extension has its own
+[independent review](PROTECTED_SCAFFOLD_COMMON_STAR_TWO_PORT_REVIEW_2026-09-14.md).
+The historical hash and narrower scope in this record are preserved.
+
 The source identity and the edge-local obstruction in
 [`PROTECTED_SCAFFOLD_COMMON_STAR_COMPONENT_TARGET_OBSTRUCTION.md`](../../claims/arbitrary-order/PROTECTED_SCAFFOLD_COMMON_STAR_COMPONENT_TARGET_OBSTRUCTION.md)
 are correct under their stated hypotheses over `C`.

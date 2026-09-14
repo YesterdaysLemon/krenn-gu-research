@@ -2,19 +2,27 @@
 
 ## Status and scope
 
-The source identities and obstructions below have direct proofs over C
-and were independently reviewed, including the unique-port extension, on
+The source identities and obstructions below have direct proofs over C.
+The initial triangle-free and unique-port results were reviewed on
 2026-09-14. The
 [independent review](../../docs/audits/PROTECTED_SCAFFOLD_COMMON_STAR_REVIEW_2026-09-14.md)
 records exact physical replays and the cycle, triangle, and multiple-label
 controls. No Lean formalization is supplied.
+The [two-port review](../../docs/audits/PROTECTED_SCAFFOLD_COMMON_STAR_TWO_PORT_REVIEW_2026-09-14.md)
+independently audits the shared-neighbor identity, the source-derived
+resource decomposition and the additional global-word contradiction.
 
 This result rejects a declared construction route for the
 [Q4 parent](../../docs/strategy/scaffold-q4-parent-attempt-2026-09-14.md):
 common-star pair gadgets on a triangle-free component graph, and gadgets
-with at most one edge in each ordered color port even when triangles are
-present. It is not a normal-form theorem for arbitrary hollow fillings and
+with at most two edges in each ordered color port even when triangles are
+present. The latter conclusion uses the full component-constant targets;
+singleton and double-component equations alone have an exact control below.
+It is not a normal-form theorem for arbitrary hollow fillings and
 does not prove Q4.
+More generally, the full component target excludes every common-star
+array whose state graph splits into complete tripartite resources; the
+two-port argument supplies this decomposition in a proved subfamily.
 The global Krenn--Gu conjecture remains **UNRESOLVED**.
 
 The upstream physical arrays are the
@@ -247,16 +255,246 @@ per ordered port can satisfy all component-constant targets, regardless
 of triangles. A missing port already contradicts (5); otherwise every
 port is unique and (8)--(9) apply to any edge.
 
+## Shared-neighbor source identity
+
+Fix different components u,v, background color c, and colors d,e different
+from c; d=e is allowed. For j outside {u,v}, write
+
+```
+A_j=a_uj(d,c), B_j=b_uj(d,c),
+C_j=a_vj(e,c), D_j=b_vj(e,c),
+s=sum_j A_j B_j, t=sum_j C_j D_j,
+h=sum_j A_j B_j C_j D_j,
+x=sum_j A_j D_j, y=sum_j B_j C_j.
+```
+
+Absent or incompatibly labelled entries are zero. Put q=q_uv(d,e), zero
+if that label is absent or d=e. The exact component source is
+
+```
+F_(u:d,v:e | c) = (1+s)(1+t)+q+xy-2h.                 (10)
+```
+
+Every compatible edge meets u or v, so the common active subset in (1)
+has size zero, two or four. The equal center/leaf matchings on four
+vertices contribute st-h. The unequal matchings contribute xy-h.
+Together with the empty term, the star terms and the central edge, these
+give (10). In particular the four-cycle correction is retained.
+
+Assume all singleton and double-component mixed targets. Every singleton
+port sum is -1 by (5), including a possible edge to the other distinguished
+component. Removing that edge gives
+
+```
+1+s=-q_uv(d,c),       1+t=-q_vu(e,c).
+```
+
+Their product is zero: the first requires label (d,c) at (u,v), whereas
+the second requires (c,e), and d!=c. There is only one label on a
+component pair. Thus every double row gives
+
+```
+q=2h-xy.                                             (11)
+```
+
+There is no small-order exception hidden here. Singleton targets already
+force six nonempty ports at each component, hence k>=7 in this simple
+one-label construction. For these orders every two-component word used
+here is mixed. Orders 2<=k<=6 fail a singleton target.
+
+Use the **state graph** H whose vertices are (u,a), one for each component
+and color. A gadget labelled (a,b) joins (u,a) to (v,b), carrying its actual
+q product. H is tripartite by color; a state's neighbors in another color
+part are exactly its ordered port. There are no edges between different
+states of the same physical component.
+
+Two consequences of (11) will be used with their full weighted meaning:
+
+1. Two distinct states of the same color cannot have exactly one common
+   neighbor in another color part. If that neighbor is z, then xy=h is
+   the product of the two nonzero q values, but q=0 in (11). This would
+   give h=0. The assertion also applies after exchanging the two colors.
+2. Every state-graph edge has a common neighbor of the third color. With
+   no such neighbor, h=x=y=0 would force its q to vanish. If there is
+   exactly one such neighbor z, then
+
+```
+q_XY=q_XZ q_YZ.                                      (12)
+```
+
+These are consequences of actual shared source equations. In particular
+(12) is not assumed for triangles with additional common neighbors.
+
+## No singleton port, without bounding other degrees
+
+Suppose state X of color a has unique color-b neighbor Y. If Y had a
+second color-a neighbor, that state and X would have exactly one common
+color-b neighbor, contrary to consequence 1. Hence Y's color-a port is
+also unique, and q_XY=-1.
+
+Let c be the third color. Every edge XZ with Z of color c must belong to
+a coherent state triangle. Its only possible color-b neighbor is Y, so
+YZ exists. Reversing X,Y proves N_c(X)=N_c(Y). Equation (12) on XZ gives
+q_XZ=-q_YZ for every Z in this common set. Summing gives -1=1, because
+both color-c port sums are -1. This is impossible over C.
+
+Therefore the singleton and double-component targets force **every
+ordered port to contain at least two edges**, regardless of other degrees.
+
+## At most two per port: source-derived resource decomposition
+
+Assume now that every ordered port has at most two edges. The preceding
+result makes every port have exactly two. Between any pair of color
+parts the state graph is 2-regular. Consequence 1 forces any two row
+neighborhoods which intersect to coincide. Thus each connected component
+of this bipartite graph is K_(2,2).
+
+At a state X of color a, write its color-b neighbors as Y1,Y2 and its
+color-c neighbors as Z1,Z2. Consequence 2 makes the bipartite graph between
+these two pairs meet every row and column. Since the full b-c graph is a
+disjoint union of K_(2,2)'s, this local 2-by-2 graph is either two disjoint
+edges or all four edges. Three edges force the fourth within one block.
+
+In the four-edge case, let X_b be the other color-a neighbor of Y1,Y2.
+The edge X_b Y1 needs a color-c common neighbor in {Z1,Z2}. Since color-a
+rows have identical or disjoint color-c neighborhoods, X_b has both Z1,Z2
+as neighbors. It is therefore also the second color-a neighbor X_c of
+Z1,Z2. These six states form a complete K_(2,2,2) component of H: all
+their ports are filled and no state-graph edge leaves the component.
+
+In the two-edge case, each edge at X has exactly one common neighbor of
+the third color. A neighboring state cannot have the four-edge local
+pattern: that would give two common third-color neighbors for the same
+edge. Hence each triangle through X has the two-edge pattern at all
+three states. Applying (12) cyclically to its three nonzero products
+gives q_XY=q_XZ q_YZ, q_XZ=q_XY q_YZ and q_YZ=q_XY q_XZ. Therefore each
+product has square one. Every edge at X lies in such a triangle, so its
+two q values in a port are both in {1,-1}. Their sum cannot be -1 over C.
+This excludes the two-edge local pattern.
+
+Consequently the singleton and double-component equations force H to be
+a disjoint union of coherent K_(2,2,2) resources. This is a proved normal
+form inside the at-most-two-port common-star family, not an assumed
+normal form for general protected arrays.
+
+## Full component target excludes every such resource decomposition
+
+Let R be the number of K_(2,2,2) resources. Each color part of H has k
+states and each resource contains two of each color, so k=2R. Pair the
+two same-color physical components in each resource. For each color c
+this gives a perfect matching P_c on the k physical components: each
+component's color-c state occurs in exactly one resource. The six states
+in any resource belong to six distinct physical components, since
+different-color states of one component cannot be joined by an edge.
+
+The multigraph P_0 union P_1 is a disjoint union of even alternating
+cycles; a common matching edge is allowed as a two-cycle. Choose a binary
+component coloring using colors 0 and 1 which assigns opposite colors
+across every edge of both matchings.
+
+In every resource exactly one color-0 state and one color-1 state are
+selected by this component word. No color-2 state is selected. The two
+selected states have one compatible gadget between them. Each physical
+component selects one state in one resource, so the compatible component
+graph consists of R disjoint gadget edges. The exact full source is
+
+```
+F(x)=product_(resources r) (1+q_(selected edge of r)).  (13)
+```
+
+Each factor is nonzero. The selected edge shares either endpoint's
+opposite-color port with one other nonzero gadget q', and q+q'=-1;
+therefore 1+q=-q'!=0. The binary coloring is nonconstant since every
+P_0 edge has opposite endpoint colors. Equation (13) contradicts its
+zero mixed target.
+
+This proves the all-order **at-most-two-port exclusion**, with arbitrary
+nonzero complex factor weights and all triangles allowed. Its proof uses
+singleton and double-component sources to obtain the resource normal form,
+then an additional global component word to contradict the target. It
+does not require any non-component-constant minority equation.
+
+## General complete-resource consumer
+
+The final contradiction extends beyond resources of size (2,2,2).
+Suppose H is a disjoint union of complete tripartite resources, with
+possibly different positive color-part sizes in different resources.
+For any resource, summing the singleton q-port normalizations over one
+color part and over another counts the same edge sum in two ways.
+Their sizes are therefore equal. Write them as (m_r,m_r,m_r).
+The no-singleton-port lemma gives m_r>=2 under the singleton and double
+targets. Each physical component's three states belong to different
+resources: otherwise completeness would give a forbidden edge within
+one physical component.
+
+Construct a directed multigraph on resources. For each physical
+component u, add an edge from the resource containing (u,0) to the
+resource containing (u,1). Every resource has indegree and outdegree
+m_r, and there are no loops. A finite nonempty balanced directed graph
+contains a simple directed cycle. Start with every component colored 0,
+and change to color 1 exactly those components whose directed edges
+are on this cycle.
+
+At a resource on the cycle, let X be the color-0 state of its outgoing
+cycle edge and Y the color-1 state of its incoming cycle edge. The
+selected states are all its color-0 states except X, together with Y.
+The compatible graph is a star, so its exact factor is
+
+```
+1 + sum_(Z of color 0, Z!=X) q_ZY = -q_XY != 0.      (14)
+```
+
+The equality uses Y's complete singleton port normalization. Every
+resource off the cycle has no compatible edge and contributes one.
+Each physical component selects just one state in one resource, so
+these selected graphs are disjoint and the full source is the product
+of the factors in (14). It is nonzero. The word is mixed: if there are
+R resources then k=sum_r m_r>=2R, while the cycle changes at most R
+components and at least one.
+
+Thus **all complete-tripartite resource decompositions are excluded**
+under the full component target, at arbitrary resource sizes and
+arbitrary complex factors. This is a reusable downstream implication.
+The missing upstream statement is a source-derived decomposition for
+general larger ports; the theorem above proves it only when every port
+has at most two edges. No general decomposition is assumed.
+
+## Exact control for the use of the additional global word
+
+The additional global row cannot be omitted. The portable
+[repeated-port control](verify_protected_scaffold_common_star_repeated_port_control.py)
+constructs k=14 components over Q(sqrt(3)). Index components by
+(p,i) in Z/7 x {0,1}, put t=(0,1,3), and label the component edge from
+(p,i) to (p+t_b-t_a,j) by (a,b). The six nonzero differences are distinct,
+so every component pair has at most one label. Each ordered port has two
+edges. For each ordered color pair choose the vector z_ab=(1,1) when b is
+the smaller of the other colors, and z_ab=(1,2+sqrt(3)) otherwise. Set
+
+```
+a_edge=z_ab[i] z_ba[j],       b_edge=-1/(2 a_edge).
+```
+
+The actual 56-vertex physical hafnian and a separate component double-
+hafnian evaluation both give the required three constants, 84 singleton
+rows and 1092 double rows, including equal changed colors. Their finite
+replay corroborates this exact subsystem control; it is not the proof of
+the all-order theorem. The alternating fiber word x_(p,i)=i instead has
+full component source 2^(-7)=1/128. A separate four-minority word has
+source 1/4. Thus this is neither a Q4 model nor a full GHZ witness.
+
 ## Remaining Q4 boundary
 
-Together the two obstructions require both triangles and the specified
-local port repetition in any common-star filling satisfying the global
-component targets. They give necessary conditions, not a sufficiency
-claim. Both use literal component-constant sources, which are supplied by
-Q4, and make no normal-form assertion about arbitrary hollow fillings.
+Any common-star filling satisfying all component targets must have every
+port of size at least two and at least one port of size at least three.
+Its state-graph edges must have coherent third-color triangles. These
+necessary conditions are not sufficient. The shared-neighbor identity
+(10) retains the interference terms which will be needed beyond the
+two-port resource decomposition. The complete-resource consumer (14)
+closes any larger-port branch for which that decomposition can actually
+be proved; it does not supply the decomposition itself.
 
-This closes the proposed triangle-free common-star construction route
-and its extension to arbitrary triangles with unique ordered ports. It
-does not eliminate common-star arrays with interacting triangles and
-repeated ports, classify general protected fillings, or resolve the
-all-k Q4 parent.
+The exact parent attempt and its next obstruction are recorded in
+[the common-star Q4 parent](../../docs/strategy/common-star-q4-parent-attempt-2026-09-14.md).
+General common-star arrays with larger ports, arbitrary protected
+fillings, Q4 and the global Krenn--Gu conjecture remain open. No arbitrary
+witness-to-common-star reduction is claimed.
