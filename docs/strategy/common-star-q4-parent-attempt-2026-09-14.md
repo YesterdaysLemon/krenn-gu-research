@@ -189,7 +189,7 @@ BS: For every finite common-star array over C in the support class above,
     complete bipartite.
 ```
 
-BS is **open**. Its upstream supply is still a full CSQ4 array; its named
+At this checkpoint BS was **open**. Its upstream supply is still a full CSQ4 array; its named
 downstream consumer is PSCS (15), so a proof would close CSQ4. The RCS
 countercontrol has the BS conclusion for all three pairs, despite the
 failure of tripartite alignment. Thus it tests and survives the revised
@@ -209,3 +209,93 @@ matching-union dichotomy. Neither has received the independent promotion
 audit in this checkpoint, and neither is imported as a new theorem or
 arbitrary-witness reduction here. They remain research leads outside the
 accepted PSCS/PSRA claims.
+
+## Next parent: retain the entire binary component target
+
+The subsequent BS investigation has an exact countercontrol constructed by
+overlapping two invertible blocks and coupling two color-permuted matrix
+triples. Its independently accepted owning record is
+[the binary-supply no-go](../../claims/arbitrary-order/PROTECTED_SCAFFOLD_COMMON_STAR_BINARY_SUPPLY_NO_GO.md).
+Its 6000-component physical array satisfies S1, both S2 and all U4, while
+every binary connected support component is noncomplete. Its explicit
+remaining source is (-463/2592)^600. Dedicated independent algebra and
+physical-cover audits accept this as a refutation of BS only. It does not
+refute the conditional consumer, CSQ4 or Krenn--Gu. The frontier delta is
+recorded at PSBS, and the corresponding claims' earlier review scopes
+remain pinned rather than silently extended.
+
+Before dispatching the next direct parent investigation, fix the proposed
+obligation FB: no common-star array in the exact support class above can
+satisfy S1, both S2 families, and every binary component-constant target
+for each of the three unordered color pairs. Its upstream supply is a
+full CSQ4 witness. Its named downstream consumer is exclusion of CSQ4
+itself; U4 or a resource normal form would not be needed if FB were proved.
+
+For one fixed ordered color pair and a component cut S, retain the actual
+source identity
+
+```
+F_ab(S)=sum_(I subset S, J subset S^c, |I|=|J|)
+             permanent(A_ab[I,J]) permanent(B_ab[I,J]).
+```
+
+Here S has color a, its complement color b, and the matrices are the
+actual center and leaf factors at those states. This is the bipartite
+specialization of the exact two-hafnian component source. FB must use
+all cuts, not just singletons or doubletons, and all three colors remain
+coupled through the same physical array.
+
+A sharp competing control prevents an immediate false proof. With only
+two colors, orient a simple directed cycle of length at least three,
+label every arc (a,b) and give each gadget q=-1. For every nonconstant
+binary word, its compatible arcs form a nonempty matching, so its source
+has a factor 1+q=0; both pure sources are one. Thus a binary target alone
+is possible in this construction. Its ports have size one and it lacks
+the third-color S1/S2 supply. The three-color no-unique-port theorem is
+therefore a potentially load-bearing input, not an optional assumption.
+
+Success for FB is a proof, an exact physical countercontrol to this full
+antecedent with the remaining ternary failure exhibited, or a precise
+obstruction to a named proposed implication. A proof that full binary
+targets force at least one singleton port would suffice together with
+PSCS's no-singleton-port result, but that implication is not assumed.
+The earlier active-matching and degree-one controls must both be retained.
+The initial investigation is scratch research, not another local theorem
+package or a claim that the global conjecture has been reduced to FB.
+
+## Final bounded handoff and stop
+
+The owner requested completion and publication of this chunk, followed by
+wind-down on 2026-09-14. No new research lane is authorized by the persistent
+goal after that stop instruction. The accepted mathematical endpoint is
+PSCS's conditional consumer and the exact RCS/BS supply refutations.
+FB has neither a proof nor an exact countercontrol in this run.
+
+The final investigation restated the full cut target as the multiaffine
+identity, for independent variables p_u,
+
+```
+sum_(I,J disjoint, |I|=|J|) per(A[I,J]) per(B[I,J])
+        product_(i in I) p_i product_(j in J) (1-p_j)
+    = product_u p_u + product_u (1-p_u).
+```
+
+It follows by taking the expectation of the exact cut formula under
+independent Bernoulli colors; conversely, specialize p_u to zero or one
+to recover every cut. Setting all p_u=p gives only the weaker coefficient
+constraints C_r=(-1)^r k/(k-r) binom(k-r,r), obtained by expanding
+p^k+(1-p)^k in powers of p(1-p). This averaged specialization must not
+replace the full identity.
+
+One sufficient open lemma would force a degree-one state from the full
+binary identity. Coupled with the third-color no-singleton-port theorem,
+it would prove FB. This is a proposed sufficient route, not an established
+equivalence or theorem. A possible investigation is to localize a theta
+in the binary graph augmented by the component matching while retaining
+all exterior permanent terms. No such localization lemma was proved;
+the directed-cycle and exact tensor controls must remain sharp tests.
+These reformulations alone are not additional proof-distance progress.
+
+All research workers have been instructed to finish and relinquish their
+processes. Publication and validation may complete after this record; no
+further mathematical search is part of the wind-down.

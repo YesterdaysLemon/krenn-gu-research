@@ -12,6 +12,11 @@ global statement.
 maintained map of the live proof topology, open leaves, and refuted routes.
 Owning theorem documents remain authoritative for mathematical statements.
 
+The [2026-09-14 review handoff](docs/strategy/source-coupled-resolution-review-2026-09-14.md)
+summarizes the published source-coupled cancellation chunk and its exact
+resource-supply obstructions. The research run is stopped at the owner's
+request; its proposed full binary-source parent remains open.
+
 For the next coordinated research run, use the dated
 [`fibre-exact targets brief`](docs/strategy/fibre-exact-targets-2026-09-01.md),
 which builds on the earlier

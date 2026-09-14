@@ -148,7 +148,11 @@ The audit imports neither repository encoder code nor `python-sat`. It passed
 checking all proof identities. It does not implement a second DRAT checker;
 proof semantics remain the pinned checker leaf.
 
-The portable archive is deliberately outside ordinary Git history:
+The portable archive is deliberately outside ordinary Git history. The
+owner-authorized 2026-09-14 publication distributes these same pinned bytes
+as a [release asset](https://github.com/YesterdaysLemon/krenn-gu-research/releases/download/research-2026-09-14/n10-all-diagonal-rzp-20260913-v2.zip).
+The archive and both original replay receipts were rehashed before upload;
+publication does not represent a fresh thirteen-proof DRAT run.
 
 ```text
 filename = n10-all-diagonal-rzp-20260913-v2.zip
@@ -195,8 +199,8 @@ independent-audit.json
   occurrence theorem and no source-preserving reduction for general `n`.
 - The thirteen branches are an exhaustive cover of selected support-matching
   normal forms, not an enumeration of weighted graphs.
-- Large proof bytes remain outside ordinary Git. Distribution or publication
-  is a separate owner action.
+- Large proof bytes remain outside ordinary Git and are distributed in the
+  linked release under the owner's explicit publication instruction.
 
 The parent obligation is exact all-diagonal weighted Bogdanov at every even
 order. The upstream bridge is the all-diagonal factorization above; the named

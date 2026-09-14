@@ -12,7 +12,9 @@ The [two-port review](../../docs/audits/PROTECTED_SCAFFOLD_COMMON_STAR_TWO_PORT_
 independently audits the shared-neighbor identity, the source-derived
 resource decomposition and the additional global-word contradiction.
 The [resource-alignment review](../../docs/audits/COMMON_STAR_RESOURCE_ALIGNMENT_REVIEW_2026-09-14.md)
-audits the later binary-resource extension (15). Earlier reviews pin the
+audits the later binary-resource extension (15). The
+[binary-supply review](../../docs/audits/COMMON_STAR_BINARY_SUPPLY_REVIEW_2026-09-14.md)
+records the subsequent refutation of its proposed local supply. Earlier reviews pin the
 versions they actually inspected, rather than certifying subsequent edits.
 
 This result rejects a declared construction route for the
@@ -511,8 +513,10 @@ The [exact alignment countercontrol](PROTECTED_SCAFFOLD_COMMON_STAR_RESOURCE_ALI
 satisfies S1, S2 and the entire physical U4 system. All its binary graphs
 are biclique unions, but their partitions do not align across three colors.
 Thus full tripartite alignment does not follow from those inputs; it is
-also unnecessary for this consumer. Whether the inputs force a biclique
-union for at least one color pair remains open.
+also unnecessary for this consumer. The subsequent
+[binary-supply countercontrol](PROTECTED_SCAFFOLD_COMMON_STAR_BINARY_SUPPLY_NO_GO.md)
+refutes even the assertion that these inputs force a biclique union for
+at least one color pair. The consumer itself remains valid.
 
 ## Exact control for the use of the additional global word
 
@@ -548,8 +552,9 @@ necessary conditions are not sufficient. The shared-neighbor identity
 (10) retains the interference terms which will be needed beyond the
 two-port resource decomposition. The weaker binary-resource consumer (15)
 closes any larger-port branch with a proved complete decomposition in at
-least one color pair. Its supply is open. Full tripartite alignment from
-S1, S2 and U4 is refuted by the exact countercontrol linked above.
+least one color pair. Both tripartite and binary decomposition supply
+from S1, S2 and U4 are now refuted by exact controls. A new parent must
+retain additional global component equations or a different implication.
 
 The exact parent attempt and its next obstruction are recorded in
 [the common-star Q4 parent](../../docs/strategy/common-star-q4-parent-attempt-2026-09-14.md).

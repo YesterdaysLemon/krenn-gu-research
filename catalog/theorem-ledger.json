@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "d6023628faa4becd",
+      "document_sha256_16": "e78cd80b7881b72b",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -7312,7 +7312,7 @@
     {
       "name": "Ten-vertex all-diagonal recursive-hafnian zero-pattern exclusion (RZP10)",
       "document": "claims/finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "12b175bb324f1dc0",
+      "document_sha256_16": "240f656b44e43842",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "finite computer-assisted exact exclusion for all-diagonal ternary complex witnesses on exactly ten vertices",
@@ -7548,7 +7548,7 @@
     {
       "name": "Common-star one-binary-resource exclusion and source coupling (PSCS)",
       "document": "claims/arbitrary-order/PROTECTED_SCAFFOLD_COMMON_STAR_COMPONENT_TARGET_OBSTRUCTION.md",
-      "document_sha256_16": "32813b338296b2b9",
+      "document_sha256_16": "e32784ed8faa2898",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "C; n=4k,k>=2 protected K4 components; simple component graph with one unequal endpoint-colour label per edge and exactly two nonzero common-centre/selected-leaf factors per gadget.",
@@ -7558,17 +7558,17 @@
         "The full component target is excluded if just one binary state graph is a union of complete bicliques. S1 balances the blocks, S2 excludes size one, and a directed binary-resource cycle gives a mixed word with nonzero star-factor product. In particular, ports for just one unordered color pair bounded by two suffice, with all other degrees unrestricted.",
         "The general component source is a sum of products of two hafnians on the same subset. Its ordinary matching-partition specialization is used only on forests; exact cycle and triangle controls expose the difference.",
         "Direct arbitrary-order proofs and independent adversarial review are supplied. Exact finite rational and Q(sqrt(3)) physical replays are companion checks. The 56-vertex control passes singleton and double rows but has a mixed component source 1/128 and U4 source 1/4; it is not a Q4 witness.",
-        "The proposed S1+bothS2+fullU4 supply of complete tripartite resources is refuted by PSRA. Whether those inputs force a complete biclique decomposition for at least one color pair (BS) remains open; no arbitrary-witness normal form is supplied."
+        "Both proposed S1+bothS2+fullU4 supplies, complete tripartite alignment RCS and any binary biclique decomposition BS, are refuted by PSRA/PSBS. The conditional consumer remains valid. Full binary-source parent FB and arbitrary-witness coverage remain open."
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_protected_scaffold_common_star_repeated_port_control.py",
       "verifier_provenance": "companion_point_check_script",
       "independent_audit": "claims/arbitrary-order/audit_protected_scaffold_common_star_two_port.py",
       "audit_provenance": "independent_exact_identity_audit",
-      "review": "docs/audits/COMMON_STAR_RESOURCE_ALIGNMENT_REVIEW_2026-09-14.md",
+      "review": "docs/audits/COMMON_STAR_BINARY_SUPPLY_REVIEW_2026-09-14.md",
       "expected_runtime": "seconds for exact finite controls; arbitrary-order statements use written proofs",
       "external_binaries": [],
-      "note": "Earlier source and two-port reviews retain their historical pinned scope. The resource-alignment review independently audits the new binary consumer. This weakens the required resource supply; BS, CSQ4, arbitrary protected fillings and global Krenn-Gu remain open. No Lean formalization or external theorem import.",
+      "note": "Earlier reviews retain their pinned scope; the binary-supply review audits only the later boundary update as well as PSBS. The source consumer is not withdrawn. FB, CSQ4, arbitrary protected fillings and global Krenn-Gu remain open; no Lean formalization.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
@@ -7577,7 +7577,7 @@
     {
       "name": "Full four-minority common-star resource alignment no-go (PSRA)",
       "document": "claims/arbitrary-order/PROTECTED_SCAFFOLD_COMMON_STAR_RESOURCE_ALIGNMENT_NO_GO.md",
-      "document_sha256_16": "c8d53491b56d66c6",
+      "document_sha256_16": "0f58eb58caa050fb",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "Exact Q(sqrt(3)) physical array within the simple one-label common-star protected-K4 support class; n=2880, k=720, 10080 gadgets with two nonzero factors each.",
@@ -7586,7 +7586,7 @@
         "Exact local matrix identities assemble through unique state-resource membership and the one-label exterior-product cancellation. Global S2 is proved through this bridge, not exhaustive large-word hafnian enumeration.",
         "The SL(2,F5) realization has 120 connected state components with 18 vertices and 84 edges each, noncomplete relative to K_(6,6,6). This refutes RCS: S1+bothS2+U4 imply complete tripartite alignment.",
         "The mixed clone word has literal physical amplitude 2^(-360), replayed on 360 four-cycles and 720 isolated edges. The array is not a CSQ4 model or Krenn-Gu counterexample.",
-        "Each binary support is nevertheless a union of bicliques; the weaker sufficient supply BS remains open. An independent reconstruction and adversarial proof review with orientation, incoherent-triangle and size-one-cycle controls are supplied."
+        "Each binary support is nevertheless a union of bicliques. The weaker supply BS left open by this control is subsequently refuted by PSBS. The original construction/U4 proof are unchanged; the later review pins the updated boundary."
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_common_star_resource_alignment_control.py",
@@ -7596,7 +7596,35 @@
       "review": "docs/audits/COMMON_STAR_RESOURCE_ALIGNMENT_REVIEW_2026-09-14.md",
       "expected_runtime": "seconds for exact finite replay; U4 and assembly completeness use written proofs",
       "external_binaries": [],
-      "note": "Exact refutation of the declared parent supply mechanism, paired with the weaker PSCS binary consumer. Independent agents in the same research session, not separate-human refereeing or Lean kernel checking. Global Krenn-Gu remains UNRESOLVED.",
+      "note": "Exact RCS mechanism refutation, paired with the PSCS binary consumer. The original audit remains pinned to its reviewed bytes; PSBS supplies the subsequent BS refutation and boundary review. Independent agents in the same research session, not separate-human refereeing or Lean kernel checking. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Full four-minority common-star binary resource supply no-go (PSBS)",
+      "document": "claims/arbitrary-order/PROTECTED_SCAFFOLD_COMMON_STAR_BINARY_SUPPLY_NO_GO.md",
+      "document_sha256_16": "27578b436d01f98a",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "Exact Q(sqrt(3)) array in the simple one-label common-star protected-K4 support class: n=24000, k=6000, 312480 gadgets, each with two nonzero factors.",
+        "All singleton-component targets, both same-color and distinct-color double-component targets, and every full physical source equation through four minorities hold by exact shared matrix identities and the written assembly/U4 bridges.",
+        "Overlapping embedded invertible blocks give an orthogonal relative-inverse matrix with connected noncomplete support. A signed tensor triple and two-clone lift retain all source identities while every binary connected component is noncomplete.",
+        "The exact finite SL(2,F5) cover has 423360 component triangles, all explicitly enumerated coherent by primary and independent cover replays. The U4 classification, rather than an enumeration of all physical words, proves completeness.",
+        "The literal full binary word splits into 600 scalar 20-vertex cores and 6000 isolated edges. Each core has hafnian -463/2592 and 6130 supported matchings; independent hafnian, bipartite permanent and minor-permanent routes agree. The full source (-463/2592)^600 is nonzero.",
+        "This refutes BS: S1+bothS2+fullU4 imply at least one binary biclique decomposition. It does not refute the PSCS conditional consumer, CSQ4 or Krenn-Gu; the construction explicitly fails a global component target.",
+        "Dedicated independent algebra and full physical-cover audits, mutation controls and adversarial proof review are supplied. No numerical/modular premise, external solver, external theorem import or Lean formalization is used."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_common_star_binary_resource_supply_control.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": "claims/arbitrary-order/audit_common_star_binary_resource_supply_control.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/COMMON_STAR_BINARY_SUPPLY_REVIEW_2026-09-14.md",
+      "expected_runtime": "seconds for exact algebra and full-cover replays; all-source assembly uses written proofs",
+      "external_binaries": [],
+      "note": "Separate independent physical-cover companion: claims/arbitrary-order/audit_common_star_binary_resource_cover.py. This removes the weakened local supply mechanism; full binary-source parent FB remains open. Research winds down at owner request after publication. Global Krenn-Gu remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,

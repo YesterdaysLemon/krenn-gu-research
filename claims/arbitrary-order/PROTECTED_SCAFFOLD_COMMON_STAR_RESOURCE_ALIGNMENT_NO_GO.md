@@ -254,8 +254,13 @@ binary resources gives a nonzero mixed word using only colors a,b.
 
 The new supply question BS asks whether S1+S2+U4 implies this property for
 at least one color pair. The present countercontrol satisfies that weaker
-property for all three pairs, so it does not refute BS. BS is open; it
-is not inferred from this example or from pairwise neighborhood counts.
+property for all three pairs, so it does not refute BS. BS was open at
+this claim's original reviewed checkpoint. The subsequent
+[binary-supply no-go](PROTECTED_SCAFFOLD_COMMON_STAR_BINARY_SUPPLY_NO_GO.md)
+refutes it using a different exact control with no binary biclique union.
+The original independent review pins this claim's earlier bytes; the
+subsequent [review](../../docs/audits/COMMON_STAR_BINARY_SUPPLY_REVIEW_2026-09-14.md)
+records this boundary update. The U4 proof and RCS construction are unchanged.
 The [parent record](../../docs/strategy/common-star-q4-parent-attempt-2026-09-14.md)
 tracks this change of implication. Arbitrary protected fillings and an
 arbitrary-witness reduction remain separate open obligations.
