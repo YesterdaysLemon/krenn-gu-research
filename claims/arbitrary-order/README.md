@@ -1,5 +1,12 @@
 # Arbitrary-order claim artifacts
 
+The [two-slice shared-hafnian transfer obstruction](TWO_SLICE_SHARED_HAFNIAN_TRANSFER_OBSTRUCTION.md)
+gives a division-free conditional identity for every even n>=4. Two full colour
+slices must share the same induced hafnian; exploiting that coupling excludes
+the stated 4(n-4)+2-zero/two-nonzero pattern. Its eight-vertex instance excludes
+the latest two-edge-orbit Boolean survivor. Guard occurrence and parent coverage
+remain open; this is not an all-order nonexistence theorem.
+
 This directory owns the 352 arbitrary-order files migrated in Stage 27:
 122 claim documents and 230 primary, audit, or other claim-owned scripts.
 Stage 33 added twelve directly owned arbitrary-order artifacts and preserved

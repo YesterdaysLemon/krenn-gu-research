@@ -1,5 +1,14 @@
 # Eight-vertex packages
 
+The [two-edge surplus-shore theorem](EIGHT_VERTEX_TWO_EDGE_SURPLUS_SHORE_EXCLUSION.md)
+now excludes the original 134-entry projection using fifteen zeros and two
+nonzeros. Its four-source degree-six identity goes beyond the complete
+[degree-five module limitation](EIGHT_VERTEX_DEGREE_FIVE_SOURCE_MODULE_LIMITATION.md).
+A new Boolean support survives its full pattern orbits, and is excluded by the
+[shared-hafnian two-slice transfer](../../arbitrary-order/TWO_SLICE_SHARED_HAFNIAN_TRANSFER_OBSTRUCTION.md)
+with eighteen zeros and two nonzeros. Both are conditional physical families;
+unrestricted eight-vertex and all-order coverage remain open.
+
 The [134-entry physical boundary-quotient probe](EIGHT_VERTEX_PHYSICAL_BOUNDARY_QUOTIENT_134_LIMITATION.md)
 reconstructs an exact source consequence, exhausts its allowed relabellings on
 the preserved support, and transports every resulting live binomial through

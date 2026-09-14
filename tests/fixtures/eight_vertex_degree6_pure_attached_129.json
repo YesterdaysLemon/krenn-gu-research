@@ -1,0 +1,62 @@
+{
+  "schema": "n8-degree6-pure-attached-cross-grade-coupling-v1",
+  "status": "PASS",
+  "outcome": "EXACT_ABSENCE_OF_MONOMIAL_IN_COMPLETE_PURE_ATTACHED_ROW_SPACE",
+  "support": {
+    "path": "tests/fixtures/eight_vertex_two_slice_parent_survivor.json",
+    "raw_sha256": "48f7913c27a95f5f4bf84be4a78c19030718284644d4a59db1f9e35659be84af",
+    "declared_status": "SAT_ABSTRACTION_NOT_WEIGHTS",
+    "declared_scope": "Boolean necessary model, not weights",
+    "live_entry_count": 129,
+    "lf_sha256": "d89d7a498c1a65a177f943aae774543985eef106c5067405648336b97c73b9d6"
+  },
+  "declared_space": {
+    "coefficient_field": "Q",
+    "quadratic_multipliers": 8385,
+    "target_grade_rule": "all endpoint-colour grades equal to a live quadratic multiplier times at least one pure target word",
+    "mixed_only_unattached_grades_included": false,
+    "rho_used": false,
+    "division_used": false,
+    "cofactor_abstraction_used": false
+  },
+  "exact_elimination": {
+    "high_grade_blocks": 20280,
+    "source_rows": 142328,
+    "high_rank_sum": 142328,
+    "high_kernel_dimension": 0,
+    "nonzero_low_relations": 0,
+    "zero_full_dependencies_after_high_elimination": 0,
+    "global_low_rank": 0,
+    "global_low_singletons": 0,
+    "high_blocks_checked_mod_global_low_space": 20280,
+    "block_row_count_histogram": {
+      "1": 857,
+      "2": 3202,
+      "3": 939,
+      "4": 4069,
+      "5": 804,
+      "6": 2355,
+      "7": 22,
+      "8": 2849,
+      "9": 466,
+      "10": 768,
+      "11": 34,
+      "12": 1705,
+      "13": 12,
+      "14": 44,
+      "16": 881,
+      "17": 54,
+      "18": 297,
+      "19": 14,
+      "20": 501,
+      "21": 14,
+      "22": 47,
+      "24": 250,
+      "32": 40,
+      "36": 24,
+      "40": 32
+    }
+  },
+  "certificate": null,
+  "interpretation": "The conclusion concerns every q*P_word row in a high grade that can meet a pure word for the supplied support. It does not claim absence from mixed-only degree-six grades or from the full target ideal."
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "eight-vertex-physical-degree6-identity-v1",
+  "n": 8,
+  "field": "any field",
+  "family": "two-slice-shared-cofactor-transfer",
+  "parameters": {
+    "base_colour": 2,
+    "x_colour": 0,
+    "z_colour": 0,
+    "first_slice_colour": 1,
+    "boundary_vertices": [0, 5, 6, 7],
+    "bulk_vertices": [1, 2, 3, 4]
+  },
+  "entry_families": {
+    "A_a": "W05[a,2]",
+    "B_a": "W06[a,1]",
+    "C_d": "W57[2,d]",
+    "D_d": "W67[2,d]",
+    "A": {"0": 39, "2": 45},
+    "B": {"0": 47, "2": 53},
+    "C": {"0": 241, "2": 243},
+    "D": {"0": 250, "2": 252}
+  },
+  "zero_entry_ids": [
+    99,
+    107,
+    115,
+    117,
+    144,
+    152,
+    160,
+    162,
+    180,
+    188,
+    196,
+    198,
+    207,
+    215,
+    223,
+    225,
+    233,
+    234
+  ],
+  "nonzero_entry_ids": [47, 241],
+  "target_monomial": [47, 241],
+  "sources": [
+    {"word": "22222212", "multiplier": [39, 250], "coefficient": 1},
+    {"word": "22222210", "multiplier": [39, 252], "coefficient": -1},
+    {"word": "02222212", "multiplier": [45, 250], "coefficient": -1},
+    {"word": "02222210", "multiplier": [45, 252], "coefficient": 1},
+    {"word": "22222222", "multiplier": [47, 241], "coefficient": -1},
+    {"word": "22222220", "multiplier": [47, 243], "coefficient": 1},
+    {"word": "02222222", "multiplier": [53, 241], "coefficient": 1},
+    {"word": "02222220", "multiplier": [53, 243], "coefficient": -1}
+  ],
+  "equation_convention": "P_word=T_W(word)-1 for pure words, T_W(word) otherwise",
+  "identity": "sum(source.coefficient * source.multiplier * P_word) = B_x*C_z",
+  "uses_boundary_relation": false,
+  "requires_nonzero_proper_cofactor": false,
+  "cofactor_divisions": 0
+}
