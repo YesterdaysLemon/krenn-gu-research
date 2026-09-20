@@ -106,6 +106,54 @@ The proof-topology delta is a new full-cut reduction and a stronger
 conditional consumer, together with a sharp no-go for a face-only closure.
 It closes neither FB nor CSQ4 and supplies no arbitrary-witness normal form.
 
+## Two-sided synthesis and exact obstruction
+
+The next proposed synthesis added the opposite binary cycle face and every
+binary singleton/same-color double target. The
+[two-sided cycle control](../../claims/arbitrary-order/PROTECTED_SCAFFOLD_TWO_SIDED_BINARY_CYCLE_NO_GO.md)
+refutes the assertion that these constraints are already inconsistent.
+It uses nine components and 27 actual shared-factor gadgets. Both localized
+three-cycle systems, both full cycle faces, and all 90 cuts of sizes
+1,2,7,8 hold exactly over an explicitly nondegenerate algebraic tower.
+Independent triangular reduction and literal 36-vertex matching recursion
+agree with the permanent-product source.
+
+The source for the exterior-changing word 001011111 is nevertheless
+(r^2+1)/(12r), nonzero for every admitted parameter choice. There are no
+color-2 gadgets, so the third-color singleton and distinct-color S2 supply
+is absent. This is not a control for the full FB antecedent. It pinpoints
+the next load-bearing step: use further full cuts that change exterior
+components, or couple the internal defect to the third color. A proof
+must retain unequal center/leaf matchings; preserving all gadget products
+while changing their two factors can break the double targets.
+
+This second delta is an exact no-go for a named parent synthesis, not an
+additional sibling support census. Its independent audit is separate-agent
+review in this session, not a separate-human or Lean proof. The original
+PSCL theorem and reviewed files remain unchanged.
+
+## Final synthesis and stopping point
+
+The last analytic step derives the
+[exterior-coupling identities](full-binary-exterior-coupling-obligation.md).
+Changing an extra cycle neighbor adds a row, and may also remove a column
+from the same resource. Exact Laplace expansion exposes a nonzero cycle
+term and the actual mixed-permanent remainder that would have to cancel it.
+The distinct-color S2 equation substitutes a third-color contraction for
+the edge product, but no proved identity links that contraction to the
+whole binary remainder. Shortest-cycle minimality does not remove those
+exterior entries. The proposed paired exterior-coupling lemma is sufficient
+for FB and explicitly open.
+
+This is the impasse reached by the current bounded parent attempt. No
+three-color countercontrol to the new lemma or proof of its incompatibility
+was found. The accepted localization and the two exact mechanism no-go
+results form a completed, reviewable chunk; the repository owner's request
+is to publish that chunk and then stop. No additional lane is authorized
+by the persistent goal after that stop. The
+[review handoff](full-binary-cycle-review-2026-09-20.md) states exactly
+what another model should audit and which implication remains unproved.
+
 ## Bounded external-source inspection
 
 Searches on 2026-09-20 used "GHZ weighted graphs dimension two perfect
