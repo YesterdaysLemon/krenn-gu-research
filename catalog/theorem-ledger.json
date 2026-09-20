@@ -7629,6 +7629,33 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Full binary induced-cycle localization and all-length face-only no-go (PSCL)",
+      "document": "claims/arbitrary-order/PROTECTED_SCAFFOLD_FULL_BINARY_CYCLE_LOCALIZATION.md",
+      "document_sha256_16": "b2e2b147d4afbb39",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "Pointwise over C, finite k>=2, exactly the common-star protected-K4 one-label simple-component construction, with two nonzero factors on each supported gadget.",
+        "For a fixed color pair, the complete binary component targets force every proper induced directed cycle to have both states of every cycle component inside one binary resource. No averaged target, independent cofactor, or exterior nonzero assumption is substituted.",
+        "The complete proper-subset exterior contractions are fixed by exact matching-row deletion; the full-cycle contraction must vanish. These are necessary conditions, not an equivalence with FB.",
+        "If each binary resource has disjoint physical shores, full binary feasibility is exactly one directed Hamilton cycle with all gadget products -1. Three-color S1 and both S2 exclude its singleton ports via PSCS.",
+        "For every r>=3 an exact algebraic construction on 2r-1 components satisfies the entire one-sided binary cycle face while an outside singleton has source one. This refutes face-only closure at every cycle length, not FB or the global conjecture.",
+        "Written all-order proofs, independent separate-agent review, exact physical/permanent finite checks, and scientific mutation controls are supplied. No external theorem import or Lean formalization is used."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_common_star_binary_cycle_localization.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": "claims/arbitrary-order/audit_common_star_binary_cycle_localization.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/COMMON_STAR_BINARY_CYCLE_LOCALIZATION_REVIEW_2026-09-20.md",
+      "expected_runtime": "seconds for finite exact companions; arbitrary-order claims use written proofs",
+      "external_binaries": [],
+      "note": "New full-cut parent reduction and stronger conditional consumer. The exact all-length control preserves the missing exterior-varying target obligation. FB, CSQ4, arbitrary-source coverage, and global Krenn-Gu remain open.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
