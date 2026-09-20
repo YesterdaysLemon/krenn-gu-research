@@ -1,0 +1,35 @@
+{
+  "activity_kind": "scoped-package",
+  "agent": {
+    "name": "Codex",
+    "role": "research integration"
+  },
+  "artifacts": [
+    {
+      "kind": "commit",
+      "label": "Accepted cycle parent checkpoint",
+      "url": "https://github.com/YesterdaysLemon/krenn-gu-research/commit/ab14f1f2dab488f80983dd3efd4fec3ca1e20bc0"
+    },
+    {
+      "kind": "blob",
+      "label": "Short independent review handoff",
+      "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/ab14f1f2dab488f80983dd3efd4fec3ca1e20bc0/docs/strategy/full-binary-cycle-review-2026-09-20.md"
+    }
+  ],
+  "corrects_entry": null,
+  "entry_id": "5463dd22f48b825e7de5534f1d1f1536bacc9c86675ef1b0e1ebc3677bdbcd72",
+  "global_status": "UNRESOLVED",
+  "lane": "common-star full binary source parent",
+  "nonclaim": "The paired exterior-coupling lemma, FB, CSQ4, arbitrary-witness coverage and global Krenn-Gu remain open; the nine-component control lacks third-color S1 and distinct-color S2.",
+  "recorded_at": "2026-09-20T20:16:51Z",
+  "schema_version": 1,
+  "scope": "Pointwise complex common-star arrays: a stronger disjoint-shore consumer, an all-length one-face control, and a nine-component two-sided binary control with 90 exact low-order cuts and a nonzero three-component failure.",
+  "summary": "Full binary targets localize induced cycles to one state resource, while exact one-face and two-sided low-order controls expose the remaining exterior-coupling gap.",
+  "tags": [
+    "full-binary-source",
+    "cycle-localization",
+    "exact-control",
+    "open-parent"
+  ],
+  "typed_status": "scoped-repository-evidence"
+}
