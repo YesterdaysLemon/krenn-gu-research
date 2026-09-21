@@ -1,0 +1,41 @@
+{
+  "activity_kind": "scoped-package",
+  "agent": {
+    "name": "Codex",
+    "role": "Research coordinator with separate-agent proof review"
+  },
+  "artifacts": [
+    {
+      "kind": "blob",
+      "label": "Full-source extension barriers",
+      "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/109d442f223d77f91853339b2fdc89d3d745c395/claims/arbitrary-order/PROTECTED_SCAFFOLD_FULL_SOURCE_EXTENSION_BARRIERS.md"
+    },
+    {
+      "kind": "blob",
+      "label": "Independent review",
+      "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/109d442f223d77f91853339b2fdc89d3d745c395/docs/audits/PROTECTED_FULL_SOURCE_EXTENSION_REVIEW_2026-09-20.md"
+    },
+    {
+      "kind": "blob",
+      "label": "Parent attempt and exact remaining step",
+      "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/109d442f223d77f91853339b2fdc89d3d745c395/docs/strategy/protected-full-source-parent-attempt-2026-09-20.md"
+    }
+  ],
+  "corrects_entry": null,
+  "entry_id": "f3493c8236c6f2af1b7a4329abc59559ba54ef02b229a04ee12962779df2f95b",
+  "global_status": "UNRESOLVED",
+  "lane": "arbitrary protected full-source parent",
+  "nonclaim": "No full protected-scaffold witness is excluded by these new barriers, and no arbitrary-witness normal form is supplied. The exact controls fail full physical targets; full-source cut supply and SFULL remain open.",
+  "recorded_at": "2026-09-21T01:30:15Z",
+  "schema_version": 1,
+  "scope": "Exact six-parameter n=8 AB controls; all-order no-cut theorem under invertible intercomponent blocks; protected diagonal frozen-core theorem for any number of components. The k>=5 generic corollary inherits the existing scaffold owner.",
+  "summary": "After the common-star closure, exact controls pass all uniform-leaf equations, invertible crossing blocks obstruct factorizing cuts, and support rescaling freezes component-level cancellation terms. Full split-leaf consistency remains open.",
+  "tags": [
+    "full-source",
+    "parent-attempt",
+    "mechanism-obstruction",
+    "exact-controls",
+    "independent-review"
+  ],
+  "typed_status": "scoped-repository-evidence"
+}
