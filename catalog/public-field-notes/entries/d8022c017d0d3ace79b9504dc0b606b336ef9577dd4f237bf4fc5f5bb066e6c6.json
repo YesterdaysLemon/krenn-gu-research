@@ -1,0 +1,41 @@
+{
+  "activity_kind": "scoped-package",
+  "agent": {
+    "name": "Codex",
+    "role": "Research coordinator with independent proof review"
+  },
+  "artifacts": [
+    {
+      "kind": "blob",
+      "label": "All-order common-star proof",
+      "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/8a949e3f1715f8021da5428b7ea7bcc6e4c960e3/claims/arbitrary-order/PROTECTED_SCAFFOLD_COMMON_STAR_FULL_SOURCE_EXCLUSION.md"
+    },
+    {
+      "kind": "blob",
+      "label": "Independent proof review",
+      "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/8a949e3f1715f8021da5428b7ea7bcc6e4c960e3/docs/audits/COMMON_STAR_FULL_SOURCE_EXCLUSION_REVIEW_2026-09-20.md"
+    },
+    {
+      "kind": "blob",
+      "label": "Compact model-review handoff",
+      "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/8a949e3f1715f8021da5428b7ea7bcc6e4c960e3/docs/strategy/common-star-full-source-review-2026-09-20.md"
+    }
+  ],
+  "corrects_entry": null,
+  "entry_id": "d8022c017d0d3ace79b9504dc0b606b336ef9577dd4f237bf4fc5f5bb066e6c6",
+  "global_status": "UNRESOLVED",
+  "lane": "common-star full physical source",
+  "nonclaim": "No arbitrary-witness or arbitrary-protected-filling normal form is supplied. Even-k CSQ4 and FB have weaker antecedents and are not proved. This is a construction-family exclusion, not global Krenn-Gu resolution.",
+  "recorded_at": "2026-09-21T01:01:35Z",
+  "schema_version": 1,
+  "scope": "Every complex one-label common-star protected-K4 array with k>=2 and two nonzero factors per gadget. Odd k already fails component-constant targets; even k requires the additional independently colored center/uniform-leaf physical words.",
+  "summary": "The full common-star construction is excluded at every order. Orthogonal contractions give a parity contradiction for odd sizes and a rank-one source versus rank-two target for even sizes. Independent review and exact physical replays passed.",
+  "tags": [
+    "common-star",
+    "full-source",
+    "all-order",
+    "branch-closure",
+    "independent-review"
+  ],
+  "typed_status": "scoped-repository-evidence"
+}
