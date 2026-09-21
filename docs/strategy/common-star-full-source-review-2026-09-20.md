@@ -75,3 +75,25 @@ python -m unittest -v tests.test_common_star_full_source_exclusion
 
 The universal quantifier comes from the written proof. Finite exact
 replays corroborate its identities and reject altered hypotheses.
+
+## Continuation: the precise remaining obstacle
+
+The [extension analysis](../../claims/arbitrary-order/PROTECTED_SCAFFOLD_FULL_SOURCE_EXTENSION_BARRIERS.md)
+checks three next routes. Exact n=8 Laurent controls satisfy every AB word
+but have nonzero split-leaf coefficients, so AB equations alone cannot
+extend the rank argument. Protected K4s with invertible crossing blocks
+have no target-visible cut-null separator, so structural hypotheses alone
+do not supply such a cut. Finally, protected diagonal support degenerations
+freeze every matching term in every component-constant word, including the
+nonempty crossing core needed to cancel its protected contribution one.
+
+The next all-order lemma would show: **any arbitrary hollow protected
+filling satisfying every AB target has a nonzero coefficient in some
+nonuniform leaf column**. Exterior matchings can cancel a local detector,
+so the n=8 examples do not prove that lemma for larger arrays. Review of
+this missing shared-factor cancellation step would be the most useful
+continuation. No arbitrary-witness-to-scaffold normal form is available.
+
+See the [parent attempt](protected-full-source-parent-attempt-2026-09-20.md)
+for exact supply, outcomes, and consultation limits. These extension
+barriers do not alter the accepted common-star theorem above.

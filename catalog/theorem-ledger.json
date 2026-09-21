@@ -7712,6 +7712,34 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Protected full-source AB, separator, and support-descent barriers (PSCE)",
+      "document": "claims/arbitrary-order/PROTECTED_SCAFFOLD_FULL_SOURCE_EXTENSION_BARRIERS.md",
+      "document_sha256_16": "627dc79238037709",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "Protected unit K4 components over C with arbitrary hollow intercomponent physical blocks; the full-source exclusion parent SFULL is still open.",
+        "The exact six-parameter n=8 Laurent families v2 and v3 satisfy all 81 center/uniform-leaf AB words. Their four-probe source equals [[2,1],[1,2]], but three explicit split-leaf words have unique nonzero Laurent monomials.",
+        "The literal arbitrary-filling projection retains every fixed internal-matching compatibility factor, BB term, mixed center-leaf transfer and degree-four crossing. AB-only extension of the common-star rank argument is refuted.",
+        "For any protected array with all intercomponent physical blocks invertible, no target-visible two-probe cut-null datum exists. Explicit rational nonwitness controls exist at every k>=2; the generic k>=5 corollary inherits only the linked scaffold theorem and its nonempty opens.",
+        "Every protected-edge-fixing diagonal degeneration with nonnegative supported crossing exponents freezes each matching monomial of every component-constant word entry by entry, through every finite sequence. Mixed component targets force a nonempty frozen crossing core; both n=8 controls have all twelve crossing entries frozen.",
+        "These are mechanism obstructions, not full-source counterexamples or arbitrary-witness normal forms. Full split-leaf cancellation consistency, full-source separator supply, SFULL and global Krenn-Gu remain unresolved.",
+        "Separate-agent proof review and two standard-library exact companions reconstruct the finite controls by different symbolic routes without importing each other. The arbitrary-order no-cut and frozen-core conclusions have written proofs. No Lean formalization is supplied."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_protected_full_source_extension.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": "claims/arbitrary-order/audit_protected_full_source_extension.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/PROTECTED_FULL_SOURCE_EXTENSION_REVIEW_2026-09-20.md",
+      "expected_runtime": "seconds for finite exact companions; arbitrary-order conclusions use the written proofs",
+      "external_binaries": [],
+      "note": "Records exact barriers from the SFULL parent attempt following PSCF. The named next obligation couples AB targets to nonuniform leaf columns through the same physical factors. No additional full-witness branch is closed.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }

@@ -8,6 +8,13 @@ construction family; arbitrary protected fillings and the global conjecture
 remain unresolved. Even-k CSQ4 and FB have weaker antecedents and are not
 claimed proved by this result.
 
+The [full-source extension barriers](PROTECTED_SCAFFOLD_FULL_SOURCE_EXTENSION_BARRIERS.md)
+show that every AB word can hold in exact nonwitness controls, that invertible
+intercomponent blocks prevent a target-visible cut-null separator, and that
+protected diagonal support descent freezes the component-constant matching
+terms. The remaining SFULL implication must use full split-leaf equations
+and their shared physical factors; arbitrary protected fillings remain open.
+
 The [fixed minority-depth no-go theorem](PROTECTED_SCAFFOLD_FIXED_MINORITY_DEPTH_NO_GO.md)
 constructs exact rational nonwitnesses passing every full source equation
 through any prescribed fixed minority depth at a sufficiently large order.
