@@ -1,5 +1,13 @@
 # Arbitrary-order claim artifacts
 
+The [full common-star source exclusion](PROTECTED_SCAFFOLD_COMMON_STAR_FULL_SOURCE_EXCLUSION.md)
+excludes every common-star protected-K4 array with k>=2 over C. Orthogonal
+center/uniform-leaf contractions give a parity obstruction for odd k and
+a rank-one source versus rank-two target for even k. This closes the full
+construction family; arbitrary protected fillings and the global conjecture
+remain unresolved. Even-k CSQ4 and FB have weaker antecedents and are not
+claimed proved by this result.
+
 The [fixed minority-depth no-go theorem](PROTECTED_SCAFFOLD_FIXED_MINORITY_DEPTH_NO_GO.md)
 constructs exact rational nonwitnesses passing every full source equation
 through any prescribed fixed minority depth at a sufficiently large order.

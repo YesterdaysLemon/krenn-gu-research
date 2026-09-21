@@ -7684,6 +7684,34 @@
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
+    },
+    {
+      "name": "Full common-star physical source exclusion by orthogonal contractions (PSCF)",
+      "document": "claims/arbitrary-order/PROTECTED_SCAFFOLD_COMMON_STAR_FULL_SOURCE_EXCLUSION.md",
+      "document_sha256_16": "0509d7013650ce2d",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "Pointwise over C, every finite k>=2, exactly the common-star protected unit K4 family: one unequal endpoint-color label per simple component edge and two nonzero actual center/selected-leaf factors.",
+        "The complete physical target supplies all independently colored center/uniform-leaf AB words. Their exact source is a sum of actual hafnian outer products with identity factors on inactive components.",
+        "Locally orthogonal contractions annihilate every proper active set. For odd k the source is zero and target 2-2^k is nonzero; component-constant targets alone already suffice in this parity.",
+        "For even k the only surviving active set is all components, hence the four source contractions form one outer product. The same target contractions have matrix [[2,1],[1,1+2^(k-2)]] and nonzero determinant 1+2^(k-1).",
+        "The k=1 protected K4 is the sharp valid full-GHZ exception. No division, positivity, genericity, resource decomposition, support-degree bound or finite-cover extrapolation is used.",
+        "This directly excludes the full physical common-star family. It does not prove FB or even-k CSQ4, whose smaller antecedents omit AB words, nor arbitrary protected-scaffold or arbitrary-witness supply.",
+        "Written all-order proof, separate-agent adversarial review, primary exact replay, independent no-import physical matching audit, and scientific support/orthogonality mutations are supplied. No external theorem, solver or Lean formalization is used."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_common_star_full_source_exclusion.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": "claims/arbitrary-order/audit_common_star_full_source_exclusion.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/COMMON_STAR_FULL_SOURCE_EXCLUSION_REVIEW_2026-09-20.md",
+      "expected_runtime": "seconds for finite exact companions; arbitrary-order exclusion uses the written proof",
+      "external_binaries": [],
+      "note": "Direct branch closure bypasses the unresolved FB/even-CSQ4 subsystem routes for the full common-star consumer. Separate agents in one research session, not independent human refereeing. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
     }
   ]
 }
