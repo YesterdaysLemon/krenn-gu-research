@@ -1,5 +1,13 @@
 # Arbitrary-order claim artifacts
 
+The [minimum crossing density theorem](PROTECTED_MINIMUM_CROSSING_DENSITY_EXCLUSION.md)
+proves that every hypothetical full protected source on k>=2 components
+has more than 6k supported crossings. Singleton macros give the lower bound;
+at equality, macro rigidity removes triangles and actual one-pair/two-pair
+words remove hidden overlaps, forcing the excluded complete pairing. The
+[review brief](../../docs/strategy/minimum-crossing-density-review-2026-09-22.md)
+preserves the open WP1/WP2 and denser-source boundaries.
+
 The [complete pair-gadget exclusion](PROTECTED_PAIR_GADGET_CUBIC_MATCHING_EXCLUSION.md)
 translates every complete protected-edge pairing into a simple triangle-free
 cubic graph. A matching theorem then forces a mixed unique-matching word,

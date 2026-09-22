@@ -12,6 +12,12 @@ global statement.
 maintained map of the live proof topology, open leaves, and refuted routes.
 Owning theorem documents remain authoritative for mathematical statements.
 
+The [2026-09-22 minimum-density review](docs/strategy/minimum-crossing-density-review-2026-09-22.md)
+proves that a full protected source on k>=2 unit K4 components needs more
+than 6k supported crossing entries. At equality, actual macro and two-pair
+source equations force the complete pairing already excluded below.
+Denser protected arrays and the global conjecture remain open.
+
 The [2026-09-22 cubic matching review](docs/strategy/pair-gadget-cubic-review-2026-09-22.md)
 excludes every protected array with at most one crossing per color state:
 singleton macro targets force complete pair gadgets, then a cubic matching
