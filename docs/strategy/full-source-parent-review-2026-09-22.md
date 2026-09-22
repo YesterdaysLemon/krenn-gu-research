@@ -1,5 +1,12 @@
 # Full-source parent checkpoint for external review
 
+**Historical checkpoint, superseded in its P1 status:** the later
+[fixed-cutoff parent review](low-minority-parent-review-2026-09-22.md)
+refutes P1 exclusion and every fixed paired-minority support cutoff. The
+identities and mechanism obstructions summarized here remain valid. The
+statements below describe the earlier PR #352 checkpoint, not the current
+status of P1.
+
 The global Krenn--Gu conjecture is **UNRESOLVED**. This checkpoint concerns
 protected unit K4 components with arbitrary hollow intercomponent matrices
 over C. No reduction from arbitrary witnesses to this family is available.

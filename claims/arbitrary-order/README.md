@@ -1,14 +1,23 @@
 # Arbitrary-order claim artifacts
 
+The [fixed paired-minority support countermodels](PROTECTED_LOW_MINORITY_SUPPORT_COUNTERMODELS.md)
+refute exclusion by any fixed paired-minority support cutoff, even with
+whole-port DAGs and coverage of every mixed macro word. P1 has an explicit
+18-component certificate; the all-cutoff result uses a proved high-girth
+existence argument. A separate rational control satisfies exact weighted
+macro targets with whole DAGs but fails a one-pair equation. The
+[review brief](../../docs/strategy/low-minority-parent-review-2026-09-22.md)
+locates the remaining shared-weight parent precisely.
+
 The [protected-component elimination boundary](PROTECTED_COMPONENT_ELIMINATION_AND_WARD_BOUNDARY.md)
 retains the exact quartic contraction and valid Ward transport, while exact
 controls block canonical quadratic updates and pointwise module membership
 does not supply elimination. The
 [paired-minority parent](PROTECTED_PAIRED_MINORITY_SOURCE_AND_REPAIR_BOUNDARY.md)
 gives exact path/resource formulas, a macro-plus-cycle countercontrol, and
-the rooted-circuit obstruction to same-word minority descent. Both parent
-implications remain open; the [review brief](../../docs/strategy/full-source-parent-review-2026-09-22.md)
-states the next shared-source obligations.
+the rooted-circuit obstruction to same-word minority descent. Elimination
+remains open; the later fixed-cutoff theorem refutes P1's support exclusion.
+The weighted identities remain valid.
 
 The [full common-star source exclusion](PROTECTED_SCAFFOLD_COMMON_STAR_FULL_SOURCE_EXCLUSION.md)
 excludes every common-star protected-K4 array with k>=2 over C. Orthogonal
