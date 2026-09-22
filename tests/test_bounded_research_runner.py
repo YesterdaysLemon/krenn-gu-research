@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import importlib.util
+import io
 import json
 import os
 import pathlib
@@ -11,6 +12,7 @@ import sys
 import tempfile
 import time
 import unittest
+from unittest import mock
 
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -79,6 +81,66 @@ class BoundedResearchRunnerTests(unittest.TestCase):
         self.assertEqual(metadata["runner_exit_code"], 0)
         log = pathlib.Path(str(metadata["log"])).read_text(encoding="utf-8")
         self.assertEqual(log, "bounded hello\n")
+
+    def test_limited_console_encoding_does_not_truncate_utf8_log(self) -> None:
+        stream = io.StringIO("before\nrelation \u27fa value\nafter\n")
+        log = io.StringIO()
+        state = RUN_BOUNDED._OutputPumpState()
+        console_bytes = io.BytesIO()
+        console = io.TextIOWrapper(
+            console_bytes,
+            encoding="cp1252",
+            errors="strict",
+        )
+
+        try:
+            with mock.patch.object(RUN_BOUNDED.sys, "stdout", console):
+                RUN_BOUNDED._pump_output(stream, log, state)
+            console.flush()
+            echoed = console_bytes.getvalue().decode("cp1252")
+        finally:
+            console.detach()
+
+        self.assertIsNone(state.failure)
+        self.assertEqual(log.getvalue(), "before\nrelation \u27fa value\nafter\n")
+        self.assertIn(r"relation \u27fa value", echoed)
+        self.assertEqual(echoed.splitlines()[-1], "after")
+
+    def test_output_pump_failure_cannot_report_success(self) -> None:
+        class FailingConsole:
+            encoding = "utf-8"
+            errors = "strict"
+
+            def write(self, _text: str) -> None:
+                raise OSError("console unavailable")
+
+            def flush(self) -> None:
+                pass
+
+        config = RUN_BOUNDED.RunConfig(
+            run_id="output-failure",
+            timeout_seconds=5,
+            memory_mb=256,
+            run_root=self.run_root,
+            cwd=ROOT,
+            command=(
+                sys.executable,
+                "-c",
+                "print('first line'); print('child completed')",
+            ),
+        )
+
+        with mock.patch.object(RUN_BOUNDED.sys, "stdout", FailingConsole()):
+            result = RUN_BOUNDED.run(config)
+
+        self.assertEqual(result, RUN_BOUNDED.EXIT_OUTPUT_FAILED)
+        metadata = self.metadata("output-failure")
+        self.assertEqual(metadata["status"], "output_failed")
+        self.assertEqual(metadata["child_exit_code"], 0)
+        self.assertEqual(metadata["runner_exit_code"], result)
+        self.assertIn("console unavailable", metadata["output_error"])
+        log = pathlib.Path(str(metadata["log"])).read_text(encoding="utf-8")
+        self.assertEqual(log, "first line\nchild completed\n")
 
     def test_timeout_returns_124_and_records_terminal_state(self) -> None:
         result = self.invoke(
