@@ -1,5 +1,11 @@
 # Protected full-source parent review
 
+This review records the PR #352 checkpoint. A subsequent
+[independent parent review](PROTECTED_LOW_MINORITY_PARENT_REVIEW_2026-09-22.md)
+validates P1 and fixed-cutoff support countermodels. Historical statements
+below about the absence of such controls describe the reviewed checkpoint;
+they are not the current frontier status.
+
 Date: 2026-09-22.
 
 Status: **PASS** after independent mathematical and promoted-file review.

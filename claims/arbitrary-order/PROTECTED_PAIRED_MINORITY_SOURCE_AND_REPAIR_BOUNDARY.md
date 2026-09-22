@@ -5,8 +5,10 @@ Date: 2026-09-22.
 Status: exact identities and scoped route obstructions over C, with a passed
 [independent review](../../docs/audits/PROTECTED_FULL_SOURCE_PARENT_REVIEW_2026-09-22.md).
 The written matching-count arguments prove the stated arbitrary-order identities;
-exact scripts replay finite instances and literal controls. P1, UPM, SFULL,
-and global Krenn--Gu remain **UNRESOLVED**. No timeout or exploratory solver
+exact scripts replay finite instances and literal controls. The later
+[low-minority countermodel theorem](PROTECTED_LOW_MINORITY_SUPPORT_COUNTERMODELS.md)
+refutes P1 exclusion and every fixed paired-minority support cutoff. UPM,
+SFULL, and global Krenn--Gu remain **UNRESOLVED**. No timeout or exploratory solver
 outcome is evidence for an exclusion, and no Lean formalization is supplied.
 
 The upstream definitions and resource semantics are those of
@@ -36,7 +38,9 @@ The support parents used here are:
 * **P1:** macro supply together with the restriction of UPM(2) to every mixed
   word satisfying `q_c(a)<=1` for at least one color `c`.
 
-The P1 parent asks whether that conjunction is impossible for every `k>=2`.
+The P1 parent asked whether that conjunction is impossible for every `k>=2`.
+That universal exclusion is now refuted by an exact 18-component support;
+the definitions and conditional source implication below remain valid.
 
 A hypothetical full complex protected-scaffold source supplies macro support,
 because each mixed component-constant protected term of weight one must be
@@ -374,14 +378,21 @@ The accepted deltas give the following proof topology:
    equation, but macro supply does not yet furnish its nonzero supplier or
    distinct resources.
 
-P1 remains open: no proof forces the required one-root exposure or
-distinct-resource supplier from all six ordered-color systems, and no exact
-support satisfying P1 is constructed.  UPM remains open because the k=3
-control fails UPM(2).  SFULL remains open because neither parent is excluded.
+P1 exclusion is now **refuted**, and so is exclusion of its restriction to
+whole-port DAGs. The
+[subsequent parent synthesis](PROTECTED_LOW_MINORITY_SUPPORT_COUNTERMODELS.md)
+constructs an explicit 18-component support and proves finite countermodels
+exist for every fixed paired-minority cutoff. Thus no fixed-cutoff support
+argument can force the proposed one-root exposure. The identities in this
+owner remain valid. UPM remains open: these controls do not supply its
+unrestricted all-word condition. SFULL remains open; the weighted WP1 parent
+retaining all macro and one-pair coefficient equations is not refuted by the
+support constructions.
 No global arbitrary-witness-to-protected-scaffold supply is claimed.
 
 The maintained [frontier](../../docs/current-frontier.md) records these
-identities and the refuted SES and same-word descent mechanisms. No protected
+identities, the refuted SES and same-word descent mechanisms, and the later
+fixed-cutoff parent refutation. No protected
 full-source exclusion or global coverage edge has been closed.
 
 ## 8. Minimal literal replay bundle
