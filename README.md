@@ -12,7 +12,12 @@ global statement.
 maintained map of the live proof topology, open leaves, and refuted routes.
 Owning theorem documents remain authoritative for mathematical statements.
 
-The [2026-09-22 fixed-cutoff parent review](docs/strategy/low-minority-parent-review-2026-09-22.md)
+The [2026-09-22 cubic matching review](docs/strategy/pair-gadget-cubic-review-2026-09-22.md)
+excludes the complete protected-edge-pairing construction family at every
+order and for arbitrary nonzero crossing weights. Its exact graph interface
+leaves the weighted one-pair parent open: an extra matching need not have
+low minority depth. The
+[fixed-cutoff parent review](docs/strategy/low-minority-parent-review-2026-09-22.md)
 records a proved obstruction to every fixed paired-minority support-only
 exclusion route, an explicit 18-component control, and an exact rational
 weighted-macro control. Actual shared-weight cancellation remains essential;
