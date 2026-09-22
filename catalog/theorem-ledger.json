@@ -7744,7 +7744,7 @@
     {
       "name": "Strict crossing density for full protected sources (PSMD)",
       "document": "claims/arbitrary-order/PROTECTED_MINIMUM_CROSSING_DENSITY_EXCLUSION.md",
-      "document_sha256_16": "edf780aacb06807c",
+      "document_sha256_16": "9ce0d08f70182edf",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "Pointwise over C, every finite k>=2 protected unit K4 components, arbitrary hollow intercomponent scalar entries and no extra intracomponent entries. Crossing scalar entries are counted once without orientation, separately by color label.",
@@ -7752,7 +7752,7 @@
         "Macro rigidity forces every color-pair permutation to be one cycle and forbids literal triangles by an explicit independent-transversal arc word. Two-exception macros localize every transit allocation to two other-color literals in one foreign component.",
         "A hidden misalignment has a unique q1 word. Its aligned alternative has a globally unique mixed word with coefficient -x/z and paired-depth vector (2,2k-1,2k-2), so WP2 forces all allocations split at equality.",
         "The complete-pairing theorem PSCG then excludes the full source. Thus every full protected source needs strictly more than 6k crossings; WP1 and WP2 alone are not excluded at general order because the cubic matching conclusion has no depth bound.",
-        "The cubic consumer retains its imported three-perfect-matchings classification and independent audit. No new external premise, support degeneration of denser arrays, arbitrary-witness scaffold reduction, or Lean formalization is supplied.",
+        "The cubic consumer retains its valid imported proof. PRDC supplies a separately audited elementary alternative, so the density theorem no longer needs that external classification. No support degeneration of denser arrays, arbitrary-witness scaffold reduction, or Lean formalization is supplied.",
         "Written all-order proof and two separate-agent mathematical reviews; three portable standard-library finite replays corroborate local supply, triangle witnesses and whole-array hidden-word uniqueness. These replays are not a finite substitute for the unbounded proof."
       ],
       "dependencies": [],
@@ -7764,6 +7764,34 @@
       "expected_runtime": "seconds for finite replays; arbitrary-order theorem uses the written proof and PSCG",
       "external_binaries": [],
       "note": "Additional replay: claims/arbitrary-order/verify_protected_literal_triangle_witness.py. Proof topology: equality macro supply plus actual low-depth rows gives the complete-pairing consumer, closing only the minimum-density full-source branch. Independent agents in the same session, not independent human refereeing. Global Krenn-Gu remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Elementary directed-cycle exclusion for paired resources on three protected matchings (PRDC)",
+      "document": "claims/arbitrary-order/PAIRED_RESOURCE_DIRECTED_CYCLE_EXCLUSION.md",
+      "document_sha256_16": "a6d5c3a86466ab4b",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "Pointwise over C on any finite physical vertex set of size greater than one carrying three protected perfect matchings with nonzero weights. Differently colored protected resources may overlap physically.",
+        "All colored resources are partitioned into different-color pairs. Crossings occur only within their 2x2 state blocks, have no physical selfloops, and every crossing block support contains a perfect matching. No other scalar entries are allowed.",
+        "For any base color the mate-to-foreign-state digraph has positive outdegree. Any simple directed cycle, including a one-vertex auxiliary loop, gives a word selecting zero or exactly two adjacent states in every resource block.",
+        "The word has one physical perfect matching with nonzero actual product weight. Proper cycles leave the base color outside; spanning cycles have half each foreign color because each color-pair block count is one quarter the physical order.",
+        "The theorem extends PSCG to two/three/four-crossing blocks without a K4 scaffold, unit protected weights, disjoint physical shores or gadget product -1. It gives an elementary alternative to the imported matching theorem in PSCG and PSMD, preserving their valid historical proof routes.",
+        "No normal form from arbitrary arrays or from crossing degree two, arbitrary-witness scaffold supply, minority-depth bound, external theorem or Lean formalization is supplied.",
+        "Written all-order proof with two separate-agent reviews; portable exact finite overlap and independent nonbipartite dense-block replays corroborate boundary cases, not the unbounded quantifier."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_general_paired_resource_cycle.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": "claims/arbitrary-order/audit_paired_resource_cycle_k3.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "docs/audits/PAIRED_RESOURCE_CYCLE_REVIEW_2026-09-22.md",
+      "expected_runtime": "seconds for finite replays; all-order theorem uses the written cycle proof",
+      "external_binaries": [],
+      "note": "Reusable parent implication excludes complete paired blocks at state crossing degree at most two, and removes an external dependency from existing full-source exclusions. Source-driven block supply remains open. Same-session separate-agent review, not independent human refereeing. Global Krenn-Gu remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,

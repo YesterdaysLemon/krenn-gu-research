@@ -213,7 +213,12 @@ PSCG imports the connected matching-covered three-perfect-matchings
 classification from Kothari--Lee--Lucchesi--da Silva,
 [*Cubic graphs, S-minors and conformal minors*, Theorem 2.4](https://arxiv.org/html/2606.04173v1#S2.SS1).
 Its exact hypotheses and provenance are recorded in PSCG and in the
-literature registry. This document introduces no new external premise.
+literature registry. This document introduces no new external premise. The later
+[elementary paired-resource cycle theorem PRDC](PAIRED_RESOURCE_DIRECTED_CYCLE_EXCLUSION.md)
+also excludes this exact complete-pairing family, with arbitrary nonzero
+weights. Substituting that direct proof makes the density implication
+independent of the imported classification; the argument above remains a
+valid alternative. Neither route supplies a minority-depth bound.
 
 ## 7. Evidence and boundaries
 

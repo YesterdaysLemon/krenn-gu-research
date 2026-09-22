@@ -3,7 +3,12 @@
 Date: 2026-09-22.
 
 Status: proved over C by the argument below, with an explicit imported
-matching theorem and a completed independent mathematical audit. No Lean
+matching theorem and a completed independent mathematical audit. An
+[elementary directed-cycle proof](PAIRED_RESOURCE_DIRECTED_CYCLE_EXCLUSION.md)
+now supplies an independently reviewed alternative for the full-family
+exclusion, including a broader paired-block family. The cubic correspondence
+and imported proof below remain valid; the import is no longer necessary
+for the exclusion. No Lean
 formalization is supplied. The Krenn--Gu conjecture remains **UNRESOLVED**.
 
 This is a complete construction-family exclusion and an exact interface for
