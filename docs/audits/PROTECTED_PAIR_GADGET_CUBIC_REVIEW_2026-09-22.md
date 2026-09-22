@@ -237,3 +237,47 @@ The published owner promotes the reviewed candidate's status and adds
 portable evidence links. It also explicitly spells out the all-weight
 bijection onto empty/adjacent-pair words already proved in the candidate.
 These changes preserve the reviewed mathematical scope.
+
+## Singleton macro supply audit: the larger degree-at-most-one class
+
+The integration subsequently adds a new implication, rather than changing
+the pairing theorem's hypotheses. Section 5 now assumes at most one
+supported crossing per vertex/color state and derives the pairing from
+singleton macro supply. Two separate derivations found this argument sound.
+
+The state support is a disjoint union of protected/crossing alternating
+paths and cycles. On a component-constant word, symmetric difference with
+the protected matching shows that any alternative must flip a complete
+cycle; a path cannot help. Fix a component A and color a. Each of the two
+other backgrounds requires a distinct cycle through at least one of A's
+two M_a edges. Thus each cycle uses exactly one such edge. Hollowness makes
+its protected-edge colors alternate between a and the background color,
+forcing a C4. Varying A,a exhausts all protected edges and forces crossing
+degree exactly one, with one gadget assigned to each other color.
+
+Only the six ordered singleton assignments per component are required.
+Under their actual coefficient-zero equations, each singleton word enables
+exactly its assigned C4, so its coefficient is 1+alpha beta. The weights
+are therefore forced to have product -1. This last implication is necessary
+to connect a degree-at-most-one WP1 candidate to the cancellation
+specialization in the owner's exact graph formulation, and was explicitly
+added during audit.
+
+The resulting full-source corollary is sound: failure of singleton supply
+leaves a mixed macro word with coefficient one; successful supply enters
+the already proved cubic obstruction. It does not prove a low-q bound or
+exclude WP1. There is no normalization claim for arbitrary protected arrays.
+
+The [separate long-cycle replay](../../claims/arbitrary-order/audit_protected_state_degree_one_macro_normal_form.py)
+is self-contained. A crossing two-switch preserves degree one but merges
+two C4s into a C8. Literal physical-matching enumeration gives state-cycle
+sizes 4,4,4,4,8 and two uncovered singleton macro words, each with one term.
+Its frozen SHA-256 is
+`18AE832DE3EDCA6BE3267DA698DD8FBA515EB71DE2BCAB46D909B1F7ADF43F80`.
+It returns `LONG_CYCLE_MACRO_GAP_PASS` from outside the repository. This
+finite control does not replace the all-order normal-form argument above.
+
+After insertion of the weighted step, the owner was re-audited at SHA-256
+`80390DA7CF5810852550F66AB805B2D9DF1501D177838B2EA60225F33388DF1C`
+and received PASS. The subsequent edit changes only the replay count from
+two to three, to include the added long-cycle control.

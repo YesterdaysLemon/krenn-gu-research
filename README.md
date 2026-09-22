@@ -13,8 +13,9 @@ maintained map of the live proof topology, open leaves, and refuted routes.
 Owning theorem documents remain authoritative for mathematical statements.
 
 The [2026-09-22 cubic matching review](docs/strategy/pair-gadget-cubic-review-2026-09-22.md)
-excludes the complete protected-edge-pairing construction family at every
-order and for arbitrary nonzero crossing weights. Its exact graph interface
+excludes every protected array with at most one crossing per color state:
+singleton macro targets force complete pair gadgets, then a cubic matching
+theorem supplies a mixed nonzero word. Its exact graph interface
 leaves the weighted one-pair parent open: an extra matching need not have
 low minority depth. The
 [fixed-cutoff parent review](docs/strategy/low-minority-parent-review-2026-09-22.md)

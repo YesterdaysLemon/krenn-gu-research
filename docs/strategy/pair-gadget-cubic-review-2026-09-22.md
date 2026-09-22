@@ -1,8 +1,8 @@
 # Complete pair gadgets: cubic matching review brief
 
 The global Krenn--Gu conjecture remains **UNRESOLVED**. This checkpoint
-excludes an entire protected construction family and gives an exact graph
-form of its remaining weighted one-pair question.
+excludes all protected arrays with at most one crossing per color state
+and gives an exact graph form of their remaining weighted one-pair question.
 
 Take k protected unit K4s. Pair all 6k protected colored edges, each with an
 edge of a different color in another K4. Join the endpoints of each pair
@@ -29,6 +29,17 @@ matchings is a bi-subdivision of Theta or K4. Applied componentwise,
 cubicity, simplicity and triangle-freeness exclude both possibilities.
 An additional matching supplies the required mixed word.
 
+**Macro-driven normal form:** the gadget assumption can be removed whenever
+each physical vertex/color state has at most one crossing. A singleton
+macro word needs a full alternating state cycle to cancel its protected
+term. For each component/color, its two other background colors require
+two disjoint cycles through its two protected edges. Each cycle therefore
+uses just one of those edges and must be a C4. This exhausts all states,
+forces the complete pairing, and the actual singleton equations force
+every gadget's crossing product to -1. Thus the cubic exclusion applies
+to the whole degree-at-most-one class. Two independent derivations pass;
+a long-cycle switch control exposes singleton macro coefficients exactly 1.
+
 **Exact remaining boundary:** if the two crossing weights in each gadget
 multiply to -1, H's matchings biject with *all* nonzero source words.
 The WP1 system in this family therefore asks whether every non-color-class
@@ -39,8 +50,8 @@ class would exclude WP1 here; this checkpoint does not do so. Arbitrary
 protected arrays need not have this gadget decomposition, and no reduction
 of arbitrary conjecture witnesses to the protected scaffold is supplied.
 
-The written proof passed independent mathematical review. Two portable
-exact reconstructions use different enumeration routes. Controls cover
+The written proof passed independent mathematical review. Three portable
+replays include two reconstructions using different enumeration routes. Controls cover
 two K4s, a three-K4 nonbipartite component graph, and the weight boundary:
 160 unique-matching words remain when arbitrary weights increase the total
 number of nonzero words to 281. These are checks of the correspondence,
@@ -50,7 +61,7 @@ For adversarial review, check the state partition, word-level injectivity,
 componentwise application of the imported theorem, and the distinction
 between a mixed matching and a low-paired-depth mixed matching.
 
-- [Owning proof and two replay commands](../../claims/arbitrary-order/PROTECTED_PAIR_GADGET_CUBIC_MATCHING_EXCLUSION.md)
+- [Owning proof and three replay commands](../../claims/arbitrary-order/PROTECTED_PAIR_GADGET_CUBIC_MATCHING_EXCLUSION.md)
 - [Independent audit](../audits/PROTECTED_PAIR_GADGET_CUBIC_REVIEW_2026-09-22.md)
 - [Current frontier](../current-frontier.md), node PSCG
 - [Earlier fixed-cutoff parent checkpoint](low-minority-parent-review-2026-09-22.md)

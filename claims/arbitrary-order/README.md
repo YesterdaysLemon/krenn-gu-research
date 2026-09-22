@@ -4,6 +4,8 @@ The [complete pair-gadget exclusion](PROTECTED_PAIR_GADGET_CUBIC_MATCHING_EXCLUS
 translates every complete protected-edge pairing into a simple triangle-free
 cubic graph. A matching theorem then forces a mixed unique-matching word,
 excluding this full construction family for arbitrary nonzero weights.
+Singleton macro targets force precisely this form whenever each color state
+has at most one crossing, excluding that entire sparse-crossing class too.
 The [review brief](../../docs/strategy/pair-gadget-cubic-review-2026-09-22.md)
 states the imported dependency and the still-open low-paired-depth boundary.
 

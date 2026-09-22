@@ -1,4 +1,4 @@
-# Protected pair gadgets and the cubic matching obstruction
+# Protected sparse crossings and the cubic matching obstruction
 
 Date: 2026-09-22.
 
@@ -11,6 +11,12 @@ the weighted one-pair parent WP1. It is not a normal form for arbitrary
 protected arrays. The definitions of the protected scaffold and of the
 physical coefficient T_W are those of
 [PSMR](PROTECTED_SCAFFOLD_MINORITY_CYCLE_AND_RESOURCE_BOUNDARY.md).
+
+Section 5 also proves a macro-driven normal form: with **at most one
+supported crossing entry per physical vertex/color state**, the singleton
+macro targets force the complete pairing in Section 1. Consequently this
+entire sparse-crossing class is excluded from the full source. The result
+still supplies no paired-minority-depth bound and does not exclude WP1.
 
 ## 1. Exact family and parent
 
@@ -150,7 +156,72 @@ matching. Its nonzero monomial cannot equal the required mixed coefficient
 zero. This proves the stated full-family exclusion. It does not use numerical
 search, a finite order bound, or an assumption that H is connected.
 
-## 5. The remaining one-pair matching question
+## 5. Singleton macro supply forces the pair normal form
+
+Consider a protected unit-K4 array whose crossing support has degree at
+most one at every state (v,c). This counts supported scalar entries, not
+physical neighboring vertices or ranks of color matrices. Crossings are
+hollow and join different protected components, as before.
+
+Assume only that, for each component A, color a, and different background
+color c, the component-constant word with color a on A and c everywhere
+else has a matching other than its protected matching. Every weighted
+macro target implies this support supply: the protected monomial is one,
+so a zero coefficient requires another term. We use no independence of
+the weights and no cancellations chosen separately for different words.
+
+**Normal-form proposition.** This singleton supply forces a complete
+protected-edge pairing. Moreover the two M_a edges in every component A
+are paired one to each of the other two colors. In particular every state
+has crossing degree exactly one.
+
+To prove it, include all protected edges and supported crossings in the
+state graph. Every state has its one protected edge and at most one
+crossing. Its components are alternating paths and even cycles. On a
+component-constant word the protected edges give a perfect matching P.
+Any different matching N has a nonempty symmetric difference with P,
+consisting of alternating cycles. Since the state graph has maximum
+degree two, each is a complete component of that graph; paths cannot
+supply an alternative matching.
+
+Fix A and a. For either other color c, singleton supply therefore gives
+a complete state cycle C_c selected by the word a on A, c outside. Collapse
+the protected edges of C_c. Each crossing joins different colors, and only
+a,c are present, so the protected-edge colors alternate a,c around the
+cycle. All its color-a protected edges lie in A and all color-c protected
+edges lie outside A.
+
+The two backgrounds give two distinct state cycles: a cycle containing
+the first background color cannot be selected by the other singleton
+word. They are disjoint and each uses at least one of A's exactly two
+color-a protected edges. Thus each uses exactly one. Alternation then
+gives exactly one exterior protected edge, so both cycles are C4s. Their
+crossings form endpoint bijections. Applying this to every A,a exhausts
+all protected edges, proves the pairing, and proves the stated allocation
+to the other two colors.
+
+If the singleton macro coefficients actually vanish, every gadget moreover
+has alpha beta=-1. After the normal form, the word a on A and c outside
+fully selects exactly the gadget assigned to (A,a,c): its other gadget
+uses the third color, and an exterior-exterior gadget cannot have both
+endpoint colors c. The singleton coefficient is therefore exactly
+1+alpha beta. These are the actual shared crossing weights.
+
+**Sparse-crossing corollary.** No protected array with crossing degree at
+most one at every state is a full GHZ source, for any k>=2 and arbitrary
+complex weights on its supported entries. If singleton supply fails, the
+corresponding mixed macro word has exactly its protected term and
+coefficient one. If supply holds, the normal-form proposition and Sections
+2--4 supply a mixed unique-matching word. Both alternatives contradict the
+full target.
+
+This is a conditional support normalization supplied by actual macro
+equations under the stated degree bound. It is not a normalization of
+arbitrary protected arrays. In particular, the second alternative does
+not locate its word at low q; WP1 is reduced to the balanced complete-pair
+case, not excluded by this corollary.
+
+## 6. The remaining one-pair matching question
 
 In the cancellation specialization alpha beta=-1, assign to N in PM(H) the
 physical word a(N) defined by its spokes. The full weighted one-pair system
@@ -176,7 +247,7 @@ and arbitrary arrays with several crossings at one vertex/color state are
 outside this theorem's hypotheses. No arbitrary-witness reduction or Lean
 formalization is supplied.
 
-## 6. Evidence boundary
+## 7. Evidence boundary
 
 The state decomposition and auxiliary-graph correspondence are proved above
 for the whole family. Finite exact replays check the correspondence and its
@@ -186,11 +257,12 @@ checks the family, the word bijection, disconnected graphs, the weight
 boundary, and every hypothesis of the imported theorem. It also supplies
 a separate word-first reconstruction of the two-K4 correspondence.
 
-Run the two portable exact checks from the repository root:
+Run the three portable exact checks from the repository root:
 
 ```text
 python claims/arbitrary-order/verify_protected_pair_gadget_cubic_bridge.py
 python claims/arbitrary-order/audit_protected_pair_gadget_cubic_bridge.py
+python claims/arbitrary-order/audit_protected_state_degree_one_macro_normal_form.py
 ```
 
 The [primary replay](verify_protected_pair_gadget_cubic_bridge.py) enumerates
@@ -208,3 +280,11 @@ their literal scalar matching graphs. It recovers 30 nonzero words and
 30 auxiliary matchings. Neither script imports the other's implementation
 or project scientific code. Neither establishes the arbitrary-order
 matching theorem computationally or checks a WP1 solution.
+
+A third [standalone replay](audit_protected_state_degree_one_macro_normal_form.py)
+switches two crossings while preserving state crossing degree one, merging
+two C4s into a C8. Literal physical matching enumeration finds two mixed
+singleton macro words with only their protected terms. This is an exact
+control of Section 5's supply boundary. Two separate derivations audited
+that section's all-order proof, including the at-most-one degree condition
+and the product -1 consequence of weighted singleton equations.
