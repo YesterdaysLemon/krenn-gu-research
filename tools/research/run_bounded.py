@@ -36,6 +36,7 @@ EXIT_LAUNCH_FAILED = 127
 EXIT_TIMEOUT = 124
 EXIT_INTERRUPTED = 130
 EXIT_CONTAINMENT_FAILED = 125
+EXIT_OUTPUT_FAILED = 126
 LONG_RUN_SECONDS = 60.0
 RUN_ID_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,79}\Z")
 PYTHON_EXE_RE = re.compile(
@@ -288,15 +289,54 @@ def validate_config(config: RunConfig) -> None:
         )
 
 
-def _pump_output(stream, log_handle) -> None:
+class _OutputPumpState:
+    """Thread-safe outcome shared by the output pump and runner."""
+
+    def __init__(self) -> None:
+        self._lock = threading.Lock()
+        self.failure: BaseException | None = None
+
+    def record_failure(self, failure: BaseException) -> None:
+        """Retain the first failure; later cleanup errors are secondary."""
+
+        with self._lock:
+            if self.failure is None:
+                self.failure = failure
+
+
+def _echo_output(line: str) -> None:
+    """Echo one line without requiring the console to support every codepoint."""
+
+    encoding = getattr(sys.stdout, "encoding", None)
+    errors = getattr(sys.stdout, "errors", None) or "strict"
+    if encoding is not None:
+        try:
+            line.encode(encoding, errors)
+        except UnicodeEncodeError:
+            line = line.encode(encoding, "backslashreplace").decode(encoding)
+    sys.stdout.write(line)
+    sys.stdout.flush()
+
+
+def _pump_output(stream, log_handle, state: _OutputPumpState) -> None:
+    echo_enabled = True
     try:
         for line in iter(stream.readline, ""):
             log_handle.write(line)
             log_handle.flush()
-            sys.stdout.write(line)
-            sys.stdout.flush()
+            if echo_enabled:
+                try:
+                    _echo_output(line)
+                except BaseException as exc:  # noqa: BLE001
+                    state.record_failure(exc)
+                    echo_enabled = False
+    except BaseException as exc:  # noqa: BLE001
+        state.record_failure(exc)
     finally:
-        stream.close()
+        try:
+            stream.close()
+        except BaseException as exc:  # noqa: BLE001
+            state.record_failure(exc)
 
 
 def _windows_containment_child(command: Sequence[str]) -> int:
@@ -401,6 +441,7 @@ def run(config: RunConfig) -> int:
 
     process: subprocess.Popen[str] | None = None
     output_thread: threading.Thread | None = None
+    output_state = _OutputPumpState()
     runner_code = EXIT_LAUNCH_FAILED
     try:
         with log_path.open("w", encoding="utf-8", newline="") as log_handle:
@@ -427,7 +468,7 @@ def run(config: RunConfig) -> int:
             _write_json(metadata_path, metadata)
             output_thread = threading.Thread(
                 target=_pump_output,
-                args=(process.stdout, log_handle),
+                args=(process.stdout, log_handle, output_state),
                 name=f"run-bounded-output-{process.pid}",
                 daemon=True,
             )
@@ -462,14 +503,32 @@ def run(config: RunConfig) -> int:
                 process.wait(timeout=3)
         if output_thread is not None:
             output_thread.join(timeout=3)
+            if output_thread.is_alive():
+                output_state.record_failure(
+                    TimeoutError("output pump did not finish within 3 seconds")
+                )
         if windows_job is not None:
             windows_job.close()
+        if output_state.failure is not None:
+            output_error = (
+                f"{type(output_state.failure).__name__}: {output_state.failure}"
+            )
+            metadata["output_error"] = output_error
+            if runner_code == 0:
+                runner_code = EXIT_OUTPUT_FAILED
+                metadata["status"] = "output_failed"
         metadata.update(
             finished_at=utc_now(),
             elapsed_seconds=round(time.monotonic() - started_clock, 3),
             runner_exit_code=runner_code,
         )
         _write_json(metadata_path, metadata)
+        if output_state.failure is not None:
+            with contextlib.suppress(Exception):
+                print(
+                    f"run_bounded: output pump failed: {metadata['output_error']}",
+                    file=sys.stderr,
+                )
 
     return runner_code
 

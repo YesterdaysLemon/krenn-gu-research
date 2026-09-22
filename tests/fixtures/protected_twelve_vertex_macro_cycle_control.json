@@ -1,0 +1,35 @@
+{
+  "schema": "protected-twelve-vertex-macro-cycle-control-v1",
+  "scope": {
+    "components": 3,
+    "physical_vertices": 12,
+    "colors": 3,
+    "data": "Boolean support of hollow crossing scalar entries; protected unit K4 entries are implicit",
+    "claim": "finite macro-coverage and directed-cycle sharp control",
+    "not_claimed": "not a P1 control, weighted source, SFULL counterexample, or Krenn-Gu counterexample"
+  },
+  "support": [
+    [0, 4, 1, 0],
+    [1, 11, 1, 2],
+    [1, 11, 2, 0],
+    [1, 11, 2, 1],
+    [2, 5, 1, 0],
+    [2, 9, 2, 1],
+    [2, 10, 0, 1],
+    [2, 10, 2, 0],
+    [2, 11, 0, 2],
+    [3, 8, 0, 1],
+    [3, 8, 0, 2],
+    [3, 8, 1, 2],
+    [5, 11, 1, 0],
+    [5, 11, 1, 2],
+    [5, 11, 2, 0],
+    [5, 11, 2, 1],
+    [6, 9, 2, 1],
+    [6, 10, 0, 2],
+    [6, 10, 2, 0],
+    [7, 8, 1, 2],
+    [7, 9, 0, 2],
+    [7, 10, 1, 0]
+  ]
+}

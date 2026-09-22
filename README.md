@@ -12,9 +12,15 @@ global statement.
 maintained map of the live proof topology, open leaves, and refuted routes.
 Owning theorem documents remain authoritative for mathematical statements.
 
+The [2026-09-22 full-source parent checkpoint](docs/strategy/full-source-parent-review-2026-09-22.md)
+packages exact component-contraction and paired-minority identities, audited
+controls against several proposed proof mechanisms, and the remaining
+cross-word consistency obligations. It does not resolve either parent or
+the global conjecture.
+
 The [2026-09-14 review handoff](docs/strategy/source-coupled-resolution-review-2026-09-14.md)
 summarizes the published source-coupled cancellation chunk and its exact
-resource-supply obstructions. The research run is stopped at the owner's
+resource-supply obstructions. That earlier research run stopped at the owner's
 request; its proposed full binary-source parent remains open.
 
 For the next coordinated research run, use the dated

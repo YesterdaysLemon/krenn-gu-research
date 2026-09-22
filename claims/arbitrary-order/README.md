@@ -1,5 +1,15 @@
 # Arbitrary-order claim artifacts
 
+The [protected-component elimination boundary](PROTECTED_COMPONENT_ELIMINATION_AND_WARD_BOUNDARY.md)
+retains the exact quartic contraction and valid Ward transport, while exact
+controls block canonical quadratic updates and pointwise module membership
+does not supply elimination. The
+[paired-minority parent](PROTECTED_PAIRED_MINORITY_SOURCE_AND_REPAIR_BOUNDARY.md)
+gives exact path/resource formulas, a macro-plus-cycle countercontrol, and
+the rooted-circuit obstruction to same-word minority descent. Both parent
+implications remain open; the [review brief](../../docs/strategy/full-source-parent-review-2026-09-22.md)
+states the next shared-source obligations.
+
 The [full common-star source exclusion](PROTECTED_SCAFFOLD_COMMON_STAR_FULL_SOURCE_EXCLUSION.md)
 excludes every common-star protected-K4 array with k>=2 over C. Orthogonal
 center/uniform-leaf contractions give a parity obstruction for odd k and
