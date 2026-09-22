@@ -18,9 +18,13 @@ This document, node PSDT, keeps every actual two- and four-crossing term.
 Its transport theorem uses the stronger **color-regular** hypothesis: each
 state has exactly one crossing to each foreign color. It forces a C8
 four-crossing cancellation to have an opposite two-gadget repair. That
-repair satisfies the entire same one-component/uniform-background slice,
-so a contradiction must use another slice or global consistency. Neither
-the degree-two parent nor its color-regular subcase is closed here.
+repair satisfies the entire same one-component/uniform-background slice. A
+separate reciprocal control shows that even all three uniform-background
+slices at one fixed component permit partial-resource orphans. When both
+orphan targets lie in one exterior component, however, a coupled mixed row
+forces a necessary paired resource through the third color. This does not
+exclude the repaired same-component branch; separated orphan targets and the
+general degree-two parent also remain open.
 
 Throughout, crossings are hollow, join distinct protected components,
 and carry their actual shared nonzero complex weights. Inside a component
@@ -531,7 +535,7 @@ Therefore the only supported local rows and term weights are
 ```text
 0000 : (1,-1),
 1111 : (1,-1),
-2222 : (O1).
+2222 : (1).
 ```
 
 They are exactly the required delta tensor.  Every mixed local word has no
@@ -552,6 +556,123 @@ second nonuniform component/background, or prove from another source row
 that the orphan endpoints acquire a resource partner.  Singleton and the
 entire same-component/uniform-background tensor do not supply that step.
 
+## Reciprocity and all backgrounds still permit partial resources
+
+The preceding obstruction survives both reciprocity and every uniform
+background at one fixed component. There is a four-component hollow
+color-regular array in which all six ordered foreground/background incidences
+at component `A` have exactly one product-`-1` source resource and two orphan
+targets, while all
+
+```text
+3 backgrounds * 3^4 local words = 243
+```
+
+one-component equations at `A` hold.
+
+Use physical vertices `A=0..3`, `B=4..7`, `C=8..11`, `D=12..15`. For each
+increasing color pair, take the displayed global state-layer bijection
+
+```text
+t_01=(7,5,8,4,  0,2,3,12,  1,13,14,15,  6,9,10,11),
+t_02=(4,7,5,8,  2,12,0,3,  1,13,14,15,  6,9,10,11),
+t_12=(5,4,6,8,  0,12,3,1,  2,13,14,15,  7,9,10,11).     (O3)
+```
+
+The tuple index is the lower-color source vertex and its value is the
+higher-color target. Each map is a permutation and every entry changes
+component, so the reverse shore is the actual inverse of the same physical
+layer. Give every crossing weight one except
+
+```text
+(1,5)[0,1], (5,2)[0,1],
+(1,7)[0,2], (7,3)[0,2],
+(2,6)[1,2], (6,3)[1,2],                              (O4)
+```
+
+which have weight `-1`. Every state has one crossing to each foreign color.
+
+Fix background `c`, put `d=c+1`, `e=c+2` modulo three, and apply the unique
+linear port relabeling sending `M_d,M_e,M_c` to `M_0,M_1,M_2`. The actual
+forward or inverse layer leaving `A` becomes
+
+```text
+d -> c : (B0,B3,B1,C0),
+e -> c : (B1,B0,B2,C0).                              (O5)
+```
+
+In each row exactly one source protected edge maps to one background resource
+with lane product `-1`; the complementary endpoints land in `B` and `C` and
+therefore do not form a resource. This proves all six incidence claims from
+the same reciprocal array.
+
+For a word arbitrary on `A` and uniformly `c` outside, zero cut crossings
+support only the three uniform local words. With two cut crossings, (O5) has
+exactly the displayed resource pair for uniform foreground `d` and the
+displayed pair for uniform foreground `e`; mixed choices do not form another
+`M_c` resource. Four cut crossings cannot complete because canonical port 3
+always targets `C0`, while its `M_2(C)` mate `C3` is absent. Hence the only
+term weights are
+
+```text
+cccc : (1),       dddd : (1,-1),       eeee : (1,-1),
+```
+
+and every mixed local word has no term. This proves all 243 equations. The
+outside word `0000|1200|0000|0000` has one matching of coefficient `1`, so
+the array is not a full source. This word is nonmacro, so it does not establish
+macro failure; no macro-source claim is made. The array is an exact
+obstruction to closing the partial-resource branch with reciprocal
+one-component data alone.
+
+## Coupled transport for same-component orphan targets
+
+There is nevertheless an all-order implication once the two orphan targets
+meet in one component. Let `a,b,c` be distinct colors. Suppose one `M_a(A)`
+edge supplies a product-`-1` `a--c` resource cancellation and the
+complementary `M_a(A)` edge `R={r,s}` has orphan targets
+`y=t_ac(r), z=t_ac(s)` in one component `B`.
+
+The layer bijection makes `y,z` distinct. The orphan hypothesis excludes an
+`M_c(B)` edge. If they formed an `M_a(B)` edge, color `y,z` by `c` and every
+other physical vertex by `a`. The `c` states cannot protect, have no
+compatible `c--b` lane, and are forced through their `c--a` lanes to `r,s`.
+All remaining vertices use their unique protected `M_a` edges. This gives one
+nonzero matching and a forbidden `q_a=1` coefficient. Therefore `y,z` form
+an `M_b(B)` edge.
+
+Let `L={l_0,l_1}` be the complementary `M_b(B)` edge and use the word
+
+```text
+A uniformly a;   y,z:c;   l_0,l_1:b;   every other vertex:a.  (O6)
+```
+
+The `c` states cannot protect: their `M_c` mates lie on `L` and have color
+`b`. Their only word-`b` vertices lie in their own component, where crossings
+are hollow. Thus their `c--a` lanes to `r,s` are forced; write their nonzero
+product as `h`.
+
+The two `b` states on `L` either use their protected `M_b` edge or both use
+their unique `b--a` lanes. A one-exit sector cannot complete. In the two-exit
+sector every remaining vertex has color `a`, so the two targets must be one
+protected `M_a` resource `Q`. The `b--a` layer is a bijection, hence the
+targets are distinct. The choice `Q=R` collides with the forced orphan lanes;
+all malformed or partially overlapping target pairs strand a vertex.
+Conversely, any `M_a` resource `Q!=R` gives exactly one additional matching.
+If the two exit weights have product `g`, the exact coefficient is
+
+```text
+h                    if no such Q exists,
+h(1+g)               if Q exists.                         (O7)
+```
+
+Word (O6) is mixed, so its target is zero. Since `h!=0`, full-source
+consistency forces `Q` to exist and `g=-1`. Untouched all-`a` components use
+their protected matching, so the proof applies at every `k>=2` with arbitrary
+nonzero complex crossing weights. This is a coupled source implication, not
+a block normal form. If `y,z` lie in different components, there is no
+complementary edge `L`; that separated-target branch remains open.
+
 ## Parent checkpoint and proof-topology delta
 
 The all-order transport theorem is a new necessary source implication;
@@ -567,11 +688,14 @@ entries just because macros do not see them. A next load-bearing supplier
 must couple repaired C8s across nonuniform components or use a global
 resource identity. The q1 escape theorem forces at least one split resource
 away from a one-component C8 target, but its reverse singleton may already
-cancel and does not force another C8. The reciprocal control satisfies all
-one-component slices across all backgrounds, so those rows alone are
-insufficient. Crossing
-degree two alone also permits a (2,0) distribution between foreign colors;
-that branch is outside the color-regular transport theorem.
+cancel and does not force another C8. The reciprocal C8 control satisfies all
+one-component slices across all backgrounds. The reciprocal partial-resource
+control satisfies the three fixed-`A` slices while retaining separated
+orphans. The coupled theorem forces a paired third-color repair when the
+orphans share a component, but does not exclude that repaired branch or give
+a block normal form. Separated-target propagation remains an additional open
+branch. Crossing degree two alone also permits a `(2,0)` distribution between
+foreign colors; that branch is outside the color-regular transport theorem.
 
 On the consumer side,
 [PRDC](PAIRED_RESOURCE_DIRECTED_CYCLE_EXCLUSION.md) excludes complete paired
@@ -582,11 +706,13 @@ resource partition nor that closure has been derived from general full
 source equations. The two directions are recorded as a conditional
 consumer and a source-transport reduction, not as an exhaustive cover.
 
-The k=1 protected K4 is the valid sharp full-source exception. The source
-parent here quantifies k>=2. The reciprocal k=2 control above satisfies all one-component slices on
-both components in every uniform exterior background: 486 specifications,
-477 distinct physical words. It still fails the full source. Thus even
-reciprocal all-background local tests do not supply the missing global edge.
+The `k=1` protected K4 is the valid sharp full-source exception. The source
+parent here quantifies `k>=2`. The reciprocal `k=2` C8 control satisfies all
+one-component slices on both components in every uniform exterior background:
+486 specifications, 477 distinct physical words. The reciprocal `k=4`
+partial-resource control satisfies 243 fixed-`A` specifications. Both fail
+the full source. Thus even reciprocal all-background local tests do not
+supply the missing global edge.
 
 ## Evidence and review
 
@@ -606,6 +732,10 @@ python claims/arbitrary-order/verify_c8_q1_escape_ports.py
 python claims/arbitrary-order/audit_c8_q1_escape.py
 python claims/arbitrary-order/verify_partial_resource_boundary.py
 python claims/arbitrary-order/audit_partial_resource_boundary.py
+python claims/arbitrary-order/verify_partial_orphan_reciprocal_boundary.py
+python claims/arbitrary-order/audit_partial_orphan_reciprocal_boundary.py
+python claims/arbitrary-order/verify_partial_orphan_coupled_transport.py
+python claims/arbitrary-order/audit_partial_orphan_coupled_transport.py
 ```
 
 The transport audit checks 6,720 collision cases plus the empty-q1 gate.
@@ -613,10 +743,13 @@ The primary k=2 boundary control enumerates all 6,561 physical words and
 records 600 failures outside its 81-word slice. An independent Laurent
 polynomial audit checks the tensor identity for arbitrary x_0=t,
 x_1=-t^-1; a separate k=3 whole-array extension covers disjoint exterior
-resources. These independent derivations import neither the primary
-implementation nor project scientific code. All scripts use the Python
-standard library. The finite controls are not a finite cover of all
-degree-two sources.
+resources. The reciprocal orphan scripts verify 48 hollow crossing entries,
+all six ordered incidences and all 243 fixed-component rows. The coupled
+transport scripts enumerate every normalized exit placement at `k=2,3,4`;
+the written matching-sector proof supplies the arbitrary-`k` quantifier.
+These independent derivations import neither the primary implementation nor
+project scientific code. All scripts use the Python standard library. The
+finite controls are not a finite cover of all degree-two sources.
 
 See the [independent review](../../docs/audits/DEGREE_TWO_SOURCE_TRANSPORT_REVIEW_2026-09-22.md)
 and [model-review brief](../../docs/strategy/degree-two-source-parent-review-2026-09-22.md).

@@ -163,3 +163,95 @@ resources. The frozen author report hash was
 the independent report hash was
 F35A42E0A65D15709A08BD02F3657127A6021C3879BB12C8E72C96993DE3F0DF.
 The independent implementation is audit_partial_resource_boundary.py.
+
+
+## 8. Reciprocal fixed-component partial-resource control
+
+I independently reconstructed the four-component array from the three
+displayed physical permutations rather than importing the primary builder.
+Each permutation is hollow and bijective. The resulting array has 24
+protected entries and 48 crossing entries; every physical vertex/color state
+has exactly one crossing neighbor in each foreign color. The reverse
+incidences at `A` are the actual inverse shores of the same three layers.
+
+For each background `c`, the linear port conjugation sends the two foreground
+incidences to
+
+```text
+(B0,B3,B1,C0),       (B1,B0,B2,C0).
+```
+
+In each of the six ordered incidences, exactly one source protected edge maps
+to a background resource with product `-1`, while the complementary source
+edge maps to targets in two different components. These are genuine partial
+resources with orphan targets, not incomplete data later filled differently
+for another word.
+
+The independent word-specific recursion checks all 243 words arbitrary on
+`A` and uniform outside. For each background, the background-uniform word has
+one protected term, the other two uniform words have weights `(-1,1)`, and
+all 78 mixed words have no terms. The outside word
+`0000|1200|0000|0000` has exactly one matching of weight one. Thus the array
+is an exact local-tensor control and explicitly not a full source. The
+displayed failure is nonmacro, so it does not verify macro failure; no
+macro-source status is asserted.
+
+The frozen author report hash was
+`76047E8ED290F8CC384F0F2D4492275D3B8CE8CA8DC7D6FFBF0FCEFFBE952982`;
+the separate-agent review report hash was
+`700AD2AC6089306B10229B657CF1227059873F563E650A88F4215D46387DA134`.
+The portable implementations are
+`verify_partial_orphan_reciprocal_boundary.py` and
+`audit_partial_orphan_reciprocal_boundary.py`. Their promoted file hashes are
+respectively
+`8CD9270BB22BD258F1ED563E5C8088EA5955293AF31E69891AE2C4FEE64331CE`
+and
+`3EE260163600F518DD273FA7D23F67B2391D466189E64E3E31CE3CD5314B3EE7`.
+
+
+## 9. Same-component orphan transport
+
+I separately audited the all-order coupled implication. The color-pair layer
+is bijective, so two orphan targets in one component are distinct ports. The
+orphan premise excludes their background matching. If they instead form the
+source-color matching, coloring only those two vertices by the background
+forces their two return lanes and every protected complement. This gives one
+nonzero matching and a forbidden q1 word. The targets must therefore form the
+third-color protected edge.
+
+For the coupled word, the two background-colored orphan targets force their
+return lanes to the source resource, with nonzero product `h`. The
+complementary third-color pair either protects or uses both of its exits to
+the source color. A one-exit sector cannot complete. After both exits, every
+remaining vertex has the source color, so a completion exists exactly when
+the two distinct targets form one protected source-color resource different
+from the already consumed source resource. Targeting that consumed resource
+or overlapping it gives a physical collision. The additional sector is
+unique, so the literal coefficient is `h` or `h(1+g)`. Source vanishing and
+`h!=0` force the distinct target resource and `g=-1`.
+
+Extra all-source-color components use their unique protected matching. This
+proves the implication for arbitrary `k>=2` and arbitrary nonzero complex
+crossing weights. The proof does not apply when the two orphan targets lie in
+different components; that propagation branch remains open.
+
+My symbolic physical matcher exhausts every ordered exit placement for
+`k=2,3,4`. It records only monomial `h0*h1` in the direct sector and adds
+`h0*h1*g0*g1` exactly for a distinct protected target resource. The primary
+three-component replay independently checks all 56 normalized ordered
+placements.
+
+The frozen theorem report hash was
+`50DDB7F483D1F50CAD15BA4CCBF840C9465D63526D8467C4E9A1202C0ADB5B69`;
+the separate-agent review report hash was
+`F52330E58DF3A053A5755BEB612E236E2338A625C1C5416792608067E1FC9C93`.
+The portable implementations are
+`verify_partial_orphan_coupled_transport.py` and
+`audit_partial_orphan_coupled_transport.py`, with promoted hashes
+`568E499ABF3571725D58BBFAE9FCA8289F5759A5BE60F01ADB9AF2DA3933EA56`
+and
+`78838F42CAF6A4B63C2A343D518FD8E7D940582B4B1A642C1B492E6625242471`.
+
+These additions sharpen the source-transport map but do not exclude the
+repaired same-component branch, establish an exhaustive color-regular cover,
+prove a general degree-two exclusion, or resolve the global conjecture.
