@@ -2,6 +2,36 @@
   "schema_version": 1,
   "sources": [
     {
+      "citekey": "kothari-lee-lucchesi-da-silva-2026-three-matchings",
+      "title": "Cubic graphs, S-minors and conformal minors",
+      "authors": ["Nishad Kothari", "Orlando Lee", "Cláudio L. Lucchesi", "Cândida Nunes da Silva"],
+      "year": 2026,
+      "identifiers": {"arxiv": "2606.04173", "doi": "10.48550/arXiv.2606.04173"},
+      "authoritative_url": "https://arxiv.org/abs/2606.04173",
+      "identity_verification": {
+        "source_url": "https://arxiv.org/abs/2606.04173",
+        "date": "2026-09-22"
+      },
+      "search_trail": [
+        "2026-09-22: cubic graph exactly three perfect matchings; followed exact title to authoritative arXiv metadata and version-v1 HTML Section 2.1."
+      ],
+      "relevance": "Imported three-perfect-matching classification closes the cubic graph obtained from a complete protected-edge pairing.",
+      "limitations": [
+        "Only the matching-covered definition and Section 2.1 statement/proof of Theorem 2.4 were inspected, not the whole paper.",
+        "This is an arXiv preprint; no journal peer-review or formalization status is asserted.",
+        "The theorem supplies another perfect matching but gives no bound on its paired-minority depth. It does not close WP1."
+      ],
+      "repository_usages": [{
+        "path": "claims/arbitrary-order/PROTECTED_PAIR_GADGET_CUBIC_MATCHING_EXCLUSION.md",
+        "role": "imported_result",
+        "inspection_level": "relevant_passage_inspected",
+        "source_locator": "arXiv:2606.04173v1, Section 2.1, Theorem 2.4 and its proof; matching-covered definition in Section 1",
+        "assumptions_scope": "Finite connected loopless matching-covered graphs, with parallel edges allowed: exactly three perfect matchings if and only if a bi-subdivision of Theta or K4.",
+        "correspondence_note": "Apply separately to each connected component of the auxiliary cubic graph. Its proper three-edge-coloring supplies matching coverage and three distinct perfect matchings; degree three rules out nontrivial subdivisions, simplicity excludes Theta, and triangle-freeness excludes K4.",
+        "unresolved_obligations": []
+      }]
+    },
+    {
       "citekey": "cambie-kang-2022-bipartite-correspondence-transversals",
       "title": "Independent transversals in bipartite correspondence-covers",
       "authors": ["Stijn Cambie", "Ross J. Kang"],

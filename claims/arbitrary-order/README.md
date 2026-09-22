@@ -1,5 +1,14 @@
 # Arbitrary-order claim artifacts
 
+The [complete pair-gadget exclusion](PROTECTED_PAIR_GADGET_CUBIC_MATCHING_EXCLUSION.md)
+translates every complete protected-edge pairing into a simple triangle-free
+cubic graph. A matching theorem then forces a mixed unique-matching word,
+excluding this full construction family for arbitrary nonzero weights.
+Singleton macro targets force precisely this form whenever each color state
+has at most one crossing, excluding that entire sparse-crossing class too.
+The [review brief](../../docs/strategy/pair-gadget-cubic-review-2026-09-22.md)
+states the imported dependency and the still-open low-paired-depth boundary.
+
 The [fixed paired-minority support countermodels](PROTECTED_LOW_MINORITY_SUPPORT_COUNTERMODELS.md)
 refute exclusion by any fixed paired-minority support cutoff, even with
 whole-port DAGs and coverage of every mixed macro word. P1 has an explicit

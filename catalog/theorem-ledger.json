@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "6ac2e04267118edd",
+      "document_sha256_16": "141c77fc763ab45c",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -7522,7 +7522,7 @@
     {
       "name": "No fixed minority depth excludes the protected scaffold (PSFD)",
       "document": "claims/arbitrary-order/PROTECTED_SCAFFOLD_FIXED_MINORITY_DEPTH_NO_GO.md",
-      "document_sha256_16": "77491d6251f66f8f",
+      "document_sha256_16": "713867939924c0fb",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "For every fixed integer r>=0 there exists some finite n=4k,k>=2 protected scaffold over C with entries0,+1,-1 satisfying every full source equation within rminorities of a constant word, but an explicit mixed full word has amplitude1.",

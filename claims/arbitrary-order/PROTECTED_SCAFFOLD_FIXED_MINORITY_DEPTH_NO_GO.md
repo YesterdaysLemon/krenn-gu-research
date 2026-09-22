@@ -9,6 +9,12 @@ This is a proper-subsystem mechanism obstruction, not a full-target source
 and not an arbitrary-order scaffold exclusion. The global Krenn--Gu
 conjecture remains **UNRESOLVED**.
 
+The later [complete pair-gadget theorem](PROTECTED_PAIR_GADGET_CUBIC_MATCHING_EXCLUSION.md)
+excludes the entire complete protected-edge-pairing family containing these
+controls from full GHZ, for arbitrary nonzero crossing weights. It supplies
+no uniform minority-depth bound and does not change this no-go theorem's
+fixed-depth quantifiers.
+
 The upstream family and its structural-gate boundary are owned by the
 [pure-matching scaffold theorem](PURE_MATCHING_SCAFFOLD_STRUCTURAL_GATE_NO_GO_THEOREM.md).
 The full source is the sum of products of physical edge entries over all
