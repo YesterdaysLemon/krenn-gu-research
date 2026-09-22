@@ -1,0 +1,24 @@
+{
+  "scope": "Exact k=2/k=3 minimum-density WP1 finite leaves; general parent and global conjecture unresolved",
+  "primary_k3_canonical_lf_sha256": "5aff9e47d5d775f7fb446cc2cb610d6c62cd40dff041a4b1715607885d792b7c",
+  "k3_uncompressed_receipt_sha256": "3f11e93124ed3cb1435ed99231208085b7f54a4cf61165f91696b187ce0bdf19",
+  "original_k3_receipt_sha256": "3f11e93124ed3cb1435ed99231208085b7f54a4cf61165f91696b187ce0bdf19",
+  "witness_rows_unchanged": true,
+  "sha256": {
+    "AUDIT.md": "ea821f5a746f1a90e3e5a6d22feae40fb80570182e1c08debd13a6b428617f3b",
+    "audit_k3_words.py": "6df253c416962e954e3f6c51fee353e8940867b6fa7cc8cac9642cb98cc003e1",
+    "enumerate_k3.py": "5aff9e47d5d775f7fb446cc2cb610d6c62cd40dff041a4b1715607885d792b7c",
+    "generate_k3_receipt.py": "99cc3a28007d792b72f4a637ccce5b58254ec24cd438c28bc2700d60ecae853b",
+    "k2-witness-table.bin": "10b9bc58db753fdc4dcb8dc16cc86a7d919c481c3b1ed21aa14b1f10b8b6056a",
+    "K2_COVER.md": "1e6496f329cf5c60ebdd2fa847e0084370328f3dbe94f5563a78b39ed5ce6429",
+    "K2Generator/Generator.csproj": "64a04d1c8db977dcd104b173e3a0a7b576479d3c8dfbc4fa7498c82b41cca12c",
+    "K2Generator/Program.cs": "4c4dceae2c657b359d866ac2aa1268f1c74444e46e36cccfdf6c75d848413d07",
+    "k3-witnesses.jsonl.gz": "7897c81c5193e94bba1572674e30c2217c664997105a65d246bbcc5909075658",
+    "K3_COVER.md": "b06fa312df8b1fc53f44c7866ac1e1572867e70c6450691081494b09312381a4",
+    "README.md": "dd114d4f6547ab4da060d3b86285ab8fcc7d19cf489e824f851f86df09ac1bac",
+    "TWO_HIDDEN_BLOCK.md": "ea6287ac1f55e96dfaba3fe4f21916b3bb75fb484e6309005adea08896709f1c",
+    "verify_k2.py": "e278423dd17131468be1445cb0747c650530c82fa66fc4eaa605f3a6a9028662",
+    "verify_k3_topology.py": "3675ff95ee77c75f87427c8df8699753a7dc3edbae5b02efb3dd5c3daa121251",
+    "verify_two_hidden_block.py": "6e6f6625aa71096c5a853d6e288961d3e249bdbb78af569d3d3ad5d54c09730b"
+  }
+}

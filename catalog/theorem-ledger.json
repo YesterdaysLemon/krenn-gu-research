@@ -7800,7 +7800,7 @@
     {
       "name": "Degree-two source transport and uniform-exterior local closure boundary (PSDT)",
       "document": "claims/arbitrary-order/DEGREE_TWO_SOURCE_TRANSPORT_AND_LOCAL_BOUNDARY.md",
-      "document_sha256_16": "5f6f22c96bd44038",
+      "document_sha256_16": "8fd8bd9e7cc6ddd4",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "Protected unit-K4 scaffold over C at every finite k>=2, hollow intercomponent crossings and no other internal entries. General singleton expansion retains every actual two/four-cut matching term with unordered exterior resource pairs.",
@@ -7812,7 +7812,10 @@
         "Separate-agent analytic reviews, literal full-array enumeration, independent collision enumeration and symbolic Laurent boundary reconstruction. Finite checks corroborate the proofs and exact countercontrols, not an exhaustive arbitrary-order cover.",
         "Stronger actual k=2 control satisfies all486 reciprocal all-background one-component row specifications (477 distinct words), but has195 full-source failures including171 min-q<=1 rows.",
         "An independently audited q1 word forces a one-component C8 repair to send at least one opposite-split resource outside the C8 target component. Reverse singleton cancellation blocks automatic escape iteration; spanning C8s and separated repairs remain open.",
-        "An actual k=3 color-regular partial-resource control satisfies all81 local tensor rows, with one cancelling resource pair and two orphan targets in both foreground layers. It fails an explicit global macro of coefficient3. This refutes complete split/C8 classification from local rows alone, not a global full-source implication."
+        "An actual k=3 color-regular partial-resource control satisfies all81 local tensor rows, with one cancelling resource pair and two orphan targets in both foreground layers. It fails an explicit global macro of coefficient3. This refutes complete split/C8 classification from local rows alone, not a global full-source implication.",
+        "A k=4 color-regular reciprocal partial-resource control passes all243 one-component/uniform-background specifications at one fixed component, with one cancelling resource pair and two orphan endpoints in all six ordered foreground/background incidences. It has an explicit outside unique-matching word and is not a full source.",
+        "At every k>=2, if a partial a-to-c singleton has both orphan targets in one component B, source rows force them to be an M_b edge. The complementary M_b edge must send its two b-to-a exits to a distinct whole M_a resource with product -1: the complete mixed coefficient is h or h(1+g), h nonzero.",
+        "The same-component implication is a necessary repair relation, not an exclusion or a global resource partition. Separated orphan targets and the global supplier remain open. Four additional portable primary/audit replays independently check the actual reciprocal control and complete local exit sectors."
       ],
       "dependencies": [],
       "primary_verifier": "claims/arbitrary-order/verify_c8_split_local_boundary.py",
@@ -7884,6 +7887,61 @@
       "external_binaries": [],
       "note": "Global-facing parent reduction synthesizes the paired-cycle consumer with exact switched cancellation, Hamilton parity and path elimination. The remaining explicit mixed-transversal obligation is open. Additional audit scripts check switched factorization and exact gauge covariance. Global Krenn-Gu UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Minimum-density WP1 exclusion at k=2 and k=3 (MDW1F)",
+      "document": "claims/arbitrary-order/minimum-density-wp1/README.md",
+      "document_sha256_16": "dd114d4f6547ab4d",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "Protected unit-K4 complex hollow arrays with k=2 or k=3 components. WP1 comprises all macro GHZ targets and mixed physical zero targets with min_c q_c<=1. Crossings are nonzero scalar entries counted once without orientation.",
+        "The macro-only argument in PSMD gives m>=6k; equality has exactly 3k two-entry protected-pair gadgets. This is the proved bridge to the finite instances, not an inference from generator output.",
+        "At k=2 hollowness forces six ordered gadgets. All 4^6*2^6=262144 allocations and endpoint maps are covered without a quotient.",
+        "At k=3 the four normalized sign systems reduce to three physically isomorphic C9 systems and one triangle system excluded by a macro word. A free componentwise Klein-four port gauge plus the proved local gates leaves exactly 32768 configurations, independently reconstructed by the checker.",
+        "Every checked configuration has a mixed low-q word with exactly one compatible matching. Hence its coefficient is one nonzero monomial for arbitrary nonzero gadget weights; numerical or fixed-sign specialization is not an assumption of the exclusion.",
+        "Pinned k2 binary and compressed k3 JSONL certificates, complete-case reconstruction and independent word-first matching recursions discharge these finite leaves. Optional k2 generation requires .NET10; checking uses only ordinary non-optimized Python and the standard library.",
+        "General k>=4 WP1 at equality, denser supports, arbitrary-witness scaffold supply and global Krenn-Gu remain unresolved. No Lean formalization or independent human refereeing is supplied."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/minimum-density-wp1/enumerate_k3.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/minimum-density-wp1/audit_k3_words.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "claims/arbitrary-order/minimum-density-wp1/AUDIT.md",
+      "expected_runtime": "seconds for certificate checking; bounded minutes for optional full k3 regeneration",
+      "external_binaries": [],
+      "note": "The k2 primary C# scalar-term generator is independently checked by verify_k2.py using physical adjacency recursion. K3 topology and the two-hidden analytic gate have separate exact companions. The mathematical bridges and finite cover are documented in K2_COVER.md and K3_COVER.md. This publishes already completed exhaustive leaves of the declared WP1 density parent.",
+      "claim_package": "claims/arbitrary-order/minimum-density-wp1",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "All-split forward one-switch obstruction and bidirectional parent (ASOS)",
+      "document": "claims/arbitrary-order/all-split-one-switch/README.md",
+      "document_sha256_16": "8b79595725918712",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "Exact k=5 protected K4 all-split color-regular hollow support. Three protected matching involutions satisfy the physical Klein relation. This is a finite mechanism control, not a claimed full source.",
+        "One resource cycle C30, all three binary physical transitions Hamilton, and every forward one-switch boundary for base A contains its actual predecessor resource. All160 Hamilton B-to-C endpoint orientations in the stated support satisfy the forward gates.",
+        "Every globally shortest forward switched cycle contains another full root. Thus forward-only minimum-cycle and predecessor-cycle arguments cannot exclude this family.",
+        "The control fails reverse switches and an explicit mixed physical word with a unique matching. It neither refutes the all-split source exclusion nor the global conjecture.",
+        "The all-order bidirectional K4 straddling lemma is proposed and OPEN. Full-source boundary equations supply both necessary oriented root systems; proving incompatibility would close only the explicit all-split branch. A six-vertex abstract control passes both systems and refutes an unrestricted cyclic-order argument omitting physical K4 hypotheses; it does not isolate necessity of the Klein relation while retaining the other hypotheses.",
+        "Primary and separately reconstructed exact replays validate the finite control and its non-source witness. No finite census proves the all-order parent; no external theorem, Lean formalization or human-referee claim is used."
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/all-split-one-switch/replay.py",
+      "verifier_provenance": "script_is_the_verifier",
+      "independent_audit": "claims/arbitrary-order/all-split-one-switch/independent_replay.py",
+      "audit_provenance": "independent_exact_identity_audit",
+      "review": "claims/arbitrary-order/all-split-one-switch/AUDIT.md",
+      "expected_runtime": "seconds for the exact finite control; bidirectional all-order lemma remains open",
+      "external_binaries": [],
+      "note": "Parent attempt synthesizes the ASSR Hamilton and physical boundary-hitting supplies. The exact negative result eliminates forward-only proof mechanisms and leaves a sharper bidirectional or multi-switch obligation; it does not claim another excluded full-source branch.",
+      "claim_package": "claims/arbitrary-order/all-split-one-switch",
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
