@@ -200,7 +200,7 @@ independent-audit.json
   RZP model. It does not itself prove AP' UNSAT at `n=10`; WB2's AP' theorem
   is scoped to `n=6,8`, and its older no-DRAT evidence gap remains separate.
   (Pointer added 2026-10-08: AP' at `n=10` was later excluded independently,
-  with a checked certificate, in the
+  with a checked certificate from one encoding, in the
   [WB4 document](../../arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_AND_PARENT_ATTEMPT.md);
   this theorem's own scope is unchanged.)
 - The result is finite at exactly ten vertices. It supplies no all-order
