@@ -1,4 +1,5 @@
 # Root-pair supply parent attempt
+> Historical record (status line added 2026-10-08): this note describes a run that has ended; the current coordination brief is `fibre-exact-targets-2026-09-01.md` and the live proof map is `../current-frontier.md`.
 
 Status: active research attempt, not a proved implication. Global status
 UNRESOLVED. Base: origin/main 1c78ed0464b89f7fcf50a8b00a07534336b07c09.
