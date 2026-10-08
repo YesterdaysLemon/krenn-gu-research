@@ -38,8 +38,10 @@ vector of an edge set `N`.
 
 A **three-edge cut** is a set `delta(U)` of exactly three edges, where `U` is
 a vertex set and `delta(U)` is the set of edges with exactly one end in `U`.
-The vertex stars are three-edge cuts; a three-edge cut is **nontrivial** when
-`1 < |U| < 2m - 1`.  Let
+The vertex stars are three-edge cuts; a three-edge cut is **nontrivial** when,
+as an edge set, it is not a vertex star (for connected `G` this means
+`1 < |U| < 2m - 1`; for disconnected `G` the same edge set may be `delta(U)`
+for several `U`, and it is the edge set that matters).  Let
 
 ```text
 C     = the set of all three-edge cuts of G,
@@ -185,10 +187,11 @@ rest is the equivalence `(i) <=> (ii)`.
 The truncation step of Theorem B produces the nontrivial three-edge cut
 around the new triangle, and a perfect matching of the truncated graph uses
 one or three attachment edges according as it crosses that cut once or three
-times.  Proposition E therefore explains the family of Theorem B: its extra
-matchings are exactly the matchings that cross some truncation cut three
-times, and the cut-counting potential `m k(e) - K` is an alternative to the
-recursive potential of Theorem B.  For the canonical family the verifier
+times.  Proposition E therefore explains the family of Theorem B: a perfect
+matching outside the three colour classes crosses some three-edge cut three
+times (item 4), and on the canonical family the verifier finds that these
+cuts are the truncation cuts for `n <= 16`; the cut-counting potential
+`m k(e) - K` is an alternative to the recursive potential of Theorem B.  For the canonical family the verifier
 below finds `K = m - 2` nontrivial three-edge cuts and `r = 3m - 2` for
 `n = 2m = 4, ..., 16`.
 
@@ -198,8 +201,9 @@ present.  The closure theorem's Consequence 2 states that a fourth perfect
 matching always exists for `n >= 6`; that statement is used here as recorded
 there and is not re-proved.
 
-The inequality `r <= 3m - 2` of item 2 is the special case, at the all-`1/3`
-point of a three-edge-coloured cubic graph, of the bound
+The inequality `r <= 3m - 2` of item 2 is, through (E2) and hence through
+Edmonds' theorem, the special case at the all-`1/3` point of a
+three-edge-coloured cubic graph of the bound
 `|supp y| - dim F_y <= 3m - 2` stated for every point `y` of the
 perfect-matching polytope of a loopless multigraph on `2m` vertices in an
 OpenAI preprint (Section 2 below).  Item 4 then reads: **Theorem A applies to
@@ -222,12 +226,15 @@ Evidence labels, kept separate:
 | claimed by OpenAI | every theorem of the preprint and every Lean declaration named below |
 | statement read here | the declarations and passages listed below, at the pinned commit |
 | certificate replayed here | none |
-| kernel-checked here | **none**: the Lean development was not built in this repository's work, and no axiom report was obtained |
+| built and axiom-checked here (2026-10-08) | `OAI.Combinatorics.MatchingEntropy.KleeSharpness` built with Lean 4.34.1 at the pinned commit; `#print axioms` reports only `propext`, `Classical.choice`, `Quot.sound` for `klee_minimal`, `klee_dimension`, `klee_unique_law`, `klee_sharp_face`; the Comparator challenge `TriangleFace` passed a CompareLite comparison (statement identical, 33 challenge-local and 126 library dependencies checked, same three axioms) |
+| kernel-checked here | **none**: no `leanchecker` replay of these modules has completed; a replay of the openai/math family-003 modules was still running when this line was written |
 
 The publisher's own catalogue `lean/formalization.yaml` records
 `review: status: unchecked`.  The fetched source text of the three Lean files
 named below contains no `sorry`, `axiom` or `native_decide` token; that is a
-text search of those files only, not of their import closure.
+text search of those files only, not of their import closure.  The build and
+axiom report above cover the import closure of `KleeSharpness` as compiled;
+they are not a kernel replay.
 
 What was read:
 
@@ -319,8 +326,10 @@ three-edge-colouring of `H` carried by its edge data:
 | three-`K_4` triangle | 30 | 45 | 160 | 0 | 15 | 15 | 157 | 56 |
 
 Neither `H` has a nontrivial three-edge cut.  So `F` is the set of all
-perfect matchings; by (E2) the minimal face of the all-`1/3` point is the
-whole polytope `P(H)`; and the three colour classes do not form a face.  The
+perfect matchings; by (E2), which uses Edmonds' theorem, the minimal face of
+the all-`1/3` point is the whole polytope `P(H)`; and the three colour
+classes do not form a face (this last conclusion is also certified below
+without Edmonds' theorem).  The
 last conclusion also has a certificate that does not use Edmonds' theorem:
 each `H` has a second proper three-edge-colouring, whose three classes
 average to the same all-`1/3` point, which is impossible if the original
@@ -349,7 +358,9 @@ only.
   anywhere in the repository.  Building it and obtaining an axiom report is
   an open evidence task, not a mathematical obligation of any live route.
 - Section 3 is two finite instances.  WP1 remains open at general order.
-- No independent review of this note has been performed.
+- A same-day adversarial agent review of Proposition E and Section 3 found
+  no gap: [review](../../docs/audits/GHZ_CLOSURE_FACE_THREE_EDGE_CUT_CRITERION_REVIEW_2026-10-08.md).
+  It is not an external referee report.
 
 ## Verification
 
