@@ -736,6 +736,73 @@
           "source_locator": "Commit 0647711a71183c1ea492ad60860776617ce1ea88; README; APNOutputs/AICollaborator/QuantumOptics/MonochromaticQuantumGraph.lean lines 327-565 and no-go declaration bodies."
         }
       ]
+    },
+    {
+      "citekey": "edmonds-1965-maximum-matching-polyhedron",
+      "title": "Maximum matching and a polyhedron with 0,1-vertices",
+      "authors": [
+        "Jack Edmonds"
+      ],
+      "year": 1965,
+      "identifiers": {
+        "doi": "10.6028/jres.069B.013"
+      },
+      "authoritative_url": "https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn1-2p125_A1b.pdf",
+      "identity_verification": {
+        "source_url": "https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn1-2p125_A1b.pdf",
+        "date": "2026-10-07"
+      },
+      "search_trail": [
+        "2026-10-07: followed the reference [9] of the OpenAI matching-entropy preprint to the NIST-hosted scan; title, author, journal volume and pages read from its first page."
+      ],
+      "relevance": "Imported linear description of the matching polytope, used for the necessity directions of the three-edge-cut face criterion and for identifying the minimal face of the all-1/3 point.",
+      "limitations": [
+        "Only the statement of conditions (1)-(3) and Theorem (P) on the second page was inspected, from text extracted from a scanned PDF; the proof was not read.",
+        "The source describes the matching polytope by odd-set edge-count inequalities; the odd-cut description of the perfect-matching polytope is derived from it in the repository note, not quoted from the source."
+      ],
+      "repository_usages": [
+        {
+          "path": "claims/arbitrary-order/GHZ_CLOSURE_FACE_THREE_EDGE_CUT_CRITERION_AND_UPSTREAM_CROSSCHECK.md",
+          "role": "imported_result",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "J. Res. Nat. Bur. Standards 69B (1965), p. 126: inequalities (1), (2), (3) and THEOREM (P)",
+          "assumptions_scope": "Finite graph G; the polyhedron C cut out by nonnegativity, the node inequalities sum <= 1, and for every set S of 2r+1 nodes (r >= 1) the inequality that the edges inside S sum to at most r, has exactly the matching vectors as vertices.",
+          "correspondence_note": "Applied to simple cubic graphs. The perfect-matching polytope is the face of C on which every node inequality is tight; on it the odd-set inequality is equivalent to the odd-cut inequality, as derived in Section 1 of the note. Used only for implications (i)=>(ii), (iii)=>(ii), (ii)=>(iv), item 6, and the identification of the minimal face in Section 3.",
+          "unresolved_obligations": []
+        }
+      ]
+    },
+    {
+      "citekey": "openai-2026-matching-polytope-entropy-face-dimension",
+      "title": "Entropy and Face Dimension of the Perfect-Matching Polytope",
+      "authors": [
+        "OpenAI"
+      ],
+      "year": 2026,
+      "identifiers": {},
+      "authoritative_url": "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026",
+      "identity_verification": {
+        "source_url": "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Entropy-and-Face-Dimension-of-the-Perfect-Matching-Polytope-September-23-2026",
+        "date": "2026-10-07"
+      },
+      "search_trail": [
+        "2026-10-07: owner-supplied pointer to the openai/math release; preprint README, main.pdf and the Lean files fetched at the pinned commit."
+      ],
+      "relevance": "External statement, with accompanying Lean declarations, of the triangular minimal face of the all-1/3 point on iterated triangle expansions (Klee graphs), and of a rank bound whose equality case at that point is the face hypothesis of the GHZ closure theorem. Comparison only; no result is imported.",
+      "limitations": [
+        "Preprint authored by OpenAI and described in its repository as written by an unreleased model; no peer review is asserted.",
+        "The Lean development was not built and no axiom report was obtained here; the publisher's lean/formalization.yaml records review status unchecked.",
+        "Only the listed passages and declaration statements were read. The solution module of the TriangleFace challenge and the import closure of the Lean files were not inspected.",
+        "The preprint's attributions to Cygan-Pilipczuk-Skrekovski (2013) and Abdi-Cornuejols-Dadush-Dalirrooyfard (2026) were not followed; those sources are uninspected leads."
+      ],
+      "repository_usages": [
+        {
+          "path": "claims/arbitrary-order/GHZ_CLOSURE_FACE_THREE_EDGE_CUT_CRITERION_AND_UPSTREAM_CROSSCHECK.md",
+          "role": "background",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "Commit adc7f1241b42e322a6451854ab7e4b4c146bf78a; main.pdf abstract, Section 1.2, Proposition 2.4, Section 5 (Lemma 5.1, Proposition 5.2); lean/OAI/Combinatorics/MatchingEntropy/TriangleExpansion.lean (triangleExpansion, kleeGraph, kleeRoot, kleeColor, kleeUniform, kleeTriangle, expansion_face), MinimalFace.lean (minimalFace, faceDimension), KleeSharpness.lean (klee_minimal, klee_dimension, klee_unique_law, klee_sharp_face), SharpRank.lean (sharp_face_rank); lean/ComparatorChallenges/TriangleFace.lean and TriangleFace.json; lean/formalization.yaml review field."
+        }
+      ]
     }
   ]
 }
