@@ -137,14 +137,17 @@ class GSM:
                 cnf.append([self.m[(rest, (0,) * len(rest))]])
         order = sorted(self.g)
 
+        generator_tags = iter(range(10**6))
+
         def lex_leader(image):
+            tag = next(generator_tags)   # distinct per generator (never id(), which CPython reuses)
             eq_prev = self.true
             for key in order:
                 x, y = self.g[key], self.g[image(key)]
                 if x == y:
                     continue
                 cnf.append([-eq_prev, -x, y])
-                eq = self.pool.id(("eq", id(image), key))
+                eq = self.pool.id(("eq", tag, key))
                 cnf.append([-eq, eq_prev])
                 cnf.append([-eq, -x, y])
                 cnf.append([-eq, x, -y])

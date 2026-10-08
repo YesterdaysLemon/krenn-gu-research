@@ -223,7 +223,10 @@ class Encoder:
                 cnf.append([self.m[(0, rest)]])
         order = [(c, e) for c in range(3) for e in self.pairs]
 
+        generator_tags = iter(range(10**6))
+
         def lex_leader(image):
+            tag = next(generator_tags)   # distinct per generator (never id(), which CPython reuses)
             """Impose var-vector <=lex its image under a symmetry (g-prefix only)."""
             eq_prev = self.true
             for key in order:
@@ -231,7 +234,7 @@ class Encoder:
                 if x == y:
                     continue
                 cnf.append([-eq_prev, -x, y])
-                eq = self.pool.id(("eq", id(image), key))
+                eq = self.pool.id(("eq", tag, key))
                 cnf.append([-eq, eq_prev])
                 cnf.append([-eq, -x, y])
                 cnf.append([-eq, x, -y])
