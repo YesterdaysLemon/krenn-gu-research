@@ -7413,7 +7413,7 @@
       "verifier_provenance": "companion_point_check_script",
       "independent_audit": "claims/arbitrary-order/audit_all_diagonal_support_level_ap_prime_chain_normalized.py",
       "audit_provenance": "independent_exact_identity_audit",
-      "review": null,
+      "review": "docs/audits/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_REVIEW_2026-10-08.md",
       "expected_runtime": "seconds at n=6,8; about four minutes per n=10 instance for the primary search, plus about two minutes each for the native CaDiCaL re-solve and the drat-trim replay; the audit encoding at n=10 is longer",
       "external_binaries": [
         "cadical (native, for the DRAT trace; optional)",
