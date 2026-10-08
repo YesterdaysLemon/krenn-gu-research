@@ -40,9 +40,9 @@ request; its proposed full binary-source parent remains open.
 The [2026-10-08 WB4 document](claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_AND_PARENT_ATTEMPT.md)
 proves that every AP' model has a colour whose Laplace strategy is not a single
 perfect matching, and records that AP' is UNSAT at n=10 with a DRAT-checked
-certificate from one encoding (CaDiCaL, drat-trim at the repository-pinned
-commit; a second encoding's certificates were withdrawn the same day after a
-review found a symmetry-breaking bug, now fixed). The support-level
+certificate from two encodings (CaDiCaL, drat-trim at the repository-pinned
+commit; one encoding's first certificates were withdrawn the same day after a
+review found a symmetry-breaking bug, then re-certified after the fix). The support-level
 conjecture of WB2 therefore now holds for n=6, 8, 10; its status for general n
 is open. The frontier node is `WB4` in
 [`docs/current-frontier.md`](docs/current-frontier.md). The global conjecture

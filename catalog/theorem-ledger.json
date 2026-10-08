@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "20357fd7510de986",
+      "document_sha256_16": "252497044741ab2e",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -7283,7 +7283,7 @@
     {
       "name": "All-diagonal weighted Bogdanov: support-level abstraction and finite exclusion at n = 6, 8 (WB2)",
       "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_WEIGHTED_BOGDANOV_FINITE_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "d046b633706c8bbf",
+      "document_sha256_16": "4c6a462168659c8a",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "finite computer-assisted exact exclusion for all-diagonal witnesses (every edge block diagonal) on n=6 and n=8 vertices, plus an exact reduction valid at every even n: every all-diagonal witness yields a support model (AP') consisting of the graphs supp(Z^c) and the families of even sets with nonzero principal hafnian, satisfying Laplace accessibility, support, single-matching forcing, V in S_c, and rainbow-freeness over ordered even partitions",
@@ -7312,7 +7312,7 @@
     {
       "name": "Ten-vertex all-diagonal recursive-hafnian zero-pattern exclusion (RZP10)",
       "document": "claims/finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "832dbcea7b1d90e1",
+      "document_sha256_16": "4fef1ee65a6fb409",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "finite computer-assisted exact exclusion for all-diagonal ternary complex witnesses on exactly ten vertices",
@@ -7395,7 +7395,7 @@
     {
       "name": "AP-prime branching lemma, normalization, and DRAT-checked n=10 exclusion (WB4)",
       "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_AND_PARENT_ATTEMPT.md",
-      "document_sha256_16": "abdfc3cdac5d816a",
+      "document_sha256_16": "a33e61e87d321f4c",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact combinatorial statements about the AP' support abstraction of WB2 (axioms (a), (L), (S), (F), (H2)); no weights and no field",
@@ -7403,7 +7403,7 @@
         "Lemma 2: every model contains a colour-0 Laplace chain from V to the empty set and may be relabelled along it; the lex-leader clauses for chain-preserving symmetries are standard orbit arguments",
         "Theorem 3 (branching lemma), every even n>=6: some colour's Laplace step edges between reachable sets do not form a matching; if all three did, they would be pairwise disjoint top-active perfect matchings and the imported nonmonochromatic-perfect-matching theorem (Chandran-Gajjala-Illickan, MFCS 2024, Theorem 1.7, the WB1 import) would give a rainbow partition with reachable classes",
         "Lemma 4: (F') is a valid necessary condition for witnesses and with (a), (S) implies (F), so the RZP model of the n=10 recursive-hafnian theorem lies strictly between AP' and witnesses",
-        "finite computer-assisted part (corrected 2026-10-08): under the Lemma 2 chain normalization AP' is UNSAT at n=10 by the independent perfect-matching-listing encoding (Glucose 4.1 search, 3,634 s; native CaDiCaL 1.7.3 re-solve with a 985 MB DRAT trace checked s VERIFIED by drat-trim at the repository-pinned commit); the primary encoding's two pinned certificates and all its n>=10 runs were WITHDRAWN after the same-day review found its lex-leader symmetry block unsound (helper variables keyed by reused id() values); the script is fixed and corrected certified reruns are pending; AP'+(F') at n=10 has no valid certificate here and is excluded only through RZP10",
+        "finite computer-assisted part (corrected and re-certified 2026-10-08): under the Lemma 2 chain normalization AP' is UNSAT at n=10 by two encodings with checked certificates: the independent perfect-matching-listing audit encoding (Glucose 4.1 search; native CaDiCaL 1.7.3 re-solve with a 985 MB DRAT trace, drat-trim s VERIFIED) and the fixed primary encoding (CaDiCaL search 2,170 s; native re-solve 1,496 s; 557 MB DRAT trace, s VERIFIED, DIMACS SHA-256 2c6d1990...); AP'+(F') at n=10 is UNSAT with a checked certificate from the fixed primary encoding (204 MB DRAT, s VERIFIED, DIMACS a95034fd...) and UNSAT under Glucose for the audit encoding (certificate check pending); the original primary certificates were WITHDRAWN after the same-day review found the lex-leader symmetry block unsound (helper variables keyed by reused id() values), and the script was fixed before re-certification",
         "the extra hypothesis that every top-active graph is a matching, the Lemma 1 normalization, and the Lemma 2' branching WLOG have no valid n>=10 solver results at present; the top-matching lemma is a stated conjecture, not a theorem",
         "no independent review of the document has been performed; AP' for models with a non-uniform colour at n>=12, the all-diagonal branch, every bichromatic branch, and the global conjecture remain open"
       ],
@@ -7418,7 +7418,7 @@
         "cadical (native, for the DRAT trace; optional)",
         "drat-trim at commit 2e3b2dc0ecf938addbd779d42877b6ed69d9a985 (for certificate replay; optional)"
       ],
-      "note": "Parent attempt on the all-order AP' conjecture. Proves the normalization, chain and branching lemmas at every order and records the (F') ladder. AP' at n=10 is closed by one certified encoding after the primary encoding's certificates were withdrawn following review (symmetry-block bug, fixed). Not a witness, no change to the global status, which remains UNRESOLVED.",
+      "note": "Parent attempt on the all-order AP' conjecture. Proves the normalization, chain and branching lemmas at every order and records the (F') ladder. AP' at n=10 is closed by two certified encodings (the primary encoding's first certificates were withdrawn after review and re-certified after a symmetry-block fix). Not a witness, no change to the global status, which remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
