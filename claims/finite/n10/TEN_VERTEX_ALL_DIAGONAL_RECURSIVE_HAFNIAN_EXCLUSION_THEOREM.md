@@ -181,7 +181,11 @@ portable replay. The replay receipt is 33,240 bytes with SHA-256
 `41af58d23ec7f74f201af52a2e008c2a5f54ee8048ff39d13afad49f8640e807`.
 The unpacked independent-audit receipt has SHA-256
 `7fdfaef892ecb0880a7891cc279a3ae3496c87d253c59e8b56b084f86fa0db59`.
-Within an unpacked replay directory the receipts are:
+Within an unpacked bundle, these receipt paths are not tracked in this
+repository. `replay/replay.json` is written by the replay command above when
+run with `--output-dir replay` (as in the bundle's run instructions), and
+`independent-audit.json` is written by the independent
+audit command above with `--output independent-audit.json`:
 
 ```text
 replay/replay.json
@@ -193,8 +197,12 @@ independent-audit.json
 - This is all-diagonal only. Mixed words cease to factorize in the presence of
   bichromatic block entries.
 - It proves actual complex-witness nonexistence through the stronger necessary
-  RZP model. It does not prove AP' UNSAT at `n=10`; WB2's AP' theorem remains
-  scoped to `n=6,8`, and its older no-DRAT evidence gap remains separate.
+  RZP model. It does not itself prove AP' UNSAT at `n=10`; WB2's AP' theorem
+  is scoped to `n=6,8`, and its older no-DRAT evidence gap remains separate.
+  (Pointer added 2026-10-08: AP' at `n=10` was later excluded independently,
+  with a checked certificate, in the
+  [WB4 document](../../arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_AND_PARENT_ATTEMPT.md);
+  this theorem's own scope is unchanged.)
 - The result is finite at exactly ten vertices. It supplies no all-order
   occurrence theorem and no source-preserving reduction for general `n`.
 - The thirteen branches are an exhaustive cover of selected support-matching
