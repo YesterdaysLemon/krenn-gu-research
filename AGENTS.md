@@ -6,9 +6,10 @@ Krenn–Gu monochromatic quantum graph prize conjecture.
 The global conjecture is **UNRESOLVED**.
 
 This file is the durable operating contract for automated agents and
-human contributors working with agent assistance.  Detailed procedures
-live in linked runbooks; this file contains the invariants that should
-remain valid when the current layout migration is over.
+human contributors working with agent assistance.  It is written for
+any agent or model; nothing in it depends on which tool is reading it.
+Detailed procedures live in linked runbooks; this file contains the
+invariants.
 
 ## 1. Reconstruct context from committed evidence
 
@@ -303,29 +304,31 @@ another worker's process.
 
 See `docs/research-process-runbook.md`.
 
-## 9. Layout-migration mode
+## 9. Layout changes and root hygiene
 
-The active layout-migration procedure is documented separately:
+The claim-centred layout migration that produced the current tree is
+essentially complete: `catalog/moved-paths.json` records the executed
+moves and `catalog/layout-classification.json` the original
+classification.  Any further file movement follows the same procedure:
 
 `docs/architecture/layout-migration-runbook.md`.
 
-Do not infer migration approval or review authority from classifier
+Do not infer move approval or review authority from classifier
 confidence.
 
 Only exact, frozen batches reviewed by an authorized reviewer are
-executable.
-
-Under the repository owner's standing delegation dated 2026-08-08,
-Codex may review, freeze, and execute routine, non-ambiguous,
-evidence-backed exact layout mappings.  The batch `approved_by` value
-must identify Codex as the actual reviewer and record the delegation
-basis.  This delegation does not cover scientific status or scope,
-genuinely ambiguous proof-boundary ownership, or architectural choices
-requiring owner preference; those remain owner-gated.
+executable.  The owner's standing written delegation of 2026-08-08
+names the automated reviewer that may review, freeze, and execute
+routine, non-ambiguous, evidence-backed exact layout mappings; the
+batch `approved_by` value must identify the actual reviewer and record
+the delegation basis (see `docs/evidence-semantics-contract.md`).  That
+delegation does not cover scientific status or scope, genuinely
+ambiguous proof-boundary ownership, or architectural choices requiring
+owner preference; those remain owner-gated.
 
 Use `git mv`; preserve history and scientific content.
 
-Do not opportunistically edit mathematics during migration.
+Do not opportunistically edit mathematics while moving files.
 
 ### Root-exit invariant
 
@@ -340,11 +343,14 @@ The no-new-debt ratchet and exact end-state allowlist are defined in
 `check_hygiene.py`.  Root-exit pressure never authorizes a move,
 resolves ambiguous ownership, or changes scientific status.
 
-Phase R3 exact end-state enforcement is active.  The tracked root is
-limited to the seven files and eleven directories explicitly justified
-by `check_hygiene.py`; every nonallowlisted top-level path fails the
-ordinary local and CI hygiene command.  Expanding that allowlist is a
-reviewed policy change, not an environment-variable override.
+Exact end-state enforcement is active.  The tracked root is limited to
+the files and directories explicitly justified in `check_hygiene.py`
+(seven files and eleven directories at the time of writing); every
+nonallowlisted top-level path fails the ordinary local and CI hygiene
+command.  Expanding that allowlist is a reviewed policy change, not an
+environment-variable override.  This is also why the repository has no
+root `CLAUDE.md` or similar per-tool file: this `AGENTS.md` is the
+single shared instruction file.
 
 ### Proof-boundary ownership
 
@@ -365,39 +371,54 @@ reviewed policy change, not an environment-variable override.
 
 ## 10. Candidate-tree validation
 
-Authoritative local validation uses an index-complete candidate tree.
+Authoritative local validation uses an index-complete candidate tree:
+stage everything first, because `check_hygiene.py` inspects the index.
 
-Before the final validation floor:
+The Python floor, which mirrors `.github/workflows/hygiene.yml`:
 
 ```bash
 git add -A
 python check_hygiene.py
 python -m unittest -v tests.test_migration_tools
+python -m unittest -v tests.test_bounded_research_runner
+python -m unittest -v tests.test_literature_registry
+python -m unittest -v tests.test_h31_cbmf_reconciliation
+python -m unittest -v tests.test_gls66_gls69_evidence_reconciliation
 python -m unittest -v tests.test_fourteen_vertex_cycle_cover_lattice
 python tools/migration/rewrite_links.py
 git diff --exit-code
 ```
 
+CI additionally renders the Mermaid block of `docs/current-frontier.md`
+and runs the Proof Bonsai checks in `tools/proof-visualizer` (`npm ci`,
+`npm test`, and on pull requests the append-only field-note history
+check).  A change to `docs/current-frontier.md` therefore needs
+`node scripts/sync-frontier.mjs --check` in that directory to pass.
+
+Run the focused verifier and audit commands listed in every claim
+document the change touches.
+
 If current repository tooling changes this contract, follow the
-committed runbook/tool documentation rather than stale prose here and
-update this file in the same change.
+committed workflow and tool documentation rather than stale prose here
+and update this file in the same change.
 
 ## 11. Where to look
 
 Current filesystem and code:
 Git.
 
-Proposed layout ownership:
-`catalog/layout-classification.json`.
-
-Executed layout migration:
-`catalog/moved-paths.json`.
-
-Frozen migration approvals:
-`catalog/batches/`.
+Live proof topology, open leaves, and refuted routes:
+`docs/current-frontier.md`.
 
 Curated theorem/provenance index:
 `catalog/theorem-ledger.json`.
+
+External literature provenance:
+`catalog/literature/sources.json` under `docs/literature/provenance.md`.
+
+Original layout classification, executed moves, and frozen approvals:
+`catalog/layout-classification.json`, `catalog/moved-paths.json`,
+`catalog/batches/`.
 
 Evidence vocabulary, relationship types, ledger semantics, and root
 end state:
@@ -409,8 +430,11 @@ Proof-obligation philosophy:
 Formalization/Lean correspondence:
 `docs/formalization-interface.md`.
 
-Migration procedure:
+File-movement procedure:
 `docs/architecture/layout-migration-runbook.md`.
+
+Process ownership and bounded computation:
+`docs/research-process-runbook.md` and `tools/research/run_bounded.py`.
 
 Per-family mathematics:
 the relevant claim package and its own README/status documents.
@@ -437,7 +461,7 @@ Stop and report rather than silently repairing when:
   statement;
 - a proof depends on an unexplained project-specific axiom or
   admission;
-- migration ownership is ambiguous;
+- file-move ownership is ambiguous;
 - completing the requested task would require changing mathematical
   meaning outside its scope.
 
