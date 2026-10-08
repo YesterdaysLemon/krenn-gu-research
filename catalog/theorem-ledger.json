@@ -7426,6 +7426,35 @@
       "legacy_paths": []
     },
     {
+      "name": "Two-term relation closure: grid, odd cycle, completeness, inertness (Theorems A-D)",
+      "document": "claims/arbitrary-order/TWO_TERM_RELATION_CLOSURE_THEOREMS.md",
+      "document_sha256_16": "fa24f6fae264eee9",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact statements for every even n about relations among the values of supported matching terms of T_W on the complex torus; Theorems A and B hold over every field of characteristic not two, C and D over C; a support is a set of entries assumed nonzero, a fibre is the set of live matchings of one word equation",
+        "Theorem A: division-free two-matching grid identity; if three of four grid words vanish and the fourth is constant, one of the two live monomials at the mixed corner vanishes",
+        "Theorem B: an odd cycle of opposite-ratio relations among nonzero quantities is contradictory at any odd length",
+        "Theorem C: on supports whose fibres all have at most two live matchings, with one-term constant fibres, a witness exists if and only if there is no odd sign circuit, so the problem is purely combinatorial on such supports; two-term constant fibres are excluded from the statement",
+        "Theorem D: the full-word binomial-linear closure derives nothing on a support whose nonempty mixed fibres all have at least three live matchings; the full support is such at every n>=4; this does not bound the recursive closure, Groebner reasoning, or the killer theorem",
+        "no occurrence statement is proved: none of the theorems supplies its support premises from a hypothetical witness; none excludes any witness class or changes any frontier node",
+        "the six-vertex consequences (27-entry pattern refuted three ways; 51-entry support surviving the closure with killers; three-term relations needed on a 27-word slice) live in the attempt note with their own exact scripts and are finite computations, not theorems",
+        "primary verifier replays the displayed identities of A and B, the ideal memberships in A, and the distinct-monomial lemma behind D at n=4,6,8; it does not replay the proofs of C and D; no independent audit; same-day agent review pending"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_two_term_relation_closure_theorems.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "review": null,
+      "expected_runtime": "seconds for the verifier; the closure tool needs python-flint (pinned in requirements)",
+      "external_binaries": [],
+      "note": "Trunk-lane result of the 2026-10-08 ecology run: bounds what two-term (binomial) relations can do at every order and shows they do not suffice at six vertices with killers. Not a witness, not an exclusion; the global status remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "AP-prime extra-edge sub-lemma: widow-chain Hamiltonicity, CGI core, and locality obstruction",
       "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_TOP_MATCHING_EXTRA_EDGE_LEMMA.md",
       "document_sha256_16": "e4df5c7e22e20bbc",
