@@ -129,8 +129,9 @@ the audit.  Both write JSON summaries to the untracked `tmp/` directory.
 
 - Finite: `n = 6` and `n = 8` only.  The `n = 10` instances were launched but
   are not part of this theorem.
-- The `n = 10` case was later excluded, with a DRAT-checked certificate and
-  a second encoding and solver, in the
+- The `n = 10` case was later excluded, with a DRAT-checked certificate from
+  one encoding (a second encoding's certificates were withdrawn after review),
+  in the
   [branching-lemma document](ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_AND_PARENT_ATTEMPT.md),
   which also proves at every order that an AP' model has a colour whose
   Laplace strategy is not a single perfect matching.  This theorem's own
