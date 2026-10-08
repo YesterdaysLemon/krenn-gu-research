@@ -401,8 +401,8 @@ flowchart BT
   C2["Automatic characteristic-two lift<br/>REFUTED as a general route"]
   BR1["GHZ tensor lies in the CLOSURE of the hafnian image<br/>PROVED for every even n; tensor-level separation REFUTED"]
   WB1["All-diagonal (weighted Bogdanov) witnesses<br/>PROVED Delta(D) <= 4 EXCLUDED; even active cycles; Delta(D) >= 5 OPEN"]
-  WB2["All-diagonal support abstraction (AP')<br/>UNSAT at n=6,8 (two solvers, no DRAT); all-n CONJECTURED"]
-  RZP10["Stronger recursive zero-pattern model<br/>UNSAT at n=10 by 13 checked DRAT branches; AP' at n=10 OPEN"]
+  WB2["All-diagonal support abstraction (AP')<br/>UNSAT at n=6,8 (two solvers, no DRAT) and n=10 (DRAT checked, WB4); all-n CONJECTURED"]
+  RZP10["Stronger recursive zero-pattern model<br/>UNSAT at n=10 by 13 checked DRAT branches; AP' at n=10 now also UNSAT (WB4)"]
   P25["Eight-vertex 25-literal physical identity<br/>PROVED conditional cut; parent occurrence FALSE in current Boolean abstraction"]
   P17["Two-edge five-shore physical patterns<br/>PROVED 17-literal exclusions; original 134 support EXCLUDED"]
   ST20["Shared-hafnian two-slice transfer<br/>PROVED all-order conditional identity; n=8 20-literal exclusions"]
@@ -428,6 +428,7 @@ flowchart BT
   ASSR["Color-regular all-split source<br/>PROVED signed ladder and exact path criterion"]
   ASOS["All-split one-switch parent<br/>PROVED forward-only obstruction; bidirectional lemma OPEN"]
   WB3["AP' maximum-degree-four reduction<br/>PROVED even path/cycle supports; shared-PM subcase EXCLUDED; orientation/blocker lemma OPEN"]
+  WB4["AP' branching lemma<br/>PROVED every model has a non-uniform colour; n=10 UNSAT with checked DRAT; top-matching lemma OPEN"]
 
   G0 -->|universal reduction| S1
   G0 -. limit family only .-> BR1
@@ -490,6 +491,8 @@ flowchart BT
   PSPR -->|weighted WP1 and unrestricted all-word UPM remain OPEN| GL
   WB2 -->|maximum-degree-four residual refinement| WB3
   WB3 -->|orientation/blocker dichotomy remains open| GL
+  WB2 -->|normalization and branching lemma; n=10 certificate| WB4
+  WB4 -->|non-uniform models beyond n=10 and the top-matching lemma OPEN| GL
   S1 -->|exact gate refinement| S2E
   S2E -->|finite-jet refinement| S2J
   S2J -->|target-column refinement| S2K
@@ -1060,6 +1063,7 @@ flowchart BT
 | `ASSR` | **Proved exact all-split source reduction over C:** assume the protected K4 scaffold and one crossing to each foreign color per state, with each protected resource mapping onto a whole foreign resource. Full-source rows force every binary physical transition Hamiltonian, one resource cycle C_(6k), and every normalized two-lane product -1. Odd endpoint twist permits a global diagonal gauge to rungs +1 and lane pairs (+1,-1), preserving all coefficient zeros and pure coefficients. Every physical word cuts the ladder into paths. Its coefficient is nonzero exactly when each path has even singleton count, correct consecutive-pair transport, and no free full run of length 2 modulo 3. Constructing a mixed physical transversal satisfying these conditions remains open. No all-split normalization of general color-regular arrays is proved. | [All-split reduction and path criterion](../claims/arbitrary-order/COLOR_REGULAR_ALL_SPLIT_SOURCE_REDUCTION.md), [independent review](audits/ALL_SPLIT_SOURCE_REDUCTION_REVIEW_2026-09-22.md), [parent brief](strategy/degree-two-source-parent-review-2026-09-22.md) |
 | `ASOS` | **Proved finite obstruction to forward-only all-split closure:** an exact k=5 support has one hollow C30 resource cycle, all three binary transitions Hamiltonian, and every forward one-switch boundary for base A saturated by its actual predecessor. Even its shortest switched cycles retain complete other roots. The control fails reverse switches and an explicit unique-matching mixed word, so it is not a source. The proposed all-order bidirectional K4 straddling lemma would exclude the all-split residual but remains open. The abstract statement without K4 is false. | [Exact control, replay and open parent](../claims/arbitrary-order/all-split-one-switch/README.md), [independent audit](../claims/arbitrary-order/all-split-one-switch/AUDIT.md), [review handoff](strategy/research-winddown-review-2026-09-22.md) |
 | `WB3` | If an AP' model has `Delta(G_0 union G_1 union G_2) <= 4`, each support graph is a union of even paths and even cycles and every cross-colour overlap lies in one residual partial matching.  At any order, two maximum-degree-two support graphs cannot share a perfect matching: a capacitated-Hall selector produces complementary uniquely matchable shores and contradicts two-part H2.  **Proved exact reduction / obstruction**; AP' at degree four remains OPEN at the orientation/blocker dichotomy, as does full all-`n` AP' | [Degree-four support reduction and common-matching exclusion](../claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_MAXIMUM_DEGREE_FOUR_REDUCTION_AND_COMMON_PERFECT_MATCHING_EXCLUSION_THEOREM.md), [adversarial review](audits/ALL_DIAGONAL_SUPPORT_LEVEL_MAXIMUM_DEGREE_FOUR_REDUCTION_AND_COMMON_PERFECT_MATCHING_EXCLUSION_REVIEW_2026-09-01.md) |
+| `WB4` | **Proved all-order structural lemma and finite extension of WB2:** every AP' model can be normalized to the sets reachable from `V` by supported Laplace descent plus the uniquely matchable sets, and relabelled along one colour-0 Laplace chain; in every model on `n>=6` vertices some colour's Laplace step edges do **not** form a matching, because three uniform colours give pairwise disjoint perfect matchings whose cubic union has a nonmonochromatic perfect matching whose classes are all reachable.  Under the chain normalization AP' is UNSAT at `n=10` (CaDiCaL, DRAT checked by the pinned `drat-trim`; also with (F'), with the normalization, and with every top-active graph a matching), confirming WB2's conjecture at `n=10`.  Singleton noncancellation (F') is recorded as a valid condition implying (F), so RZP sits strictly between AP' and witnesses.  The next lemma is that no model has all three top-active graphs perfect matchings; beyond `n=10` and the uniform case, AP' remains OPEN | [Branching lemma and parent attempt](../claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_AND_PARENT_ATTEMPT.md) |
 | `S1` | Balanced complete even deck and full-sensor/rank-drop dichotomy: **proved reduction** | [Balanced half-sensor theorem](../claims/arbitrary-order/BALANCED_HALF_SENSOR_COMPLETE_DECK_AND_WICK_GLOBALIZATION_THEOREM.md) |
 | `S2E` | On a full sensor, target residuals plus empty normalization, prime-divisor regularity of only the pair components, and one symmetric Euler--hafnian recurrence per higher even subset are **necessary and sufficient** for same-graph globalization | [Cramer--Euler pair-pole gate](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_EULER_PAIR_POLE_GATE_THEOREM.md) |
 | `S2J` | For each Cramer pair component, prime-divisor regularity is equivalent to finitely many nonendpoint first stresses and endpoint Hessian stresses; in ternary dimension there are `3m+6` polynomial identities per pair, and the physical block is reconstructed uniquely: **proved exact refinement** | [Pair-pole differential flatness](../claims/arbitrary-order/BALANCED_FULL_SENSOR_CRAMER_PAIR_POLE_DIFFERENTIAL_FLATNESS_THEOREM.md) |
@@ -1415,7 +1419,8 @@ flowchart BT
 | `BR1` | specialization | `WB1` | The limit families are all-diagonal and cubic; the all-diagonal branch is where exactness must first defeat suppression. |
 | `WB1` | boundary | `GL` | All-diagonal witnesses have `Delta(D) >= 5`; at degree five active graphs may have degree-three vertices and cycle vertices may carry a residual edge, so the noncancellation lemma no longer applies. |
 | `WB2` | residual refinement | `WB3` | On the maximum-degree-four locus, AP' reduces to even path/cycle supports with one residual partial matching; the shared-perfect-matching subcase is excluded, leaving the exact orientation/blocker dichotomy. |
-| `WB2` | stronger finite refinement | `RZP10` | At `n=10`, retain truthful edge-times-cofactor variables and singleton noncancellation in every Laplace expansion.  The resulting stronger necessary model is excluded by an exhaustive thirteen-branch checked certificate cover; AP' itself may still have models. |
+| `WB2` | stronger finite refinement | `RZP10` | At `n=10`, retain truthful edge-times-cofactor variables and singleton noncancellation in every Laplace expansion.  The resulting stronger necessary model is excluded by an exhaustive thirteen-branch checked certificate cover; AP' itself at `n=10` is excluded separately by `WB4`. |
+| `WB2` | residual refinement | `WB4` | Shrinking every `S_c` to reachable-or-uniquely-matchable sets and relabelling along a colour-0 chain lose no axiom.  If every colour's step edges form a matching, the three matchings are pairwise disjoint top-active perfect matchings and the imported nonmonochromatic-matching theorem supplies a rainbow partition with reachable classes; so every model has a non-uniform colour.  The chain-normalized instance is UNSAT at `n=10` with a checked DRAT certificate. |
 | `RZP10` | boundary | `GL` | The finite result excludes all-diagonal complex witnesses only at `n=10`.  An all-order supplied-family occurrence theorem or source-preserving reduction remains open, as do every bichromatic branch and global gluing. |
 | `P25` | boundary | `GL` | The division-free identity excludes one 25-literal eight-port physical pattern, but the exact `P8-25-occurrence` implication is false in the current recursive/killer/ratio Boolean parent.  An all-order route must add a weighted source-isolation consequence or use a different occurrence statement. |
 | `S3C` | explicit guarded specialization | `P17` | Two moving-slot annihilators kill the only two internal covering edges of a five-shore. The stated fifteen zeros and two nonzeros give the exact four-source obstruction. |
@@ -2047,6 +2052,7 @@ flowchart BT
 | `GLS56` | unique-nonrigid old-probe exchange and overlap | `GLS59` | At zero anchor, kill every complete matching by the chosen old probe rather than by the nonrigid auxiliary label.  Uniformize the resulting pointwise pure shores on each old-probe space, overlap the two three-label stars among five rigid labels, and contract the resulting second deficient label together with the fully supported nonrigid kernel. |
 | `GLS59` | remaining unique-nonrigid mixed-equation/attachment successor | `GL` | Couple the mono/binary descents across all overlap labels and coordinate-plane kernel choices, or transport a forced pure probe block into one named promoted target quotient with nonzero response and complete nuisance survival.  One overlap and the accepted three-colour six-vertex theorem are insufficient.  Alternate receiver, synchronization, activity, anchors, arbitrary-root source coverage, all-rigid branches, and nonzero anchor remain separate. |
 | `WB3` | boundary | `GL` | AP' at maximum degree four is not closed: an unsatisfiable orientation 2-SAT instance or a blocker cover must still be converted into uniquely matchable shores, and higher support degree is untouched. |
+| `WB4` | boundary | `GL` | AP' is open for models with a non-uniform colour at every even `n>=12`.  The top-matching lemma (no model has all three top-active graphs perfect matchings) is conjectured, UNSAT at `n=10`, and not proved; nothing here addresses bichromatic entries or changes WB1, WB2, WB3, or RZP10. |
 
 ## Smallest positive next obligations
 
@@ -4113,7 +4119,11 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
     only by Laplace accessibility, single-matching forcing, and three-colour
     rainbow-freeness.  `RZP10` separately excludes actual all-diagonal complex
     witnesses at `n=10` through a stronger recursive zero-pattern model and
-    thirteen checked DRAT branches; it does not prove AP' UNSAT at `n=10`.
+    thirteen checked DRAT branches.  `WB4` now excludes AP' itself at
+    `n=10` with a checked DRAT certificate and two encodings, and proves
+    at every order that an AP' model has a colour whose Laplace strategy
+    is not a single perfect matching, the uniform case being WB1's
+    rainbow mechanism.
     `WB3` gives the valid support-only
     `Delta(D)<=4` reduction to even path/cycle supports with one residual
     partial matching and excludes every pair of supports sharing a perfect
@@ -4122,8 +4132,9 @@ responses; it does not collapse them into the globally rigid `k=4` cell.
     of pairwise-disjoint support matchings with a nonmonochromatic perfect
     matching avoiding every full selected cycle block.  Fixed cycle choices
     are insufficient; their 2-SAT orientations must be chosen jointly with
-    the final matching.  Beyond that locus the all-order AP' conjecture
-    remains open.  By the one-way bridge, closing it would imply that every
+    the final matching.  Beyond that locus and `n<=10` the all-order AP'
+    conjecture remains open; the next lemma is that no model has all three
+    top-active graphs perfect matchings.  By the one-way bridge, closing it would imply that every
     witness has a bichromatic entry.
 
 ## Refuted or insufficient proof routes
