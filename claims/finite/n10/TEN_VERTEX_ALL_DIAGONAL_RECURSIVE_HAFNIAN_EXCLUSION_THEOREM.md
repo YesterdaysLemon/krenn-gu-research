@@ -181,7 +181,11 @@ portable replay. The replay receipt is 33,240 bytes with SHA-256
 `41af58d23ec7f74f201af52a2e008c2a5f54ee8048ff39d13afad49f8640e807`.
 The unpacked independent-audit receipt has SHA-256
 `7fdfaef892ecb0880a7891cc279a3ae3496c87d253c59e8b56b084f86fa0db59`.
-Within an unpacked replay directory the receipts are:
+Within an unpacked bundle, these receipt paths are not tracked in this
+repository. `replay/replay.json` is written by the replay command above when
+run with `--output-dir replay` (as in the bundle's run instructions), and
+`independent-audit.json` is written by the independent
+audit command above with `--output independent-audit.json`:
 
 ```text
 replay/replay.json

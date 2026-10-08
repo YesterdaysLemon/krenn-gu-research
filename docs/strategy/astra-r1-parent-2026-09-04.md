@@ -1,4 +1,5 @@
 # Complete eight-vertex matrix-unit parent attempt
+> Historical record (status line added 2026-10-08): this note describes a run that has ended; the current coordination brief is `fibre-exact-targets-2026-09-01.md` and the live proof map is `../current-frontier.md`.
 
 Coordination and integration record, not a theorem-status authority.
 Global Krenn--Gu UNRESOLVED.
