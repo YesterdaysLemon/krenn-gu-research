@@ -244,6 +244,13 @@ six-vertex exclusion, and at general `n >= 6` it contradicts the conjecture.
   exact realizability only; no statement about closures or limiting families
   was found there, but this novelty assessment is bounded and not a
   literature search of record.
+- A [companion note](GHZ_CLOSURE_FACE_THREE_EDGE_CUT_CRITERION_AND_UPSTREAM_CROSSCHECK.md)
+  restates the face hypothesis of Theorem A in terms of three-edge cuts and
+  records an external Lean development that states the graph-theoretic
+  content of Theorem B.  That development was read, not built or
+  kernel-checked, and is not a premise here.  The note also records prior
+  literature on the graph family of Theorem B as uninspected leads.  It
+  changes no statement above.
 
 ## Verification
 
