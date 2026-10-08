@@ -40,7 +40,7 @@ checker re-verifies any SAT model.
 |---|---|---|---|
 | 4 | (L), (F'), (G) | SAT | correct: witnesses exist at `n = 4`; checker PASS |
 | 6 | (L), (F'), (G) | SAT, 0.2 s | a full 135-entry support satisfies every condition |
-| 6 | + killers | SAT, 4.5 s | a 27-entry model, displayed below; the accompanying "26 is UNSAT" minimality claim was produced with an unsound symmetry block (found by the WB4 review on 2026-10-08) and is withdrawn |
+| 6 | + killers | SAT, 4.5 s | a 27-entry model, displayed below; the accompanying "26 is UNSAT" minimality claim was produced with an unsound symmetry block (found by the WB4 review on 2026-10-08) and is withdrawn; with the fixed block, 23-entry models exist and the true minimum is not established (holonomy note) |
 | 6 | + killers + a non-coordinate killer | SAT, 4.3 s | Parent C is not decidable at the support level at `n = 6` |
 | 8 | (L), (F'), (G) | SAT, 5.6 s | 1,081,148 variables, 4,399,552 clauses |
 | 8 | + killers | SAT, 27 s | |
