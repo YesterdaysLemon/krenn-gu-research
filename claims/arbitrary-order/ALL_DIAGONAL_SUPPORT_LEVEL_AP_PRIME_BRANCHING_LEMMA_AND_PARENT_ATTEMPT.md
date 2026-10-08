@@ -4,6 +4,23 @@ Date: 2026-10-08.
 
 ## Status
 
+> **Correction (2026-10-08, later the same day).**  The same-day adversarial
+> [review](../../docs/audits/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_REVIEW_2026-10-08.md)
+> found that the lex-leader symmetry block of the primary search script was
+> unsound (helper variables keyed by `id()` of short-lived closures, which
+> CPython reuses, so distinct generators shared variables and whole orbits
+> could be rejected).  Every result produced by that script at `n >= 10`
+> before the fix is **withdrawn**: the two pinned primary DIMACS files and
+> their DRAT certificates in Section 6, the normalized, top-matching and
+> branching runs, the timings of Section 8.2, and the "0.3 s" remark of
+> Section 8.3.  The hand-proved statements (Lemmas 1, 2, 2', 4 and
+> Theorem 3) are unaffected.  What still supports AP' UNSAT at `n = 10` is the
+> independent audit encoding, which has no lex-leader clauses and whose native
+> DRAT certificate was checked `s VERIFIED` (Section 6).  AP' + (F') at
+> `n = 10` has no valid certificate from this document; it remains excluded
+> only through the RZP theorem.  The script is fixed in the same change;
+> corrected certified reruns are recorded in Section 6 when they complete.
+
 This document records a parent-theorem attempt on the all-order support
 conjecture (AP') of the all-diagonal branch.  Its exact mathematical content
 is:
@@ -26,7 +43,8 @@ is:
    new mathematically, recorded because it fixes which parent is the right
    one.
 5. **Computation:** the results of bounded SAT searches for AP' and AP'+(F')
-   at `n = 10` and `n = 12` using Lemmas 1 and 2 (Section 5).
+   at `n = 10` and `n = 12` using Lemmas 1 and 2 (Section 6); see the
+   correction above for which of them stand.
 
 None of this proves AP' at any new order by hand, and none of it is a
 witness or an exclusion.  The all-diagonal branch and the global Krenn–Gu
@@ -270,6 +288,10 @@ partitions carries the contradiction at `n = 8`.
 
 ### Results at `n = 10`
 
+**Withdrawn (see the correction in Status):** the four primary-script
+instances below and their certificates were produced with the unsound
+symmetry block.  They are kept for the record; none of them is evidence.
+
 All four instances are unsatisfiable (CaDiCaL 1.5.3 through `python-sat`,
 single thread, Windows host; wall-clock solve times):
 
@@ -309,7 +331,7 @@ drat-trim tmp/drat/ap10full.cnf tmp/drat/ap10full.native.drat
 
 and the same with `--fprime` for the second instance.
 
-**Independent audit encoding.**  `audit_all_diagonal_support_level_ap_prime_chain_normalized.py`
+**Independent audit encoding (this is the evidence that stands).**  `audit_all_diagonal_support_level_ap_prime_chain_normalized.py`
 re-encodes AP' with WB2's explicit perfect-matching listing, rainbow clauses
 from set partitions, no lex-leader clauses, and Glucose 4.1; it shares only
 the chain normalization of Lemma 2.  It agrees with the primary at `n = 6` and
@@ -318,9 +340,15 @@ the chain normalization of Lemma 2.  It agrees with the primary at `n = 6` and
 `ec964ec0dc1ede3cff9a409fe677edf6d3300f094098e14fefe26537a3d2bc99`).  The
 DRAT trace that `python-sat` returned from Glucose was truncated (2.06 GB, last
 line incomplete; drat-trim: `no conflict`), so that run is an uncertified
-second-solver, second-encoding agreement.  A native CaDiCaL re-solve of the
-same audit DIMACS with a drat-trim check was launched to certify the audit
-encoding as well; its result is recorded here when available.
+second-solver, second-encoding agreement.  The same audit DIMACS was then
+re-solved by the native CaDiCaL 1.7.3 binary (9,002 s), which emitted a
+985,194,637-byte DRAT trace (SHA-256
+`e5936db876d24b5d27e950f9db846b02c5c38963e087a38cc2257590a229817e`) that the
+pinned `drat-trim` build checked as `s VERIFIED` (8,893 s).  After the
+withdrawal of the primary certificates, the `n = 10` exclusion of AP' rests on
+this one encoding with its checked certificate (and on the Glucose run of the
+same encoding as an uncertified second solver).  This encoding contains only
+the chain-normalization units of Lemma 2 and no lex-leader clauses.
 
 ### Results at `n = 12`
 
@@ -338,9 +366,10 @@ verdict obtained inside the cap is appended here with its record.
 proposition for AP' at all orders is equivalent to the same proposition
 restricted to models with a non-uniform colour, and WB1's final mechanism
 (the nonmonochromatic perfect matching of the cubic union) is exactly what the
-uniform case uses.  The finite case `n = 10` of the parent is closed by a
-checked certificate, two encodings, and two solvers; the same holds for the
-stronger AP'+(F') model, independently of RZP10.
+uniform case uses.  The finite case `n = 10` of the parent is closed by one
+encoding with a checked certificate (the audit encoding; the primary
+certificates were withdrawn after review); AP'+(F') at `n = 10` is excluded
+only through RZP10 until a corrected certificate exists.
 
 **Proof-distance delta.**  One parent obligation was replaced by strictly
 smaller typed obligations:
@@ -377,6 +406,93 @@ restricted structures of colours 1 and 2 lose axiom (H1).  Minimal
 unsatisfiable rainbow-clause subsets of size 207 at `n = 8` make a short
 case analysis unlikely at the level of partitions alone.
 
+## 8. Second pass (2026-10-08, later): the branching WLOG and the top-matching lemma
+
+### 8.1 Lemma 2' (branching on the chain)
+
+**Lemma 2'.**  Every AP' model on `n >= 6` vertices has, after a permutation
+of the colours and a relabelling of `V`, the normalized colour-0 chain of
+Lemma 2 **and** a chain vertex `v in {2i-2, 2i-1}` that has, in some
+reachable set `A in R_0` containing `v`, a supported Laplace partner
+`u != v`'s chain partner.
+
+*Proof.*  Theorem 3 gives a colour `c`, a vertex `v`, and reachable sets
+`A ∋ v` and `A' ∋ v` with supported partners `u != u'`.  Permute the colours so
+that `c = 0`.  Because `A` is reachable there is a chain of supported steps
+from `V` to `A`; continue it through `A - {v,u}` to the empty set by (L).
+Relabel `V` so that this chain is the normalized one; then `{v,u}` is a chain
+edge `{2i-2, 2i-1}` and `A = {2i-2, ..., n-1}`, and `A'` witnesses the second
+partner.  The statement is symmetric under the endpoint swap of every chain
+edge and under the colour swap `(1 2)`, so the lex-leader clauses of Section 3
+remain sound.  ∎
+
+The search option `--branching` (which needs `--normalize`, whose reachability
+variables were also made exact in this pass) adds this hypothesis.  Its
+`n = 10` run (73,776 variables, 260,443 clauses, 493 s) was produced with the
+unsound symmetry block and is withdrawn; no corrected `n = 10` or `n = 12`
+result with this hypothesis exists yet.
+
+### 8.2 Which consequences are cheap at `n = 10` (withdrawn)
+
+**All timings in this subsection were produced with the unsound symmetry
+block and are withdrawn.**  The table is kept for the record only.
+
+For each candidate statement `L` the instance AP' + top-matching + `not L`
+was solved; the time to refute `not L`, against 169 s for the top-matching
+instance alone, measures how far `L` is from the axioms.  This is not a
+proof of `L` beyond `n = 10`.
+
+| candidate `L` (under the top-matching hypothesis) | refutation of `not L` |
+|---|---|
+| `G_0 != M_0`, i.e. colour 0 has a non-top-active edge | 0.3 s |
+| `G_1 != M_1` | 6.9 s |
+| the top matchings of colours 0 and 1 form a Hamiltonian cycle | 245 s |
+| the top matchings of colours 1 and 2 form a Hamiltonian cycle | 308 s |
+| some `G_c` contains an `M_c`-alternating 4-cycle | 175 s |
+| colour 0 branches already at level 2 (some child of some `V - e` leaves `M_0`) | 133 s |
+| some colour branches at level 2 | 51 s |
+
+Reading: in a top-matching model every colour must have an extra edge; that
+is a short consequence.  Pairwise Hamiltonicity of the top matchings, the
+presence of a short alternating cycle, and top-level branching are each
+essentially as hard as the whole `n = 10` problem, so none of them is a
+cheap stepping stone; a hand proof of the top-matching lemma should not
+expect to establish them first.
+
+### 8.3 Towards "every colour has an extra edge"
+
+Let a top-matching model have `G_0 = M_0`.  Then every `G_0`-matchable set
+is a union of `M_0`-edges with a unique perfect matching, so `S_0` is exactly
+the family of `M_0`-unions.  By (H2):
+
+- (i) no proper nonempty `M_0`-union lies in `S_1` or in `S_2`;
+- (ii) no `M_0`-union `U` has `V - U = A_1 ⊔ A_2` with `A_1 in S_1`,
+  `A_2 in S_2`, both nonempty.
+
+Build a colour-1 chain from `V` adversarially: after the first step
+`V - ab` (`ab in M_1`), always expand a *widow*, a remaining vertex whose
+`M_0`-partner has already been removed.  Write the removed set as
+`B = P ⊔ W` with `P` an `M_0`-union and `W` the removed vertices whose
+`M_0`-partners remain.  Expanding a widow `w` with partner `z` either removes
+a second widow (`|W|` drops by two) or a fresh vertex (`|W|` unchanged), so
+`|W| in {0, 2}` along the chain; `|W| = 0` before the end makes `B` an
+`M_0`-union with `V - B in R_1`, contradicting (i).  Hence `|W| = 2` at every
+intermediate step, and by (ii) with `A_1 = V - B`, `U = P`, `A_2 = W`:
+
+> the half-pair `W` of every intermediate set of such a chain is not an
+> edge of `G_2`, and more generally `W ∪ (P - P')` is outside `S_2` for every
+> `M_0`-sub-union `P' ⊆ P`.
+
+The same holds with colours 1 and 2 exchanged.  So the model's partner
+choices along every widow-first chain of one colour are confined by the
+other colour's support.  I did not close this into a contradiction by hand.
+(An earlier remark that the solver does so in 0.3 s at `n = 10` is withdrawn
+with Section 8.2.)  The
+[extra-edge document](ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_TOP_MATCHING_EXTRA_EDGE_LEMMA.md)
+proves that the axiom subset behind any such short refutation has models at
+large orders.  This is the sharpest sub-lemma of the top-matching
+lemma with a started proof.
+
 ## Boundary
 
 - Theorem 3 is a structural statement about AP' models; it excludes no
@@ -385,6 +501,9 @@ case analysis unlikely at the level of partitions alone.
 - Lemma 1 does not apply to AP'+(F').
 - The searches are bounded computations with the resource records in the
   script's output; a timeout is a timeout, not evidence.
+- Section 8.2 measures solver effort at one order; it proves none of the
+  candidates at any other order.
+- Section 8.3 is a partial argument, not a proof.
 - The nonmonochromatic-perfect-matching theorem is imported as in WB1; no
   other external result is used.
 - No independent audit of this document exists yet.

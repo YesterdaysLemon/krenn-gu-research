@@ -37,6 +37,17 @@ summarizes the published source-coupled cancellation chunk and its exact
 resource-supply obstructions. That earlier research run stopped at the owner's
 request; its proposed full binary-source parent remains open.
 
+The [2026-10-08 WB4 document](claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_AND_PARENT_ATTEMPT.md)
+proves that every AP' model has a colour whose Laplace strategy is not a single
+perfect matching, and records that AP' is UNSAT at n=10 with a DRAT-checked
+certificate from one encoding (CaDiCaL, drat-trim at the repository-pinned
+commit; a second encoding's certificates were withdrawn the same day after a
+review found a symmetry-breaking bug, now fixed). The support-level
+conjecture of WB2 therefore now holds for n=6, 8, 10; its status for general n
+is open. The frontier node is `WB4` in
+[`docs/current-frontier.md`](docs/current-frontier.md). The global conjecture
+remains **UNRESOLVED**.
+
 For the next coordinated research run, use the dated
 [`fibre-exact targets brief`](docs/strategy/fibre-exact-targets-2026-09-01.md),
 which builds on the earlier
@@ -74,8 +85,8 @@ The finite all-diagonal programme now has a checked ten-vertex result:
 [`RZP10`](claims/finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md)
 excludes complex all-diagonal witnesses at `n=10` through an exhaustive
 thirteen-branch recursive zero-pattern certificate cover. It does not exclude
-the weaker AP' abstraction at `n=10`, any bichromatic branch, or the global
-conjecture.
+any bichromatic branch or the global conjecture; the weaker AP' abstraction at
+`n=10` is separately excluded by WB4 (see Status).
 
 ## Claim-family navigation
 

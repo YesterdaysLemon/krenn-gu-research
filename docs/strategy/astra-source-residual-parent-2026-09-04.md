@@ -1,4 +1,5 @@
 # Full-source residual parent attempt after N8R2K
+> Historical record (status line added 2026-10-08): this note describes a run that has ended; the current coordination brief is `fibre-exact-targets-2026-09-01.md` and the live proof map is `../current-frontier.md`.
 
 Active research, not a new theorem. Global Krenn--Gu UNRESOLVED.
 Base origin/main 0568668b858ece6912c75383b69e79975c7b7d96.
