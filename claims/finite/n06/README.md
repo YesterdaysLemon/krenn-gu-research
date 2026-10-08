@@ -12,6 +12,11 @@ certificate-chain README distinguishes the accepted fallback-free chain, the
 still-valid four-Singular cross-check, and two superseded broken checkpoints.
 The Q2 record is not a Q1 counterexample.
 
+[`SIX_VERTEX_SUPPORT_SURVIVOR_PATTERNS_EXACT_REFUTATION.md`](SIX_VERTEX_SUPPORT_SURVIVOR_PATTERNS_EXACT_REFUTATION.md)
+is an exact finite computation, not a new six-vertex theorem: it shows which
+two-term (sign-holonomy and rank-one-square) relations refute three
+support-level survivor patterns that pass every single-term support test.
+
 The theorem ledger deliberately retains `historical_certificate_chain`
 provenance with no single mapped primary verifier or independent audit.
 Co-location does not change that evidence model or extend the claim beyond
