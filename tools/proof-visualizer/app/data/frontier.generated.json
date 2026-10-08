@@ -5,10 +5,10 @@
   "source": {
     "repository": "https://github.com/YesterdaysLemon/krenn-gu-research",
     "commit": "b297a877d48c24694608216f818f671e1c421b95",
-    "ledgerCommit": "d9ace12d81174383bfbf76f40f01da4988ff0cb1",
+    "ledgerCommit": "c6c17a3a3061a2d07193ac4e53a252945789688b",
     "committedAt": "2026-10-08T13:03:22-07:00",
     "frontierDocument": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/b297a877d48c24694608216f818f671e1c421b95/docs/current-frontier.md",
-    "ledgerDocument": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/d9ace12d81174383bfbf76f40f01da4988ff0cb1/catalog/theorem-ledger.json",
+    "ledgerDocument": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/c6c17a3a3061a2d07193ac4e53a252945789688b/catalog/theorem-ledger.json",
     "ledgerRole": "partial_claim_index_not_proof_graph",
     "ledgerCompleteness": "partial_curated"
   },
@@ -16720,7 +16720,7 @@
       "source": "WB4",
       "target": "GL",
       "relation": "boundary",
-      "note": "AP' is open for models with a non-uniform colour at every even n>=12. The top-matching lemma (no model has all three top-active graphs perfect matchings) is conjectured, UNSAT at n=10, and not proved; nothing here addresses bichromatic entries or changes WB1, WB2, WB3, or RZP10."
+      "note": "AP' is open for models with a non-uniform colour at every even n>=12. The top-matching lemma (no model has all three top-active graphs perfect matchings) is conjectured, UNSAT at n=10, and not proved; its first sub-lemma (no colour's support graph is a perfect matching) has a proved reduction, a Hamiltonian widow-chain lemma, a proved locality obstruction against the short n<=10 refutations, and one open arc lemma that would close n = 2 (mod 4); nothing here addresses bichromatic entries or changes WB1, WB2, WB3, or RZP10."
     }
   ]
 }
