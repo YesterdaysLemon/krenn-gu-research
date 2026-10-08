@@ -197,8 +197,12 @@ independent-audit.json
 - This is all-diagonal only. Mixed words cease to factorize in the presence of
   bichromatic block entries.
 - It proves actual complex-witness nonexistence through the stronger necessary
-  RZP model. It does not prove AP' UNSAT at `n=10`; WB2's AP' theorem remains
-  scoped to `n=6,8`, and its older no-DRAT evidence gap remains separate.
+  RZP model. It does not itself prove AP' UNSAT at `n=10`; WB2's AP' theorem
+  is scoped to `n=6,8`, and its older no-DRAT evidence gap remains separate.
+  (Pointer added 2026-10-08: AP' at `n=10` was later excluded independently,
+  with a checked certificate, in the
+  [WB4 document](../../arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_AND_PARENT_ATTEMPT.md);
+  this theorem's own scope is unchanged.)
 - The result is finite at exactly ten vertices. It supplies no all-order
   occurrence theorem and no source-preserving reduction for general `n`.
 - The thirteen branches are an exhaustive cover of selected support-matching
