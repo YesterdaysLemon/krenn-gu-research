@@ -17,9 +17,12 @@ Date: 2026-10-08.
 > Theorem 3) are unaffected.  What still supports AP' UNSAT at `n = 10` is the
 > independent audit encoding, which has no lex-leader clauses and whose native
 > DRAT certificate was checked `s VERIFIED` (Section 6).  AP' + (F') at
-> `n = 10` has no valid certificate from this document; it remains excluded
-> only through the RZP theorem.  The script is fixed in the same change;
-> corrected certified reruns are recorded in Section 6 when they complete.
+> `n = 10` had no valid certificate from this document at the time of the
+> correction.  The script was fixed in the same change, and the **corrected
+> certified reruns** below (Section 6, "Corrected certificates") restore both
+> statements: with the fixed primary encoder, AP' and AP'+(F') at `n = 10`
+> are UNSAT with native DRAT traces checked `s VERIFIED`, so AP' at `n = 10`
+> again rests on two certified encodings and AP'+(F') on one.
 
 This document records a parent-theorem attempt on the all-order support
 conjecture (AP') of the all-diagonal branch.  Its exact mathematical content
@@ -349,6 +352,25 @@ withdrawal of the primary certificates, the `n = 10` exclusion of AP' rests on
 this one encoding with its checked certificate (and on the Glucose run of the
 same encoding as an uncertified second solver).  This encoding contains only
 the chain-normalization units of Lemma 2 and no lex-leader clauses.
+
+### Corrected certificates (fixed primary encoder, 2026-10-08, later)
+
+After the symmetry fix (each lex-leader generator gets a distinct tag; at
+`n = 10` the encoder now has 44,962 variables, 330 helper variables for six
+generators), the two instances were re-encoded, re-solved, and certified by
+the same route as before (native CaDiCaL 1.7.3, drat-trim at the pinned
+commit):
+
+| instance | DIMACS SHA-256 | python-sat solve | native solve | DRAT bytes | DRAT SHA-256 | drat-trim |
+|---|---|---|---|---|---|---|
+| AP' | `2c6d1990f3d6de2a57becfa8910eb00e94133e2a1fc19728a05d4fa92d7c4217` | 2,170 s | 1,496 s | 557,053,875 | `4c0c7780edc56427c80940fdd8f1c622e0deabf37c0a60aa3f7ba01018b6f103` | `s VERIFIED`, 932 s |
+| AP' + (F') | `a95034fdb6820dc24322cf406426ca7bc782561589aded356714e0fb8073d7c9` | 1,019 s | 751 s | 203,815,174 | `60e6a8db8debfd2885f1ef53e87e2df8c3891c73c0b0ed42e5607ce65f70e6e1` | `s VERIFIED`, 321 s |
+
+The fixed encoder was also re-validated at `n = 8` with and without its
+symmetry block (UNSAT in 0.3 s and 373 s respectively) and on the WB2
+relaxations (SAT, checker PASS).  The audit encoding's AP'+(F') instance is
+UNSAT under Glucose 4.1 (1,875 s); its native certificate check was still
+running when this table was written.
 
 ### Results at `n = 12`
 
