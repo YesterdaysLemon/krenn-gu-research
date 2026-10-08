@@ -22,7 +22,8 @@ Date: 2026-10-08.
 > certified reruns** below (Section 6, "Corrected certificates") restore both
 > statements: with the fixed primary encoder, AP' and AP'+(F') at `n = 10`
 > are UNSAT with native DRAT traces checked `s VERIFIED`, so AP' at `n = 10`
-> again rests on two certified encodings and AP'+(F') on one.
+> again rests on two certified encodings, and AP'+(F') on two as well once the
+> audit encoding's certificate was checked (Section 6).
 
 This document records a parent-theorem attempt on the all-order support
 conjecture (AP') of the all-diagonal branch.  Its exact mathematical content
@@ -368,9 +369,15 @@ commit):
 
 The fixed encoder was also re-validated at `n = 8` with and without its
 symmetry block (UNSAT in 0.3 s and 373 s respectively) and on the WB2
-relaxations (SAT, checker PASS).  The audit encoding's AP'+(F') instance is
-UNSAT under Glucose 4.1 (1,875 s); its native certificate check was still
-running when this table was written.
+relaxations (SAT, checker PASS).  The audit encoding's AP'+(F') instance (64,173 variables, 320,444 clauses,
+DIMACS SHA-256
+`decb346cb17fdddae4a16dfb9007bf1bb9850dd06d7ff826bd60909b457b8119`) is
+UNSAT under Glucose 4.1 (1,875 s) and under native CaDiCaL (3,017 s), whose
+716,845,820-byte DRAT trace (SHA-256
+`4c09c37d52a8677c4c208f68a873c5dd5cbf4d6d31da1a25b07a29ba11d6f50e`) was
+checked `s VERIFIED` by the pinned drat-trim (2,370 s).  So both AP' and
+AP'+(F') at `n = 10` now have checked certificates from two independent
+encodings.
 
 ### Results at `n = 12`
 

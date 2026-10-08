@@ -5,10 +5,10 @@
   "source": {
     "repository": "https://github.com/YesterdaysLemon/krenn-gu-research",
     "commit": "2710d78d45969c49f74e270775c042496a60ae15",
-    "ledgerCommit": "2710d78d45969c49f74e270775c042496a60ae15",
+    "ledgerCommit": "0342ab43d49ea8e300231b303611aeb43067d551",
     "committedAt": "2026-10-08T15:24:51-07:00",
     "frontierDocument": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/2710d78d45969c49f74e270775c042496a60ae15/docs/current-frontier.md",
-    "ledgerDocument": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/2710d78d45969c49f74e270775c042496a60ae15/catalog/theorem-ledger.json",
+    "ledgerDocument": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/0342ab43d49ea8e300231b303611aeb43067d551/catalog/theorem-ledger.json",
     "ledgerRole": "partial_claim_index_not_proof_graph",
     "ledgerCompleteness": "partial_curated"
   },
