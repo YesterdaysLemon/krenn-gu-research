@@ -377,6 +377,87 @@ restricted structures of colours 1 and 2 lose axiom (H1).  Minimal
 unsatisfiable rainbow-clause subsets of size 207 at `n = 8` make a short
 case analysis unlikely at the level of partitions alone.
 
+## 8. Second pass (2026-10-08, later): the branching WLOG and the top-matching lemma
+
+### 8.1 Lemma 2' (branching on the chain)
+
+**Lemma 2'.**  Every AP' model on `n >= 6` vertices has, after a permutation
+of the colours and a relabelling of `V`, the normalized colour-0 chain of
+Lemma 2 **and** a chain vertex `v in {2i-2, 2i-1}` that has, in some
+reachable set `A in R_0` containing `v`, a supported Laplace partner
+`u != v`'s chain partner.
+
+*Proof.*  Theorem 3 gives a colour `c`, a vertex `v`, and reachable sets
+`A ∋ v` and `A' ∋ v` with supported partners `u != u'`.  Permute the colours so
+that `c = 0`.  Because `A` is reachable there is a chain of supported steps
+from `V` to `A`; continue it through `A - {v,u}` to the empty set by (L).
+Relabel `V` so that this chain is the normalized one; then `{v,u}` is a chain
+edge `{2i-2, 2i-1}` and `A = {2i-2, ..., n-1}`, and `A'` witnesses the second
+partner.  The statement is symmetric under the endpoint swap of every chain
+edge and under the colour swap `(1 2)`, so the lex-leader clauses of Section 3
+remain sound.  ∎
+
+The search option `--branching` (which needs `--normalize`, whose reachability
+variables were also made exact in this pass) adds this hypothesis.  It is
+UNSAT at `n = 10` (73,776 variables, 260,443 clauses, 493 s on a loaded host),
+slower than the plain instance; the hypothesis does not shorten the `n = 10`
+refutation, and its `n = 12` effect is recorded below.
+
+### 8.2 Which consequences are cheap at `n = 10`
+
+For each candidate statement `L` the instance AP' + top-matching + `not L`
+was solved; the time to refute `not L`, against 169 s for the top-matching
+instance alone, measures how far `L` is from the axioms.  This is not a
+proof of `L` beyond `n = 10`.
+
+| candidate `L` (under the top-matching hypothesis) | refutation of `not L` |
+|---|---|
+| `G_0 != M_0`, i.e. colour 0 has a non-top-active edge | 0.3 s |
+| `G_1 != M_1` | 6.9 s |
+| the top matchings of colours 0 and 1 form a Hamiltonian cycle | 245 s |
+| the top matchings of colours 1 and 2 form a Hamiltonian cycle | 308 s |
+| some `G_c` contains an `M_c`-alternating 4-cycle | 175 s |
+| colour 0 branches already at level 2 (some child of some `V - e` leaves `M_0`) | 133 s |
+| some colour branches at level 2 | 51 s |
+
+Reading: in a top-matching model every colour must have an extra edge; that
+is a short consequence.  Pairwise Hamiltonicity of the top matchings, the
+presence of a short alternating cycle, and top-level branching are each
+essentially as hard as the whole `n = 10` problem, so none of them is a
+cheap stepping stone; a hand proof of the top-matching lemma should not
+expect to establish them first.
+
+### 8.3 Towards "every colour has an extra edge"
+
+Let a top-matching model have `G_0 = M_0`.  Then every `G_0`-matchable set
+is a union of `M_0`-edges with a unique perfect matching, so `S_0` is exactly
+the family of `M_0`-unions.  By (H2):
+
+- (i) no proper nonempty `M_0`-union lies in `S_1` or in `S_2`;
+- (ii) no `M_0`-union `U` has `V - U = A_1 ⊔ A_2` with `A_1 in S_1`,
+  `A_2 in S_2`, both nonempty.
+
+Build a colour-1 chain from `V` adversarially: after the first step
+`V - ab` (`ab in M_1`), always expand a *widow*, a remaining vertex whose
+`M_0`-partner has already been removed.  Write the removed set as
+`B = P ⊔ W` with `P` an `M_0`-union and `W` the removed vertices whose
+`M_0`-partners remain.  Expanding a widow `w` with partner `z` either removes
+a second widow (`|W|` drops by two) or a fresh vertex (`|W|` unchanged), so
+`|W| in {0, 2}` along the chain; `|W| = 0` before the end makes `B` an
+`M_0`-union with `V - B in R_1`, contradicting (i).  Hence `|W| = 2` at every
+intermediate step, and by (ii) with `A_1 = V - B`, `U = P`, `A_2 = W`:
+
+> the half-pair `W` of every intermediate set of such a chain is not an
+> edge of `G_2`, and more generally `W ∪ (P - P')` is outside `S_2` for every
+> `M_0`-sub-union `P' ⊆ P`.
+
+The same holds with colours 1 and 2 exchanged.  So the model's partner
+choices along every widow-first chain of one colour are confined by the
+other colour's support.  I did not close this into a contradiction by hand;
+the solver does so in 0.3 s at `n = 10`, which says the remaining steps are
+short at that order.  This is the sharpest sub-lemma of the top-matching
+lemma with a started proof.
+
 ## Boundary
 
 - Theorem 3 is a structural statement about AP' models; it excludes no
@@ -385,6 +466,9 @@ case analysis unlikely at the level of partitions alone.
 - Lemma 1 does not apply to AP'+(F').
 - The searches are bounded computations with the resource records in the
   script's output; a timeout is a timeout, not evidence.
+- Section 8.2 measures solver effort at one order; it proves none of the
+  candidates at any other order.
+- Section 8.3 is a partial argument, not a proof.
 - The nonmonochromatic-perfect-matching theorem is imported as in WB1; no
   other external result is used.
 - No independent audit of this document exists yet.

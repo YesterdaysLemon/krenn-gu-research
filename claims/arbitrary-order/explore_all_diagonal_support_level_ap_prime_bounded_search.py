@@ -8,6 +8,9 @@ theorem, with two sound reductions of the search space:
   V, V-{0,1}, V-{0,1,2,3}, ..., {} (every AP' model has such a chain, and
   relabelling preserves every axiom), and lex-leader clauses for the symmetries
   that preserve that chain (endpoint swaps inside chain edges, colour swap 1-2);
+* optional branching hypothesis (--branching, needs --normalize): colour 0 is
+  the non-uniform colour of the WB4 branching lemma and its branching step
+  lies on the normalized chain (sound by colour permutation then relabelling);
 * optional support normalization (--normalize): every member of S_c is either
   reachable from V by supported Laplace descent or uniquely matchable.  This is
   without loss of generality for AP' (shrinking S_c to that subfamily keeps
@@ -57,10 +60,14 @@ def perfect_matchings(vs):
 
 class Encoder:
     def __init__(self, n, *, fprime=False, normalize=False, symmetry=True, relax=None,
-                 top_matching=False):
+                 top_matching=False, branching=False):
         if fprime and normalize:
             raise ValueError("support normalization is not sound together with (F')")
+        if branching and not (normalize and symmetry):
+            raise ValueError("--branching needs --normalize and the chain normalization")
         self.top_matching = top_matching
+        self.branching = branching
+        self.r = {}
         self.n = n
         self.V = tuple(range(n))
         self.pairs = [tuple(p) for p in itertools.combinations(self.V, 2)]
@@ -94,6 +101,8 @@ class Encoder:
         self._rainbow()                                                 # (H2)
         if symmetry:
             self._symmetry()
+        if branching:
+            self._branching()
 
     # -- variable helpers -------------------------------------------------
     def mvar(self, c, A):
@@ -196,8 +205,43 @@ class Encoder:
                 lits.append(a)
                 cnf.append([-a, r[B]])
                 cnf.append([-a, self.gvar(c, *e)])
+                cnf.append([-a, self.mvar(c, A)])
             cnf.append([-rA] + lits)
             cnf.append([-self.mvar(c, A), rA, self.uqvar(c, A)])
+        self.r[c] = r
+
+    def _branching(self):
+        """Sound extra hypothesis (Theorem 3 of the WB4 document): colour 0 is
+        the non-uniform colour and its branching step lies on the normalized
+        chain: some chain vertex v (in edge {2i-2,2i-1}) has, in some reachable
+        set A, a supported Laplace partner other than its chain partner."""
+        cnf, pool, n = self.cnf, self.pool, self.n
+        r0 = self.r[0]
+        # make reachability exact for colour 0: supported child of a reachable set is reachable
+        for A, rA in r0.items():
+            if len(A) == n:
+                continue
+            outside = [v for v in self.V if v not in A]
+            for e in itertools.combinations(outside, 2):
+                B = A | set(e)
+                cnf.append([-r0[B], -self.gvar(0, *e), -self.mvar(0, A), rA])
+        witnesses = []
+        for i in range(n // 2):
+            for v, partner in ((2 * i, 2 * i + 1), (2 * i + 1, 2 * i)):
+                for u in self.V:
+                    if u in (v, partner):
+                        continue
+                    st = pool.id(("st", v, u))
+                    witnesses.append(st)
+                    steps = []
+                    for A in self.sets:
+                        if v in A and u in A:
+                            a = pool.id(("sa", A, v, u))
+                            steps.append(a)
+                            cnf.append([-a, r0[A]])
+                            cnf.append([-a, self.t[(0, A, v, u)]])
+                    cnf.append([-st] + steps)
+        cnf.append(witnesses)
 
     # -- rainbow clauses --------------------------------------------------
     def _rainbow(self):
@@ -316,20 +360,22 @@ def main() -> None:
     ap.add_argument("--relax", choices=["two_part_only", "no_forcing", "no_laplace"])
     ap.add_argument("--top-matching", action="store_true",
                     help="extra hypothesis: every top-active graph E_c is a matching")
+    ap.add_argument("--branching", action="store_true",
+                    help="sound WLOG (needs --normalize): colour 0 branches on the chain")
     ap.add_argument("--out", type=Path)
     ap.add_argument("--proof", type=Path, help="write DIMACS to PROOF.cnf and a DRAT trace to PROOF.drat")
     args = ap.parse_args()
     t0 = time.time()
     enc = Encoder(args.n, fprime=args.fprime, normalize=args.normalize,
                   symmetry=not args.no_symmetry, relax=args.relax,
-                  top_matching=args.top_matching)
+                  top_matching=args.top_matching, branching=args.branching)
     digest = hashlib.sha256()
     for clause in enc.cnf.clauses:
         digest.update((" ".join(map(str, clause)) + " 0\n").encode())
     record = {
         "n": args.n, "fprime": args.fprime, "normalize": args.normalize,
         "symmetry": not args.no_symmetry, "relax": args.relax,
-        "top_matching": args.top_matching,
+        "top_matching": args.top_matching, "branching": args.branching,
         "variables": enc.pool.top, "clauses": len(enc.cnf.clauses),
         "rainbow_clauses": enc.rainbow, "cnf_sha256": digest.hexdigest(),
         "encode_seconds": round(time.time() - t0, 1), "solver": "CaDiCaL 1.5.3 via python-sat",
