@@ -105,7 +105,9 @@ conditions hold.  Two-term relations kill it **three independent ways**:
 3. **Two-matching grid at `222222`**, symmetric, with guard
    `W14,W15,W34,W35,W45` at `[2,2]`.
 
-The full-word closure finds the triangle first (round one, lattice value
+The full-word closure reports a contradiction in round one (the 27-entry
+pattern has at least eight word-disjoint odd triangles, so which one comes
+"first" is an implementation detail; lattice value
 `-1`).  [OBSERVATION] Neither mechanism is in the trunk record's Boolean model
 (it has no ratio-parity or quotient clauses), which is why the pattern survived
 there; both are in the eight-vertex programme.
@@ -219,3 +221,18 @@ mechanisms, C and D are scope statements about a proof technique, and the
 six-vertex results are exhibits inside an already proved order.  The
 proposed next lemma `TM_D` is recorded here as a conjecture, not as a new
 frontier node.
+
+## Review notes (2026-10-08)
+
+The same-day [review](../audits/TWO_TERM_RELATION_CLOSURE_THEOREMS_REVIEW_2026-10-08.md)
+corrects four labels in this note: (1) the paraphrase of Theorem D above
+omits its premise that every constant word has a live matching and the
+exception `X^{m_c} = 1`; (2) the statement that no full-word two-term family
+can work "at any order" is supported at every order only for the full
+support (Theorem D) and at `n = 6` by the 51-entry survivor; for other
+supports and orders it is interpretive; (3) "finds the triangle first" was
+an implementation detail, now reworded; (4) `TM_D` is under-specified until
+the coordinates in which the multiplier degree is measured are fixed (the
+physical entries of the full-word closure are intended); a Macaulay test in
+normalized coordinates supports `D <= 2` on the recorded slice.  Theorem B
+needs `k >= 3`; the theorem document is corrected accordingly.

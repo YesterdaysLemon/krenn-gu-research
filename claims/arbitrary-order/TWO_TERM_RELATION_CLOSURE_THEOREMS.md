@@ -11,7 +11,13 @@ B are division-free sharpenings of mechanisms already in the repository (the
 full-word quotient grid of
 [source-cancellation-mechanisms](../../docs/strategy/source-cancellation-mechanisms-2026-09-13.md)
 and its coloured-slot parity clauses); Theorems C and D are new scope
-statements.  No independent audit and no Lean formalization exist.  The global
+statements.  No independent audit and no Lean formalization exist.  A
+same-day adversarial [review](../../docs/audits/TWO_TERM_RELATION_CLOSURE_THEOREMS_REVIEW_2026-10-08.md) passed
+A–D with the Theorem B boundary fix recorded there; it notes that Theorem A
+holds in every characteristic (integer cofactors exist for all four corner
+products), that Theorem C needs `C` and may be vacuous at `n >= 6` (whether
+binomial supports exist there is open), and that the verifier checks A's
+cross products over `Q` only.  The global
 Krenn–Gu conjecture remains **UNRESOLVED**.
 
 ## Setting
@@ -74,8 +80,11 @@ explicit zero premises making each corner fibre exactly `{M, N}`.
 ## Theorem B (odd opposite-ratio cycle)
 
 Let `a != b` be vertices with colours `alpha, beta`, and `s_1, ..., s_k`
-(`k` odd, indices mod `k`) slots `s_t = (v_t, gamma_t)` with
-`v_t notin {a, b}`.  Put `A_t = W_{a v_t}[alpha, gamma_t]`,
+(`k >= 3` odd, indices mod `k`) slots `s_t = (v_t, gamma_t)` with
+`v_t notin {a, b}` and consecutive slots on distinct vertices
+(`v_t != v_{t+1}`).  (Boundary fixed after the same-day
+[review](../../docs/audits/TWO_TERM_RELATION_CLOSURE_THEOREMS_REVIEW_2026-10-08.md): at `k = 1` the displayed
+identity is false, its left side being `2 A_1 B_1`.)  Put `A_t = W_{a v_t}[alpha, gamma_t]`,
 `B_t = W_{b v_t}[beta, gamma_t]`, `p_t = A_t B_{t+1} + A_{t+1} B_t`.  Then
 
 ```text
