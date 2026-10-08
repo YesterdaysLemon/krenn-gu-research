@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "34b83ab642f8df2f",
+      "document_sha256_16": "8f86ec99e14b1b5a",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -7225,7 +7225,7 @@
     {
       "name": "GHZ closure: matching-polytope face criterion and asymptotic realizability at every even order",
       "document": "claims/arbitrary-order/GHZ_CLOSURE_MATCHING_POLYTOPE_FACE_ASYMPTOTIC_REALIZABILITY_THEOREM.md",
-      "document_sha256_16": "b3f2d5dd28d6bb1a",
+      "document_sha256_16": "48b559df31e26d33",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact statement over C about the Euclidean and Zariski closure of the image of W -> T_W for d=3 and every even n>=4; it says nothing about the image itself",
@@ -7312,7 +7312,7 @@
     {
       "name": "Ten-vertex all-diagonal recursive-hafnian zero-pattern exclusion (RZP10)",
       "document": "claims/finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "240f656b44e43842",
+      "document_sha256_16": "d01e68f62ac614f5",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "finite computer-assisted exact exclusion for all-diagonal ternary complex witnesses on exactly ten vertices",
@@ -7426,6 +7426,35 @@
       "legacy_paths": []
     },
     {
+      "name": "AP-prime extra-edge sub-lemma: widow-chain Hamiltonicity, CGI core, and locality obstruction",
+      "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_TOP_MATCHING_EXTRA_EDGE_LEMMA.md",
+      "document_sha256_16": "e4df5c7e22e20bbc",
+      "status": "partial",
+      "assumptions_and_excluded_divisors": [
+        "exact combinatorial statements about the AP' support abstraction (axioms (a), (L), (S), (F), (H2)) at every even n>=6; no weights and no field",
+        "Proposition 1: if one colour's support graph is a perfect matching M_0 then its family is the M_0-unions and (H2) is a two-colour condition relative to M_0 (proved)",
+        "Lemma 2: every widow-first Laplace chain of another colour removes a perfect matching N with M_0 union N a Hamiltonian cycle, its removed sets are arcs, and the end-pairs are excluded from the third colour (proved; no top-matching hypothesis)",
+        "Proposition 3: in the uniform case the sub-lemma is equivalent to the imported Chandran-Gajjala-Illickan nonmonochromatic-perfect-matching theorem (proved); Lemma 2 alone closes the uniform case for n = 2 (mod 4)",
+        "Theorem 4 (locality obstruction): the axiom subset behind the fast n<=10 solver refutations (Laplace only at V and its children, forcing only on sets of size <=4 or >=n-4, full (H2), top-matching, G_0 = M_0) has uniform models on every three-edge-coloured cubic graph of girth >=10; explicit graphs at n=160,162 checked by the verifier, hence every even n>=12640 (proved)",
+        "Lemma 5: the open arc lemma implies the sub-lemma, indeed that no colour's support graph is a perfect matching, at every n = 2 (mod 4) (proved conditional); the arc lemma itself is open",
+        "the target sub-lemma (in a top-matching AP' model no colour has G_c = E_c) is NOT proved beyond the orders where AP' has no model (n<=10); status partial for that reason",
+        "solver findings at n<=10 are exploratory evidence at one order only; no independent audit and no review of this document exist yet"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_all_diagonal_support_level_ap_prime_extra_edge_locality_obstruction.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "review": null,
+      "expected_runtime": "under one second for the verifier (girth check of the two explicit graphs and a SAT cross-check with controls)",
+      "external_binaries": [],
+      "note": "Sub-lemma attempt for the WB4 top-matching lemma. Proves a reduction, a Hamiltonian widow-chain lemma, the equivalence of the uniform case with the imported CGI theorem, and an exact locality obstruction showing the short n<=10 refutations do not lift; names the arc lemma as the next lemma. Not a proof of the sub-lemma, not a witness, no change to the global status, which remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Eight-vertex two-edge surplus-shore physical exclusions (P17)",
       "document": "claims/finite/n08/EIGHT_VERTEX_TWO_EDGE_SURPLUS_SHORE_EXCLUSION.md",
       "document_sha256_16": "8a1a641ce3602105",
@@ -7466,7 +7495,7 @@
       "verifier_provenance": "companion_point_check_script",
       "independent_audit": "claims/finite/n08/audit_eight_vertex_two_slice_transfer.py",
       "audit_provenance": "independent_exact_identity_audit",
-      "review": null,
+      "review": "docs/audits/TWO_SLICE_SHARED_HAFNIAN_TRANSFER_OBSTRUCTION_REVIEW_2026-10-08.md",
       "expected_runtime": "under one minute per exact local replay",
       "external_binaries": [],
       "note": "Independently reconstructed within the same research session; not separate-human refereeing or Lean formalization. Global Krenn-Gu remains UNRESOLVED.",

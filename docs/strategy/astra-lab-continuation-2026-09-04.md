@@ -1,4 +1,5 @@
 # Astra research laboratory continuation, 2026-09-04
+> Historical record (status line added 2026-10-08): this note describes a run that has ended; the current coordination brief is `fibre-exact-targets-2026-09-01.md` and the live proof map is `../current-frontier.md`.
 
 Status: active coordinated research. Global Krenn--Gu status **UNRESOLVED**.
 Initial integration base: `b905f38038e8087c2fb0c67841af90c16b899218`.
