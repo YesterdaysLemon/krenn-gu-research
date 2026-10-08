@@ -7395,7 +7395,7 @@
     {
       "name": "AP-prime branching lemma, normalization, and DRAT-checked n=10 exclusion (WB4)",
       "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_AND_PARENT_ATTEMPT.md",
-      "document_sha256_16": "77e5f31cd311e3d0",
+      "document_sha256_16": "269c20654b5167ed",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact combinatorial statements about the AP' support abstraction of WB2 (axioms (a), (L), (S), (F), (H2)); no weights and no field",

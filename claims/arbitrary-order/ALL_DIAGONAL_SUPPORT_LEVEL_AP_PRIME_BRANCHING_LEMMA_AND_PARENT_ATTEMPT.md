@@ -318,9 +318,13 @@ the chain normalization of Lemma 2.  It agrees with the primary at `n = 6` and
 `ec964ec0dc1ede3cff9a409fe677edf6d3300f094098e14fefe26537a3d2bc99`).  The
 DRAT trace that `python-sat` returned from Glucose was truncated (2.06 GB, last
 line incomplete; drat-trim: `no conflict`), so that run is an uncertified
-second-solver, second-encoding agreement.  A native CaDiCaL re-solve of the
-same audit DIMACS with a drat-trim check was launched to certify the audit
-encoding as well; its result is recorded here when available.
+second-solver, second-encoding agreement.  The same audit DIMACS was then
+re-solved by the native CaDiCaL 1.7.3 binary (9,002 s), which emitted a
+985,194,637-byte DRAT trace (SHA-256
+`e5936db876d24b5d27e950f9db846b02c5c38963e087a38cc2257590a229817e`) that the
+pinned `drat-trim` build checked as `s VERIFIED` (8,893 s).  So the `n = 10`
+exclusion of AP' now rests on two independent encodings, each with a checked
+certificate, and on two solver families for the search.
 
 ### Results at `n = 12`
 
