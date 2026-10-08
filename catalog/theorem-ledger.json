@@ -82,7 +82,7 @@
     {
       "name": "Problem statement: no T_W = GHZ diagonal for even n>=6, d>=3",
       "document": "README.md",
-      "document_sha256_16": "34b83ab642f8df2f",
+      "document_sha256_16": "8f86ec99e14b1b5a",
       "status": "open",
       "assumptions_and_excluded_divisors": [],
       "dependencies": [],
@@ -7312,7 +7312,7 @@
     {
       "name": "Ten-vertex all-diagonal recursive-hafnian zero-pattern exclusion (RZP10)",
       "document": "claims/finite/n10/TEN_VERTEX_ALL_DIAGONAL_RECURSIVE_HAFNIAN_EXCLUSION_THEOREM.md",
-      "document_sha256_16": "240f656b44e43842",
+      "document_sha256_16": "d01e68f62ac614f5",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "finite computer-assisted exact exclusion for all-diagonal ternary complex witnesses on exactly ten vertices",
@@ -7466,7 +7466,7 @@
       "verifier_provenance": "companion_point_check_script",
       "independent_audit": "claims/finite/n08/audit_eight_vertex_two_slice_transfer.py",
       "audit_provenance": "independent_exact_identity_audit",
-      "review": null,
+      "review": "docs/audits/TWO_SLICE_SHARED_HAFNIAN_TRANSFER_OBSTRUCTION_REVIEW_2026-10-08.md",
       "expected_runtime": "under one minute per exact local replay",
       "external_binaries": [],
       "note": "Independently reconstructed within the same research session; not separate-human refereeing or Lean formalization. Global Krenn-Gu remains UNRESOLVED.",
