@@ -305,7 +305,19 @@ pattern of every complex configuration is the soundness statement of
 Section 3, independently proved in the same-day
 [review](../audits/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_REVIEW_2026-10-09.md).  The review also reproduced
 the UNSAT with every lex-leader clause removed (chain normalization only,
-1,065 s); fully symmetry-free runs were inconclusive at 3,600 s.
+1,065 s).  A fully symmetry-free run (`--no-symmetry`: no chain
+normalization and no lex-leader clauses; killers, H2/H3 at every level, PR at
+every level `|A| >= 6`; base model 38,620 variables, 156,412 clauses) is also
+**UNSAT**: 1,168 CEGAR rounds, 895,011 lazy instances, 1,752,385 lazy
+clauses, 15,334 s with CaDiCaL 1.5.3 via python-sat, 8 h cap (SAT-RUN, no
+DRAT; the certified run above is the proof-bearing one).  So the exclusion
+does not depend on the symmetry block at all.
+
+At `n = 8`, a 6 h run of the full rule set now available (killers, diagonal
+anchors, H2/H3 at every level, PR at every level) was inconclusive: 38 CEGAR
+rounds and 11.06 million lazy instances at the cap, with hundreds of
+thousands of new holonomy instances per round (base DIMACS 114.9 MB).  The
+lazy instance loop, not the SAT solver, is the bottleneck.
 
 **Consequence, stated exactly.**  No zero pattern on six vertices satisfies
 the recursive support conditions (L), (F'), (G) together with the
