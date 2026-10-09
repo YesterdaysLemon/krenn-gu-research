@@ -7564,6 +7564,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Multi-partner grid transport: hub flattening and the adjugate transport identity, with the S156 silence",
+      "document": "docs/strategy/multi-partner-grid-transport-2026-10-09.md",
+      "document_sha256_16": "f8d348fa14413dd0",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "Lemma 1 (hub flattening), every configuration, every even order, any field: expanding every matching-tensor word at a hub vertex p gives T(x,c) = r_x . Phi_c with r_x the row of p's blocks at colour x and Phi_c the (n-2)-vertex coefficients; at a GHZ witness R_A Phi_c = 0 for every colour set A at p and every word c other than the constants a^{n-1}, a in A; matroid form (live coordinates are unions of circuits of the column matroid of R_A; |A| = 1 is the column killer) and rank form rank R_{A,K} + rank Phi_K <= |K|",
+        "Lemma 2 (transport identity), over any commutative ring: for a_0..a_r, b_0..b_s in R^k with k = r+s and E_ij = a_i . b_j, p_I q_{I^c} E_00 lies in the ideal of the other E_ij (p_I, q_{I^c} complementary maximal minors); explicit adjugate proof; k = 2 is the H3 square rule and the S128 four-word identity is the instance p = 0, v = 2, K = {5,7}",
+        "both lemmas hold with no genericity; what is not forced is the nonvanishing of the minors p_I, q_{I^c}; a zero pattern certifies a minor only when exactly one transversal is supported, giving the sound clause families G(r,s) and M(p,A)",
+        "finite facts at n = 8 (exact integer arithmetic): on S128 the family G fires on all 3,386 k = 2 instances and at k = 3, 4; on S156 M is silent (122,376 instances, every live set cyclic of size >= 4) and G is silent (7,751 premise instances, none certified); the zero pattern of an explicit integer point passes check_model, check_holonomy (all levels), check_plane (all levels), M and G with zero violations, so killers, H2, H3, PR, M and G together do not exclude S156",
+        "unconditional necessary condition on S156: at every hub rank R_F(gamma) + rank Phi_F(C_gamma) <= 4, giving a per-hub trichotomy (rank <= 2 rows; three rank-one blocks with a common column; or all coefficient vectors multiples of the cofactor vector); none of its cases is refutable from the support",
+        "primary verifier checks the transport identity by cofactor solve for (k,r) in {(2,1),(3,1),(3,2),(4,2)} and every I, the general adjugate step for every k <= 6, and the S156/S128 instance counts, in exact arithmetic (81 s); the all-k proof is by hand; no independent audit; no Lean"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/finite/n08/verify_s156_multi_partner_grid_transport.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": "about 81 seconds for the verifier",
+      "external_binaries": [],
+      "note": "Generalizes the column killer and the H3 grid transport to every hub degree, and shows that this whole support-level programme is silent on the 156-entry eight-vertex survivor: any exclusion of S156 must come from the equations. Named next target: the hub-2 rank trichotomy (a determinantal condition on the seven-vertex configuration). Global status UNRESOLVED.",
+      "claim_package": "docs/strategy",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Cut-tensor permanental rigidity attempt: Lemma C, small-cut theorems, Version R countermodel",
       "document": "docs/strategy/cut-tensor-rigidity-attempt-2026-10-09.md",
       "document_sha256_16": "72b0649263fac4f7",
