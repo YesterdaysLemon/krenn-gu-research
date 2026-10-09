@@ -107,7 +107,7 @@ witness); this script records no proof trace, use --proof for a DIMACS file.
 
 Usage: python explore_...py N [--killers] [--noncoordinate-killer]
        [--holonomy] [--holonomy-top-only] [--pattern NAME]
-       [--no-symmetry] [--proof PREFIX] [--out PATH]
+       [--no-symmetry] [--proof PREFIX] [--out PATH] [--fast [--cross-check-fast]]
 """
 
 from __future__ import annotations
