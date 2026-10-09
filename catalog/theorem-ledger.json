@@ -7590,6 +7590,32 @@
       "legacy_paths": []
     },
     {
+      "name": "S156 excluded with exact support by the diagonal-anchor lemma (16-word identities at ten tasks)",
+      "document": "docs/strategy/s156-hub-trichotomy-2026-10-09.md",
+      "document_sha256_16": "c20a7d50d2f81e21",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "exact statement, any field, n = 8, d = 3: no configuration of 3x3 blocks whose zero pattern is exactly S156 (the 156-entry survivor printed in the hyperdeterminant crossing note, Section 3.4) has matching tensor GHZ(8,3); likewise for S128 (eleven failing tasks)",
+        "mechanism: the diagonal-anchor lemma (docs/research-notes.md, 'Diagonal-anchor refinement'): for every vertex v and colour c some neighbour u has W_vu[c,c] != 0 and W_vu[c,b] = 0 for b != c; proof by contracting T with e_c at v and with y_u in ker(row c of W_vu) at every other vertex, so every perfect matching contributes a zero factor; at a witness the contraction equals lambda_c prod y_u[c]",
+        "on S156 the colour-0 row at vertex 2 meets only four full blocks, so no block row there is a multiple of e_0; the resulting 16-word identity (colours 0 at vertices 0,2,4,5 and 0/1 at 1,3,6,7) gives T(0^8) W12[1,0] W23[0,1] W26[0,1] W27[0,1] = signed sum of nonconstant words times support monomials, hence the product vanishes at a witness; ten (vertex, colour) tasks fail, each with its own identity; no division, no genericity",
+        "the support model's --killers never encoded the anchor lemma; the hub-flattening and transport lemmas use only nonconstant words and so cannot see it; the hub-2 trichotomy remains a valid unused necessary condition",
+        "support-level follow-up (SAT runs, no DRAT): exact S156 with killers + anchors UNSAT in 1.9 s; general n = 8 with killers + anchors + plane rigidity SAT in 65 s (121-entry model, printed in the note); proper sub-patterns of S156 with killers + anchors + holonomy + plane rigidity inconclusive at 2,400 s; general n = 8 with killers + anchors + top-level holonomy + plane rigidity inconclusive at 2,400 s",
+        "primary verifier checks the generic K8 anchor identity, the anchor census of S156 and S128, and all ten S156 identities in exact sympy arithmetic (about five seconds); no independent audit; no Lean; no new order excluded"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/finite/n08/verify_s156_diagonal_anchor_exclusion.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": "about five seconds for the verifier; the support runs 2 s to 40 min each",
+      "external_binaries": [],
+      "note": "Both recorded eight-vertex support survivors are now excluded fibre-exactly, S156 by an all-order lemma the support model had never encoded. The model gained --anchors (and --within-pattern-file); killers + anchors + plane rigidity is still SAT at n = 8, so the eight-vertex support-level exclusion stays open. Global status UNRESOLVED.",
+      "claim_package": "docs/strategy",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Cut-tensor permanental rigidity attempt: Lemma C, small-cut theorems, Version R countermodel",
       "document": "docs/strategy/cut-tensor-rigidity-attempt-2026-10-09.md",
       "document_sha256_16": "72b0649263fac4f7",
