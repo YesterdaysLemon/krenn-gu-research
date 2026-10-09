@@ -329,7 +329,11 @@ it is not attempted here.
   were not examined.
 
 No theorem, branch closure, or reduction edge changes, so
-`docs/current-frontier.md` needs no update.
+`docs/current-frontier.md` needs no new node or edge; the integrator updated the
+`SL6` boundary row and the eight-vertex refuted-route row with the two facts
+above (S128 excluded fibre-exactly by an existing mechanism; S156 survives
+every encoded family), since both rows previously described the survivors
+only as support models.
 
 ## 7. Commands and runs
 
