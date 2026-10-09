@@ -7481,6 +7481,62 @@
       "legacy_paths": []
     },
     {
+      "name": "Permanent plane restriction: trilinear Pluecker annihilator, coaxial rigidity, and the hyperdeterminant",
+      "document": "claims/arbitrary-order/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_THEOREM.md",
+      "document_sha256_16": "e939c2b667bc61ac",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact statements about the 3x3 permanent restricted to a product of three planes V_0 x V_1 x V_2 in C^3 (a 2x2x2 tensor), with Pluecker vectors l_t of the planes",
+        "Theorem 1: Cayley's hyperdeterminant of the restricted tensor factors through the Pluecker vectors as an absolutely irreducible symmetric polynomial of bidegree (2,2,2) (identity over Z; irreducibility over characteristic zero), equal to det(L)^2 - 8(e_2(P_even)+e_2(P_odd)) in the six permutation monomials, and lies in the degree-three ideal below, so it is not the rigidity invariant",
+        "Theorem 2: a polarization identity over Z expresses each contraction of the cube with complementary rows as a permanent of cross products; in characteristic not two these span J_3 = Ann(S) of dimension 22, S = span{e_a (x) e_a (x) e_a, eps_+, eps_-}; the restricted permanent vanishes identically iff l_0 (x) l_1 (x) l_2 lies in S iff all three Pluecker vectors lie on one coordinate axis; every Pluecker target needs multiplier degree at least three",
+        "no occurrence statement: the theorem supplies no cut or plane from a hypothetical witness; its support-level clause family (plane rigidity, PR) is proved valid for the zero pattern of every complex configuration at every order and level |A|>=6, and with killers and holonomy excludes six vertices at the support level with a checked DRAT certificate (recorded in the companion note), while eight vertices remains satisfiable there",
+        "primary verifier replays the identities, the dimension and completeness ranks, the factorization and special values (about five seconds); no independent audit; same-day agent review PASS with every statement recomputed; no Lean"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_permanent_plane_restriction_hyperdeterminant_theorem.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "review": "docs/audits/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_REVIEW_2026-10-09.md",
+      "expected_runtime": "about five seconds for the verifier; the six-vertex support run about three minutes, its native certificate under three minutes",
+      "external_binaries": [
+        "cadical and drat-trim at the pinned commit (optional, for the certificate replay)"
+      ],
+      "note": "Basis-free form of the cube certificate: the permanent on three planes is rigid exactly when the planes are not coaxial, with degree three forced by one Pluecker coordinate per vertex. Its clause family is the third mechanism of the support-level six-vertex exclusion (frontier node SL6). Not a witness, no new order excluded; the global status remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Support-level six-vertex exclusion from killers, holonomy and plane rigidity (SL6)",
+      "document": "docs/strategy/hyperdeterminant-crossing-2026-10-09.md",
+      "document_sha256_16": "5a28f159576adb03",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "finite computer-assisted statement at n=6, d=3, general 3x3 blocks: no zero pattern of a six-vertex configuration satisfies the recursive support conditions (Laplace accessibility, singleton noncancellation, GHZ zero pattern) together with the column-killer, holonomy (signed K_{2,3} and rank-one grid) and plane-rigidity clause families",
+        "bridge: every complex configuration's zero pattern satisfies every clause (each family is proved at every order; the plane-rigidity family's soundness was proved independently in the review by chart-wise Groebner bases and exact random tests), so the unsatisfiability is a second proof of the six-vertex exclusion whose only computation is the search",
+        "certificate: the final DIMACS (113,726 variables, 835,304 clauses, SHA-256 2b15ae81...) re-solved by native CaDiCaL 1.7.3 and its 40 MB DRAT trace (SHA-256 468795d2...) checked s VERIFIED by drat-trim at the repository-pinned commit; the search used the chain normalization and (sound, orbit-tested) lex-leader clauses, and is also UNSAT with the lex-leader clauses removed; fully symmetry-free runs were inconclusive at one hour",
+        "scope: six vertices only; the same families are satisfiable at n=8 (128- and 156-entry support models passing the extended checker), so no new order is excluded; the occurrence statement OCC-PR that would lift the mechanism is as strong as the exclusion",
+        "the holonomy note and the killer theorem were only lightly re-checked by this review; no independent audit of the full clause pipeline; no Lean"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/finite/n08/explore_general_block_recursive_support_model.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "review": "docs/audits/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_REVIEW_2026-10-09.md",
+      "expected_runtime": "about three minutes for the n=6 run with --killers --holonomy --plane-rigidity; the certificate replay under three minutes",
+      "external_binaries": [
+        "cadical and drat-trim at the pinned commit (optional, for the certificate replay)"
+      ],
+      "note": "Frontier node SL6. The six-vertex exclusion recovered from three named all-order mechanisms plus a zero-pattern search with a checked certificate; eight vertices does not fall the same way. Global status UNRESOLVED.",
+      "claim_package": "docs/strategy",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Cut-tensor permanental rigidity attempt: Lemma C, small-cut theorems, Version R countermodel",
       "document": "docs/strategy/cut-tensor-rigidity-attempt-2026-10-09.md",
       "document_sha256_16": "72b0649263fac4f7",

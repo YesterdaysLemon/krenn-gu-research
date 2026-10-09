@@ -287,6 +287,34 @@ DRAT proof.  The earlier runs of this model at `n = 6` with killers
 recorded in the holonomy note were SAT; its one UNSAT answer was a
 symmetry-breaking artifact and was withdrawn.
 
+## 3a. Checked certificate for the six-vertex support exclusion (added by the integrator, 2026-10-09)
+
+The `n = 6` run with killers, holonomy (H2/H3) and plane rigidity (PR) was
+repeated with `--proof`.  The script wrote the base DIMACS (38,974 variables,
+158,540 clauses) and the **final** DIMACS containing every lazily added
+holonomy and plane-rigidity clause, which is the formula the solver refuted:
+113,726 variables, 835,304 clauses, SHA-256
+`2b15ae81bb8db837c7213b666f69aeab68712dfb22a7ebb1e3bcfe0697483203`.  The
+final DIMACS was re-solved by the native CaDiCaL 1.7.3 binary (85 s, UNSAT)
+and its 40,173,396-byte DRAT trace (SHA-256
+`468795d283656b03a7c50ae405493f547b9b25f512642a84ca4a596b491a8328`) was
+checked `s VERIFIED` by `drat-trim` built from the repository-pinned commit
+(61 s).  What the certificate proves is that the final formula is
+unsatisfiable; that every clause of the final formula holds for the zero
+pattern of every complex configuration is the soundness statement of
+Section 3, independently proved in the same-day
+[review](../audits/docs/audits/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_REVIEW_2026-10-09.md).  The review also reproduced
+the UNSAT with every lex-leader clause removed (chain normalization only,
+1,065 s); fully symmetry-free runs were inconclusive at 3,600 s.
+
+**Consequence, stated exactly.**  No zero pattern on six vertices satisfies
+the recursive support conditions (L), (F'), (G) together with the
+column-killer, holonomy and plane-rigidity clause families.  Since every
+all-order mechanism among these is proved for every complex configuration,
+this is a second proof of the six-vertex exclusion whose only computation is
+a zero-pattern search with a checked certificate.  It excludes no new order:
+at `n = 8` the same families are satisfiable (Section 4).
+
 ## 4. Step 4: gluing at `n = 8`
 
 ### 4.1 What PR needs outside the cut at the top level
@@ -462,3 +490,20 @@ Run ids:
 The scratch scripts (hyperdeterminant interpolation, ideal-part
 enumeration, smoke tests) are not committed.  The verifier re-derives
 every fact quoted from them.
+
+## 8. Review notes (2026-10-09)
+
+The same-day [review](../audits/docs/audits/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_REVIEW_2026-10-09.md) passed the
+clause family's soundness in both modes (an independent chart-wise Groebner
+proof of the rigidity step; 3.68 million exact random instances at `n = 6`
+and 3.48 million at `n = 8` with zero violations), proved that the `value`
+and `deg3` modes fire on exactly the same support instances at every order,
+recomputed every statement of the theorem, orbit-tested the symmetry block,
+and reproduced the `n = 6` UNSAT and both `n = 8` models.  It flags two
+wording issues (the "outer triangle independent" reduction in Section 4.1
+and the exterior-square extension in Section 4.3), an unchecked
+Reynolds-operator remark in Theorem 2(c), that the holonomy note and the
+killer theorem were only lightly re-checked here, that the `n = 8` models are
+recorded as supports only, and that no occurrence theorem supplies the
+plane-rigidity premises in a witness.  Its "no DRAT" gap is closed by
+Section 3a.

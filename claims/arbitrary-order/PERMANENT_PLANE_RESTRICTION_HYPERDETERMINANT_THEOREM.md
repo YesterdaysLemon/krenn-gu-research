@@ -3,7 +3,9 @@
 ## Status
 
 **Proved** (hand proofs plus exact finite linear algebra, replayed by the
-verifier below).  Theorem 1 is an identity over `Z`; its irreducibility
+verifier below; same-day adversarial
+[review](../../docs/audits/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_REVIEW_2026-10-09.md) PASS, every statement
+recomputed independently; no independent audit, no Lean).  Theorem 1 is an identity over `Z`; its irreducibility
 statement is over every field of characteristic zero.  Theorem 2 (a) is an
 identity over `Z`, (b) holds over every field of characteristic not two,
 and (c) is stated over `Q` (exact ranks; also checked over `F_3`).
