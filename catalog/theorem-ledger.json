@@ -7705,13 +7705,12 @@
         "exact equations: T = kappa T_B + Phi with Phi(gamma) = rho_gamma^T Theta_gamma sigma_gamma; exact no-go for one PyTheus-style support family without the ancilla edge (pure-word coefficient matrix of rank <= 2)",
         "support level: (L), (F'), H2, H3 and plane rigidity transfer via the embedding as an 8-vertex configuration with tensor GHZ6 x e0 x e0; ancilla killer proved (needs kappa = 0); column killers at a coloured vertex hold only without ancilla edges; anchors not re-derived; adapted model with killers + H2/H3 + plane rigidity SAT (155 entries, 4 rounds, independent check PASS)",
         "numerics (not evidence): 0/24 Levenberg-Marquardt restarts converge on C_{6,1} (one small-cost point is a border/gauge artefact); controls converge (C'_{6,1} 5/13, four-ancilla 4/6, GHZ(4,3) 3/3, GHZ(6,3) without ancilla 0/6); in every C' solution Phi(c^6) = 0 for some colour",
-        "named obstruction Phi0 (open, stronger than C_{6,1} empty): in any configuration of six three-colour and two one-colour vertices realizing GHZ(6,3) with the ancilla edge allowed, Phi(c^6) = 0 for some colour; not done: modular Groebner/saturation/Jacobian attack on the full system, anchor re-derivation, independent audit of Lemma 5; no Lean"
+        "named obstruction Phi0 (open, stronger than C_{6,1} empty): in any configuration of six three-colour and two one-colour vertices realizing GHZ(6,3) with the ancilla edge allowed, Phi(c^6) = 0 for some colour; not done: modular Groebner/saturation/Jacobian attack on the full system, anchor re-derivation, independent audit of Lemma 5; no Lean",
+        "informal dependency (not a typed ledger relation): the residual class and its exclusion are N8R1 in claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md"
       ],
-      "dependencies": [
-        "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md"
-      ],
+      "dependencies": [],
       "primary_verifier": null,
-      "verifier_provenance": "none",
+      "verifier_provenance": "none_exists",
       "independent_audit": null,
       "audit_provenance": "none_exists",
       "expected_runtime": "minutes per listed run; numerics not evidence",
