@@ -81,6 +81,26 @@ Section 3, resting on PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_THEOREM.md):
 Lazy clauses of every family are added CEGAR-style; a SAT model is accepted
 only after check_model, check_holonomy and check_plane pass.
 
+Performance flags (engineering only; they change no rule, no instance and no
+clause order, so a run is the same run, only faster):
+  --fast-plane : the PR violation search uses a numpy prefilter over every
+       (A, T, c, pairs, Cc) for the support conditions check_plane tests
+       before the minors; survivors go through the unchanged _plane_clause.
+       The result is check_plane's violation list and plane_instances'
+       instance dictionary, in the same order (replaces both in the loop).
+  --fast-holonomy : the holonomy gate is check_holonomy_fast (numpy live
+       tables from the supports; same violation list as check_holonomy);
+       holonomy_instances takes its premises from a numpy scan of the
+       model's t literals (same premises, same order) and does not rebuild
+       clauses for keys already added (same new instances, same variable
+       allocation order).
+  --fast : both.   --cross-check-fast : also run the reference scans every
+       round and stop on any difference (validation; slower than either).
+  The final acceptance of a SAT model always uses the reference checkers.
+  Validation (2026-10-09): n = 6 --killers --holonomy --plane-rigidity --fast
+  --proof reproduces the final DIMACS SHA-256 2b15ae81... of Section 3a of
+  docs/strategy/hyperdeterminant-crossing-2026-10-09.md exactly.
+
 A SAT answer is re-checked by an independent brute-force checker.  An UNSAT
 answer means no witness exists at this order (the model is implied by every
 witness); this script records no proof trace, use --proof for a DIMACS file.
@@ -301,15 +321,11 @@ class GSM:
         return [(-self.tlit(A, w, p, u) if u in S else self.tlit(A, w, p, u))
                 for u in A if u != p]
 
-    def holonomy_instances(self, val, top_only=False, rules=("H2", "H3")):
-        """Instances of (H2) and (H3) whose base premises hold under val.
-
-        val(lit) -> bool evaluates a literal in the current model.  Returns
-        {key: [clauses]}; every clause is an instance of a valid rule, so it
-        may be added whether or not the current model violates it."""
-        out = {}
-        families = {}
-        sets = [self.V] if top_only else self.sets
+    def _holonomy_premises(self, val, sets, rules):
+        """Reference scan for holonomy_instances: in the order (A, w, p), every
+        (A, w) with m false and a vertex p whose live set is exactly {a, b},
+        with the hubs q (in A order) for which the (H2) premises hold.
+        Yields (A, idx, w, mA, p, a, b, Ba, wa, Bb, wb, qs)."""
         for A in sets:
             idx = {v: k for k, v in enumerate(A)}
             for w in itertools.product(range(C), repeat=len(A)):
@@ -321,41 +337,85 @@ class GSM:
                     if len(live) != 2:
                         continue
                     a, b = live
-                    prem = [mA] + self.exact_neg(A, w, p, {a, b})
-                    # (H2) signed K_{2,3} edge with hub pair {p, q}
                     Ba = tuple(x for x in A if x not in (p, a))
                     wa = tuple(w[idx[x]] for x in Ba)
                     Bb = tuple(x for x in A if x not in (p, b))
                     wb = tuple(w[idx[x]] for x in Bb)
+                    qs = []
                     for q in (A if "H2" in rules else ()):
                         if q in (p, a, b):
                             continue
                         la = [u for u in Ba if u != q and val(self.tlit(Ba, wa, q, u))]
                         lb = [u for u in Bb if u != q and val(self.tlit(Bb, wb, q, u))]
-                        if la != [b] or lb != [a]:
-                            continue
-                        prem2 = (prem + self.exact_neg(Ba, wa, q, {b})
-                                 + self.exact_neg(Bb, wb, q, {a}))
-                        h1, h2 = (p, w[idx[p]]), (q, w[idx[q]])
-                        h = (h1, h2) if h1 < h2 else (h2, h1)
-                        sa = self.pool.id(("sig", h, a, w[idx[a]]))
-                        sb = self.pool.id(("sig", h, b, w[idx[b]]))
-                        out[("H2", A, w, p, q, a, b)] =[prem2 + [sa, sb], prem2 + [-sa, -sb]]
-                    # (H3) rank-one grid edges
-                    k1, k2 = min(a, b), max(a, b)
-                    pairs = [(k1, k2)] + [tuple(sorted((p, v))) for v in A
-                                           if v not in (p, k1, k2)]
-                    for u, v in (pairs if "H3" in rules else ()):
-                        rest = tuple(-1 if x in (u, v) else w[idx[x]] for x in A)
-                        fam = (A, p, k1, k2, u, v, rest)
-                        xy = (w[idx[u]], w[idx[v]])
-                        families.setdefault(fam, set()).add(xy)
-                        out[("E", fam, xy)] = [prem + [self.pool.id(("can", fam, xy))]]
+                        if la == [b] and lb == [a]:
+                            qs.append(q)
+                    yield A, idx, w, mA, p, a, b, Ba, wa, Bb, wb, qs
+
+    def holonomy_instances(self, val, top_only=False, rules=("H2", "H3"), skip=None,
+                           premises=None):
+        """Instances of (H2) and (H3) whose base premises hold under val.
+
+        val(lit) -> bool evaluates a literal in the current model.  Returns
+        {key: [clauses]}; every clause is an instance of a valid rule, so it
+        may be added whether or not the current model violates it.
+
+        skip (optional, --fast-holonomy): a container of keys already added.
+        Their clauses are not rebuilt and they are omitted from the result;
+        every other key, its clauses, the result order and the order in which
+        new sig/can variables are allocated are unchanged (a skipped key's
+        variables were allocated when it was first built, and the per-family
+        can dictionary is still built for every closure corner).  So
+        {k: v for k, v in result if k not in skip} is the same with or
+        without skip.
+
+        premises (optional, --fast-holonomy): an iterable replacing the
+        reference scan _holonomy_premises (same tuples, same order), e.g.
+        holonomy_premises_fast."""
+        out = {}
+        families = {}
+        sets = [self.V] if top_only else self.sets
+        if skip is None:
+            skip = ()
+        if premises is None:
+            premises = self._holonomy_premises(val, sets, rules)
+        for A, idx, w, mA, p, a, b, Ba, wa, Bb, wb, qs in premises:
+            prem = None
+            # (H2) signed K_{2,3} edge with hub pair {p, q}
+            for q in qs:
+                key = ("H2", A, w, p, q, a, b)
+                if key in skip:
+                    continue
+                if prem is None:
+                    prem = [mA] + self.exact_neg(A, w, p, {a, b})
+                prem2 = (prem + self.exact_neg(Ba, wa, q, {b})
+                         + self.exact_neg(Bb, wb, q, {a}))
+                h1, h2 = (p, w[idx[p]]), (q, w[idx[q]])
+                h = (h1, h2) if h1 < h2 else (h2, h1)
+                sa = self.pool.id(("sig", h, a, w[idx[a]]))
+                sb = self.pool.id(("sig", h, b, w[idx[b]]))
+                out[key] = [prem2 + [sa, sb], prem2 + [-sa, -sb]]
+            # (H3) rank-one grid edges
+            k1, k2 = min(a, b), max(a, b)
+            pairs = [(k1, k2)] + [tuple(sorted((p, v))) for v in A
+                                   if v not in (p, k1, k2)]
+            for u, v in (pairs if "H3" in rules else ()):
+                rest = tuple(-1 if x in (u, v) else w[idx[x]] for x in A)
+                fam = (A, p, k1, k2, u, v, rest)
+                xy = (w[idx[u]], w[idx[v]])
+                families.setdefault(fam, set()).add(xy)
+                key = ("E", fam, xy)
+                if key in skip:
+                    continue
+                if prem is None:
+                    prem = [mA] + self.exact_neg(A, w, p, {a, b})
+                out[key] = [prem + [self.pool.id(("can", fam, xy))]]
         for fam, edges in families.items():
             A, p, k1, k2, u, v, rest = fam
             closure = grid_closure(edges)
             can = {xy: self.pool.id(("can", fam, xy)) for xy in closure}
             for (x, y) in closure:
+                if ("C", fam, (x, y)) in skip:
+                    continue
                 w = tuple(x if s == u else y if s == v else c for s, c in zip(A, rest))
                 mA = self.mvar(A, w)
                 cv = can[(x, y)]
@@ -368,6 +428,8 @@ class GSM:
             for (x, y) in closure:
                 for (x2, y2) in closure:
                     if x2 != x and y2 != y and (x, y2) in closure and (x2, y) in closure:
+                        if ("S", fam, x, y, x2, y2) in skip:
+                            continue
                         out[("S", fam, x, y, x2, y2)] = [
                             [-can[(x, y)], -can[(x, y2)], -can[(x2, y)], can[(x2, y2)]]]
         return out
@@ -494,6 +556,189 @@ class GSM:
                 if l1 is not None and l2 is not None:
                     out[(ti, a)] = [l1, l2]
         return out
+
+    # ------------------------------------- fast PR scan (--fast-plane)
+    def model_tables(self, model):
+        """Boolean views of a solver model for the vectorized scans.
+
+        Returns (mv, G, M): mv[id] is the value of variable id (False for ids
+        the model does not mention, matching val() on the decoded model);
+        G[v,u,a,b] = gvar(v,u,a,b) (False on the diagonal); M[k][s, w] =
+        m[(sets_k[s], words_k[w])] for every even k >= 4."""
+        import numpy as np
+        cached = getattr(self, "_fast_model", None)
+        if cached is not None and cached[0] is model:
+            return cached[1]
+        if not hasattr(self, "_fast_ids"):
+            n = self.n
+            gid = np.zeros((n, n, C, C), dtype=np.int64)       # id 0 is never a variable
+            for v in self.V:
+                for u in self.V:
+                    if u != v:
+                        for a in range(C):
+                            for b in range(C):
+                                gid[v, u, a, b] = self.gvar(v, u, a, b)
+            mid, sidx = {}, {}
+            for k in range(4, n + 1, 2):
+                sets_k = list(itertools.combinations(self.V, k))
+                words = list(itertools.product(range(C), repeat=k))
+                sidx[k] = {A: i for i, A in enumerate(sets_k)}
+                mid[k] = np.array([[self.m[(A, w)] for w in words] for A in sets_k], dtype=np.int64)
+            self._fast_ids = (gid, mid, sidx)
+        gid, mid, sidx = self._fast_ids
+        arr = np.asarray(model, dtype=np.int64)
+        mv = np.zeros(max(self.pool.top, int(np.abs(arr).max(initial=0))) + 1, dtype=bool)
+        mv[arr[arr > 0]] = True
+        mv[0] = False
+        tables = (mv, mv[gid], {k: mv[ids] for k, ids in mid.items()})
+        self._fast_model = (model, tables)
+        return tables
+
+    def holonomy_premises_fast(self, model, top_only=False, rules=("H2", "H3")):
+        """Vectorized replacement of _holonomy_premises (same tuples, same
+        order).  The live tables are read from the model's t literals (and
+        g literals for two-vertex sub-configurations), exactly as tlit/val
+        are read by the reference scan; m values from the m literals."""
+        import numpy as np
+        mv, G, M = self.model_tables(model)
+        sets, sidx, lev = laplace_index(self.n)
+        if not hasattr(self, "_fast_tid"):
+            tid = {}
+            for k in range(4, self.n + 1, 2):
+                PJ = lev[k]["PJ"].tolist()
+                tid[k] = np.array([[[[self.t[(A, w, A[i], A[j])] for j in PJ[i]]
+                                     for i in range(k)] for w in lev[k]["Dl"]]
+                                   for A in sets[k]], dtype=np.int64)
+            self._fast_tid = tid
+        Mt, L = laplace_live_tables(self.n, G, M, levels=(2,))   # two-vertex terms are g
+        for k, ids in self._fast_tid.items():
+            L[k] = mv[ids]
+        for k in ([self.n] if top_only else range(4, self.n + 1, 2)):
+            Dl = lev[k]["Dl"]
+            S, W, I, JA, JB, Q = holonomy_scan_arrays(self.n, Mt, L, k, "H2" in rules)
+            for c in range(len(S)):
+                A, w, i, ia, ib = sets[k][S[c]], Dl[W[c]], I[c], JA[c], JB[c]
+                p, a, b = A[i], A[ia], A[ib]
+                idx = {v: t for t, v in enumerate(A)}
+                qs = [A[qi] for qi, ok in enumerate(Q[c]) if ok]
+                if qs:
+                    Ba = tuple(x for x in A if x not in (p, a))
+                    wa = tuple(w[idx[x]] for x in Ba)
+                    Bb = tuple(x for x in A if x not in (p, b))
+                    wb = tuple(w[idx[x]] for x in Bb)
+                else:
+                    Ba = wa = Bb = wb = None             # used only for H2 hubs
+                yield A, idx, w, self.mvar(A, w), p, a, b, Ba, wa, Bb, wb, qs
+
+    def _mvals(self, G, M, B, cols):
+        """Values of m[B, cols-restricted word] for a sorted vertex tuple B;
+        cols maps each vertex of B to an integer array of colours (all of one
+        shape).  Matches mvar: true for B empty, g for |B| = 2."""
+        import numpy as np
+        if len(B) == 0:
+            return None                          # caller treats None as all-true
+        if len(B) == 2:
+            return G[B[0], B[1], cols[B[0]], cols[B[1]]]
+        k = len(B)
+        widx = sum(cols[x] * (C ** (k - 1 - i)) for i, x in enumerate(B))
+        _, _, sidx = self._fast_ids
+        return M[k][sidx[k][B]][widx]
+
+    def plane_scan_fast(self, model, val, top_only=False, mode="value"):
+        """Vectorized equivalent of (check_plane, plane_instances).
+
+        A numpy prefilter evaluates, for every (A, T, c, pairs, Cc) in the
+        order of plane_instances, the support conditions that check_plane
+        tests before the minors (cube words all zero, h, no other live
+        injection summand, no live inner-edge summand).  Every survivor is
+        then passed to the unchanged _plane_clause, which re-derives the full
+        premise from val; so the returned instances are exactly those
+        plane_instances returns, in the same order, and the returned list of
+        violations is check_plane's 'bad' list (same tuples, same order).
+        Returns (instances, bad)."""
+        import numpy as np
+        mv, G, M = self.model_tables(model)
+        out, bad = {}, []
+        sets = [self.V] if top_only else [A for A in self.sets if len(A) >= 6]
+        AL = np.array(list(itertools.product(range(C), repeat=3)), dtype=np.int64)     # (27,3)
+        PR3 = list(itertools.product(PAIRS, repeat=3))
+        CUBE = np.array([[al[0] * 9 + al[1] * 3 + al[2] for al in itertools.product(*pr)]
+                         for pr in PR3], dtype=np.int64)                                # (27,8)
+        for A in sets:
+            k = len(A)
+            idx = {v: i for i, v in enumerate(A)}
+            Mrow = M[k][self._fast_ids[2][k][A]]
+            for T in itertools.combinations(A, 3):
+                R = tuple(x for x in A if x not in T)
+                r = len(R)
+                cR = np.array(list(itertools.product(range(C), repeat=r)), dtype=np.int64)  # (NC,r)
+                NC = len(cR)
+                colR = {x: cR[:, s] for s, x in enumerate(R)}
+                wR = sum(cR[:, s] * (C ** (k - 1 - idx[x])) for s, x in enumerate(R))
+                wT = sum(AL[:, i] * (C ** (k - 1 - idx[t])) for i, t in enumerate(T))
+                Mword = Mrow[wR[:, None] + wT[None, :]]                       # (NC,27)
+                zero_cube = ~Mword[:, CUBE].any(axis=2)                       # (NC,27 pairs)
+                if not zero_cube.any():
+                    continue
+                Tarr, Rarr = np.array(T), np.array(R)
+                Bm = G[Tarr[None, None, :, None], Rarr[None, None, None, :],
+                       AL[None, :, :, None], cR[:, None, None, :]]            # (NC,27,3,r)
+                Ss = list(itertools.combinations(range(r), 3))
+                ones = np.ones(NC, dtype=bool)
+                live3 = np.zeros((NC, 27, len(Ss)), dtype=bool)
+                hS = np.zeros((NC, len(Ss)), dtype=bool)
+                for si, S in enumerate(Ss):
+                    rest = tuple(x for s, x in enumerate(R) if s not in S)
+                    mr = self._mvals(G, M, rest, colR)
+                    mr = ones if mr is None else mr
+                    hS[:, si] = mr
+                    lp = np.zeros((NC, 27), dtype=bool)
+                    for pi in itertools.permutations(S):
+                        lp |= Bm[:, :, 0, pi[0]] & Bm[:, :, 1, pi[1]] & Bm[:, :, 2, pi[2]]
+                    live3[:, :, si] = lp & mr[:, None]
+                inner = np.zeros((NC, 27), dtype=bool)
+                mRu = []
+                for s, u in enumerate(R):
+                    mr = self._mvals(G, M, tuple(x for x in R if x != u), colR)
+                    mRu.append(ones if mr is None else mr)
+                for i, j in ((0, 1), (0, 2), (1, 2)):
+                    kk = 3 - i - j
+                    gin = G[T[i], T[j], AL[:, i], AL[:, j]]                   # (27,)
+                    term = np.zeros((NC, 27), dtype=bool)
+                    for s in range(r):
+                        term |= Bm[:, :, kk, s] & mRu[s][:, None]
+                    inner |= gin[None, :] & term
+                nlive = live3.sum(axis=2)
+                bad_al = inner[:, :, None] | ((nlive[:, :, None] - live3) > 0)  # (NC,27,nS)
+                badcube = bad_al[:, CUBE, :].any(axis=2)                      # (NC,27,nS)
+                cand = zero_cube[:, :, None] & hS[:, None, :] & ~badcube
+                if not cand.any():
+                    continue
+                Cs = list(itertools.combinations(R, 3))
+                zero_cache = {}
+                for ci, pi, si in zip(*np.nonzero(cand)):
+                    c = tuple(int(z) for z in cR[ci])
+                    col = dict(zip(R, c))
+                    zero = zero_cache.get(ci)
+                    if zero is None:
+                        zero = {}
+                        for al in itertools.product(range(C), repeat=3):
+                            w = [0] * k
+                            for x in R:
+                                w[idx[x]] = col[x]
+                            for t, a in zip(T, al):
+                                w[idx[t]] = a
+                            w = tuple(w)
+                            zero[al] = (w, self.mvar(A, w))
+                        zero_cache[ci] = zero
+                    pairs = PR3[pi]
+                    cube = list(itertools.product(*pairs))
+                    Cc = Cs[si]
+                    cl = self._plane_clause(A, T, R, col, Cc, pairs, cube, zero, val, mode)
+                    if cl is not None:
+                        out[("PR", len(A), tuple(sorted(cl)))] = [cl]
+                        bad.append(("PR", A, T, c, pairs, Cc))
+        return out, bad
 
     def fix_pattern(self, sup):
         """Unit assumptions fixing every g-variable to a given support."""
@@ -653,6 +898,215 @@ def grid_closure(edges):
     xs = {x for x, _ in edges}
     ys = {y for _, y in edges}
     return {(x, y) for x in xs for y in ys if find(("x", x)) == find(("y", y))}
+
+
+# ------------------------------------------- vectorized Laplace tables (--fast)
+_LAPLACE_INDEX = {}
+
+
+def laplace_index(n):
+    """Combinatorial index tables of the Laplace expansion on n vertices
+    (cached).  Returns (sets, sidx, lev): sets[k] lists the k-subsets in
+    itertools.combinations order, sidx[k] inverts it, and for even k >= 2
+    lev[k] holds D (3^k, k) the words in itertools.product order, VERT
+    (|sets[k]|, k), PJ (k, k-1) the partner positions of each position,
+    SUBS (|sets[k]|, k, k-1) and SUBW (3^k, k, k-1) the set and word index of
+    (A - {A_i, A_j}, w restricted) at level k-2 for j = PJ[i, jj]."""
+    import numpy as np
+    if n in _LAPLACE_INDEX:
+        return _LAPLACE_INDEX[n]
+    sets = {k: list(itertools.combinations(range(n), k)) for k in range(0, n + 1, 2)}
+    sidx = {k: {A: i for i, A in enumerate(s)} for k, s in sets.items()}
+    lev = {}
+    for k in range(2, n + 1, 2):
+        D = np.array(list(itertools.product(range(C), repeat=k)), dtype=np.int64)
+        part = [[j for j in range(k) if j != i] for i in range(k)]
+        SUBS = np.zeros((len(sets[k]), k, k - 1), dtype=np.int64)
+        SUBW = np.zeros((len(D), k, k - 1), dtype=np.int64)
+        for i in range(k):
+            for jj, j in enumerate(part[i]):
+                keep = [x for x in range(k) if x not in (i, j)]
+                SUBS[:, i, jj] = [sidx[k - 2][tuple(A[x] for x in keep)] for A in sets[k]]
+                if keep:
+                    SUBW[:, i, jj] = D[:, keep] @ (C ** np.arange(len(keep) - 1, -1, -1))
+        lev[k] = {"D": D, "Dl": [tuple(r) for r in D.tolist()],
+                  "VERT": np.array(sets[k], dtype=np.int64),
+                  "PJ": np.array(part, dtype=np.int64), "SUBS": SUBS, "SUBW": SUBW,
+                  "pow": [C ** (k - 1 - t) for t in range(k)]}
+    _LAPLACE_INDEX[n] = (sets, sidx, lev)
+    return _LAPLACE_INDEX[n]
+
+
+def laplace_live_tables(n, G, Mk, levels=None):
+    """Live tables of the Laplace expansion from zero-pattern arrays.
+
+    G: bool (n, n, 3, 3) with G[v,u,a,b] the support of (colour a at v,
+    colour b at u); Mk: {k: bool (|sets[k]|, 3^k)} for even k >= 4.
+    Returns (M, L): M[k] for every even k (M[0] true, M[2] from G) and
+    L[k][s, wi, i, jj] = G[A_i, A_j, w_i, w_j] and M[k-2][A - {A_i, A_j}, w|]
+    with j = PJ[i, jj], i.e. the Laplace term of (A, w) at A_i with partner
+    A_j is live (exactly check_holonomy's live_at).  levels restricts the
+    levels of L that are computed (default: all)."""
+    import numpy as np
+    _, _, lev = laplace_index(n)
+    d2 = lev[2]
+    M = {0: np.ones((1, 1), dtype=bool),
+         2: G[d2["VERT"][:, 0][:, None], d2["VERT"][:, 1][:, None],
+              d2["D"][None, :, 0], d2["D"][None, :, 1]]}
+    M.update(Mk)
+    L = {}
+    for k in (range(2, n + 1, 2) if levels is None else levels):
+        d = lev[k]
+        D, VERT, PJ = d["D"], d["VERT"], d["PJ"]
+        g = G[VERT[:, None, :, None], VERT[:, PJ][:, None, :, :],
+              D[None, :, :, None], D[:, PJ][None, :, :, :]]
+        L[k] = g & M[k - 2][d["SUBS"][:, None, :, :], d["SUBW"][None, :, :, :]]
+    return M, L
+
+
+def holonomy_scan_arrays(n, M, L, k, h2=True):
+    """Vectorized premise scan of one level.  Returns lists (S, W, I, JA, JB,
+    Q): every (set s, word wi, position i) with M[k] false and exactly two
+    live partners, in (A, w, p) order; JA < JB the positions of the two live
+    partners a, b; Q[c][qi] true iff q = A[qi] is not p, a, b and the live set
+    of q in (A - {p, a}) is exactly [b] and in (A - {p, b}) exactly [a]."""
+    import numpy as np
+    _, _, lev = laplace_index(n)
+    d = lev[k]
+    Lk = L[k]
+    mask = (~M[k])[:, :, None] & (Lk.sum(axis=3) == 2)
+    S, W, I = np.nonzero(mask)
+    rows = Lk[S, W, I]
+    JJ = np.argsort(~rows, axis=1, kind="stable")[:, :2]
+    JJa, JJb = JJ[:, 0], JJ[:, 1]
+    JA, JB = d["PJ"][I, JJa], d["PJ"][I, JJb]
+    Q = np.zeros((len(S), k), dtype=bool)
+    if h2 and len(S):
+        Ls = L[k - 2]
+        cs = Ls.sum(axis=3)
+        sa, wa = d["SUBS"][S, I, JJa], d["SUBW"][W, I, JJa]
+        sb, wb = d["SUBS"][S, I, JJb], d["SUBW"][W, I, JJb]
+        for qi in range(k):
+            ok = (I != qi) & (JA != qi) & (JB != qi)
+            # (A - {p, a}): positions of q and b, and b's index among q's partners
+            qa = np.where(ok, qi - (qi > I) - (qi > JA), 0)
+            ba = JB - (JB > I) - (JB > JA)
+            pa = np.where(ok, ba - (ba > qa), 0)
+            okA = (cs[sa, wa, qa] == 1) & Ls[sa, wa, qa, pa]
+            qb = np.where(ok, qi - (qi > I) - (qi > JB), 0)
+            ab = JA - (JA > I) - (JA > JB)
+            pb = np.where(ok, ab - (ab > qb), 0)
+            okB = (cs[sb, wb, qb] == 1) & Ls[sb, wb, qb, pb]
+            Q[:, qi] = ok & okA & okB
+    return S.tolist(), W.tolist(), I.tolist(), JA.tolist(), JB.tolist(), Q.tolist()
+
+
+def _support_tables(n, gsup, msup):
+    """Zero-pattern arrays (G, Mk) of a decoded model, from the supports."""
+    import numpy as np
+    _, sidx, lev = laplace_index(n)
+    G = np.zeros((n, n, C, C), dtype=bool)
+    for (i, j, a, b) in gsup:
+        G[i, j, a, b] = True
+        G[j, i, b, a] = True
+    Mk = {k: np.zeros((len(sidx[k]), C ** k), dtype=bool) for k in range(4, n + 1, 2)}
+    for (A, w) in msup:
+        k = len(A)
+        Mk[k][sidx[k][A], sum(c * p for c, p in zip(w, lev[k]["pow"]))] = True
+    return G, Mk
+
+
+def check_holonomy_fast(n, gsup, msup, top_only=False, rules=("H2", "H3"), stats=None):
+    """check_holonomy with vectorized live tables (laplace_live_tables from
+    the supports, no SAT variables).  Same (H2) graphs and (H3) grids with the
+    same keys built in the same order, and the same post-processing; so the
+    returned list equals check_holonomy's (validated by --cross-check-fast and
+    the unit tests).  Used only as the in-loop gate of --fast-holonomy; the
+    final acceptance of a SAT model always runs check_holonomy."""
+    sets, sidx, lev = laplace_index(n)
+    G, Mk = _support_tables(n, gsup, msup)
+    Mt, L = laplace_live_tables(n, G, Mk)
+
+    def M(A, w):
+        k = len(A)
+        return bool(Mt[k][sidx[k][A], sum(c * p for c, p in zip(w, lev[k]["pow"]))])
+
+    def live_at(A, w, p):
+        k = len(A)
+        i = A.index(p)
+        row = L[k][sidx[k][A], sum(c * q for c, q in zip(w, lev[k]["pow"])), i]
+        PJ = lev[k]["PJ"][i]
+        return [A[PJ[jj]] for jj in range(k - 1) if row[jj]]
+
+    k23 = {}
+    grids = {}
+    for k in ([n] if top_only else range(4, n + 1, 2)):
+        Dl = lev[k]["Dl"]
+        S, W, I, JA, JB, Q = holonomy_scan_arrays(n, Mt, L, k, "H2" in rules)
+        for c in range(len(S)):
+            A, w, i, ia, ib = sets[k][S[c]], Dl[W[c]], I[c], JA[c], JB[c]
+            p, a, b = A[i], A[ia], A[ib]
+            if "H2" in rules:
+                for qi, ok in enumerate(Q[c]):
+                    if ok:
+                        hub = frozenset([(p, w[i]), (A[qi], w[qi])])
+                        k23.setdefault(hub, []).append(((a, w[ia]), (b, w[ib])))
+            if "H3" in rules:
+                uv = sorted([(a, b)] + [(min(p, x), max(p, x)) for x in A if x not in (p, a, b)])
+                for u, v in uv:
+                    rest = tuple((x, cx) for x, cx in zip(A, w) if x != u and x != v)
+                    key = (A, p, frozenset((a, b)), u, v, rest)
+                    grids.setdefault(key, set()).add((w[A.index(u)], w[A.index(v)]))
+    # ---- from here on verbatim from check_holonomy
+    if stats is not None:
+        stats["H2_edges"] = sum(len(e) for e in k23.values())
+        stats["H3_grid_edges"] = sum(len(c) for c in grids.values())
+        stats["H3_transported"] = 0
+    bad = []
+    for hub, edges in k23.items():
+        adj = {}
+        for s, t in edges:
+            adj.setdefault(s, []).append(t)
+            adj.setdefault(t, []).append(s)
+        side = {}
+        for s0 in adj:
+            if s0 in side:
+                continue
+            side[s0] = 0
+            stack = [s0]
+            while stack:
+                s = stack.pop()
+                for t in adj[s]:
+                    if t not in side:
+                        side[t] = 1 - side[s]
+                        stack.append(t)
+                    elif side[t] == side[s]:
+                        bad.append(("H2 odd cycle", tuple(sorted(hub)), s, t))
+    for (A, p, ks, u, v, rest), corners in grids.items():
+        cl = set(corners)
+        grew = True
+        while grew:
+            grew = False
+            for (x, y) in list(cl):
+                for (x2, y2) in list(cl):
+                    if x2 != x and y2 != y and (x, y2) in cl and (x2, y) not in cl:
+                        cl.add((x2, y))
+                        grew = True
+        if stats is not None:
+            stats["H3_transported"] += len(cl) - len(corners)
+        for (x, y) in cl:
+            col = dict(rest)
+            col[u], col[v] = x, y
+            w = tuple(col[s] for s in A)
+            lv = live_at(A, w, p)
+            oth = [o for o in lv if o not in ks]
+            if not ks <= set(lv):
+                bad.append(("H3 dead cancelling term", A, p, tuple(sorted(ks)), w))
+            elif M(A, w) and not oth:
+                bad.append(("H3 nonzero coefficient with cancelling terms only", A, p, w))
+            elif not M(A, w) and len(oth) == 1:
+                bad.append(("H3 single surviving term", A, p, w, oth[0]))
+    return bad
 
 
 PATTERNS = {   # verbatim from the six-vertex survivor refutation verifier (branch claude/n6-pattern-refutation-20261008)
@@ -865,7 +1319,18 @@ def main() -> None:
     ap.add_argument("--no-symmetry", action="store_true")
     ap.add_argument("--proof", type=Path)
     ap.add_argument("--out", type=Path)
+    ap.add_argument("--fast-plane", action="store_true",
+                    help="numpy-prefiltered PR scan (same violations and instances, same order)")
+    ap.add_argument("--fast-holonomy", action="store_true",
+                    help="do not rebuild holonomy instances already added (same new instances)")
+    ap.add_argument("--fast", action="store_true",
+                    help="--fast-plane and --fast-holonomy")
+    ap.add_argument("--cross-check-fast", action="store_true",
+                    help="every round, also run the reference scans and fail on any difference")
     args = ap.parse_args()
+    if args.fast:
+        args.fast_plane = args.fast_holonomy = True
+    xcheck = {}
     t0 = time.time()
     enc = GSM(args.n, symmetry=not args.no_symmetry, killers=args.killers,
               noncoordinate_killer=args.noncoordinate_killer)
@@ -917,6 +1382,10 @@ def main() -> None:
     if rec["plane_rigidity"]:
         rec["plane_mode"] = args.plane_mode
         rec["plane_scope"] = "top" if args.plane_top_only else "all levels |A| >= 6"
+    if args.fast_plane or args.fast_holonomy:
+        rec["fast_plane"] = args.fast_plane
+        rec["fast_holonomy"] = args.fast_holonomy
+        rec["cross_check_fast"] = args.cross_check_fast
     print(json.dumps(rec), flush=True)
     t1 = time.time()
     added = {}
@@ -933,20 +1402,55 @@ def main() -> None:
             pos = {l for l in model if l > 0}
             gsup = {k for k, v in enc.g.items() if v in pos}
             msup = {k for k, v in enc.m.items() if v in pos}
-            hbad = check_holonomy(args.n, gsup, msup, args.holonomy_top_only, rules) if rec["holonomy"] else []
-            pbad = (check_plane(args.n, gsup, msup, args.plane_top_only, args.plane_mode)
-                    if rec["plane_rigidity"] else [])
+            val = (lambda lit: (lit in pos) if lit > 0 else (-lit not in pos))
+            if rec["holonomy"] and args.fast_holonomy:
+                hbad = check_holonomy_fast(args.n, gsup, msup, args.holonomy_top_only, rules)
+                if args.cross_check_fast:
+                    if check_holonomy(args.n, gsup, msup, args.holonomy_top_only, rules) != hbad:
+                        raise RuntimeError("--fast-holonomy violation list differs from check_holonomy")
+                    xcheck["holonomy_check_rounds"] = xcheck.get("holonomy_check_rounds", 0) + 1
+            elif rec["holonomy"]:
+                hbad = check_holonomy(args.n, gsup, msup, args.holonomy_top_only, rules)
+            else:
+                hbad = []
+            fast_pinst = None
+            if rec["plane_rigidity"] and args.fast_plane:
+                fast_pinst, pbad = enc.plane_scan_fast(model, val, args.plane_top_only, args.plane_mode)
+                if args.cross_check_fast:
+                    ref = check_plane(args.n, gsup, msup, args.plane_top_only, args.plane_mode)
+                    if ref != pbad:
+                        raise RuntimeError("--fast-plane violation list differs from check_plane")
+                    refi = enc.plane_instances(val, args.plane_top_only, args.plane_mode)
+                    if list(refi.items()) != list(fast_pinst.items()):
+                        raise RuntimeError("--fast-plane instances differ from plane_instances")
+                    xcheck["plane_rounds"] = xcheck.get("plane_rounds", 0) + 1
+            elif rec["plane_rigidity"]:
+                pbad = check_plane(args.n, gsup, msup, args.plane_top_only, args.plane_mode)
+            else:
+                pbad = []
             if not hbad and not pbad:
                 break
             if args.max_rounds is not None and rounds >= args.max_rounds:
                 stopped = True
                 break
-            val = (lambda lit: (lit in pos) if lit > 0 else (-lit not in pos))
             inst = {}
             if hbad:
-                inst.update(enc.holonomy_instances(val, args.holonomy_top_only, rules))
+                if args.fast_holonomy:
+                    hinst = enc.holonomy_instances(
+                        val, args.holonomy_top_only, rules, skip=added,
+                        premises=enc.holonomy_premises_fast(model, args.holonomy_top_only, rules))
+                    if args.cross_check_fast:
+                        ref = enc.holonomy_instances(val, args.holonomy_top_only, rules)
+                        refnew = {k: v for k, v in ref.items() if k not in added}
+                        if list(refnew.items()) != list(hinst.items()):
+                            raise RuntimeError("--fast-holonomy new instances differ")
+                        xcheck["holonomy_rounds"] = xcheck.get("holonomy_rounds", 0) + 1
+                    inst.update(hinst)
+                else:
+                    inst.update(enc.holonomy_instances(val, args.holonomy_top_only, rules))
             if pbad:
-                pinst = enc.plane_instances(val, args.plane_top_only, args.plane_mode)
+                pinst = (fast_pinst if fast_pinst is not None
+                         else enc.plane_instances(val, args.plane_top_only, args.plane_mode))
                 if not pinst:
                     raise RuntimeError("plane checker reports a violation but the encoder finds none; bug")
                 inst.update(pinst)
@@ -966,6 +1470,8 @@ def main() -> None:
     if stopped:
         rec["result"] = "INCONCLUSIVE (max rounds reached)"
     rec["solve_seconds"] = round(time.time() - t1, 1)
+    if args.cross_check_fast:
+        rec["cross_check_fast_rounds_passed"] = xcheck
     if lazy:
         rec["cegar_rounds"] = rounds
         rec["lazy_instances_added"] = len(added)
