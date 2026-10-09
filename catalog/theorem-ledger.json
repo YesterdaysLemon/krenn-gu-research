@@ -7616,6 +7616,31 @@
       "legacy_paths": []
     },
     {
+      "name": "S121 (killers + anchors + plane rigidity survivor at n = 8) excluded fibre-exactly by top-level H3",
+      "document": "docs/strategy/s121-exclusion-2026-10-09.md",
+      "document_sha256_16": "50915a5ea7467331",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "exact statement, any field, n = 8, d = 3: no configuration supported within the 121-entry pattern S121 (printed in the anchor note, Section 5) with W02[0,0], W05[1,1], W13[0,2], W24[0,2], W45[1,1], W67[0,1] nonzero has matching tensor GHZ(8,3); hub 0 with mixed words w_ab = (a,0,0,2,b,1,0,1), a in {0,1}, b in {1,2}: at three corners the only Laplace terms are those of partners 2 and 3 (from the zero pattern alone) and at the corner (1,2) exactly one extra term (partner 5) survives; the Shape II H3 identity t2(0,1) t5 = t2(0,1) E12 - E02 E11 + E02 t3(1,1) + t3(0,2) E11 - E01 t3(1,2) has left side the monomial W02[00] W05[11] W13[02]^2 W24[02] W45[11] W67[01]^2, which must vanish at a witness; no division, no genericity",
+        "the identity needs 24 of the 26 relevant outside entries to be zero (greedy, not claimed minimal); 2,285 such squares with monomial conclusion factors in 7 (hub; partners) classes; 5,275 structural top-level H3 violations, equal to the SAT run's round-1 violation count",
+        "mechanism already proved (holonomy note, H3 rule; also the (k,r,s) = (2,1,1) case of the multi-partner transport identity); S121 survived only because the run that produced it (killers, anchors, plane rigidity) omitted --holonomy; fixed-pattern run with top-level H3 UNSAT after two rounds (7.7 s), with the full set UNSAT after two rounds (39.5 s); no DRAT",
+        "battery on S121 (exact census or bounded SAT run): killers silent, anchors silent (all 24 tasks), plane rigidity silent at every level, H2 silent, multi-partner M silent under a support-level covering test (weaker than full M), two-term closure theorems A-C have no occurring premise, theorem D applies (full-word closure inert), three-column bilinear grid checked only through its plane-rigidity encoding",
+        "primary verifier (exact sympy): killer and anchor census, the four-word identity, the greedy hypothesis reduction, and with --census the 2,285 count (about 5 s, plus 30 s for the census); no independent audit; no Lean; no new order excluded; finite statement about one Boolean pattern"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/finite/n08/verify_n8_recursive_support_s121_exclusion.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": "about five seconds for the verifier, 35 seconds with --census",
+      "external_binaries": [],
+      "note": "Third eight-vertex support survivor of the day, third death to an already-proved all-order rule the generating run had not switched on (S128: H3; S156: diagonal anchor; S121: H3). The informative object is a model of the full rule set (killers, anchors, holonomy at all levels, plane rigidity). Global status UNRESOLVED.",
+      "claim_package": "docs/strategy",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Cut-tensor permanental rigidity attempt: Lemma C, small-cut theorems, Version R countermodel",
       "document": "docs/strategy/cut-tensor-rigidity-attempt-2026-10-09.md",
       "document_sha256_16": "72b0649263fac4f7",
