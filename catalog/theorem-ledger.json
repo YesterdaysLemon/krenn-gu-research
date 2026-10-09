@@ -7670,7 +7670,7 @@
     {
       "name": "Compressed-Hessian clause family CH: sound, encodable, and not hereditary at the support level; value-level heredity via two one-colour ancillas (Lemma 5)",
       "document": "docs/strategy/compressed-hessian-family-2026-10-09.md",
-      "document_sha256_16": "988f4646ddf5e196",
+      "document_sha256_16": "199b2dcc7a8cb3fb",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "Lemma (exact, every configuration, every level): on any block X x Y of the deleted pair {u,v} whose words (x,y,gamma) vanish, H_gamma[X,Y] = -T_B(gamma) W_uv[X,Y], hence det H_gamma[X,Y] = (-T_B(gamma))^k det W_uv[X,Y]; at the top set of a witness, for nonconstant gamma H_gamma lies in span(W_uv) with rank 0 or rank W_uv, and T_B(gamma) = 0 forces H_gamma = 0 (converse when W_uv != 0)",
@@ -7678,13 +7678,14 @@
         "encoding: optional flags --compressed-hessian, --ch-all-levels, --ch-orders, --ch-factorizations (lazy CEGAR; check_ch independent checker; each lazy clause asserted falsified by the producing model); without the flag the clause-list SHA-256 matches HEAD in 10 comparisons at n = 4, 6 including --g-minus; new unit test class",
         "SAT runs (bounded, uncertified UNSAT): order 6 full families + CH UNSAT in 245 s (F3) / 323 s (all three), same 77-round trajectory, CH never fired; CH with only (L),(F'),(G) SAT (full-support pattern); CH with killers (also anchors, also all levels) SAT in one round; 6-set-inside-eight relaxation + CH SAT in 140 s, 38 rounds, zero CH violations (deleted pair's block is a column-1 killer, so clause (b) has no instance); with W_uv forced to a certified rank-3 minor clause (b) fires 196 (F3) / 349 (all) times and the relaxation is still SAT within 4-11 rounds, every eligible nonconstant word of B keeping at least two supported products per factorization; 4-set-inside-six + CH SAT with no CH instance",
         "Lemma 5 (exact, with an exact numerical replay): for covectors l, m with l^T W_uv m = 0, contracting a witness at u and v realizes sum_c lambda_c l_c m_c |c^n> as the matching sum of B plus two one-colour vertices with no edge between them; over all such (l, m) this is equivalent to H_gamma in span(W_uv); weights l_c m_c != 0 for every colour exist iff W_uv is not a single nonzero entry",
-        "conclusion: Q2 with Q = P + CH is circular (induction note, Section 5.1); the not-m part of CH is inherited but excludes nothing; the (G)-seeded part generates no needed zero on any six-set; candidate next question C_{6,1} (ancilla-assisted GHZ(6,3) with two mutually non-adjacent one-colour vertices); which support families remain valid with one-colour vertices and the literature on ancilla-assisted GHZ are unchecked; no independent audit; no Lean"
+        "conclusion: Q2 with Q = P + CH is circular (induction note, Section 5.1); the not-m part of CH is inherited but excludes nothing; the (G)-seeded part generates no needed zero on any six-set; candidate next question C_{6,1} (ancilla-assisted GHZ(6,3) with two mutually non-adjacent one-colour vertices); which support families remain valid with one-colour vertices and the literature on ancilla-assisted GHZ are unchecked; no independent audit; no Lean",
+        "Lemma 5 independently audited (docs/audits/LEMMA5_CONTRACTION_AUDIT_2026-10-09.md, test tests/test_lemma5_two_ancilla_contraction_audit.py): PASS on the contraction identity, orientation and one-colour semantics; PASS with correction on the full-weight criterion (W_uv = 0 case silently included; infinite field needed); PASS on normalization inside C_{6,1}; exact replay at n = 6, 8 by a separate implementation"
       ],
       "dependencies": [],
       "primary_verifier": "claims/finite/n08/explore_general_block_recursive_support_model.py",
       "verifier_provenance": "companion_point_check_script",
-      "independent_audit": null,
-      "audit_provenance": "none_exists",
+      "independent_audit": "docs/audits/LEMMA5_CONTRACTION_AUDIT_2026-10-09.md",
+      "audit_provenance": "independent_exact_identity_audit",
       "expected_runtime": "two to six minutes per listed run",
       "external_binaries": [],
       "note": "Closes the compressed-Hessian lead at the support level with an exact reason (the rank condition is invisible to zero patterns) and converts it into a value-level reduction candidate: an order-8 witness contracts to an ancilla-assisted GHZ(6,3) configuration unless every pair carries a single-entry block. Not a live edge until C_{6,1} and the residual are settled. Global status UNRESOLVED.",
@@ -7696,7 +7697,7 @@
     {
       "name": "Ancilla-assisted GHZ(6,3) without an ancilla edge (C_{6,1}): literature, exact equations, support families, residual = N8R1",
       "document": "docs/strategy/ancilla-c61-2026-10-09.md",
-      "document_sha256_16": "454a3a2cfaee3e8c",
+      "document_sha256_16": "3818bfab5742048d",
       "status": "candidate",
       "assumptions_and_excluded_divisors": [
         "question C_{6,1}: six three-colour vertices with 3x3 blocks plus two one-colour vertices u', v' with no edge between them (edges to coloured vertices carry 1x3 rows), arbitrary complex weights; is the matching tensor ever GHZ(6,3)? Status: OPEN, not established either way",
@@ -7706,13 +7707,14 @@
         "support level: (L), (F'), H2, H3 and plane rigidity transfer via the embedding as an 8-vertex configuration with tensor GHZ6 x e0 x e0; ancilla killer proved (needs kappa = 0); column killers at a coloured vertex hold only without ancilla edges; anchors not re-derived; adapted model with killers + H2/H3 + plane rigidity SAT (155 entries, 4 rounds, independent check PASS)",
         "numerics (not evidence): 0/24 Levenberg-Marquardt restarts converge on C_{6,1} (one small-cost point is a border/gauge artefact); controls converge (C'_{6,1} 5/13, four-ancilla 4/6, GHZ(4,3) 3/3, GHZ(6,3) without ancilla 0/6); in every C' solution Phi(c^6) = 0 for some colour",
         "named obstruction Phi0 (open, stronger than C_{6,1} empty): in any configuration of six three-colour and two one-colour vertices realizing GHZ(6,3) with the ancilla edge allowed, Phi(c^6) = 0 for some colour; not done: modular Groebner/saturation/Jacobian attack on the full system, anchor re-derivation, independent audit of Lemma 5; no Lean",
-        "informal dependency (not a typed ledger relation): the residual class and its exclusion are N8R1 in claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md"
+        "informal dependency (not a typed ledger relation): the residual class and its exclusion are N8R1 in claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md",
+        "audit of the reduction (docs/audits/LEMMA5_CONTRACTION_AUDIT_2026-10-09.md): Lemma 5 PASS; residual = N8R1 hypothesis PASS with citation correction (N8R1 is owned by claims/finite/n08/EIGHT_VERTEX_MATRIX_UNIT_EXCLUSION_THEOREM.md; the maximal-torus theorem supplies r = 1 iff complete matrix units); the dichotomy is the existing M1 split at n = 8, so C_{6,1} empty closes the n = 8 child of M2; wording fix: every FULL-SUPPORT (l, m) on the quadric gives a C_{6,1} element; by-product: every ternary GHZ(4,3) block graph has all six blocks single nonzero entries"
       ],
       "dependencies": [],
       "primary_verifier": null,
       "verifier_provenance": "none_exists",
-      "independent_audit": null,
-      "audit_provenance": "none_exists",
+      "independent_audit": "docs/audits/LEMMA5_CONTRACTION_AUDIT_2026-10-09.md",
+      "audit_provenance": "independent_exact_identity_audit",
       "expected_runtime": "minutes per listed run; numerics not evidence",
       "external_binaries": [],
       "note": "Candidate reduction target C61 (frontier, not live): C_{6,1} empty would exclude order 8 outright given Lemma 5 and N8R1. The ancilla-edge variant is refuted as a route by an exact PyTheus construction. Global status UNRESOLVED.",
