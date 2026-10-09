@@ -303,7 +303,7 @@ checked `s VERIFIED` by `drat-trim` built from the repository-pinned commit
 unsatisfiable; that every clause of the final formula holds for the zero
 pattern of every complex configuration is the soundness statement of
 Section 3, independently proved in the same-day
-[review](../audits/docs/audits/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_REVIEW_2026-10-09.md).  The review also reproduced
+[review](../audits/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_REVIEW_2026-10-09.md).  The review also reproduced
 the UNSAT with every lex-leader clause removed (chain normalization only,
 1,065 s); fully symmetry-free runs were inconclusive at 3,600 s.
 
@@ -493,7 +493,7 @@ every fact quoted from them.
 
 ## 8. Review notes (2026-10-09)
 
-The same-day [review](../audits/docs/audits/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_REVIEW_2026-10-09.md) passed the
+The same-day [review](../audits/PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_REVIEW_2026-10-09.md) passed the
 clause family's soundness in both modes (an independent chart-wise Groebner
 proof of the rigidity step; 3.68 million exact random instances at `n = 6`
 and 3.48 million at `n = 8` with zero violations), proved that the `value`

@@ -7511,7 +7511,7 @@
     {
       "name": "Support-level six-vertex exclusion from killers, holonomy and plane rigidity (SL6)",
       "document": "docs/strategy/hyperdeterminant-crossing-2026-10-09.md",
-      "document_sha256_16": "5a28f159576adb03",
+      "document_sha256_16": "d4137b5dbabb4290",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "finite computer-assisted statement at n=6, d=3, general 3x3 blocks: no zero pattern of a six-vertex configuration satisfies the recursive support conditions (Laplace accessibility, singleton noncancellation, GHZ zero pattern) together with the column-killer, holonomy (signed K_{2,3} and rank-one grid) and plane-rigidity clause families",
