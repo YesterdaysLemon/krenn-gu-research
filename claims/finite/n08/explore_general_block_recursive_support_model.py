@@ -56,6 +56,24 @@ after the independent checker verifies (L),(F'),(G) and the holonomy closure.
        pattern of SIX_VERTEX_SUPPORT_SURVIVOR_PATTERNS_EXACT_REFUTATION.md
        (validation; use with --no-symmetry).
 
+Optional valid strengthening (plane rigidity of the cut permanent; statement
+and soundness proof in docs/strategy/hyperdeterminant-crossing-2026-10-09.md,
+Section 3, resting on PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_THEOREM.md):
+  --plane-rigidity : (PR) at every level |A| >= 6.  Inner triple T in A,
+       R = A - T coloured c, columns C in R, two colours per inner vertex.
+       If m[R-C,c], every other summand of the T-expansion of the 8 cube
+       words has a false g/m factor, and each inner vertex has a provably
+       single-monomial 2x2 minor l_t[a_t] (rows at its two colours, columns
+       C) with the a_t not all equal, then some m[A, cube word] is true.
+  --plane-mode value|deg3 : 'value' uses plane rigidity (Theorem 3 of the
+       bilinear-grid document); 'deg3' only patterns with an explicit
+       degree-3 certificate (two-equal minors, or a permutation pattern with
+       an identically zero same-parity partner).
+  --plane-top-only : only A = V.   --pattern-file : fix g from a fixture.
+  --max-rounds K : stop the lazy loop after K rounds (result INCONCLUSIVE).
+Lazy clauses of every family are added CEGAR-style; a SAT model is accepted
+only after check_model, check_holonomy and check_plane pass.
+
 A SAT answer is re-checked by an independent brute-force checker.  An UNSAT
 answer means no witness exists at this order (the model is implied by every
 witness); this script records no proof trace, use --proof for a DIMACS file.
@@ -327,9 +345,268 @@ class GSM:
                             [-can[(x, y)], -can[(x, y2)], -can[(x2, y)], can[(x2, y2)]]]
         return out
 
+    # ------------------------------------------------------- plane rigidity
+    def plane_instances(self, val, top_only=False, mode="value"):
+        """Violated instances of the plane-rigidity rule (PR) under val.
+
+        Statement and soundness proof: docs/strategy/hyperdeterminant-crossing-
+        2026-10-09.md, Section 3.  Fix an even A (|A| >= 6), an inner triple
+        T = (t0,t1,t2) in A, R = A - T, a colouring c of R, three columns
+        C in R, and two colours (alpha_t, alpha'_t) at each inner vertex.
+        Premises (all model literals):
+          * h: m[R-C, c] (T_{R-C}(c) != 0; true when R = C);
+          * every other summand of the T-expansion of each of the 8 cube
+            words has a zero factor (a false g or m literal);
+          * for each t a column index a_t such that the 2x2 minor l_t[a_t] of
+            the rows r_{t,alpha_t}|C, r_{t,alpha'_t}|C is a single nonzero
+            monomial (exactly one of its two products supported), with the
+            a_t not all equal (mode 'value'), or forming a degree-3
+            certificate pattern (mode 'deg3').
+        Conclusion: some m[A, w] of the 8 cube words is true.
+        Returns {key: [clause]} for the instances violated by val."""
+        out = {}
+        sets = [self.V] if top_only else [A for A in self.sets if len(A) >= 6]
+        for A in sets:
+            idx = {v: k for k, v in enumerate(A)}
+            for T in itertools.combinations(A, 3):
+                R = tuple(x for x in A if x not in T)
+                for c in itertools.product(range(C), repeat=len(R)):
+                    col = dict(zip(R, c))
+                    zero = {}
+                    for al in itertools.product(range(C), repeat=3):
+                        w = [0] * len(A)
+                        for x in R:
+                            w[idx[x]] = col[x]
+                        for t, a in zip(T, al):
+                            w[idx[t]] = a
+                        w = tuple(w)
+                        zero[al] = (w, self.mvar(A, w))
+                    for pairs in itertools.product(PAIRS, repeat=3):
+                        cube = list(itertools.product(*pairs))
+                        if any(val(zero[al][1]) for al in cube):
+                            continue
+                        for Cc in itertools.combinations(R, 3):
+                            cl = self._plane_clause(A, T, R, col, Cc, pairs, cube, zero, val, mode)
+                            if cl is not None:
+                                out[("PR", len(A), tuple(sorted(cl)))] = [cl]
+        return out
+
+    def _plane_clause(self, A, T, R, col, Cc, pairs, cube, zero, val, mode):
+        RC = tuple(x for x in R if x not in Cc)
+        h = self.mvar(RC, tuple(col[x] for x in RC))
+        if not val(h):
+            return None
+        neg = []                       # literals, each false in the model
+        # minors: provable single-monomial minors per inner vertex
+        known = []
+        for t, (al, al2) in zip(T, pairs):
+            y = [self.gvar(t, u, al, col[u]) for u in Cc]
+            y2 = [self.gvar(t, u, al2, col[u]) for u in Cc]
+            kt = {}
+            for a in range(3):
+                b, d = (a + 1) % 3, (a + 2) % 3
+                for (p, q), (r, s) in (((y[b], y2[d]), (y[d], y2[b])), ((y[d], y2[b]), (y[b], y2[d]))):
+                    if val(p) and val(q) and not (val(r) and val(s)):
+                        kt[a] = [-p, -q, r if not val(r) else s]
+                        break
+            known.append(kt)
+        choice = _plane_choice(known, mode, self._zero_minor_lits(T, Cc, col, pairs, val) if mode == "deg3" else None)
+        if choice is None:
+            return None
+        cl, extra = choice
+        neg.extend(cl)
+        neg.extend(extra)
+        # every other summand of every cube word has a zero factor
+        Cset = set(Cc)
+        for al in cube:
+            for img in itertools.permutations(R, 3):
+                if set(img) == Cset:
+                    continue
+                rest = tuple(x for x in R if x not in img)
+                mr = self.mvar(rest, tuple(col[x] for x in rest))
+                if not val(mr):
+                    neg.append(mr)
+                    continue
+                lits = [self.gvar(t, u, a, col[u]) for t, u, a in zip(T, img, al)]
+                z = next((l for l in lits if not val(l)), None)
+                if z is None:
+                    return None
+                neg.append(z)
+            for i, j in ((0, 1), (0, 2), (1, 2)):
+                k = 3 - i - j
+                gin = self.gvar(T[i], T[j], al[i], al[j])
+                if not val(gin):
+                    neg.append(gin)
+                    continue
+                for u in R:
+                    rest = tuple(x for x in R if x != u)
+                    mr = self.mvar(rest, tuple(col[x] for x in rest))
+                    gu = self.gvar(T[k], u, al[k], col[u])
+                    if not val(gu):
+                        neg.append(gu)
+                    elif not val(mr):
+                        neg.append(mr)
+                    else:
+                        return None
+        clause = sorted({-h} | set(neg) | {zero[al][1] for al in cube})
+        if self.true in clause:
+            return None
+        return clause
+
+    def _zero_minor_lits(self, T, Cc, col, pairs, val):
+        """{(t_index, a): literals} for minors l_t[a] identically zero on the
+        support (neither product supported); the literals are false in val."""
+        out = {}
+        for ti, (t, (al, al2)) in enumerate(zip(T, pairs)):
+            y = [self.gvar(t, u, al, col[u]) for u in Cc]
+            y2 = [self.gvar(t, u, al2, col[u]) for u in Cc]
+            for a in range(3):
+                b, d = (a + 1) % 3, (a + 2) % 3
+                l1 = next((l for l in (y[b], y2[d]) if not val(l)), None)
+                l2 = next((l for l in (y[d], y2[b]) if not val(l)), None)
+                if l1 is not None and l2 is not None:
+                    out[(ti, a)] = [l1, l2]
+        return out
+
     def fix_pattern(self, sup):
         """Unit assumptions fixing every g-variable to a given support."""
         return [v if k in sup else -v for k, v in self.g.items()]
+
+
+PAIRS = ((0, 1), (0, 2), (1, 2))
+PERM_SIGN = {(0, 1, 2): 1, (1, 2, 0): 1, (2, 0, 1): 1, (0, 2, 1): -1, (2, 1, 0): -1, (1, 0, 2): -1}
+
+
+def _plane_choice(known, mode, zero_minors=None):
+    """Pick one provably-nonzero minor coordinate a_t per inner vertex.
+
+    known[t] maps a column index a to the clause literals certifying that the
+    minor l_t[a] is a single nonzero monomial.  mode 'value': the a_t are not
+    all equal (Theorem 3 / Corollary 3 of the hyperdeterminant theorem).
+    mode 'deg3': a degree-3 certificate exists: exactly two a_t equal
+    (Proposition 4), or the a_t are a permutation s and some other
+    permutation s' of the same parity has an identically zero minor
+    (binomial P_s - P_s' in J_3).  Returns (literals, extra) or None."""
+    best = None
+    for a in itertools.product(*[sorted(k) for k in known]):
+        if len(set(a)) == 1:
+            continue
+        lits = [x for t in range(3) for x in known[t][a[t]]]
+        if mode == "value":
+            return lits, []
+        if len(set(a)) == 2:
+            return lits, []
+        for s2, sg in PERM_SIGN.items():
+            if s2 == a or sg != PERM_SIGN[a]:
+                continue
+            for t in range(3):
+                if (t, s2[t]) in zero_minors:
+                    best = best or (lits, zero_minors[(t, s2[t])])
+    return best
+
+
+def check_plane(n, gsup, msup, top_only=False, mode="value", stats=None, all_cubes=False):
+    """Re-check of the plane-rigidity rule (PR) on a decoded model, from the
+    supports alone (no SAT variables).  Returns the violated instances.
+    all_cubes=True also visits cubes with a nonzero word (for soundness
+    smoke tests on exact zero patterns; stats['PR_fired'] counts instances
+    whose premises hold)."""
+    V = tuple(range(n))
+
+    def G(v, u, a, b):
+        return ((v, u, a, b) in gsup) if v < u else ((u, v, b, a) in gsup)
+
+    def M(B, col):
+        B = tuple(sorted(B))
+        if len(B) == 0:
+            return True
+        if len(B) == 2:
+            return G(B[0], B[1], col[B[0]], col[B[1]])
+        return (B, tuple(col[x] for x in B)) in msup
+
+    def minor_status(t, al, al2, cols, col):
+        """For each column index a: 'one' (single nonzero monomial),
+        'zero' (identically zero on the support) or 'two'."""
+        st = []
+        for a in range(3):
+            u1, u2 = cols[(a + 1) % 3], cols[(a + 2) % 3]
+            p1 = G(t, u1, al, col[u1]) and G(t, u2, al2, col[u2])
+            p2 = G(t, u2, al, col[u2]) and G(t, u1, al2, col[u1])
+            st.append({0: "zero", 1: "one", 2: "two"}[p1 + p2])
+        return st
+
+    bad = []
+    count = fired = 0
+    reasons = {}
+    sets = [V] if top_only else [A for k in range(6, n + 1, 2) for A in itertools.combinations(V, k)]
+    for A in sets:
+        for T in itertools.combinations(A, 3):
+            R = [x for x in A if x not in T]
+            for c in itertools.product(range(C), repeat=len(R)):
+                base = dict(zip(R, c))
+                for pairs in itertools.product(PAIRS, repeat=3):
+                    words = []
+                    for al in itertools.product(*pairs):
+                        col = dict(base)
+                        col.update(zip(T, al))
+                        words.append((al, col))
+                    cube_live = any(M(A, col) for _, col in words)
+                    if cube_live and not all_cubes:
+                        continue
+                    for Cc in itertools.combinations(R, 3):
+                        rest = [x for x in R if x not in Cc]
+                        if not M(rest, base):
+                            if not cube_live:
+                                reasons["h_dead"] = reasons.get("h_dead", 0) + 1
+                            continue
+                        ok = True
+                        for al, col in words:
+                            # summands with t -> R injective, image != C
+                            for img in itertools.permutations(R, 3):
+                                if set(img) == set(Cc):
+                                    continue
+                                if (all(G(t, u, col[t], col[u]) for t, u in zip(T, img))
+                                        and M([x for x in R if x not in img], base)):
+                                    ok = False
+                                    break
+                            if not ok:
+                                break
+                            # summands with one inner edge
+                            for i, j in ((0, 1), (0, 2), (1, 2)):
+                                k = 3 - i - j
+                                if not G(T[i], T[j], col[T[i]], col[T[j]]):
+                                    continue
+                                if any(G(T[k], u, col[T[k]], col[u]) and M([x for x in R if x != u], base)
+                                       for u in R):
+                                    ok = False
+                                    break
+                            if not ok:
+                                break
+                        if not ok:
+                            if not cube_live:
+                                reasons["other_summand_live"] = reasons.get("other_summand_live", 0) + 1
+                            continue
+                        status = [minor_status(t, al, al2, Cc, base) for t, (al, al2) in zip(T, pairs)]
+                        known = [{a: [] for a in range(3) if status[ti][a] == "one"} for ti in range(3)]
+                        zm = {(ti, a): [] for ti in range(3) for a in range(3) if status[ti][a] == "zero"}
+                        count += not cube_live
+                        if _plane_choice(known, mode, zm) is not None:
+                            fired += 1
+                            if not cube_live:
+                                bad.append(("PR", A, T, tuple(c), pairs, Cc))
+                        elif not cube_live:
+                            if not all(known):
+                                why = "some_vertex_without_single_monomial_minor"
+                            elif len(set().union(*known)) == 1:
+                                why = "single_minors_on_one_common_axis"
+                            else:
+                                why = "no_degree3_pattern"
+                            reasons[why] = reasons.get(why, 0) + 1
+    if stats is not None:
+        stats["PR_premise_instances"] = count
+        stats["PR_fired"] = fired
+        stats["PR_zero_cube_reasons"] = reasons
+    return bad
 
 
 def grid_closure(edges):
@@ -536,6 +813,13 @@ def main() -> None:
     ap.add_argument("--holonomy-rules", default="H2,H3",
                     help="comma list from H2,H3 (default both)")
     ap.add_argument("--pattern", choices=sorted(PATTERNS))
+    ap.add_argument("--pattern-file", type=Path,
+                    help="physical-support-v1 JSON fixture whose entries fix every g")
+    ap.add_argument("--plane-rigidity", action="store_true",
+                    help="add the plane-rigidity clause family (PR) lazily")
+    ap.add_argument("--plane-top-only", action="store_true")
+    ap.add_argument("--plane-mode", choices=("value", "deg3"), default="value")
+    ap.add_argument("--max-rounds", type=int)
     ap.add_argument("--max-entries", type=int)
     ap.add_argument("--no-symmetry", action="store_true")
     ap.add_argument("--proof", type=Path)
@@ -558,6 +842,14 @@ def main() -> None:
         assume = enc.fix_pattern(sup)
         rec["pattern"] = args.pattern
         rec["pattern_entries"] = len(sup)
+    if args.pattern_file:
+        data = json.loads(args.pattern_file.read_text(encoding="utf-8"))
+        assert data["n"] == args.n, "pattern file order differs from n"
+        sup = {tuple(e) for e in data["entries"]}
+        assert all(i < j for i, j, _, _ in sup)
+        assume = enc.fix_pattern(sup)
+        rec["pattern_file"] = args.pattern_file.as_posix()
+        rec["pattern_entries"] = len(sup)
     if args.max_entries is not None:
         card = CardEnc.atmost(list(enc.g.values()), bound=args.max_entries,
                               top_id=enc.pool.top, encoding=EncType.seqcounter)
@@ -570,25 +862,43 @@ def main() -> None:
     if rec["holonomy"]:
         rec["holonomy_rules"] = list(rules)
     rec["holonomy_scope"] = ("top" if args.holonomy_top_only else "all levels") if rec["holonomy"] else None
+    rec["plane_rigidity"] = args.plane_rigidity or args.plane_top_only
+    if rec["plane_rigidity"]:
+        rec["plane_mode"] = args.plane_mode
+        rec["plane_scope"] = "top" if args.plane_top_only else "all levels |A| >= 6"
     print(json.dumps(rec), flush=True)
     t1 = time.time()
     added = {}
     rounds = 0
+    lazy = rec["holonomy"] or rec["plane_rigidity"]
+    stopped = False
     with Cadical153(bootstrap_with=enc.cnf.clauses) as solver:
         while True:
             sat = solver.solve(assumptions=assume)
             model = solver.get_model() if sat else None
             rounds += 1
-            if not sat or not rec["holonomy"]:
+            if not sat or not lazy:
                 break
             pos = {l for l in model if l > 0}
             gsup = {k for k, v in enc.g.items() if v in pos}
             msup = {k for k, v in enc.m.items() if v in pos}
-            hbad = check_holonomy(args.n, gsup, msup, args.holonomy_top_only, rules)
-            if not hbad:
+            hbad = check_holonomy(args.n, gsup, msup, args.holonomy_top_only, rules) if rec["holonomy"] else []
+            pbad = (check_plane(args.n, gsup, msup, args.plane_top_only, args.plane_mode)
+                    if rec["plane_rigidity"] else [])
+            if not hbad and not pbad:
+                break
+            if args.max_rounds is not None and rounds >= args.max_rounds:
+                stopped = True
                 break
             val = (lambda lit: (lit in pos) if lit > 0 else (-lit not in pos))
-            inst = enc.holonomy_instances(val, args.holonomy_top_only, rules)
+            inst = {}
+            if hbad:
+                inst.update(enc.holonomy_instances(val, args.holonomy_top_only, rules))
+            if pbad:
+                pinst = enc.plane_instances(val, args.plane_top_only, args.plane_mode)
+                if not pinst:
+                    raise RuntimeError("plane checker reports a violation but the encoder finds none; bug")
+                inst.update(pinst)
             new = {k: cl for k, cl in inst.items() if k not in added}
             if not new:
                 raise RuntimeError("checker reports a violation but no new instance; encoder bug")
@@ -596,21 +906,32 @@ def main() -> None:
                 added[k] = cl
                 for c in cl:
                     solver.add_clause(c)
-            print(json.dumps({"round": rounds, "violations": len(hbad),
-                              "first_violation": str(hbad[0])[:160],
+            print(json.dumps({"round": rounds, "holonomy_violations": len(hbad),
+                              "plane_violations": len(pbad),
+                              "first_violation": str((hbad or pbad)[0])[:160],
                               "new_instances": len(new), "total_instances": len(added),
                               "seconds": round(time.time() - t1, 1)}), flush=True)
     rec["result"] = "SAT" if sat else "UNSAT"
+    if stopped:
+        rec["result"] = "INCONCLUSIVE (max rounds reached)"
     rec["solve_seconds"] = round(time.time() - t1, 1)
-    if rec["holonomy"]:
+    if lazy:
         rec["cegar_rounds"] = rounds
-        rec["holonomy_instances_added"] = len(added)
-        rec["holonomy_clauses_added"] = sum(len(c) for c in added.values())
+        rec["lazy_instances_added"] = len(added)
+        rec["lazy_clauses_added"] = sum(len(c) for c in added.values())
         kinds = {}
         for k in added:
             kinds[k[0]] = kinds.get(k[0], 0) + 1
-        rec["holonomy_instances_by_rule"] = kinds
-    if args.proof and not sat:
+        rec["lazy_instances_by_rule"] = kinds
+        lev = {}
+        for k in added:
+            if k[0] == "PR":
+                lev[str(k[1])] = lev.get(str(k[1]), 0) + 1
+        if lev:
+            rec["plane_instances_by_level"] = lev
+    if stopped:
+        sat = False
+    if args.proof and not sat and not stopped:
         p = args.proof.with_suffix(".final.cnf")
         final = CNF(from_clauses=enc.cnf.clauses + [c for cl in added.values() for c in cl]
                     + [[l] for l in assume])
@@ -624,6 +945,16 @@ def main() -> None:
         bad = check_model(args.n, gsup, msup)
         if rec["holonomy"]:
             bad += check_holonomy(args.n, gsup, msup, args.holonomy_top_only, rules)
+        if rec["plane_rigidity"]:
+            pst = {}
+            bad += check_plane(args.n, gsup, msup, args.plane_top_only, args.plane_mode, stats=pst)
+            rec["plane_premise_instances_in_model"] = pst["PR_premise_instances"]
+            rec["plane_zero_cube_failure_reasons"] = pst["PR_zero_cube_reasons"]
+            if args.n >= 8:
+                top = {}
+                check_plane(args.n, gsup, msup, True, args.plane_mode, stats=top)
+                rec["plane_top_level_premise_instances"] = top["PR_premise_instances"]
+                rec["plane_top_level_failure_reasons"] = top["PR_zero_cube_reasons"]
         rec["independent_check"] = "PASS" if not bad else "FAIL"
         rec["independent_check_violations"] = [str(b) for b in bad[:10]]
         blocks = {}
