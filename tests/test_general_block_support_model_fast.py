@@ -121,5 +121,68 @@ class FastHolonomySkipTests(unittest.TestCase):
         self.assertGreater(len(added_ref), 0)
 
 
+def exact_support(n, seed, dens, vals):
+    """Exact zero pattern (gsup, msup) of a random sparse integer configuration
+    on n vertices: every T_A(w), |A| >= 4 even, by Laplace recursion."""
+    import functools
+    import itertools
+    rng = random.Random(seed)
+    W = {}
+    for i, j in itertools.combinations(range(n), 2):
+        for a in range(3):
+            for b in range(3):
+                W[(i, j, a, b)] = rng.choice(vals) if rng.random() < dens else 0
+
+    def w(i, j, a, b):
+        return W[(i, j, a, b)] if i < j else W[(j, i, b, a)]
+
+    @functools.lru_cache(None)
+    def T(A, word):
+        if not A:
+            return 1
+        return sum(w(A[0], A[k], word[0], word[k]) * T(A[1:k] + A[k + 1:], word[1:k] + word[k + 1:])
+                   for k in range(1, len(A)))
+    gsup = {k for k, x in W.items() if x}
+    msup = {(A, wd) for k in range(4, n + 1, 2) for A in itertools.combinations(range(n), k)
+            for wd in itertools.product(range(3), repeat=k) if T(A, wd)}
+    return gsup, msup
+
+
+class CompressedHessianTests(unittest.TestCase):
+    """CH (--compressed-hessian) carries 'not m' premises, so it holds for the
+    exact zero pattern of every configuration at every level; and every lazy
+    clause must be falsified by the assignment that produced it."""
+
+    def test_exact_patterns_satisfy_ch_at_every_level(self) -> None:
+        frames = GSM_MODULE.ch_frames(6, all_levels=True)
+        certified = 0
+        for seed in range(12):
+            gsup, msup = exact_support(6, seed, (0.25, 0.4, 0.55)[seed % 3],
+                                       (-1, 1) if seed % 2 else (-2, -1, 1, 2))
+            st = {}
+            self.assertEqual(GSM_MODULE.check_ch(6, gsup, msup, frames, stats=st,
+                                                 factorizations=FACS), [])
+            certified += sum(st["CH_certified_premises"].values())
+        self.assertGreater(certified, 0, "no premise instance had a certified side")
+
+    def test_clauses_are_falsified_by_their_assignment(self) -> None:
+        for enc, N in ((GSM_MODULE.GSM(6, symmetry=False), 6),
+                       (GSM_MODULE.PairDecoratedGSM(4), 6)):
+            kinds = set()
+            for seed in range(6):
+                model = random_model(enc, seed, p_g=0.2 + 0.1 * (seed % 3), p_m=0.15)
+                gsup, msup, val = decode(enc, model)
+                for facs in (("F3",), ("F1",), ("F2",)):
+                    bad = GSM_MODULE.check_ch(N, gsup, msup, enc.ch_frames(all_levels=True),
+                                              factorizations=facs)
+                    inst = enc.ch_instances(bad, val)      # asserts falsification
+                    self.assertEqual(len(inst) > 0, len(bad) > 0)
+                    kinds |= {(b[0], b[7]) for b in bad}
+            self.assertGreaterEqual(len(kinds), 6, f"few CH kinds exercised: {sorted(kinds)}")
+
+
+FACS = ("F3", "F1", "F2")
+
+
 if __name__ == "__main__":
     unittest.main()
