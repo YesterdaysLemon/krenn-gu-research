@@ -81,6 +81,25 @@ Section 3, resting on PERMANENT_PLANE_RESTRICTION_HYPERDETERMINANT_THEOREM.md):
 Lazy clauses of every family are added CEGAR-style; a SAT model is accepted
 only after check_model, check_holonomy and check_plane pass.
 
+Optional valid strengthening (compressed Hessian; statement and soundness
+proof in docs/strategy/compressed-hessian-family-2026-10-09.md):
+  --compressed-hessian : (CH) lazily.  For a pair {u,v} of A, B = A - {u,v},
+       a word gamma on B and k x k row/column sets X, Y (k = 2, 3): if the
+       block words (x, y, gamma), (x,y) in X x Y, all have m[A,.] false, then
+       det H[X,Y] = (-T_B(gamma))^k det W_uv[X,Y], H = A_gamma Theta_gamma
+       B_gamma^T.  Certified only through single-transversal minors: a
+       Cauchy-Binet expansion of det H[X,Y] with exactly one supported
+       product forces m[B,gamma] (a1) and a supported transversal of
+       W_uv[X,Y] (a2); a single-transversal W_uv[X,Y] with m[B,gamma] true
+       forbids a support-zero expansion (b).  Default scope: A = V with every
+       pair (with --g-minus: the deleted pair only).
+  --ch-all-levels : also every even A below the top.  --ch-orders 2,3.
+  --ch-factorizations F3[,F1,F2] : the Cauchy-Binet certificate is taken
+       along H = A Theta B^T (F3, two-step, default), H = A K (F1, K[z,y] =
+       T_{A-{u,z}}(y,gamma|), one-step at u) or H = K' B^T (F2, one-step at v).
+  check_ch is the independent support-level re-check; each lazy clause is
+  asserted to be falsified by the model that produced it.
+
 Performance flags (engineering only; they change no rule, no instance and no
 clause order, so a run is the same run, only faster):
   --fast-plane : the PR violation search uses a numpy prefilter over every
@@ -755,6 +774,134 @@ class GSM:
         """Unit assumptions fixing every g-variable to a given support."""
         return [v if k in sup else -v for k, v in self.g.items()]
 
+    # ------------------------------------------- compressed Hessian (CH)
+    def ch_frames(self, all_levels=False):
+        """(A, u, v) frames of the CH family: the top set V with every pair,
+        or (all_levels) every even set A of the model with every pair."""
+        return ch_frames(self.n, gminus=False, all_levels=all_levels)
+
+    def ch_instances(self, bad, val):
+        """Clauses for the CH violations reported by check_ch (statement and
+        soundness: docs/strategy/compressed-hessian-family-2026-10-09.md).
+        Each clause forbids the conjunction of model literals that certified
+        the violation, so it is an instance of a valid rule and is falsified
+        by the current model (asserted).  Returns {key: [clause]}."""
+        out = {}
+        for kind, A, u, v, gam, X, Y, fac in bad:
+            cl = self._ch_clause(kind, A, u, v, gam, X, Y, fac, val)
+            assert not any(val(l) for l in cl), ("CH clause not falsified", kind, A, u, v, gam, X, Y, fac)
+            out[("CH", kind, fac, tuple(cl))] = [cl]
+        return out
+
+    def _ch_clause(self, kind, A, u, v, gam, X, Y, fac, val):
+        """fac: 'F3' (H = A Theta B^T), 'F1' (H = A K, K[z,y] =
+        T_{A-{u,z}}(y, gamma|)) or 'F2' (H = K' B^T, K'[x,z] =
+        T_{A-{v,z}}(x, gamma|))."""
+        Bs = tuple(x for x in A if x not in (u, v))
+        col = dict(zip(Bs, gam))
+        neg = set()                      # literals, each false in the model
+
+        def word(x, y):
+            c2 = dict(col)
+            c2[u], c2[v] = x, y
+            return tuple(c2[s] for s in A)
+
+        def sublit(drop, extra):
+            """m literal of (A - drop) at gamma plus the colours in extra."""
+            c2 = dict(col)
+            c2.update(extra)
+            R = tuple(s for s in A if s not in drop)
+            return self.mvar(R, tuple(c2[s] for s in R))
+
+        def kill(trans):
+            """One false atom per transversal (None = the constant zero
+            diagonal of Theta, needs no literal)."""
+            for t in trans:
+                if any(l is None for l in t):
+                    continue
+                f = [l for l in t if not val(l)]
+                assert f, "transversal claimed dead is supported"
+                pick = next((l for l in f if l in neg), f[0])
+                neg.add(pick)
+
+        def one(trans):
+            live = [t for t in trans if all(l is not None and val(l) for l in t)]
+            assert len(live) == 1, "transversal count is not one"
+            for l in live[0]:
+                if l != self.true:
+                    neg.add(-l)
+            kill([t for t in trans if t is not live[0]])
+
+        def Alit(x, z):
+            return self.gvar(u, z, x, col[z])
+
+        def BTlit(z, y):
+            return self.gvar(v, z, y, col[z])
+
+        def Tlit(z, z2):
+            if z == z2:
+                return None
+            return sublit((u, v, z, z2), {})
+
+        def Klit(z, y):
+            return sublit((u, z), {v: y})
+
+        def KPlit(x, z):
+            return sublit((v, z), {u: x})
+
+        k = len(X)
+        perms = list(itertools.permutations(range(k)))
+        chain = {"F3": (Alit, Tlit, BTlit), "F1": (Alit, Klit), "F2": (KPlit, BTlit)}[fac]
+
+        def trans(rows, cols, lit):
+            return [[lit(rows[i], cols[p[i]]) for i in range(k)] for p in perms]
+
+        def count(tr):
+            return sum(all(l is not None and val(l) for l in t) for t in tr)
+
+        for x in X:                                   # premise: the block words of A vanish
+            for y in Y:
+                neg.add(self.mvar(A, word(x, y)))
+        sB = self.mvar(Bs, gam)
+        Wtr = trans(X, Y, lambda x, y: self.gvar(u, v, x, y))
+        subsets = list(itertools.combinations(Bs, k))
+        cache = {}
+
+        def factor(i, R, S):
+            key = (i, R, S)
+            if key not in cache:
+                tr = trans(R, S, chain[i])
+                cache[key] = (tr, count(tr))
+            return cache[key]
+
+        blocks = []                                   # Cauchy-Binet summands
+        for mids in itertools.product(subsets, repeat=len(chain) - 1):
+            seq = (X,) + mids + (Y,)
+            fs = [factor(i, seq[i], seq[i + 1]) for i in range(len(chain))]
+            cnt = 1
+            for _, c in fs:
+                cnt *= c
+            blocks.append((fs, cnt))
+        if kind in ("a1", "a2"):
+            live = [b for b in blocks if b[1]]
+            assert len(live) == 1 and live[0][1] == 1, "CB expansion is not a single product"
+        for fs, cnt in blocks:
+            if cnt:
+                for tr, _ in fs:
+                    one(tr)
+            else:
+                kill(next(tr for tr, c in fs if c == 0))
+        if kind == "a1":
+            neg.add(sB)                               # m[B, gamma] false
+        elif kind == "a2":
+            kill(Wtr)                                 # W_uv[X, Y] support-zero
+        elif kind == "b":
+            neg.add(-sB)                              # m[B, gamma] true
+            one(Wtr)                                  # W_uv[X, Y] single transversal
+        else:
+            raise ValueError(kind)
+        return sorted(neg)
+
 
 class PairDecoratedGSM(GSM):
     """--g-minus: the order-n model on B = {0..n-1} with its GHZ pattern (G)
@@ -809,6 +956,138 @@ class PairDecoratedGSM(GSM):
         self._ghz()
         if killers:
             self._killers()
+
+    def ch_frames(self, all_levels=False):
+        """CH frames of D_n: the deleted pair (u, v) = (n, n+1) at V (the only
+        pair whose Theta lives in the model), plus (all_levels) every pair of
+        every even A inside B."""
+        return ch_frames(self.n, gminus=True, all_levels=all_levels)
+
+
+def ch_frames(n, gminus=False, all_levels=False):
+    """Frames (A, u, v) of the CH family, shared by the encoder and check_ch.
+    GSM(n): V = range(n) with every pair (top), and every even A with
+    |A| >= 4 and every pair (all_levels).  PairDecoratedGSM(n): V = range(n+2)
+    with the pair (n, n+1) only, and (all_levels) every even A inside
+    B = range(n) with every pair."""
+    if gminus:
+        N = n + 2
+        top = [(tuple(range(N)), n, n + 1)]
+        inner = range(4, n + 1, 2) if all_levels else ()
+    else:
+        top = [(tuple(range(n)), u, v) for u, v in itertools.combinations(range(n), 2)]
+        inner = range(4, n - 1, 2) if all_levels else ()
+    out = [(A, u, v) for k in inner for A in itertools.combinations(range(n), k)
+           for u, v in itertools.combinations(A, 2)]
+    return out + top
+
+
+def check_ch(N, gsup, msup, frames, ks=(2, 3), stats=None, factorizations=("F3",)):
+    """Independent re-check of the compressed-Hessian family CH on a decoded
+    model, from the supports alone (no SAT variables).
+
+    For a frame (A, u, v), B = A - {u, v}, a word gamma on B, and k x k row
+    and column sets X, Y (k in ks), let H = A_gamma Theta_gamma B_gamma^T
+    (attachment columns of u and v at gamma's colours, Theta[z,z'] =
+    T_{B-{z,z'}}(gamma|), zero diagonal).  If every block word (x, y, gamma),
+    (x, y) in X x Y, has m[A, .] false, then det H[X,Y] = (-T_B(gamma))^k
+    det W_uv[X,Y] (docs/strategy/compressed-hessian-family-2026-10-09.md).
+    nH = number of supported products in the Cauchy-Binet expansion of
+    det H[X,Y] along a factorization: 'F3' H = A Theta B^T (two-step; the
+    default), 'F1' H = A K with K[z,y] = T_{A-{u,z}}(y, gamma|), 'F2'
+    H = K' B^T with K'[x,z] = T_{A-{v,z}}(x, gamma|) (computed as products
+    of per-factor transversal-count matrices); nW = number of supported
+    transversals of W_uv[X,Y]; s = m[B, gamma].  Violations, per
+    factorization f (first f in the given order): ('a1', ..., f) nH = 1 and
+    not s; ('a2', ..., f) nH = 1 and nW = 0; ('b', ..., f) nW = 1 and s and
+    nH = 0.  Returns tuples (kind, A, u, v, gamma, X, Y, f)."""
+    import numpy as np
+
+    def G(x, y, a, b):
+        return ((x, y, a, b) in gsup) if x < y else ((y, x, b, a) in gsup)
+
+    def M(A, w):
+        if len(A) == 0:
+            return True
+        if len(A) == 2:
+            return G(A[0], A[1], w[0], w[1])
+        return (A, w) in msup
+
+    def ntrans(k, ok):
+        return sum(all(ok(i, p[i]) for i in range(k)) for p in itertools.permutations(range(k)))
+
+    bad = []
+    fires = {"a1": 0, "a2": 0, "b": 0}
+    live = {"H_single": 0, "W_single_and_s": 0}     # premise instances with a certified side
+    prem = 0
+    for A, u, v in frames:
+        Bs = tuple(x for x in A if x not in (u, v))
+        nb = len(Bs)
+        for gam in itertools.product(range(C), repeat=nb):
+            col = dict(zip(Bs, gam))
+            z0 = {}
+            for x in range(C):
+                for y in range(C):
+                    c2 = dict(col)
+                    c2[u], c2[v] = x, y
+                    z0[(x, y)] = not M(A, tuple(c2[s] for s in A))
+            if sum(z0.values()) < 4:
+                continue
+            s = M(Bs, gam)
+
+            def Msub(drop, extra):
+                c2 = dict(col)
+                c2.update(extra)
+                R = tuple(t for t in A if t not in drop)
+                return M(R, tuple(c2[t] for t in R))
+            Asup = [[G(u, z, x, col[z]) for z in Bs] for x in range(C)]
+            Bsup = [[G(v, z, y, col[z]) for z in Bs] for y in range(C)]
+            Th = [[i != j and Msub((u, v, Bs[i], Bs[j]), {}) for j in range(nb)] for i in range(nb)]
+            if "F1" in factorizations:
+                Ksup = [[Msub((u, z), {v: y}) for y in range(C)] for z in Bs]       # z x y
+            if "F2" in factorizations:
+                KPsup = [[Msub((v, z), {u: x}) for z in Bs] for x in range(C)]     # x x z
+            for k in ks:
+                Xs = list(itertools.combinations(range(C), k))
+                Ss = list(itertools.combinations(range(nb), k))
+
+                def cnt(rows, cols, ok):
+                    return np.array([[ntrans(k, lambda i, j, R=R, S=S: ok(R[i], S[j])) for S in cols]
+                                     for R in rows], dtype=np.int64).reshape(len(rows), len(cols))
+                NA = cnt(Xs, Ss, lambda x, z: Asup[x][z])
+                NBT = cnt(Ss, Xs, lambda z, y: Bsup[y][z])
+                NHs = {}
+                for f in factorizations:
+                    if f == "F3":
+                        NHs[f] = NA @ cnt(Ss, Ss, lambda z, z2: Th[z][z2]) @ NBT
+                    elif f == "F1":
+                        NHs[f] = NA @ cnt(Ss, Xs, lambda z, y: Ksup[z][y])
+                    elif f == "F2":
+                        NHs[f] = cnt(Xs, Ss, lambda x, z: KPsup[x][z]) @ NBT
+                    else:
+                        raise ValueError(f)
+                for xi, X in enumerate(Xs):
+                    for yi, Y in enumerate(Xs):
+                        if not all(z0[(x, y)] for x in X for y in Y):
+                            continue
+                        prem += 1
+                        nW = ntrans(k, lambda i, j: G(u, v, X[i], Y[j]))
+                        nHs = {f: int(NH[xi, yi]) for f, NH in NHs.items()}
+                        one_f = next((f for f in factorizations if nHs[f] == 1), None)
+                        zero_f = next((f for f in factorizations if nHs[f] == 0), None)
+                        live["H_single"] += one_f is not None
+                        live["W_single_and_s"] += nW == 1 and s
+                        for kind, f in (("a1", one_f if not s else None),
+                                        ("a2", one_f if nW == 0 else None),
+                                        ("b", zero_f if nW == 1 and s else None)):
+                            if f is not None:
+                                fires[kind] += 1
+                                bad.append((kind, A, u, v, gam, X, Y, f))
+    if stats is not None:
+        stats["CH_premise_instances"] = prem
+        stats["CH_violations_by_kind"] = fires
+        stats["CH_certified_premises"] = live
+    return bad
 
 
 def check_model_gminus(n, gsup, msup, killers=False):
@@ -1455,6 +1734,16 @@ def main() -> None:
                     help="comma list of nonconstant word types (colour-class sizes, e.g. "
                          "'5+1,4+2') whose (G) zero clauses are omitted (relaxation; every "
                          "union of types is invariant under the symmetry group)")
+    ap.add_argument("--compressed-hessian", action="store_true",
+                    help="add the compressed-Hessian family CH lazily (top set; with --g-minus "
+                         "the deleted pair only)")
+    ap.add_argument("--ch-all-levels", action="store_true",
+                    help="CH also at every even A below the top (premises not m)")
+    ap.add_argument("--ch-orders", default="2,3",
+                    help="minor orders k of CH (comma list from 2,3; default both)")
+    ap.add_argument("--ch-factorizations", default="F3",
+                    help="comma list from F3 (H = A Theta B^T, two-step; default), F1 "
+                         "(H = A K, one-step at u), F2 (H = K' B^T, one-step at v)")
     args = ap.parse_args()
     drop = tuple(t for t in args.g_drop_types.split(",") if t)
     if args.g_minus:
@@ -1462,7 +1751,8 @@ def main() -> None:
         assert not (args.fast or args.fast_plane or args.fast_holonomy or args.holonomy_top_only
                     or args.plane_top_only or args.pattern or args.pattern_file
                     or args.within_pattern_file or args.noncoordinate_killer), \
-            "--g-minus supports --killers, --anchors, --holonomy, --plane-rigidity only"
+            "--g-minus supports --killers, --anchors, --holonomy, --plane-rigidity, " \
+            "--compressed-hessian only"
     if args.fast:
         args.fast_plane = args.fast_holonomy = True
     xcheck = {}
@@ -1522,6 +1812,18 @@ def main() -> None:
     if rec["plane_rigidity"]:
         rec["plane_mode"] = args.plane_mode
         rec["plane_scope"] = "top" if args.plane_top_only else "all levels |A| >= 6"
+    rec["compressed_hessian"] = args.compressed_hessian
+    ch_ks = tuple(int(k) for k in args.ch_orders.split(",") if k)
+    assert set(ch_ks) <= {2, 3}, ch_ks
+    ch_fac = tuple(f for f in args.ch_factorizations.split(",") if f)
+    assert ch_fac and set(ch_fac) <= {"F1", "F2", "F3"}, ch_fac
+    ch_fr = enc.ch_frames(args.ch_all_levels) if args.compressed_hessian else []
+    N_all = args.n + 2 if args.g_minus else args.n
+    if args.compressed_hessian:
+        rec["ch_orders"] = list(ch_ks)
+        rec["ch_factorizations"] = list(ch_fac)
+        rec["ch_scope"] = "all levels" if args.ch_all_levels else "top"
+        rec["ch_frames"] = len(ch_fr)
     if args.fast_plane or args.fast_holonomy:
         rec["fast_plane"] = args.fast_plane
         rec["fast_holonomy"] = args.fast_holonomy
@@ -1530,7 +1832,7 @@ def main() -> None:
     t1 = time.time()
     added = {}
     rounds = 0
-    lazy = rec["holonomy"] or rec["plane_rigidity"]
+    lazy = rec["holonomy"] or rec["plane_rigidity"] or args.compressed_hessian
     stopped = False
     with Cadical153(bootstrap_with=enc.cnf.clauses) as solver:
         while True:
@@ -1568,7 +1870,8 @@ def main() -> None:
                 pbad = check_plane(args.n, gsup, msup, args.plane_top_only, args.plane_mode)
             else:
                 pbad = []
-            if not hbad and not pbad:
+            cbad = check_ch(N_all, gsup, msup, ch_fr, ch_ks, factorizations=ch_fac) if args.compressed_hessian else []
+            if not hbad and not pbad and not cbad:
                 break
             if args.max_rounds is not None and rounds >= args.max_rounds:
                 stopped = True
@@ -1594,6 +1897,8 @@ def main() -> None:
                 if not pinst:
                     raise RuntimeError("plane checker reports a violation but the encoder finds none; bug")
                 inst.update(pinst)
+            if cbad:
+                inst.update(enc.ch_instances(cbad, val))
             new = {k: cl for k, cl in inst.items() if k not in added}
             if not new:
                 raise RuntimeError("checker reports a violation but no new instance; encoder bug")
@@ -1602,8 +1907,8 @@ def main() -> None:
                 for c in cl:
                     solver.add_clause(c)
             print(json.dumps({"round": rounds, "holonomy_violations": len(hbad),
-                              "plane_violations": len(pbad),
-                              "first_violation": str((hbad or pbad)[0])[:160],
+                              "plane_violations": len(pbad), "ch_violations": len(cbad),
+                              "first_violation": str((hbad or pbad or cbad)[0])[:160],
                               "new_instances": len(new), "total_instances": len(added),
                               "seconds": round(time.time() - t1, 1)}), flush=True)
     rec["result"] = "SAT" if sat else "UNSAT"
@@ -1620,6 +1925,12 @@ def main() -> None:
         for k in added:
             kinds[k[0]] = kinds.get(k[0], 0) + 1
         rec["lazy_instances_by_rule"] = kinds
+        if args.compressed_hessian:
+            chk = {}
+            for k in added:
+                if k[0] == "CH":
+                    chk[f"{k[1]} {k[2]}"] = chk.get(f"{k[1]} {k[2]}", 0) + 1
+            rec["ch_instances_by_kind"] = chk
         lev = {}
         for k in added:
             if k[0] == "PR":
@@ -1647,6 +1958,10 @@ def main() -> None:
             bad += check_anchors(args.n + 2 if args.g_minus else args.n, gsup)
         if rec["holonomy"]:
             bad += check_holonomy(args.n, gsup, msup, args.holonomy_top_only, rules)
+        if args.compressed_hessian:
+            cst = {}
+            bad += check_ch(N_all, gsup, msup, ch_fr, ch_ks, stats=cst, factorizations=ch_fac)
+            rec["ch_premise_instances_in_model"] = cst["CH_premise_instances"]
         if rec["plane_rigidity"]:
             pst = {}
             bad += check_plane(args.n, gsup, msup, args.plane_top_only, args.plane_mode, stats=pst)
