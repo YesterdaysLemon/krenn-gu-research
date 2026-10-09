@@ -7481,6 +7481,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Cut-tensor permanental rigidity attempt: Lemma C, small-cut theorems, Version R countermodel",
+      "document": "docs/strategy/cut-tensor-rigidity-attempt-2026-10-09.md",
+      "document_sha256_16": "72b0649263fac4f7",
+      "status": "partial",
+      "assumptions_and_excluded_divisors": [
+        "setting: a vertex cut (P, Q) with |P| = |Q| = k, arbitrary 3x3 blocks on the P-Q pairs, slice matrices A_a[p,q] = W_pq[a_p, a_q]; Version F requires per(A_a) = [a constant] for all 3^{2k} colourings (equivalent to Version N, mixed words zero and constant words nonzero, by one row rescaling); Version R requires it only on the words where the inside matchings vanish",
+        "Lemma C (proved, every k>=2, any infinite field): contracting one P vertex with a full vector orthogonal to the closed Q images makes the permanent a bilinear form of rank at most two in the two open Q vertices, while the GHZ slice has rank three; with plane rigidity (Theorem 3(b) of the bilinear-grid document) this proves Version F impossible for k = 2 (every field) and k = 3 (Latin-square endgame), the latter being the bipartite special case of the proved six-vertex exclusion",
+        "Version R is false as a route (proved by exact countermodel): the n=4 matrix-unit witness with cut {01|23} satisfies the restricted condition on 80 of 81 words, losing one constant word",
+        "corrected after review: Lemma C excludes every all-invertible cut configuration at every k and gives the necessary condition that each block row contains at least three single-column blocks and each column at least three single-row blocks; it is blind to all-single-entry configurations; an earlier k>=5 vacuity claim and a k=4 allowed-pair example were withdrawn",
+        "Version F at k>=4 is open and is the bipartite Krenn-Gu problem (identically zero inside blocks, three colours); numerics at k = 2, 3, 4 (residual exactly one) are exploratory; no occurrence theorem supplies the full-word premise from a witness, which is the gluing obligation of the GL node",
+        "primary verifier replays the small-cut theorems and the countermodel (about seven seconds); the k=2 Groebner basis [1] is a same-author second check; no independent audit; same-day agent review PASS on the proofs with the corrections above"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/finite/n06/verify_bipartite_cut_tensor_rigidity_small_cuts.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "review": "docs/audits/CUT_TENSOR_RIGIDITY_ATTEMPT_REVIEW_2026-10-09.md",
+      "expected_runtime": "about seven seconds for the verifier; the k=2 Groebner script under twenty minutes",
+      "external_binaries": [],
+      "note": "Research note on the cut-local permanental engine proposed for the trunk: proved at small cuts by a conceptual rank argument, refuted in its restricted-word form, open at k>=4 where it is bipartite Krenn-Gu. Not a witness, not an exclusion of any witness class; the global status remains UNRESOLVED.",
+      "claim_package": "docs/strategy",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "AP-prime extra-edge sub-lemma: widow-chain Hamiltonicity, CGI core, and locality obstruction",
       "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_TOP_MATCHING_EXTRA_EDGE_LEMMA.md",
       "document_sha256_16": "30d77b16df18fd76",
