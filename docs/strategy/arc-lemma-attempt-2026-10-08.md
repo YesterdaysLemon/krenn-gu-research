@@ -60,7 +60,8 @@ exactly an `N`-ended arc (or empty).
 
 ## 1. Theorem A (the hole model): the arc lemma is not a colour-1 statement
 
-**Theorem A.**  For every even `n >= 6` put `G_1 = K_n − M_0` and let `S_1`
+**Theorem A.**  For every even `n >= 6` (with the convention `{0, 1} ∈ M_0`)
+put `G_1 = K_n − M_0` and let `S_1`
 consist of `∅`, `V`, and every even `A` with `|A| >= 2` that is neither an
 `M_0`-union nor a **hole set** `{0, 1, x, y}` (with `x, y ∉ {0, 1}`,
 `xy ∉ M_0`).  Then `(G_1, S_1)` satisfies (a), (L), (S), (F), `G_1 ∩ M_0 = ∅`
@@ -138,7 +139,7 @@ only the third can be `N`-tiled.  ∎
 let `{c, d} = {1, 2}`.  Suppose the arc lemma holds for colour `c`: some
 perfect matching `N ⊆ G_c` has `C = M_0 ∪ N` Hamiltonian and every `N`-ended
 arc of `C` in `S_c`.  Then (H2) fails.  The proof uses, besides
-`S_0 ⊇ {M_0-unions}` and (H2), only: for colour `c`, the arcs; for colour
+`S_0 ⊇ {M_0-unions}`, `∅ ∈ S_c` for every colour, and (H2), only: for colour `c`, the arcs; for colour
 `d`, axiom (a), a perfect matching of `G_d` (from (S) and (H1)), and forcing
 (F) on sets of size four.
 
@@ -315,9 +316,18 @@ uncertified run at one order.
 
 ## 7. Stall point and the sharpest next lemma
 
-> **(AL1)** Let `G_0 = M_0`, let colour 1 satisfy (a), (S), (H1) and (F),
-> let colour 2 satisfy (a), (L), (S), (H1), and let (H2) hold.  Then the arc
-> lemma holds for colour 1.
+> **(AL1)** Let `G_0 = M_0` with `S_0` the family of `M_0`-unions (all
+> colour-0 axioms, Proposition 1), let colour 1 satisfy (a), (S), (H1) and
+> (F), let colour 2 satisfy (a), (L), (S), (H1), and let (H2) hold.  Then the
+> arc lemma holds for colour 1.
+
+(Statement corrected after the same-day
+[review](../audits/docs/audits/AP_PRIME_ARC_LEMMA_ATTEMPT_REVIEW_2026-10-08.md), which found the colour-0
+hypothesis missing; the review also reports an uncertified `n = 12` run
+showing that every model of AL1's hypotheses there has `G_1` a perfect
+matching, where the arc lemma holds trivially, so the solver data support
+the sharper statement "AL1's hypotheses force `G_1` to be a perfect
+matching" equally well.)
 
 The colours play opposite roles: forcing in the arc colour, Laplace
 accessibility in the other; Theorem B then needs forcing on four-sets in
