@@ -126,9 +126,18 @@ from pysat.solvers import Cadical153
 C = 3
 
 
+def word_type(w):
+    """Colour-class sizes of a word, descending, joined by '+' (e.g. '4+2')."""
+    return "+".join(str(k) for k in sorted((w.count(c) for c in set(w)), reverse=True))
+
+
 class GSM:
-    def __init__(self, n, *, symmetry=True, killers=False, noncoordinate_killer=False):
+    g_drop_types = frozenset()
+
+    def __init__(self, n, *, symmetry=True, killers=False, noncoordinate_killer=False,
+                 g_drop_types=()):
         self.n = n
+        self.g_drop_types = frozenset(g_drop_types)
         self.V = tuple(range(n))
         self.pool = IDPool()
         self.cnf = CNF()
@@ -170,12 +179,14 @@ class GSM:
             return self.gvar(A[0], A[1], w[0], w[1])
         return self.m[(A, w)]
 
-    def _laplace(self, A):
+    def _laplace(self, A, hubs=None):
+        """(L) and (F') for every word of A at every hub in A (default), or
+        only at the given hubs (used by --g-minus for the decoration sets)."""
         cnf, pool = self.cnf, self.pool
         idx = {v: k for k, v in enumerate(A)}
         for w in itertools.product(range(C), repeat=len(A)):
             mA = self.m[(A, w)]
-            for v in A:
+            for v in (A if hubs is None else hubs):
                 lits = []
                 for u in A:
                     if u == v:
@@ -195,10 +206,10 @@ class GSM:
 
     def _ghz(self):
         Vt = self.V
-        for w in itertools.product(range(C), repeat=self.n):
+        for w in itertools.product(range(C), repeat=len(Vt)):
             if len(set(w)) == 1:
                 self.cnf.append([self.mvar(Vt, w)])
-            else:
+            elif word_type(w) not in self.g_drop_types:
                 self.cnf.append([-self.mvar(Vt, w)])
 
     def _symmetry(self):
@@ -745,6 +756,112 @@ class GSM:
         return [v if k in sup else -v for k, v in self.g.items()]
 
 
+class PairDecoratedGSM(GSM):
+    """--g-minus: the order-n model on B = {0..n-1} with its GHZ pattern (G)
+    replaced by (G-), what an order-(n+2) witness forces on B = V - {u, v}
+    through the deleted pair u = n, v = n+1 (docs/strategy/support-
+    induction-2026-10-09.md, Section 3).  A sound relaxation of the
+    order-(n+2) model:
+      * every even A in B (|A| >= 4): m[A, w] with (L), (F') at every hub; H2,
+        H3 and PR (lazy) at these levels only;
+      * g on every pair of V, including the attachments W_uz, W_vz, W_uv;
+      * the sets V - {u, z} and V - {v, z} (z in B): m with (L), (F') at the
+        hub v, resp. u, only (their other hubs are dropped);
+      * V: m with (L), (F') at the hubs u and v only, and (G) on V;
+      * --killers / --anchors: the order-(n+2) statements (partners in V).
+    Dropped (sound): (L), (F') of V and of the decoration sets at hubs in B,
+    every set containing both u and v other than V, holonomy and PR at sets
+    meeting {u, v}, and the order-n (G), killers and anchors of B itself.
+    No symmetry breaking.  UNSAT would exclude order n+2 at the support
+    level; SAT says only that this relaxation does not."""
+
+    def __init__(self, n, *, killers=False):
+        N = n + 2
+        self.n, self.N = n, N
+        self.V = tuple(range(N))
+        self.B = tuple(range(n))
+        u, v = n, n + 1
+        self.pool = IDPool()
+        self.cnf = CNF()
+        self.true = self.pool.id(("TRUE",))
+        self.cnf.append([self.true])
+        self.g = {}
+        for i, j in itertools.combinations(self.V, 2):
+            for a in range(C):
+                for b in range(C):
+                    self.g[(i, j, a, b)] = self.pool.id(("g", i, j, a, b))
+        self.m = {}
+        self.t = {}
+        self.sets = [A for k in range(4, n + 1, 2) for A in itertools.combinations(self.B, k)]
+        self.decoration = []
+        for z in self.B:
+            rest = tuple(x for x in self.B if x != z)
+            self.decoration.append((rest + (v,), (v,)))      # V - {u, z}
+            self.decoration.append((rest + (u,), (u,)))      # V - {v, z}
+        self.decoration.append((self.V, (u, v)))
+        for A in self.sets + [A for A, _ in self.decoration]:
+            for w in itertools.product(range(C), repeat=len(A)):
+                self.m[(A, w)] = self.pool.id(("m", A, w))
+        for A in self.sets:
+            self._laplace(A)
+        for A, hubs in self.decoration:
+            self._laplace(A, hubs)
+        self._ghz()
+        if killers:
+            self._killers()
+
+
+def check_model_gminus(n, gsup, msup, killers=False):
+    """Independent brute-force check of a --g-minus model: (L), (F') at every
+    hub of every even A in B, at the declared hub of each decoration set and
+    at u, v for V; (G) on V; the order-(n+2) killers if requested."""
+    N, u, v = n + 2, n, n + 1
+    V, Bv = tuple(range(N)), tuple(range(n))
+
+    def G(x, y, a, b):
+        return ((x, y, a, b) in gsup) if x < y else ((y, x, b, a) in gsup)
+
+    def M(A, w):
+        if len(A) == 0:
+            return True
+        if len(A) == 2:
+            return G(A[0], A[1], w[0], w[1])
+        return (A, w) in msup
+
+    todo = [(A, A) for k in range(4, n + 1, 2) for A in itertools.combinations(Bv, k)]
+    for z in Bv:
+        rest = tuple(x for x in Bv if x != z)
+        todo += [(rest + (v,), (v,)), (rest + (u,), (u,))]
+    todo.append((V, (u, v)))
+    bad = []
+    for A, hubs in todo:
+        idx = {x: i for i, x in enumerate(A)}
+        for w in itertools.product(range(C), repeat=len(A)):
+            for p in hubs:
+                kids = 0
+                for q in A:
+                    if q == p:
+                        continue
+                    R = tuple(x for x in A if x not in (p, q))
+                    if G(p, q, w[idx[p]], w[idx[q]]) and M(R, tuple(w[idx[x]] for x in R)):
+                        kids += 1
+                if M(A, w) and kids == 0:
+                    bad.append(("L", A, w, p))
+                if not M(A, w) and kids == 1:
+                    bad.append(("F'", A, w, p))
+    for w in itertools.product(range(C), repeat=N):
+        if (len(set(w)) == 1) != M(V, w):
+            bad.append(("G", w))
+    if killers:
+        for x in V:
+            for c in range(C):
+                if not any(any(G(x, y, a, c) for a in range(C))
+                           and not any(G(x, y, a, d) for a in range(C) for d in range(C) if d != c)
+                           for y in V if y != x):
+                    bad.append(("killer", x, c))
+    return bad
+
+
 PAIRS = ((0, 1), (0, 2), (1, 2))
 PERM_SIGN = {(0, 1, 2): 1, (1, 2, 0): 1, (2, 0, 1): 1, (0, 2, 1): -1, (2, 1, 0): -1, (1, 0, 2): -1}
 
@@ -1255,9 +1372,10 @@ def check_anchors(n, gsup):
                        for u in range(n) if u != v)]
 
 
-def check_model(n, gsup, msup):
+def check_model(n, gsup, msup, drop_types=()):
     """Independent brute-force check of (L), (F'), (G) on a decoded model.
-    gsup: set of (i,j,a,b) with i<j; msup: set of (A,w) with |A|>=4."""
+    gsup: set of (i,j,a,b) with i<j; msup: set of (A,w) with |A|>=4.
+    drop_types: nonconstant word types exempt from (G) (--g-drop-types)."""
     V = tuple(range(n))
 
     def G(v, u, a, b):
@@ -1289,6 +1407,8 @@ def check_model(n, gsup, msup):
                     if not M(A, w) and kids == 1:
                         bad.append(("F'", A, w, v))
     for w in itertools.product(range(C), repeat=n):
+        if len(set(w)) > 1 and word_type(w) in drop_types:
+            continue
         if (len(set(w)) == 1) != M(V, w):
             bad.append(("G", w))
     return bad
@@ -1327,13 +1447,31 @@ def main() -> None:
                     help="--fast-plane and --fast-holonomy")
     ap.add_argument("--cross-check-fast", action="store_true",
                     help="every round, also run the reference scans and fail on any difference")
+    ap.add_argument("--g-minus", action="store_true",
+                    help="order-n model on B with (G) replaced by (G-): the deleted pair "
+                         "u=n, v=n+1 of an order-(n+2) witness (PairDecoratedGSM); "
+                         "needs --no-symmetry")
+    ap.add_argument("--g-drop-types", default="",
+                    help="comma list of nonconstant word types (colour-class sizes, e.g. "
+                         "'5+1,4+2') whose (G) zero clauses are omitted (relaxation; every "
+                         "union of types is invariant under the symmetry group)")
     args = ap.parse_args()
+    drop = tuple(t for t in args.g_drop_types.split(",") if t)
+    if args.g_minus:
+        assert args.no_symmetry, "--g-minus has no symmetry block; pass --no-symmetry"
+        assert not (args.fast or args.fast_plane or args.fast_holonomy or args.holonomy_top_only
+                    or args.plane_top_only or args.pattern or args.pattern_file
+                    or args.within_pattern_file or args.noncoordinate_killer), \
+            "--g-minus supports --killers, --anchors, --holonomy, --plane-rigidity only"
     if args.fast:
         args.fast_plane = args.fast_holonomy = True
     xcheck = {}
     t0 = time.time()
-    enc = GSM(args.n, symmetry=not args.no_symmetry, killers=args.killers,
-              noncoordinate_killer=args.noncoordinate_killer)
+    if args.g_minus:
+        enc = PairDecoratedGSM(args.n, killers=args.killers)
+    else:
+        enc = GSM(args.n, symmetry=not args.no_symmetry, killers=args.killers,
+                  noncoordinate_killer=args.noncoordinate_killer, g_drop_types=drop)
     if args.anchors:
         enc.anchors()
     if args.within_pattern_file:
@@ -1345,7 +1483,9 @@ def main() -> None:
     rec = {"n": args.n, "killers": args.killers, "noncoordinate_killer": args.noncoordinate_killer,
            "anchors": args.anchors,
            "within_pattern_file": args.within_pattern_file.as_posix() if args.within_pattern_file else None,
-           "symmetry": not args.no_symmetry, "variables": enc.pool.top, "clauses": len(enc.cnf.clauses),
+           "symmetry": not args.no_symmetry, "g_minus": args.g_minus,
+           "g_drop_types": list(drop),
+           "variables": enc.pool.top, "clauses": len(enc.cnf.clauses),
            "encode_seconds": round(time.time() - t0, 1), "solver": "CaDiCaL 1.5.3 via python-sat"}
     if args.proof:
         args.proof.parent.mkdir(parents=True, exist_ok=True)
@@ -1499,9 +1639,12 @@ def main() -> None:
         pos = {l for l in model if l > 0}
         gsup = {k for k, v in enc.g.items() if v in pos}
         msup = {k for k, v in enc.m.items() if v in pos}
-        bad = check_model(args.n, gsup, msup)
+        if args.g_minus:
+            bad = check_model_gminus(args.n, gsup, msup, killers=args.killers)
+        else:
+            bad = check_model(args.n, gsup, msup, drop)
         if args.anchors:
-            bad += check_anchors(args.n, gsup)
+            bad += check_anchors(args.n + 2 if args.g_minus else args.n, gsup)
         if rec["holonomy"]:
             bad += check_holonomy(args.n, gsup, msup, args.holonomy_top_only, rules)
         if rec["plane_rigidity"]:
@@ -1509,7 +1652,7 @@ def main() -> None:
             bad += check_plane(args.n, gsup, msup, args.plane_top_only, args.plane_mode, stats=pst)
             rec["plane_premise_instances_in_model"] = pst["PR_premise_instances"]
             rec["plane_zero_cube_failure_reasons"] = pst["PR_zero_cube_reasons"]
-            if args.n >= 8:
+            if args.n >= 8 and not args.g_minus:
                 top = {}
                 check_plane(args.n, gsup, msup, True, args.plane_mode, stats=top)
                 rec["plane_top_level_premise_instances"] = top["PR_premise_instances"]

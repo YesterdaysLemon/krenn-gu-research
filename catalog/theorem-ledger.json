@@ -7642,6 +7642,32 @@
       "legacy_paths": []
     },
     {
+      "name": "Support-model induction n -> n+2: what a sub-configuration inherits, the pair-expansion identity, and why restriction-induction is circular",
+      "document": "docs/strategy/support-model-induction-2026-10-09.md",
+      "document_sha256_16": "75f0a3dc17a42648",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "exact statements about the recursive support model of claims/finite/n08/explore_general_block_recursive_support_model.py: for B = V minus {u,v}, the order-(n+2) model implies on B, literally and at every level inside B, the families (L), (F'), H2/H3 and PR, and does not imply (G), the column killers (only a weak form K-: an in-B killer partner for at least one colour per vertex), the anchors or the hub clause M (Section 1); by inspection of the encoding, if u and v are non-adjacent nothing outside B constrains B's top-level coefficients (Proposition 2)",
+        "Proposition 1 (exact): the inherited families are satisfied by the all-zero and by the full-support pattern at every order, so they exclude nothing on their own; every recorded exclusion consumes top-level (G), killers or anchors",
+        "pair-expansion identity (exact, every configuration, every word gamma on B): T_B(gamma) W_uv + A_gamma Theta_gamma B_gamma^T = [gamma = c^n] lambda_c E_cc, with A_gamma, B_gamma the attachment columns of u and v at the colours of gamma and Theta_gamma the order-(n-2) coefficient matrix of B; hence for nonconstant gamma T_B(gamma) = 0 iff the compressed Hessian vanishes, and the box-transfer rule (hub flattening at hub u, partner v); at the support level this certifies only the dead-row/dead-entry zeros already present as (F') at hubs u and v",
+        "circularity (exact): the order-6 model is UNSAT, so the hypothesis 'every order-8 pattern restricts on some six-subset to an order-6 model' is equivalent to the order-8 exclusion; an inductive class Q_n needs (Q1) witnesses satisfy it, (Q2) every Q_{n+2} pattern has an n-subset in Q_n, (Q3) Q_6 UNSAT; the full model has Q1, Q3 and a circular Q2, the inherited families have Q1, Q2 and fail Q3",
+        "SAT runs (bounded, models passed the independent checkers; UNSAT outcomes uncertified): the sound pair relaxation --g-minus is SAT for a 4-set inside six vertices (killers + anchors + holonomy, 0.1 s) and for a 6-set inside eight (killers + anchors + holonomy + PR, 105 s, 38 rounds, 122 entries; in that model 717 of 726 nonconstant words of B are nonzero and 5 of 18 killer and 4 of 18 anchor tasks of B fail); --g-drop-types on the order-6 model: omitting the (G) zeros of word type 4+2, 3+3, 3+2+1 or 2+2+2 gives SAT, omitting 5+1 or 4+1+1 stays UNSAT (uncertified), omitting the killers gives SAT with every block full; a companion run imposing B's own (G) timed out at 1,200 s",
+        "two new optional flags (--g-minus, --g-drop-types); default encoding unchanged (clause lists compared against the previous commit at n = 4 and 6); no independent audit; no Lean; the proofs are a few lines each in the note"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/finite/n08/explore_general_block_recursive_support_model.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": "seconds to two minutes per listed run; the order-6 drop-type UNSAT runs 5-14 minutes",
+      "external_binaries": [],
+      "note": "The sharpest statement of the gluing gap GL at the support level: restriction-induction is circular, the inherited families exclude nothing, and the non-hereditary ingredient is the top-level (G) zeros on word types 4+2, 3+3, 3+2+1, 2+2+2 together with the same six-set's column killers. Named candidate input for a hereditary class: the compressed-Hessian rank condition as a clause family. Global status UNRESOLVED.",
+      "claim_package": "docs/strategy",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Cut-tensor permanental rigidity attempt: Lemma C, small-cut theorems, Version R countermodel",
       "document": "docs/strategy/cut-tensor-rigidity-attempt-2026-10-09.md",
       "document_sha256_16": "72b0649263fac4f7",
