@@ -7454,6 +7454,33 @@
       "legacy_paths": []
     },
     {
+      "name": "Three-column bilinear grid theorem, permanent plane rigidity, and the degree-three cube identity",
+      "document": "claims/arbitrary-order/THREE_COLUMN_BILINEAR_GRID_THEOREM.md",
+      "document_sha256_16": "547404005526dde9",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact identities and conditional implications about word coefficients of T_W for 3x3 blocks; Theorem 1 (two-vertex bilinear expansion) at every even n>=4 over every commutative ring; Theorem 2 (three-column bilinear grid) at every even n>=6: under the vanishing of the complementary coefficients outside three columns and the killed a-b term, 2*h12*h13*h23*det[y y' e_p]*det[z z' e_q] is an explicit combination of four grid word values (identity over every commutative ring; conclusion over characteristic not two)",
+        "Theorem 3 (permanent plane rigidity, characteristic not two): the only triples of 2-planes in F^3 on which the 3x3 permanent vanishes are three copies of one coordinate plane; Proposition 4: a degree-three cube identity over Z (eight words, trilinear multipliers) when exactly two of three row pairs coincide",
+        "Corollary 5 (six-vertex cut form): condition (i) gives a unit-ideal certificate with multiplier degree 4, condition (ii) is a statement about values only; necessity of either condition is not proved; a false unit-ideal paraphrase of (ii) in the companion note was corrected after review",
+        "exact finite finding (companion note, not a theorem): the 51-entry six-vertex survivor of the two-term closure needs multiplier degree exactly 3 in the physical entries (no degree<=2 certificate over all 108 equations; degree 3 on the 27-word slice in 48 cube blocks each needing all eight words); the full system was not searched at degree 3",
+        "at n>=8 Theorem 2's premises are m-literals of the recursive support model (valid clause family at every level, not implemented in the model yet); no occurrence statement is proved and no witness class is excluded",
+        "primary verifier replays the identities, the cube closed form and its negative cases, plane rigidity over small fields, and the n=6 cut form; no independent audit; same-day agent review PASS with the corrections above"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_three_column_bilinear_grid_theorem.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "review": "docs/audits/THREE_COLUMN_BILINEAR_GRID_THEOREM_REVIEW_2026-10-08.md",
+      "expected_runtime": "about ten seconds for the verifier; the six-vertex certificate scripts under a minute each",
+      "external_binaries": [],
+      "note": "Identifies the multilinear certificate shape that kills the six-vertex two-term survivor (degree-three cube / degree-four bilinear grid across a 3-vs-3 cut) and proves the grid identity at every order as a conditional clause family. Not a witness, not an exclusion; the global status remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "AP-prime extra-edge sub-lemma: widow-chain Hamiltonicity, CGI core, and locality obstruction",
       "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_TOP_MATCHING_EXTRA_EDGE_LEMMA.md",
       "document_sha256_16": "e4df5c7e22e20bbc",
