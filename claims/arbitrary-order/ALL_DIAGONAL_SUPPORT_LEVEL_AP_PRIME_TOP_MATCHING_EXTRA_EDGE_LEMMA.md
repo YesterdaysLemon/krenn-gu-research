@@ -24,7 +24,11 @@ is:
    *equivalent* to the imported nonmonochromatic-perfect-matching theorem of
    Chandran, Gajjala and Illickan for three-edge-coloured cubic graphs.  So
    every proof of the sub-lemma proves or imports that theorem.  Lemma 2 alone
-   closes the uniform case when `n ≡ 2 (mod 4)`.  Proved.
+   closes the uniform case when `n ≡ 2 (mod 4)`.  Proved.  (Later the same
+   day, Corollary B1 of the
+   [arc-lemma note](../../docs/strategy/arc-lemma-attempt-2026-10-08.md)
+   gave an elementary proof of the uniform case at every even order, so
+   "proves or imports" now reads "proves, elementarily or by import".)
 4. **Theorem 4 (locality obstruction):** the axioms that suffice for the fast
    solver refutations at `n <= 10` (Laplace accessibility only at `V` and at
    its children, forcing only on sets of size at most four, full (H2), the

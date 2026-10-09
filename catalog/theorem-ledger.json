@@ -7483,7 +7483,7 @@
     {
       "name": "AP-prime extra-edge sub-lemma: widow-chain Hamiltonicity, CGI core, and locality obstruction",
       "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_TOP_MATCHING_EXTRA_EDGE_LEMMA.md",
-      "document_sha256_16": "e4df5c7e22e20bbc",
+      "document_sha256_16": "30d77b16df18fd76",
       "status": "partial",
       "assumptions_and_excluded_divisors": [
         "exact combinatorial statements about the AP' support abstraction (axioms (a), (L), (S), (F), (H2)) at every even n>=6; no weights and no field",
@@ -7505,6 +7505,34 @@
       "external_binaries": [],
       "note": "Sub-lemma attempt for the WB4 top-matching lemma. Proves a reduction, a Hamiltonian widow-chain lemma, the equivalence of the uniform case with the imported CGI theorem, and an exact locality obstruction showing the short n<=10 refutations do not lift; names the arc lemma as the next lemma. Not a proof of the sub-lemma, not a witness, no change to the global status, which remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "AP-prime arc lemma attempt: Theorem B, Corollary B1 (no two perfect-matching colours), hole-model obstruction",
+      "document": "docs/strategy/arc-lemma-attempt-2026-10-08.md",
+      "document_sha256_16": "aa340d06cfc95b84",
+      "status": "partial",
+      "assumptions_and_excluded_divisors": [
+        "exact combinatorial statements about AP' models with one support graph a perfect matching M_0 (Proposition 1 of the extra-edge document), at every even n>=6",
+        "Theorem B + Lemma C (proved): if the arc lemma holds for colour c and the other colour has forcing on four-sets, (H2) fails at every even n>=6 (Lemma C: chord-length parity count on the Hamiltonian cycle M_0 union N); only one arc is needed",
+        "Corollary B1 (proved): no AP' model has two colours whose support graphs are perfect matchings; restricted to three perfect-matching colours it is an elementary proof of the special case of the imported nonmonochromatic-matching theorem at every order",
+        "Theorem A (proved obstruction): the hole model G_1 = K_n - M_0 with the sets {0,1,x,y} removed satisfies every colour-1 axiom and the no-M_0-union condition yet violates the arc lemma on every Hamiltonian cycle, so the arc lemma is not a one-colour statement",
+        "Theorem D (proved sharpness): for n = 0 (mod 4), n>=8, a model of every AP' axiom except colour-1 forcing with two perfect-matching colours exists, so forcing cannot be dropped from Theorem B",
+        "the arc lemma itself is NOT proved; the stall lemma AL1 (corrected after review to include the colour-0 hypothesis) is a named open statement; solver ladder results at n=8,10,12 are exploratory and uncertified, and at n=12 AL1's hypotheses were only satisfied trivially",
+        "primary verifier brute-forces Theorem A at n<=12, Lemma C at n<=16, Theorem D at n=8,12; it does not test Theorem B or B1 directly; no independent audit; same-day agent review PASS on all proofs with statement-level corrections applied"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_all_diagonal_support_level_ap_prime_arc_lemma_hole_model_and_closure.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "review": "docs/audits/AP_PRIME_ARC_LEMMA_ATTEMPT_REVIEW_2026-10-08.md",
+      "expected_runtime": "about two seconds for the verifier",
+      "external_binaries": [],
+      "note": "Research note for the arc lemma of the AP' extra-edge sub-lemma. Proves that the arc lemma for one colour with forcing on the other refutes (H2) at every even order, hence that no AP' model has two perfect-matching support graphs; exhibits the hole-model obstruction and names AL1. Not a proof of the arc lemma, not a witness; the global status remains UNRESOLVED.",
+      "claim_package": "docs/strategy",
       "proof_variant": "canonical",
       "subpackage": null,
       "legacy_paths": []
