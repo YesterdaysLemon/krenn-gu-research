@@ -322,7 +322,7 @@ uncertified run at one order.
 > arc lemma holds for colour 1.
 
 (Statement corrected after the same-day
-[review](../audits/docs/audits/AP_PRIME_ARC_LEMMA_ATTEMPT_REVIEW_2026-10-08.md), which found the colour-0
+[review](../audits/AP_PRIME_ARC_LEMMA_ATTEMPT_REVIEW_2026-10-08.md), which found the colour-0
 hypothesis missing; the review also reports an uncertified `n = 12` run
 showing that every model of AL1's hypotheses there has `G_1` a perfect
 matching, where the arc lemma holds trivially, so the solver data support

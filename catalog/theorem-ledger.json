@@ -7512,7 +7512,7 @@
     {
       "name": "AP-prime arc lemma attempt: Theorem B, Corollary B1 (no two perfect-matching colours), hole-model obstruction",
       "document": "docs/strategy/arc-lemma-attempt-2026-10-08.md",
-      "document_sha256_16": "4c7b0228717dea8a",
+      "document_sha256_16": "aa340d06cfc95b84",
       "status": "partial",
       "assumptions_and_excluded_divisors": [
         "exact combinatorial statements about AP' models with one support graph a perfect matching M_0 (Proposition 1 of the extra-edge document), at every even n>=6",
