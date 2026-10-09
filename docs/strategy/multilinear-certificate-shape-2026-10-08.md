@@ -163,7 +163,7 @@ every row of all three inner vertices has a zero at the same outer column,
 the permanents vanish identically (Theorem 3, converse).  A sufficient
 condition is Corollary 5 (i): one full row and two staircase pairs.
 Condition (ii) of Corollary 5 is a statement about *values* (Theorem 3), not
-about the ideal: the same-day [review](../audits/docs/audits/THREE_COLUMN_BILINEAR_GRID_THEOREM_REVIEW_2026-10-08.md)
+about the ideal: the same-day [review](../audits/THREE_COLUMN_BILINEAR_GRID_THEOREM_REVIEW_2026-10-08.md)
 exhibits proportional full rows `(1,1,1), (1,1,1), (1,1,-2)` for which all
 eight cube permanents vanish with every entry nonzero, so "unit ideal
 whenever (ii)" is false.  A repaired support-level condition, which the
