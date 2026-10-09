@@ -128,15 +128,27 @@
         "source_url": "https://export.arxiv.org/api/query?id_list=1902.06023",
         "date": "2026-08-11"
       },
-      "search_trail": [],
-      "relevance": "Combinatorial problem statement and perfect-matching background.",
-      "limitations": ["The pilot did not inspect the full text."],
+      "search_trail": [
+        "2026-10-09: arXiv PDF of 1902.06023 converted to text and page 5 rendered, for heralded (k-monochromatic) GHZ and the Erhard graph; identity rechecked at export.arxiv.org."
+      ],
+      "relevance": "Combinatorial problem statement and perfect-matching background; Question 2 (k-monochromatic graphs) is the heralded/ancilla version, and Figure 3 (Erhard graph) is a GHZ(6,3) construction with four trigger vertices.",
+      "limitations": [
+        "The pilot did not inspect the full text.",
+        "The 2026-10-09 use inspected only Definition 2.4, Questions 2 and 4, Figure 3 with its weight table, and the physics glossary; the edge colours of Figure 3 were read from a rendered image and checked by an exact computation, not taken from a machine-readable source.",
+        "Bogdanov's lemma is quoted there from an unidentified original ([10] of the paper); that source was not followed."
+      ],
       "repository_usages": [
         {
           "path": "docs/LITERATURE_REVIEW_2026-07-30.md",
           "role": "background",
           "inspection_level": "metadata_only",
           "source_locator": null
+        },
+        {
+          "path": "docs/strategy/ancilla-c61-2026-10-09.md",
+          "role": "novelty_assessment",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "arXiv:1902.06023v2, Definition 2.4 and Question 2 (pp. 4-5), Figure 3 (Erhard graph and weight table, p. 5), Question 4 and the physics glossary (pp. 8-9)"
         }
       ]
     },
@@ -801,6 +813,99 @@
           "role": "background",
           "inspection_level": "relevant_passage_inspected",
           "source_locator": "Commit adc7f1241b42e322a6451854ab7e4b4c146bf78a; main.pdf abstract, Section 1.2, Proposition 2.4, Section 5 (Lemma 5.1, Proposition 5.2); lean/OAI/Combinatorics/MatchingEntropy/TriangleExpansion.lean (triangleExpansion, kleeGraph, kleeRoot, kleeColor, kleeUniform, kleeTriangle, expansion_face), MinimalFace.lean (minimalFace, faceDimension), KleeSharpness.lean (klee_minimal, klee_dimension, klee_unique_law, klee_sharp_face), SharpRank.lean (sharp_face_rank); lean/ComparatorChallenges/TriangleFace.lean and TriangleFace.json; lean/formalization.yaml review field."
+        }
+      ]
+    },
+    {
+      "citekey": "gu-erhard-zeilinger-krenn-2019-graphs-ii",
+      "title": "Quantum Experiments and Graphs II: Quantum Interference, Computation and State Generation",
+      "authors": ["Xuemei Gu", "Manuel Erhard", "Anton Zeilinger", "Mario Krenn"],
+      "year": 2019,
+      "identifiers": {
+        "arxiv": "1803.10736",
+        "doi": "10.1073/pnas.1815884116"
+      },
+      "authoritative_url": "https://export.arxiv.org/api/query?id_list=1803.10736",
+      "identity_verification": {
+        "source_url": "https://export.arxiv.org/api/query?id_list=1803.10736",
+        "date": "2026-10-09"
+      },
+      "search_trail": [
+        "2026-10-09: web search 'Quantum experiments and graphs II quantum interference computation state generation PNAS ancillary photons GHZ perfect matchings'; arXiv PDF v4 converted to text; journal reference PNAS 116(10), 4147-4155 (2019) read from the arXiv API record."
+      ],
+      "relevance": "Trigger photons as fixed-mode vertices; a six-photon, two-trigger attempt at GHZ(4,3) that leaves a Maverick term; the restriction on high-dimensional GHZ generation that it attributes to earlier work.",
+      "limitations": [
+        "Only Figure 7 (A-F) with caption, the subsection 'Restriction for GHZ state generation' with footnotes 8-10, and SI Figures 16-17 were inspected, in the arXiv v4 text.",
+        "The restriction it cites is not an impossibility for complex weights; its scope was not traced to the cited source."
+      ],
+      "repository_usages": [
+        {
+          "path": "docs/strategy/ancilla-c61-2026-10-09.md",
+          "role": "novelty_assessment",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "arXiv:1803.10736v4, Figure 7 and caption, subsection 'Restriction for GHZ state generation' with footnotes 8-10, SI 'Restrictions for certain state generation' (Figures 16-17)"
+        }
+      ]
+    },
+    {
+      "citekey": "gu-chen-zeilinger-krenn-2019-graphs-iii",
+      "title": "Quantum Experiments and Graphs III: High-Dimensional and Multi-Particle Entanglement",
+      "authors": ["Xuemei Gu", "Lijun Chen", "Anton Zeilinger", "Mario Krenn"],
+      "year": 2019,
+      "identifiers": {
+        "arxiv": "1812.09558",
+        "doi": "10.1103/PhysRevA.99.032338"
+      },
+      "authoritative_url": "https://export.arxiv.org/api/query?id_list=1812.09558",
+      "identity_verification": {
+        "source_url": "https://export.arxiv.org/api/query?id_list=1812.09558",
+        "date": "2026-10-09"
+      },
+      "search_trail": [
+        "2026-10-09: web search 'Quantum experiments and graphs III high-dimensional multiparticle entanglement ancillary photons GHZ arXiv Gu Chen Zeilinger Krenn'; arXiv PDF converted to text; journal reference Phys. Rev. A 99, 032338 (2019) read from the arXiv API record."
+      ],
+      "relevance": "GHZ(4,3) via the K4 three-matching graph; SRV states with one trigger vertex of fixed mode; restrictions stated without additional ancillary photons.",
+      "limitations": [
+        "Only the GHZ section with Figure 3 and footnotes 3-5, the Figure 7 caption, and Appendix C were inspected.",
+        "Its restrictions concern disjoint perfect matchings and exclude ancillary photons; they do not bear on complex-weighted ancilla-assisted GHZ."
+      ],
+      "repository_usages": [
+        {
+          "path": "docs/strategy/ancilla-c61-2026-10-09.md",
+          "role": "novelty_assessment",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "arXiv:1812.09558v2, GHZ section (Figure 3, footnotes 3-5), Figure 7 caption, Appendix C (trigger t)"
+        }
+      ]
+    },
+    {
+      "citekey": "ruiz-gonzalez-2023-pytheus",
+      "title": "Digital Discovery of 100 diverse Quantum Experiments with PyTheus",
+      "authors": ["Carlos Ruiz-Gonzalez", "Sören Arlt", "Jan Petermann", "Sharareh Sayyad", "Tareq Jaouni", "Ebrahim Karimi", "Nora Tischler", "Xuemei Gu", "Mario Krenn"],
+      "year": 2023,
+      "identifiers": {
+        "arxiv": "2210.09980",
+        "doi": "10.22331/q-2023-12-12-1204"
+      },
+      "authoritative_url": "https://export.arxiv.org/api/query?id_list=2210.09980",
+      "identity_verification": {
+        "source_url": "https://export.arxiv.org/api/query?id_list=2210.09980",
+        "date": "2026-10-09"
+      },
+      "search_trail": [
+        "2026-10-09: web search 'PyTheus digital discovery 100 diverse quantum experiments GHZ state 6 particles 3 dimensions ancilla photons'; arXiv PDF v2 converted to text and page 7 rendered; journal reference Quantum 7, 1204 (2023) read from the arXiv API record."
+      ],
+      "relevance": "Figure 3 is a GHZ(6,3) construction with two ancilla vertices (6 and 7) in one mode; the ancillas are joined by an edge. Read from the figure, it is exact for unit magnitudes, the drawn signs, and any nonzero ancilla-edge weight. Deleting the ancilla edge removes one GHZ colour.",
+      "limitations": [
+        "Only Section 2.1.1 ('Asymptotic Solutions', 'Ancillary Particles'), Figures 2-3 with captions, and the Section 4.1.1 text with the Figure 12 caption were inspected; the Figure 12 graphs and the code repository were not.",
+        "The figure is described as an abstract graph with signs only; the unit magnitudes and the ancilla-edge weight are this repository's reading, validated by an exact computation, not values stated in the paper."
+      ],
+      "repository_usages": [
+        {
+          "path": "docs/strategy/ancilla-c61-2026-10-09.md",
+          "role": "novelty_assessment",
+          "inspection_level": "relevant_passage_inspected",
+          "source_locator": "arXiv:2210.09980v2, Section 2.1.1 'Ancillary Particles' and Figure 3 with caption (p. 7); Section 4.1.1 and Figure 12 caption (p. 15)"
         }
       ]
     }
