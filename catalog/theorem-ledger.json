@@ -7511,14 +7511,15 @@
     {
       "name": "Support-level six-vertex exclusion from killers, holonomy and plane rigidity (SL6)",
       "document": "docs/strategy/hyperdeterminant-crossing-2026-10-09.md",
-      "document_sha256_16": "d4137b5dbabb4290",
+      "document_sha256_16": "1b9f3b5ad2ab3e68",
       "status": "verified_finite",
       "assumptions_and_excluded_divisors": [
         "finite computer-assisted statement at n=6, d=3, general 3x3 blocks: no zero pattern of a six-vertex configuration satisfies the recursive support conditions (Laplace accessibility, singleton noncancellation, GHZ zero pattern) together with the column-killer, holonomy (signed K_{2,3} and rank-one grid) and plane-rigidity clause families",
         "bridge: every complex configuration's zero pattern satisfies every clause (each family is proved at every order; the plane-rigidity family's soundness was proved independently in the review by chart-wise Groebner bases and exact random tests), so the unsatisfiability is a second proof of the six-vertex exclusion whose only computation is the search",
-        "certificate: the final DIMACS (113,726 variables, 835,304 clauses, SHA-256 2b15ae81...) re-solved by native CaDiCaL 1.7.3 and its 40 MB DRAT trace (SHA-256 468795d2...) checked s VERIFIED by drat-trim at the repository-pinned commit; the search used the chain normalization and (sound, orbit-tested) lex-leader clauses, and is also UNSAT with the lex-leader clauses removed; fully symmetry-free runs were inconclusive at one hour",
+        "certificate: the final DIMACS (113,726 variables, 835,304 clauses, SHA-256 2b15ae81...) re-solved by native CaDiCaL 1.7.3 and its 40 MB DRAT trace (SHA-256 468795d2...) checked s VERIFIED by drat-trim at the repository-pinned commit; the search used the chain normalization and (sound, orbit-tested) lex-leader clauses, is also UNSAT with the lex-leader clauses removed, and is UNSAT in a fully symmetry-free run (no chain normalization, no lex-leader; 1,168 CEGAR rounds, 15,334 s, python-sat CaDiCaL, no DRAT), so the exclusion does not depend on the symmetry block",
         "scope: six vertices only; the same families are satisfiable at n=8 (128- and 156-entry support models passing the extended checker), so no new order is excluded; the occurrence statement OCC-PR that would lift the mechanism is as strong as the exclusion",
-        "the holonomy note and the killer theorem were only lightly re-checked by this review; no independent audit of the full clause pipeline; no Lean"
+        "the holonomy note and the killer theorem were only lightly re-checked by this review; no independent audit of the full clause pipeline; no Lean",
+        "at n = 8 the full rule set now available (killers, diagonal anchors, H2/H3 at every level, plane rigidity at every level) was inconclusive in a 6 h run (38 CEGAR rounds, 11.06 million lazy instances); the eight-vertex support-level question is open"
       ],
       "dependencies": [],
       "primary_verifier": "claims/finite/n08/explore_general_block_recursive_support_model.py",
