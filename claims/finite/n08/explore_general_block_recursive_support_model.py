@@ -26,6 +26,13 @@ Optional valid strengthening:
   --killers : the column-killer theorem (THREE_COLOUR_HYPERPLANE_ANNIHILATION):
               for every vertex v and colour c some block W_vu has only its
               column c nonzero (and nonzero).
+  --anchors : the diagonal-anchor lemma (docs/research-notes.md, "Diagonal-
+              anchor refinement"): for every vertex v and colour c some block
+              W_vu has row c supported exactly on colour c at u.  Added
+              2026-10-09 after S128 and S156 (both found without it) turned
+              out to violate it; docs/strategy/s156-hub-trichotomy-2026-10-09.md.
+  --within-pattern-file P : g = 0 outside the fixture P, g free inside it
+              (sub-patterns of a survivor; use with --no-symmetry).
 Optional hypothesis to test (Parent C of the fibre-exact brief, negated):
   --noncoordinate-killer : some block with a single nonzero column c has a
               nonzero entry outside row c.
@@ -261,6 +268,26 @@ class GSM:
                             for ap in range(C):
                                 cnf.append([-q, -self.gvar(v, u, ap, cp)])
         cnf.append(lits)
+
+    def anchors(self):
+        """Valid: diagonal-anchor lemma (docs/research-notes.md, 'Diagonal-anchor
+        refinement'; exact identity in verify_s156_diagonal_anchor_exclusion.py).
+        For every (v,c) some block W_vu has row c (colour c at v) supported
+        exactly on colour c at u: W_vu[c,c] != 0 and W_vu[c,d] = 0 for d != c."""
+        cnf, pool = self.cnf, self.pool
+        for v in self.V:
+            for c in range(C):
+                lits = []
+                for u in self.V:
+                    if u == v:
+                        continue
+                    k = pool.id(("ANC", v, u, c))
+                    lits.append(k)
+                    cnf.append([-k, self.gvar(v, u, c, c)])
+                    for d in range(C):
+                        if d != c:
+                            cnf.append([-k, -self.gvar(v, u, c, d)])
+                cnf.append(lits)
 
     # ------------------------------------------------------------ holonomy
     def tlit(self, A, w, v, u):
@@ -764,6 +791,16 @@ def check_holonomy(n, gsup, msup, top_only=False, rules=("H2", "H3"), stats=None
     return bad
 
 
+def check_anchors(n, gsup):
+    """Independent re-check of the diagonal-anchor lemma on a decoded support."""
+    def G(v, u, a, b):
+        return ((v, u, a, b) in gsup) if v < u else ((u, v, b, a) in gsup)
+
+    return [("ANC", v, c) for v in range(n) for c in range(C)
+            if not any(G(v, u, c, c) and not any(G(v, u, c, d) for d in range(C) if d != c)
+                       for u in range(n) if u != v)]
+
+
 def check_model(n, gsup, msup):
     """Independent brute-force check of (L), (F'), (G) on a decoded model.
     gsup: set of (i,j,a,b) with i<j; msup: set of (A,w) with |A|>=4."""
@@ -815,6 +852,10 @@ def main() -> None:
     ap.add_argument("--pattern", choices=sorted(PATTERNS))
     ap.add_argument("--pattern-file", type=Path,
                     help="physical-support-v1 JSON fixture whose entries fix every g")
+    ap.add_argument("--anchors", action="store_true",
+                    help="add the diagonal-anchor clauses (valid strengthening)")
+    ap.add_argument("--within-pattern-file", type=Path,
+                    help="physical-support-v1 JSON fixture; force g = 0 outside it (g free inside)")
     ap.add_argument("--plane-rigidity", action="store_true",
                     help="add the plane-rigidity clause family (PR) lazily")
     ap.add_argument("--plane-top-only", action="store_true")
@@ -828,7 +869,17 @@ def main() -> None:
     t0 = time.time()
     enc = GSM(args.n, symmetry=not args.no_symmetry, killers=args.killers,
               noncoordinate_killer=args.noncoordinate_killer)
+    if args.anchors:
+        enc.anchors()
+    if args.within_pattern_file:
+        assert args.no_symmetry, "--within-pattern-file fixes labels; use --no-symmetry"
+        data = json.loads(args.within_pattern_file.read_text(encoding="utf-8"))
+        assert data["n"] == args.n, "pattern file order differs from n"
+        inside = {tuple(e) for e in data["entries"]}
+        enc.cnf.extend([[-v] for k, v in enc.g.items() if k not in inside])
     rec = {"n": args.n, "killers": args.killers, "noncoordinate_killer": args.noncoordinate_killer,
+           "anchors": args.anchors,
+           "within_pattern_file": args.within_pattern_file.as_posix() if args.within_pattern_file else None,
            "symmetry": not args.no_symmetry, "variables": enc.pool.top, "clauses": len(enc.cnf.clauses),
            "encode_seconds": round(time.time() - t0, 1), "solver": "CaDiCaL 1.5.3 via python-sat"}
     if args.proof:
@@ -943,6 +994,8 @@ def main() -> None:
         gsup = {k for k, v in enc.g.items() if v in pos}
         msup = {k for k, v in enc.m.items() if v in pos}
         bad = check_model(args.n, gsup, msup)
+        if args.anchors:
+            bad += check_anchors(args.n, gsup)
         if rec["holonomy"]:
             bad += check_holonomy(args.n, gsup, msup, args.holonomy_top_only, rules)
         if rec["plane_rigidity"]:
