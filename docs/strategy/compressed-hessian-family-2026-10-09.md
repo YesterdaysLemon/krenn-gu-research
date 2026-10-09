@@ -536,6 +536,18 @@ spanning claim at ranks 1–3 passed (scratch).
 with `ℓ^T W_uv m = 0` and `ℓ_c m_c != 0` for every colour `c` **iff**
 `W_uv` is not a single nonzero entry.
 
+*Audit note (2026-10-09).*  The same-day
+[independent audit](../audits/LEMMA5_CONTRACTION_AUDIT_2026-10-09.md) passes the lemma (contraction
+identity re-derived by splitting the perfect matchings on whether they use
+`{u,v}`; exact replay at `n = 6, 8` with a separate implementation) and
+records two corrections: the case `W_uv = 0` is silently included in the
+argument above (there `ℓ^T W_uv m = 0` for every `ℓ`, and any full-support
+`ℓ, m` work, so the statement stands), and the criterion needs an infinite
+field (it fails over `F_2` with `W_uv = I`).  Provenance: the identity is the
+`r = 2` case of the matching partition in Theorem 3 of the maximal-torus
+root-saturation theorem with the roots read as ancillas, and "not a single
+nonzero entry" is exactly "torus-root pair".
+
 *Proof.*
 
 1. If `W_uv = α E_ji`, then `ℓ_j m_i = 0`.
