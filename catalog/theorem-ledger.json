@@ -7483,7 +7483,7 @@
     {
       "name": "Cut-tensor permanental rigidity attempt: Lemma C, small-cut theorems, Version R countermodel",
       "document": "docs/strategy/cut-tensor-rigidity-attempt-2026-10-09.md",
-      "document_sha256_16": "4494242668335241",
+      "document_sha256_16": "72b0649263fac4f7",
       "status": "partial",
       "assumptions_and_excluded_divisors": [
         "setting: a vertex cut (P, Q) with |P| = |Q| = k, arbitrary 3x3 blocks on the P-Q pairs, slice matrices A_a[p,q] = W_pq[a_p, a_q]; Version F requires per(A_a) = [a constant] for all 3^{2k} colourings (equivalent to Version N, mixed words zero and constant words nonzero, by one row rescaling); Version R requires it only on the words where the inside matchings vanish",

@@ -34,7 +34,7 @@ analogue of the full-row lemma of Theorem 3 in the bilinear-grid document,
 and its last step is Theorem 3(b).  It needs no certificate, but it uses
 every word.  It closes `k <= 3` and gives partial constraints at every
 `k >= 4` (Section 6, corrected after the same-day
-[review](../audits/docs/audits/CUT_TENSOR_RIGIDITY_ATTEMPT_REVIEW_2026-10-09.md): the mechanism excludes
+[review](../audits/CUT_TENSOR_RIGIDITY_ATTEMPT_REVIEW_2026-10-09.md): the mechanism excludes
 every all-invertible cut configuration at every `k`, and what it cannot
 see is the all-single-entry configurations).
 
@@ -249,7 +249,7 @@ That is Version F at `k = 2`, which is impossible.
   originally claimed, for every all-invertible configuration, that Lemma C
   excludes nothing at `k >= 5` because generic full `w_{q''}` make the
   `k - 2` junk vectors span `F^3`.  The same-day
-  [review](../audits/docs/audits/CUT_TENSOR_RIGIDITY_ATTEMPT_REVIEW_2026-10-09.md) shows the quantifier was
+  [review](../audits/CUT_TENSOR_RIGIDITY_ATTEMPT_REVIEW_2026-10-09.md) shows the quantifier was
   wrong: the condition must hold for *all* full `w`, and choosing the
   contraction vector `delta` first and then, for each closed column, a full
   `w ⊥ B^T delta` kills every junk term.  Consequently **Lemma C excludes
@@ -358,7 +358,7 @@ and 6 scratch starts.
 
 ## Review notes (2026-10-09)
 
-The same-day [review](../audits/docs/audits/CUT_TENSOR_RIGIDITY_ATTEMPT_REVIEW_2026-10-09.md) passed Lemma C, the
+The same-day [review](../audits/CUT_TENSOR_RIGIDITY_ATTEMPT_REVIEW_2026-10-09.md) passed Lemma C, the
 `k = 2, 3` theorems (noting that `k = 2` holds over every field, including
 characteristic two, and that Lemma C also gives a residual of at least `1/3`
 at `k = 2`, so GHZ is not a border point of the bipartite image there), the
