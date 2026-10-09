@@ -7395,7 +7395,7 @@
     {
       "name": "AP-prime branching lemma, normalization, and DRAT-checked n=10 exclusion (WB4)",
       "document": "claims/arbitrary-order/ALL_DIAGONAL_SUPPORT_LEVEL_AP_PRIME_BRANCHING_LEMMA_AND_PARENT_ATTEMPT.md",
-      "document_sha256_16": "a33e61e87d321f4c",
+      "document_sha256_16": "f1570b6298ee0377",
       "status": "verified",
       "assumptions_and_excluded_divisors": [
         "exact combinatorial statements about the AP' support abstraction of WB2 (axioms (a), (L), (S), (F), (H2)); no weights and no field",
@@ -7403,7 +7403,7 @@
         "Lemma 2: every model contains a colour-0 Laplace chain from V to the empty set and may be relabelled along it; the lex-leader clauses for chain-preserving symmetries are standard orbit arguments",
         "Theorem 3 (branching lemma), every even n>=6: some colour's Laplace step edges between reachable sets do not form a matching; if all three did, they would be pairwise disjoint top-active perfect matchings and the imported nonmonochromatic-perfect-matching theorem (Chandran-Gajjala-Illickan, MFCS 2024, Theorem 1.7, the WB1 import) would give a rainbow partition with reachable classes",
         "Lemma 4: (F') is a valid necessary condition for witnesses and with (a), (S) implies (F), so the RZP model of the n=10 recursive-hafnian theorem lies strictly between AP' and witnesses",
-        "finite computer-assisted part (corrected and re-certified 2026-10-08): under the Lemma 2 chain normalization AP' is UNSAT at n=10 by two encodings with checked certificates: the independent perfect-matching-listing audit encoding (Glucose 4.1 search; native CaDiCaL 1.7.3 re-solve with a 985 MB DRAT trace, drat-trim s VERIFIED) and the fixed primary encoding (CaDiCaL search 2,170 s; native re-solve 1,496 s; 557 MB DRAT trace, s VERIFIED, DIMACS SHA-256 2c6d1990...); AP'+(F') at n=10 is UNSAT with a checked certificate from the fixed primary encoding (204 MB DRAT, s VERIFIED, DIMACS a95034fd...) and UNSAT under Glucose for the audit encoding (certificate check pending); the original primary certificates were WITHDRAWN after the same-day review found the lex-leader symmetry block unsound (helper variables keyed by reused id() values), and the script was fixed before re-certification",
+        "finite computer-assisted part (corrected and re-certified 2026-10-08): under the Lemma 2 chain normalization AP' is UNSAT at n=10 by two encodings with checked certificates: the independent perfect-matching-listing audit encoding (Glucose 4.1 search; native CaDiCaL 1.7.3 re-solve with a 985 MB DRAT trace, drat-trim s VERIFIED) and the fixed primary encoding (CaDiCaL search 2,170 s; native re-solve 1,496 s; 557 MB DRAT trace, s VERIFIED, DIMACS SHA-256 2c6d1990...); AP'+(F') at n=10 is UNSAT with a checked certificate from the fixed primary encoding (204 MB DRAT, s VERIFIED, DIMACS a95034fd...) and from the audit encoding (native CaDiCaL re-solve 3,017 s; 717 MB DRAT trace, s VERIFIED, DIMACS decb346c...); the original primary certificates were WITHDRAWN after the same-day review found the lex-leader symmetry block unsound (helper variables keyed by reused id() values), and the script was fixed before re-certification",
         "the extra hypothesis that every top-active graph is a matching, the Lemma 1 normalization, and the Lemma 2' branching WLOG have no valid n>=10 solver results at present; the top-matching lemma is a stated conjecture, not a theorem",
         "no independent review of the document has been performed; AP' for models with a non-uniform colour at n>=12, the all-diagonal branch, every bichromatic branch, and the global conjecture remain open"
       ],
@@ -7448,6 +7448,33 @@
       "expected_runtime": "seconds for the verifier; the closure tool needs python-flint (pinned in requirements)",
       "external_binaries": [],
       "note": "Trunk-lane result of the 2026-10-08 ecology run: bounds what two-term (binomial) relations can do at every order and shows they do not suffice at six vertices with killers. Not a witness, not an exclusion; the global status remains UNRESOLVED.",
+      "claim_package": "claims/arbitrary-order",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
+      "name": "Three-column bilinear grid theorem, permanent plane rigidity, and the degree-three cube identity",
+      "document": "claims/arbitrary-order/THREE_COLUMN_BILINEAR_GRID_THEOREM.md",
+      "document_sha256_16": "547404005526dde9",
+      "status": "verified",
+      "assumptions_and_excluded_divisors": [
+        "exact identities and conditional implications about word coefficients of T_W for 3x3 blocks; Theorem 1 (two-vertex bilinear expansion) at every even n>=4 over every commutative ring; Theorem 2 (three-column bilinear grid) at every even n>=6: under the vanishing of the complementary coefficients outside three columns and the killed a-b term, 2*h12*h13*h23*det[y y' e_p]*det[z z' e_q] is an explicit combination of four grid word values (identity over every commutative ring; conclusion over characteristic not two)",
+        "Theorem 3 (permanent plane rigidity, characteristic not two): the only triples of 2-planes in F^3 on which the 3x3 permanent vanishes are three copies of one coordinate plane; Proposition 4: a degree-three cube identity over Z (eight words, trilinear multipliers) when exactly two of three row pairs coincide",
+        "Corollary 5 (six-vertex cut form): condition (i) gives a unit-ideal certificate with multiplier degree 4, condition (ii) is a statement about values only; necessity of either condition is not proved; a false unit-ideal paraphrase of (ii) in the companion note was corrected after review",
+        "exact finite finding (companion note, not a theorem): the 51-entry six-vertex survivor of the two-term closure needs multiplier degree exactly 3 in the physical entries (no degree<=2 certificate over all 108 equations; degree 3 on the 27-word slice in 48 cube blocks each needing all eight words); the full system was not searched at degree 3",
+        "at n>=8 Theorem 2's premises are m-literals of the recursive support model (valid clause family at every level, not implemented in the model yet); no occurrence statement is proved and no witness class is excluded",
+        "primary verifier replays the identities, the cube closed form and its negative cases, plane rigidity over small fields, and the n=6 cut form; no independent audit; same-day agent review PASS with the corrections above"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/arbitrary-order/verify_three_column_bilinear_grid_theorem.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "review": "docs/audits/THREE_COLUMN_BILINEAR_GRID_THEOREM_REVIEW_2026-10-08.md",
+      "expected_runtime": "about ten seconds for the verifier; the six-vertex certificate scripts under a minute each",
+      "external_binaries": [],
+      "note": "Identifies the multilinear certificate shape that kills the six-vertex two-term survivor (degree-three cube / degree-four bilinear grid across a 3-vs-3 cut) and proves the grid identity at every order as a conditional clause family. Not a witness, not an exclusion; the global status remains UNRESOLVED.",
       "claim_package": "claims/arbitrary-order",
       "proof_variant": "canonical",
       "subpackage": null,
