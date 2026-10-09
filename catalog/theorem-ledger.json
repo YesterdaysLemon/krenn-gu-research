@@ -7537,6 +7537,33 @@
       "legacy_paths": []
     },
     {
+      "name": "n = 8 recursive-support survivors: S128 not fibre-realizable (four-word H3 grid identity), S156 open",
+      "document": "docs/strategy/n8-support-realizability-2026-10-09.md",
+      "document_sha256_16": "78c7a159c82bef8c",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "exact statement: for any field and any configuration of 3x3 blocks on eight vertices supported within the 128-entry pattern S128 (printed in the hyperdeterminant crossing note, Section 4.2), the four matching-tensor words E00, E10, E11, E01 (colours 1,1,0,1,0,1 at vertices 1,3,4,5,6,7; colours a at vertex 0 and b at vertex 2) satisfy the integer identity p1*Y0*Z = p1*Y0*E01 - p0*Y0*E11 + p0*Y1*E10 - p1*Y1*E00 with p_a = W05[a,1], Y_b = W15[1,1]*W23[b,1]*W46[0,0], Z = W02[0,1]*W15[1,1]*W37[1,1]*W46[0,0]; at a GHZ(8,3) witness the right side is zero, so the six support entries cannot all be nonzero: S128 is not the exact zero pattern of any witness",
+        "only 17 of the 24 relevant outside zeros are used (greedy, not claimed minimal); the four-word subsystem is minimal by a hand argument (every three-word subset is satisfiable on the torus), not script-checked",
+        "mechanism: the single-surviving-term H3 rank-one grid transport of the holonomy note; S128 survived its generating run only because that run omitted --holonomy. Fixing the pattern and adding killers, all-level H2/H3 and plane rigidity is UNSAT in two rounds (not DRAT-checked; corroboration only)",
+        "S156 (the 156-entry survivor): inconclusive. Fixed-pattern run with killers, all-level H2/H3 and plane rigidity is SAT with no lazy clause; Jacobian rank 149 = 156 - 7 mod p (kernel = per-vertex torus); no degree-2 closure certificate (exact mod p); none found at degrees 3 and 4 or in the 250 smallest Laurent grids (modular sampling, not a census); Singular Groebner bases timed out at 1,200 s; floating-point descent only approached small residuals with diverging weights (border behaviour, not evidence). No apparent exact witness; nothing to escalate",
+        "primary verifier replays the S128 identity and the reduced hypothesis set in exact sympy arithmetic (under one second); no independent audit; no Lean"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/finite/n08/verify_n8_recursive_support_s128_grid_identity.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": "under one second for the verifier; the fixed-pattern support runs minutes; the modular closure tests about an hour in total",
+      "external_binaries": [
+        "Singular (optional, timed-out Groebner runs only)"
+      ],
+      "note": "Boundary data for frontier node SL6: one of the two eight-vertex support survivors is killed by an existing all-order mechanism, the other survives every encoded family. The named sharper lemma is a multi-partner (k = 4) grid-rank transport. Global status UNRESOLVED.",
+      "claim_package": "docs/strategy",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Cut-tensor permanental rigidity attempt: Lemma C, small-cut theorems, Version R countermodel",
       "document": "docs/strategy/cut-tensor-rigidity-attempt-2026-10-09.md",
       "document_sha256_16": "72b0649263fac4f7",
