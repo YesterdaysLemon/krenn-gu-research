@@ -2,11 +2,17 @@
 
 ## Status
 
-**Proved.**  Theorems 1 and 2 hold for every even order `n >= 4`.  Theorem 1
-holds over every commutative ring.  Theorem 2's identity holds over every
+**Proved.**  Theorem 1 holds for every even order `n >= 4` and Theorem 2 for
+every even order `n >= 6` (at `n = 4` its hypotheses cannot be met, so it is
+vacuous there).  Theorem 1 holds over every commutative ring.  Theorem 2's identity holds over every
 commutative ring, and its conclusion holds over every field of characteristic
 not two.  Theorem 3 holds over every field of characteristic not two.
 Proposition 4 is an identity over `Z`; its conclusion needs `2 != 0`.
+A same-day adversarial [review](../../docs/audits/THREE_COLUMN_BILINEAR_GRID_THEOREM_REVIEW_2026-10-08.md)
+passed Theorems 2 and 3, Proposition 4, and Corollary 5 (i); it corrected
+one false paraphrase of Corollary 5 (ii) in the companion note and several
+wordings, recorded below where they occur.  No independent audit and no
+Lean formalization exist.
 
 These are conditional implications about the first relation type that the
 two-term closure misses (see
@@ -176,8 +182,10 @@ cases.  If the three row pairs are all equal or pairwise distinct, the
 product is **not** in the span of trilinear multiples of the `A_ijk`.  All
 27 choices of `(I_0, I_1, I_2)` fall into these three symmetry classes.  The
 all-equal product is not even in the radical (`H_u^3` is isotropic).  The
-pairwise-distinct product is in the radical by Theorem 3, but needs
-multipliers of higher degree.
+pairwise-distinct product is in the radical by Theorem 3, so a *power* of it
+lies in the ideal, but the product itself is not in the span of multiples
+of the `A_ijk` of any degree that was tested; the verifier checks the
+trilinear degree only.
 
 ## Corollary 5 (six-vertex cut form)
 
@@ -199,7 +207,10 @@ has a support in which either of the following holds:
   have a staircase row pair.  This is Theorem 2 with `{a, b} = T - t`,
   `c = (alpha at t, sigma on U)` and `C = U`; the multiplier degree is 4.
 - **(ii)** every `t` has two rows spanning a plane that contains a full
-  vector.  This is Theorem 3.  When the three monomial minors can be chosen
+  vector.  This is Theorem 3, a statement about values: no nonzero
+  assignment makes all 27 permanents vanish.  It is **not** a unit-ideal
+  statement (proportional full rows give a counterexample at the ideal
+  level; see the review), and necessity of (i) or (ii) is not proved.  When the three monomial minors can be chosen
   with exactly two equal row pairs, Proposition 4 gives a certificate with
   multiplier degree 3.
 

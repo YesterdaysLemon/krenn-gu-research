@@ -75,7 +75,9 @@ subset of every hit block.  The full system was not searched at `D = 3`.
 
 A 4-word certificate exists at `D = 4` (Section 3).  The review's
 normalized-coordinate result, `D <= 2` on the slice, is consistent with
-this: the torus normalization sets 11 entries to 1 and absorbs one degree.
+this: the torus normalization sets 11 entries to 1 and absorbs one degree
+(a heuristic reconciliation, not an exact statement; relabelled after the
+same-day review).
 
 ## 3. The certificate shape in graph terms
 
@@ -89,8 +91,9 @@ unsupported.  Each inner vertex has exactly:
 - two **killer-plane rows** with a zero at a distinct outer column:
   vertex 0 at column 5, vertex 2 at column 4, vertex 3 at column 1.
 
-So each inner vertex's rows span a 2-plane, and that 2-plane contains a
-full vector.
+So each inner vertex's two killer-plane rows span a plane; with the full
+row added, the three rows of a vertex generically span all of `F^3`
+(wording corrected after the same-day review).
 
 Two certificate shapes kill the support.  Both are replayed exactly against
 the actual word polynomials (48 and 96 instances respectively; the second
@@ -157,9 +160,16 @@ earlier hand derivation ("three-term relations multiplied by monomials").
 The suggested statement "the ideal of the 27 cross permanents, saturated by
 the entries, is the unit ideal" is **false as a general statement**.  If
 every row of all three inner vertices has a zero at the same outer column,
-the permanents vanish identically (Theorem 3, converse).  The correct
-condition is Corollary 5: unit ideal whenever (i) one full row and two
-staircase pairs, or (ii) three planes containing full vectors.
+the permanents vanish identically (Theorem 3, converse).  A sufficient
+condition is Corollary 5 (i): one full row and two staircase pairs.
+Condition (ii) of Corollary 5 is a statement about *values* (Theorem 3), not
+about the ideal: the same-day [review](../audits/docs/audits/THREE_COLUMN_BILINEAR_GRID_THEOREM_REVIEW_2026-10-08.md)
+exhibits proportional full rows `(1,1,1), (1,1,1), (1,1,-2)` for which all
+eight cube permanents vanish with every entry nonzero, so "unit ideal
+whenever (ii)" is false.  A repaired support-level condition, which the
+51-entry survivor satisfies, is: at each inner vertex two rows with distinct
+supports whose union is all three columns.  Necessity of any of these
+conditions is not proved.
 
 ## 5. All-order form
 
@@ -172,7 +182,9 @@ family in the recursive support model at every level.  Its premises and
 conclusion are literals of the model:
 
 - premises: `not m[...]` for the vanishing coefficients, `m[...]` for the
-  three `h`'s, and `g`-literals for the staircases;
+  three `h`'s, `g`-literals for the staircases, **and** the killed `a`-`b`
+  term (hypothesis 2 of Theorem 2; a clause encoded without it is unsound,
+  as the same-day review notes);
 - conclusion: one of the four grid coefficients is nonzero.
 
 It sits beside the rules `H2`/`H3` of the holonomy note as a rank-3 (hollow)
