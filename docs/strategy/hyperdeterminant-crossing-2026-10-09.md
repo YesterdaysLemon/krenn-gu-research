@@ -245,10 +245,38 @@ Main runs:
 |---|---|---|---|---|---|---|
 | 6 | (L)(F')(G) + killers + PR | repaired | SAT | 1.2 s | 3 / 32 PR | 63 entries, P63-type; checker PASS |
 | 6 | + killers + H2 + H3 + PR | repaired | **UNSAT** | 145 s | 77 / 322,856 (576 PR) | — |
-| 6 | + killers + H2 + H3 + PR | none | N6_NOSYM | | | |
+| 6 | + killers + H2 + H3 + PR (`--plane-mode deg3`) | repaired | **UNSAT** | 192 s | 77 / 322,856 (576 PR, all at level 6) | — |
+| 6 | + killers + H2 + H3 + PR | none | **inconclusive** (bound 3,600 s, exit 124) | 3,581 s at last round | 514 / 817,434 | late rounds each added 8 PR or a few hundred holonomy instances; no SAT model appeared |
 | 8 | (L)(F')(G) + killers + PR | repaired | **SAT** | 52–58 s (+6 s encode) | 1 / 0 | 128 entries, checker PASS (Section 4.2); PR never fires |
-| 8 | + killers + H2 + H3 + PR | repaired | N8_KH | | | |
-| 8 | + killers + H2 + H3 (top level only) + PR | repaired | N8_KHTOP | | | |
+| 8 | + killers + H2 + H3 + PR (all levels) | repaired | **inconclusive** (bound 3,000 s, exit 124) | 2,982 s at last round | 33 / 9,469,897 | each round still had 2,000–10,000 holonomy violations; PR violations appeared in 5 rounds |
+| 8 | + killers + H2 + H3 (top level only) + PR (all levels) | repaired | **SAT** | 2,721 s (+7 s encode) | 15 / 1,621,581 (89 PR) | 156 entries, checker PASS (model, top-level H2/H3, PR at all levels); below |
+
+The `n = 8` model with top-level H2/H3 and all-level PR (run
+`hdx-n8-khtop-pr`) has a two-type structure.  Sixteen blocks are full
+(`ALL`) and form a 4-regular graph.  The other twelve blocks are single
+entries forming the complementary 3-regular graph:
+
+```text
+01: ALL | 02: 02 | 03: 00 | 04: 11 | 05: ALL | 06: ALL | 07: ALL | 12: ALL | 13: ALL | 14: ALL
+15: 11 | 16: 22 | 17: 20 | 23: ALL | 24: 21 | 25: 22 | 26: ALL | 27: ALL | 34: ALL | 35: ALL
+36: 02 | 37: 11 | 45: ALL | 46: 10 | 47: ALL | 56: ALL | 57: 00 | 67: ALL
+```
+
+It is a support-level object only: no weights were sought, and SAT here says
+nothing about the existence of an eight-vertex witness.  Holonomy at the
+lower levels (`|A| = 4, 6`) was not imposed in this run, so this model is not
+a model of the full all-level rule set.
+
+The two `n = 6` UNSAT answers both rely on the repaired symmetry-breaking
+block.  The symmetry-free run did not finish within its bound, so they are
+**not cross-checked** without symmetry.  The repaired block was
+re-validated in the holonomy note (Section 5.1), but an UNSAT answer that
+depends on symmetry clauses deserves an independent re-run before anyone
+relies on it.
+
+The `deg3` run matches the `value` run instance for instance.  So at
+`n = 6` every PR clause used has an explicit degree-three certificate; the
+radical-level (exponent 2) case is never needed.
 
 At `n = 6` the three families together (two-term H2/H3 and the multilinear
 PR) make the model UNSAT.  Without PR the same model is SAT, with the
@@ -333,8 +361,15 @@ replaces (i)–(iii) by premises 1–3 of PR.
 killers, but the support form of OCC-PR fails at every top-level cut.
 This is evidence **against** deriving OCC-PR(8) from the support-level
 axioms with killers.  It is **not** evidence about actual witnesses: the
-model is a relaxation, and its supports carry no weights.  The outcome with
-H2/H3 is in Section 3.4.
+model is a relaxation, and its supports carry no weights.
+
+With H2/H3 added only at the top level, `n = 8` is still SAT: the
+156-entry model in Section 3.4, with PR at every level and the checker
+passing.  PR fired 89 times during that run's lazy loop, and the final
+model has no violated PR instance.  So even with top-level holonomy, the
+support form of OCC-PR(8) is not forced.  With H2/H3 at every level, the
+`n = 8` run is inconclusive.  Whether that strengthened model forces
+OCC-PR(8), or becomes UNSAT, is open.
 
 **Sharper next lemma (not attempted).**  Condition (ii) is where gluing
 fails: dense outside graphs leave several complementary 3-sets live.  If
@@ -366,8 +401,11 @@ tensors lie in its kernel.
   - the soundness of PR at every level of the recursive model.
 - **New [SAT-RUN]:**
   - PR alone refutes P41, P63 and BL51 (not P27);
-  - `n = 6` with killers, H2, H3 and PR is UNSAT under repaired symmetry;
-  - the `n = 8` outcomes in Section 3.4.
+  - `n = 6` with killers, H2, H3 and PR is UNSAT under repaired symmetry,
+    already in `deg3` mode; it is uncertified and not cross-checked without
+    symmetry;
+  - at `n = 8`, killers + PR is SAT, and killers + top-level H2/H3 + PR is
+    SAT (156 entries); the all-level H2/H3 + PR run is inconclusive.
 - **Not done:**
   - Theorem 2 of the bilinear-grid document (the hollow grid with a full
     row) as a clause family;
@@ -411,10 +449,11 @@ Run ids:
 
 - `hdx-n6-k-pr-sym`
 - `hdx-n6-kh-pr-sym`
-- `hdx-n6-kh-pr-nosym`
+- `hdx-n6-kh-pr3-sym` (`deg3` mode)
+- `hdx-n6-kh-pr-nosym` (timed out)
 - `hdx-n8-k-pr`, and `hdx-n8-k-pr-b` (the same run, repeated with failure
   statistics)
-- `hdx-n8-kh-pr`
+- `hdx-n8-kh-pr` (timed out)
 - `hdx-n8-khtop-pr`
 - `hdx-smoke-n6`
 - `hdx-smoke-n8`
