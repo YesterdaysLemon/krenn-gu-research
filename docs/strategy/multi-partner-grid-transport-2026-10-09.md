@@ -4,7 +4,7 @@ This is a dated research record.  The global Krenn–Gu status is
 **UNRESOLVED**, and nothing here changes it.  It proves a general
 all-order transport lemma, encodes it as support-level clauses, and tests
 it on the eight-vertex support survivor S156.  **S156 is not excluded.**
-`docs/current-frontier.md` is not edited (Section 8).
+`docs/current-frontier.md` is updated by the integrator (Section 8).
 
 Evidence labels:
 
@@ -512,7 +512,10 @@ No process was left running.
 
 ## 8. Frontier
 
-**No frontier update is needed.**
+**No new node or edge.**  The integrator added one refuted-route row (sound
+support-level clause families do not exclude S156) and extended the `SL6`
+boundary row with the lemmas and the hub-2 target, because the frontier
+previously recorded S156 only as a survivor of three named families.
 
 - No theorem about witnesses changes, no branch closes, and no reduction
   edge is added to the live proof topology.
