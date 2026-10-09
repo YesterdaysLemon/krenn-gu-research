@@ -13,10 +13,10 @@
     "ledgerCompleteness": "partial_curated"
   },
   "counts": {
-    "total": 375,
-    "edges": 796,
+    "total": 376,
+    "edges": 797,
     "established": 141,
-    "growing": 215,
+    "growing": 216,
     "pruned": 19
   },
   "health": {
@@ -1153,6 +1153,39 @@
           "verified_finite"
         ],
         "primaryVerifierCount": 2,
+        "independentAuditCount": 0
+      }
+    },
+    {
+      "id": "C61",
+      "title": "Ancilla-assisted GHZ(6,3): six three-colour vertices plus two",
+      "diagramLabel": "Ancilla-assisted GHZ(6,3): six three-colour vertices plus two · non-adjacent one-colour vertices (C6,1) OPEN",
+      "exactStatus": "Candidate reduction target, OPEN: can six three-colour vertices and two mutually non-adjacent one-colour (ancilla) vertices, with arbitrary complex weights, have matching tensor GHZ(6,3)? Lemma 5 of the compressed-Hessian note (hand proof, replayed exactly on 160 words, no independent audit) contracts any order-8 witness at a pair whose block is not a single nonzero entry into such a configuration; the remaining case, every pair a single nonzero entry, is N8R1's class and is already excluded. Status of C{6,1} itself: open. Contraction without the kernel condition lands in the class with the ancilla edge allowed, which is nonempty (PyTheus Fig. 3), so only the kappa = 0 slice can carry an exclusion. Support level: (L), (F'), H2/H3 and plane rigidity transfer; a new ancilla-killer rule is proved (each ancilla has, per colour, a partner row that is a multiple of ec), column killers hold at coloured vertices without ancilla edges, anchors not re-derived; the adapted model with killers, H2/H3 and plane rigidity is SAT (155 entries). Numerics (not evidence): 0 of 24 restarts converge on C{6,1} while the ancilla-edge class converges readily; in every ancilla-edge solution one colour is carried entirely by the ancilla edge. Named obstruction Phi0 (stronger than C{6,1} empty): in any such configuration with the ancilla edge allowed, Phi(c^6) = 0 for some colour",
+      "tone": "growing",
+      "owners": [
+        {
+          "label": "ancilla C{6,1} note",
+          "href": "strategy/ancilla-c61-2026-10-09.md",
+          "document": "docs/strategy/ancilla-c61-2026-10-09.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/2417ef9fc36dba52319cab1cb3d0fd31a3684b16/docs/strategy/ancilla-c61-2026-10-09.md"
+        },
+        {
+          "label": "compressed-Hessian note, Lemma 5",
+          "href": "strategy/compressed-hessian-family-2026-10-09.md",
+          "document": "docs/strategy/compressed-hessian-family-2026-10-09.md",
+          "anchor": null,
+          "url": "https://github.com/YesterdaysLemon/krenn-gu-research/blob/2417ef9fc36dba52319cab1cb3d0fd31a3684b16/docs/strategy/compressed-hessian-family-2026-10-09.md"
+        }
+      ],
+      "evidence": {
+        "indexedDocuments": 2,
+        "linkedDocuments": 2,
+        "ledgerStatuses": [
+          "candidate",
+          "verified_finite"
+        ],
+        "primaryVerifierCount": 1,
         "independentAuditCount": 0
       }
     },
@@ -16775,6 +16808,13 @@
       "target": "GL",
       "relation": "boundary",
       "note": "The three families do not exclude n=8 at the support level; at the top level of n=8 the plane-rigidity premises never hold in the surviving models. Of the two recorded survivors, the 128-entry one is excluded fibre-exactly by an existing mechanism (H3 transport, four-word identity with a verifier), and the 156-entry one survives every clause family the model had encoded and every closure test tried (see the n = 8 realizability note) but violates the diagonal-anchor lemma (docs/research-notes.md): at vertex 2, colour 0, no block row is a multiple of e0, and a 16-word identity (constant word contracted with kernel test vectors) forces W12[1,0] W23[0,1] W26[0,1] W27[0,1] = 0 at any witness supported within it; ten of its 24 (vertex, colour) tasks fail this way, so it is excluded fibre-exactly with exact support (see the anchor exclusion note). The multi-partner grid transport (hub flattening RA Phic = 0 and the adjugate identity pI q{I^c} E00 in (Eij : (i,j) != (0,0)), proved for every hub degree k, every order and any field; it contains the column killer at |A| = 1 and H3 at k = 2) yields sound clause families M and G that fire on S128 but are silent on S156, because every F[V minus {p,u}] there has at least two perfect matchings and the zero pattern never certifies a needed minor. What survives on S156 unconditionally is a per-hub rank trichotomy; excluding it at hub 2 is a determinantal condition on the seven-vertex configuration, i.e. the next step must come from the equations, not the zero pattern (see the multi-partner transport note); the anchor identity is such an equation-level step, and the hub-2 trichotomy was not needed for exact support. With anchors encoded (--anchors), killers + anchors + plane rigidity is still satisfiable at n = 8 (a 121-entry model), and the runs adding holonomy were inconclusive at 2,400 s (a 6 h run of the full rule set, killers + anchors + all-level holonomy + plane rigidity, was likewise inconclusive at 38 CEGAR rounds and 11.06 million lazy instances; the lazy loop is the bottleneck); that 121-entry model is in turn excluded fibre-exactly by top-level H3 (four-word identity whose left side is a monomial in six support entries; 2,285 such squares; fixed-pattern run UNSAT in two rounds), so it survived only because its run omitted holonomy (see the S121 exclusion note). All three recorded eight-vertex survivors died to already-proved all-order rules their generating runs had not switched on. The exact occurrence statement OCC-PR(n) (a cut with a nonzero column coefficient, all other summands vanishing, non-coaxial planes and mixed cube words) would exclude order n outright and is therefore as strong as the exclusion; the named sharper target is plane rigidity of the weighted multi-column permanent."
+    },
+    {
+      "id": "C61-M2-641",
+      "source": "C61",
+      "target": "M2",
+      "relation": "candidate reduction (not live)",
+      "note": "If C{6,1} is empty, every ternary n=8 witness is excluded outright: Lemma 5 contracts it at any pair with a non-single-entry block, and the single-entry residual is N8R1. Load-bearing and unaudited: Lemma 5 (hand proof plus exact replay). C{6,1} itself is open; the ancilla-edge variant is refuted as a route."
     }
   ]
 }

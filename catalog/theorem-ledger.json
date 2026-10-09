@@ -7694,6 +7694,35 @@
       "legacy_paths": []
     },
     {
+      "name": "Ancilla-assisted GHZ(6,3) without an ancilla edge (C_{6,1}): literature, exact equations, support families, residual = N8R1",
+      "document": "docs/strategy/ancilla-c61-2026-10-09.md",
+      "document_sha256_16": "454a3a2cfaee3e8c",
+      "status": "candidate",
+      "assumptions_and_excluded_divisors": [
+        "question C_{6,1}: six three-colour vertices with 3x3 blocks plus two one-colour vertices u', v' with no edge between them (edges to coloured vertices carry 1x3 rows), arbitrary complex weights; is the matching tensor ever GHZ(6,3)? Status: OPEN, not established either way",
+        "conditional reduction (not live): by Lemma 5 of the compressed-Hessian note (hand proof, replayed exactly on 160 words, no independent audit) any order-8 witness with some pair whose block is not a single nonzero entry contracts into C_{6,1}; the residual (all 28 pairs single nonzero entries) is exactly the hypothesis class of N8R1 (proved, checked DRAT, independently reviewed); hence C_{6,1} empty implies no ternary n = 8 witness",
+        "literature (passages inspected, registered in catalog/literature/sources.json): ancillas are trigger/heralding photons = one-colour vertices with ancilla-ancilla edges allowed (Krenn-Gu-Soltesz Def. 2.4 and Question 2; Graphs II Fig. 7 and SI Fig. 17; Graphs III App. C); PyTheus (Ruiz-Gonzalez et al., Quantum 2023) Fig. 3 gives GHZ(6,3) with two ancillas joined by an edge carrying colour 0 entirely (exact replay: T = kappa|0^6> + 2|1^6> + 2|2^6>), so the ancilla-edge class C'_{6,1} is nonempty and contraction without the kernel condition excludes nothing; the Erhard graph (KGS Fig. 3) gives GHZ(6,3) x |0000> with four triggers in a star (exact over Q(i)); no impossibility for complex weights with ancillas is known",
+        "exact equations: T = kappa T_B + Phi with Phi(gamma) = rho_gamma^T Theta_gamma sigma_gamma; exact no-go for one PyTheus-style support family without the ancilla edge (pure-word coefficient matrix of rank <= 2)",
+        "support level: (L), (F'), H2, H3 and plane rigidity transfer via the embedding as an 8-vertex configuration with tensor GHZ6 x e0 x e0; ancilla killer proved (needs kappa = 0); column killers at a coloured vertex hold only without ancilla edges; anchors not re-derived; adapted model with killers + H2/H3 + plane rigidity SAT (155 entries, 4 rounds, independent check PASS)",
+        "numerics (not evidence): 0/24 Levenberg-Marquardt restarts converge on C_{6,1} (one small-cost point is a border/gauge artefact); controls converge (C'_{6,1} 5/13, four-ancilla 4/6, GHZ(4,3) 3/3, GHZ(6,3) without ancilla 0/6); in every C' solution Phi(c^6) = 0 for some colour",
+        "named obstruction Phi0 (open, stronger than C_{6,1} empty): in any configuration of six three-colour and two one-colour vertices realizing GHZ(6,3) with the ancilla edge allowed, Phi(c^6) = 0 for some colour; not done: modular Groebner/saturation/Jacobian attack on the full system, anchor re-derivation, independent audit of Lemma 5; no Lean"
+      ],
+      "dependencies": [
+        "claims/arbitrary-order/MAXIMAL_TORUS_ROOT_SATURATION_AND_COORDINATE_ABSORPTION_THEOREM.md"
+      ],
+      "primary_verifier": null,
+      "verifier_provenance": "none",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": "minutes per listed run; numerics not evidence",
+      "external_binaries": [],
+      "note": "Candidate reduction target C61 (frontier, not live): C_{6,1} empty would exclude order 8 outright given Lemma 5 and N8R1. The ancilla-edge variant is refuted as a route by an exact PyTheus construction. Global status UNRESOLVED.",
+      "claim_package": "docs/strategy",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Cut-tensor permanental rigidity attempt: Lemma C, small-cut theorems, Version R countermodel",
       "document": "docs/strategy/cut-tensor-rigidity-attempt-2026-10-09.md",
       "document_sha256_16": "72b0649263fac4f7",
