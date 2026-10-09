@@ -7724,6 +7724,33 @@
       "legacy_paths": []
     },
     {
+      "name": "C_{6,1} exact attack: kernel-restriction lemma, C_{4,1} empty (Theorem C41), |B - Z| <= 1, and the D(5,3) obstruction",
+      "document": "docs/strategy/c61-exact-attack-2026-10-09.md",
+      "document_sha256_16": "612d7e34f5ab71f3",
+      "status": "verified_finite",
+      "assumptions_and_excluded_divisors": [
+        "setting: C_{n,1} = configurations of n three-colour vertices (3x3 complex blocks) plus two mutually non-adjacent one-colour vertices whose edges carry 1x3 rows, with matching tensor a weighted GHZ(n,3) with three nonzero weights; C_{6,1} remains OPEN",
+        "kernel-restriction lemma (exact): restricting a vertex z of B to the common kernel K_z of its two ancilla rows makes it a third one-colour vertex adjacent to neither ancilla; with Z the set of vertices where some unit vector lies in span(r_z, s_z): KR3, at most two vertices lie outside Z (three restrictions give an image of the 3x3x3 permanental tensor, never equivalent to the GHZ unit tensor; the same argument empties D(2,2) and D(3,3)); KR2, forced diagonal structure of C_p = r_k s_k'^T + s_k r_k'^T; GCK, a generalized conditional killer containing the ancilla note's (CK)",
+        "Theorem C41 (exact, computer-assisted, no independent audit): C_{4,1} is empty; the ancilla-killer property and the torus reduce to 292 orbit strata of ancilla rows, the tensor is linear in the B-blocks, and each stratum is closed by explicit dual certificates checked by exact multiplication with recursion on special hypersurfaces; sanity control: the same test reports the known-nonempty D(3,1) feasible; consequence with Lemma 5: every GHZ(6,3) block configuration has every block a single nonzero entry (the route is faithful at order 6)",
+        "KR1 (exact): |B - Z| <= 1 in any C_{6,1} configuration (two restrictions outside Z give a C_{4,1} configuration)",
+        "numerics (not evidence): D(5,3) is nonempty (converged point, cost 1.4e-30, Jacobian rank 120 of 135, independent 105-matching engine residual 2.4e-16); the order-4 analogue of Phi0 is false (two of four ancilla-edge solutions have Phi(c^4) != 0 for all colours); no C_{6,1} construction converged (four single-entry-ancilla patterns, three lifts of the D(5,3) point); no modular Groebner work was done (no engine on the host)",
+        "obstruction: the restriction method stops at KR1 (one more restriction lands in the numerically nonempty D(5,3); restrictions at vertices of Z leave two-colour targets that exact cycle constructions realize), so a proof of C_{6,1} empty or Phi0 must contract one three-colour vertex several ways at once; sharper next statement M61: no C_{6,1} configuration has single-entry ancilla rows (356 orbit patterns remain after the ancilla killer, KR1 and KR2's support shadow)",
+        "primary verifiers: verify_c61_kernel_restriction.py (exact replay of the identities, about 25 s) and verify_c41_exclusion.py (the computational half of C41, about 30 s); no independent audit; no Lean"
+      ],
+      "dependencies": [],
+      "primary_verifier": "claims/finite/n08/verify_c41_exclusion.py",
+      "verifier_provenance": "companion_point_check_script",
+      "independent_audit": null,
+      "audit_provenance": "none_exists",
+      "expected_runtime": "about 25 s and 30 s for the two verifiers",
+      "external_binaries": [],
+      "note": "C_{6,1} stays open; C_{4,1} is empty (computer-assisted, unaudited), which makes the Lemma 5 route faithful at order 6 and pins every C_{6,1} configuration to |B - Z| <= 1. Named next statement M61. Global status UNRESOLVED.",
+      "claim_package": "docs/strategy",
+      "proof_variant": "canonical",
+      "subpackage": null,
+      "legacy_paths": []
+    },
+    {
       "name": "Cut-tensor permanental rigidity attempt: Lemma C, small-cut theorems, Version R countermodel",
       "document": "docs/strategy/cut-tensor-rigidity-attempt-2026-10-09.md",
       "document_sha256_16": "72b0649263fac4f7",
