@@ -32,9 +32,11 @@ diagonal bilinear form, while the permanent has only two terms that survive
 a suitable contraction, so it has rank at most 2.  This is the bipartite
 analogue of the full-row lemma of Theorem 3 in the bilinear-grid document,
 and its last step is Theorem 3(b).  It needs no certificate, but it uses
-every word.  It closes `k <= 3`, gives only partial constraints at
-`k = 4`, and provably cannot by itself close `k >= 5`, for a dimension
-reason (Section 6).
+every word.  It closes `k <= 3` and gives partial constraints at every
+`k >= 4` (Section 6, corrected after the same-day
+[review](../audits/docs/audits/CUT_TENSOR_RIGIDITY_ATTEMPT_REVIEW_2026-10-09.md): the mechanism excludes
+every all-invertible cut configuration at every `k`, and what it cannot
+see is the all-single-entry configurations).
 
 ## 1. Exact statements
 
@@ -239,18 +241,26 @@ That is Version F at `k = 2`, which is impossible.
     coordinate vector for every full `w4`.
   - The single-entry argument of Section 3 then applies.
 
-  Other pairs are allowed, for example two rank-2 blocks with the same
-  image plane containing some `e_c`.  The `k = 4` case analysis and its
-  combinatorial endgame (weighted single-entry `K_{4,4}`, where mixed
-  monomials can cancel) were not completed.
-- **[PROVED] Boundary of the mechanism at `k >= 5`.**  Suppose every block
-  is invertible.  Then, for every `p` and every `Q''` with `|Q''| >= 3`,
-  generic full `w_{q''}` make the vectors `B_{pq''} w_{q''}` span `F^3`.  The
-  same holds on the `Q` side.  So the necessary condition holds
-  automatically, and Lemma C excludes no all-invertible configuration.
-  - A one-vertex contraction has `k - 2` junk terms, and three colours
-    leave two dimensions to kill them.  This is the exact reason the
-    argument closes only `k <= 3`.
+  The `k = 4` case analysis and its combinatorial endgame (weighted
+  single-entry `K_{4,4}`, where mixed monomials can cancel) were not
+  completed.  (An earlier remark here that a pair of rank-2 blocks with a
+  common image plane is "allowed" was wrong; the review excludes it.)
+- **[WITHDRAWN] "Boundary of the mechanism at `k >= 5`."**  This note
+  originally claimed, for every all-invertible configuration, that Lemma C
+  excludes nothing at `k >= 5` because generic full `w_{q''}` make the
+  `k - 2` junk vectors span `F^3`.  The same-day
+  [review](../audits/docs/audits/CUT_TENSOR_RIGIDITY_ATTEMPT_REVIEW_2026-10-09.md) shows the quantifier was
+  wrong: the condition must hold for *all* full `w`, and choosing the
+  contraction vector `delta` first and then, for each closed column, a full
+  `w ⊥ B^T delta` kills every junk term.  Consequently **Lemma C excludes
+  every all-invertible cut configuration at every `k >= 2`** (exact replay
+  by the reviewer: contraction rank 2 against target rank 3 at
+  `k = 4, 5, 6`), and it yields a sharper necessary condition that this note
+  lacked: **every row of blocks contains at least three single-column
+  blocks, and every column at least three single-row blocks.**  What Lemma
+  C cannot see is the all-single-entry configurations, which is the real
+  reason it does not close `k >= 4` by itself.  (Hand proof in the review;
+  no verifier covers it yet.)
   - [OBSERVATION, heuristic] More open vertices do not help in the obvious
     way.  With `p` and `r` open `Q` vertices, the contraction is a sum of
     `r` terms, each of slice rank one in some factor.  A full `GHZ_r` has
@@ -280,14 +290,17 @@ exactly the two-of-three configuration that the numerics converge to.  So the
 `n = 4` witness is a bipartite two-colour slice glued to a one-colour inside.
 This is the prototype of what the gluing step has to exclude at `n >= 6`.
 
-Version R with arbitrary (non-witness) inside blocks is vacuous: all-ones
-inside blocks make `Omega_W` empty.
+Version R with arbitrary (non-witness) inside blocks can be vacuous: for
+even `k`, all-ones inside blocks make `Omega_W` empty (for odd `k` an inside
+perfect matching does not exist on one side, so the statement needs the
+parity caveat the review notes).
 
 ## 8. What remains for an all-`n` proof (the `GL` node)
 
 1. **The full-word theorem at every `k`** (bipartite Krenn–Gu): open from
-   `k = 4`.  Lemma C closes `k <= 3` and provably cannot close `k >= 5`
-   alone (Section 6).  The next lemma would be a contraction that kills
+   `k = 4`.  Lemma C closes `k <= 3` and excludes every all-invertible
+   configuration at every `k`, but is blind to all-single-entry
+   configurations (Section 6, corrected).  The next lemma would be a contraction that kills
    `k - 2` junk terms, or a non-rank invariant separating GHZ from
    bipartite permanental tensors.  The numerics suggest the separation is
    closed (residual exactly 1), so a polynomial invariant may exist.
@@ -342,3 +355,19 @@ Recorded runs:
 
 The `k = 2` figure of 26 starts combines 20 starts of the committed probe
 and 6 scratch starts.
+
+## Review notes (2026-10-09)
+
+The same-day [review](../audits/docs/audits/CUT_TENSOR_RIGIDITY_ATTEMPT_REVIEW_2026-10-09.md) passed Lemma C, the
+`k = 2, 3` theorems (noting that `k = 2` holds over every field, including
+characteristic two, and that Lemma C also gives a residual of at least `1/3`
+at `k = 2`, so GHZ is not a border point of the bipartite image there), the
+Version R countermodel, the `|P| != |Q|` remark and the `n = 4` corollary
+(over every field); it reproduced the verifier and the `k = 2` Groebner
+basis `[1]`.  It withdrew the `k >= 5` vacuity claim and the `k = 4`
+"allowed pair" example (Section 6, corrected above), recorded the sharper
+necessary condition, and listed twelve gaps: the `k = 4` endgame, border-point
+status at `k = 3, 4`, the scratch origin of the `k = 4` numerics, partial
+verifier coverage, the absence of an occurrence theorem supplying the
+full-word premise in a witness, the literature provenance of "open from
+`k = 4`", and the absence of any independent audit or Lean counterpart.
