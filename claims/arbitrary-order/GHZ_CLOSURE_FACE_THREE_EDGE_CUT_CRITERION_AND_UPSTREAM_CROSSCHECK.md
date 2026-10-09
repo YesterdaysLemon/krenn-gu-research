@@ -227,7 +227,7 @@ Evidence labels, kept separate:
 | statement read here | the declarations and passages listed below, at the pinned commit |
 | certificate replayed here | none |
 | built and axiom-checked here (2026-10-08) | `OAI.Combinatorics.MatchingEntropy.KleeSharpness` built with Lean 4.34.1 at the pinned commit; `#print axioms` reports only `propext`, `Classical.choice`, `Quot.sound` for `klee_minimal`, `klee_dimension`, `klee_unique_law`, `klee_sharp_face`; the Comparator challenge `TriangleFace` passed a CompareLite comparison (statement identical, 33 challenge-local and 126 library dependencies checked, same three axioms) |
-| kernel-checked here | **none**: no `leanchecker` replay of these modules has completed; a replay of the openai/math family-003 modules was still running when this line was written |
+| kernel-checked here | **none**: a `leanchecker` replay of the 3,232 openai/math family-003 modules ran for 74,872 s on 2026-10-08/09 and was killed (exit 137, memory) before completing; the Klee modules were not in that replay set; no kernel replay of any openai/math module has completed here |
 
 The publisher's own catalogue `lean/formalization.yaml` records
 `review: status: unchecked`.  The fetched source text of the three Lean files
