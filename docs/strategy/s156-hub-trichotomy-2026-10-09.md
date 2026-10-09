@@ -272,8 +272,9 @@ is not decisive on its own.  No weights were sought for it.
 
 ## 7. Frontier
 
-`docs/current-frontier.md` is **not edited** in this commit; the
-integration owner should update two rows, which now misdescribe S156:
+`docs/current-frontier.md` was updated by the integration owner in the same
+PR (the `SL6` node and boundary rows and both eight-vertex refuted-route rows);
+the rows that had misdescribed S156 were:
 
 - the `SL6` boundary row ("the 156-entry one survives every encoded family
   and every closure test tried");
