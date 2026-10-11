@@ -317,7 +317,18 @@ At `n = 8`, a 6 h run of the full rule set now available (killers, diagonal
 anchors, H2/H3 at every level, PR at every level) was inconclusive: 38 CEGAR
 rounds and 11.06 million lazy instances at the cap, with hundreds of
 thousands of new holonomy instances per round (base DIMACS 114.9 MB).  The
-lazy instance loop, not the SAT solver, is the bottleneck.
+lazy instance loop, not the SAT solver, was the bottleneck there.
+
+Three 24 h runs launched on 2026-10-09 (each `--proof`, 14 GB cap) were all
+**inconclusive at the 86,400 s cap** (SAT-RUN): the full rule set reached
+round 33 at 15,177 s and its next incremental solve ran for the remaining
+19.8 h without returning; holonomy and plane rigidity restricted to the top
+level reached round 66 (72,526 s); top-level holonomy with all-level plane
+rigidity reached round 55 (57,565 s).  None wrote a final formula.  Once the
+lazy loop is cheap (`--fast`), the incremental SAT solve of the accumulated
+formula is the bottleneck; the eight-vertex support-level question stays
+open and the next lever is on the solver side (native CaDiCaL on the dumped
+formula, cube-and-conquer, or a restricted model).
 
 **Consequence, stated exactly.**  No zero pattern on six vertices satisfies
 the recursive support conditions (L), (F'), (G) together with the
