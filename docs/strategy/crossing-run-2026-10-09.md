@@ -72,6 +72,9 @@ escalation rule; the coordinator integrated results as separate PRs.
   set; holonomy and plane rigidity top-level only; holonomy top-level with
   all-level plane rigidity; each with `--proof`) were at rounds 28–30 after
   3.5 h and were left running under `tools/research/run_bounded.py`.
+  **Outcome (recorded 2026-10-11):** all three inconclusive at the 24 h cap
+  (rounds 33, 66 and 55; the full-rule run spent its last 19.8 h inside one
+  incremental solve).  No final formula was written.
   Outcome handling: UNSAT means a support-level eight-vertex exclusion
   candidate (native DRAT of the final formula, review, frontier node);
   SAT means the full mechanism battery on the model; inconclusive means the
